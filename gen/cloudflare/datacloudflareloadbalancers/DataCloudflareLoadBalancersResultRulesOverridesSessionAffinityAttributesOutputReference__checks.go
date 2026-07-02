@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesSessionAffinit
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesSessionAffinityAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesSessionAffinityAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareLoadBalancersResultRulesOverridesSessionAffinityAt
 
 	return nil
 }
-

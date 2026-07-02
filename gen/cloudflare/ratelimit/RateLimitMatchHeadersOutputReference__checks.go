@@ -98,7 +98,7 @@ func (r *jsiiProxy_RateLimitMatchHeadersOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RateLimitMatchHeadersOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewRateLimitMatchHeadersOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

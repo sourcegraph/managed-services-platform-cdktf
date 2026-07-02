@@ -16,22 +16,22 @@ type ZeroTrustAccessPolicy interface {
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	ApprovalGroups() ZeroTrustAccessPolicyApprovalGroupsList
-	ApprovalGroupsInput() interface{}
-	ApprovalRequired() interface{}
-	SetApprovalRequired(val interface{})
-	ApprovalRequiredInput() interface{}
+	ApprovalGroupsInput() any
+	ApprovalRequired() any
+	SetApprovalRequired(val any)
+	ApprovalRequiredInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Decision() *string
 	SetDecision(val *string)
 	DecisionInput() *string
@@ -40,7 +40,7 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Exclude() ZeroTrustAccessPolicyExcludeList
-	ExcludeInput() interface{}
+	ExcludeInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,10 +51,10 @@ type ZeroTrustAccessPolicy interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	Include() ZeroTrustAccessPolicyIncludeList
-	IncludeInput() interface{}
-	IsolationRequired() interface{}
-	SetIsolationRequired(val interface{})
-	IsolationRequiredInput() interface{}
+	IncludeInput() any
+	IsolationRequired() any
+	SetIsolationRequired(val any)
+	IsolationRequiredInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,35 +69,35 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PurposeJustificationPrompt() *string
 	SetPurposeJustificationPrompt(val *string)
 	PurposeJustificationPromptInput() *string
-	PurposeJustificationRequired() interface{}
-	SetPurposeJustificationRequired(val interface{})
-	PurposeJustificationRequiredInput() interface{}
+	PurposeJustificationRequired() any
+	SetPurposeJustificationRequired(val any)
+	PurposeJustificationRequiredInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Require() ZeroTrustAccessPolicyRequireList
-	RequireInput() interface{}
+	RequireInput() any
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,17 +127,17 @@ type ZeroTrustAccessPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApprovalGroups(value interface{})
-	PutExclude(value interface{})
-	PutInclude(value interface{})
-	PutRequire(value interface{})
+	PutApprovalGroups(value any)
+	PutExclude(value any)
+	PutInclude(value any)
+	PutRequire(value any)
 	ResetApprovalGroups()
 	ResetApprovalRequired()
 	ResetExclude()
@@ -149,17 +149,17 @@ type ZeroTrustAccessPolicy interface {
 	ResetPurposeJustificationRequired()
 	ResetRequire()
 	ResetSessionDuration()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustAccessPolicy
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroups() ZeroTrustAccessPolicy
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"approvalGroupsInput",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"approvalRequired",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"approvalRequiredInput",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Exclude() ZeroTrustAccessPolicyExclude
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ExcludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ExcludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInput",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Include() ZeroTrustAccessPolicyInclude
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) IncludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) IncludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeInput",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) IncludeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) IsolationRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) IsolationRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isolationRequired",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) IsolationRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) IsolationRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) IsolationRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isolationRequiredInput",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationPromptInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"purposeJustificationRequired",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationRequired() interfa
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"purposeJustificationRequiredInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) PurposeJustificationRequiredInput() in
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Require() ZeroTrustAccessPolicyRequire
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) RequireInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) RequireInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireInput",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -577,7 +577,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
@@ -589,7 +588,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetApprovalRequired(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetApprovalRequired(val any) {
 	if err := j.validateSetApprovalRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetApprovalRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetDecision(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetDecision(val *string) {
 	if err := j.validateSetDecisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetDecision(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -670,7 +669,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetIsolationRequired(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetIsolationRequired(val any) {
 	if err := j.validateSetIsolationRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetIsolationRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -719,7 +718,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetPurposeJustificationPrompt(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetPurposeJustificationPrompt(val *string) {
 	if err := j.validateSetPurposeJustificationPromptParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetPurposeJustificationPrompt(val *stri
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetPurposeJustificationRequired(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetPurposeJustificationRequired(val any) {
 	if err := j.validateSetPurposeJustificationRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetPurposeJustificationRequired(val int
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetSessionDuration(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) SetSessionDuration(val *string) {
 	if err := j.validateSetSessionDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func ZeroTrustAccessPolicy_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func ZeroTrustAccessPolicy_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustAccessPolicy_IsConstruct(x interface{}) *bool {
+func ZeroTrustAccessPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustAccessPolicy_IsConstructParameters(x); err != nil {
@@ -810,7 +809,7 @@ func ZeroTrustAccessPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func ZeroTrustAccessPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustAccessPolicy_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustAccessPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustAccessPolicy_IsTerraformElementParameters(x); err != nil {
@@ -829,7 +828,7 @@ func ZeroTrustAccessPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func ZeroTrustAccessPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustAccessPolicy_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustAccessPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustAccessPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -848,7 +847,7 @@ func ZeroTrustAccessPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,31 +872,31 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,15 +1024,15 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustAccessPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1052,7 +1051,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,18 +1078,18 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1112,51 +1111,51 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroups(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroups(value any) {
 	if err := z.validatePutApprovalGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putApprovalGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) PutExclude(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutExclude(value any) {
 	if err := z.validatePutExcludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putExclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) PutInclude(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutInclude(value any) {
 	if err := z.validatePutIncludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putInclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) PutRequire(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutRequire(value any) {
 	if err := z.validatePutRequireParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putRequire",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1232,8 +1231,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetSessionDuration() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustAccessPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1245,8 +1244,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustAccessPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1258,8 +1257,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1271,8 +1270,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1297,8 +1296,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1309,4 +1308,3 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

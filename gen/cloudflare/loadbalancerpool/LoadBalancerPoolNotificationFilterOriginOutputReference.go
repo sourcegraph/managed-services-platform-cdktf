@@ -12,9 +12,9 @@ type LoadBalancerPoolNotificationFilterOriginOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type LoadBalancerPoolNotificationFilterOriginOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disable() interface{}
-	SetDisable(val interface{})
-	DisableInput() interface{}
+	Disable() any
+	SetDisable(val any)
+	DisableInput() any
 	// Experimental.
 	Fqn() *string
-	Healthy() interface{}
-	SetHealthy(val interface{})
-	HealthyInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	Healthy() any
+	SetHealthy(val any)
+	HealthyInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type LoadBalancerPoolNotificationFilterOriginOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type LoadBalancerPoolNotificationFilterOriginOutputReference interface {
 	ResetHealthy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Crea
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Disable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Disable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disable",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Disa
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) DisableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) DisableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableInput",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Healthy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Healthy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthy",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Heal
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) HealthyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) HealthyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthyInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Heal
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Terr
 	return returns
 }
 
-
 func NewLoadBalancerPoolNotificationFilterOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerPoolNotificationFilterOriginOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewLoadBalancerPoolNotificationFilterOriginOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewLoadBalancerPoolNotificationFilterOriginOutputReference_Override(l LoadB
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetDisable(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetDisable(val any) {
 	if err := j.validateSetDisableParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetDi
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetHealthy(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetHealthy(val any) {
 	if err := j.validateSetHealthyParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetHe
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Comp
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetB
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetB
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetL
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetN
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetN
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetN
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetS
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) GetS
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Inte
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Rese
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) ToSt
 
 	return returns
 }
-

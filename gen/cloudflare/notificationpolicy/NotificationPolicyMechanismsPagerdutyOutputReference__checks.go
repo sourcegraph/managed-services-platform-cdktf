@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNotificationPolicyMechanismsPagerdutyOutputReferenceParameters(t
 
 	return nil
 }
-

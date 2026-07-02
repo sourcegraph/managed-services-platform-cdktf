@@ -15,9 +15,9 @@ type ZeroTrustOrganizationLoginDesignOutputReference interface {
 	BackgroundColorInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ZeroTrustOrganizationLoginDesignOutputReference interface {
 	HeaderText() *string
 	SetHeaderText(val *string)
 	HeaderTextInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LogoPath() *string
 	SetLogoPath(val *string)
 	LogoPathInput() *string
@@ -55,7 +55,7 @@ type ZeroTrustOrganizationLoginDesignOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type ZeroTrustOrganizationLoginDesignOutputReference interface {
 	ResetTextColor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) BackgroundCo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) HeaderTextIn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) TextColorInp
 	return returns
 }
 
-
 func NewZeroTrustOrganizationLoginDesignOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationLoginDesignOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewZeroTrustOrganizationLoginDesignOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewZeroTrustOrganizationLoginDesignOutputReference_Override(z ZeroTrustOrga
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetBackgroundColor(val *string) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetBackgroundColor(val *string) {
 	if err := j.validateSetBackgroundColorParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetBackground
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetFooterText(val *string) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetFooterText(val *string) {
 	if err := j.validateSetFooterTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetFooterText
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetHeaderText(val *string) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetHeaderText(val *string) {
 	if err := j.validateSetHeaderTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetHeaderText
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetLogoPath(val *string) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetLogoPath(val *string) {
 	if err := j.validateSetLogoPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetLogoPath(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference)SetTextColor(val *string) {
+func (j *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) SetTextColor(val *string) {
 	if err := j.validateSetTextColorParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) ComputeFqn()
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetListAttri
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) GetStringMap
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) Interpolatio
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) ResetTextCol
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (z *jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference) ToString() *
 
 	return returns
 }
-

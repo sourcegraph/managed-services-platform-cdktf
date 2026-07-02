@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewBrowsersMapParameters(terraf
 
 	return nil
 }
-

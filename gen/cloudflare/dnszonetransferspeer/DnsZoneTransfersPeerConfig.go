@@ -6,9 +6,9 @@ import (
 
 type DnsZoneTransfersPeerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DnsZoneTransfersPeerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#account_id DnsZoneTransfersPeer#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the peer.
@@ -34,7 +34,7 @@ type DnsZoneTransfersPeerConfig struct {
 	// Enable IXFR transfer protocol, default is AXFR. Only applicable to secondary zones.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#ixfr_enable DnsZoneTransfersPeer#ixfr_enable}
-	IxfrEnable interface{} `field:"optional" json:"ixfrEnable" yaml:"ixfrEnable"`
+	IxfrEnable any `field:"optional" json:"ixfrEnable" yaml:"ixfrEnable"`
 	// DNS port of primary or secondary nameserver, depending on what zone this peer is linked to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#port DnsZoneTransfersPeer#port}
@@ -44,4 +44,3 @@ type DnsZoneTransfersPeerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#tsig_id DnsZoneTransfersPeer#tsig_id}
 	TsigId *string `field:"optional" json:"tsigId" yaml:"tsigId"`
 }
-

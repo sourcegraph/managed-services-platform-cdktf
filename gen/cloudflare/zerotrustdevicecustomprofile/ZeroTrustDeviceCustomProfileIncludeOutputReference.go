@@ -15,9 +15,9 @@ type ZeroTrustDeviceCustomProfileIncludeOutputReference interface {
 	AddressInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ZeroTrustDeviceCustomProfileIncludeOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ZeroTrustDeviceCustomProfileIncludeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ZeroTrustDeviceCustomProfileIncludeOutputReference interface {
 	ResetHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) AddressIn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) HostInput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) Terraform
 	return returns
 }
 
-
 func NewZeroTrustDeviceCustomProfileIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileIncludeOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewZeroTrustDeviceCustomProfileIncludeOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileIncludeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewZeroTrustDeviceCustomProfileIncludeOutputReference_Override(z ZeroTrustD
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileIncludeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetAddress(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetAddress
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetDescrip
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetHost(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) ComputeFq
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetBoolea
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetBoolea
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetListAt
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetNumber
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetNumber
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetNumber
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetString
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) GetString
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) Interpola
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) ResetHost
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) ToString(
 
 	return returns
 }
-

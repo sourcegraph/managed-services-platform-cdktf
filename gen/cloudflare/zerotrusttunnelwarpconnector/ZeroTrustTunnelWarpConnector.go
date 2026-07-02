@@ -19,18 +19,18 @@ type ZeroTrustTunnelWarpConnector interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	Connections() ZeroTrustTunnelWarpConnectorConnectionsList
 	ConnsActiveAt() *string
 	ConnsInactiveAt() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	DeletedAt() *string
 	// Experimental.
@@ -61,17 +61,17 @@ type ZeroTrustTunnelWarpConnector interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteConfig() cdktf.IResolvable
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TunnelSecret() *string
@@ -82,9 +82,9 @@ type ZeroTrustTunnelWarpConnector interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type ZeroTrustTunnelWarpConnector interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type ZeroTrustTunnelWarpConnector interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type ZeroTrustTunnelWarpConnector interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTunnelSecret()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustTunnelWarpConnector
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) ConnsInactiveAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -473,7 +473,6 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) TunType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
 func NewZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfig) ZeroTrustTunnelWarpConnector {
 	_init_.Initialize()
@@ -485,7 +484,7 @@ func NewZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -498,12 +497,12 @@ func NewZeroTrustTunnelWarpConnector_Override(z ZeroTrustTunnelWarpConnector, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector)SetTunnelSecret(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) SetTunnelSecret(val *string) {
 	if err := j.validateSetTunnelSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func ZeroTrustTunnelWarpConnector_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func ZeroTrustTunnelWarpConnector_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustTunnelWarpConnector_IsConstruct(x interface{}) *bool {
+func ZeroTrustTunnelWarpConnector_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustTunnelWarpConnector_IsConstructParameters(x); err != nil {
@@ -651,7 +650,7 @@ func ZeroTrustTunnelWarpConnector_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func ZeroTrustTunnelWarpConnector_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustTunnelWarpConnector_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustTunnelWarpConnector_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustTunnelWarpConnector_IsTerraformElementParameters(x); err != nil {
@@ -670,7 +669,7 @@ func ZeroTrustTunnelWarpConnector_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func ZeroTrustTunnelWarpConnector_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustTunnelWarpConnector_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustTunnelWarpConnector_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustTunnelWarpConnector_IsTerraformResourceParameters(x); err != nil {
@@ -689,7 +688,7 @@ func ZeroTrustTunnelWarpConnector_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelWarpConnector.ZeroTrustTunnelWarpConnector",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -714,31 +713,31 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,15 +865,15 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -893,7 +892,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -906,7 +905,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,18 +919,18 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -942,7 +941,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -953,7 +952,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -973,8 +972,8 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ResetTunnelSecret() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -986,8 +985,8 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -999,8 +998,8 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1012,8 +1011,8 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1038,8 +1037,8 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1050,4 +1049,3 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ToTerraform() interface{} {
 
 	return returns
 }
-

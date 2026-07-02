@@ -13,19 +13,19 @@ import (
 type ContentScanningExpression interface {
 	cdktf.TerraformResource
 	Body() ContentScanningExpressionBodyList
-	BodyInput() interface{}
+	BodyInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,15 +50,15 @@ type ContentScanningExpression interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -68,9 +68,9 @@ type ContentScanningExpression interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type ContentScanningExpression interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,28 +100,28 @@ type ContentScanningExpression interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutBody(value interface{})
+	PutBody(value any)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContentScanningExpression
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ContentScanningExpression) Body() ContentScanningExpressionBo
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) BodyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContentScanningExpression) BodyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bodyInput",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ContentScanningExpression) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContentScanningExpression) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ContentScanningExpression) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContentScanningExpression) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ContentScanningExpression) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContentScanningExpression) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_ContentScanningExpression) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContentScanningExpression) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_ContentScanningExpression) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContentScanningExpression) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_ContentScanningExpression) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContentScanningExpression) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_ContentScanningExpression) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression(scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) ContentScanningExpression {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewContentScanningExpression(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewContentScanningExpression_Override(c ContentScanningExpression, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContentScanningExpression) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetCount(val interface{}) {
+func (j *jsiiProxy_ContentScanningExpression) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContentScanningExpression) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContentScanningExpression) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -407,7 +406,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContentScanningExpression) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContentScanningExpression) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -426,7 +425,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContentScanningExpression) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_ContentScanningExpression)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ContentScanningExpression)SetZoneId(val *string) {
+func (j *jsiiProxy_ContentScanningExpression) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func ContentScanningExpression_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func ContentScanningExpression_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContentScanningExpression_IsConstruct(x interface{}) *bool {
+func ContentScanningExpression_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContentScanningExpression_IsConstructParameters(x); err != nil {
@@ -495,7 +494,7 @@ func ContentScanningExpression_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func ContentScanningExpression_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContentScanningExpression_IsTerraformElement(x interface{}) *bool {
+func ContentScanningExpression_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContentScanningExpression_IsTerraformElementParameters(x); err != nil {
@@ -514,7 +513,7 @@ func ContentScanningExpression_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func ContentScanningExpression_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContentScanningExpression_IsTerraformResource(x interface{}) *bool {
+func ContentScanningExpression_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContentScanningExpression_IsTerraformResourceParameters(x); err != nil {
@@ -533,7 +532,7 @@ func ContentScanningExpression_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,31 +557,31 @@ func (c *jsiiProxy_ContentScanningExpression) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContentScanningExpression) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContentScanningExpression) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContentScanningExpression) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContentScanningExpression) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (c *jsiiProxy_ContentScanningExpression) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,15 +709,15 @@ func (c *jsiiProxy_ContentScanningExpression) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContentScanningExpression) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContentScanningExpression) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -737,7 +736,7 @@ func (c *jsiiProxy_ContentScanningExpression) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -750,7 +749,7 @@ func (c *jsiiProxy_ContentScanningExpression) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,18 +763,18 @@ func (c *jsiiProxy_ContentScanningExpression) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContentScanningExpression) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContentScanningExpression) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -786,7 +785,7 @@ func (c *jsiiProxy_ContentScanningExpression) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -797,18 +796,18 @@ func (c *jsiiProxy_ContentScanningExpression) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ContentScanningExpression) PutBody(value interface{}) {
+func (c *jsiiProxy_ContentScanningExpression) PutBody(value any) {
 	if err := c.validatePutBodyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBody",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -820,8 +819,8 @@ func (c *jsiiProxy_ContentScanningExpression) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_ContentScanningExpression) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContentScanningExpression) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -833,8 +832,8 @@ func (c *jsiiProxy_ContentScanningExpression) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_ContentScanningExpression) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContentScanningExpression) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -846,8 +845,8 @@ func (c *jsiiProxy_ContentScanningExpression) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_ContentScanningExpression) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContentScanningExpression) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -859,8 +858,8 @@ func (c *jsiiProxy_ContentScanningExpression) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ContentScanningExpression) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContentScanningExpression) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -885,8 +884,8 @@ func (c *jsiiProxy_ContentScanningExpression) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContentScanningExpression) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContentScanningExpression) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -897,4 +896,3 @@ func (c *jsiiProxy_ContentScanningExpression) ToTerraform() interface{} {
 
 	return returns
 }
-

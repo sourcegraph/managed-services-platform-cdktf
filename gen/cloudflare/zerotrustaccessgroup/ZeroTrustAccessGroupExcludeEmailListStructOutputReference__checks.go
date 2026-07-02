@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeEmailListStructOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeEmailListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeEmailListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeEmailListStructOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeEmailListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeEmailListStructOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZeroTrustAccessGroupExcludeEmailListStructOutputReferenceParamet
 
 	return nil
 }
-

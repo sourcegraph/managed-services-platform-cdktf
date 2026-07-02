@@ -1,6 +1,5 @@
 package zerotrustdeviceposturerule
 
-
 type ZeroTrustDevicePostureRuleInput struct {
 	// The Number of active threats.
 	//
@@ -19,7 +18,7 @@ type ZeroTrustDevicePostureRuleInput struct {
 	// We recommend keeping this enabled unless the certificate was deployed without a private key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#check_private_key ZeroTrustDevicePostureRule#check_private_key}
-	CheckPrivateKey interface{} `field:"optional" json:"checkPrivateKey" yaml:"checkPrivateKey"`
+	CheckPrivateKey any `field:"optional" json:"checkPrivateKey" yaml:"checkPrivateKey"`
 	// Common Name that is protected by the certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#cn ZeroTrustDevicePostureRule#cn}
@@ -47,11 +46,11 @@ type ZeroTrustDevicePostureRuleInput struct {
 	// Enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#enabled ZeroTrustDevicePostureRule#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Whether or not file exists.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#exists ZeroTrustDevicePostureRule#exists}
-	Exists interface{} `field:"optional" json:"exists" yaml:"exists"`
+	Exists any `field:"optional" json:"exists" yaml:"exists"`
 	// List of values indicating purposes for which the certificate public key can be used.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#extended_key_usage ZeroTrustDevicePostureRule#extended_key_usage}
@@ -66,11 +65,11 @@ type ZeroTrustDevicePostureRuleInput struct {
 	// Whether device is infected.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#infected ZeroTrustDevicePostureRule#infected}
-	Infected interface{} `field:"optional" json:"infected" yaml:"infected"`
+	Infected any `field:"optional" json:"infected" yaml:"infected"`
 	// Whether device is active.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#is_active ZeroTrustDevicePostureRule#is_active}
-	IsActive interface{} `field:"optional" json:"isActive" yaml:"isActive"`
+	IsActive any `field:"optional" json:"isActive" yaml:"isActive"`
 	// The Number of Issues.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#issue_count ZeroTrustDevicePostureRule#issue_count}
@@ -126,7 +125,7 @@ type ZeroTrustDevicePostureRuleInput struct {
 	// Whether to check all disks for encryption.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#require_all ZeroTrustDevicePostureRule#require_all}
-	RequireAll interface{} `field:"optional" json:"requireAll" yaml:"requireAll"`
+	RequireAll any `field:"optional" json:"requireAll" yaml:"requireAll"`
 	// For more details on risk level, refer to the Tanium documentation. Available values: "low", "medium", "high", "critical".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#risk_level ZeroTrustDevicePostureRule#risk_level}
@@ -172,4 +171,3 @@ type ZeroTrustDevicePostureRuleInput struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_rule#version_operator ZeroTrustDevicePostureRule#version_operator}
 	VersionOperator *string `field:"optional" json:"versionOperator" yaml:"versionOperator"`
 }
-

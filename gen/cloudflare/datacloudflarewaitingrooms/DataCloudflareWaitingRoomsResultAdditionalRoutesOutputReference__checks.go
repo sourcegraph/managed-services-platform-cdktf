@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultAdditionalRoutesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultAdditionalRoutesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultAdditionalRoutesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareWaitingRoomsResultAdditionalRoutesOutputReferenceP
 
 	return nil
 }
-

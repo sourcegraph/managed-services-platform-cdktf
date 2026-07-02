@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -234,4 +234,3 @@ func validateNewZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,17 +27,17 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
-	TargetAttributes() interface{}
-	SetTargetAttributes(val interface{})
-	TargetAttributesInput() interface{}
+	TargetAttributes() any
+	SetTargetAttributes(val any)
+	TargetAttributesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Prot
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) TargetAttributes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) TargetAttributes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetAttributes",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Targ
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) TargetAttributesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) TargetAttributesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetAttributesInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Terr
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationTargetCriteriaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationTargetCriteriaOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewZeroTrustAccessApplicationTargetCriteriaOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteriaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewZeroTrustAccessApplicationTargetCriteriaOutputReference_Override(z ZeroT
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteriaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetPo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetPr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetTargetAttributes(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetTargetAttributes(val any) {
 	if err := j.validateSetTargetAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetTa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Comp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetL
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Inte
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ToSt
 
 	return returns
 }
-

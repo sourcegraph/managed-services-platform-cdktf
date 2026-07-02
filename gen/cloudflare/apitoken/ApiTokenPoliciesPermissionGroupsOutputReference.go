@@ -12,9 +12,9 @@ type ApiTokenPoliciesPermissionGroupsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,10 +30,10 @@ type ApiTokenPoliciesPermissionGroupsOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Meta() ApiTokenPoliciesPermissionGroupsMetaOutputReference
-	MetaInput() interface{}
+	MetaInput() any
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -46,7 +46,7 @@ type ApiTokenPoliciesPermissionGroupsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ApiTokenPoliciesPermissionGroupsOutputReference interface {
 	ResetMeta()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) IdInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Meta() ApiTo
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) MetaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) MetaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"metaInput",
@@ -204,7 +204,6 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewApiTokenPoliciesPermissionGroupsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiTokenPoliciesPermissionGroupsOutputReference {
 	_init_.Initialize()
 
@@ -215,7 +214,7 @@ func NewApiTokenPoliciesPermissionGroupsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiToken.ApiTokenPoliciesPermissionGroupsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -227,12 +226,12 @@ func NewApiTokenPoliciesPermissionGroupsOutputReference_Override(a ApiTokenPolic
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiToken.ApiTokenPoliciesPermissionGroupsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) PutMeta(valu
 	_jsii_.InvokeVoid(
 		a,
 		"putMeta",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -503,16 +502,16 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) ResetMeta() 
 	)
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -531,4 +530,3 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) ToString() *
 
 	return returns
 }
-

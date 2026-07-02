@@ -34,7 +34,7 @@ func (m *jsiiProxy_ManagedTransformsManagedRequestHeadersList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewManagedTransformsManagedRequestHeadersListParameters(terraformRe
 
 	return nil
 }
-

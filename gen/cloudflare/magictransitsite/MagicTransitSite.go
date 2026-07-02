@@ -18,18 +18,18 @@ type MagicTransitSite interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectorId() *string
 	SetConnectorId(val *string)
 	ConnectorIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,16 +45,16 @@ type MagicTransitSite interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HaMode() interface{}
-	SetHaMode(val interface{})
-	HaModeInput() interface{}
+	HaMode() any
+	SetHaMode(val any)
+	HaModeInput() any
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Location() MagicTransitSiteLocationOutputReference
-	LocationInput() interface{}
+	LocationInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,27 +65,27 @@ type MagicTransitSite interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecondaryConnectorId() *string
 	SetSecondaryConnectorId(val *string)
 	SecondaryConnectorIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type MagicTransitSite interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type MagicTransitSite interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type MagicTransitSite interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecondaryConnectorId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MagicTransitSite
@@ -179,8 +179,8 @@ func (j *jsiiProxy_MagicTransitSite) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSite) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_MagicTransitSite) ConnectorIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicTransitSite) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_MagicTransitSite) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSite) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_MagicTransitSite) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) HaMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSite) HaMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"haMode",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_MagicTransitSite) HaMode() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) HaModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSite) HaModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"haModeInput",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_MagicTransitSite) Location() MagicTransitSiteLocationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) LocationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSite) LocationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"locationInput",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_MagicTransitSite) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MagicTransitSite) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_MagicTransitSite) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSite) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_MagicTransitSite) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSite) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicTransitSite) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -459,7 +459,6 @@ func (j *jsiiProxy_MagicTransitSite) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource.
 func NewMagicTransitSite(scope constructs.Construct, id *string, config *MagicTransitSiteConfig) MagicTransitSite {
 	_init_.Initialize()
@@ -471,7 +470,7 @@ func NewMagicTransitSite(scope constructs.Construct, id *string, config *MagicTr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -484,12 +483,12 @@ func NewMagicTransitSite_Override(m MagicTransitSite, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetAccountId(val *string) {
+func (j *jsiiProxy_MagicTransitSite) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_MagicTransitSite)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetConnection(val interface{}) {
+func (j *jsiiProxy_MagicTransitSite) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_MagicTransitSite)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetConnectorId(val *string) {
+func (j *jsiiProxy_MagicTransitSite) SetConnectorId(val *string) {
 	if err := j.validateSetConnectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_MagicTransitSite)SetConnectorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetCount(val interface{}) {
+func (j *jsiiProxy_MagicTransitSite) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_MagicTransitSite)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MagicTransitSite) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_MagicTransitSite)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetDescription(val *string) {
+func (j *jsiiProxy_MagicTransitSite) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_MagicTransitSite)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicTransitSite) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -560,7 +559,7 @@ func (j *jsiiProxy_MagicTransitSite)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetHaMode(val interface{}) {
+func (j *jsiiProxy_MagicTransitSite) SetHaMode(val any) {
 	if err := j.validateSetHaModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_MagicTransitSite)SetHaMode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicTransitSite) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_MagicTransitSite)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetName(val *string) {
+func (j *jsiiProxy_MagicTransitSite) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_MagicTransitSite)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicTransitSite) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_MagicTransitSite)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MagicTransitSite) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_MagicTransitSite)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSite)SetSecondaryConnectorId(val *string) {
+func (j *jsiiProxy_MagicTransitSite) SetSecondaryConnectorId(val *string) {
 	if err := j.validateSetSecondaryConnectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func MagicTransitSite_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func MagicTransitSite_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MagicTransitSite_IsConstruct(x interface{}) *bool {
+func MagicTransitSite_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicTransitSite_IsConstructParameters(x); err != nil {
@@ -670,7 +669,7 @@ func MagicTransitSite_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func MagicTransitSite_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicTransitSite_IsTerraformElement(x interface{}) *bool {
+func MagicTransitSite_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicTransitSite_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func MagicTransitSite_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func MagicTransitSite_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicTransitSite_IsTerraformResource(x interface{}) *bool {
+func MagicTransitSite_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicTransitSite_IsTerraformResourceParameters(x); err != nil {
@@ -708,7 +707,7 @@ func MagicTransitSite_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,31 +732,31 @@ func (m *jsiiProxy_MagicTransitSite) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSite) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MagicTransitSite) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSite) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicTransitSite) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (m *jsiiProxy_MagicTransitSite) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (m *jsiiProxy_MagicTransitSite) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (m *jsiiProxy_MagicTransitSite) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (m *jsiiProxy_MagicTransitSite) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (m *jsiiProxy_MagicTransitSite) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (m *jsiiProxy_MagicTransitSite) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (m *jsiiProxy_MagicTransitSite) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,15 +884,15 @@ func (m *jsiiProxy_MagicTransitSite) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSite) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSite) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -912,7 +911,7 @@ func (m *jsiiProxy_MagicTransitSite) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -925,7 +924,7 @@ func (m *jsiiProxy_MagicTransitSite) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,18 +938,18 @@ func (m *jsiiProxy_MagicTransitSite) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSite) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MagicTransitSite) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -961,7 +960,7 @@ func (m *jsiiProxy_MagicTransitSite) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -972,7 +971,7 @@ func (m *jsiiProxy_MagicTransitSite) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -983,7 +982,7 @@ func (m *jsiiProxy_MagicTransitSite) PutLocation(value *MagicTransitSiteLocation
 	_jsii_.InvokeVoid(
 		m,
 		"putLocation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1035,8 +1034,8 @@ func (m *jsiiProxy_MagicTransitSite) ResetSecondaryConnectorId() {
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSite) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicTransitSite) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1048,8 +1047,8 @@ func (m *jsiiProxy_MagicTransitSite) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSite) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicTransitSite) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1061,8 +1060,8 @@ func (m *jsiiProxy_MagicTransitSite) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSite) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSite) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1074,8 +1073,8 @@ func (m *jsiiProxy_MagicTransitSite) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSite) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSite) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1100,8 +1099,8 @@ func (m *jsiiProxy_MagicTransitSite) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSite) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSite) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1112,4 +1111,3 @@ func (m *jsiiProxy_MagicTransitSite) ToTerraform() interface{} {
 
 	return returns
 }
-

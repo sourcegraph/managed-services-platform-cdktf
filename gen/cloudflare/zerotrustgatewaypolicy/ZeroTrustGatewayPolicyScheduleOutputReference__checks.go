@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) validateSetFri
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewZeroTrustGatewayPolicyScheduleOutputReferenceParameters(terrafor
 
 	return nil
 }
-

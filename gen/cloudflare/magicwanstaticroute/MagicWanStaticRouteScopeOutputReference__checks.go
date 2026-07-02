@@ -114,7 +114,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateSetColoRegio
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMagicWanStaticRouteScopeOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

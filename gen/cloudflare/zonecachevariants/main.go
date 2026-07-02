@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
-		reflect.TypeOf((*ZoneCacheVariants)(nil)).Elem(),
+		reflect.TypeFor[ZoneCacheVariants](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneCacheVariants{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsConfig",
-		reflect.TypeOf((*ZoneCacheVariantsConfig)(nil)).Elem(),
+		reflect.TypeFor[ZoneCacheVariantsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValue",
-		reflect.TypeOf((*ZoneCacheVariantsValue)(nil)).Elem(),
+		reflect.TypeFor[ZoneCacheVariantsValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
-		reflect.TypeOf((*ZoneCacheVariantsValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneCacheVariantsValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avif", GoGetter: "Avif"},
 			_jsii_.MemberProperty{JsiiProperty: "avifInput", GoGetter: "AvifInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webp", GoGetter: "Webp"},
 			_jsii_.MemberProperty{JsiiProperty: "webpInput", GoGetter: "WebpInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneCacheVariantsValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

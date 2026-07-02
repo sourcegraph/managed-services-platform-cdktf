@@ -12,9 +12,9 @@ type ZeroTrustGatewaySettingsSettingsSandboxOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type ZeroTrustGatewaySettingsSettingsSandboxOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	FallbackAction() *string
 	SetFallbackAction(val *string)
 	FallbackActionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ZeroTrustGatewaySettingsSettingsSandboxOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ZeroTrustGatewaySettingsSettingsSandboxOutputReference interface {
 	ResetFallbackAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Terra
 	return returns
 }
 
-
 func NewZeroTrustGatewaySettingsSettingsSandboxOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsSandboxOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewZeroTrustGatewaySettingsSettingsSandboxOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsSandboxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewZeroTrustGatewaySettingsSettingsSandboxOutputReference_Override(z ZeroTr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsSandboxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetFallbackAction(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetFallbackAction(val *string) {
 	if err := j.validateSetFallbackActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetFal
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Compu
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetBo
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetBo
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetLi
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetNu
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetNu
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetNu
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetSt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) GetSt
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Inter
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Reset
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsSandboxOutputReference) ToStr
 
 	return returns
 }
-

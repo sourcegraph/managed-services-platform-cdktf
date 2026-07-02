@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareQueueConsumer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareQueueConsumer_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataCloudflareQueueConsumer_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareQueueConsumer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareQueueConsumer_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataCloudflareQueueConsumer_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareQueueConsumer_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareQueueConsumer_IsTerraformDataSourceParameters(x inter
 	return nil
 }
 
-func validateDataCloudflareQueueConsumer_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareQueueConsumer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetAccountIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareQueueConsumerParameters(scope constructs.Construct
 
 	return nil
 }
-

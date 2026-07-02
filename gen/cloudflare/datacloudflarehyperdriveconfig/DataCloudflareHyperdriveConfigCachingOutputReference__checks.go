@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigCachingOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfigCachingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigCachingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareHyperdriveConfigCachingOutputReferenceParameters(t
 
 	return nil
 }
-

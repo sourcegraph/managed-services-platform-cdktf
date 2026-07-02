@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareCustomSslsResultOutputReferenceParameters(terrafor
 
 	return nil
 }
-

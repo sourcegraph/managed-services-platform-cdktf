@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZoneDnsSettingsNameserversOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

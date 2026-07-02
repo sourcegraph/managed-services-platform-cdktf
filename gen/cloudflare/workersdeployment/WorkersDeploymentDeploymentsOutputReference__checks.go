@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkersDeploymentDeploymentsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

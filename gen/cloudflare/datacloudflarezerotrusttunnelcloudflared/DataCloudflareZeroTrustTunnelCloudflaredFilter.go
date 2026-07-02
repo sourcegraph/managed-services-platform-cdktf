@@ -1,6 +1,5 @@
 package datacloudflarezerotrusttunnelcloudflared
 
-
 type DataCloudflareZeroTrustTunnelCloudflaredFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared#exclude_prefix DataCloudflareZeroTrustTunnelCloudflared#exclude_prefix}.
 	ExcludePrefix *string `field:"optional" json:"excludePrefix" yaml:"excludePrefix"`
@@ -13,7 +12,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredFilter struct {
 	// If `true`, only include deleted tunnels. If `false`, exclude deleted tunnels. If empty, all tunnels will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared#is_deleted DataCloudflareZeroTrustTunnelCloudflared#is_deleted}
-	IsDeleted interface{} `field:"optional" json:"isDeleted" yaml:"isDeleted"`
+	IsDeleted any `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 	// A user-friendly name for a tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared#name DataCloudflareZeroTrustTunnelCloudflared#name}
@@ -34,4 +33,3 @@ type DataCloudflareZeroTrustTunnelCloudflaredFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared#was_inactive_at DataCloudflareZeroTrustTunnelCloudflared#was_inactive_at}.
 	WasInactiveAt *string `field:"optional" json:"wasInactiveAt" yaml:"wasInactiveAt"`
 }
-

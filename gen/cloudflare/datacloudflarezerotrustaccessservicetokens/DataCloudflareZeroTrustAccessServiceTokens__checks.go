@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustAccessServiceTokens_GenerateConfigForImportP
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessServiceTokens_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessServiceTokens_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustAccessServiceTokens_IsConstructParameters(x 
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessServiceTokens_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessServiceTokens_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustAccessServiceTokens_IsTerraformDataSourcePar
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessServiceTokens_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessServiceTokens_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) validateSetAccoun
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -271,4 +271,3 @@ func validateNewDataCloudflareZeroTrustAccessServiceTokensParameters(scope const
 
 	return nil
 }
-

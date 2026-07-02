@@ -6,9 +6,9 @@ import (
 
 type LoadBalancerPoolConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoadBalancerPoolConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#account_id LoadBalancerPool#account_id}
@@ -32,7 +32,7 @@ type LoadBalancerPoolConfig struct {
 	// Traffic directed at this pool is balanced across all currently healthy origins, provided the pool itself is healthy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#origins LoadBalancerPool#origins}
-	Origins interface{} `field:"required" json:"origins" yaml:"origins"`
+	Origins any `field:"required" json:"origins" yaml:"origins"`
 	// A list of regions from which to run health checks. Null means every Cloudflare data center.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#check_regions LoadBalancerPool#check_regions}
@@ -46,7 +46,7 @@ type LoadBalancerPoolConfig struct {
 	// Disabled pools will not receive traffic and are excluded from health checks. Disabling a pool will cause any load balancers using it to failover to the next pool (if any).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The latitude of the data center containing the origins used in this pool in decimal degrees.
 	//
 	// If this is set, longitude must also be set.
@@ -88,4 +88,3 @@ type LoadBalancerPoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#origin_steering LoadBalancerPool#origin_steering}
 	OriginSteering *LoadBalancerPoolOriginSteering `field:"optional" json:"originSteering" yaml:"originSteering"`
 }
-

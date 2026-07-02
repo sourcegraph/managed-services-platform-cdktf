@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareWaitingRoom) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareWaitingRoom) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareWaitingRoom_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataCloudflareWaitingRoom_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareWaitingRoom_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareWaitingRoom_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataCloudflareWaitingRoom_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareWaitingRoom_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareWaitingRoom_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataCloudflareWaitingRoom_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareWaitingRoom_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareWaitingRoom_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoom) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareWaitingRoom) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareWaitingRoomParameters(scope constructs.Construct, 
 
 	return nil
 }
-

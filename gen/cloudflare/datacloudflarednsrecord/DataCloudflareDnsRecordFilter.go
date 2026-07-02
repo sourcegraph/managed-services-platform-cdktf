@@ -1,6 +1,5 @@
 package datacloudflarednsrecord
 
-
 type DataCloudflareDnsRecordFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}.
 	Comment *DataCloudflareDnsRecordFilterComment `field:"optional" json:"comment" yaml:"comment"`
@@ -26,7 +25,7 @@ type DataCloudflareDnsRecordFilter struct {
 	// Whether the record is receiving the performance and security benefits of Cloudflare.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
-	Proxied interface{} `field:"optional" json:"proxied" yaml:"proxied"`
+	Proxied any `field:"optional" json:"proxied" yaml:"proxied"`
 	// Allows searching in multiple properties of a DNS record simultaneously.
 	//
 	// This parameter is intended for human users, not automation. Its exact behavior is intentionally left unspecified and is subject to change in the future. This parameter works independently of the `match` setting. For automated searches, please use the other available parameters.
@@ -49,4 +48,3 @@ type DataCloudflareDnsRecordFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

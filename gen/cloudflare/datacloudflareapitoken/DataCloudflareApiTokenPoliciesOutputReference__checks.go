@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareApiTokenPoliciesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiTokenPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareApiTokenPoliciesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

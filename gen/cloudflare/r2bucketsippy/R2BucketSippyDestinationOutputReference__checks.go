@@ -114,7 +114,7 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetCloudProv
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewR2BucketSippyDestinationOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

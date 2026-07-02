@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareFirewallRules) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareFirewallRules) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareFirewallRules_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataCloudflareFirewallRules_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareFirewallRules_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareFirewallRules_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataCloudflareFirewallRules_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareFirewallRules_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareFirewallRules_IsTerraformDataSourceParameters(x inter
 	return nil
 }
 
-func validateDataCloudflareFirewallRules_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareFirewallRules_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareFirewallRules) validateSetActionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRules) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareFirewallRules) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_DataCloudflareFirewallRules) validateSetMaxItemsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRules) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareFirewallRules) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewDataCloudflareFirewallRulesParameters(scope constructs.Construct
 
 	return nil
 }
-

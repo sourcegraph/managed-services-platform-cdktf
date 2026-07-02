@@ -16,11 +16,11 @@ type DataCloudflarePageShieldPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,11 +51,11 @@ type DataCloudflarePageShieldPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -63,9 +63,9 @@ type DataCloudflarePageShieldPolicy interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataCloudflarePageShieldPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflarePageShieldPolicy
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -350,7 +350,6 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_policy cloudflare_page_shield_policy} Data Source.
 func NewDataCloudflarePageShieldPolicy(scope constructs.Construct, id *string, config *DataCloudflarePageShieldPolicyConfig) DataCloudflarePageShieldPolicy {
 	_init_.Initialize()
@@ -362,7 +361,7 @@ func NewDataCloudflarePageShieldPolicy(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -375,12 +374,12 @@ func NewDataCloudflarePageShieldPolicy_Override(d DataCloudflarePageShieldPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetPolicyId(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldPolicy)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldPolicy) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func DataCloudflarePageShieldPolicy_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataCloudflarePageShieldPolicy_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflarePageShieldPolicy_IsConstruct(x interface{}) *bool {
+func DataCloudflarePageShieldPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldPolicy_IsConstructParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataCloudflarePageShieldPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataCloudflarePageShieldPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflarePageShieldPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflarePageShieldPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataCloudflarePageShieldPolicy_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func DataCloudflarePageShieldPolicy_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflarePageShieldPolicy_IsTerraformElement(x interface{}) *bool {
+func DataCloudflarePageShieldPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldPolicy_IsTerraformElementParameters(x); err != nil {
@@ -533,7 +532,7 @@ func DataCloudflarePageShieldPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,27 +550,27 @@ func DataCloudflarePageShieldPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -749,8 +748,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ResetPolicyId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -762,8 +761,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -775,8 +774,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -788,8 +787,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -814,8 +813,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -826,4 +825,3 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

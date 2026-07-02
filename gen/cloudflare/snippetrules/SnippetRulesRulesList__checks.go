@@ -34,7 +34,7 @@ func (s *jsiiProxy_SnippetRulesRulesList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_SnippetRulesRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SnippetRulesRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSnippetRulesRulesListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

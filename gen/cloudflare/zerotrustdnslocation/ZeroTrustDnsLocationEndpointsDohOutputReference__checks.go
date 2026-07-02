@@ -90,7 +90,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateInte
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validatePutNetworksParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,7 +238,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetRequireTokenParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetRequireTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -285,4 +285,3 @@ func validateNewZeroTrustDnsLocationEndpointsDohOutputReferenceParameters(terraf
 
 	return nil
 }
-

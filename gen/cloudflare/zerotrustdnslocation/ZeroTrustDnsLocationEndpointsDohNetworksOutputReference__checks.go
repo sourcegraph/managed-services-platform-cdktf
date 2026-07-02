@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustDnsLocationEndpointsDohNetworksOutputReferenceParameter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesAdaptiveRoutin
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesAdaptiveRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesAdaptiveRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareLoadBalancersResultRulesOverridesAdaptiveRoutingOu
 
 	return nil
 }
-

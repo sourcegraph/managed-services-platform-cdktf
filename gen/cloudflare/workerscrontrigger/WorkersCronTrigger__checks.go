@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkersCronTrigger) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (w *jsiiProxy_WorkersCronTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkersCronTrigger) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkersCronTrigger) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersCronTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkersCronTrigger) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WorkersCronTrigger) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (w *jsiiProxy_WorkersCronTrigger) validatePutSchedulesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersCronTrigger) validatePutSchedulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWorkersCronTrigger_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateWorkersCronTrigger_IsConstructParameters(x interface{}) error {
+func validateWorkersCronTrigger_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWorkersCronTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkersCronTrigger_IsTerraformElementParameters(x interface{}) error {
+func validateWorkersCronTrigger_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWorkersCronTrigger_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateWorkersCronTrigger_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkersCronTrigger_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_WorkersCronTrigger) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersCronTrigger) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_WorkersCronTrigger) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersCronTrigger) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -381,7 +381,7 @@ func (j *jsiiProxy_WorkersCronTrigger) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkersCronTrigger) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewWorkersCronTriggerParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareApiShieldOperationsResultFeaturesSchemaInfoOutputR
 
 	return nil
 }
-

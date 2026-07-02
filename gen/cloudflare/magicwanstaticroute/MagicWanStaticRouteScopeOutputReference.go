@@ -18,9 +18,9 @@ type MagicWanStaticRouteScopeOutputReference interface {
 	ColoRegionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type MagicWanStaticRouteScopeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type MagicWanStaticRouteScopeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type MagicWanStaticRouteScopeOutputReference interface {
 	ResetColoRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) ColoRegionsInput() *
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewMagicWanStaticRouteScopeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteScopeOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewMagicWanStaticRouteScopeOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewMagicWanStaticRouteScopeOutputReference_Override(m MagicWanStaticRouteSc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetColoNames(val *[]*string) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetColoNames(val *[]*string) {
 	if err := j.validateSetColoNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetColoNames(val *[]*
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetColoRegions(val *[]*string) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetColoRegions(val *[]*string) {
 	if err := j.validateSetColoRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetColoRegions(val *[
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicWanStaticRouteScopeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) ResetColoRegions() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) ToString() *string {
 
 	return returns
 }
-

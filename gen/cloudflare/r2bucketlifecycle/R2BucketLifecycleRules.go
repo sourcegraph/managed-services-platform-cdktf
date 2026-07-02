@@ -1,6 +1,5 @@
 package r2bucketlifecycle
 
-
 type R2BucketLifecycleRules struct {
 	// Conditions that apply to all transitions of this rule.
 	//
@@ -9,7 +8,7 @@ type R2BucketLifecycleRules struct {
 	// Whether or not this rule is in effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Unique identifier for this rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
@@ -28,6 +27,5 @@ type R2BucketLifecycleRules struct {
 	// Transitions to change the storage class of objects.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
-	StorageClassTransitions interface{} `field:"optional" json:"storageClassTransitions" yaml:"storageClassTransitions"`
+	StorageClassTransitions any `field:"optional" json:"storageClassTransitions" yaml:"storageClassTransitions"`
 }
-

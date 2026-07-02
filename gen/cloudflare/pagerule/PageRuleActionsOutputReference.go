@@ -10,9 +10,9 @@ import (
 
 type PageRuleActionsOutputReference interface {
 	cdktf.ComplexObject
-	AlwaysUseHttps() interface{}
-	SetAlwaysUseHttps(val interface{})
-	AlwaysUseHttpsInput() interface{}
+	AlwaysUseHttps() any
+	SetAlwaysUseHttps(val any)
+	AlwaysUseHttpsInput() any
 	AutomaticHttpsRewrites() *string
 	SetAutomaticHttpsRewrites(val *string)
 	AutomaticHttpsRewritesInput() *string
@@ -32,7 +32,7 @@ type PageRuleActionsOutputReference interface {
 	SetCacheDeceptionArmor(val *string)
 	CacheDeceptionArmorInput() *string
 	CacheKeyFields() PageRuleActionsCacheKeyFieldsOutputReference
-	CacheKeyFieldsInput() interface{}
+	CacheKeyFieldsInput() any
 	CacheLevel() *string
 	SetCacheLevel(val *string)
 	CacheLevelInput() *string
@@ -44,9 +44,9 @@ type PageRuleActionsOutputReference interface {
 	CacheTtlByStatusInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -57,18 +57,18 @@ type PageRuleActionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableApps() interface{}
-	SetDisableApps(val interface{})
-	DisableAppsInput() interface{}
-	DisablePerformance() interface{}
-	SetDisablePerformance(val interface{})
-	DisablePerformanceInput() interface{}
-	DisableSecurity() interface{}
-	SetDisableSecurity(val interface{})
-	DisableSecurityInput() interface{}
-	DisableZaraz() interface{}
-	SetDisableZaraz(val interface{})
-	DisableZarazInput() interface{}
+	DisableApps() any
+	SetDisableApps(val any)
+	DisableAppsInput() any
+	DisablePerformance() any
+	SetDisablePerformance(val any)
+	DisablePerformanceInput() any
+	DisableSecurity() any
+	SetDisableSecurity(val any)
+	DisableSecurityInput() any
+	DisableZaraz() any
+	SetDisableZaraz(val any)
+	DisableZarazInput() any
 	EdgeCacheTtl() *float64
 	SetEdgeCacheTtl(val *float64)
 	EdgeCacheTtlInput() *float64
@@ -79,14 +79,14 @@ type PageRuleActionsOutputReference interface {
 	SetExplicitCacheControl(val *string)
 	ExplicitCacheControlInput() *string
 	ForwardingUrl() PageRuleActionsForwardingUrlOutputReference
-	ForwardingUrlInput() interface{}
+	ForwardingUrlInput() any
 	// Experimental.
 	Fqn() *string
 	HostHeaderOverride() *string
 	SetHostHeaderOverride(val *string)
 	HostHeaderOverrideInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpGeolocation() *string
 	SetIpGeolocation(val *string)
 	IpGeolocationInput() *string
@@ -140,7 +140,7 @@ type PageRuleActionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -199,7 +199,7 @@ type PageRuleActionsOutputReference interface {
 	ResetWaf()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -212,8 +212,8 @@ type jsiiProxy_PageRuleActionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysUseHttps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysUseHttps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alwaysUseHttps",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysUseHttps() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysUseHttpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysUseHttpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alwaysUseHttpsInput",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheKeyFields() PageRuleActi
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) CacheKeyFieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) CacheKeyFieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheKeyFieldsInput",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatusInput() *map[
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableApps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisableApps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableApps",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisableApps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableAppsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisableAppsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAppsInput",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisableAppsInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformance() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformance() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePerformance",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformance() interfac
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformanceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformanceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePerformanceInput",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformanceInput() int
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableSecurity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisableSecurity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableSecurity",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisableSecurity() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableSecurityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisableSecurityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableSecurityInput",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisableSecurityInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableZaraz() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisableZaraz() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableZaraz",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisableZaraz() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableZarazInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) DisableZarazInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableZarazInput",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) ForwardingUrl() PageRuleActio
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) ForwardingUrlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) ForwardingUrlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forwardingUrlInput",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) HostHeaderOverrideInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -962,7 +962,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) WafInput() *string {
 	return returns
 }
 
-
 func NewPageRuleActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PageRuleActionsOutputReference {
 	_init_.Initialize()
 
@@ -973,7 +972,7 @@ func NewPageRuleActionsOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -985,12 +984,12 @@ func NewPageRuleActionsOutputReference_Override(p PageRuleActionsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetAlwaysUseHttps(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetAlwaysUseHttps(val any) {
 	if err := j.validateSetAlwaysUseHttpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1000,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetAlwaysUseHttps(val interfac
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetAutomaticHttpsRewrites(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetAutomaticHttpsRewrites(val *string) {
 	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1012,7 +1011,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetAutomaticHttpsRewrites(val 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCacheTtl(val *float64) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetBrowserCacheTtl(val *float64) {
 	if err := j.validateSetBrowserCacheTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1023,7 +1022,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCacheTtl(val *float6
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCheck(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetBrowserCheck(val *string) {
 	if err := j.validateSetBrowserCheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -1034,7 +1033,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCheck(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetBypassCacheOnCookie(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetBypassCacheOnCookie(val *string) {
 	if err := j.validateSetBypassCacheOnCookieParameters(val); err != nil {
 		panic(err)
 	}
@@ -1045,7 +1044,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetBypassCacheOnCookie(val *st
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheByDeviceType(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheByDeviceType(val *string) {
 	if err := j.validateSetCacheByDeviceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1056,7 +1055,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheByDeviceType(val *stri
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheDeceptionArmor(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheDeceptionArmor(val *string) {
 	if err := j.validateSetCacheDeceptionArmorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1067,7 +1066,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheDeceptionArmor(val *st
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheLevel(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheLevel(val *string) {
 	if err := j.validateSetCacheLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1078,7 +1077,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheOnCookie(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheOnCookie(val *string) {
 	if err := j.validateSetCacheOnCookieParameters(val); err != nil {
 		panic(err)
 	}
@@ -1089,7 +1088,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheOnCookie(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheTtlByStatus(val *map[string]*string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheTtlByStatus(val *map[string]*string) {
 	if err := j.validateSetCacheTtlByStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1100,7 +1099,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheTtlByStatus(val *map[s
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1111,7 +1110,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1122,7 +1121,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableApps(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableApps(val any) {
 	if err := j.validateSetDisableAppsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1133,7 +1132,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableApps(val interface{}
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisablePerformance(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisablePerformance(val any) {
 	if err := j.validateSetDisablePerformanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1143,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisablePerformance(val inte
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableSecurity(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableSecurity(val any) {
 	if err := j.validateSetDisableSecurityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1155,7 +1154,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableSecurity(val interfa
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableZaraz(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableZaraz(val any) {
 	if err := j.validateSetDisableZarazParameters(val); err != nil {
 		panic(err)
 	}
@@ -1166,7 +1165,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableZaraz(val interface{
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetEdgeCacheTtl(val *float64) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetEdgeCacheTtl(val *float64) {
 	if err := j.validateSetEdgeCacheTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1177,7 +1176,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetEdgeCacheTtl(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetEmailObfuscation(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetEmailObfuscation(val *string) {
 	if err := j.validateSetEmailObfuscationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetEmailObfuscation(val *strin
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetExplicitCacheControl(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetExplicitCacheControl(val *string) {
 	if err := j.validateSetExplicitCacheControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetExplicitCacheControl(val *s
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetHostHeaderOverride(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetHostHeaderOverride(val *string) {
 	if err := j.validateSetHostHeaderOverrideParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetHostHeaderOverride(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetIpGeolocation(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetIpGeolocation(val *string) {
 	if err := j.validateSetIpGeolocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetIpGeolocation(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetMirage(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetMirage(val *string) {
 	if err := j.validateSetMirageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetMirage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetOpportunisticEncryption(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetOpportunisticEncryption(val *string) {
 	if err := j.validateSetOpportunisticEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetOpportunisticEncryption(val
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetOriginErrorPagePassThru(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetOriginErrorPagePassThru(val *string) {
 	if err := j.validateSetOriginErrorPagePassThruParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetOriginErrorPagePassThru(val
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetPolish(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetPolish(val *string) {
 	if err := j.validateSetPolishParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetPolish(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetResolveOverride(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetResolveOverride(val *string) {
 	if err := j.validateSetResolveOverrideParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetResolveOverride(val *string
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetRespectStrongEtag(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetRespectStrongEtag(val *string) {
 	if err := j.validateSetRespectStrongEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetRespectStrongEtag(val *stri
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetResponseBuffering(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetResponseBuffering(val *string) {
 	if err := j.validateSetResponseBufferingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1309,7 +1308,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetResponseBuffering(val *stri
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetRocketLoader(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetRocketLoader(val *string) {
 	if err := j.validateSetRocketLoaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -1320,7 +1319,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetRocketLoader(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetSecurityLevel(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetSecurityLevel(val *string) {
 	if err := j.validateSetSecurityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1331,7 +1330,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetSecurityLevel(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetSortQueryStringForCache(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetSortQueryStringForCache(val *string) {
 	if err := j.validateSetSortQueryStringForCacheParameters(val); err != nil {
 		panic(err)
 	}
@@ -1342,7 +1341,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetSortQueryStringForCache(val
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetSsl(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetSsl(val *string) {
 	if err := j.validateSetSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -1353,7 +1352,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetSsl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1364,7 +1363,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1375,7 +1374,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetTrueClientIpHeader(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetTrueClientIpHeader(val *string) {
 	if err := j.validateSetTrueClientIpHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -1386,7 +1385,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetTrueClientIpHeader(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetWaf(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference) SetWaf(val *string) {
 	if err := j.validateSetWafParameters(val); err != nil {
 		panic(err)
 	}
@@ -1410,16 +1409,16 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PageRuleActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1435,7 +1434,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1451,7 +1450,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1467,7 +1466,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1483,7 +1482,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1499,7 +1498,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1515,7 +1514,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1531,7 +1530,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1547,7 +1546,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1576,7 +1575,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1590,7 +1589,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheKeyFields(value *Page
 	_jsii_.InvokeVoid(
 		p,
 		"putCacheKeyFields",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1601,7 +1600,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutForwardingUrl(value *PageR
 	_jsii_.InvokeVoid(
 		p,
 		"putForwardingUrl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1877,16 +1876,16 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ResetWaf() {
 	)
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PageRuleActionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1905,4 +1904,3 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ToString() *string {
 
 	return returns
 }
-

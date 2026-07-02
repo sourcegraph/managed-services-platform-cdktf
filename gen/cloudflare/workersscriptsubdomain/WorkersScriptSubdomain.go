@@ -18,22 +18,22 @@ type WorkersScriptSubdomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,35 +48,35 @@ type WorkersScriptSubdomain interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	PreviewsEnabled() interface{}
-	SetPreviewsEnabled(val interface{})
-	PreviewsEnabledInput() interface{}
+	PreviewsEnabled() any
+	SetPreviewsEnabled(val any)
+	PreviewsEnabledInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type WorkersScriptSubdomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type WorkersScriptSubdomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type WorkersScriptSubdomain interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreviewsEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkersScriptSubdomain
@@ -165,8 +165,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) PreviewsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) PreviewsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"previewsEnabled",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) PreviewsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) PreviewsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) PreviewsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"previewsEnabledInput",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_WorkersScriptSubdomain) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkersScriptSubdomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_WorkersScriptSubdomain) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) WorkersScriptSubdomain {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *W
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewWorkersScriptSubdomain_Override(w WorkersScriptSubdomain, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetAccountId(val *string) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetEnabled(val interface{}) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +464,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetPreviewsEnabled(val interface{}) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetPreviewsEnabled(val any) {
 	if err := j.validateSetPreviewsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetPreviewsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptSubdomain)SetScriptName(val *string) {
+func (j *jsiiProxy_WorkersScriptSubdomain) SetScriptName(val *string) {
 	if err := j.validateSetScriptNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func WorkersScriptSubdomain_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func WorkersScriptSubdomain_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkersScriptSubdomain_IsConstruct(x interface{}) *bool {
+func WorkersScriptSubdomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkersScriptSubdomain_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func WorkersScriptSubdomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func WorkersScriptSubdomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkersScriptSubdomain_IsTerraformElement(x interface{}) *bool {
+func WorkersScriptSubdomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkersScriptSubdomain_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func WorkersScriptSubdomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func WorkersScriptSubdomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkersScriptSubdomain_IsTerraformResource(x interface{}) *bool {
+func WorkersScriptSubdomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkersScriptSubdomain_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func WorkersScriptSubdomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScriptSubdomain.WorkersScriptSubdomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (w *jsiiProxy_WorkersScriptSubdomain) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkersScriptSubdomain) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersScriptSubdomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (w *jsiiProxy_WorkersScriptSubdomain) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScriptSubdomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -806,7 +805,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (w *jsiiProxy_WorkersScriptSubdomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkersScriptSubdomain) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (w *jsiiProxy_WorkersScriptSubdomain) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -886,8 +885,8 @@ func (w *jsiiProxy_WorkersScriptSubdomain) ResetPreviewsEnabled() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkersScriptSubdomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -899,8 +898,8 @@ func (w *jsiiProxy_WorkersScriptSubdomain) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkersScriptSubdomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -912,8 +911,8 @@ func (w *jsiiProxy_WorkersScriptSubdomain) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScriptSubdomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -925,8 +924,8 @@ func (w *jsiiProxy_WorkersScriptSubdomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScriptSubdomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -951,8 +950,8 @@ func (w *jsiiProxy_WorkersScriptSubdomain) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptSubdomain) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScriptSubdomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -963,4 +962,3 @@ func (w *jsiiProxy_WorkersScriptSubdomain) ToTerraform() interface{} {
 
 	return returns
 }
-

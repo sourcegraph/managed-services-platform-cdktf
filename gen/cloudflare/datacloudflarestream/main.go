@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStream",
-		reflect.TypeOf((*DataCloudflareStream)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStream](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadExpiry", GoGetter: "UploadExpiry"},
 			_jsii_.MemberProperty{JsiiProperty: "watermark", GoGetter: "Watermark"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareStream{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig",
-		reflect.TypeOf((*DataCloudflareStreamConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamInput",
-		reflect.TypeOf((*DataCloudflareStreamInput)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamInput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamInputOutputReference",
-		reflect.TypeOf((*DataCloudflareStreamInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareStreamInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,11 +122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPlayback",
-		reflect.TypeOf((*DataCloudflareStreamPlayback)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamPlayback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPlaybackOutputReference",
-		reflect.TypeOf((*DataCloudflareStreamPlaybackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamPlaybackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareStreamPlaybackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamStatus",
-		reflect.TypeOf((*DataCloudflareStreamStatus)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamStatusOutputReference",
-		reflect.TypeOf((*DataCloudflareStreamStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareStreamStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,11 +200,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamWatermark",
-		reflect.TypeOf((*DataCloudflareStreamWatermark)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamWatermark](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamWatermarkOutputReference",
-		reflect.TypeOf((*DataCloudflareStreamWatermarkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareStreamWatermarkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareStreamWatermarkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

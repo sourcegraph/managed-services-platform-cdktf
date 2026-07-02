@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetHea
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInt
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInvocationLogsParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInvocationLogsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewWorkersScriptObservabilityLogsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

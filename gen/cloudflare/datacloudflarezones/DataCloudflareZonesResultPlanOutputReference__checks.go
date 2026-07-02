@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZonesResultPlanOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZonesResultPlanOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZonesResultPlanOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZonesResultPlanOutputReferenceParameters(terraform
 
 	return nil
 }
-

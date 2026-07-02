@@ -21,15 +21,15 @@ type LoadBalancerPool interface {
 	SetCheckRegions(val *[]*string)
 	CheckRegionsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -39,9 +39,9 @@ type LoadBalancerPool interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DisabledAt() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,7 +59,7 @@ type LoadBalancerPool interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadShedding() LoadBalancerPoolLoadSheddingOutputReference
-	LoadSheddingInput() interface{}
+	LoadSheddingInput() any
 	Longitude() *float64
 	SetLongitude(val *float64)
 	LongitudeInput() *float64
@@ -80,34 +80,34 @@ type LoadBalancerPool interface {
 	SetNotificationEmail(val *string)
 	NotificationEmailInput() *string
 	NotificationFilter() LoadBalancerPoolNotificationFilterOutputReference
-	NotificationFilterInput() interface{}
+	NotificationFilterInput() any
 	Origins() LoadBalancerPoolOriginsList
-	OriginsInput() interface{}
+	OriginsInput() any
 	OriginSteering() LoadBalancerPoolOriginSteeringOutputReference
-	OriginSteeringInput() interface{}
+	OriginSteeringInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type LoadBalancerPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type LoadBalancerPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,7 +146,7 @@ type LoadBalancerPool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLoadShedding(value *LoadBalancerPoolLoadShedding)
 	PutNotificationFilter(value *LoadBalancerPoolNotificationFilter)
-	PutOrigins(value interface{})
+	PutOrigins(value any)
 	PutOriginSteering(value *LoadBalancerPoolOriginSteering)
 	ResetCheckRegions()
 	ResetDescription()
@@ -162,17 +162,17 @@ type LoadBalancerPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LoadBalancerPool
@@ -230,8 +230,8 @@ func (j *jsiiProxy_LoadBalancerPool) CheckRegionsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_LoadBalancerPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoadBalancerPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_LoadBalancerPool) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_LoadBalancerPool) DisabledAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_LoadBalancerPool) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_LoadBalancerPool) LoadShedding() LoadBalancerPoolLoadShedding
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) LoadSheddingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) LoadSheddingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"loadSheddingInput",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_LoadBalancerPool) NotificationFilter() LoadBalancerPoolNotifi
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) NotificationFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) NotificationFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationFilterInput",
@@ -580,8 +580,8 @@ func (j *jsiiProxy_LoadBalancerPool) Origins() LoadBalancerPoolOriginsList {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) OriginsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) OriginsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"originsInput",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_LoadBalancerPool) OriginSteering() LoadBalancerPoolOriginStee
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) OriginSteeringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) OriginSteeringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"originSteeringInput",
@@ -620,8 +620,8 @@ func (j *jsiiProxy_LoadBalancerPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LoadBalancerPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -630,8 +630,8 @@ func (j *jsiiProxy_LoadBalancerPool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -650,8 +650,8 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoadBalancerPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -670,7 +670,6 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) LoadBalancerPool {
 	_init_.Initialize()
@@ -682,7 +681,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -695,12 +694,12 @@ func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetAccountId(val *string) {
+func (j *jsiiProxy_LoadBalancerPool) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetCheckRegions(val *[]*string) {
+func (j *jsiiProxy_LoadBalancerPool) SetCheckRegions(val *[]*string) {
 	if err := j.validateSetCheckRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetCheckRegions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetCount(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LoadBalancerPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetDescription(val *string) {
+func (j *jsiiProxy_LoadBalancerPool) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetEnabled(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPool) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoadBalancerPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -782,7 +781,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetLatitude(val *float64) {
+func (j *jsiiProxy_LoadBalancerPool) SetLatitude(val *float64) {
 	if err := j.validateSetLatitudeParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetLatitude(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoadBalancerPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetLongitude(val *float64) {
+func (j *jsiiProxy_LoadBalancerPool) SetLongitude(val *float64) {
 	if err := j.validateSetLongitudeParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetLongitude(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetMinimumOrigins(val *float64) {
+func (j *jsiiProxy_LoadBalancerPool) SetMinimumOrigins(val *float64) {
 	if err := j.validateSetMinimumOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetMinimumOrigins(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetMonitor(val *string) {
+func (j *jsiiProxy_LoadBalancerPool) SetMonitor(val *string) {
 	if err := j.validateSetMonitorParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetMonitor(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetName(val *string) {
+func (j *jsiiProxy_LoadBalancerPool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetNotificationEmail(val *string) {
+func (j *jsiiProxy_LoadBalancerPool) SetNotificationEmail(val *string) {
 	if err := j.validateSetNotificationEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetNotificationEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoadBalancerPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -867,7 +866,7 @@ func (j *jsiiProxy_LoadBalancerPool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LoadBalancerPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func LoadBalancerPool_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func LoadBalancerPool_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LoadBalancerPool_IsConstruct(x interface{}) *bool {
+func LoadBalancerPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoadBalancerPool_IsConstructParameters(x); err != nil {
@@ -925,7 +924,7 @@ func LoadBalancerPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func LoadBalancerPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LoadBalancerPool_IsTerraformElement(x interface{}) *bool {
+func LoadBalancerPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoadBalancerPool_IsTerraformElementParameters(x); err != nil {
@@ -944,7 +943,7 @@ func LoadBalancerPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func LoadBalancerPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LoadBalancerPool_IsTerraformResource(x interface{}) *bool {
+func LoadBalancerPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoadBalancerPool_IsTerraformResourceParameters(x); err != nil {
@@ -963,7 +962,7 @@ func LoadBalancerPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -988,31 +987,31 @@ func (l *jsiiProxy_LoadBalancerPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LoadBalancerPool) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,7 +1123,7 @@ func (l *jsiiProxy_LoadBalancerPool) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,15 +1139,15 @@ func (l *jsiiProxy_LoadBalancerPool) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoadBalancerPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1167,7 +1166,7 @@ func (l *jsiiProxy_LoadBalancerPool) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (l *jsiiProxy_LoadBalancerPool) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1194,18 +1193,18 @@ func (l *jsiiProxy_LoadBalancerPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LoadBalancerPool) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (l *jsiiProxy_LoadBalancerPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (l *jsiiProxy_LoadBalancerPool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (l *jsiiProxy_LoadBalancerPool) PutLoadShedding(value *LoadBalancerPoolLoad
 	_jsii_.InvokeVoid(
 		l,
 		"putLoadShedding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1249,18 +1248,18 @@ func (l *jsiiProxy_LoadBalancerPool) PutNotificationFilter(value *LoadBalancerPo
 	_jsii_.InvokeVoid(
 		l,
 		"putNotificationFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) PutOrigins(value interface{}) {
+func (l *jsiiProxy_LoadBalancerPool) PutOrigins(value any) {
 	if err := l.validatePutOriginsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putOrigins",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1271,7 +1270,7 @@ func (l *jsiiProxy_LoadBalancerPool) PutOriginSteering(value *LoadBalancerPoolOr
 	_jsii_.InvokeVoid(
 		l,
 		"putOriginSteering",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1371,8 +1370,8 @@ func (l *jsiiProxy_LoadBalancerPool) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoadBalancerPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1384,8 +1383,8 @@ func (l *jsiiProxy_LoadBalancerPool) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoadBalancerPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1397,8 +1396,8 @@ func (l *jsiiProxy_LoadBalancerPool) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoadBalancerPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1410,8 +1409,8 @@ func (l *jsiiProxy_LoadBalancerPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPool) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoadBalancerPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1436,8 +1435,8 @@ func (l *jsiiProxy_LoadBalancerPool) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPool) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoadBalancerPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1448,4 +1447,3 @@ func (l *jsiiProxy_LoadBalancerPool) ToTerraform() interface{} {
 
 	return returns
 }
-

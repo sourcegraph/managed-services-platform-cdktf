@@ -16,9 +16,9 @@ type WorkersScript interface {
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Assets() WorkersScriptAssetsOutputReference
-	AssetsInput() interface{}
+	AssetsInput() any
 	Bindings() WorkersScriptBindingsList
-	BindingsInput() interface{}
+	BindingsInput() any
 	BodyPart() *string
 	SetBodyPart(val *string)
 	BodyPartInput() *string
@@ -31,11 +31,11 @@ type WorkersScript interface {
 	SetCompatibilityFlags(val *[]*string)
 	CompatibilityFlagsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentFile() *string
@@ -46,9 +46,9 @@ type WorkersScript interface {
 	SetContentSha256(val *string)
 	ContentSha256Input() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -66,9 +66,9 @@ type WorkersScript interface {
 	HasAssets() cdktf.IResolvable
 	HasModules() cdktf.IResolvable
 	Id() *string
-	KeepAssets() interface{}
-	SetKeepAssets(val interface{})
-	KeepAssetsInput() interface{}
+	KeepAssets() any
+	SetKeepAssets(val any)
+	KeepAssetsInput() any
 	KeepBindings() *[]*string
 	SetKeepBindings(val *[]*string)
 	KeepBindingsInput() *[]*string
@@ -76,41 +76,41 @@ type WorkersScript interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Logpush() interface{}
-	SetLogpush(val interface{})
-	LogpushInput() interface{}
+	Logpush() any
+	SetLogpush(val any)
+	LogpushInput() any
 	MainModule() *string
 	SetMainModule(val *string)
 	MainModuleInput() *string
 	Migrations() WorkersScriptMigrationsOutputReference
-	MigrationsInput() interface{}
+	MigrationsInput() any
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	Observability() WorkersScriptObservabilityOutputReference
-	ObservabilityInput() interface{}
+	ObservabilityInput() any
 	Placement() WorkersScriptPlacementOutputReference
-	PlacementInput() interface{}
+	PlacementInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
 	StartupTimeMs() *float64
 	TailConsumers() WorkersScriptTailConsumersList
-	TailConsumersInput() interface{}
+	TailConsumersInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UsageModel() *string
@@ -120,9 +120,9 @@ type WorkersScript interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -140,7 +140,7 @@ type WorkersScript interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -152,7 +152,7 @@ type WorkersScript interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,11 +160,11 @@ type WorkersScript interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAssets(value *WorkersScriptAssets)
-	PutBindings(value interface{})
+	PutBindings(value any)
 	PutMigrations(value *WorkersScriptMigrations)
 	PutObservability(value *WorkersScriptObservability)
 	PutPlacement(value *WorkersScriptPlacement)
-	PutTailConsumers(value interface{})
+	PutTailConsumers(value any)
 	ResetAssets()
 	ResetBindings()
 	ResetBodyPart()
@@ -185,17 +185,17 @@ type WorkersScript interface {
 	ResetPlacement()
 	ResetTailConsumers()
 	ResetUsageModel()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkersScript
@@ -233,8 +233,8 @@ func (j *jsiiProxy_WorkersScript) Assets() WorkersScriptAssetsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) AssetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) AssetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assetsInput",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_WorkersScript) Bindings() WorkersScriptBindingsList {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) BindingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) BindingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bindingsInput",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_WorkersScript) CompatibilityFlagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_WorkersScript) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkersScript) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_WorkersScript) ContentSha256Input() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_WorkersScript) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) KeepAssets() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) KeepAssets() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keepAssets",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_WorkersScript) KeepAssets() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) KeepAssetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) KeepAssetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keepAssetsInput",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_WorkersScript) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Logpush() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) Logpush() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logpush",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_WorkersScript) Logpush() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) LogpushInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) LogpushInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logpushInput",
@@ -613,8 +613,8 @@ func (j *jsiiProxy_WorkersScript) Migrations() WorkersScriptMigrationsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) MigrationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) MigrationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migrationsInput",
@@ -653,8 +653,8 @@ func (j *jsiiProxy_WorkersScript) Observability() WorkersScriptObservabilityOutp
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) ObservabilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) ObservabilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"observabilityInput",
@@ -673,8 +673,8 @@ func (j *jsiiProxy_WorkersScript) Placement() WorkersScriptPlacementOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) PlacementInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) PlacementInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"placementInput",
@@ -693,8 +693,8 @@ func (j *jsiiProxy_WorkersScript) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkersScript) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_WorkersScript) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -753,8 +753,8 @@ func (j *jsiiProxy_WorkersScript) TailConsumers() WorkersScriptTailConsumersList
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) TailConsumersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) TailConsumersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tailConsumersInput",
@@ -773,8 +773,8 @@ func (j *jsiiProxy_WorkersScript) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkersScript) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -813,7 +813,6 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
@@ -825,7 +824,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -838,12 +837,12 @@ func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetAccountId(val *string) {
+func (j *jsiiProxy_WorkersScript) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_WorkersScript)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetBodyPart(val *string) {
+func (j *jsiiProxy_WorkersScript) SetBodyPart(val *string) {
 	if err := j.validateSetBodyPartParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func (j *jsiiProxy_WorkersScript)SetBodyPart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetCompatibilityDate(val *string) {
+func (j *jsiiProxy_WorkersScript) SetCompatibilityDate(val *string) {
 	if err := j.validateSetCompatibilityDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -876,7 +875,7 @@ func (j *jsiiProxy_WorkersScript)SetCompatibilityDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetCompatibilityFlags(val *[]*string) {
+func (j *jsiiProxy_WorkersScript) SetCompatibilityFlags(val *[]*string) {
 	if err := j.validateSetCompatibilityFlagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,7 +886,7 @@ func (j *jsiiProxy_WorkersScript)SetCompatibilityFlags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkersScript) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -898,7 +897,7 @@ func (j *jsiiProxy_WorkersScript)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetContent(val *string) {
+func (j *jsiiProxy_WorkersScript) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func (j *jsiiProxy_WorkersScript)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetContentFile(val *string) {
+func (j *jsiiProxy_WorkersScript) SetContentFile(val *string) {
 	if err := j.validateSetContentFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -920,7 +919,7 @@ func (j *jsiiProxy_WorkersScript)SetContentFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetContentSha256(val *string) {
+func (j *jsiiProxy_WorkersScript) SetContentSha256(val *string) {
 	if err := j.validateSetContentSha256Parameters(val); err != nil {
 		panic(err)
 	}
@@ -931,7 +930,7 @@ func (j *jsiiProxy_WorkersScript)SetContentSha256(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkersScript) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,7 +941,7 @@ func (j *jsiiProxy_WorkersScript)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkersScript) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -950,7 +949,7 @@ func (j *jsiiProxy_WorkersScript)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkersScript) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -958,7 +957,7 @@ func (j *jsiiProxy_WorkersScript)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetKeepAssets(val interface{}) {
+func (j *jsiiProxy_WorkersScript) SetKeepAssets(val any) {
 	if err := j.validateSetKeepAssetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_WorkersScript)SetKeepAssets(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetKeepBindings(val *[]*string) {
+func (j *jsiiProxy_WorkersScript) SetKeepBindings(val *[]*string) {
 	if err := j.validateSetKeepBindingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_WorkersScript)SetKeepBindings(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkersScript) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_WorkersScript)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetLogpush(val interface{}) {
+func (j *jsiiProxy_WorkersScript) SetLogpush(val any) {
 	if err := j.validateSetLogpushParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_WorkersScript)SetLogpush(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetMainModule(val *string) {
+func (j *jsiiProxy_WorkersScript) SetMainModule(val *string) {
 	if err := j.validateSetMainModuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_WorkersScript)SetMainModule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkersScript) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_WorkersScript)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkersScript) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_WorkersScript)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetScriptName(val *string) {
+func (j *jsiiProxy_WorkersScript) SetScriptName(val *string) {
 	if err := j.validateSetScriptNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_WorkersScript)SetScriptName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetUsageModel(val *string) {
+func (j *jsiiProxy_WorkersScript) SetUsageModel(val *string) {
 	if err := j.validateSetUsageModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func WorkersScript_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func WorkersScript_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkersScript_IsConstruct(x interface{}) *bool {
+func WorkersScript_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkersScript_IsConstructParameters(x); err != nil {
@@ -1101,7 +1100,7 @@ func WorkersScript_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1109,7 +1108,7 @@ func WorkersScript_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkersScript_IsTerraformElement(x interface{}) *bool {
+func WorkersScript_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkersScript_IsTerraformElementParameters(x); err != nil {
@@ -1120,7 +1119,7 @@ func WorkersScript_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func WorkersScript_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkersScript_IsTerraformResource(x interface{}) *bool {
+func WorkersScript_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkersScript_IsTerraformResourceParameters(x); err != nil {
@@ -1139,7 +1138,7 @@ func WorkersScript_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1164,31 +1163,31 @@ func (w *jsiiProxy_WorkersScript) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkersScript) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1204,7 +1203,7 @@ func (w *jsiiProxy_WorkersScript) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1220,7 +1219,7 @@ func (w *jsiiProxy_WorkersScript) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1236,7 +1235,7 @@ func (w *jsiiProxy_WorkersScript) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1252,7 +1251,7 @@ func (w *jsiiProxy_WorkersScript) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1268,7 +1267,7 @@ func (w *jsiiProxy_WorkersScript) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1284,7 +1283,7 @@ func (w *jsiiProxy_WorkersScript) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1300,7 +1299,7 @@ func (w *jsiiProxy_WorkersScript) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1316,15 +1315,15 @@ func (w *jsiiProxy_WorkersScript) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScript) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1343,7 +1342,7 @@ func (w *jsiiProxy_WorkersScript) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1356,7 +1355,7 @@ func (w *jsiiProxy_WorkersScript) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1370,18 +1369,18 @@ func (w *jsiiProxy_WorkersScript) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkersScript) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1392,7 +1391,7 @@ func (w *jsiiProxy_WorkersScript) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1403,7 +1402,7 @@ func (w *jsiiProxy_WorkersScript) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1414,18 +1413,18 @@ func (w *jsiiProxy_WorkersScript) PutAssets(value *WorkersScriptAssets) {
 	_jsii_.InvokeVoid(
 		w,
 		"putAssets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutBindings(value interface{}) {
+func (w *jsiiProxy_WorkersScript) PutBindings(value any) {
 	if err := w.validatePutBindingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putBindings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1436,7 +1435,7 @@ func (w *jsiiProxy_WorkersScript) PutMigrations(value *WorkersScriptMigrations) 
 	_jsii_.InvokeVoid(
 		w,
 		"putMigrations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1447,7 +1446,7 @@ func (w *jsiiProxy_WorkersScript) PutObservability(value *WorkersScriptObservabi
 	_jsii_.InvokeVoid(
 		w,
 		"putObservability",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1458,18 +1457,18 @@ func (w *jsiiProxy_WorkersScript) PutPlacement(value *WorkersScriptPlacement) {
 	_jsii_.InvokeVoid(
 		w,
 		"putPlacement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutTailConsumers(value interface{}) {
+func (w *jsiiProxy_WorkersScript) PutTailConsumers(value any) {
 	if err := w.validatePutTailConsumersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putTailConsumers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1617,8 +1616,8 @@ func (w *jsiiProxy_WorkersScript) ResetUsageModel() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkersScript) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1630,8 +1629,8 @@ func (w *jsiiProxy_WorkersScript) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkersScript) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1643,8 +1642,8 @@ func (w *jsiiProxy_WorkersScript) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScript) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1656,8 +1655,8 @@ func (w *jsiiProxy_WorkersScript) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScript) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1682,8 +1681,8 @@ func (w *jsiiProxy_WorkersScript) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkersScript) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1694,4 +1693,3 @@ func (w *jsiiProxy_WorkersScript) ToTerraform() interface{} {
 
 	return returns
 }
-

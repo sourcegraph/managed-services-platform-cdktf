@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustGatewayLogging_GenerateConfigForImportParame
 	return nil
 }
 
-func validateDataCloudflareZeroTrustGatewayLogging_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustGatewayLogging_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustGatewayLogging_IsConstructParameters(x inter
 	return nil
 }
 
-func validateDataCloudflareZeroTrustGatewayLogging_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustGatewayLogging_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustGatewayLogging_IsTerraformDataSourceParamete
 	return nil
 }
 
-func validateDataCloudflareZeroTrustGatewayLogging_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustGatewayLogging_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) validateSetAccountIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDataCloudflareZeroTrustGatewayLoggingParameters(scope constructs
 
 	return nil
 }
-

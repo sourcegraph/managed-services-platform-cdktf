@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRule.DataCloudflareMagicNetworkMonitoringRule",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRule)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zscoreSensitivity", GoGetter: "ZscoreSensitivity"},
 			_jsii_.MemberProperty{JsiiProperty: "zscoreTarget", GoGetter: "ZscoreTarget"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareMagicNetworkMonitoringRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRule.DataCloudflareMagicNetworkMonitoringRuleConfig",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRuleConfig](),
 	)
 }

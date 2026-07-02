@@ -90,7 +90,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutIngressParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutIngressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -267,4 +267,3 @@ func validateNewZeroTrustTunnelCloudflaredConfigConfigOutputReferenceParameters(
 
 	return nil
 }
-

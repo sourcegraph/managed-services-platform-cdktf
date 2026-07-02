@@ -12,9 +12,9 @@ type DataCloudflareZoneLockdownFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type DataCloudflareZoneLockdownFilterOutputReference interface {
 	DescriptionSearchInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -67,7 +67,7 @@ type DataCloudflareZoneLockdownFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DataCloudflareZoneLockdownFilterOutputReference interface {
 	ResetUriSearch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) UriSearchInp
 	return returns
 }
 
-
 func NewDataCloudflareZoneLockdownFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneLockdownFilterOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewDataCloudflareZoneLockdownFilterOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZoneLockdown.DataCloudflareZoneLockdownFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDataCloudflareZoneLockdownFilterOutputReference_Override(d DataCloudflar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZoneLockdown.DataCloudflareZoneLockdownFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetCreatedOn(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetCreatedOn(val *string) {
 	if err := j.validateSetCreatedOnParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetCreatedOn(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetDescriptionSearch(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetDescriptionSearch(val *string) {
 	if err := j.validateSetDescriptionSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetIp(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetIp(val *string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetIp(val *st
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetIpRangeSearch(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetIpRangeSearch(val *string) {
 	if err := j.validateSetIpRangeSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetIpRangeSea
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetIpSearch(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetIpSearch(val *string) {
 	if err := j.validateSetIpSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetIpSearch(v
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetModifiedOn(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetModifiedOn(val *string) {
 	if err := j.validateSetModifiedOnParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetModifiedOn
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetPriority(v
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference)SetUriSearch(val *string) {
+func (j *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) SetUriSearch(val *string) {
 	if err := j.validateSetUriSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) ResetUriSear
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownFilterOutputReference) ToString() *
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetBodyParame
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetContentTyp
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewRateLimitActionResponseOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewRulesetRulesActionParametersTransformedRequestFieldsOutputRefere
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareApiTokenPermissionGroupsList_GenerateConfigForImportP
 	return nil
 }
 
-func validateDataCloudflareApiTokenPermissionGroupsList_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareApiTokenPermissionGroupsList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareApiTokenPermissionGroupsList_IsConstructParameters(x 
 	return nil
 }
 
-func validateDataCloudflareApiTokenPermissionGroupsList_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareApiTokenPermissionGroupsList_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareApiTokenPermissionGroupsList_IsTerraformDataSourcePar
 	return nil
 }
 
-func validateDataCloudflareApiTokenPermissionGroupsList_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareApiTokenPermissionGroupsList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareApiTokenPermissionGroupsList_IsTerraformElementParame
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataCloudflareApiTokenPermissionGroupsListParameters(scope const
 
 	return nil
 }
-

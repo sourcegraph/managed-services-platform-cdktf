@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflarePagesDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflarePagesDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflarePagesDomain_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataCloudflarePagesDomain_IsConstructParameters(x interface{}) error {
+func validateDataCloudflarePagesDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflarePagesDomain_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataCloudflarePagesDomain_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflarePagesDomain_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflarePagesDomain_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataCloudflarePagesDomain_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflarePagesDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflarePagesDomain) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePagesDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePagesDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataCloudflarePagesDomainParameters(scope constructs.Construct, 
 
 	return nil
 }
-

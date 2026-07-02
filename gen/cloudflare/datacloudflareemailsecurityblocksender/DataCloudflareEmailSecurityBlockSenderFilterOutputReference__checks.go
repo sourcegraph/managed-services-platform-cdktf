@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataCloudflareEmailSecurityBlockSenderFilterOutputReferenceParam
 
 	return nil
 }
-

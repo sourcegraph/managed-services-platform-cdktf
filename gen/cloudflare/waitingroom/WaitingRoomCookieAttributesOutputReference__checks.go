@@ -98,7 +98,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWaitingRoomCookieAttributesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

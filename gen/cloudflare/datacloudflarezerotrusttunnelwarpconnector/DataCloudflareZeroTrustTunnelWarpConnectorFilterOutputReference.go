@@ -12,9 +12,9 @@ type DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,11 +36,11 @@ type DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference interface {
 	IncludePrefix() *string
 	SetIncludePrefix(val *string)
 	IncludePrefixInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsDeleted() interface{}
-	SetIsDeleted(val interface{})
-	IsDeletedInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsDeleted() any
+	SetIsDeleted(val any)
+	IsDeletedInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,7 +67,7 @@ type DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference interface {
 	ResetWasInactiveAt()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) IsDeleted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) IsDeleted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDeleted",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) IsDeletedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) IsDeletedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDeletedInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	return returns
 }
 
-
 func NewDataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewDataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnector.DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnector.DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetExcludePrefix(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetExcludePrefix(val *string) {
 	if err := j.validateSetExcludePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetExistedAt(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetExistedAt(val *string) {
 	if err := j.validateSetExistedAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetIncludePrefix(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetIncludePrefix(val *string) {
 	if err := j.validateSetIncludePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetIsDeleted(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetIsDeleted(val any) {
 	if err := j.validateSetIsDeletedParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetStatus(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetUuid(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetUuid(val *string) {
 	if err := j.validateSetUuidParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetWasActiveAt(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetWasActiveAt(val *string) {
 	if err := j.validateSetWasActiveAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference)SetWasInactiveAt(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) SetWasInactiveAt(val *string) {
 	if err := j.validateSetWasInactiveAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorFilterOutputReferen
 
 	return returns
 }
-

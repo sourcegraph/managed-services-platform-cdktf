@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustDeviceDefaultProfileIncludeListParameters(terraformReso
 
 	return nil
 }
-

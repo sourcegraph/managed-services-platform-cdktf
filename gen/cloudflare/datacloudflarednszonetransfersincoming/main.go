@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersIncoming.DataCloudflareDnsZoneTransfersIncoming",
-		reflect.TypeOf((*DataCloudflareDnsZoneTransfersIncoming)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDnsZoneTransfersIncoming](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRefreshSeconds", GoGetter: "AutoRefreshSeconds"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareDnsZoneTransfersIncoming{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersIncoming.DataCloudflareDnsZoneTransfersIncomingConfig",
-		reflect.TypeOf((*DataCloudflareDnsZoneTransfersIncomingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDnsZoneTransfersIncomingConfig](),
 	)
 }

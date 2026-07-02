@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
-		reflect.TypeOf((*CloudflareProvider)(nil)).Elem(),
+		reflect.TypeFor[CloudflareProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userAgentOperatorSuffix", GoGetter: "UserAgentOperatorSuffix"},
 			_jsii_.MemberProperty{JsiiProperty: "userAgentOperatorSuffixInput", GoGetter: "UserAgentOperatorSuffixInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudflareProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.provider.CloudflareProviderConfig",
-		reflect.TypeOf((*CloudflareProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudflareProviderConfig](),
 	)
 }

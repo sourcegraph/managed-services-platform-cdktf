@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplication",
-		reflect.TypeOf((*ZeroTrustAccessApplication)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -185,15 +185,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationConfig",
-		reflect.TypeOf((*ZeroTrustAccessApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeaders",
-		reflect.TypeOf((*ZeroTrustAccessApplicationCorsHeaders)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationCorsHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeadersOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationCorsHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationCorsHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllHeaders", GoGetter: "AllowAllHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAllHeadersInput", GoGetter: "AllowAllHeadersInput"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationDestinations",
-		reflect.TypeOf((*ZeroTrustAccessApplicationDestinations)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationDestinations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationDestinationsList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationDestinationsList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationDestinationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationDestinationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -275,7 +275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationDestinationsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationDestinationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationDestinationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vnetId", GoGetter: "VnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetIdInput", GoGetter: "VnetIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,11 +328,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationFooterLinks",
-		reflect.TypeOf((*ZeroTrustAccessApplicationFooterLinks)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationFooterLinks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationFooterLinksList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationFooterLinksList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationFooterLinksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -346,7 +346,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationFooterLinksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -354,7 +354,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationFooterLinksOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationFooterLinksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationFooterLinksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -382,7 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -390,11 +390,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationLandingPageDesign",
-		reflect.TypeOf((*ZeroTrustAccessApplicationLandingPageDesign)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationLandingPageDesign](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationLandingPageDesignOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationLandingPageDesignOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationLandingPageDesignOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buttonColor", GoGetter: "ButtonColor"},
 			_jsii_.MemberProperty{JsiiProperty: "buttonColorInput", GoGetter: "ButtonColorInput"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -441,15 +441,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPolicies",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPolicies)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPolicies](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRules",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesConnectionRules)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesConnectionRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,11 +485,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSsh",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesConnectionRulesSsh)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesConnectionRulesSsh](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowEmailAlias", GoGetter: "AllowEmailAlias"},
 			_jsii_.MemberProperty{JsiiProperty: "allowEmailAliasInput", GoGetter: "AllowEmailAliasInput"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernames", GoGetter: "Usernames"},
 			_jsii_.MemberProperty{JsiiProperty: "usernamesInput", GoGetter: "UsernamesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -526,15 +526,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExclude",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExclude)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExclude](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -558,7 +558,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -566,11 +566,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContext",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAuthContext)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAuthContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acId", GoGetter: "AcId"},
 			_jsii_.MemberProperty{JsiiProperty: "acIdInput", GoGetter: "AcIdInput"},
@@ -600,7 +600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -608,11 +608,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethod",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAuthMethod)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAuthMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authMethod", GoGetter: "AuthMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "authMethodInput", GoGetter: "AuthMethodInput"},
@@ -638,7 +638,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -646,11 +646,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAd",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAzureAd)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAzureAd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -678,7 +678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -686,11 +686,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCertificate",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeCertificate)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeCertificate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -714,7 +714,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -722,11 +722,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCommonName",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeCommonName)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeCommonName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
 			_jsii_.MemberProperty{JsiiProperty: "commonNameInput", GoGetter: "CommonNameInput"},
@@ -752,7 +752,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -760,11 +760,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePosture",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeDevicePosture)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeDevicePosture](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -790,7 +790,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -798,15 +798,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmail",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEmail)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEmail](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomain",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEmailDomain)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEmailDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -832,7 +832,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -840,11 +840,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -870,7 +870,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -878,7 +878,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -904,7 +904,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -912,11 +912,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEveryone",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEveryone)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEveryone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -940,7 +940,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -948,11 +948,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -980,7 +980,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -988,11 +988,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGeo",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGeo)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGeo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1018,7 +1018,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1026,11 +1026,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1061,7 +1061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1069,11 +1069,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGroup",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGroup)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1099,7 +1099,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1107,11 +1107,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGsuite",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGsuite)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1139,7 +1139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1147,15 +1147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIp",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeIp)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeIp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStruct",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeIpListStruct)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeIpListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1181,7 +1181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1189,7 +1189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1215,7 +1215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1223,7 +1223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1237,7 +1237,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1245,11 +1245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethod",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeLoginMethod)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeLoginMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1275,7 +1275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1283,11 +1283,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOidc",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeOidc)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
 			_jsii_.MemberProperty{JsiiProperty: "claimNameInput", GoGetter: "ClaimNameInput"},
@@ -1317,7 +1317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1325,11 +1325,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOkta",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeOkta)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1357,7 +1357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1365,7 +1365,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -1481,7 +1481,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1489,11 +1489,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeSaml",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeSaml)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -1523,7 +1523,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1531,11 +1531,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeServiceToken",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeServiceToken)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeServiceToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1561,7 +1561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenIdInput", GoGetter: "TokenIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1569,15 +1569,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesInclude",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesInclude)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesInclude](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1601,7 +1601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1609,11 +1609,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContext",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAuthContext)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAuthContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acId", GoGetter: "AcId"},
 			_jsii_.MemberProperty{JsiiProperty: "acIdInput", GoGetter: "AcIdInput"},
@@ -1643,7 +1643,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1651,11 +1651,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethod",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAuthMethod)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAuthMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authMethod", GoGetter: "AuthMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "authMethodInput", GoGetter: "AuthMethodInput"},
@@ -1681,7 +1681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1689,11 +1689,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAd",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAzureAd)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAzureAd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1721,7 +1721,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1729,11 +1729,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCertificate",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeCertificate)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeCertificate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1757,7 +1757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1765,11 +1765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCommonName",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeCommonName)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeCommonName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
 			_jsii_.MemberProperty{JsiiProperty: "commonNameInput", GoGetter: "CommonNameInput"},
@@ -1795,7 +1795,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1803,11 +1803,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePosture",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeDevicePosture)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeDevicePosture](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1833,7 +1833,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1841,15 +1841,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmail",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEmail)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEmail](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomain",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEmailDomain)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEmailDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1875,7 +1875,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1883,11 +1883,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1913,7 +1913,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1921,7 +1921,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1947,7 +1947,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1955,11 +1955,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEveryone",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEveryone)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEveryone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1983,7 +1983,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1991,11 +1991,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2023,7 +2023,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2031,11 +2031,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGeo",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGeo)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGeo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2061,7 +2061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2069,11 +2069,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2104,7 +2104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2112,11 +2112,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGroup",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGroup)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2142,7 +2142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2150,11 +2150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGsuite",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGsuite)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2182,7 +2182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2190,15 +2190,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIp",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeIp)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeIp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStruct",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeIpListStruct)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeIpListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2224,7 +2224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2232,7 +2232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2258,7 +2258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2266,7 +2266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2280,7 +2280,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2288,11 +2288,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethod",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeLoginMethod)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeLoginMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2318,7 +2318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2326,11 +2326,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOidc",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeOidc)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
 			_jsii_.MemberProperty{JsiiProperty: "claimNameInput", GoGetter: "ClaimNameInput"},
@@ -2360,7 +2360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2368,11 +2368,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOkta",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeOkta)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2400,7 +2400,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2408,7 +2408,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -2524,7 +2524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2532,11 +2532,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeSaml",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeSaml)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -2566,7 +2566,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2574,11 +2574,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeServiceToken",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeServiceToken)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeServiceToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2604,7 +2604,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenIdInput", GoGetter: "TokenIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2612,7 +2612,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2626,7 +2626,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2634,7 +2634,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2686,7 +2686,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2694,15 +2694,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequire",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequire)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequire](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2726,7 +2726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2734,11 +2734,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthContext",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAuthContext)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAuthContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acId", GoGetter: "AcId"},
 			_jsii_.MemberProperty{JsiiProperty: "acIdInput", GoGetter: "AcIdInput"},
@@ -2768,7 +2768,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2776,11 +2776,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethod",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAuthMethod)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAuthMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authMethod", GoGetter: "AuthMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "authMethodInput", GoGetter: "AuthMethodInput"},
@@ -2806,7 +2806,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2814,11 +2814,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAzureAd",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAzureAd)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAzureAd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2846,7 +2846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2854,11 +2854,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCertificate",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireCertificate)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireCertificate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2882,7 +2882,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2890,11 +2890,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCommonName",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireCommonName)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireCommonName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
 			_jsii_.MemberProperty{JsiiProperty: "commonNameInput", GoGetter: "CommonNameInput"},
@@ -2920,7 +2920,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2928,11 +2928,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireDevicePosture",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireDevicePosture)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireDevicePosture](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2958,7 +2958,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2966,15 +2966,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmail",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEmail)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEmail](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomain",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEmailDomain)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEmailDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3000,7 +3000,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3008,11 +3008,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStruct",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEmailListStruct)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEmailListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3038,7 +3038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3046,7 +3046,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3072,7 +3072,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3080,11 +3080,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEveryone",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEveryone)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEveryone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3108,7 +3108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3116,11 +3116,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3148,7 +3148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3156,11 +3156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGeo",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGeo)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGeo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGeoOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGeoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGeoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3186,7 +3186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireGeoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3194,11 +3194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganization",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGithubOrganization)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGithubOrganization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3229,7 +3229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3237,11 +3237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGroup",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGroup)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGroupOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3267,7 +3267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3275,11 +3275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGsuite",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGsuite)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3307,7 +3307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3315,15 +3315,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIp",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireIp)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireIp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpListStruct",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireIpListStruct)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireIpListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3349,7 +3349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3357,7 +3357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3383,7 +3383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3391,7 +3391,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3405,7 +3405,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3413,11 +3413,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethod",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireLoginMethod)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireLoginMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3443,7 +3443,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3451,11 +3451,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOidc",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireOidc)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOidcOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
 			_jsii_.MemberProperty{JsiiProperty: "claimNameInput", GoGetter: "ClaimNameInput"},
@@ -3485,7 +3485,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3493,11 +3493,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOkta",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireOkta)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOktaOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3525,7 +3525,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3533,7 +3533,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -3649,7 +3649,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3657,11 +3657,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSaml",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireSaml)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -3691,7 +3691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3699,11 +3699,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireServiceToken",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireServiceToken)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireServiceToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3729,7 +3729,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenIdInput", GoGetter: "TokenIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3737,15 +3737,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasApp",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasApp)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasApp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributes",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributes)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3759,7 +3759,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3767,7 +3767,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3807,7 +3807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3815,15 +3815,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSource",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesSource)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdp",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdp)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3837,7 +3837,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3845,7 +3845,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3875,7 +3875,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3883,7 +3883,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3914,7 +3914,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3922,11 +3922,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaims",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomClaims)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomClaims](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomClaimsList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomClaimsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3940,7 +3940,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3948,7 +3948,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3985,7 +3985,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3993,11 +3993,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSource",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomClaimsSource)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomClaimsSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4027,7 +4027,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4035,11 +4035,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4069,7 +4069,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4077,7 +4077,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetime", GoGetter: "AccessTokenLifetime"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetimeInput", GoGetter: "AccessTokenLifetimeInput"},
@@ -4170,7 +4170,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4178,11 +4178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptions",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppRefreshTokenOptions)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppRefreshTokenOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4209,7 +4209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4217,15 +4217,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfig",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthentication",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigAuthentication)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationUrl", GoGetter: "AuthorizationUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationUrlInput", GoGetter: "AuthorizationUrlInput"},
@@ -4275,7 +4275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4283,11 +4283,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappings",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigMappings)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigMappings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigMappingsList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigMappingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4301,7 +4301,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4309,11 +4309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOperations",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigMappingsOperations)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigMappingsOperations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4346,7 +4346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4354,7 +4354,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigMappingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigMappingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4396,7 +4396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformJsonata", GoGetter: "TransformJsonata"},
 			_jsii_.MemberProperty{JsiiProperty: "transformJsonataInput", GoGetter: "TransformJsonataInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4404,7 +4404,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationScimConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationScimConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationInput", GoGetter: "AuthenticationInput"},
@@ -4446,7 +4446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4454,11 +4454,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteria",
-		reflect.TypeOf((*ZeroTrustAccessApplicationTargetCriteria)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationTargetCriteria](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteriaList",
-		reflect.TypeOf((*ZeroTrustAccessApplicationTargetCriteriaList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationTargetCriteriaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4472,7 +4472,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4480,7 +4480,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteriaOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessApplicationTargetCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessApplicationTargetCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4510,7 +4510,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -13,9 +13,9 @@ type AddressMapMembershipsOutputReference interface {
 	CanDelete() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type AddressMapMembershipsOutputReference interface {
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -48,7 +48,7 @@ type AddressMapMembershipsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type AddressMapMembershipsOutputReference interface {
 	ResetKind()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) CanDelete() cdktf.IReso
 	return returns
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) IdentifierInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewAddressMapMembershipsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AddressMapMembershipsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewAddressMapMembershipsOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewAddressMapMembershipsOutputReference_Override(a AddressMapMembershipsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetIdentifier(val *string) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetIdentifier(val *strin
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetKind(val *string) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetKind(val *string) {
 	if err := j.validateSetKindParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetKind(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -523,16 +522,16 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) ResetKind() {
 	)
 }
 
-func (a *jsiiProxy_AddressMapMembershipsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AddressMapMembershipsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -551,4 +550,3 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) ToString() *string {
 
 	return returns
 }
-

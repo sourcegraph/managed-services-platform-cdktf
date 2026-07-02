@@ -16,18 +16,18 @@ type DataCloudflareUserAgentBlockingRule interface {
 	CdktfStack() cdktf.TerraformStack
 	Configuration() DataCloudflareUserAgentBlockingRuleConfigurationOutputReference
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Filter() DataCloudflareUserAgentBlockingRuleFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,11 +50,11 @@ type DataCloudflareUserAgentBlockingRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UaRuleId() *string
@@ -64,9 +64,9 @@ type DataCloudflareUserAgentBlockingRule interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataCloudflareUserAgentBlockingRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetUaRuleId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareUserAgentBlockingRule
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) Configuration() DataClou
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) Filter() DataCloudflareU
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source.
 func NewDataCloudflareUserAgentBlockingRule(scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRuleConfig) DataCloudflareUserAgentBlockingRule {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewDataCloudflareUserAgentBlockingRule(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewDataCloudflareUserAgentBlockingRule_Override(d DataCloudflareUserAgentBl
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetUaRuleId(val *string) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetUaRuleId(val *string) {
 	if err := j.validateSetUaRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetUaRuleId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func DataCloudflareUserAgentBlockingRule_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func DataCloudflareUserAgentBlockingRule_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareUserAgentBlockingRule_IsConstruct(x interface{}) *bool {
+func DataCloudflareUserAgentBlockingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareUserAgentBlockingRule_IsConstructParameters(x); err != nil {
@@ -508,7 +507,7 @@ func DataCloudflareUserAgentBlockingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func DataCloudflareUserAgentBlockingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareUserAgentBlockingRule_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareUserAgentBlockingRule_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareUserAgentBlockingRule_IsTerraformDataSourceParameters(x); err != nil {
@@ -527,7 +526,7 @@ func DataCloudflareUserAgentBlockingRule_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func DataCloudflareUserAgentBlockingRule_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataCloudflareUserAgentBlockingRule_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareUserAgentBlockingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareUserAgentBlockingRule_IsTerraformElementParameters(x); err != nil {
@@ -546,7 +545,7 @@ func DataCloudflareUserAgentBlockingRule_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -564,27 +563,27 @@ func DataCloudflareUserAgentBlockingRule_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) PutFilter(value *DataClo
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -781,8 +780,8 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ResetUaRuleId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -794,8 +793,8 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -846,8 +845,8 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,4 +857,3 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) ToTerraform() interface{
 
 	return returns
 }
-

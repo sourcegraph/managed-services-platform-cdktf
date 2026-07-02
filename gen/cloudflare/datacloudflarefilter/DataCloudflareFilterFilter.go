@@ -1,6 +1,5 @@
 package datacloudflarefilter
 
-
 type DataCloudflareFilterFilter struct {
 	// A case-insensitive string to find in the description.
 	//
@@ -20,10 +19,9 @@ type DataCloudflareFilterFilter struct {
 	// When true, indicates that the filter is currently paused.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/filter#paused DataCloudflareFilter#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// The filter ref (a short reference tag) to search for. Must be an exact match.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/filter#ref DataCloudflareFilter#ref}
 	Ref *string `field:"optional" json:"ref" yaml:"ref"`
 }
-

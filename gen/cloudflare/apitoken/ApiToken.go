@@ -15,17 +15,17 @@ type ApiToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() ApiTokenConditionOutputReference
-	ConditionInput() interface{}
+	ConditionInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,24 +58,24 @@ type ApiToken interface {
 	SetNotBefore(val *string)
 	NotBeforeInput() *string
 	Policies() ApiTokenPoliciesList
-	PoliciesInput() interface{}
+	PoliciesInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -83,9 +83,9 @@ type ApiToken interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ApiToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ApiToken interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,7 +123,7 @@ type ApiToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCondition(value *ApiTokenCondition)
-	PutPolicies(value interface{})
+	PutPolicies(value any)
 	ResetCondition()
 	ResetExpiresOn()
 	ResetNotBefore()
@@ -131,17 +131,17 @@ type ApiToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiToken
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ApiToken) Condition() ApiTokenConditionOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) ConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiToken) ConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ApiToken) ConditionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiToken) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_ApiToken) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ApiToken) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_ApiToken) Policies() ApiTokenPoliciesList {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) PoliciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiToken) PoliciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"policiesInput",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_ApiToken) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiToken) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_ApiToken) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_ApiToken) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -479,7 +479,6 @@ func (j *jsiiProxy_ApiToken) Value() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig) ApiToken {
 	_init_.Initialize()
@@ -491,7 +490,7 @@ func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiToken.ApiToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewApiToken_Override(a ApiToken, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiToken.ApiToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiToken) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ApiToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ApiToken)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_ApiToken)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetExpiresOn(val *string) {
+func (j *jsiiProxy_ApiToken) SetExpiresOn(val *string) {
 	if err := j.validateSetExpiresOnParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ApiToken)SetExpiresOn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ApiToken)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_ApiToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetName(val *string) {
+func (j *jsiiProxy_ApiToken) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_ApiToken)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetNotBefore(val *string) {
+func (j *jsiiProxy_ApiToken) SetNotBefore(val *string) {
 	if err := j.validateSetNotBeforeParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_ApiToken)SetNotBefore(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ApiToken)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiToken) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_ApiToken)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetStatus(val *string) {
+func (j *jsiiProxy_ApiToken) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func ApiToken_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiToken.ApiToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func ApiToken_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiToken_IsConstruct(x interface{}) *bool {
+func ApiToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiToken_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func ApiToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiToken.ApiToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func ApiToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiToken_IsTerraformElement(x interface{}) *bool {
+func ApiToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiToken_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func ApiToken_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiToken.ApiToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func ApiToken_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiToken_IsTerraformResource(x interface{}) *bool {
+func ApiToken_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiToken_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func ApiToken_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiToken.ApiToken",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (a *jsiiProxy_ApiToken) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiToken) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiToken) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (a *jsiiProxy_ApiToken) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (a *jsiiProxy_ApiToken) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (a *jsiiProxy_ApiToken) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (a *jsiiProxy_ApiToken) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (a *jsiiProxy_ApiToken) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (a *jsiiProxy_ApiToken) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (a *jsiiProxy_ApiToken) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (a *jsiiProxy_ApiToken) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiToken) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiToken) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -910,7 +909,7 @@ func (a *jsiiProxy_ApiToken) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (a *jsiiProxy_ApiToken) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (a *jsiiProxy_ApiToken) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiToken) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiToken) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (a *jsiiProxy_ApiToken) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,7 +969,7 @@ func (a *jsiiProxy_ApiToken) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -981,18 +980,18 @@ func (a *jsiiProxy_ApiToken) PutCondition(value *ApiTokenCondition) {
 	_jsii_.InvokeVoid(
 		a,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_ApiToken) PutPolicies(value interface{}) {
+func (a *jsiiProxy_ApiToken) PutPolicies(value any) {
 	if err := a.validatePutPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1036,8 +1035,8 @@ func (a *jsiiProxy_ApiToken) ResetStatus() {
 	)
 }
 
-func (a *jsiiProxy_ApiToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1049,8 +1048,8 @@ func (a *jsiiProxy_ApiToken) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1062,8 +1061,8 @@ func (a *jsiiProxy_ApiToken) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1075,8 +1074,8 @@ func (a *jsiiProxy_ApiToken) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiToken) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1101,8 +1100,8 @@ func (a *jsiiProxy_ApiToken) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiToken) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1113,4 +1112,3 @@ func (a *jsiiProxy_ApiToken) ToTerraform() interface{} {
 
 	return returns
 }
-

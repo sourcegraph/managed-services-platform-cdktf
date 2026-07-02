@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareListItemHostnameOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareListItemHostnameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareListItemHostnameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareListItemHostnameOutputReferenceParameters(terrafor
 
 	return nil
 }
-

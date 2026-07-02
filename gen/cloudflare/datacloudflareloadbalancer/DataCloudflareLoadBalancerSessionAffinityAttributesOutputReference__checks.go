@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerSessionAffinityAttributesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerSessionAffinityAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerSessionAffinityAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareLoadBalancerSessionAffinityAttributesOutputReferen
 
 	return nil
 }
-

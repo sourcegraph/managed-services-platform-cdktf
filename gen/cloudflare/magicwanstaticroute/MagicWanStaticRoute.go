@@ -18,15 +18,15 @@ type MagicWanStaticRoute interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -65,17 +65,17 @@ type MagicWanStaticRoute interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scope() MagicWanStaticRouteScopeOutputReference
-	ScopeInput() interface{}
+	ScopeInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Weight() *float64
@@ -85,9 +85,9 @@ type MagicWanStaticRoute interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type MagicWanStaticRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type MagicWanStaticRoute interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type MagicWanStaticRoute interface {
 	ResetOverrideLogicalId()
 	ResetScope()
 	ResetWeight()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MagicWanStaticRoute
@@ -179,8 +179,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) Scope() MagicWanStaticRouteScopeOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) ScopeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) ScopeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scopeInput",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_MagicWanStaticRoute) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicWanStaticRoute) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -479,7 +479,6 @@ func (j *jsiiProxy_MagicWanStaticRoute) WeightInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) MagicWanStaticRoute {
 	_init_.Initialize()
@@ -491,7 +490,7 @@ func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *Magi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewMagicWanStaticRoute_Override(m MagicWanStaticRoute, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetAccountId(val *string) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetConnection(val interface{}) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetCount(val interface{}) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetDescription(val *string) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -569,7 +568,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetNexthop(val *string) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetNexthop(val *string) {
 	if err := j.validateSetNexthopParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetNexthop(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetPrefix(val *string) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetPriority(val *float64) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute)SetWeight(val *float64) {
+func (j *jsiiProxy_MagicWanStaticRoute) SetWeight(val *float64) {
 	if err := j.validateSetWeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func MagicWanStaticRoute_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func MagicWanStaticRoute_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MagicWanStaticRoute_IsConstruct(x interface{}) *bool {
+func MagicWanStaticRoute_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicWanStaticRoute_IsConstructParameters(x); err != nil {
@@ -690,7 +689,7 @@ func MagicWanStaticRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func MagicWanStaticRoute_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool {
+func MagicWanStaticRoute_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicWanStaticRoute_IsTerraformElementParameters(x); err != nil {
@@ -709,7 +708,7 @@ func MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool {
+func MagicWanStaticRoute_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicWanStaticRoute_IsTerraformResourceParameters(x); err != nil {
@@ -728,7 +727,7 @@ func MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,31 +752,31 @@ func (m *jsiiProxy_MagicWanStaticRoute) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MagicWanStaticRoute) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicWanStaticRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,15 +904,15 @@ func (m *jsiiProxy_MagicWanStaticRoute) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanStaticRoute) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -932,7 +931,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -945,7 +944,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,18 +958,18 @@ func (m *jsiiProxy_MagicWanStaticRoute) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MagicWanStaticRoute) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -981,7 +980,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -992,7 +991,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) PutScope(value *MagicWanStaticRouteScope
 	_jsii_.InvokeVoid(
 		m,
 		"putScope",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,8 +1038,8 @@ func (m *jsiiProxy_MagicWanStaticRoute) ResetWeight() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicWanStaticRoute) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1052,8 +1051,8 @@ func (m *jsiiProxy_MagicWanStaticRoute) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicWanStaticRoute) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1065,8 +1064,8 @@ func (m *jsiiProxy_MagicWanStaticRoute) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanStaticRoute) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1078,8 +1077,8 @@ func (m *jsiiProxy_MagicWanStaticRoute) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanStaticRoute) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1104,8 +1103,8 @@ func (m *jsiiProxy_MagicWanStaticRoute) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanStaticRoute) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1116,4 +1115,3 @@ func (m *jsiiProxy_MagicWanStaticRoute) ToTerraform() interface{} {
 
 	return returns
 }
-

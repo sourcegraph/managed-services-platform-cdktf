@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareQueueSettingsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareQueueSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareQueueSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareQueueSettingsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

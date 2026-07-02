@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetIncludeContextParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetIncludeContextParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetPreservePathAndQueryParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) validateSetPreservePathAndQueryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewZeroTrustGatewayPolicyRuleSettingsRedirectOutputReferenceParamet
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewApiTokenPoliciesPermissionGroupsOutputReferenceParameters(terraf
 
 	return nil
 }
-

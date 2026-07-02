@@ -19,7 +19,7 @@ func (r *jsiiProxy_R2CustomDomain) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (r *jsiiProxy_R2CustomDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_R2CustomDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_R2CustomDomain) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (r *jsiiProxy_R2CustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_R2CustomDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateR2CustomDomain_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateR2CustomDomain_IsConstructParameters(x interface{}) error {
+func validateR2CustomDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateR2CustomDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateR2CustomDomain_IsTerraformElementParameters(x interface{}) error {
+func validateR2CustomDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateR2CustomDomain_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateR2CustomDomain_IsTerraformResourceParameters(x interface{}) error {
+func validateR2CustomDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_R2CustomDomain) validateSetBucketNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_R2CustomDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_R2CustomDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_R2CustomDomain) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_R2CustomDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_R2CustomDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_R2CustomDomain) validateSetDomainParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_R2CustomDomain) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_R2CustomDomain) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_R2CustomDomain) validateSetMinTlsParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_R2CustomDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_R2CustomDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -474,4 +474,3 @@ func validateNewR2CustomDomainParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

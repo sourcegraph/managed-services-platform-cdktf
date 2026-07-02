@@ -109,7 +109,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewFirewallRuleActionOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

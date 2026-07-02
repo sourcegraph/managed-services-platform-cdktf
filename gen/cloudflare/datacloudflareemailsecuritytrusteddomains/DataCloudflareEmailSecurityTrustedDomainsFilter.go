@@ -1,15 +1,14 @@
 package datacloudflareemailsecuritytrusteddomains
 
-
 type DataCloudflareEmailSecurityTrustedDomainsFilter struct {
 	// The sorting direction. Available values: "asc", "desc".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains#direction DataCloudflareEmailSecurityTrustedDomains#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains#is_recent DataCloudflareEmailSecurityTrustedDomains#is_recent}.
-	IsRecent interface{} `field:"optional" json:"isRecent" yaml:"isRecent"`
+	IsRecent any `field:"optional" json:"isRecent" yaml:"isRecent"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains#is_similarity DataCloudflareEmailSecurityTrustedDomains#is_similarity}.
-	IsSimilarity interface{} `field:"optional" json:"isSimilarity" yaml:"isSimilarity"`
+	IsSimilarity any `field:"optional" json:"isSimilarity" yaml:"isSimilarity"`
 	// The field to sort by. Available values: "pattern", "created_at".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains#order DataCloudflareEmailSecurityTrustedDomains#order}
@@ -23,4 +22,3 @@ type DataCloudflareEmailSecurityTrustedDomainsFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains#search DataCloudflareEmailSecurityTrustedDomains#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 }
-

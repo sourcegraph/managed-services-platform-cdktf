@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingDnsResultOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingDnsResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailRoutingDnsResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareEmailRoutingDnsResultOutputReferenceParameters(ter
 
 	return nil
 }
-

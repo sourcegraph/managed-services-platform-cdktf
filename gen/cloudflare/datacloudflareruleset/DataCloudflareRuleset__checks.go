@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareRuleset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareRuleset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareRuleset_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataCloudflareRuleset_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareRuleset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareRuleset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataCloudflareRuleset_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareRuleset_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareRuleset_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataCloudflareRuleset_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareRuleset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareRuleset) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRuleset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRuleset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataCloudflareRulesetParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

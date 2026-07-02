@@ -98,7 +98,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewMagicWanIpsecTunnelPskMetadataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validateInterpolation
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutRenamedClassesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutRenamedClassesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutRenamedCla
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutStepsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutStepsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutStepsParam
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutTransferredClassesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validatePutTransferredClassesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) validateSetDeletedCla
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -347,4 +347,3 @@ func validateNewWorkersScriptMigrationsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

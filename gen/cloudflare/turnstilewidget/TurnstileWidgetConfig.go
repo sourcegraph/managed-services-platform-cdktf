@@ -6,9 +6,9 @@ import (
 
 type TurnstileWidgetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type TurnstileWidgetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
@@ -40,7 +40,7 @@ type TurnstileWidgetConfig struct {
 	// If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
-	BotFightMode interface{} `field:"optional" json:"botFightMode" yaml:"botFightMode"`
+	BotFightMode any `field:"optional" json:"botFightMode" yaml:"botFightMode"`
 	// If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
@@ -48,14 +48,13 @@ type TurnstileWidgetConfig struct {
 	// Return the Ephemeral ID in /siteverify (ENT only).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
-	EphemeralId interface{} `field:"optional" json:"ephemeralId" yaml:"ephemeralId"`
+	EphemeralId any `field:"optional" json:"ephemeralId" yaml:"ephemeralId"`
 	// Do not show any Cloudflare branding on the widget (ENT only).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
-	Offlabel interface{} `field:"optional" json:"offlabel" yaml:"offlabel"`
+	Offlabel any `field:"optional" json:"offlabel" yaml:"offlabel"`
 	// Region where this widget can be used. This cannot be changed after creation. Available values: "world", "china".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget#region TurnstileWidget#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
-

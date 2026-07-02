@@ -141,7 +141,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetClassNamePar
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,7 +246,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetIndexNamePar
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -433,4 +433,3 @@ func validateNewWorkersScriptBindingsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

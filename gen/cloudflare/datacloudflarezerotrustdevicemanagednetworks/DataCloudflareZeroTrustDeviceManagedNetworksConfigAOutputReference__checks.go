@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworksConfigAOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworksConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworksConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustDeviceManagedNetworksConfigAOutputReferen
 
 	return nil
 }
-

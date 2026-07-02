@@ -1,6 +1,5 @@
 package accountsubscription
 
-
 type AccountSubscriptionRatePlan struct {
 	// The currency applied to the rate plan subscription.
 	//
@@ -9,7 +8,7 @@ type AccountSubscriptionRatePlan struct {
 	// Whether this rate plan is managed externally from Cloudflare.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
-	ExternallyManaged interface{} `field:"optional" json:"externallyManaged" yaml:"externallyManaged"`
+	ExternallyManaged any `field:"optional" json:"externallyManaged" yaml:"externallyManaged"`
 	// The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#id AccountSubscription#id}
@@ -20,7 +19,7 @@ type AccountSubscriptionRatePlan struct {
 	// Whether a rate plan is enterprise-based (or newly adopted term contract).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
-	IsContract interface{} `field:"optional" json:"isContract" yaml:"isContract"`
+	IsContract any `field:"optional" json:"isContract" yaml:"isContract"`
 	// The full name of the rate plan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#public_name AccountSubscription#public_name}
@@ -34,4 +33,3 @@ type AccountSubscriptionRatePlan struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#sets AccountSubscription#sets}
 	Sets *[]*string `field:"optional" json:"sets" yaml:"sets"`
 }
-

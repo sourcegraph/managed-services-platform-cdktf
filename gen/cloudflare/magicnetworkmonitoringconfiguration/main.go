@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
-		reflect.TypeOf((*MagicNetworkMonitoringConfiguration)(nil)).Elem(),
+		reflect.TypeFor[MagicNetworkMonitoringConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warpDevices", GoGetter: "WarpDevices"},
 			_jsii_.MemberProperty{JsiiProperty: "warpDevicesInput", GoGetter: "WarpDevicesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicNetworkMonitoringConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfigurationConfig",
-		reflect.TypeOf((*MagicNetworkMonitoringConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[MagicNetworkMonitoringConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfigurationWarpDevices",
-		reflect.TypeOf((*MagicNetworkMonitoringConfigurationWarpDevices)(nil)).Elem(),
+		reflect.TypeFor[MagicNetworkMonitoringConfigurationWarpDevices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfigurationWarpDevicesList",
-		reflect.TypeOf((*MagicNetworkMonitoringConfigurationWarpDevicesList)(nil)).Elem(),
+		reflect.TypeFor[MagicNetworkMonitoringConfigurationWarpDevicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfigurationWarpDevicesOutputReference",
-		reflect.TypeOf((*MagicNetworkMonitoringConfigurationWarpDevicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicNetworkMonitoringConfigurationWarpDevicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

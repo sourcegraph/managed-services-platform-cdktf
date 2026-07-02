@@ -15,17 +15,17 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Configuration() UserAgentBlockingRuleConfigurationOutputReference
-	ConfigurationInput() interface{}
+	ConfigurationInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,23 +51,23 @@ type UserAgentBlockingRule interface {
 	ModeInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
+	Paused() any
+	SetPaused(val any)
+	PausedInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -77,9 +77,9 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type UserAgentBlockingRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPaused()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for UserAgentBlockingRule
@@ -160,8 +160,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Configuration() UserAgentBlockingRuleC
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) ConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) ConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"configurationInput",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) ConfigurationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) Paused() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"paused",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Paused() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) PausedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) PausedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pausedInput",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_UserAgentBlockingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_UserAgentBlockingRule) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) UserAgentBlockingRule {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *Us
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewUserAgentBlockingRule_Override(u UserAgentBlockingRule, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetDescription(val *string) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetMode(val *string) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetPaused(val interface{}) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetPaused(val any) {
 	if err := j.validateSetPausedParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetPaused(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule)SetZoneId(val *string) {
+func (j *jsiiProxy_UserAgentBlockingRule) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func UserAgentBlockingRule_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func UserAgentBlockingRule_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func UserAgentBlockingRule_IsConstruct(x interface{}) *bool {
+func UserAgentBlockingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUserAgentBlockingRule_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func UserAgentBlockingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func UserAgentBlockingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func UserAgentBlockingRule_IsTerraformElement(x interface{}) *bool {
+func UserAgentBlockingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUserAgentBlockingRule_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func UserAgentBlockingRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func UserAgentBlockingRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func UserAgentBlockingRule_IsTerraformResource(x interface{}) *bool {
+func UserAgentBlockingRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUserAgentBlockingRule_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func UserAgentBlockingRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (u *jsiiProxy_UserAgentBlockingRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) AddOverride(path *string, value interface{}) {
+func (u *jsiiProxy_UserAgentBlockingRule) AddOverride(path *string, value any) {
 	if err := u.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_UserAgentBlockingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (u *jsiiProxy_UserAgentBlockingRule) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserAgentBlockingRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -841,7 +840,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		u,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (u *jsiiProxy_UserAgentBlockingRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) MoveTo(moveTarget *string, index interface{}) {
+func (u *jsiiProxy_UserAgentBlockingRule) MoveTo(moveTarget *string, index any) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (u *jsiiProxy_UserAgentBlockingRule) PutConfiguration(value *UserAgentBlock
 	_jsii_.InvokeVoid(
 		u,
 		"putConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (u *jsiiProxy_UserAgentBlockingRule) ResetPaused() {
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_UserAgentBlockingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -953,8 +952,8 @@ func (u *jsiiProxy_UserAgentBlockingRule) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_UserAgentBlockingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -966,8 +965,8 @@ func (u *jsiiProxy_UserAgentBlockingRule) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserAgentBlockingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -979,8 +978,8 @@ func (u *jsiiProxy_UserAgentBlockingRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserAgentBlockingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1005,8 +1004,8 @@ func (u *jsiiProxy_UserAgentBlockingRule) ToString() *string {
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserAgentBlockingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1017,4 +1016,3 @@ func (u *jsiiProxy_UserAgentBlockingRule) ToTerraform() interface{} {
 
 	return returns
 }
-

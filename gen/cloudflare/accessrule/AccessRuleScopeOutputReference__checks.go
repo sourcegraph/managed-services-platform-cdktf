@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessRuleScopeOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_AccessRuleScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessRuleScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAccessRuleScopeOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

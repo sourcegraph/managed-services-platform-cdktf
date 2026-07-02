@@ -101,7 +101,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePu
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutExcludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePu
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutIncludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePu
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutRequireParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutRequireParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -283,7 +283,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -358,4 +358,3 @@ func validateNewZeroTrustAccessApplicationPoliciesOutputReferenceParameters(terr
 
 	return nil
 }
-

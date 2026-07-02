@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewZeroTrustTunnelWarpConnectorConnectionsOutputReferenceParameters
 
 	return nil
 }
-

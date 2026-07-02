@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
-		reflect.TypeOf((*WebAnalyticsSite)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSite](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneTag", GoGetter: "ZoneTag"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneTagInput", GoGetter: "ZoneTagInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WebAnalyticsSite{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig",
-		reflect.TypeOf((*WebAnalyticsSiteConfig)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSiteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRules",
-		reflect.TypeOf((*WebAnalyticsSiteRules)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSiteRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesList",
-		reflect.TypeOf((*WebAnalyticsSiteRulesList)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSiteRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WebAnalyticsSiteRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference",
-		reflect.TypeOf((*WebAnalyticsSiteRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSiteRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WebAnalyticsSiteRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRuleset",
-		reflect.TypeOf((*WebAnalyticsSiteRuleset)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSiteRuleset](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesetOutputReference",
-		reflect.TypeOf((*WebAnalyticsSiteRulesetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WebAnalyticsSiteRulesetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneName", GoGetter: "ZoneName"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneTag", GoGetter: "ZoneTag"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WebAnalyticsSiteRulesetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

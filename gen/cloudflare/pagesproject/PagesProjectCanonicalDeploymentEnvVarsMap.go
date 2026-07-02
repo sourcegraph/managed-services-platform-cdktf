@@ -30,7 +30,7 @@ type PagesProjectCanonicalDeploymentEnvVarsMap interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,6 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) TerraformResource(
 	return returns
 }
 
-
 func NewPagesProjectCanonicalDeploymentEnvVarsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectCanonicalDeploymentEnvVarsMap {
 	_init_.Initialize()
 
@@ -94,7 +93,7 @@ func NewPagesProjectCanonicalDeploymentEnvVarsMap(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -106,12 +105,12 @@ func NewPagesProjectCanonicalDeploymentEnvVarsMap_Override(p PagesProjectCanonic
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -122,7 +121,7 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -155,7 +154,7 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) Get(key *string) P
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{key},
+		[]any{key},
 		&returns,
 	)
 
@@ -171,23 +170,23 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) InterpolationForAt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -206,4 +205,3 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) ToString() *string
 
 	return returns
 }
-

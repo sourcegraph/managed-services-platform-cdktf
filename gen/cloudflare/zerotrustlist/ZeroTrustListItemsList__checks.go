@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustListItemsList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustListItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustListItemsListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

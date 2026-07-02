@@ -1,6 +1,5 @@
 package zerotrustaccessapplication
 
-
 type ZeroTrustAccessApplicationScimConfigMappings struct {
 	// Which SCIM resource type this mapping applies to.
 	//
@@ -9,7 +8,7 @@ type ZeroTrustAccessApplicationScimConfigMappings struct {
 	// Whether or not this mapping is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#enabled ZeroTrustAccessApplication#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#filter ZeroTrustAccessApplication#filter}
@@ -30,4 +29,3 @@ type ZeroTrustAccessApplicationScimConfigMappings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#transform_jsonata ZeroTrustAccessApplication#transform_jsonata}
 	TransformJsonata *string `field:"optional" json:"transformJsonata" yaml:"transformJsonata"`
 }
-

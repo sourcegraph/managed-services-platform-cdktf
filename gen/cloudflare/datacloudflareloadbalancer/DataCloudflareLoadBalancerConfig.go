@@ -6,9 +6,9 @@ import (
 
 type DataCloudflareLoadBalancerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataCloudflareLoadBalancerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}.
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}.
@@ -28,12 +28,11 @@ type DataCloudflareLoadBalancerConfig struct {
 	// Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
-	PopPools interface{} `field:"optional" json:"popPools" yaml:"popPools"`
+	PopPools any `field:"optional" json:"popPools" yaml:"popPools"`
 	// A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region.
 	//
 	// Any regions not explicitly defined will fall back to using default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
-	RegionPools interface{} `field:"optional" json:"regionPools" yaml:"regionPools"`
+	RegionPools any `field:"optional" json:"regionPools" yaml:"regionPools"`
 }
-

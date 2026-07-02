@@ -12,9 +12,9 @@ type R2BucketLockRulesConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type R2BucketLockRulesConditionOutputReference interface {
 	DateInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxAgeSeconds() *float64
 	SetMaxAgeSeconds(val *float64)
 	MaxAgeSecondsInput() *float64
@@ -49,7 +49,7 @@ type R2BucketLockRulesConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type R2BucketLockRulesConditionOutputReference interface {
 	ResetMaxAgeSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_R2BucketLockRulesConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) TypeInput() *strin
 	return returns
 }
 
-
 func NewR2BucketLockRulesConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) R2BucketLockRulesConditionOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewR2BucketLockRulesConditionOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewR2BucketLockRulesConditionOutputReference_Override(r R2BucketLockRulesCo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetDate(val *string) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetDate(val *string) {
 	if err := j.validateSetDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetDate(val *string
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetMaxAgeSeconds(val *float64) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetMaxAgeSeconds(val *float64) {
 	if err := j.validateSetMaxAgeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetMaxAgeSeconds(va
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetType(val *string) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) ResetMaxAgeSeconds
 	)
 }
 
-func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) ToString() *string
 
 	return returns
 }
-

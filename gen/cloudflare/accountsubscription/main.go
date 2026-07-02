@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscription",
-		reflect.TypeOf((*AccountSubscription)(nil)).Elem(),
+		reflect.TypeFor[AccountSubscription](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountSubscription{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig",
-		reflect.TypeOf((*AccountSubscriptionConfig)(nil)).Elem(),
+		reflect.TypeFor[AccountSubscriptionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan",
-		reflect.TypeOf((*AccountSubscriptionRatePlan)(nil)).Elem(),
+		reflect.TypeFor[AccountSubscriptionRatePlan](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference",
-		reflect.TypeOf((*AccountSubscriptionRatePlanOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountSubscriptionRatePlanOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountSubscriptionRatePlanOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

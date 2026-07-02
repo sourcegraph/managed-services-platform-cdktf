@@ -1,6 +1,5 @@
 package zerotrustgatewaypolicy
 
-
 type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls struct {
 	// Configure whether copy is enabled or not.
 	//
@@ -12,15 +11,15 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls struct {
 	// Set to false to enable copy-pasting. Only applies when `version == "v1"`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#dcp ZeroTrustGatewayPolicy#dcp}
-	Dcp interface{} `field:"optional" json:"dcp" yaml:"dcp"`
+	Dcp any `field:"optional" json:"dcp" yaml:"dcp"`
 	// Set to false to enable downloading. Only applies when `version == "v1"`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#dd ZeroTrustGatewayPolicy#dd}
-	Dd interface{} `field:"optional" json:"dd" yaml:"dd"`
+	Dd any `field:"optional" json:"dd" yaml:"dd"`
 	// Set to false to enable keyboard usage. Only applies when `version == "v1"`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#dk ZeroTrustGatewayPolicy#dk}
-	Dk interface{} `field:"optional" json:"dk" yaml:"dk"`
+	Dk any `field:"optional" json:"dk" yaml:"dk"`
 	// Configure whether downloading enabled or not.
 	//
 	// When set with "remote_only", downloads are only available for viewing. Only applies when `version == "v2"`.
@@ -31,11 +30,11 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls struct {
 	// Set to false to enable printing. Only applies when `version == "v1"`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#dp ZeroTrustGatewayPolicy#dp}
-	Dp interface{} `field:"optional" json:"dp" yaml:"dp"`
+	Dp any `field:"optional" json:"dp" yaml:"dp"`
 	// Set to false to enable uploading. Only applies when `version == "v1"`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#du ZeroTrustGatewayPolicy#du}
-	Du interface{} `field:"optional" json:"du" yaml:"du"`
+	Du any `field:"optional" json:"du" yaml:"du"`
 	// Configure whether keyboard usage is enabled or not.
 	//
 	// When absent, keyboard usage is enabled. Only applies when `version == "v2"`.
@@ -69,4 +68,3 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#version ZeroTrustGatewayPolicy#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

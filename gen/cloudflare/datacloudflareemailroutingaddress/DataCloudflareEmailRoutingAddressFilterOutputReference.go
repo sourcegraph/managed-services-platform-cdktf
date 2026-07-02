@@ -12,9 +12,9 @@ type DataCloudflareEmailRoutingAddressFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DataCloudflareEmailRoutingAddressFilterOutputReference interface {
 	DirectionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,13 +40,13 @@ type DataCloudflareEmailRoutingAddressFilterOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Verified() interface{}
-	SetVerified(val interface{})
-	VerifiedInput() interface{}
+	Verified() any
+	SetVerified(val any)
+	VerifiedInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DataCloudflareEmailRoutingAddressFilterOutputReference interface {
 	ResetVerified()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Verified() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Verified() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verified",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Verif
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) VerifiedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) VerifiedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifiedInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Verif
 	)
 	return returns
 }
-
 
 func NewDataCloudflareEmailRoutingAddressFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareEmailRoutingAddressFilterOutputReference {
 	_init_.Initialize()
@@ -205,7 +204,7 @@ func NewDataCloudflareEmailRoutingAddressFilterOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddress.DataCloudflareEmailRoutingAddressFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDataCloudflareEmailRoutingAddressFilterOutputReference_Override(d DataCl
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddress.DataCloudflareEmailRoutingAddressFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetDirection(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetDir
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference)SetVerified(val interface{}) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) SetVerified(val any) {
 	if err := j.validateSetVerifiedParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Compu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference) ToStr
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigHea
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigHeaderAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigHeaderAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareZeroTrustAccessIdentityProvidersResultConfigHeader
 
 	return nil
 }
-

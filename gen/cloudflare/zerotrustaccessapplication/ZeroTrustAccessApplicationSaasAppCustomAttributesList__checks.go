@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustAccessApplicationSaasAppCustomAttributesListParameters(
 
 	return nil
 }
-

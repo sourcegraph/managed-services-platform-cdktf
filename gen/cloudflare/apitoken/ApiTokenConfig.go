@@ -6,9 +6,9 @@ import (
 
 type ApiTokenConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApiTokenConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Token name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_token#name ApiToken#name}
@@ -26,7 +26,7 @@ type ApiTokenConfig struct {
 	// List of access policies assigned to the token.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_token#policies ApiToken#policies}
-	Policies interface{} `field:"required" json:"policies" yaml:"policies"`
+	Policies any `field:"required" json:"policies" yaml:"policies"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_token#condition ApiToken#condition}.
 	Condition *ApiTokenCondition `field:"optional" json:"condition" yaml:"condition"`
 	// The expiration time on or after which the JWT MUST NOT be accepted for processing.
@@ -42,4 +42,3 @@ type ApiTokenConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_token#status ApiToken#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
-

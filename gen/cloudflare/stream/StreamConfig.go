@@ -6,9 +6,9 @@ import (
 
 type StreamConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type StreamConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream#account_id Stream#account_id}
@@ -52,7 +52,7 @@ type StreamConfig struct {
 	// When set to `true`, a signed token must be generated with a signing key to view the video.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
-	RequireSignedUrls interface{} `field:"optional" json:"requireSignedUrls" yaml:"requireSignedUrls"`
+	RequireSignedUrls any `field:"optional" json:"requireSignedUrls" yaml:"requireSignedUrls"`
 	// Indicates the date and time at which the video will be deleted.
 	//
 	// Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
@@ -70,4 +70,3 @@ type StreamConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream#upload_expiry Stream#upload_expiry}
 	UploadExpiry *string `field:"optional" json:"uploadExpiry" yaml:"uploadExpiry"`
 }
-

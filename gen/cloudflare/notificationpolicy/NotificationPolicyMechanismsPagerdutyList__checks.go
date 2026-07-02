@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotificationPolicyMechanismsPagerdutyListParameters(terraformRes
 
 	return nil
 }
-

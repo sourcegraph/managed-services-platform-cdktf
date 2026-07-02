@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkersScript) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkersScript) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkersScript) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (w *jsiiProxy_WorkersScript) validatePutAssetsParameters(value *WorkersScri
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value *WorkersS
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutTailConsumersParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutTailConsumersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func validateWorkersScript_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateWorkersScript_IsConstructParameters(x interface{}) error {
+func validateWorkersScript_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func validateWorkersScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkersScript_IsTerraformElementParameters(x interface{}) error {
+func validateWorkersScript_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func validateWorkersScript_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkersScript_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkersScript_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -382,7 +382,7 @@ func (j *jsiiProxy_WorkersScript) validateSetCompatibilityFlagsParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScript) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -439,7 +439,7 @@ func (j *jsiiProxy_WorkersScript) validateSetContentSha256Parameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -496,7 +496,7 @@ func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetKeepAssetsParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScript) validateSetKeepAssetsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -532,7 +532,7 @@ func (j *jsiiProxy_WorkersScript) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetLogpushParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScript) validateSetLogpushParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -560,7 +560,7 @@ func (j *jsiiProxy_WorkersScript) validateSetMainModuleParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkersScript) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -640,4 +640,3 @@ func validateNewWorkersScriptParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

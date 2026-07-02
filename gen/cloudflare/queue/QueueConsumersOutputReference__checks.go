@@ -98,7 +98,7 @@ func (q *jsiiProxy_QueueConsumersOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_QueueConsumersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QueueConsumersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewQueueConsumersOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

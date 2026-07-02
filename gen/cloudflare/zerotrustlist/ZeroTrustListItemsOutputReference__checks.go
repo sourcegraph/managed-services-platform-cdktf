@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustListItemsOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustListItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustListItemsOutputReference) validateSetDescriptionPara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustListItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewZeroTrustListItemsOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

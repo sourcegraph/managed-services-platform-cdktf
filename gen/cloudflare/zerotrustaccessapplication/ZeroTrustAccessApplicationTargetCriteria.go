@@ -1,6 +1,5 @@
 package zerotrustaccessapplication
 
-
 type ZeroTrustAccessApplicationTargetCriteria struct {
 	// The port that the targets use for the chosen communication protocol. A port cannot be assigned to multiple protocols.
 	//
@@ -13,6 +12,5 @@ type ZeroTrustAccessApplicationTargetCriteria struct {
 	// Contains a map of target attribute keys to target attribute values.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#target_attributes ZeroTrustAccessApplication#target_attributes}
-	TargetAttributes interface{} `field:"required" json:"targetAttributes" yaml:"targetAttributes"`
+	TargetAttributes any `field:"required" json:"targetAttributes" yaml:"targetAttributes"`
 }
-

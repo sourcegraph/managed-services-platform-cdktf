@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetChinaNetworkParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetChinaNetworkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetClientCertificateForwardingParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetClientCertificateForwardingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewZeroTrustAccessMtlsHostnameSettingsSettingsOutputReferenceParame
 
 	return nil
 }
-

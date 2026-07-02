@@ -18,12 +18,12 @@ type DataCloudflareQueueConsumer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerId() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -51,21 +51,21 @@ type DataCloudflareQueueConsumer interface {
 	SetQueueId(val *string)
 	QueueIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Script() *string
 	ScriptName() *string
 	Settings() DataCloudflareQueueConsumerSettingsOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataCloudflareQueueConsumer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareQueueConsumer
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareQueueConsumer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) ConsumerId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareQueueConsumer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) QueueIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareQueueConsumer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareQueueConsumer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -349,7 +349,6 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
 func NewDataCloudflareQueueConsumer(scope constructs.Construct, id *string, config *DataCloudflareQueueConsumerConfig) DataCloudflareQueueConsumer {
 	_init_.Initialize()
@@ -361,7 +360,7 @@ func NewDataCloudflareQueueConsumer(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareQueueConsumer.DataCloudflareQueueConsumer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -374,12 +373,12 @@ func NewDataCloudflareQueueConsumer_Override(d DataCloudflareQueueConsumer, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareQueueConsumer.DataCloudflareQueueConsumer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetQueueId(val *string) {
+func (j *jsiiProxy_DataCloudflareQueueConsumer) SetQueueId(val *string) {
 	if err := j.validateSetQueueIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func DataCloudflareQueueConsumer_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareQueueConsumer.DataCloudflareQueueConsumer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func DataCloudflareQueueConsumer_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareQueueConsumer_IsConstruct(x interface{}) *bool {
+func DataCloudflareQueueConsumer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareQueueConsumer_IsConstructParameters(x); err != nil {
@@ -494,7 +493,7 @@ func DataCloudflareQueueConsumer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareQueueConsumer.DataCloudflareQueueConsumer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func DataCloudflareQueueConsumer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareQueueConsumer_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareQueueConsumer_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareQueueConsumer_IsTerraformDataSourceParameters(x); err != nil {
@@ -513,7 +512,7 @@ func DataCloudflareQueueConsumer_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareQueueConsumer.DataCloudflareQueueConsumer",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func DataCloudflareQueueConsumer_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareQueueConsumer_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareQueueConsumer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareQueueConsumer_IsTerraformElementParameters(x); err != nil {
@@ -532,7 +531,7 @@ func DataCloudflareQueueConsumer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareQueueConsumer.DataCloudflareQueueConsumer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -550,27 +549,27 @@ func DataCloudflareQueueConsumer_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareQueueConsumer) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareQueueConsumer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -740,8 +739,8 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareQueueConsumer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -753,8 +752,8 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareQueueConsumer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -766,8 +765,8 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareQueueConsumer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -779,8 +778,8 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareQueueConsumer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -805,8 +804,8 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueueConsumer) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareQueueConsumer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -817,4 +816,3 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) ToTerraform() interface{} {
 
 	return returns
 }
-

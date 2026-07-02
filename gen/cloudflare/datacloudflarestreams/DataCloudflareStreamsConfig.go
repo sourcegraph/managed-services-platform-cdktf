@@ -6,9 +6,9 @@ import (
 
 type DataCloudflareStreamsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataCloudflareStreamsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
@@ -26,7 +26,7 @@ type DataCloudflareStreamsConfig struct {
 	// Lists videos in ascending order of creation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams#asc DataCloudflareStreams#asc}
-	Asc interface{} `field:"optional" json:"asc" yaml:"asc"`
+	Asc any `field:"optional" json:"asc" yaml:"asc"`
 	// A user-defined identifier for the media creator.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams#creator DataCloudflareStreams#creator}
@@ -38,7 +38,7 @@ type DataCloudflareStreamsConfig struct {
 	// Includes the total number of videos associated with the submitted query parameters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
-	IncludeCounts interface{} `field:"optional" json:"includeCounts" yaml:"includeCounts"`
+	IncludeCounts any `field:"optional" json:"includeCounts" yaml:"includeCounts"`
 	// Max items to fetch, default: 1000.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
@@ -62,4 +62,3 @@ type DataCloudflareStreamsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams#type DataCloudflareStreams#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

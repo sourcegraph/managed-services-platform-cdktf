@@ -19,7 +19,7 @@ func (s *jsiiProxy_StreamLiveInput) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (s *jsiiProxy_StreamLiveInput) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StreamLiveInput) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StreamLiveInput) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (s *jsiiProxy_StreamLiveInput) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StreamLiveInput) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateStreamLiveInput_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateStreamLiveInput_IsConstructParameters(x interface{}) error {
+func validateStreamLiveInput_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateStreamLiveInput_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateStreamLiveInput_IsTerraformElementParameters(x interface{}) error {
+func validateStreamLiveInput_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateStreamLiveInput_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateStreamLiveInput_IsTerraformResourceParameters(x interface{}) error {
+func validateStreamLiveInput_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_StreamLiveInput) validateSetAccountIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInput) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInput) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_StreamLiveInput) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInput) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInput) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_StreamLiveInput) validateSetMetaParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInput) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StreamLiveInput) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewStreamLiveInputParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

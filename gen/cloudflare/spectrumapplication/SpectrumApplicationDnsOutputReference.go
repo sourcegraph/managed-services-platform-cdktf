@@ -12,9 +12,9 @@ type SpectrumApplicationDnsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SpectrumApplicationDnsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -46,7 +46,7 @@ type SpectrumApplicationDnsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type SpectrumApplicationDnsOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_SpectrumApplicationDnsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewSpectrumApplicationDnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpectrumApplicationDnsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewSpectrumApplicationDnsOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewSpectrumApplicationDnsOutputReference_Override(s SpectrumApplicationDnsO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) ToString() *string {
 
 	return returns
 }
-

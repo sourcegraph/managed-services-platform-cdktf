@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetDescripti
 	return nil
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetExpressio
 	return nil
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewCloudConnectorRulesRulesOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

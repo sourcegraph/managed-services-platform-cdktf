@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersCustomDomain.WorkersCustomDomain",
-		reflect.TypeOf((*WorkersCustomDomain)(nil)).Elem(),
+		reflect.TypeFor[WorkersCustomDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneName", GoGetter: "ZoneName"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersCustomDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig",
-		reflect.TypeOf((*WorkersCustomDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkersCustomDomainConfig](),
 	)
 }

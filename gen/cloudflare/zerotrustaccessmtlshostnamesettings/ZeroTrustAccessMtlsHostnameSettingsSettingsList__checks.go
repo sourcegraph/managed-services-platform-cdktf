@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustAccessMtlsHostnameSettingsSettingsListParameters(terraf
 
 	return nil
 }
-

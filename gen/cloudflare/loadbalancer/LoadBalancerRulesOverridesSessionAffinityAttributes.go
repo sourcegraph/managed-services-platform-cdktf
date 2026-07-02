@@ -1,6 +1,5 @@
 package loadbalancer
 
-
 type LoadBalancerRulesOverridesSessionAffinityAttributes struct {
 	// Configures the drain duration in seconds.
 	//
@@ -21,7 +20,7 @@ type LoadBalancerRulesOverridesSessionAffinityAttributes struct {
 	// - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
-	RequireAllHeaders interface{} `field:"optional" json:"requireAllHeaders" yaml:"requireAllHeaders"`
+	RequireAllHeaders any `field:"optional" json:"requireAllHeaders" yaml:"requireAllHeaders"`
 	// Configures the SameSite attribute on session affinity cookie.
 	//
 	// Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
@@ -47,4 +46,3 @@ type LoadBalancerRulesOverridesSessionAffinityAttributes struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 	ZeroDowntimeFailover *string `field:"optional" json:"zeroDowntimeFailover" yaml:"zeroDowntimeFailover"`
 }
-

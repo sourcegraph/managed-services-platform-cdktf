@@ -106,7 +106,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPageRuleActionsCacheKeyFieldsCookieOutputReferenceParameters(ter
 
 	return nil
 }
-

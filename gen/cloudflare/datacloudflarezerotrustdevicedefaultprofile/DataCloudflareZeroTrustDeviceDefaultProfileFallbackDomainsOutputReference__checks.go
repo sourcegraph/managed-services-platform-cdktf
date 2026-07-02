@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsOut
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsOutput
 
 	return nil
 }
-

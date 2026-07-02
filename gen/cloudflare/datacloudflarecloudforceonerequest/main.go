@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest",
-		reflect.TypeOf((*DataCloudflareCloudforceOneRequest)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCloudforceOneRequest](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updated", GoGetter: "Updated"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCloudforceOneRequest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequestConfig",
-		reflect.TypeOf((*DataCloudflareCloudforceOneRequestConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCloudforceOneRequestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequestFilter",
-		reflect.TypeOf((*DataCloudflareCloudforceOneRequestFilter)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCloudforceOneRequestFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequestFilterOutputReference",
-		reflect.TypeOf((*DataCloudflareCloudforceOneRequestFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCloudforceOneRequestFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "completedAfter", GoGetter: "CompletedAfter"},
 			_jsii_.MemberProperty{JsiiProperty: "completedAfterInput", GoGetter: "CompletedAfterInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

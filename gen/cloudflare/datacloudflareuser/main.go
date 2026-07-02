@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUser",
-		reflect.TypeOf((*DataCloudflareUser)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "betas", GoGetter: "Betas"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "twoFactorAuthenticationLocked", GoGetter: "TwoFactorAuthenticationLocked"},
 			_jsii_.MemberProperty{JsiiProperty: "zipcode", GoGetter: "Zipcode"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,15 +67,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUserConfig",
-		reflect.TypeOf((*DataCloudflareUserConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUserOrganizations",
-		reflect.TypeOf((*DataCloudflareUserOrganizations)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareUserOrganizations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUserOrganizationsList",
-		reflect.TypeOf((*DataCloudflareUserOrganizationsList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareUserOrganizationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareUserOrganizationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -96,7 +96,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUserOrganizationsOutputReference",
-		reflect.TypeOf((*DataCloudflareUserOrganizationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareUserOrganizationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareUserOrganizationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

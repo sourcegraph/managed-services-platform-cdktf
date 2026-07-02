@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
-		reflect.TypeOf((*PagesProject)(nil)).Elem(),
+		reflect.TypeFor[PagesProject](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig",
-		reflect.TypeOf((*PagesProjectBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectBuildConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference",
-		reflect.TypeOf((*PagesProjectBuildConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectBuildConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildCaching", GoGetter: "BuildCaching"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCachingInput", GoGetter: "BuildCachingInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webAnalyticsToken", GoGetter: "WebAnalyticsToken"},
 			_jsii_.MemberProperty{JsiiProperty: "webAnalyticsTokenInput", GoGetter: "WebAnalyticsTokenInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectBuildConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeployment",
-		reflect.TypeOf((*PagesProjectCanonicalDeployment)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeployment](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentBuildConfig",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentBuildConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentBuildConfigOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentBuildConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentBuildConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildCaching", GoGetter: "BuildCaching"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webAnalyticsTag", GoGetter: "WebAnalyticsTag"},
 			_jsii_.MemberProperty{JsiiProperty: "webAnalyticsToken", GoGetter: "WebAnalyticsToken"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentBuildConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,15 +186,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentDeploymentTrigger",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentDeploymentTrigger)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentDeploymentTrigger](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentDeploymentTriggerMetadata",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentDeploymentTriggerMetadata)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentDeploymentTriggerMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "commitHash", GoGetter: "CommitHash"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -229,7 +229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentDeploymentTriggerOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentDeploymentTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentDeploymentTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentDeploymentTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVars",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentEnvVars)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentEnvVars](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentEnvVarsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentEnvVarsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -287,7 +287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentEnvVarsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentEnvVarsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -313,7 +313,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -321,11 +321,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentLatestStage",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentLatestStage)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentLatestStage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentLatestStageOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentLatestStageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentLatestStageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentLatestStageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,7 +361,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
 			_jsii_.MemberProperty{JsiiProperty: "buildConfig", GoGetter: "BuildConfig"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,15 +409,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentSource",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentSource)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentSourceConfig",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentSourceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentSourceConfigOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -460,7 +460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentSourceOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -494,11 +494,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentStages",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentStages)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentStages](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentStagesList",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentStagesList)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentStagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -511,7 +511,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentStagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -519,7 +519,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentStagesOutputReference",
-		reflect.TypeOf((*PagesProjectCanonicalDeploymentStagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectCanonicalDeploymentStagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -547,7 +547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectCanonicalDeploymentStagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -555,15 +555,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig",
-		reflect.TypeOf((*PagesProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs",
-		reflect.TypeOf((*PagesProjectDeploymentConfigs)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -595,7 +595,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -603,15 +603,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreview)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreview](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewAiBindings)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewAiBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewAiBindingsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewAiBindingsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -624,7 +624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewAiBindingsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -632,7 +632,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -659,7 +659,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -667,11 +667,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -684,7 +684,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -692,7 +692,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -719,7 +719,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -727,11 +727,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewBrowsers)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewBrowsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewBrowsersMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewBrowsersMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -744,7 +744,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -752,7 +752,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewBrowsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewBrowsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -776,7 +776,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -784,11 +784,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewD1Databases)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewD1Databases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewD1DatabasesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewD1DatabasesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -801,7 +801,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewD1DatabasesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -809,7 +809,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -836,7 +836,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -844,11 +844,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -861,7 +861,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -869,7 +869,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -896,7 +896,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -904,11 +904,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewEnvVars)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewEnvVars](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewEnvVarsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewEnvVarsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -921,7 +921,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -929,7 +929,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -957,7 +957,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -965,11 +965,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewHyperdriveBindings)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewHyperdriveBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -982,7 +982,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -990,7 +990,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1017,7 +1017,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1025,11 +1025,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewKvNamespaces)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewKvNamespaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewKvNamespacesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewKvNamespacesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1042,7 +1042,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1050,7 +1050,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1077,7 +1077,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1085,11 +1085,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewMtlsCertificates)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewMtlsCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1102,7 +1102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1110,7 +1110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateIdInput", GoGetter: "CertificateIdInput"},
@@ -1137,7 +1137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1145,7 +1145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiBindings", GoGetter: "AiBindings"},
 			_jsii_.MemberProperty{JsiiProperty: "aiBindingsInput", GoGetter: "AiBindingsInput"},
@@ -1231,7 +1231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeBindings", GoGetter: "VectorizeBindings"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeBindingsInput", GoGetter: "VectorizeBindingsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1239,11 +1239,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewPlacement)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewPlacement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewPlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewPlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1270,7 +1270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1278,11 +1278,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewQueueProducers)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewQueueProducers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewQueueProducersMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewQueueProducersMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1295,7 +1295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewQueueProducersMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1303,7 +1303,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1330,7 +1330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1338,11 +1338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewR2Buckets)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewR2Buckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewR2BucketsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewR2BucketsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1355,7 +1355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1363,7 +1363,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1393,7 +1393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1401,11 +1401,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewServices)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewServicesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewServicesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1418,7 +1418,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewServicesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1426,7 +1426,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1459,7 +1459,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1467,11 +1467,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewVectorizeBindings)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewVectorizeBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1484,7 +1484,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1492,7 +1492,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1519,7 +1519,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1527,15 +1527,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProduction)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProduction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionAiBindings)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionAiBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionAiBindingsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionAiBindingsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1548,7 +1548,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1556,7 +1556,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionAiBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionAiBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1583,7 +1583,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1591,11 +1591,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1608,7 +1608,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1616,7 +1616,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1643,7 +1643,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1651,11 +1651,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionBrowsers)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionBrowsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionBrowsersMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionBrowsersMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1668,7 +1668,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1676,7 +1676,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionBrowsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionBrowsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1700,7 +1700,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1708,11 +1708,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionD1Databases)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionD1Databases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionD1DatabasesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionD1DatabasesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1725,7 +1725,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1733,7 +1733,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1760,7 +1760,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1768,11 +1768,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionDurableObjectNamespaces)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1785,7 +1785,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1793,7 +1793,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1820,7 +1820,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1828,11 +1828,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionEnvVars)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionEnvVars](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionEnvVarsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionEnvVarsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1845,7 +1845,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionEnvVarsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1853,7 +1853,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionEnvVarsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionEnvVarsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1881,7 +1881,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionEnvVarsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1889,11 +1889,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionHyperdriveBindings)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionHyperdriveBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1906,7 +1906,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1914,7 +1914,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1941,7 +1941,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1949,11 +1949,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionKvNamespaces)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionKvNamespaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionKvNamespacesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionKvNamespacesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1966,7 +1966,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionKvNamespacesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -1974,7 +1974,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2001,7 +2001,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2009,11 +2009,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionMtlsCertificates)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionMtlsCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionMtlsCertificatesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionMtlsCertificatesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -2026,7 +2026,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionMtlsCertificatesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -2034,7 +2034,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateIdInput", GoGetter: "CertificateIdInput"},
@@ -2061,7 +2061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2069,7 +2069,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiBindings", GoGetter: "AiBindings"},
 			_jsii_.MemberProperty{JsiiProperty: "aiBindingsInput", GoGetter: "AiBindingsInput"},
@@ -2155,7 +2155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeBindings", GoGetter: "VectorizeBindings"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeBindingsInput", GoGetter: "VectorizeBindingsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2163,11 +2163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionPlacement)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionPlacement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionPlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionPlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2194,7 +2194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2202,11 +2202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionQueueProducers)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionQueueProducers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionQueueProducersMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionQueueProducersMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -2219,7 +2219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -2227,7 +2227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionQueueProducersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionQueueProducersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2254,7 +2254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2262,11 +2262,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionR2Buckets)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionR2Buckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionR2BucketsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionR2BucketsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -2279,7 +2279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -2287,7 +2287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionR2BucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionR2BucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2317,7 +2317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2325,11 +2325,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionServices)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionServicesMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionServicesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -2342,7 +2342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionServicesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -2350,7 +2350,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2383,7 +2383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2391,11 +2391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionVectorizeBindings)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionVectorizeBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionVectorizeBindingsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionVectorizeBindingsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -2408,7 +2408,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -2416,7 +2416,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference",
-		reflect.TypeOf((*PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2443,7 +2443,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2451,15 +2451,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeployment",
-		reflect.TypeOf((*PagesProjectLatestDeployment)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeployment](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentBuildConfig",
-		reflect.TypeOf((*PagesProjectLatestDeploymentBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentBuildConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentBuildConfigOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentBuildConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentBuildConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildCaching", GoGetter: "BuildCaching"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
@@ -2489,7 +2489,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webAnalyticsTag", GoGetter: "WebAnalyticsTag"},
 			_jsii_.MemberProperty{JsiiProperty: "webAnalyticsToken", GoGetter: "WebAnalyticsToken"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentBuildConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2497,15 +2497,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentDeploymentTrigger",
-		reflect.TypeOf((*PagesProjectLatestDeploymentDeploymentTrigger)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentDeploymentTrigger](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentDeploymentTriggerMetadata",
-		reflect.TypeOf((*PagesProjectLatestDeploymentDeploymentTriggerMetadata)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentDeploymentTriggerMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "commitHash", GoGetter: "CommitHash"},
@@ -2532,7 +2532,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2540,7 +2540,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentDeploymentTriggerOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentDeploymentTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentDeploymentTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2566,7 +2566,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentDeploymentTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2574,11 +2574,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentEnvVars",
-		reflect.TypeOf((*PagesProjectLatestDeploymentEnvVars)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentEnvVars](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentEnvVarsMap",
-		reflect.TypeOf((*PagesProjectLatestDeploymentEnvVarsMap)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentEnvVarsMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -2590,7 +2590,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -2598,7 +2598,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentEnvVarsOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentEnvVarsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentEnvVarsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2624,7 +2624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentEnvVarsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2632,11 +2632,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentLatestStage",
-		reflect.TypeOf((*PagesProjectLatestDeploymentLatestStage)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentLatestStage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentLatestStageOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentLatestStageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentLatestStageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2664,7 +2664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentLatestStageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2672,7 +2672,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
 			_jsii_.MemberProperty{JsiiProperty: "buildConfig", GoGetter: "BuildConfig"},
@@ -2712,7 +2712,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2720,15 +2720,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentSource",
-		reflect.TypeOf((*PagesProjectLatestDeploymentSource)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentSourceConfig",
-		reflect.TypeOf((*PagesProjectLatestDeploymentSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentSourceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentSourceConfigOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2763,7 +2763,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2771,7 +2771,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentSourceOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2797,7 +2797,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2805,11 +2805,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentStages",
-		reflect.TypeOf((*PagesProjectLatestDeploymentStages)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentStages](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentStagesList",
-		reflect.TypeOf((*PagesProjectLatestDeploymentStagesList)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentStagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2822,7 +2822,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentStagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2830,7 +2830,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentStagesOutputReference",
-		reflect.TypeOf((*PagesProjectLatestDeploymentStagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectLatestDeploymentStagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2858,7 +2858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectLatestDeploymentStagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2866,15 +2866,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectSource",
-		reflect.TypeOf((*PagesProjectSource)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig",
-		reflect.TypeOf((*PagesProjectSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectSourceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference",
-		reflect.TypeOf((*PagesProjectSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2931,7 +2931,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2939,7 +2939,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference",
-		reflect.TypeOf((*PagesProjectSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesProjectSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2970,7 +2970,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesProjectSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

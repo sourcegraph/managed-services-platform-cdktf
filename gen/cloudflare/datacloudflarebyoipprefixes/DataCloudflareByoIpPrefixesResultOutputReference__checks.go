@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareByoIpPrefixesResultOutputReferenceParameters(terra
 
 	return nil
 }
-

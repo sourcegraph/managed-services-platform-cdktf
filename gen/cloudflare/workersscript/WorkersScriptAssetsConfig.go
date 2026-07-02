@@ -1,6 +1,5 @@
 package workersscript
 
-
 type WorkersScriptAssetsConfig struct {
 	// The contents of a _headers file (used to attach custom headers on asset responses).
 	//
@@ -25,12 +24,11 @@ type WorkersScriptAssetsConfig struct {
 	// Otherwise, attempt to serve an asset matching the request, falling back to the Worker script.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
-	RunWorkerFirst interface{} `field:"optional" json:"runWorkerFirst" yaml:"runWorkerFirst"`
+	RunWorkerFirst any `field:"optional" json:"runWorkerFirst" yaml:"runWorkerFirst"`
 	// When true and the incoming request matches an asset, that will be served instead of invoking the Worker script.
 	//
 	// When false, requests will always invoke the Worker script.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
-	ServeDirectly interface{} `field:"optional" json:"serveDirectly" yaml:"serveDirectly"`
+	ServeDirectly any `field:"optional" json:"serveDirectly" yaml:"serveDirectly"`
 }
-

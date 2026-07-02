@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRules struct {
 	// The action to perform when the rule matches.
 	//
@@ -23,7 +22,7 @@ type RulesetRules struct {
 	// Whether the rule should be executed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#enabled Ruleset#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Configure checks for exposed credentials.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
@@ -45,4 +44,3 @@ type RulesetRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#ref Ruleset#ref}
 	Ref *string `field:"optional" json:"ref" yaml:"ref"`
 }
-

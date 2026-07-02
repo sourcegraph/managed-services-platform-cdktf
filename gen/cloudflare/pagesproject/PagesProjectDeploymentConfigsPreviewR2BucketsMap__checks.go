@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsMap) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewR2BucketsMapParameters(terra
 
 	return nil
 }
-

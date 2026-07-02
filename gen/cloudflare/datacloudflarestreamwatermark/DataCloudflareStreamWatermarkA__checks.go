@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareStreamWatermarkA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareStreamWatermarkA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareStreamWatermarkA_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateDataCloudflareStreamWatermarkA_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareStreamWatermarkA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareStreamWatermarkA_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateDataCloudflareStreamWatermarkA_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareStreamWatermarkA_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareStreamWatermarkA_IsTerraformDataSourceParameters(x in
 	return nil
 }
 
-func validateDataCloudflareStreamWatermarkA_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareStreamWatermarkA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) validateSetAccountIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareStreamWatermarkAParameters(scope constructs.Constr
 
 	return nil
 }
-

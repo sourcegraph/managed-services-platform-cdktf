@@ -351,7 +351,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -475,4 +475,3 @@ func validateNewZeroTrustAccessGroupRequireOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

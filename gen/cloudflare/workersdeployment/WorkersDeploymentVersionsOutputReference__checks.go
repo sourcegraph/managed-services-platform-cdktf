@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkersDeploymentVersionsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

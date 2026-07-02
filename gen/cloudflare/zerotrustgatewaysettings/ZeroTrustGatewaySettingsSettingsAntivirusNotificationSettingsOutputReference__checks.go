@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetIncludeContextParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetIncludeContextParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOut
 
 	return nil
 }
-

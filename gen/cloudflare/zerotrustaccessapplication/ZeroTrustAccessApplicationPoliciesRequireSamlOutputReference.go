@@ -18,9 +18,9 @@ type ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference interface {
 	AttributeValueInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference interface {
 	IdentityProviderId() *string
 	SetIdentityProviderId(val *string)
 	IdentityProviderIdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationPoliciesRequireSamlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewZeroTrustAccessApplicationPoliciesRequireSamlOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewZeroTrustAccessApplicationPoliciesRequireSamlOutputReference_Override(z 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetAttributeName(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetAttributeName(val *string) {
 	if err := j.validateSetAttributeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetAttributeValue(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetAttributeValue(val *string) {
 	if err := j.validateSetAttributeValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetIdentityProviderId(val *string) {
 	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference)
 
 	return returns
 }
-

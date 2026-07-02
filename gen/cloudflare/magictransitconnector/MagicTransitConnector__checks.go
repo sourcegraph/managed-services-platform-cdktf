@@ -19,7 +19,7 @@ func (m *jsiiProxy_MagicTransitConnector) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitConnector) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MagicTransitConnector) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MagicTransitConnector) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MagicTransitConnector) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMagicTransitConnector_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateMagicTransitConnector_IsConstructParameters(x interface{}) error {
+func validateMagicTransitConnector_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMagicTransitConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMagicTransitConnector_IsTerraformElementParameters(x interface{}) error {
+func validateMagicTransitConnector_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMagicTransitConnector_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateMagicTransitConnector_IsTerraformResourceParameters(x interface{}) error {
+func validateMagicTransitConnector_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_MagicTransitConnector) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitConnector) validateSetActivatedParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitConnector) validateSetActivatedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_MagicTransitConnector) validateSetActivatedParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitConnector) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitConnector) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_MagicTransitConnector) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitConnector) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitConnector) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_MagicTransitConnector) validateSetNotesParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitConnector) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MagicTransitConnector) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewMagicTransitConnectorParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

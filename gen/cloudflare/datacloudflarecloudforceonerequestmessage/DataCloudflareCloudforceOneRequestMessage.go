@@ -25,12 +25,12 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -63,7 +63,7 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestId() *string
 	SetRequestId(val *string)
 	RequestIdInput() *string
@@ -76,14 +76,14 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Updated() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,18 +112,18 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	ResetOverrideLogicalId()
 	ResetSortBy()
 	ResetSortOrder()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareCloudforceOneRequestMessage
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Content() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Updated() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) DataCloudflareCloudforceOneRequestMessage {
 	_init_.Initialize()
@@ -503,7 +502,7 @@ func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -516,12 +515,12 @@ func NewDataCloudflareCloudforceOneRequestMessage_Override(d DataCloudflareCloud
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAccountId(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAfter(val *string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetAfter(val *string) {
 	if err := j.validateSetAfterParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAfter(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetBefore(val *string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetBefore(val *string) {
 	if err := j.validateSetBeforeParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetBefore(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -581,7 +580,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetPage(val *float64) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetPage(val *float64) {
 	if err := j.validateSetPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetPage(val *float6
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetPerPage(val *float64) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetPerPage(val *float64) {
 	if err := j.validateSetPerPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetPerPage(val *flo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetRequestId(val *string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetRequestId(val *string) {
 	if err := j.validateSetRequestIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetRequestId(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetSortBy(val *string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetSortBy(val *string) {
 	if err := j.validateSetSortByParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetSortBy(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetSortOrder(val *string) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SetSortOrder(val *string) {
 	if err := j.validateSetSortOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func DataCloudflareCloudforceOneRequestMessage_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func DataCloudflareCloudforceOneRequestMessage_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareCloudforceOneRequestMessage_IsConstruct(x interface{}) *bool {
+func DataCloudflareCloudforceOneRequestMessage_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareCloudforceOneRequestMessage_IsConstructParameters(x); err != nil {
@@ -702,7 +701,7 @@ func DataCloudflareCloudforceOneRequestMessage_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func DataCloudflareCloudforceOneRequestMessage_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func DataCloudflareCloudforceOneRequestMessage_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareCloudforceOneRequestMessage_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareCloudforceOneRequestMessage_IsTerraformDataSourceParameters(x); err != nil {
@@ -721,7 +720,7 @@ func DataCloudflareCloudforceOneRequestMessage_IsTerraformDataSource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func DataCloudflareCloudforceOneRequestMessage_IsTerraformDataSource(x interface
 }
 
 // Experimental.
-func DataCloudflareCloudforceOneRequestMessage_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareCloudforceOneRequestMessage_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareCloudforceOneRequestMessage_IsTerraformElementParameters(x); err != nil {
@@ -740,7 +739,7 @@ func DataCloudflareCloudforceOneRequestMessage_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,27 +757,27 @@ func DataCloudflareCloudforceOneRequestMessage_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -980,8 +979,8 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetSortOrder() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -993,8 +992,8 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SynthesizeAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1006,8 +1005,8 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SynthesizeHclAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1019,8 +1018,8 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToHclTerraform() i
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1045,8 +1044,8 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToString() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1057,4 +1056,3 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ToTerraform() inte
 
 	return returns
 }
-

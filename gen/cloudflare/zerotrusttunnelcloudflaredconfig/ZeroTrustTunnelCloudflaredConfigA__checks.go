@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateAddMoveTargetParam
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateMoveFromIdParamete
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateZeroTrustTunnelCloudflaredConfigA_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateZeroTrustTunnelCloudflaredConfigA_IsConstructParameters(x interface{}) error {
+func validateZeroTrustTunnelCloudflaredConfigA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateZeroTrustTunnelCloudflaredConfigA_IsConstructParameters(x interface
 	return nil
 }
 
-func validateZeroTrustTunnelCloudflaredConfigA_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustTunnelCloudflaredConfigA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateZeroTrustTunnelCloudflaredConfigA_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateZeroTrustTunnelCloudflaredConfigA_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustTunnelCloudflaredConfigA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetAccountIdParame
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewZeroTrustTunnelCloudflaredConfigAParameters(scope constructs.Con
 
 	return nil
 }
-

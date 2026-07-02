@@ -19,16 +19,16 @@ type CloudforceOneRequestPriority interface {
 	CdktfStack() cdktf.TerraformStack
 	Completed() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -61,11 +61,11 @@ type CloudforceOneRequestPriority interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadableId() *string
 	Request() *string
 	Requirement() *string
@@ -76,7 +76,7 @@ type CloudforceOneRequestPriority interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tlp() *string
@@ -88,9 +88,9 @@ type CloudforceOneRequestPriority interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type CloudforceOneRequestPriority interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type CloudforceOneRequestPriority interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type CloudforceOneRequestPriority interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudforceOneRequestPriority
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Completed() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudforceOneRequestPriority) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudforceOneRequestPriority) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Content() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudforceOneRequestPriority) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudforceOneRequestPriority) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudforceOneRequestPriority) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudforceOneRequestPriority) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Updated() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
 func NewCloudforceOneRequestPriority(scope constructs.Construct, id *string, config *CloudforceOneRequestPriorityConfig) CloudforceOneRequestPriority {
 	_init_.Initialize()
@@ -530,7 +529,7 @@ func NewCloudforceOneRequestPriority(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewCloudforceOneRequestPriority_Override(c CloudforceOneRequestPriority, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetAccountId(val *string) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetLabels(val *[]*string) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetLabels(val *[]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetLabels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetPriority(val *float64) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetRequirement(val *string) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetRequirement(val *string) {
 	if err := j.validateSetRequirementParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority)SetRequirement(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetTlp(val *string) {
+func (j *jsiiProxy_CloudforceOneRequestPriority) SetTlp(val *string) {
 	if err := j.validateSetTlpParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func CloudforceOneRequestPriority_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func CloudforceOneRequestPriority_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudforceOneRequestPriority_IsConstruct(x interface{}) *bool {
+func CloudforceOneRequestPriority_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudforceOneRequestPriority_IsConstructParameters(x); err != nil {
@@ -718,7 +717,7 @@ func CloudforceOneRequestPriority_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func CloudforceOneRequestPriority_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudforceOneRequestPriority_IsTerraformElement(x interface{}) *bool {
+func CloudforceOneRequestPriority_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudforceOneRequestPriority_IsTerraformElementParameters(x); err != nil {
@@ -737,7 +736,7 @@ func CloudforceOneRequestPriority_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func CloudforceOneRequestPriority_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudforceOneRequestPriority_IsTerraformResource(x interface{}) *bool {
+func CloudforceOneRequestPriority_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudforceOneRequestPriority_IsTerraformResourceParameters(x); err != nil {
@@ -756,7 +755,7 @@ func CloudforceOneRequestPriority_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,31 +780,31 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudforceOneRequestPriority) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudforceOneRequestPriority) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,15 +932,15 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudforceOneRequestPriority) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -960,7 +959,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -973,7 +972,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,18 +986,18 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudforceOneRequestPriority) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1009,7 +1008,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1020,7 +1019,7 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1032,8 +1031,8 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudforceOneRequestPriority) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1045,8 +1044,8 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudforceOneRequestPriority) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1058,8 +1057,8 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudforceOneRequestPriority) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1071,8 +1070,8 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudforceOneRequestPriority) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1097,8 +1096,8 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestPriority) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudforceOneRequestPriority) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1109,4 +1108,3 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -36,7 +36,7 @@ type EmailRoutingDnsResultRecordList interface {
 	Get(index *float64) EmailRoutingDnsResultRecordOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_EmailRoutingDnsResultRecordList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewEmailRoutingDnsResultRecordList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailRoutingDnsResultRecordList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewEmailRoutingDnsResultRecordList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecordList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewEmailRoutingDnsResultRecordList_Override(e EmailRoutingDnsResultRecordLi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecordList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDnsResultRecordList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmailRoutingDnsResultRecordList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_EmailRoutingDnsResultRecordList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDnsResultRecordList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailRoutingDnsResultRecordList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_EmailRoutingDnsResultRecordList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDnsResultRecordList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EmailRoutingDnsResultRecordList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (e *jsiiProxy_EmailRoutingDnsResultRecordList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (e *jsiiProxy_EmailRoutingDnsResultRecordList) Get(index *float64) EmailRou
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultRecordList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmailRoutingDnsResultRecordList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (e *jsiiProxy_EmailRoutingDnsResultRecordList) ToString() *string {
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DnsFirewallConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DnsFirewallConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
@@ -36,11 +36,11 @@ type DnsFirewallConfig struct {
 	// Whether to refuse to answer queries for the ANY type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
-	DeprecateAnyRequests interface{} `field:"optional" json:"deprecateAnyRequests" yaml:"deprecateAnyRequests"`
+	DeprecateAnyRequests any `field:"optional" json:"deprecateAnyRequests" yaml:"deprecateAnyRequests"`
 	// Whether to forward client IP (resolver) subnet if no EDNS Client Subnet is sent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
-	EcsFallback interface{} `field:"optional" json:"ecsFallback" yaml:"ecsFallback"`
+	EcsFallback any `field:"optional" json:"ecsFallback" yaml:"ecsFallback"`
 	// Maximum DNS cache TTL This setting sets an upper bound on DNS TTLs for purposes of caching between DNS Firewall and the upstream servers.
 	//
 	// Higher TTLs will be decreased to the maximum defined here for caching purposes.
@@ -66,4 +66,3 @@ type DnsFirewallConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_firewall#retries DnsFirewall#retries}
 	Retries *float64 `field:"optional" json:"retries" yaml:"retries"`
 }
-

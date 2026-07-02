@@ -19,15 +19,15 @@ type EmailSecurityImpersonationRegistry interface {
 	CdktfStack() cdktf.TerraformStack
 	Comments() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -48,9 +48,9 @@ type EmailSecurityImpersonationRegistry interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *float64
-	IsEmailRegex() interface{}
-	SetIsEmailRegex(val interface{})
-	IsEmailRegexInput() interface{}
+	IsEmailRegex() any
+	SetIsEmailRegex(val any)
+	IsEmailRegexInput() any
 	LastModified() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -67,24 +67,24 @@ type EmailSecurityImpersonationRegistry interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type EmailSecurityImpersonationRegistry interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type EmailSecurityImpersonationRegistry interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type EmailSecurityImpersonationRegistry interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EmailSecurityImpersonationRegistry
@@ -182,8 +182,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Comments() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Id() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) IsEmailRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) IsEmailRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEmailRegex",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) IsEmailRegex() interface{
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) IsEmailRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) IsEmailRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEmailRegexInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -462,7 +462,6 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
 func NewEmailSecurityImpersonationRegistry(scope constructs.Construct, id *string, config *EmailSecurityImpersonationRegistryConfig) EmailSecurityImpersonationRegistry {
 	_init_.Initialize()
@@ -474,7 +473,7 @@ func NewEmailSecurityImpersonationRegistry(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -487,12 +486,12 @@ func NewEmailSecurityImpersonationRegistry_Override(e EmailSecurityImpersonation
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetAccountId(val *string) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetAccountId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetConnection(val interface{}) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetCount(val interface{}) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -533,7 +532,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetEmail(val *string) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetIsEmailRegex(val interface{}) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetIsEmailRegex(val any) {
 	if err := j.validateSetIsEmailRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetIsEmailRegex(val interf
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetName(val *string) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -593,7 +592,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityImpersonationRegistry)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func EmailSecurityImpersonationRegistry_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func EmailSecurityImpersonationRegistry_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EmailSecurityImpersonationRegistry_IsConstruct(x interface{}) *bool {
+func EmailSecurityImpersonationRegistry_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailSecurityImpersonationRegistry_IsConstructParameters(x); err != nil {
@@ -651,7 +650,7 @@ func EmailSecurityImpersonationRegistry_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func EmailSecurityImpersonationRegistry_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EmailSecurityImpersonationRegistry_IsTerraformElement(x interface{}) *bool {
+func EmailSecurityImpersonationRegistry_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailSecurityImpersonationRegistry_IsTerraformElementParameters(x); err != nil {
@@ -670,7 +669,7 @@ func EmailSecurityImpersonationRegistry_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func EmailSecurityImpersonationRegistry_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func EmailSecurityImpersonationRegistry_IsTerraformResource(x interface{}) *bool {
+func EmailSecurityImpersonationRegistry_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailSecurityImpersonationRegistry_IsTerraformResourceParameters(x); err != nil {
@@ -689,7 +688,7 @@ func EmailSecurityImpersonationRegistry_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -714,31 +713,31 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,15 +865,15 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -893,7 +892,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -906,7 +905,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) InterpolationForAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,18 +919,18 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -942,7 +941,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -953,7 +952,7 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -965,8 +964,8 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ResetOverrideLogicalId() 
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -978,8 +977,8 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) SynthesizeAttributes() *m
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -991,8 +990,8 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) SynthesizeHclAttributes()
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1004,8 +1003,8 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToHclTerraform() interfac
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1030,8 +1029,8 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1042,4 +1041,3 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ToTerraform() interface{}
 
 	return returns
 }
-

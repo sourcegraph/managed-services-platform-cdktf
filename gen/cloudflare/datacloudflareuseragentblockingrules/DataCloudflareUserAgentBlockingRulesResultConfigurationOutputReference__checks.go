@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRulesResultConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRulesResultConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRulesResultConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareUserAgentBlockingRulesResultConfigurationOutputRef
 
 	return nil
 }
-

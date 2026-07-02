@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareLoadBalancerPoolOriginsOutputReferenceParameters(t
 
 	return nil
 }
-

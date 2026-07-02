@@ -12,9 +12,9 @@ type WorkersScriptMigrationsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type WorkersScriptMigrationsOutputReference interface {
 	DeletedClassesInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NewClasses() *[]*string
 	SetNewClasses(val *[]*string)
 	NewClassesInput() *[]*string
@@ -45,9 +45,9 @@ type WorkersScriptMigrationsOutputReference interface {
 	SetOldTag(val *string)
 	OldTagInput() *string
 	RenamedClasses() WorkersScriptMigrationsRenamedClassesList
-	RenamedClassesInput() interface{}
+	RenamedClassesInput() any
 	Steps() WorkersScriptMigrationsStepsList
-	StepsInput() interface{}
+	StepsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -57,11 +57,11 @@ type WorkersScriptMigrationsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TransferredClasses() WorkersScriptMigrationsTransferredClassesList
-	TransferredClassesInput() interface{}
+	TransferredClassesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,9 +82,9 @@ type WorkersScriptMigrationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRenamedClasses(value interface{})
-	PutSteps(value interface{})
-	PutTransferredClasses(value interface{})
+	PutRenamedClasses(value any)
+	PutSteps(value any)
+	PutTransferredClasses(value any)
 	ResetDeletedClasses()
 	ResetNewClasses()
 	ResetNewSqliteClasses()
@@ -95,7 +95,7 @@ type WorkersScriptMigrationsOutputReference interface {
 	ResetTransferredClasses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_WorkersScriptMigrationsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) RenamedClasses() Work
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) RenamedClassesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) RenamedClassesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"renamedClassesInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) Steps() WorkersScript
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) StepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) StepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stepsInput",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) TransferredClasses() 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) TransferredClassesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) TransferredClassesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transferredClassesInput",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) TransferredClassesInp
 	)
 	return returns
 }
-
 
 func NewWorkersScriptMigrationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersScriptMigrationsOutputReference {
 	_init_.Initialize()
@@ -349,7 +348,7 @@ func NewWorkersScriptMigrationsOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewWorkersScriptMigrationsOutputReference_Override(w WorkersScriptMigration
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetDeletedClasses(val *[]*string) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetDeletedClasses(val *[]*string) {
 	if err := j.validateSetDeletedClassesParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetDeletedClasses(val 
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetNewClasses(val *[]*string) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetNewClasses(val *[]*string) {
 	if err := j.validateSetNewClassesParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetNewClasses(val *[]*
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetNewSqliteClasses(val *[]*string) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetNewSqliteClasses(val *[]*string) {
 	if err := j.validateSetNewSqliteClassesParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetNewSqliteClasses(va
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetNewTag(val *string) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetNewTag(val *string) {
 	if err := j.validateSetNewTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetNewTag(val *string)
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetOldTag(val *string) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetOldTag(val *string) {
 	if err := j.validateSetOldTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetOldTag(val *string)
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptMigrationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,16 +488,16 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,43 +654,43 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) PutRenamedClasses(value interface{}) {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) PutRenamedClasses(value any) {
 	if err := w.validatePutRenamedClassesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putRenamedClasses",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) PutSteps(value interface{}) {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) PutSteps(value any) {
 	if err := w.validatePutStepsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putSteps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) PutTransferredClasses(value interface{}) {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) PutTransferredClasses(value any) {
 	if err := w.validatePutTransferredClassesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putTransferredClasses",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) ResetTransferredClass
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (w *jsiiProxy_WorkersScriptMigrationsOutputReference) ToString() *string {
 
 	return returns
 }
-

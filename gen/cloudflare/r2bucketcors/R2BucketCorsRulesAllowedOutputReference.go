@@ -12,9 +12,9 @@ type R2BucketCorsRulesAllowedOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type R2BucketCorsRulesAllowedOutputReference interface {
 	Headers() *[]*string
 	SetHeaders(val *[]*string)
 	HeadersInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Methods() *[]*string
 	SetMethods(val *[]*string)
 	MethodsInput() *[]*string
@@ -49,7 +49,7 @@ type R2BucketCorsRulesAllowedOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type R2BucketCorsRulesAllowedOutputReference interface {
 	ResetHeaders()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_R2BucketCorsRulesAllowedOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) HeadersInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewR2BucketCorsRulesAllowedOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) R2BucketCorsRulesAllowedOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewR2BucketCorsRulesAllowedOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewR2BucketCorsRulesAllowedOutputReference_Override(r R2BucketCorsRulesAllo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetHeaders(val *[]*string) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetHeaders(val *[]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetHeaders(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetMethods(val *[]*string) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetMethods(val *[]*string) {
 	if err := j.validateSetMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetMethods(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetOrigins(val *[]*string) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetOrigins(val *[]*string) {
 	if err := j.validateSetOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetOrigins(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) ResetHeaders() {
 	)
 }
 
-func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (r *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) ToString() *string {
 
 	return returns
 }
-

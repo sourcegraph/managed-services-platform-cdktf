@@ -114,7 +114,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewZeroTrustAccessApplicationLandingPageDesignOutputReferenceParame
 
 	return nil
 }
-

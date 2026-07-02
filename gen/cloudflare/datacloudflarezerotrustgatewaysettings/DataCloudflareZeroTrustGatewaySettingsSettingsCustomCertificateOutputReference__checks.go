@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsCustomCertifica
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustGatewaySettingsSettingsCustomCertificateO
 
 	return nil
 }
-

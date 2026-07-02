@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetCon
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLoadBalancerRulesFixedResponseOutputReferenceParameters(terrafor
 
 	return nil
 }
-

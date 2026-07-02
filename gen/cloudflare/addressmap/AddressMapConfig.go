@@ -6,9 +6,9 @@ import (
 
 type AddressMapConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AddressMapConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier of a Cloudflare account.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map#account_id AddressMap#account_id}
@@ -38,7 +38,7 @@ type AddressMapConfig struct {
 	// Cloudflare's DNS will not respond with IP addresses on an Address Map until the map is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map#enabled AddressMap#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map#ips AddressMap#ips}.
 	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
 	// Zones and Accounts which will be assigned IPs on this Address Map.
@@ -46,6 +46,5 @@ type AddressMapConfig struct {
 	// A zone membership will take priority over an account membership.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map#memberships AddressMap#memberships}
-	Memberships interface{} `field:"optional" json:"memberships" yaml:"memberships"`
+	Memberships any `field:"optional" json:"memberships" yaml:"memberships"`
 }
-

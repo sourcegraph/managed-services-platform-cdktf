@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutp
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutp
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -226,4 +226,3 @@ func validateNewPagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputR
 
 	return nil
 }
-

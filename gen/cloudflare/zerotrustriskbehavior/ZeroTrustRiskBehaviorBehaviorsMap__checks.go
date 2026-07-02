@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewZeroTrustRiskBehaviorBehaviorsMapParameters(terraformResource cd
 
 	return nil
 }
-

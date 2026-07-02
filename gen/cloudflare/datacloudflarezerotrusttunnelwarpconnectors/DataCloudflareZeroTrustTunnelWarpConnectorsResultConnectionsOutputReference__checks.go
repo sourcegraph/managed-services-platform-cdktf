@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsO
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutp
 
 	return nil
 }
-

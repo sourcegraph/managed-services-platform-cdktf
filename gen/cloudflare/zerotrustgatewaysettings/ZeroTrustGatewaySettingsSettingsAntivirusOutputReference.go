@@ -12,9 +12,9 @@ type ZeroTrustGatewaySettingsSettingsAntivirusOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,21 +25,21 @@ type ZeroTrustGatewaySettingsSettingsAntivirusOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnabledDownloadPhase() interface{}
-	SetEnabledDownloadPhase(val interface{})
-	EnabledDownloadPhaseInput() interface{}
-	EnabledUploadPhase() interface{}
-	SetEnabledUploadPhase(val interface{})
-	EnabledUploadPhaseInput() interface{}
-	FailClosed() interface{}
-	SetFailClosed(val interface{})
-	FailClosedInput() interface{}
+	EnabledDownloadPhase() any
+	SetEnabledDownloadPhase(val any)
+	EnabledDownloadPhaseInput() any
+	EnabledUploadPhase() any
+	SetEnabledUploadPhase(val any)
+	EnabledUploadPhaseInput() any
+	FailClosed() any
+	SetFailClosed(val any)
+	FailClosedInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotificationSettings() ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference
-	NotificationSettingsInput() interface{}
+	NotificationSettingsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type ZeroTrustGatewaySettingsSettingsAntivirusOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ZeroTrustGatewaySettingsSettingsAntivirusOutputReference interface {
 	ResetNotificationSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledDownloadPhase() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledDownloadPhase() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledDownloadPhase",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledDownloadPhaseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledDownloadPhaseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledDownloadPhaseInput",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledUploadPhase() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledUploadPhase() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledUploadPhase",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledUploadPhaseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledUploadPhaseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledUploadPhaseInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) FailClosed() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) FailClosed() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failClosed",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Fai
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) FailClosedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) FailClosedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failClosedInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Not
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) NotificationSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) NotificationSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationSettingsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Ter
 	return returns
 }
 
-
 func NewZeroTrustGatewaySettingsSettingsAntivirusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsAntivirusOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewZeroTrustGatewaySettingsSettingsAntivirusOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewZeroTrustGatewaySettingsSettingsAntivirusOutputReference_Override(z Zero
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetEnabledDownloadPhase(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetEnabledDownloadPhase(val any) {
 	if err := j.validateSetEnabledDownloadPhaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetEnabledUploadPhase(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetEnabledUploadPhase(val any) {
 	if err := j.validateSetEnabledUploadPhaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetFailClosed(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetFailClosed(val any) {
 	if err := j.validateSetFailClosedParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetF
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Com
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Int
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putNotificationSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) ToS
 
 	return returns
 }
-

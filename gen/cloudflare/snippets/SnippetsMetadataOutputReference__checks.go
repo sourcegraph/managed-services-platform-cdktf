@@ -98,7 +98,7 @@ func (s *jsiiProxy_SnippetsMetadataOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_SnippetsMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SnippetsMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SnippetsMetadataOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_SnippetsMetadataOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SnippetsMetadataOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSnippetsMetadataOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	CommentInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,11 +33,11 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	ExistedAtInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsDeleted() interface{}
-	SetIsDeleted(val interface{})
-	IsDeletedInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsDeleted() any
+	SetIsDeleted(val any)
+	IsDeletedInput() any
 	NetworkSubset() *string
 	SetNetworkSubset(val *string)
 	NetworkSubsetInput() *string
@@ -67,7 +67,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	ResetVirtualNetworkId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) IsDeleted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) IsDeleted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDeleted",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) IsDeletedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) IsDeletedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDeletedInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-
 func NewDataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoute.DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoute.DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetComment(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetExistedAt(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetExistedAt(val *string) {
 	if err := j.validateSetExistedAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetIsDeleted(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetIsDeleted(val any) {
 	if err := j.validateSetIsDeletedParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetNetworkSubset(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetNetworkSubset(val *string) {
 	if err := j.validateSetNetworkSubsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetNetworkSuperset(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetNetworkSuperset(val *string) {
 	if err := j.validateSetNetworkSupersetParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetRouteId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetRouteId(val *string) {
 	if err := j.validateSetRouteIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetTunnelId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetTunnelId(val *string) {
 	if err := j.validateSetTunnelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetTunTypes(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetTunTypes(val *[]*string) {
 	if err := j.validateSetTunTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetVirtualNetworkId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) SetVirtualNetworkId(val *string) {
 	if err := j.validateSetVirtualNetworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewZeroTrustDeviceDefaultProfileIncludeOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAccountMemberPoliciesPermissionGroupsOutputReferenceParameters(t
 
 	return nil
 }
-

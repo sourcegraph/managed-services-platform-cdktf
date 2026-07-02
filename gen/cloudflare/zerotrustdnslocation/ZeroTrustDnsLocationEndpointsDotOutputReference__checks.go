@@ -90,7 +90,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateInte
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validatePutNetworksParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -265,4 +265,3 @@ func validateNewZeroTrustDnsLocationEndpointsDotOutputReferenceParameters(terraf
 
 	return nil
 }
-

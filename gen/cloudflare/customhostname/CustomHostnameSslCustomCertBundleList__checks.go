@@ -34,7 +34,7 @@ func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCustomHostnameSslCustomCertBundleListParameters(terraformResourc
 
 	return nil
 }
-

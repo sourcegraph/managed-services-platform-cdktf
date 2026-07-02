@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersEdgeTtl struct {
 	// Edge TTL options. Available values: "respect_origin", "bypass_by_default", "override_origin".
 	//
@@ -13,6 +12,5 @@ type RulesetRulesActionParametersEdgeTtl struct {
 	// List of single status codes, or status code ranges to apply the selected mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
-	StatusCodeTtl interface{} `field:"optional" json:"statusCodeTtl" yaml:"statusCodeTtl"`
+	StatusCodeTtl any `field:"optional" json:"statusCodeTtl" yaml:"statusCodeTtl"`
 }
-

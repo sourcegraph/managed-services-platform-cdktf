@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflarePageShieldConnectionsList_GenerateConfigForImportPara
 	return nil
 }
 
-func validateDataCloudflarePageShieldConnectionsList_IsConstructParameters(x interface{}) error {
+func validateDataCloudflarePageShieldConnectionsList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflarePageShieldConnectionsList_IsConstructParameters(x int
 	return nil
 }
 
-func validateDataCloudflarePageShieldConnectionsList_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflarePageShieldConnectionsList_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflarePageShieldConnectionsList_IsTerraformDataSourceParame
 	return nil
 }
 
-func validateDataCloudflarePageShieldConnectionsList_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflarePageShieldConnectionsList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflarePageShieldConnectionsList_IsTerraformElementParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetDirection
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetExcludeCdnCgiParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetExcludeCdnCgiParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetPerPagePa
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetPrioritizeMaliciousParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) validateSetPrioritizeMaliciousParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -370,4 +370,3 @@ func validateNewDataCloudflarePageShieldConnectionsListParameters(scope construc
 
 	return nil
 }
-

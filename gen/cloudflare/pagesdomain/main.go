@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
-		reflect.TypeOf((*PagesDomain)(nil)).Elem(),
+		reflect.TypeFor[PagesDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verificationData", GoGetter: "VerificationData"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneTag", GoGetter: "ZoneTag"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainConfig",
-		reflect.TypeOf((*PagesDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[PagesDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainValidationData",
-		reflect.TypeOf((*PagesDomainValidationData)(nil)).Elem(),
+		reflect.TypeFor[PagesDomainValidationData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainValidationDataOutputReference",
-		reflect.TypeOf((*PagesDomainValidationDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesDomainValidationDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "txtName", GoGetter: "TxtName"},
 			_jsii_.MemberProperty{JsiiProperty: "txtValue", GoGetter: "TxtValue"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesDomainValidationDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,11 +120,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainVerificationData",
-		reflect.TypeOf((*PagesDomainVerificationData)(nil)).Elem(),
+		reflect.TypeFor[PagesDomainVerificationData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainVerificationDataOutputReference",
-		reflect.TypeOf((*PagesDomainVerificationDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PagesDomainVerificationDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PagesDomainVerificationDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

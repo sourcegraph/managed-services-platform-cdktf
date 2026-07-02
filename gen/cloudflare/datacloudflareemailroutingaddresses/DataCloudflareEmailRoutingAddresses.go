@@ -18,11 +18,11 @@ type DataCloudflareEmailRoutingAddresses interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,21 +52,21 @@ type DataCloudflareEmailRoutingAddresses interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() DataCloudflareEmailRoutingAddressesResultList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	Verified() interface{}
-	SetVerified(val interface{})
-	VerifiedInput() interface{}
+	Verified() any
+	SetVerified(val any)
+	VerifiedInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataCloudflareEmailRoutingAddresses interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetVerified()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareEmailRoutingAddresses
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) TerraformResourceType() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) Verified() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) Verified() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verified",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) Verified() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) VerifiedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) VerifiedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifiedInput",
@@ -342,7 +342,6 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) VerifiedInput() interfac
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses} Data Source.
 func NewDataCloudflareEmailRoutingAddresses(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingAddressesConfig) DataCloudflareEmailRoutingAddresses {
@@ -355,7 +354,7 @@ func NewDataCloudflareEmailRoutingAddresses(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -368,12 +367,12 @@ func NewDataCloudflareEmailRoutingAddresses_Override(d DataCloudflareEmailRoutin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetAccountId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetDirection(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetDirection(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetMaxItems(val *float64) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetMaxItems(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses)SetVerified(val interface{}) {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) SetVerified(val any) {
 	if err := j.validateSetVerifiedParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func DataCloudflareEmailRoutingAddresses_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func DataCloudflareEmailRoutingAddresses_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareEmailRoutingAddresses_IsConstruct(x interface{}) *bool {
+func DataCloudflareEmailRoutingAddresses_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailRoutingAddresses_IsConstructParameters(x); err != nil {
@@ -510,7 +509,7 @@ func DataCloudflareEmailRoutingAddresses_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataCloudflareEmailRoutingAddresses_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareEmailRoutingAddresses_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareEmailRoutingAddresses_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailRoutingAddresses_IsTerraformDataSourceParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataCloudflareEmailRoutingAddresses_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataCloudflareEmailRoutingAddresses_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataCloudflareEmailRoutingAddresses_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareEmailRoutingAddresses_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailRoutingAddresses_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataCloudflareEmailRoutingAddresses_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,27 +565,27 @@ func DataCloudflareEmailRoutingAddresses_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ResetVerified() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,4 +856,3 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ToTerraform() interface{
 
 	return returns
 }
-

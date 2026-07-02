@@ -6,9 +6,9 @@ import (
 
 type ZeroTrustDeviceSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ZeroTrustDeviceSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings#account_id ZeroTrustDeviceSettings#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Sets the time limit, in seconds, that a user can use an override code to bypass WARP.
@@ -28,18 +28,17 @@ type ZeroTrustDeviceSettingsConfig struct {
 	// Enable gateway proxy filtering on TCP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings#gateway_proxy_enabled ZeroTrustDeviceSettings#gateway_proxy_enabled}
-	GatewayProxyEnabled interface{} `field:"optional" json:"gatewayProxyEnabled" yaml:"gatewayProxyEnabled"`
+	GatewayProxyEnabled any `field:"optional" json:"gatewayProxyEnabled" yaml:"gatewayProxyEnabled"`
 	// Enable gateway proxy filtering on UDP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings#gateway_udp_proxy_enabled ZeroTrustDeviceSettings#gateway_udp_proxy_enabled}
-	GatewayUdpProxyEnabled interface{} `field:"optional" json:"gatewayUdpProxyEnabled" yaml:"gatewayUdpProxyEnabled"`
+	GatewayUdpProxyEnabled any `field:"optional" json:"gatewayUdpProxyEnabled" yaml:"gatewayUdpProxyEnabled"`
 	// Enable installation of cloudflare managed root certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings#root_certificate_installation_enabled ZeroTrustDeviceSettings#root_certificate_installation_enabled}
-	RootCertificateInstallationEnabled interface{} `field:"optional" json:"rootCertificateInstallationEnabled" yaml:"rootCertificateInstallationEnabled"`
+	RootCertificateInstallationEnabled any `field:"optional" json:"rootCertificateInstallationEnabled" yaml:"rootCertificateInstallationEnabled"`
 	// Enable using CGNAT virtual IPv4.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings#use_zt_virtual_ip ZeroTrustDeviceSettings#use_zt_virtual_ip}
-	UseZtVirtualIp interface{} `field:"optional" json:"useZtVirtualIp" yaml:"useZtVirtualIp"`
+	UseZtVirtualIp any `field:"optional" json:"useZtVirtualIp" yaml:"useZtVirtualIp"`
 }
-

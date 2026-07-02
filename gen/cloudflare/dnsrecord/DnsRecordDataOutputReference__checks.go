@@ -122,7 +122,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetCertificateParameter
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFlagsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -502,4 +502,3 @@ func validateNewDnsRecordDataOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

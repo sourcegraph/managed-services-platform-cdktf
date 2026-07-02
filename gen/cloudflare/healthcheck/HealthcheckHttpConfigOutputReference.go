@@ -10,14 +10,14 @@ import (
 
 type HealthcheckHttpConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllowInsecure() interface{}
-	SetAllowInsecure(val interface{})
-	AllowInsecureInput() interface{}
+	AllowInsecure() any
+	SetAllowInsecure(val any)
+	AllowInsecureInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,16 +34,16 @@ type HealthcheckHttpConfigOutputReference interface {
 	ExpectedCodes() *[]*string
 	SetExpectedCodes(val *[]*string)
 	ExpectedCodesInput() *[]*string
-	FollowRedirects() interface{}
-	SetFollowRedirects(val interface{})
-	FollowRedirectsInput() interface{}
+	FollowRedirects() any
+	SetFollowRedirects(val any)
+	FollowRedirectsInput() any
 	// Experimental.
 	Fqn() *string
-	Header() interface{}
-	SetHeader(val interface{})
-	HeaderInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	Header() any
+	SetHeader(val any)
+	HeaderInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
@@ -64,7 +64,7 @@ type HealthcheckHttpConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type HealthcheckHttpConfigOutputReference interface {
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_HealthcheckHttpConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) AllowInsecure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) AllowInsecure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowInsecure",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) AllowInsecure() interfa
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) AllowInsecureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) AllowInsecureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowInsecureInput",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) AllowInsecureInput() in
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) ExpectedCodesInput() *[
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) FollowRedirects() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) FollowRedirects() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"followRedirects",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) FollowRedirects() inter
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) FollowRedirectsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) FollowRedirectsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"followRedirectsInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) Header() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) Header() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"header",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) Header() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) HeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) HeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headerInput",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) HeaderInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewHealthcheckHttpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcheckHttpConfigOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewHealthcheckHttpConfigOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewHealthcheckHttpConfigOutputReference_Override(h HealthcheckHttpConfigOut
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetAllowInsecure(val interface{}) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetAllowInsecure(val any) {
 	if err := j.validateSetAllowInsecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetAllowInsecure(val int
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetExpectedBody(val *string) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetExpectedBody(val *string) {
 	if err := j.validateSetExpectedBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetExpectedBody(val *str
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetExpectedCodes(val *[]*string) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetExpectedCodes(val *[]*string) {
 	if err := j.validateSetExpectedCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetExpectedCodes(val *[]
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetFollowRedirects(val interface{}) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetFollowRedirects(val any) {
 	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetFollowRedirects(val i
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetHeader(val interface{}) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetHeader(val any) {
 	if err := j.validateSetHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetHeader(val interface{
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetMethod(val *string) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetMethod(val *string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) ResetPort() {
 	)
 }
 
-func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

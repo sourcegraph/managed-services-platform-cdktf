@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateAddMoveTar
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateMoveFromId
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateZeroTrustDeviceDefaultProfileCertificates_GenerateConfigForImportPa
 	return nil
 }
 
-func validateZeroTrustDeviceDefaultProfileCertificates_IsConstructParameters(x interface{}) error {
+func validateZeroTrustDeviceDefaultProfileCertificates_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateZeroTrustDeviceDefaultProfileCertificates_IsConstructParameters(x i
 	return nil
 }
 
-func validateZeroTrustDeviceDefaultProfileCertificates_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustDeviceDefaultProfileCertificates_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateZeroTrustDeviceDefaultProfileCertificates_IsTerraformElementParamet
 	return nil
 }
 
-func validateZeroTrustDeviceDefaultProfileCertificates_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustDeviceDefaultProfileCertificates_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateZeroTrustDeviceDefaultProfileCertificates_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -334,7 +334,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetCountPa
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetLifecyc
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -434,4 +434,3 @@ func validateNewZeroTrustDeviceDefaultProfileCertificatesParameters(scope constr
 
 	return nil
 }
-

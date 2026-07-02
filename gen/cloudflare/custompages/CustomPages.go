@@ -18,15 +18,15 @@ type CustomPages interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,18 +54,18 @@ type CustomPages interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
@@ -78,9 +78,9 @@ type CustomPages interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type CustomPages interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type CustomPages interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type CustomPages interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CustomPages
@@ -170,8 +170,8 @@ func (j *jsiiProxy_CustomPages) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomPages) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CustomPages) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CustomPages) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_CustomPages) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomPages) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_CustomPages) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CustomPages) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_CustomPages) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomPages) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_CustomPages) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CustomPages) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_CustomPages) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesConfig) CustomPages {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customPages.CustomPages",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewCustomPages_Override(c CustomPages, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customPages.CustomPages",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetAccountId(val *string) {
+func (j *jsiiProxy_CustomPages) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_CustomPages)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomPages) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_CustomPages)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetCount(val interface{}) {
+func (j *jsiiProxy_CustomPages) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_CustomPages)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomPages) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_CustomPages)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomPages) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CustomPages)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetIdentifier(val *string) {
+func (j *jsiiProxy_CustomPages) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CustomPages)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomPages) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CustomPages)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomPages) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_CustomPages)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomPages) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_CustomPages)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetState(val *string) {
+func (j *jsiiProxy_CustomPages) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_CustomPages)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetUrl(val *string) {
+func (j *jsiiProxy_CustomPages) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_CustomPages)SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetZoneId(val *string) {
+func (j *jsiiProxy_CustomPages) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func CustomPages_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func CustomPages_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CustomPages_IsConstruct(x interface{}) *bool {
+func CustomPages_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomPages_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func CustomPages_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func CustomPages_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CustomPages_IsTerraformElement(x interface{}) *bool {
+func CustomPages_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomPages_IsTerraformElementParameters(x); err != nil {
@@ -629,7 +628,7 @@ func CustomPages_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func CustomPages_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CustomPages_IsTerraformResource(x interface{}) *bool {
+func CustomPages_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomPages_IsTerraformResourceParameters(x); err != nil {
@@ -648,7 +647,7 @@ func CustomPages_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,31 +672,31 @@ func (c *jsiiProxy_CustomPages) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CustomPages) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CustomPages) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CustomPages) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CustomPages) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (c *jsiiProxy_CustomPages) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (c *jsiiProxy_CustomPages) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (c *jsiiProxy_CustomPages) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_CustomPages) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (c *jsiiProxy_CustomPages) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_CustomPages) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_CustomPages) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,15 +824,15 @@ func (c *jsiiProxy_CustomPages) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CustomPages) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomPages) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -852,7 +851,7 @@ func (c *jsiiProxy_CustomPages) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -865,7 +864,7 @@ func (c *jsiiProxy_CustomPages) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,18 +878,18 @@ func (c *jsiiProxy_CustomPages) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CustomPages) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CustomPages) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_CustomPages) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -912,7 +911,7 @@ func (c *jsiiProxy_CustomPages) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -940,8 +939,8 @@ func (c *jsiiProxy_CustomPages) ResetZoneId() {
 	)
 }
 
-func (c *jsiiProxy_CustomPages) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CustomPages) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -953,8 +952,8 @@ func (c *jsiiProxy_CustomPages) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomPages) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CustomPages) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -966,8 +965,8 @@ func (c *jsiiProxy_CustomPages) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_CustomPages) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomPages) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -979,8 +978,8 @@ func (c *jsiiProxy_CustomPages) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomPages) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomPages) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1005,8 +1004,8 @@ func (c *jsiiProxy_CustomPages) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CustomPages) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomPages) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1017,4 +1016,3 @@ func (c *jsiiProxy_CustomPages) ToTerraform() interface{} {
 
 	return returns
 }
-

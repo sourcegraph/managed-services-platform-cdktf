@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewCustomSslKeylessServerTunnelOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (h *jsiiProxy_Healthcheck) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (h *jsiiProxy_Healthcheck) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_Healthcheck) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_Healthcheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_Healthcheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_Healthcheck) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateHealthcheck_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateHealthcheck_IsConstructParameters(x interface{}) error {
+func validateHealthcheck_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateHealthcheck_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateHealthcheck_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcheck_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateHealthcheck_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateHealthcheck_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcheck_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_Healthcheck) validateSetCheckRegionsParameters(val *[]*string
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Healthcheck) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -331,7 +331,7 @@ func (j *jsiiProxy_Healthcheck) validateSetConsecutiveSuccessesParameters(val *f
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Healthcheck) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_Healthcheck) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Healthcheck) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -474,7 +474,7 @@ func (j *jsiiProxy_Healthcheck) validateSetRetriesParameters(val *float64) error
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetSuspendedParameters(val interface{}) error {
+func (j *jsiiProxy_Healthcheck) validateSetSuspendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewHealthcheckParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

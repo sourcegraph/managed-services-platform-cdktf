@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetNonIdentityEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetNonIdentityEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetUrlBrowserIsolationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetUrlBrowserIsolationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferenceP
 
 	return nil
 }
-

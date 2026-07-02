@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetCreateParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetUpdateParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetUpdateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewZeroTrustAccessApplicationScimConfigMappingsOperationsOutputRefe
 
 	return nil
 }
-

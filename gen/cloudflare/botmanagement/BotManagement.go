@@ -15,21 +15,21 @@ type BotManagement interface {
 	AiBotsProtection() *string
 	SetAiBotsProtection(val *string)
 	AiBotsProtectionInput() *string
-	AutoUpdateModel() interface{}
-	SetAutoUpdateModel(val interface{})
-	AutoUpdateModelInput() interface{}
+	AutoUpdateModel() any
+	SetAutoUpdateModel(val any)
+	AutoUpdateModelInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CrawlerProtection() *string
 	SetCrawlerProtection(val *string)
 	CrawlerProtectionInput() *string
@@ -37,12 +37,12 @@ type BotManagement interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableJs() interface{}
-	SetEnableJs(val interface{})
-	EnableJsInput() interface{}
-	FightMode() interface{}
-	SetFightMode(val interface{})
-	FightModeInput() interface{}
+	EnableJs() any
+	SetEnableJs(val any)
+	EnableJsInput() any
+	FightMode() any
+	SetFightMode(val any)
+	FightModeInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,39 +58,39 @@ type BotManagement interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OptimizeWordpress() interface{}
-	SetOptimizeWordpress(val interface{})
-	OptimizeWordpressInput() interface{}
+	OptimizeWordpress() any
+	SetOptimizeWordpress(val any)
+	OptimizeWordpressInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SbfmDefinitelyAutomated() *string
 	SetSbfmDefinitelyAutomated(val *string)
 	SbfmDefinitelyAutomatedInput() *string
 	SbfmLikelyAutomated() *string
 	SetSbfmLikelyAutomated(val *string)
 	SbfmLikelyAutomatedInput() *string
-	SbfmStaticResourceProtection() interface{}
-	SetSbfmStaticResourceProtection(val interface{})
-	SbfmStaticResourceProtectionInput() interface{}
+	SbfmStaticResourceProtection() any
+	SetSbfmStaticResourceProtection(val any)
+	SbfmStaticResourceProtectionInput() any
 	SbfmVerifiedBots() *string
 	SetSbfmVerifiedBots(val *string)
 	SbfmVerifiedBotsInput() *string
 	StaleZoneConfiguration() BotManagementStaleZoneConfigurationOutputReference
-	SuppressSessionScore() interface{}
-	SetSuppressSessionScore(val interface{})
-	SuppressSessionScoreInput() interface{}
+	SuppressSessionScore() any
+	SetSuppressSessionScore(val any)
+	SuppressSessionScoreInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UsingLatestModel() cdktf.IResolvable
@@ -101,9 +101,9 @@ type BotManagement interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type BotManagement interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type BotManagement interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type BotManagement interface {
 	ResetSbfmStaticResourceProtection()
 	ResetSbfmVerifiedBots()
 	ResetSuppressSessionScore()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BotManagement
@@ -192,8 +192,8 @@ func (j *jsiiProxy_BotManagement) AiBotsProtectionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) AutoUpdateModel() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) AutoUpdateModel() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoUpdateModel",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_BotManagement) AutoUpdateModel() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) AutoUpdateModelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) AutoUpdateModelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoUpdateModelInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_BotManagement) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_BotManagement) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BotManagement) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_BotManagement) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_BotManagement) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) EnableJs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) EnableJs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableJs",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_BotManagement) EnableJs() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) EnableJsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) EnableJsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableJsInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_BotManagement) EnableJsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) FightMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) FightMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fightMode",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_BotManagement) FightMode() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) FightModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) FightModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fightModeInput",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_BotManagement) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) OptimizeWordpress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) OptimizeWordpress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optimizeWordpress",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_BotManagement) OptimizeWordpress() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) OptimizeWordpressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) OptimizeWordpressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optimizeWordpressInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_BotManagement) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BotManagement) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_BotManagement) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_BotManagement) SbfmLikelyAutomatedInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) SbfmStaticResourceProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) SbfmStaticResourceProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sbfmStaticResourceProtection",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_BotManagement) SbfmStaticResourceProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) SbfmStaticResourceProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) SbfmStaticResourceProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sbfmStaticResourceProtectionInput",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_BotManagement) StaleZoneConfiguration() BotManagementStaleZon
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) SuppressSessionScore() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) SuppressSessionScore() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suppressSessionScore",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_BotManagement) SuppressSessionScore() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) SuppressSessionScoreInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BotManagement) SuppressSessionScoreInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suppressSessionScoreInput",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_BotManagement) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_BotManagement) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BotManagement) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -602,7 +602,6 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
@@ -614,7 +613,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -627,12 +626,12 @@ func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetAiBotsProtection(val *string) {
+func (j *jsiiProxy_BotManagement) SetAiBotsProtection(val *string) {
 	if err := j.validateSetAiBotsProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_BotManagement)SetAiBotsProtection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetAutoUpdateModel(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetAutoUpdateModel(val any) {
 	if err := j.validateSetAutoUpdateModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_BotManagement)SetAutoUpdateModel(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetConnection(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_BotManagement)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetCount(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_BotManagement)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetCrawlerProtection(val *string) {
+func (j *jsiiProxy_BotManagement) SetCrawlerProtection(val *string) {
 	if err := j.validateSetCrawlerProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_BotManagement)SetCrawlerProtection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BotManagement) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_BotManagement)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetEnableJs(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetEnableJs(val any) {
 	if err := j.validateSetEnableJsParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_BotManagement)SetEnableJs(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetFightMode(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetFightMode(val any) {
 	if err := j.validateSetFightModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_BotManagement)SetFightMode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BotManagement) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -725,7 +724,7 @@ func (j *jsiiProxy_BotManagement)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BotManagement) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_BotManagement)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetOptimizeWordpress(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetOptimizeWordpress(val any) {
 	if err := j.validateSetOptimizeWordpressParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_BotManagement)SetOptimizeWordpress(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BotManagement) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -755,7 +754,7 @@ func (j *jsiiProxy_BotManagement)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BotManagement) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_BotManagement)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetSbfmDefinitelyAutomated(val *string) {
+func (j *jsiiProxy_BotManagement) SetSbfmDefinitelyAutomated(val *string) {
 	if err := j.validateSetSbfmDefinitelyAutomatedParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_BotManagement)SetSbfmDefinitelyAutomated(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetSbfmLikelyAutomated(val *string) {
+func (j *jsiiProxy_BotManagement) SetSbfmLikelyAutomated(val *string) {
 	if err := j.validateSetSbfmLikelyAutomatedParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_BotManagement)SetSbfmLikelyAutomated(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetSbfmStaticResourceProtection(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetSbfmStaticResourceProtection(val any) {
 	if err := j.validateSetSbfmStaticResourceProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_BotManagement)SetSbfmStaticResourceProtection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetSbfmVerifiedBots(val *string) {
+func (j *jsiiProxy_BotManagement) SetSbfmVerifiedBots(val *string) {
 	if err := j.validateSetSbfmVerifiedBotsParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_BotManagement)SetSbfmVerifiedBots(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetSuppressSessionScore(val interface{}) {
+func (j *jsiiProxy_BotManagement) SetSuppressSessionScore(val any) {
 	if err := j.validateSetSuppressSessionScoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_BotManagement)SetSuppressSessionScore(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotManagement)SetZoneId(val *string) {
+func (j *jsiiProxy_BotManagement) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func BotManagement_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func BotManagement_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BotManagement_IsConstruct(x interface{}) *bool {
+func BotManagement_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBotManagement_IsConstructParameters(x); err != nil {
@@ -879,7 +878,7 @@ func BotManagement_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func BotManagement_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BotManagement_IsTerraformElement(x interface{}) *bool {
+func BotManagement_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBotManagement_IsTerraformElementParameters(x); err != nil {
@@ -898,7 +897,7 @@ func BotManagement_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func BotManagement_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BotManagement_IsTerraformResource(x interface{}) *bool {
+func BotManagement_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBotManagement_IsTerraformResourceParameters(x); err != nil {
@@ -917,7 +916,7 @@ func BotManagement_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -942,31 +941,31 @@ func (b *jsiiProxy_BotManagement) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BotManagement) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BotManagement) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BotManagement) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BotManagement) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (b *jsiiProxy_BotManagement) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (b *jsiiProxy_BotManagement) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (b *jsiiProxy_BotManagement) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,7 +1029,7 @@ func (b *jsiiProxy_BotManagement) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1046,7 +1045,7 @@ func (b *jsiiProxy_BotManagement) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1062,7 +1061,7 @@ func (b *jsiiProxy_BotManagement) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,7 +1077,7 @@ func (b *jsiiProxy_BotManagement) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1094,15 +1093,15 @@ func (b *jsiiProxy_BotManagement) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BotManagement) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BotManagement) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1121,7 +1120,7 @@ func (b *jsiiProxy_BotManagement) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (b *jsiiProxy_BotManagement) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,18 +1147,18 @@ func (b *jsiiProxy_BotManagement) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BotManagement) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BotManagement) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (b *jsiiProxy_BotManagement) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (b *jsiiProxy_BotManagement) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1281,8 +1280,8 @@ func (b *jsiiProxy_BotManagement) ResetSuppressSessionScore() {
 	)
 }
 
-func (b *jsiiProxy_BotManagement) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BotManagement) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1294,8 +1293,8 @@ func (b *jsiiProxy_BotManagement) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (b *jsiiProxy_BotManagement) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BotManagement) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1307,8 +1306,8 @@ func (b *jsiiProxy_BotManagement) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (b *jsiiProxy_BotManagement) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BotManagement) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1320,8 +1319,8 @@ func (b *jsiiProxy_BotManagement) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BotManagement) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BotManagement) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1346,8 +1345,8 @@ func (b *jsiiProxy_BotManagement) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BotManagement) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BotManagement) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1358,4 +1357,3 @@ func (b *jsiiProxy_BotManagement) ToTerraform() interface{} {
 
 	return returns
 }
-

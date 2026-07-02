@@ -12,9 +12,9 @@ type ZeroTrustAccessPolicyIncludeAzureAdOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ZeroTrustAccessPolicyIncludeAzureAdOutputReference interface {
 	SetIdentityProviderId(val *string)
 	IdentityProviderIdInput() *string
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ZeroTrustAccessPolicyIncludeAzureAdOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ZeroTrustAccessPolicyIncludeAzureAdOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) IdInput()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) Terraform
 	return returns
 }
 
-
 func NewZeroTrustAccessPolicyIncludeAzureAdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessPolicyIncludeAzureAdOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewZeroTrustAccessPolicyIncludeAzureAdOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeAzureAdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewZeroTrustAccessPolicyIncludeAzureAdOutputReference_Override(z ZeroTrustA
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeAzureAdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetId(val 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetIdentityProviderId(val *string) {
 	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetIdentit
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) ComputeFq
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetBoolea
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetBoolea
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetListAt
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetNumber
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetNumber
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetNumber
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetString
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) GetString
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) Interpola
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeAzureAdOutputReference) ToString(
 
 	return returns
 }
-

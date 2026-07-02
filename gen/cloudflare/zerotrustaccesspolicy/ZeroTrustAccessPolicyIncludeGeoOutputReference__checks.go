@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeGeoOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGeoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGeoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGeoOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGeoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGeoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZeroTrustAccessPolicyIncludeGeoOutputReferenceParameters(terrafo
 
 	return nil
 }
-

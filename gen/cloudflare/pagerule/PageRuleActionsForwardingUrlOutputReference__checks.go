@@ -98,7 +98,7 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPageRuleActionsForwardingUrlOutputReferenceParameters(terraformR
 
 	return nil
 }
-

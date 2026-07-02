@@ -1,6 +1,5 @@
 package customhostname
 
-
 type CustomHostnameSsl struct {
 	// A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores.
 	//
@@ -18,11 +17,11 @@ type CustomHostnameSsl struct {
 	// This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname#cloudflare_branding CustomHostname#cloudflare_branding}
-	CloudflareBranding interface{} `field:"optional" json:"cloudflareBranding" yaml:"cloudflareBranding"`
+	CloudflareBranding any `field:"optional" json:"cloudflareBranding" yaml:"cloudflareBranding"`
 	// Array of custom certificate and key pairs (1 or 2 pairs allowed).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname#custom_cert_bundle CustomHostname#custom_cert_bundle}
-	CustomCertBundle interface{} `field:"optional" json:"customCertBundle" yaml:"customCertBundle"`
+	CustomCertBundle any `field:"optional" json:"customCertBundle" yaml:"customCertBundle"`
 	// If a custom uploaded certificate is used.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
@@ -46,6 +45,5 @@ type CustomHostnameSsl struct {
 	// Indicates whether the certificate covers a wildcard.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
-	Wildcard interface{} `field:"optional" json:"wildcard" yaml:"wildcard"`
+	Wildcard any `field:"optional" json:"wildcard" yaml:"wildcard"`
 }
-

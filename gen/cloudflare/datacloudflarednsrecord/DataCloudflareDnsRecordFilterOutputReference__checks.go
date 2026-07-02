@@ -142,7 +142,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetDire
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -255,7 +255,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetOrde
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetProxiedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetProxiedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,4 +326,3 @@ func validateNewDataCloudflareDnsRecordFilterOutputReferenceParameters(terraform
 
 	return nil
 }
-

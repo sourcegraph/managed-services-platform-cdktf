@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustAccessApplications_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessApplications_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessApplications_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustAccessApplications_IsConstructParameters(x i
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessApplications_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessApplications_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustAccessApplications_IsTerraformDataSourcePara
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessApplications_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessApplications_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetAudPara
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetDomainP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetExactParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetExactParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -307,4 +307,3 @@ func validateNewDataCloudflareZeroTrustAccessApplicationsParameters(scope constr
 
 	return nil
 }
-

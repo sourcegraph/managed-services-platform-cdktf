@@ -30,7 +30,7 @@ type CloudflareProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Email() *string
 	SetEmail(val *string)
 	EmailInput() *string
@@ -39,11 +39,11 @@ type CloudflareProvider interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -54,7 +54,7 @@ type CloudflareProvider interface {
 	SetUserAgentOperatorSuffix(val *string)
 	UserAgentOperatorSuffixInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -68,17 +68,17 @@ type CloudflareProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetUserAgentOperatorSuffix()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudflareProvider
@@ -196,8 +196,8 @@ func (j *jsiiProxy_CloudflareProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudflareProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudflareProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_CloudflareProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudflareProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudflareProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_CloudflareProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CloudflareProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudflareProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -326,7 +326,6 @@ func (j *jsiiProxy_CloudflareProvider) UserAgentOperatorSuffixInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs cloudflare} Resource.
 func NewCloudflareProvider(scope constructs.Construct, id *string, config *CloudflareProviderConfig) CloudflareProvider {
 	_init_.Initialize()
@@ -338,7 +337,7 @@ func NewCloudflareProvider(scope constructs.Construct, id *string, config *Cloud
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -351,12 +350,12 @@ func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetAlias(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -364,7 +363,7 @@ func (j *jsiiProxy_CloudflareProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetApiKey(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -372,7 +371,7 @@ func (j *jsiiProxy_CloudflareProvider)SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetApiToken(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetApiToken(val *string) {
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -380,7 +379,7 @@ func (j *jsiiProxy_CloudflareProvider)SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetApiUserServiceKey(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetApiUserServiceKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUserServiceKey",
@@ -388,7 +387,7 @@ func (j *jsiiProxy_CloudflareProvider)SetApiUserServiceKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetBaseUrl(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetBaseUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -396,7 +395,7 @@ func (j *jsiiProxy_CloudflareProvider)SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetEmail(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"email",
@@ -404,7 +403,7 @@ func (j *jsiiProxy_CloudflareProvider)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetUserAgentOperatorSuffix(val *string) {
+func (j *jsiiProxy_CloudflareProvider) SetUserAgentOperatorSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"userAgentOperatorSuffix",
@@ -424,7 +423,7 @@ func CloudflareProvider_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func CloudflareProvider_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudflareProvider_IsConstruct(x interface{}) *bool {
+func CloudflareProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudflareProvider_IsConstructParameters(x); err != nil {
@@ -459,7 +458,7 @@ func CloudflareProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func CloudflareProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudflareProvider_IsTerraformElement(x interface{}) *bool {
+func CloudflareProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudflareProvider_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func CloudflareProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func CloudflareProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudflareProvider_IsTerraformProvider(x interface{}) *bool {
+func CloudflareProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudflareProvider_IsTerraformProviderParameters(x); err != nil {
@@ -497,7 +496,7 @@ func CloudflareProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -515,14 +514,14 @@ func CloudflareProvider_TfResourceType() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudflareProvider) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudflareProvider) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -533,7 +532,7 @@ func (c *jsiiProxy_CloudflareProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -601,8 +600,8 @@ func (c *jsiiProxy_CloudflareProvider) ResetUserAgentOperatorSuffix() {
 	)
 }
 
-func (c *jsiiProxy_CloudflareProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudflareProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -614,8 +613,8 @@ func (c *jsiiProxy_CloudflareProvider) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_CloudflareProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudflareProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -627,8 +626,8 @@ func (c *jsiiProxy_CloudflareProvider) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_CloudflareProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudflareProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -640,8 +639,8 @@ func (c *jsiiProxy_CloudflareProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudflareProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudflareProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -666,8 +665,8 @@ func (c *jsiiProxy_CloudflareProvider) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudflareProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudflareProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -678,4 +677,3 @@ func (c *jsiiProxy_CloudflareProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

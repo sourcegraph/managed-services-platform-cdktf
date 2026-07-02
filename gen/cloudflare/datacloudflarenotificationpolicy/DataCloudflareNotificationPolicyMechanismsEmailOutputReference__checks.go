@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsEmailOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyMechanismsEmailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareNotificationPolicyMechanismsEmailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareNotificationPolicyMechanismsEmailOutputReferencePa
 
 	return nil
 }
-

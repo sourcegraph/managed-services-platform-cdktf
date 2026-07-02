@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) validateAddMoveTargetParameters
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateZeroTrustTunnelWarpConnector_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateZeroTrustTunnelWarpConnector_IsConstructParameters(x interface{}) error {
+func validateZeroTrustTunnelWarpConnector_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateZeroTrustTunnelWarpConnector_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateZeroTrustTunnelWarpConnector_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustTunnelWarpConnector_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateZeroTrustTunnelWarpConnector_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateZeroTrustTunnelWarpConnector_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustTunnelWarpConnector_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetAccountIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewZeroTrustTunnelWarpConnectorParameters(scope constructs.Construc
 
 	return nil
 }
-

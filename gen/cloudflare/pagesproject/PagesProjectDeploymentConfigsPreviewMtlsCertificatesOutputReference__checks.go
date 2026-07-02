@@ -106,7 +106,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -226,4 +226,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputRefere
 
 	return nil
 }
-

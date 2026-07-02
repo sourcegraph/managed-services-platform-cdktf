@@ -16,18 +16,18 @@ type DataCloudflareApiToken interface {
 	CdktfStack() cdktf.TerraformStack
 	Condition() DataCloudflareApiTokenConditionOutputReference
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	ExpiresOn() *string
 	Filter() DataCloudflareApiTokenFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,21 +54,21 @@ type DataCloudflareApiToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TokenId() *string
 	SetTokenId(val *string)
 	TokenIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataCloudflareApiToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTokenId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareApiToken
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataCloudflareApiToken) Condition() DataCloudflareApiTokenCon
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareApiToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataCloudflareApiToken) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataCloudflareApiToken) Filter() DataCloudflareApiTokenFilter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiToken) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DataCloudflareApiToken) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataCloudflareApiToken) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareApiToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -395,7 +395,6 @@ func (j *jsiiProxy_DataCloudflareApiToken) TokenIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_token cloudflare_api_token} Data Source.
 func NewDataCloudflareApiToken(scope constructs.Construct, id *string, config *DataCloudflareApiTokenConfig) DataCloudflareApiToken {
 	_init_.Initialize()
@@ -407,7 +406,7 @@ func NewDataCloudflareApiToken(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -420,12 +419,12 @@ func NewDataCloudflareApiToken_Override(d DataCloudflareApiToken, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareApiToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataCloudflareApiToken)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataCloudflareApiToken)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareApiToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataCloudflareApiToken)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareApiToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataCloudflareApiToken)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareApiToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_DataCloudflareApiToken)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiToken)SetTokenId(val *string) {
+func (j *jsiiProxy_DataCloudflareApiToken) SetTokenId(val *string) {
 	if err := j.validateSetTokenIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func DataCloudflareApiToken_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataCloudflareApiToken_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareApiToken_IsConstruct(x interface{}) *bool {
+func DataCloudflareApiToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiToken_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataCloudflareApiToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataCloudflareApiToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareApiToken_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareApiToken_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiToken_IsTerraformDataSourceParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataCloudflareApiToken_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func DataCloudflareApiToken_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareApiToken_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareApiToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiToken_IsTerraformElementParameters(x); err != nil {
@@ -567,7 +566,7 @@ func DataCloudflareApiToken_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -585,27 +584,27 @@ func DataCloudflareApiToken_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareApiToken) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareApiToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataCloudflareApiToken) PutFilter(value *DataCloudflareApiTok
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataCloudflareApiToken) ResetTokenId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareApiToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataCloudflareApiToken) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareApiToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataCloudflareApiToken) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareApiToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -841,8 +840,8 @@ func (d *jsiiProxy_DataCloudflareApiToken) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareApiToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -867,8 +866,8 @@ func (d *jsiiProxy_DataCloudflareApiToken) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiToken) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareApiToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -879,4 +878,3 @@ func (d *jsiiProxy_DataCloudflareApiToken) ToTerraform() interface{} {
 
 	return returns
 }
-

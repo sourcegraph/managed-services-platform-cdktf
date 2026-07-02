@@ -1,11 +1,10 @@
 package zerotrustdextest
 
-
 type ZeroTrustDexTestTargetPolicies struct {
 	// Whether the DEX rule is the account default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dex_test#default ZeroTrustDexTest#default}
-	Default interface{} `field:"optional" json:"default" yaml:"default"`
+	Default any `field:"optional" json:"default" yaml:"default"`
 	// The id of the DEX rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
@@ -18,4 +17,3 @@ type ZeroTrustDexTestTargetPolicies struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

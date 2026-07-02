@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateAddMoveTargetParameter
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutExcludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutExcludeParameters(v
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutIncludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateZeroTrustDeviceDefaultProfile_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateZeroTrustDeviceDefaultProfile_IsConstructParameters(x interface{}) error {
+func validateZeroTrustDeviceDefaultProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateZeroTrustDeviceDefaultProfile_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateZeroTrustDeviceDefaultProfile_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustDeviceDefaultProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateZeroTrustDeviceDefaultProfile_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateZeroTrustDeviceDefaultProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustDeviceDefaultProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAccountIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowedToLeaveParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowedToLeaveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowedToLeaveParam
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowModeSwitchParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowModeSwitchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowModeSwitchPara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowUpdatesParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetAllowUpdatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetCaptivePortalParame
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -434,7 +434,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -491,7 +491,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetCountParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetDisableAutoFallbackParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetDisableAutoFallbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,7 +511,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetDisableAutoFallback
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetExcludeOfficeIpsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetExcludeOfficeIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -555,7 +555,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -601,7 +601,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetProvisionersParamet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetRegisterInterfaceIpWithDnsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetRegisterInterfaceIpWithDnsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -621,7 +621,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetRegisterInterfaceIp
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSccmVpnBoundarySupportParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSccmVpnBoundarySupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -649,7 +649,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSupportUrlParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSwitchLockedParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSwitchLockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -695,4 +695,3 @@ func validateNewZeroTrustDeviceDefaultProfileParameters(scope constructs.Constru
 
 	return nil
 }
-

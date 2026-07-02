@@ -12,9 +12,9 @@ type DataCloudflareUserAgentBlockingRuleFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type DataCloudflareUserAgentBlockingRuleFilterOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Paused() any
+	SetPaused(val any)
+	PausedInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type DataCloudflareUserAgentBlockingRuleFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataCloudflareUserAgentBlockingRuleFilterOutputReference interface {
 	ResetUserAgent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Paused() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"paused",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Pau
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) PausedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) PausedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pausedInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Use
 	return returns
 }
 
-
 func NewDataCloudflareUserAgentBlockingRuleFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareUserAgentBlockingRuleFilterOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataCloudflareUserAgentBlockingRuleFilterOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataCloudflareUserAgentBlockingRuleFilterOutputReference_Override(d Data
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetPaused(val interface{}) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetPaused(val any) {
 	if err := j.validateSetPausedParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference)SetUserAgent(val *string) {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) SetUserAgent(val *string) {
 	if err := j.validateSetUserAgentParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Com
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Int
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Res
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) ToS
 
 	return returns
 }
-

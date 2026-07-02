@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustDnsLocationNetworksOutputReferenceParameters(terraformR
 
 	return nil
 }
-

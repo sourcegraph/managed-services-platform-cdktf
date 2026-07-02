@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareR2BucketLockRulesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

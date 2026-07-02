@@ -1,9 +1,8 @@
 package pagerule
 
-
 type PageRuleActions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#always_use_https PageRule#always_use_https}.
-	AlwaysUseHttps interface{} `field:"optional" json:"alwaysUseHttps" yaml:"alwaysUseHttps"`
+	AlwaysUseHttps any `field:"optional" json:"alwaysUseHttps" yaml:"alwaysUseHttps"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}.
 	AutomaticHttpsRewrites *string `field:"optional" json:"automaticHttpsRewrites" yaml:"automaticHttpsRewrites"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}.
@@ -25,13 +24,13 @@ type PageRuleActions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#cache_ttl_by_status PageRule#cache_ttl_by_status}.
 	CacheTtlByStatus *map[string]*string `field:"optional" json:"cacheTtlByStatus" yaml:"cacheTtlByStatus"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#disable_apps PageRule#disable_apps}.
-	DisableApps interface{} `field:"optional" json:"disableApps" yaml:"disableApps"`
+	DisableApps any `field:"optional" json:"disableApps" yaml:"disableApps"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#disable_performance PageRule#disable_performance}.
-	DisablePerformance interface{} `field:"optional" json:"disablePerformance" yaml:"disablePerformance"`
+	DisablePerformance any `field:"optional" json:"disablePerformance" yaml:"disablePerformance"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#disable_security PageRule#disable_security}.
-	DisableSecurity interface{} `field:"optional" json:"disableSecurity" yaml:"disableSecurity"`
+	DisableSecurity any `field:"optional" json:"disableSecurity" yaml:"disableSecurity"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#disable_zaraz PageRule#disable_zaraz}.
-	DisableZaraz interface{} `field:"optional" json:"disableZaraz" yaml:"disableZaraz"`
+	DisableZaraz any `field:"optional" json:"disableZaraz" yaml:"disableZaraz"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}.
 	EdgeCacheTtl *float64 `field:"optional" json:"edgeCacheTtl" yaml:"edgeCacheTtl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}.
@@ -71,4 +70,3 @@ type PageRuleActions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule#waf PageRule#waf}.
 	Waf *string `field:"optional" json:"waf" yaml:"waf"`
 }
-

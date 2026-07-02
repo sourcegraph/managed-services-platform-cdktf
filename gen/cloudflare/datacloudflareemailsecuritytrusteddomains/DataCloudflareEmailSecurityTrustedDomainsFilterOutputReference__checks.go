@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetIsRecentParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetIsRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetIsSimilarityParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetIsSimilarityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewDataCloudflareEmailSecurityTrustedDomainsFilterOutputReferencePa
 
 	return nil
 }
-

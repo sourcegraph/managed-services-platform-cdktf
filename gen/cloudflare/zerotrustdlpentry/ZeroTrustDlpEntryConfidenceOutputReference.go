@@ -14,9 +14,9 @@ type ZeroTrustDlpEntryConfidenceOutputReference interface {
 	Available() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type ZeroTrustDlpEntryConfidenceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type ZeroTrustDlpEntryConfidenceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) Available() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewZeroTrustDlpEntryConfidenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpEntryConfidenceOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewZeroTrustDlpEntryConfidenceOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfidenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewZeroTrustDlpEntryConfidenceOutputReference_Override(z ZeroTrustDlpEntryC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfidenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetInternalValue(val *ZeroTrustDlpEntryConfidence) {
+func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) SetInternalValue(val *ZeroTrustDlpEntryConfidence) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (z *jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference) ToString() *strin
 
 	return returns
 }
-

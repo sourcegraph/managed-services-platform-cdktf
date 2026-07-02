@@ -11,38 +11,38 @@ import (
 type R2BucketLifecycleRulesOutputReference interface {
 	cdktf.ComplexObject
 	AbortMultipartUploadsTransition() R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference
-	AbortMultipartUploadsTransitionInput() interface{}
+	AbortMultipartUploadsTransitionInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Conditions() R2BucketLifecycleRulesConditionsOutputReference
-	ConditionsInput() interface{}
+	ConditionsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	DeleteObjectsTransition() R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference
-	DeleteObjectsTransitionInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	DeleteObjectsTransitionInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	StorageClassTransitions() R2BucketLifecycleRulesStorageClassTransitionsList
-	StorageClassTransitionsInput() interface{}
+	StorageClassTransitionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type R2BucketLifecycleRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,13 +78,13 @@ type R2BucketLifecycleRulesOutputReference interface {
 	PutAbortMultipartUploadsTransition(value *R2BucketLifecycleRulesAbortMultipartUploadsTransition)
 	PutConditions(value *R2BucketLifecycleRulesConditions)
 	PutDeleteObjectsTransition(value *R2BucketLifecycleRulesDeleteObjectsTransition)
-	PutStorageClassTransitions(value interface{})
+	PutStorageClassTransitions(value any)
 	ResetAbortMultipartUploadsTransition()
 	ResetDeleteObjectsTransition()
 	ResetStorageClassTransitions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) AbortMultipartUploadsT
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) AbortMultipartUploadsTransitionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) AbortMultipartUploadsTransitionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"abortMultipartUploadsTransitionInput",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) AbortMultipartUploadsT
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) Conditions() R2BucketL
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) ConditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) ConditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsInput",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) DeleteObjectsTransitio
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) DeleteObjectsTransitionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) DeleteObjectsTransitionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteObjectsTransitionInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) DeleteObjectsTransitio
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) Enabled() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) StorageClassTransition
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) StorageClassTransitionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) StorageClassTransitionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageClassTransitionsInput",
@@ -287,7 +287,6 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewR2BucketLifecycleRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) R2BucketLifecycleRulesOutputReference {
 	_init_.Initialize()
 
@@ -298,7 +297,7 @@ func NewR2BucketLifecycleRulesOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -310,12 +309,12 @@ func NewR2BucketLifecycleRulesOutputReference_Override(r R2BucketLifecycleRulesO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetId(val *string) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,16 +404,16 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) PutAbortMultipartUploa
 	_jsii_.InvokeVoid(
 		r,
 		"putAbortMultipartUploadsTransition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -596,7 +595,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) PutConditions(value *R
 	_jsii_.InvokeVoid(
 		r,
 		"putConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -607,18 +606,18 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) PutDeleteObjectsTransi
 	_jsii_.InvokeVoid(
 		r,
 		"putDeleteObjectsTransition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) PutStorageClassTransitions(value interface{}) {
+func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) PutStorageClassTransitions(value any) {
 	if err := r.validatePutStorageClassTransitionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putStorageClassTransitions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -646,16 +645,16 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) ResetStorageClassTrans
 	)
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -674,4 +673,3 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ZeroTrustOrganizationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ZeroTrustOrganizationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
@@ -28,7 +28,7 @@ type ZeroTrustOrganizationConfig struct {
 	// Application settings will take precedence over this value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
-	AllowAuthenticateViaWarp interface{} `field:"optional" json:"allowAuthenticateViaWarp" yaml:"allowAuthenticateViaWarp"`
+	AllowAuthenticateViaWarp any `field:"optional" json:"allowAuthenticateViaWarp" yaml:"allowAuthenticateViaWarp"`
 	// The unique subdomain assigned to your Zero Trust organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
@@ -36,7 +36,7 @@ type ZeroTrustOrganizationConfig struct {
 	// When set to `true`, users skip the identity provider selection step during login.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
-	AutoRedirectToIdentity interface{} `field:"optional" json:"autoRedirectToIdentity" yaml:"autoRedirectToIdentity"`
+	AutoRedirectToIdentity any `field:"optional" json:"autoRedirectToIdentity" yaml:"autoRedirectToIdentity"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
 	CustomPages *ZeroTrustOrganizationCustomPages `field:"optional" json:"customPages" yaml:"customPages"`
 	// Lock all settings as Read-Only in the Dashboard, regardless of user permission.
@@ -44,7 +44,7 @@ type ZeroTrustOrganizationConfig struct {
 	// Updates may only be made via the API or Terraform for this account when enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
-	IsUiReadOnly interface{} `field:"optional" json:"isUiReadOnly" yaml:"isUiReadOnly"`
+	IsUiReadOnly any `field:"optional" json:"isUiReadOnly" yaml:"isUiReadOnly"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
 	LoginDesign *ZeroTrustOrganizationLoginDesign `field:"optional" json:"loginDesign" yaml:"loginDesign"`
 	// The name of your Zero Trust organization.
@@ -78,4 +78,3 @@ type ZeroTrustOrganizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
-

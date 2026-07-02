@@ -6,9 +6,9 @@ import (
 
 type MagicTransitSiteConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MagicTransitSiteConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
@@ -38,7 +38,7 @@ type MagicTransitSiteConfig struct {
 	// If set to true, the site can have two connectors and runs in high availability mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
-	HaMode interface{} `field:"optional" json:"haMode" yaml:"haMode"`
+	HaMode any `field:"optional" json:"haMode" yaml:"haMode"`
 	// Location of site in latitude and longitude.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site#location MagicTransitSite#location}
@@ -48,4 +48,3 @@ type MagicTransitSiteConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
 	SecondaryConnectorId *string `field:"optional" json:"secondaryConnectorId" yaml:"secondaryConnectorId"`
 }
-

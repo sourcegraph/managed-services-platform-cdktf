@@ -106,7 +106,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetCe
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetHo
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewAuthenticatedOriginPullsConfigAOutputReferenceParameters(terrafo
 
 	return nil
 }
-

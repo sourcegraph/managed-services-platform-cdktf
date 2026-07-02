@@ -15,9 +15,9 @@ type R2BucketEventNotificationRulesOutputReference interface {
 	ActionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type R2BucketEventNotificationRulesOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
@@ -52,7 +52,7 @@ type R2BucketEventNotificationRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type R2BucketEventNotificationRulesOutputReference interface {
 	ResetSuffix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) ActionsInput()
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewR2BucketEventNotificationRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) R2BucketEventNotificationRulesOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewR2BucketEventNotificationRulesOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewR2BucketEventNotificationRulesOutputReference_Override(r R2BucketEventNo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetActions(val *[]*string) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetActions(val *[]*string) {
 	if err := j.validateSetActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetActions(val 
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetDescription(
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetPrefix(val *
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetSuffix(val *string) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetSuffix(val *string) {
 	if err := j.validateSetSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetSuffix(val *
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) InterpolationF
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) ResetSuffix() 
 	)
 }
 
-func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) ToString() *st
 
 	return returns
 }
-

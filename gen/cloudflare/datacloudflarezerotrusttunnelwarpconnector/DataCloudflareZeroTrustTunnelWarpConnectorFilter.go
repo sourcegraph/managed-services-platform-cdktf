@@ -1,6 +1,5 @@
 package datacloudflarezerotrusttunnelwarpconnector
 
-
 type DataCloudflareZeroTrustTunnelWarpConnectorFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_warp_connector#exclude_prefix DataCloudflareZeroTrustTunnelWarpConnector#exclude_prefix}.
 	ExcludePrefix *string `field:"optional" json:"excludePrefix" yaml:"excludePrefix"`
@@ -13,7 +12,7 @@ type DataCloudflareZeroTrustTunnelWarpConnectorFilter struct {
 	// If `true`, only include deleted tunnels. If `false`, exclude deleted tunnels. If empty, all tunnels will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_warp_connector#is_deleted DataCloudflareZeroTrustTunnelWarpConnector#is_deleted}
-	IsDeleted interface{} `field:"optional" json:"isDeleted" yaml:"isDeleted"`
+	IsDeleted any `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 	// A user-friendly name for the tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_warp_connector#name DataCloudflareZeroTrustTunnelWarpConnector#name}
@@ -34,4 +33,3 @@ type DataCloudflareZeroTrustTunnelWarpConnectorFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_warp_connector#was_inactive_at DataCloudflareZeroTrustTunnelWarpConnector#was_inactive_at}.
 	WasInactiveAt *string `field:"optional" json:"wasInactiveAt" yaml:"wasInactiveAt"`
 }
-

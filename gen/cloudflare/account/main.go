@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.account.Account",
-		reflect.TypeOf((*Account)(nil)).Elem(),
+		reflect.TypeFor[Account](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
 			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Account{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.account.AccountConfig",
-		reflect.TypeOf((*AccountConfig)(nil)).Elem(),
+		reflect.TypeFor[AccountConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.account.AccountSettings",
-		reflect.TypeOf((*AccountSettings)(nil)).Elem(),
+		reflect.TypeFor[AccountSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.account.AccountSettingsOutputReference",
-		reflect.TypeOf((*AccountSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abuseContactEmail", GoGetter: "AbuseContactEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "abuseContactEmailInput", GoGetter: "AbuseContactEmailInput"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,11 +121,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.account.AccountUnit",
-		reflect.TypeOf((*AccountUnit)(nil)).Elem(),
+		reflect.TypeFor[AccountUnit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.account.AccountUnitOutputReference",
-		reflect.TypeOf((*AccountUnitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountUnitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountUnitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

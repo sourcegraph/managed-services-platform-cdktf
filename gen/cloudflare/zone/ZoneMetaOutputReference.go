@@ -13,9 +13,9 @@ type ZoneMetaOutputReference interface {
 	CdnOnly() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type ZoneMetaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ZoneMetaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ func (j *jsiiProxy_ZoneMetaOutputReference) CdnOnly() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneMetaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -223,7 +223,6 @@ func (j *jsiiProxy_ZoneMetaOutputReference) TerraformResource() cdktf.IInterpola
 	return returns
 }
 
-
 func NewZoneMetaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneMetaOutputReference {
 	_init_.Initialize()
 
@@ -234,7 +233,7 @@ func NewZoneMetaOutputReference(terraformResource cdktf.IInterpolatingParent, te
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zone.ZoneMetaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -246,12 +245,12 @@ func NewZoneMetaOutputReference_Override(z ZoneMetaOutputReference, terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zone.ZoneMetaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneMetaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_ZoneMetaOutputReference)SetComplexObjectIndex(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneMetaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_ZoneMetaOutputReference)SetComplexObjectIsFromSet(val *bool) 
 	)
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference)SetInternalValue(val *ZoneMeta) {
+func (j *jsiiProxy_ZoneMetaOutputReference) SetInternalValue(val *ZoneMeta) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_ZoneMetaOutputReference)SetInternalValue(val *ZoneMeta) {
 	)
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneMetaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_ZoneMetaOutputReference)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneMetaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,16 +318,16 @@ func (z *jsiiProxy_ZoneMetaOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneMetaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneMetaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,23 +484,23 @@ func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationForAttribute(property *
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneMetaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneMetaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (z *jsiiProxy_ZoneMetaOutputReference) ToString() *string {
 
 	return returns
 }
-

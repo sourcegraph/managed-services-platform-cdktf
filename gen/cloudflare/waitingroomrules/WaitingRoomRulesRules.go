@@ -1,6 +1,5 @@
 package waitingroomrules
 
-
 type WaitingRoomRulesRules struct {
 	// The action to take when the expression matches. Available values: "bypass_waiting_room".
 	//
@@ -17,6 +16,5 @@ type WaitingRoomRulesRules struct {
 	// When set to true, the rule is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 }
-

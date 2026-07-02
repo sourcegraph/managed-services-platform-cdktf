@@ -11,12 +11,12 @@ import (
 type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	cdktf.ComplexObject
 	Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
-	AuthenticationInput() interface{}
+	AuthenticationInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,21 +27,21 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeactivateOnDelete() interface{}
-	SetDeactivateOnDelete(val interface{})
-	DeactivateOnDeleteInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	DeactivateOnDelete() any
+	SetDeactivateOnDelete(val any)
+	DeactivateOnDeleteInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	IdpUid() *string
 	SetIdpUid(val *string)
 	IdpUidInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mappings() ZeroTrustAccessApplicationScimConfigMappingsList
-	MappingsInput() interface{}
+	MappingsInput() any
 	RemoteUri() *string
 	SetRemoteUri(val *string)
 	RemoteUriInput() *string
@@ -56,7 +56,7 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,14 +78,14 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthentication(value *ZeroTrustAccessApplicationScimConfigAuthentication)
-	PutMappings(value interface{})
+	PutMappings(value any)
 	ResetAuthentication()
 	ResetDeactivateOnDelete()
 	ResetEnabled()
 	ResetMappings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authenti
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) AuthenticationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) AuthenticationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authenticationInput",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authenti
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) DeactivateOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) DeactivateOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deactivateOnDelete",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Deactiva
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) DeactivateOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) DeactivateOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deactivateOnDeleteInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Deactiva
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Enabled(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) IdpUidIn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Mappings
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) MappingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) MappingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mappingsInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Terrafor
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewZeroTrustAccessApplicationScimConfigOutputReference_Override(z ZeroTrust
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetDeactivateOnDelete(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetDeactivateOnDelete(val any) {
 	if err := j.validateSetDeactivateOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetDeacti
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetIdpUid(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetIdpUid(val *string) {
 	if err := j.validateSetIdpUidParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetIdpUid
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetRemoteUri(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetRemoteUri(val *string) {
 	if err := j.validateSetRemoteUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetRemote
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,16 +427,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) ComputeF
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -608,18 +607,18 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutAuthe
 	_jsii_.InvokeVoid(
 		z,
 		"putAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutMappings(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutMappings(value any) {
 	if err := z.validatePutMappingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putMappings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,16 +654,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) ResetMap
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) ToString
 
 	return returns
 }
-

@@ -117,7 +117,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetDisableChunkedEncodingParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetDisableChunkedEncodingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetHttp2OriginParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetHttp2OriginParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,7 +278,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetNoHappyEyeballsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetNoHappyEyeballsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetNoTlsVerifyParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetNoTlsVerifyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -377,4 +377,3 @@ func validateNewZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutput
 
 	return nil
 }
-

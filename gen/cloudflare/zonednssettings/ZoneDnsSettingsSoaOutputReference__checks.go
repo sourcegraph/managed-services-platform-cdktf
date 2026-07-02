@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnsSettingsSoaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneDnsSettingsSoaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZoneDnsSettingsSoaOutputReference) validateSetExpireParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnsSettingsSoaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneDnsSettingsSoaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewZoneDnsSettingsSoaOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

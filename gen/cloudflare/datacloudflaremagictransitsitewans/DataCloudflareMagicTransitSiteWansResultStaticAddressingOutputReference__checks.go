@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteWansResultStaticAddressingOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultStaticAddressingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultStaticAddressingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareMagicTransitSiteWansResultStaticAddressingOutputRe
 
 	return nil
 }
-

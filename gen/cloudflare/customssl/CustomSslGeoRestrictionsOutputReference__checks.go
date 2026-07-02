@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCustomSslGeoRestrictionsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesRandomSteeringOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesRandomSteeringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesRandomSteeringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareLoadBalancerRulesOverridesRandomSteeringOutputRefe
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type WebAnalyticsRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WebAnalyticsRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
@@ -32,12 +32,11 @@ type WebAnalyticsRuleConfig struct {
 	// Whether the rule includes or excludes traffic from being measured.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
-	Inclusive interface{} `field:"optional" json:"inclusive" yaml:"inclusive"`
+	Inclusive any `field:"optional" json:"inclusive" yaml:"inclusive"`
 	// Whether the rule is paused or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
-	IsPaused interface{} `field:"optional" json:"isPaused" yaml:"isPaused"`
+	IsPaused any `field:"optional" json:"isPaused" yaml:"isPaused"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}.
 	Paths *[]*string `field:"optional" json:"paths" yaml:"paths"`
 }
-

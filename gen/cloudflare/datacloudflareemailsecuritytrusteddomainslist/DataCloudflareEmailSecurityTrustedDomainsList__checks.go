@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareEmailSecurityTrustedDomainsList_GenerateConfigForImpo
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityTrustedDomainsList_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityTrustedDomainsList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareEmailSecurityTrustedDomainsList_IsConstructParameters
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityTrustedDomainsList_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityTrustedDomainsList_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareEmailSecurityTrustedDomainsList_IsTerraformDataSource
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityTrustedDomainsList_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityTrustedDomainsList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetAcc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetDir
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetIsRecentParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetIsRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetIsR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetIsSimilarityParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetIsSimilarityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -314,4 +314,3 @@ func validateNewDataCloudflareEmailSecurityTrustedDomainsListParameters(scope co
 
 	return nil
 }
-

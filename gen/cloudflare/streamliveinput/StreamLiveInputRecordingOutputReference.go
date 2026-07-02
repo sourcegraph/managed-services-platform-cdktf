@@ -15,9 +15,9 @@ type StreamLiveInputRecordingOutputReference interface {
 	AllowedOriginsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,17 +30,17 @@ type StreamLiveInputRecordingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	HideLiveViewerCount() interface{}
-	SetHideLiveViewerCount(val interface{})
-	HideLiveViewerCountInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	HideLiveViewerCount() any
+	SetHideLiveViewerCount(val any)
+	HideLiveViewerCountInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
-	RequireSignedUrls() interface{}
-	SetRequireSignedUrls(val interface{})
-	RequireSignedUrlsInput() interface{}
+	RequireSignedUrls() any
+	SetRequireSignedUrls(val any)
+	RequireSignedUrlsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type StreamLiveInputRecordingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type StreamLiveInputRecordingOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) AllowedOriginsInput(
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) HideLiveViewerCount() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) HideLiveViewerCount() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideLiveViewerCount",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) HideLiveViewerCount(
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) HideLiveViewerCountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) HideLiveViewerCountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideLiveViewerCountInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) HideLiveViewerCountI
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) ModeInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) RequireSignedUrls() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) RequireSignedUrls() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireSignedUrls",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) RequireSignedUrls() 
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) RequireSignedUrlsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) RequireSignedUrlsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireSignedUrlsInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) TimeoutSecondsInput(
 	return returns
 }
 
-
 func NewStreamLiveInputRecordingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StreamLiveInputRecordingOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewStreamLiveInputRecordingOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewStreamLiveInputRecordingOutputReference_Override(s StreamLiveInputRecord
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetAllowedOrigins(val *[]*string) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetAllowedOrigins(val *[]*string) {
 	if err := j.validateSetAllowedOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetAllowedOrigins(val
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetHideLiveViewerCount(val interface{}) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetHideLiveViewerCount(val any) {
 	if err := j.validateSetHideLiveViewerCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetHideLiveViewerCoun
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetMode(val *string) 
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetRequireSignedUrls(val interface{}) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetRequireSignedUrls(val any) {
 	if err := j.validateSetRequireSignedUrlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetRequireSignedUrls(
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) ResetTimeoutSeconds(
 	)
 }
 
-func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) ToString() *string {
 
 	return returns
 }
-

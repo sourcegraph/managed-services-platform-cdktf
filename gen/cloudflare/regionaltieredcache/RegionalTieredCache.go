@@ -15,15 +15,15 @@ type RegionalTieredCache interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,15 +50,15 @@ type RegionalTieredCache interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -71,9 +71,9 @@ type RegionalTieredCache interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type RegionalTieredCache interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type RegionalTieredCache interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type RegionalTieredCache interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValue()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RegionalTieredCache
@@ -142,8 +142,8 @@ func (j *jsiiProxy_RegionalTieredCache) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegionalTieredCache) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_RegionalTieredCache) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RegionalTieredCache) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_RegionalTieredCache) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegionalTieredCache) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_RegionalTieredCache) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RegionalTieredCache) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_RegionalTieredCache) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegionalTieredCache) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_RegionalTieredCache) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RegionalTieredCache) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_RegionalTieredCache) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache(scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) RegionalTieredCache {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewRegionalTieredCache(scope constructs.Construct, id *string, config *Regi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewRegionalTieredCache_Override(r RegionalTieredCache, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetConnection(val interface{}) {
+func (j *jsiiProxy_RegionalTieredCache) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetCount(val interface{}) {
+func (j *jsiiProxy_RegionalTieredCache) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RegionalTieredCache) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RegionalTieredCache) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -430,7 +429,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RegionalTieredCache) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RegionalTieredCache) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RegionalTieredCache) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetValue(val *string) {
+func (j *jsiiProxy_RegionalTieredCache) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_RegionalTieredCache)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegionalTieredCache)SetZoneId(val *string) {
+func (j *jsiiProxy_RegionalTieredCache) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func RegionalTieredCache_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func RegionalTieredCache_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RegionalTieredCache_IsConstruct(x interface{}) *bool {
+func RegionalTieredCache_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRegionalTieredCache_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func RegionalTieredCache_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func RegionalTieredCache_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RegionalTieredCache_IsTerraformElement(x interface{}) *bool {
+func RegionalTieredCache_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRegionalTieredCache_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func RegionalTieredCache_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func RegionalTieredCache_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RegionalTieredCache_IsTerraformResource(x interface{}) *bool {
+func RegionalTieredCache_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRegionalTieredCache_IsTerraformResourceParameters(x); err != nil {
@@ -567,7 +566,7 @@ func RegionalTieredCache_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,31 +591,31 @@ func (r *jsiiProxy_RegionalTieredCache) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RegionalTieredCache) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RegionalTieredCache) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RegionalTieredCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RegionalTieredCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (r *jsiiProxy_RegionalTieredCache) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,15 +743,15 @@ func (r *jsiiProxy_RegionalTieredCache) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RegionalTieredCache) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegionalTieredCache) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -771,7 +770,7 @@ func (r *jsiiProxy_RegionalTieredCache) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -784,7 +783,7 @@ func (r *jsiiProxy_RegionalTieredCache) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,18 +797,18 @@ func (r *jsiiProxy_RegionalTieredCache) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RegionalTieredCache) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RegionalTieredCache) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -820,7 +819,7 @@ func (r *jsiiProxy_RegionalTieredCache) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -831,7 +830,7 @@ func (r *jsiiProxy_RegionalTieredCache) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -851,8 +850,8 @@ func (r *jsiiProxy_RegionalTieredCache) ResetValue() {
 	)
 }
 
-func (r *jsiiProxy_RegionalTieredCache) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RegionalTieredCache) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -864,8 +863,8 @@ func (r *jsiiProxy_RegionalTieredCache) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (r *jsiiProxy_RegionalTieredCache) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RegionalTieredCache) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -877,8 +876,8 @@ func (r *jsiiProxy_RegionalTieredCache) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (r *jsiiProxy_RegionalTieredCache) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegionalTieredCache) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -890,8 +889,8 @@ func (r *jsiiProxy_RegionalTieredCache) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RegionalTieredCache) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegionalTieredCache) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -916,8 +915,8 @@ func (r *jsiiProxy_RegionalTieredCache) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RegionalTieredCache) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegionalTieredCache) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -928,4 +927,3 @@ func (r *jsiiProxy_RegionalTieredCache) ToTerraform() interface{} {
 
 	return returns
 }
-

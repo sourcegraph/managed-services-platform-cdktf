@@ -12,9 +12,9 @@ type MagicWanIpsecTunnelHealthCheckOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,18 +28,18 @@ type MagicWanIpsecTunnelHealthCheckOutputReference interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Rate() *string
 	SetRate(val *string)
 	RateInput() *string
 	Target() MagicWanIpsecTunnelHealthCheckTargetOutputReference
-	TargetInput() interface{}
+	TargetInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type MagicWanIpsecTunnelHealthCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type MagicWanIpsecTunnelHealthCheckOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) DirectionInput
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Enabled() inte
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Target() Magic
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) TargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) TargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) TypeInput() *s
 	return returns
 }
 
-
 func NewMagicWanIpsecTunnelHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelHealthCheckOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewMagicWanIpsecTunnelHealthCheckOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewMagicWanIpsecTunnelHealthCheckOutputReference_Override(m MagicWanIpsecTu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetDirection(val *string) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetDirection(va
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetEnabled(val 
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetRate(val *string) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetRate(val *string) {
 	if err := j.validateSetRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetRate(val *st
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference)SetType(val *string) {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) InterpolationF
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) PutTarget(valu
 	_jsii_.InvokeVoid(
 		m,
 		"putTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) ResetType() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) ToString() *st
 
 	return returns
 }
-

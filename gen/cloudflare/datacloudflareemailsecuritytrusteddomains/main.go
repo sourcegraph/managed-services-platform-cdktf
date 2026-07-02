@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomains.DataCloudflareEmailSecurityTrustedDomains",
-		reflect.TypeOf((*DataCloudflareEmailSecurityTrustedDomains)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailSecurityTrustedDomains](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustedDomainId", GoGetter: "TrustedDomainId"},
 			_jsii_.MemberProperty{JsiiProperty: "trustedDomainIdInput", GoGetter: "TrustedDomainIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailSecurityTrustedDomains{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomains.DataCloudflareEmailSecurityTrustedDomainsConfig",
-		reflect.TypeOf((*DataCloudflareEmailSecurityTrustedDomainsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailSecurityTrustedDomainsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomains.DataCloudflareEmailSecurityTrustedDomainsFilter",
-		reflect.TypeOf((*DataCloudflareEmailSecurityTrustedDomainsFilter)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailSecurityTrustedDomainsFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomains.DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference",
-		reflect.TypeOf((*DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

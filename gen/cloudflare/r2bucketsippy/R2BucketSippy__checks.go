@@ -19,7 +19,7 @@ func (r *jsiiProxy_R2BucketSippy) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketSippy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_R2BucketSippy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_R2BucketSippy) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketSippy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_R2BucketSippy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateR2BucketSippy_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateR2BucketSippy_IsConstructParameters(x interface{}) error {
+func validateR2BucketSippy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateR2BucketSippy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateR2BucketSippy_IsTerraformElementParameters(x interface{}) error {
+func validateR2BucketSippy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateR2BucketSippy_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateR2BucketSippy_IsTerraformResourceParameters(x interface{}) error {
+func validateR2BucketSippy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_R2BucketSippy) validateSetBucketNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketSippy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketSippy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_R2BucketSippy) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketSippy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketSippy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_R2BucketSippy) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketSippy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_R2BucketSippy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewR2BucketSippyParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

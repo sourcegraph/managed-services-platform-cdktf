@@ -109,7 +109,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -225,4 +225,3 @@ func validateNewR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputRefer
 
 	return nil
 }
-

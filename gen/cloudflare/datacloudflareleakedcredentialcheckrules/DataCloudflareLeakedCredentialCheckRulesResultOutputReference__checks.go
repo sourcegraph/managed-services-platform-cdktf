@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRulesResultOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRulesResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRulesResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareLeakedCredentialCheckRulesResultOutputReferencePar
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment",
-		reflect.TypeOf((*WorkersDeployment)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeployment](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versions", GoGetter: "Versions"},
 			_jsii_.MemberProperty{JsiiProperty: "versionsInput", GoGetter: "VersionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeployment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,11 +79,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations",
-		reflect.TypeOf((*WorkersDeploymentAnnotations)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentAnnotations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference",
-		reflect.TypeOf((*WorkersDeploymentAnnotationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentAnnotationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workersMessage", GoGetter: "WorkersMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "workersMessageInput", GoGetter: "WorkersMessageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentAnnotationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,19 +118,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig",
-		reflect.TypeOf((*WorkersDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments",
-		reflect.TypeOf((*WorkersDeploymentDeployments)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeployments](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsAnnotations)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsAnnotations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsAnnotationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsAnnotationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workersMessage", GoGetter: "WorkersMessage"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsList)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentDeploymentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "authorEmail", GoGetter: "AuthorEmail"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "versions", GoGetter: "Versions"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentDeploymentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,11 +223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsVersions)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsVersions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsVersionsList)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsVersionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentDeploymentsVersionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference",
-		reflect.TypeOf((*WorkersDeploymentDeploymentsVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentDeploymentsVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentDeploymentsVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions",
-		reflect.TypeOf((*WorkersDeploymentVersions)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentVersions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList",
-		reflect.TypeOf((*WorkersDeploymentVersionsList)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentVersionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentVersionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsOutputReference",
-		reflect.TypeOf((*WorkersDeploymentVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersDeploymentVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "versionIdInput", GoGetter: "VersionIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersDeploymentVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

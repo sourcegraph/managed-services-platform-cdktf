@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReferen
 
 	return nil
 }
-

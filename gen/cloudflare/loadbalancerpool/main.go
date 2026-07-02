@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
-		reflect.TypeOf((*LoadBalancerPool)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig",
-		reflect.TypeOf((*LoadBalancerPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadShedding",
-		reflect.TypeOf((*LoadBalancerPoolLoadShedding)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolLoadShedding](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolLoadSheddingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolLoadSheddingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,15 +161,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilter",
-		reflect.TypeOf((*LoadBalancerPoolNotificationFilter)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolNotificationFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOrigin",
-		reflect.TypeOf((*LoadBalancerPoolNotificationFilterOrigin)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolNotificationFilterOrigin](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOriginOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolNotificationFilterOriginOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolNotificationFilterOriginOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolNotificationFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolNotificationFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,11 +247,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterPool",
-		reflect.TypeOf((*LoadBalancerPoolNotificationFilterPool)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolNotificationFilterPool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterPoolOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolNotificationFilterPoolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolNotificationFilterPoolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteering",
-		reflect.TypeOf((*LoadBalancerPoolOriginSteering)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOriginSteering](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolOriginSteeringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOriginSteeringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,15 +328,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOrigins",
-		reflect.TypeOf((*LoadBalancerPoolOrigins)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOrigins](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeader",
-		reflect.TypeOf((*LoadBalancerPoolOriginsHeader)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOriginsHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolOriginsHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOriginsHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -371,7 +371,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsList",
-		reflect.TypeOf((*LoadBalancerPoolOriginsList)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOriginsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -385,7 +385,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolOriginsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -393,7 +393,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
-		reflect.TypeOf((*LoadBalancerPoolOriginsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPoolOriginsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -440,7 +440,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPoolOriginsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

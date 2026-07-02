@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareLoadBalancer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareLoadBalancer_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateDataCloudflareLoadBalancer_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareLoadBalancer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareLoadBalancer_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateDataCloudflareLoadBalancer_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareLoadBalancer_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareLoadBalancer_IsTerraformDataSourceParameters(x interf
 	return nil
 }
 
-func validateDataCloudflareLoadBalancer_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareLoadBalancer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareLoadBalancer_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetLoadBalancerIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetPopPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetPopPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetPopPoolsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetRegionPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetRegionPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -290,4 +290,3 @@ func validateNewDataCloudflareLoadBalancerParameters(scope constructs.Construct,
 
 	return nil
 }
-

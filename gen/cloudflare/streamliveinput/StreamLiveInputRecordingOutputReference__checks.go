@@ -106,7 +106,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetAllowedOr
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetHideLiveViewerCountParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetHideLiveViewerCountParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetHideLiveV
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetModeParam
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetRequireSignedUrlsParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) validateSetRequireSignedUrlsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewStreamLiveInputRecordingOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

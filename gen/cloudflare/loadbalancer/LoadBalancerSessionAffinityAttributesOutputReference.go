@@ -12,9 +12,9 @@ type LoadBalancerSessionAffinityAttributesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,11 +33,11 @@ type LoadBalancerSessionAffinityAttributesOutputReference interface {
 	Headers() *[]*string
 	SetHeaders(val *[]*string)
 	HeadersInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	RequireAllHeaders() interface{}
-	SetRequireAllHeaders(val interface{})
-	RequireAllHeadersInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	RequireAllHeaders() any
+	SetRequireAllHeaders(val any)
+	RequireAllHeadersInput() any
 	Samesite() *string
 	SetSamesite(val *string)
 	SamesiteInput() *string
@@ -58,7 +58,7 @@ type LoadBalancerSessionAffinityAttributesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type LoadBalancerSessionAffinityAttributesOutputReference interface {
 	ResetZeroDowntimeFailover()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Headers
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Interna
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) RequireAllHeaders() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) RequireAllHeaders() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAllHeaders",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Require
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) RequireAllHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) RequireAllHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAllHeadersInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ZeroDow
 	return returns
 }
 
-
 func NewLoadBalancerSessionAffinityAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerSessionAffinityAttributesOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewLoadBalancerSessionAffinityAttributesOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewLoadBalancerSessionAffinityAttributesOutputReference_Override(l LoadBala
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetDrainDuration(val *float64) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetDrainDuration(val *float64) {
 	if err := j.validateSetDrainDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetDrain
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetHeaders(val *[]*string) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetHeaders(val *[]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetHeade
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetRequireAllHeaders(val interface{}) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetRequireAllHeaders(val any) {
 	if err := j.validateSetRequireAllHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetRequi
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetSamesite(val *string) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetSamesite(val *string) {
 	if err := j.validateSetSamesiteParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetSames
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetSecure(val *string) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetSecure(val *string) {
 	if err := j.validateSetSecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetSecur
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetZeroDowntimeFailover(val *string) {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) SetZeroDowntimeFailover(val *string) {
 	if err := j.validateSetZeroDowntimeFailoverParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Compute
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetBool
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetBool
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetList
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetNumb
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetNumb
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetNumb
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetStri
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) GetStri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Interpo
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ResetZe
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ToStrin
 
 	return returns
 }
-

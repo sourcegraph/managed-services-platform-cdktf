@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketEventNotificationRulesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotificationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareR2BucketEventNotificationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareR2BucketEventNotificationRulesOutputReferenceParam
 
 	return nil
 }
-

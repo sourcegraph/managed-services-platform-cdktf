@@ -1,6 +1,5 @@
 package zerotrustaccessapplication
 
-
 type ZeroTrustAccessApplicationPolicies struct {
 	// The rules that define how users may connect to the targets secured by your application.
 	//
@@ -18,7 +17,7 @@ type ZeroTrustAccessApplicationPolicies struct {
 	// To match the policy, a user cannot meet any of the Exclude rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#exclude ZeroTrustAccessApplication#exclude}
-	Exclude interface{} `field:"optional" json:"exclude" yaml:"exclude"`
+	Exclude any `field:"optional" json:"exclude" yaml:"exclude"`
 	// The UUID of the policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
@@ -29,7 +28,7 @@ type ZeroTrustAccessApplicationPolicies struct {
 	// Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#include ZeroTrustAccessApplication#include}
-	Include interface{} `field:"optional" json:"include" yaml:"include"`
+	Include any `field:"optional" json:"include" yaml:"include"`
 	// The name of the Access policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
@@ -43,6 +42,5 @@ type ZeroTrustAccessApplicationPolicies struct {
 	// To match the policy, a user must meet all of the Require rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#require ZeroTrustAccessApplication#require}
-	Require interface{} `field:"optional" json:"require" yaml:"require"`
+	Require any `field:"optional" json:"require" yaml:"require"`
 }
-

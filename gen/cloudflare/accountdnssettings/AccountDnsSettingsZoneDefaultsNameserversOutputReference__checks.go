@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAccountDnsSettingsZoneDefaultsNameserversOutputReferenceParamete
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,4 +202,3 @@ func validateNewPagesProjectLatestDeploymentEnvVarsOutputReferenceParameters(ter
 
 	return nil
 }
-

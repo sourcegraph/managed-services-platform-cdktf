@@ -6,9 +6,9 @@ import (
 
 type DataCloudflareDnsRecordsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataCloudflareDnsRecordsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_records#zone_id DataCloudflareDnsRecords#zone_id}
@@ -51,7 +51,7 @@ type DataCloudflareDnsRecordsConfig struct {
 	// Whether the record is receiving the performance and security benefits of Cloudflare.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_records#proxied DataCloudflareDnsRecords#proxied}
-	Proxied interface{} `field:"optional" json:"proxied" yaml:"proxied"`
+	Proxied any `field:"optional" json:"proxied" yaml:"proxied"`
 	// Allows searching in multiple properties of a DNS record simultaneously.
 	//
 	// This parameter is intended for human users, not automation. Its exact behavior is intentionally left unspecified and is subject to change in the future. This parameter works independently of the `match` setting. For automated searches, please use the other available parameters.
@@ -74,4 +74,3 @@ type DataCloudflareDnsRecordsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_records#type DataCloudflareDnsRecords#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

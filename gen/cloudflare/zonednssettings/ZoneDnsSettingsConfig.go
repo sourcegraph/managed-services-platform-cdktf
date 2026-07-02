@@ -6,9 +6,9 @@ import (
 
 type ZoneDnsSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ZoneDnsSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#zone_id ZoneDnsSettings#zone_id}
@@ -28,11 +28,11 @@ type ZoneDnsSettingsConfig struct {
 	// Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#flatten_all_cnames ZoneDnsSettings#flatten_all_cnames}
-	FlattenAllCnames interface{} `field:"optional" json:"flattenAllCnames" yaml:"flattenAllCnames"`
+	FlattenAllCnames any `field:"optional" json:"flattenAllCnames" yaml:"flattenAllCnames"`
 	// Whether to enable Foundation DNS Advanced Nameservers on the zone.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#foundation_dns ZoneDnsSettings#foundation_dns}
-	FoundationDns interface{} `field:"optional" json:"foundationDns" yaml:"foundationDns"`
+	FoundationDns any `field:"optional" json:"foundationDns" yaml:"foundationDns"`
 	// Settings for this internal zone.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#internal_dns ZoneDnsSettings#internal_dns}
@@ -40,7 +40,7 @@ type ZoneDnsSettingsConfig struct {
 	// Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#multi_provider ZoneDnsSettings#multi_provider}
-	MultiProvider interface{} `field:"optional" json:"multiProvider" yaml:"multiProvider"`
+	MultiProvider any `field:"optional" json:"multiProvider" yaml:"multiProvider"`
 	// Settings determining the nameservers through which the zone should be available.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#nameservers ZoneDnsSettings#nameservers}
@@ -52,7 +52,7 @@ type ZoneDnsSettingsConfig struct {
 	// Allows a Secondary DNS zone to use (proxied) override records and CNAME flattening at the zone apex.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#secondary_overrides ZoneDnsSettings#secondary_overrides}
-	SecondaryOverrides interface{} `field:"optional" json:"secondaryOverrides" yaml:"secondaryOverrides"`
+	SecondaryOverrides any `field:"optional" json:"secondaryOverrides" yaml:"secondaryOverrides"`
 	// Components of the zone's SOA record.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#soa ZoneDnsSettings#soa}
@@ -62,4 +62,3 @@ type ZoneDnsSettingsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_dns_settings#zone_mode ZoneDnsSettings#zone_mode}
 	ZoneMode *string `field:"optional" json:"zoneMode" yaml:"zoneMode"`
 }
-

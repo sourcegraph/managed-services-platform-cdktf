@@ -15,15 +15,15 @@ type ZeroTrustDeviceDefaultProfile interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AllowedToLeave() interface{}
-	SetAllowedToLeave(val interface{})
-	AllowedToLeaveInput() interface{}
-	AllowModeSwitch() interface{}
-	SetAllowModeSwitch(val interface{})
-	AllowModeSwitchInput() interface{}
-	AllowUpdates() interface{}
-	SetAllowUpdates(val interface{})
-	AllowUpdatesInput() interface{}
+	AllowedToLeave() any
+	SetAllowedToLeave(val any)
+	AllowedToLeaveInput() any
+	AllowModeSwitch() any
+	SetAllowModeSwitch(val any)
+	AllowModeSwitchInput() any
+	AllowUpdates() any
+	SetAllowUpdates(val any)
+	AllowUpdatesInput() any
 	AutoConnect() *float64
 	SetAutoConnect(val *float64)
 	AutoConnectInput() *float64
@@ -33,29 +33,29 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Default() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableAutoFallback() interface{}
-	SetDisableAutoFallback(val interface{})
-	DisableAutoFallbackInput() interface{}
+	DisableAutoFallback() any
+	SetDisableAutoFallback(val any)
+	DisableAutoFallbackInput() any
 	Enabled() cdktf.IResolvable
 	Exclude() ZeroTrustDeviceDefaultProfileExcludeList
-	ExcludeInput() interface{}
-	ExcludeOfficeIps() interface{}
-	SetExcludeOfficeIps(val interface{})
-	ExcludeOfficeIpsInput() interface{}
+	ExcludeInput() any
+	ExcludeOfficeIps() any
+	SetExcludeOfficeIps(val any)
+	ExcludeOfficeIpsInput() any
 	FallbackDomains() ZeroTrustDeviceDefaultProfileFallbackDomainsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -68,7 +68,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	GatewayUniqueId() *string
 	Id() *string
 	Include() ZeroTrustDeviceDefaultProfileIncludeList
-	IncludeInput() interface{}
+	IncludeInput() any
 	LanAllowMinutes() *float64
 	SetLanAllowMinutes(val *float64)
 	LanAllowMinutesInput() *float64
@@ -86,29 +86,29 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RegisterInterfaceIpWithDns() interface{}
-	SetRegisterInterfaceIpWithDns(val interface{})
-	RegisterInterfaceIpWithDnsInput() interface{}
-	SccmVpnBoundarySupport() interface{}
-	SetSccmVpnBoundarySupport(val interface{})
-	SccmVpnBoundarySupportInput() interface{}
+	RawOverrides() any
+	RegisterInterfaceIpWithDns() any
+	SetRegisterInterfaceIpWithDns(val any)
+	RegisterInterfaceIpWithDnsInput() any
+	SccmVpnBoundarySupport() any
+	SetSccmVpnBoundarySupport(val any)
+	SccmVpnBoundarySupportInput() any
 	ServiceModeV2() ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference
-	ServiceModeV2Input() interface{}
+	ServiceModeV2Input() any
 	SupportUrl() *string
 	SetSupportUrl(val *string)
 	SupportUrlInput() *string
-	SwitchLocked() interface{}
-	SetSwitchLocked(val interface{})
-	SwitchLockedInput() interface{}
+	SwitchLocked() any
+	SetSwitchLocked(val any)
+	SwitchLockedInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TunnelProtocol() *string
@@ -118,9 +118,9 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,7 +138,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -150,15 +150,15 @@ type ZeroTrustDeviceDefaultProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutExclude(value interface{})
-	PutInclude(value interface{})
+	PutExclude(value any)
+	PutInclude(value any)
 	PutServiceModeV2(value *ZeroTrustDeviceDefaultProfileServiceModeV2)
 	ResetAllowedToLeave()
 	ResetAllowModeSwitch()
@@ -180,17 +180,17 @@ type ZeroTrustDeviceDefaultProfile interface {
 	ResetSupportUrl()
 	ResetSwitchLocked()
 	ResetTunnelProtocol()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustDeviceDefaultProfile
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowedToLeave() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowedToLeave() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedToLeave",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowedToLeave() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowedToLeaveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowedToLeaveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedToLeaveInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowedToLeaveInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowModeSwitch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowModeSwitch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowModeSwitch",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowModeSwitch() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowModeSwitchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowModeSwitchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowModeSwitchInput",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowModeSwitchInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowUpdates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowUpdates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUpdates",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowUpdates() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowUpdatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AllowUpdatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUpdatesInput",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DisableAutoFallback() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DisableAutoFallback() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAutoFallback",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DisableAutoFallback() interfac
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DisableAutoFallbackInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DisableAutoFallbackInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAutoFallbackInput",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Exclude() ZeroTrustDeviceDefau
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInput",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeOfficeIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeOfficeIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeOfficeIps",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeOfficeIps() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeOfficeIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ExcludeOfficeIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeOfficeIpsInput",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Include() ZeroTrustDeviceDefau
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) IncludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) IncludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeInput",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -608,8 +608,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -618,8 +618,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDns() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDns() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"registerInterfaceIpWithDns",
@@ -628,8 +628,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDns() i
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"registerInterfaceIpWithDnsInput",
@@ -638,8 +638,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDnsInpu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sccmVpnBoundarySupport",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupport() inter
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sccmVpnBoundarySupportInput",
@@ -668,8 +668,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ServiceModeV2() ZeroTrustDevic
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ServiceModeV2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ServiceModeV2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceModeV2Input",
@@ -698,8 +698,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SupportUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SwitchLocked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SwitchLocked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"switchLocked",
@@ -708,8 +708,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SwitchLocked() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SwitchLockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SwitchLockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"switchLockedInput",
@@ -728,8 +728,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -768,7 +768,6 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TunnelProtocolInput() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) ZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
@@ -780,7 +779,7 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -793,12 +792,12 @@ func NewZeroTrustDeviceDefaultProfile_Override(z ZeroTrustDeviceDefaultProfile, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAllowedToLeave(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetAllowedToLeave(val any) {
 	if err := j.validateSetAllowedToLeaveParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAllowedToLeave(val interface
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAllowModeSwitch(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetAllowModeSwitch(val any) {
 	if err := j.validateSetAllowModeSwitchParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAllowModeSwitch(val interfac
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAllowUpdates(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetAllowUpdates(val any) {
 	if err := j.validateSetAllowUpdatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAllowUpdates(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAutoConnect(val *float64) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetAutoConnect(val *float64) {
 	if err := j.validateSetAutoConnectParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetAutoConnect(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetCaptivePortal(val *float64) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetCaptivePortal(val *float64) {
 	if err := j.validateSetCaptivePortalParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetCaptivePortal(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -894,7 +893,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetDisableAutoFallback(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetDisableAutoFallback(val any) {
 	if err := j.validateSetDisableAutoFallbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -905,7 +904,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetDisableAutoFallback(val inte
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetExcludeOfficeIps(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetExcludeOfficeIps(val any) {
 	if err := j.validateSetExcludeOfficeIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -916,7 +915,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetExcludeOfficeIps(val interfa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -924,7 +923,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowMinutes(val *float64) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetLanAllowMinutes(val *float64) {
 	if err := j.validateSetLanAllowMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -935,7 +934,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowMinutes(val *float64
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowSubnetSize(val *float64) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetLanAllowSubnetSize(val *float64) {
 	if err := j.validateSetLanAllowSubnetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -946,7 +945,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowSubnetSize(val *floa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -957,7 +956,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -965,7 +964,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,7 +975,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetRegisterInterfaceIpWithDns(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetRegisterInterfaceIpWithDns(val any) {
 	if err := j.validateSetRegisterInterfaceIpWithDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -987,7 +986,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetRegisterInterfaceIpWithDns(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSccmVpnBoundarySupport(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetSccmVpnBoundarySupport(val any) {
 	if err := j.validateSetSccmVpnBoundarySupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSccmVpnBoundarySupport(val i
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSupportUrl(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetSupportUrl(val *string) {
 	if err := j.validateSetSupportUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSupportUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSwitchLocked(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetSwitchLocked(val any) {
 	if err := j.validateSetSwitchLockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSwitchLocked(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetTunnelProtocol(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SetTunnelProtocol(val *string) {
 	if err := j.validateSetTunnelProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func ZeroTrustDeviceDefaultProfile_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func ZeroTrustDeviceDefaultProfile_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustDeviceDefaultProfile_IsConstruct(x interface{}) *bool {
+func ZeroTrustDeviceDefaultProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceDefaultProfile_IsConstructParameters(x); err != nil {
@@ -1078,7 +1077,7 @@ func ZeroTrustDeviceDefaultProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func ZeroTrustDeviceDefaultProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustDeviceDefaultProfile_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustDeviceDefaultProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceDefaultProfile_IsTerraformElementParameters(x); err != nil {
@@ -1097,7 +1096,7 @@ func ZeroTrustDeviceDefaultProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1105,7 +1104,7 @@ func ZeroTrustDeviceDefaultProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustDeviceDefaultProfile_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustDeviceDefaultProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceDefaultProfile_IsTerraformResourceParameters(x); err != nil {
@@ -1116,7 +1115,7 @@ func ZeroTrustDeviceDefaultProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1141,31 +1140,31 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1181,7 +1180,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1197,7 +1196,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1213,7 +1212,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1229,7 +1228,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1245,7 +1244,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1261,7 +1260,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1293,15 +1292,15 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1320,7 +1319,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1333,7 +1332,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1347,18 +1346,18 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1369,7 +1368,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1380,29 +1379,29 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) PutExclude(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) PutExclude(value any) {
 	if err := z.validatePutExcludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putExclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) PutInclude(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) PutInclude(value any) {
 	if err := z.validatePutIncludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putInclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1413,7 +1412,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) PutServiceModeV2(value *ZeroTr
 	_jsii_.InvokeVoid(
 		z,
 		"putServiceModeV2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1561,8 +1560,8 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetTunnelProtocol() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1574,8 +1573,8 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1587,8 +1586,8 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1600,8 +1599,8 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1626,8 +1625,8 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1638,4 +1637,3 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

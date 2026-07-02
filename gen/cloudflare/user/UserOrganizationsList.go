@@ -36,7 +36,7 @@ type UserOrganizationsList interface {
 	Get(index *float64) UserOrganizationsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_UserOrganizationsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewUserOrganizationsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserOrganizationsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewUserOrganizationsList(terraformResource cdktf.IInterpolatingParent, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.user.UserOrganizationsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewUserOrganizationsList_Override(u UserOrganizationsList, terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.user.UserOrganizationsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserOrganizationsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserOrganizationsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_UserOrganizationsList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserOrganizationsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserOrganizationsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_UserOrganizationsList)SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_UserOrganizationsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_UserOrganizationsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (u *jsiiProxy_UserOrganizationsList) AllWithMapKey(mapKeyAttributeName *str
 	_jsii_.Invoke(
 		u,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (u *jsiiProxy_UserOrganizationsList) Get(index *float64) UserOrganizationsO
 	_jsii_.Invoke(
 		u,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (u *jsiiProxy_UserOrganizationsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserOrganizationsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := u.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (u *jsiiProxy_UserOrganizationsList) ToString() *string {
 
 	return returns
 }
-

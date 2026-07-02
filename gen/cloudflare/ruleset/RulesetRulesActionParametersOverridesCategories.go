@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersOverridesCategories struct {
 	// The name of the category to override.
 	//
@@ -13,10 +12,9 @@ type RulesetRulesActionParametersOverridesCategories struct {
 	// Whether to enable execution of rules in the category.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#enabled Ruleset#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The sensitivity level to use for rules in the category. Available values: "default", "medium", "low", "eoff".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 	SensitivityLevel *string `field:"optional" json:"sensitivityLevel" yaml:"sensitivityLevel"`
 }
-

@@ -18,11 +18,11 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -53,19 +53,19 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	SetProxyEndpointId(val *string)
 	ProxyEndpointIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Subdomain() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustGatewayProxyEndpoint
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) CdktfStack() cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ProxyEndpointIdI
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) TerraformGenerat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -349,7 +349,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) UpdatedAt() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointConfig) DataCloudflareZeroTrustGatewayProxyEndpoint {
 	_init_.Initialize()
@@ -361,7 +360,7 @@ func NewDataCloudflareZeroTrustGatewayProxyEndpoint(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayProxyEndpoint.DataCloudflareZeroTrustGatewayProxyEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -374,12 +373,12 @@ func NewDataCloudflareZeroTrustGatewayProxyEndpoint_Override(d DataCloudflareZer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayProxyEndpoint.DataCloudflareZeroTrustGatewayProxyEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetAccountId(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint)SetProxyEndpointId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SetProxyEndpointId(val *string) {
 	if err := j.validateSetProxyEndpointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayProxyEndpoint.DataCloudflareZeroTrustGatewayProxyEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareZeroTrustGatewayProxyEndpoint_IsConstruct(x interface{}) *bool {
+func DataCloudflareZeroTrustGatewayProxyEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustGatewayProxyEndpoint_IsConstructParameters(x); err != nil {
@@ -494,7 +493,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayProxyEndpoint.DataCloudflareZeroTrustGatewayProxyEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformDataSourceParameters(x); err != nil {
@@ -513,7 +512,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformDataSource(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayProxyEndpoint.DataCloudflareZeroTrustGatewayProxyEndpoint",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformDataSource(x interfa
 }
 
 // Experimental.
-func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -532,7 +531,7 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayProxyEndpoint.DataCloudflareZeroTrustGatewayProxyEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -550,27 +549,27 @@ func DataCloudflareZeroTrustGatewayProxyEndpoint_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetBooleanAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetBooleanMapAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetListAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetNumberAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetNumberListAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetNumberMapAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetStringAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) GetStringMapAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) InterpolationFor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -740,8 +739,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ResetOverrideLog
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -753,8 +752,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SynthesizeAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -766,8 +765,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) SynthesizeHclAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -779,8 +778,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToHclTerraform()
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -805,8 +804,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToString() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -817,4 +816,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ToTerraform() in
 
 	return returns
 }
-

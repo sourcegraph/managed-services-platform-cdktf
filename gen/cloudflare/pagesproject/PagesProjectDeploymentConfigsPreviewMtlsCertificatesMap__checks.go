@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap) vali
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewMtlsCertificatesMapParameter
 
 	return nil
 }
-

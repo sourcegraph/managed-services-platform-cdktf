@@ -120,7 +120,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -236,4 +236,3 @@ func validateNewPagesProjectDeploymentConfigsOutputReferenceParameters(terraform
 
 	return nil
 }
-

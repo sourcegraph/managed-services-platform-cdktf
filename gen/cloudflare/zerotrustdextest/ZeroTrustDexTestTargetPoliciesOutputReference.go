@@ -12,9 +12,9 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Default() interface{}
-	SetDefault(val interface{})
-	DefaultInput() interface{}
+	Default() any
+	SetDefault(val any)
+	DefaultInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Default() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Default() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"default",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Default() inte
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) DefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) DefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) IdInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewZeroTrustDexTestTargetPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustDexTestTargetPoliciesOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewZeroTrustDexTestTargetPoliciesOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewZeroTrustDexTestTargetPoliciesOutputReference_Override(z ZeroTrustDexTes
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetDefault(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetDefault(val any) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetDefault(val 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetId(val *stri
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetName(val *st
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) InterpolationF
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ResetName() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ToString() *st
 
 	return returns
 }
-

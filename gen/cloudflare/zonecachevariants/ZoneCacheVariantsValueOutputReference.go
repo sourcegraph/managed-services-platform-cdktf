@@ -18,9 +18,9 @@ type ZoneCacheVariantsValueOutputReference interface {
 	BmpInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ZoneCacheVariantsValueOutputReference interface {
 	Gif() *[]*string
 	SetGif(val *[]*string)
 	GifInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Jp2() *[]*string
 	SetJp2(val *[]*string)
 	Jp2Input() *[]*string
@@ -73,7 +73,7 @@ type ZoneCacheVariantsValueOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ZoneCacheVariantsValueOutputReference interface {
 	ResetWebp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) BmpInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) GifInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) WebpInput() *[]*string
 	return returns
 }
 
-
 func NewZoneCacheVariantsValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneCacheVariantsValueOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewZoneCacheVariantsValueOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewZoneCacheVariantsValueOutputReference_Override(z ZoneCacheVariantsValueO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetAvif(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetAvif(val *[]*string) {
 	if err := j.validateSetAvifParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetAvif(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetBmp(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetBmp(val *[]*string) {
 	if err := j.validateSetBmpParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetBmp(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetGif(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetGif(val *[]*string) {
 	if err := j.validateSetGifParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetGif(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJp2(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetJp2(val *[]*string) {
 	if err := j.validateSetJp2Parameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJp2(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJpeg(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetJpeg(val *[]*string) {
 	if err := j.validateSetJpegParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJpeg(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJpg(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetJpg(val *[]*string) {
 	if err := j.validateSetJpgParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJpg(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJpg2(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetJpg2(val *[]*string) {
 	if err := j.validateSetJpg2Parameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetJpg2(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetPng(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetPng(val *[]*string) {
 	if err := j.validateSetPngParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetPng(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTif(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetTif(val *[]*string) {
 	if err := j.validateSetTifParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTif(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTiff(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetTiff(val *[]*string) {
 	if err := j.validateSetTiffParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTiff(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetWebp(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) SetWebp(val *[]*string) {
 	if err := j.validateSetWebpParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) ResetWebp() {
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) ToString() *string {
 
 	return returns
 }
-

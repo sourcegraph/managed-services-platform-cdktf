@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.Zone",
-		reflect.TypeOf((*Zone)(nil)).Elem(),
+		reflect.TypeFor[Zone](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vanityNameServersInput", GoGetter: "VanityNameServersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationKey", GoGetter: "VerificationKey"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Zone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,11 +93,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZoneAccount",
-		reflect.TypeOf((*ZoneAccount)(nil)).Elem(),
+		reflect.TypeFor[ZoneAccount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.ZoneAccountOutputReference",
-		reflect.TypeOf((*ZoneAccountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneAccountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,15 +132,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZoneConfig",
-		reflect.TypeOf((*ZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[ZoneConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZoneMeta",
-		reflect.TypeOf((*ZoneMeta)(nil)).Elem(),
+		reflect.TypeFor[ZoneMeta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.ZoneMetaOutputReference",
-		reflect.TypeOf((*ZoneMetaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneMetaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cdnOnly", GoGetter: "CdnOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneMetaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZoneOwner",
-		reflect.TypeOf((*ZoneOwner)(nil)).Elem(),
+		reflect.TypeFor[ZoneOwner](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.ZoneOwnerOutputReference",
-		reflect.TypeOf((*ZoneOwnerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneOwnerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneOwnerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZonePlan",
-		reflect.TypeOf((*ZonePlan)(nil)).Elem(),
+		reflect.TypeFor[ZonePlan](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.ZonePlanOutputReference",
-		reflect.TypeOf((*ZonePlanOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZonePlanOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canSubscribe", GoGetter: "CanSubscribe"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZonePlanOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -264,11 +264,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZoneTenant",
-		reflect.TypeOf((*ZoneTenant)(nil)).Elem(),
+		reflect.TypeFor[ZoneTenant](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.ZoneTenantOutputReference",
-		reflect.TypeOf((*ZoneTenantOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneTenantOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneTenantOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -302,11 +302,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zone.ZoneTenantUnit",
-		reflect.TypeOf((*ZoneTenantUnit)(nil)).Elem(),
+		reflect.TypeFor[ZoneTenantUnit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zone.ZoneTenantUnitOutputReference",
-		reflect.TypeOf((*ZoneTenantUnitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneTenantUnitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneTenantUnitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

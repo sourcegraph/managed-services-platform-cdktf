@@ -19,7 +19,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MagicWanStaticRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MagicWanStaticRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMagicWanStaticRoute_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateMagicWanStaticRoute_IsConstructParameters(x interface{}) error {
+func validateMagicWanStaticRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMagicWanStaticRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMagicWanStaticRoute_IsTerraformElementParameters(x interface{}) error {
+func validateMagicWanStaticRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMagicWanStaticRoute_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateMagicWanStaticRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateMagicWanStaticRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanStaticRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanStaticRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetPriorityParameters(val *float
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MagicWanStaticRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewMagicWanStaticRouteParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

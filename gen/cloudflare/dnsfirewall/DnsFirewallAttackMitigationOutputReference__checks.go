@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetEnable
 	return nil
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetIntern
 	return nil
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetOnlyWhenUpstreamUnhealthyParameters(val interface{}) error {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) validateSetOnlyWhenUpstreamUnhealthyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewDnsFirewallAttackMitigationOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

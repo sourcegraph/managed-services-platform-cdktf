@@ -34,7 +34,7 @@ func (a *jsiiProxy_AuthenticatedOriginPullsConfigAList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsConfigAList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsConfigAList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAuthenticatedOriginPullsConfigAListParameters(terraformResource 
 
 	return nil
 }
-

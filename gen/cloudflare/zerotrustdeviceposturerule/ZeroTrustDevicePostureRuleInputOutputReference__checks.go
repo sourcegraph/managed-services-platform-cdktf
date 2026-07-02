@@ -133,7 +133,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetCh
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetCheckPrivateKeyParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetCheckPrivateKeyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -161,7 +161,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetCn
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -266,7 +266,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetEi
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetEn
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetExistsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetExistsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetInfectedParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetInfectedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetIsActiveParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetIsActiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -482,7 +482,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetPa
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetRequireAllParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetRequireAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -617,4 +617,3 @@ func validateNewZeroTrustDevicePostureRuleInputOutputReferenceParameters(terrafo
 
 	return nil
 }
-

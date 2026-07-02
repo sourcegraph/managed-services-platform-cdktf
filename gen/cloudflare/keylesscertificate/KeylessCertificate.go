@@ -21,23 +21,23 @@ type KeylessCertificate interface {
 	SetCertificate(val *string)
 	CertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,20 +69,20 @@ type KeylessCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tunnel() KeylessCertificateTunnelOutputReference
-	TunnelInput() interface{}
+	TunnelInput() any
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -90,9 +90,9 @@ type KeylessCertificate interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type KeylessCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type KeylessCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type KeylessCertificate interface {
 	ResetOverrideLogicalId()
 	ResetPort()
 	ResetTunnel()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KeylessCertificate
@@ -206,8 +206,8 @@ func (j *jsiiProxy_KeylessCertificate) CertificateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeylessCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_KeylessCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KeylessCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_KeylessCertificate) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeylessCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_KeylessCertificate) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeylessCertificate) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_KeylessCertificate) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeylessCertificate) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_KeylessCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KeylessCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_KeylessCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeylessCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_KeylessCertificate) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KeylessCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_KeylessCertificate) Tunnel() KeylessCertificateTunnelOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) TunnelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeylessCertificate) TunnelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tunnelInput",
@@ -526,7 +526,6 @@ func (j *jsiiProxy_KeylessCertificate) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate(scope constructs.Construct, id *string, config *KeylessCertificateConfig) KeylessCertificate {
 	_init_.Initialize()
@@ -538,7 +537,7 @@ func NewKeylessCertificate(scope constructs.Construct, id *string, config *Keyle
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -551,12 +550,12 @@ func NewKeylessCertificate_Override(k KeylessCertificate, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetBundleMethod(val *string) {
+func (j *jsiiProxy_KeylessCertificate) SetBundleMethod(val *string) {
 	if err := j.validateSetBundleMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_KeylessCertificate)SetBundleMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetCertificate(val *string) {
+func (j *jsiiProxy_KeylessCertificate) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_KeylessCertificate)SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_KeylessCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_KeylessCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_KeylessCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_KeylessCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KeylessCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_KeylessCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetEnabled(val interface{}) {
+func (j *jsiiProxy_KeylessCertificate) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_KeylessCertificate)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KeylessCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_KeylessCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetHost(val *string) {
+func (j *jsiiProxy_KeylessCertificate) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_KeylessCertificate)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KeylessCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_KeylessCertificate)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetName(val *string) {
+func (j *jsiiProxy_KeylessCertificate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_KeylessCertificate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetPort(val *float64) {
+func (j *jsiiProxy_KeylessCertificate) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_KeylessCertificate)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KeylessCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_KeylessCertificate)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KeylessCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_KeylessCertificate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetZoneId(val *string) {
+func (j *jsiiProxy_KeylessCertificate) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func KeylessCertificate_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func KeylessCertificate_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KeylessCertificate_IsConstruct(x interface{}) *bool {
+func KeylessCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKeylessCertificate_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func KeylessCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func KeylessCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KeylessCertificate_IsTerraformElement(x interface{}) *bool {
+func KeylessCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKeylessCertificate_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func KeylessCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func KeylessCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KeylessCertificate_IsTerraformResource(x interface{}) *bool {
+func KeylessCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKeylessCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func KeylessCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (k *jsiiProxy_KeylessCertificate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KeylessCertificate) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KeylessCertificate) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KeylessCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KeylessCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (k *jsiiProxy_KeylessCertificate) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (k *jsiiProxy_KeylessCertificate) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (k *jsiiProxy_KeylessCertificate) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (k *jsiiProxy_KeylessCertificate) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (k *jsiiProxy_KeylessCertificate) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (k *jsiiProxy_KeylessCertificate) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (k *jsiiProxy_KeylessCertificate) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (k *jsiiProxy_KeylessCertificate) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeylessCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -990,7 +989,7 @@ func (k *jsiiProxy_KeylessCertificate) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (k *jsiiProxy_KeylessCertificate) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (k *jsiiProxy_KeylessCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KeylessCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KeylessCertificate) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (k *jsiiProxy_KeylessCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (k *jsiiProxy_KeylessCertificate) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (k *jsiiProxy_KeylessCertificate) PutTunnel(value *KeylessCertificateTunnel
 	_jsii_.InvokeVoid(
 		k,
 		"putTunnel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1113,8 +1112,8 @@ func (k *jsiiProxy_KeylessCertificate) ResetTunnel() {
 	)
 }
 
-func (k *jsiiProxy_KeylessCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KeylessCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1126,8 +1125,8 @@ func (k *jsiiProxy_KeylessCertificate) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KeylessCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1139,8 +1138,8 @@ func (k *jsiiProxy_KeylessCertificate) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeylessCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1152,8 +1151,8 @@ func (k *jsiiProxy_KeylessCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeylessCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1178,8 +1177,8 @@ func (k *jsiiProxy_KeylessCertificate) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeylessCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1190,4 +1189,3 @@ func (k *jsiiProxy_KeylessCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

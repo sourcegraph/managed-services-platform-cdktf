@@ -12,9 +12,9 @@ type ImageVariantOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ImageVariantOptionsOutputReference interface {
 	Height() *float64
 	SetHeight(val *float64)
 	HeightInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Metadata() *string
 	SetMetadata(val *string)
 	MetadataInput() *string
@@ -52,7 +52,7 @@ type ImageVariantOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ImageVariantOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ImageVariantOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference) HeightInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -238,7 +238,6 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference) WidthInput() *float64 {
 	return returns
 }
 
-
 func NewImageVariantOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImageVariantOptionsOutputReference {
 	_init_.Initialize()
 
@@ -249,7 +248,7 @@ func NewImageVariantOptionsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -261,12 +260,12 @@ func NewImageVariantOptionsOutputReference_Override(i ImageVariantOptionsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetFit(val *string) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetFit(val *string) {
 	if err := j.validateSetFitParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetFit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetHeight(val *float64) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetHeight(val *float64) {
 	if err := j.validateSetHeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetHeight(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetMetadata(val *string) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetMetadata(val *string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -332,7 +331,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetMetadata(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +342,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +353,7 @@ func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ImageVariantOptionsOutputReference)SetWidth(val *float64) {
+func (j *jsiiProxy_ImageVariantOptionsOutputReference) SetWidth(val *float64) {
 	if err := j.validateSetWidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,16 +377,16 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,23 +543,23 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_ImageVariantOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImageVariantOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -579,4 +578,3 @@ func (i *jsiiProxy_ImageVariantOptionsOutputReference) ToString() *string {
 
 	return returns
 }
-

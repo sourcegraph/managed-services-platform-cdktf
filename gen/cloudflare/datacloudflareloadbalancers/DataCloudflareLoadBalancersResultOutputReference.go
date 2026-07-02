@@ -13,17 +13,17 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	AdaptiveRouting() DataCloudflareLoadBalancersResultAdaptiveRoutingOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CountryPools() interface{}
-	SetCountryPools(val interface{})
-	CountryPoolsInput() interface{}
+	CountryPools() any
+	SetCountryPools(val any)
+	CountryPoolsInput() any
 	CreatedOn() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -43,14 +43,14 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	ModifiedOn() *string
 	Name() *string
 	Networks() *[]*string
-	PopPools() interface{}
-	SetPopPools(val interface{})
-	PopPoolsInput() interface{}
+	PopPools() any
+	SetPopPools(val any)
+	PopPoolsInput() any
 	Proxied() cdktf.IResolvable
 	RandomSteering() DataCloudflareLoadBalancersResultRandomSteeringOutputReference
-	RegionPools() interface{}
-	SetRegionPools(val interface{})
-	RegionPoolsInput() interface{}
+	RegionPools() any
+	SetRegionPools(val any)
+	RegionPoolsInput() any
 	Rules() DataCloudflareLoadBalancersResultRulesList
 	SessionAffinity() *string
 	SessionAffinityAttributes() DataCloudflareLoadBalancersResultSessionAffinityAttributesOutputReference
@@ -69,7 +69,7 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	ResetRegionPools()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) AdaptiveRou
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ComplexObje
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) CountryPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) CountryPools() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"countryPools",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) CountryPool
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) CountryPoolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) CountryPoolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"countryPoolsInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) Networks() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) PopPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) PopPools() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"popPools",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) PopPools() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) PopPoolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) PopPoolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"popPoolsInput",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) RandomSteer
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) RegionPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) RegionPools() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"regionPools",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) RegionPools
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) RegionPoolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) RegionPoolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"regionPoolsInput",
@@ -438,7 +438,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ZoneName() 
 	return returns
 }
 
-
 func NewDataCloudflareLoadBalancersResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareLoadBalancersResultOutputReference {
 	_init_.Initialize()
 
@@ -449,7 +448,7 @@ func NewDataCloudflareLoadBalancersResultOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersResultOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -461,12 +460,12 @@ func NewDataCloudflareLoadBalancersResultOutputReference_Override(d DataCloudfla
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersResultOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetCountryPools(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetCountryPools(val any) {
 	if err := j.validateSetCountryPoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetCountryPo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetInternalValue(val *DataCloudflareLoadBalancersResult) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetInternalValue(val *DataCloudflareLoadBalancersResult) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetPopPools(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetPopPools(val any) {
 	if err := j.validateSetPopPoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetPopPools(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetRegionPools(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetRegionPools(val any) {
 	if err := j.validateSetRegionPoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetRegionPoo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,16 +566,16 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -764,16 +763,16 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ResetRegion
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -792,4 +791,3 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ToString() 
 
 	return returns
 }
-
