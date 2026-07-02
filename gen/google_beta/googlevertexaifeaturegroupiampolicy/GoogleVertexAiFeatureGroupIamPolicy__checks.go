@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleVertexAiFeatureGroupIamPolicy_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleVertexAiFeatureGroupIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleVertexAiFeatureGroupIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleVertexAiFeatureGroupIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleVertexAiFeatureGroupIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVertexAiFeatureGroupIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleVertexAiFeatureGroupIamPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleVertexAiFeatureGroupIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVertexAiFeatureGroupIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleVertexAiFeatureGroupIamPolicy_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGoogleVertexAiFeatureGroupIamPolicyParameters(scope constructs.C
 
 	return nil
 }
-

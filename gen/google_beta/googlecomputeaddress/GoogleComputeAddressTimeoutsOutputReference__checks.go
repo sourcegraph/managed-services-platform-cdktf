@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeAddressTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAddressTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeAddressTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeAddressTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAddressTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeAddressTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeAddressTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

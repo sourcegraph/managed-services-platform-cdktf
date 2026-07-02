@@ -22,15 +22,15 @@ type GoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -65,7 +65,7 @@ type GoogleComputeInstanceGroupManager interface {
 	Name() *string
 	SetName(val *string)
 	NamedPort() GoogleComputeInstanceGroupManagerNamedPortList
-	NamedPortInput() interface{}
+	NamedPortInput() any
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
@@ -80,22 +80,22 @@ type GoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourcePolicies() GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference
 	ResourcePoliciesInput() *GoogleComputeInstanceGroupManagerResourcePolicies
 	SelfLink() *string
 	StandbyPolicy() GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
 	StandbyPolicyInput() *GoogleComputeInstanceGroupManagerStandbyPolicy
 	StatefulDisk() GoogleComputeInstanceGroupManagerStatefulDiskList
-	StatefulDiskInput() interface{}
+	StatefulDiskInput() any
 	StatefulExternalIp() GoogleComputeInstanceGroupManagerStatefulExternalIpList
-	StatefulExternalIpInput() interface{}
+	StatefulExternalIpInput() any
 	StatefulInternalIp() GoogleComputeInstanceGroupManagerStatefulInternalIpList
-	StatefulInternalIpInput() interface{}
+	StatefulInternalIpInput() any
 	Status() GoogleComputeInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	SetTargetPools(val *[]*string)
@@ -112,18 +112,18 @@ type GoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeInstanceGroupManagerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdatePolicy() GoogleComputeInstanceGroupManagerUpdatePolicyOutputReference
 	UpdatePolicyInput() *GoogleComputeInstanceGroupManagerUpdatePolicy
 	Version() GoogleComputeInstanceGroupManagerVersionList
-	VersionInput() interface{}
-	WaitForInstances() interface{}
-	SetWaitForInstances(val interface{})
-	WaitForInstancesInput() interface{}
+	VersionInput() any
+	WaitForInstances() any
+	SetWaitForInstances(val any)
+	WaitForInstancesInput() any
 	WaitForInstancesStatus() *string
 	SetWaitForInstancesStatus(val *string)
 	WaitForInstancesStatusInput() *string
@@ -134,9 +134,9 @@ type GoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -154,7 +154,7 @@ type GoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -166,7 +166,7 @@ type GoogleComputeInstanceGroupManager interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -176,16 +176,16 @@ type GoogleComputeInstanceGroupManager interface {
 	PutAllInstancesConfig(value *GoogleComputeInstanceGroupManagerAllInstancesConfig)
 	PutAutoHealingPolicies(value *GoogleComputeInstanceGroupManagerAutoHealingPolicies)
 	PutInstanceLifecyclePolicy(value *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy)
-	PutNamedPort(value interface{})
+	PutNamedPort(value any)
 	PutParams(value *GoogleComputeInstanceGroupManagerParams)
 	PutResourcePolicies(value *GoogleComputeInstanceGroupManagerResourcePolicies)
 	PutStandbyPolicy(value *GoogleComputeInstanceGroupManagerStandbyPolicy)
-	PutStatefulDisk(value interface{})
-	PutStatefulExternalIp(value interface{})
-	PutStatefulInternalIp(value interface{})
+	PutStatefulDisk(value any)
+	PutStatefulExternalIp(value any)
+	PutStatefulInternalIp(value any)
 	PutTimeouts(value *GoogleComputeInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *GoogleComputeInstanceGroupManagerUpdatePolicy)
-	PutVersion(value interface{})
+	PutVersion(value any)
 	ResetAllInstancesConfig()
 	ResetAutoHealingPolicies()
 	ResetDescription()
@@ -212,17 +212,17 @@ type GoogleComputeInstanceGroupManager interface {
 	ResetWaitForInstances()
 	ResetWaitForInstancesStatus()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeInstanceGroupManager
@@ -300,8 +300,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) NamedPort() GoogleComputeI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) NamedPortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) NamedPortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"namedPortInput",
@@ -610,8 +610,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -620,8 +620,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -690,8 +690,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulDisk() GoogleCompu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulDiskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulDiskInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statefulDiskInput",
@@ -710,8 +710,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulExternalIp() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulExternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulExternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statefulExternalIpInput",
@@ -730,8 +730,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulInternalIp() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulInternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulInternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statefulInternalIpInput",
@@ -840,8 +840,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -870,8 +870,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Timeouts() GoogleComputeIn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -910,8 +910,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Version() GoogleComputeIns
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) VersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) VersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"versionInput",
@@ -920,8 +920,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) VersionInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) WaitForInstances() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) WaitForInstances() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForInstances",
@@ -930,8 +930,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) WaitForInstances() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) WaitForInstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) WaitForInstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForInstancesInput",
@@ -980,7 +980,6 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupManagerConfig) GoogleComputeInstanceGroupManager {
 	_init_.Initialize()
@@ -992,7 +991,7 @@ func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1005,12 +1004,12 @@ func NewGoogleComputeInstanceGroupManager_Override(g GoogleComputeInstanceGroupM
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetBaseInstanceName(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetBaseInstanceName(val *string) {
 	if err := j.validateSetBaseInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetBaseInstanceName(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetDescription(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1070,7 +1069,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1081,7 +1080,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1092,7 +1091,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetListManagedInstancesResults(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetListManagedInstancesResults(val *string) {
 	if err := j.validateSetListManagedInstancesResultsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetListManagedInstancesResu
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,7 +1113,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1133,7 +1132,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1143,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetPools(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetTargetPools(val *[]*string) {
 	if err := j.validateSetTargetPoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1155,7 +1154,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetPools(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetSize(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetTargetSize(val *float64) {
 	if err := j.validateSetTargetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1166,7 +1165,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetSize(val *float64)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetStoppedSize(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetTargetStoppedSize(val *float64) {
 	if err := j.validateSetTargetStoppedSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1177,7 +1176,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetStoppedSize(val *f
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetSuspendedSize(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetTargetSuspendedSize(val *float64) {
 	if err := j.validateSetTargetSuspendedSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetTargetSuspendedSize(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetWaitForInstances(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetWaitForInstances(val any) {
 	if err := j.validateSetWaitForInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetWaitForInstances(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetWaitForInstancesStatus(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetWaitForInstancesStatus(val *string) {
 	if err := j.validateSetWaitForInstancesStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetWaitForInstancesStatus(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetZone(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func GoogleComputeInstanceGroupManager_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1257,7 +1256,7 @@ func GoogleComputeInstanceGroupManager_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
+func GoogleComputeInstanceGroupManager_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInstanceGroupManager_IsConstructParameters(x); err != nil {
@@ -1268,7 +1267,7 @@ func GoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1276,7 +1275,7 @@ func GoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeInstanceGroupManager_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInstanceGroupManager_IsTerraformElementParameters(x); err != nil {
@@ -1287,7 +1286,7 @@ func GoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1295,7 +1294,7 @@ func GoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeInstanceGroupManager_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeInstanceGroupManager_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInstanceGroupManager_IsTerraformResourceParameters(x); err != nil {
@@ -1306,7 +1305,7 @@ func GoogleComputeInstanceGroupManager_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1331,31 +1330,31 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1371,7 +1370,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1387,7 +1386,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1403,7 +1402,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1419,7 +1418,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1435,7 +1434,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1451,7 +1450,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1467,7 +1466,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1483,15 +1482,15 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1510,7 +1509,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1523,7 +1522,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1537,18 +1536,18 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1559,7 +1558,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1570,7 +1569,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1581,7 +1580,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutAllInstancesConfig(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putAllInstancesConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1592,7 +1591,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutAutoHealingPolicies(val
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoHealingPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1603,18 +1602,18 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutInstanceLifecyclePolicy
 	_jsii_.InvokeVoid(
 		g,
 		"putInstanceLifecyclePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutNamedPort(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutNamedPort(value any) {
 	if err := g.validatePutNamedPortParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNamedPort",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1625,7 +1624,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutParams(value *GoogleCom
 	_jsii_.InvokeVoid(
 		g,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1636,7 +1635,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutResourcePolicies(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putResourcePolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1647,40 +1646,40 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStandbyPolicy(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putStandbyPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulDisk(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulDisk(value any) {
 	if err := g.validatePutStatefulDiskParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putStatefulDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulExternalIp(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulExternalIp(value any) {
 	if err := g.validatePutStatefulExternalIpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putStatefulExternalIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulInternalIp(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulInternalIp(value any) {
 	if err := g.validatePutStatefulInternalIpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putStatefulInternalIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1691,7 +1690,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutTimeouts(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1702,18 +1701,18 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutUpdatePolicy(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putUpdatePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutVersion(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutVersion(value any) {
 	if err := g.validatePutVersionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putVersion",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1909,8 +1908,8 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetZone() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1922,8 +1921,8 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1935,8 +1934,8 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1948,8 +1947,8 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToHclTerraform() interface
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1974,8 +1973,8 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1986,4 +1985,3 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ToTerraform() interface{} 
 
 	return returns
 }
-

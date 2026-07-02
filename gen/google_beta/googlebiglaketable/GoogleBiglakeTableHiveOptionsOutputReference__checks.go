@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleBiglakeTableHiveOptionsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeTableHiveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBiglakeTableHiveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewGoogleBiglakeTableHiveOptionsOutputReferenceParameters(terraform
 
 	return nil
 }
-

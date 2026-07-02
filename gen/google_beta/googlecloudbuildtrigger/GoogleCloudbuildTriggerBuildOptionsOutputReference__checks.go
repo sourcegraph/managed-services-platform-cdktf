@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateSetDynamicSubstitutionsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsOutputReference) validateSetDynamicSubstitutionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,4 +329,3 @@ func validateNewGoogleCloudbuildTriggerBuildOptionsOutputReferenceParameters(ter
 
 	return nil
 }
-

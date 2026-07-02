@@ -10,14 +10,14 @@ import (
 
 type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	cdktf.ComplexObject
-	AssistiveExperiencesEnabled() interface{}
-	SetAssistiveExperiencesEnabled(val interface{})
-	AssistiveExperiencesEnabledInput() interface{}
+	AssistiveExperiencesEnabled() any
+	SetAssistiveExperiencesEnabled(val any)
+	AssistiveExperiencesEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleAlloydbInstanceObservabilityConfig
@@ -38,15 +38,15 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	MaxQueryStringLength() *float64
 	SetMaxQueryStringLength(val *float64)
 	MaxQueryStringLengthInput() *float64
-	PreserveComments() interface{}
-	SetPreserveComments(val interface{})
-	PreserveCommentsInput() interface{}
+	PreserveComments() any
+	SetPreserveComments(val any)
+	PreserveCommentsInput() any
 	QueryPlansPerMinute() *float64
 	SetQueryPlansPerMinute(val *float64)
 	QueryPlansPerMinuteInput() *float64
-	RecordApplicationTags() interface{}
-	SetRecordApplicationTags(val interface{})
-	RecordApplicationTagsInput() interface{}
+	RecordApplicationTags() any
+	SetRecordApplicationTags(val any)
+	RecordApplicationTagsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,19 +55,19 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TrackActiveQueries() interface{}
-	SetTrackActiveQueries(val interface{})
-	TrackActiveQueriesInput() interface{}
-	TrackWaitEvents() interface{}
-	SetTrackWaitEvents(val interface{})
-	TrackWaitEventsInput() interface{}
-	TrackWaitEventTypes() interface{}
-	SetTrackWaitEventTypes(val interface{})
-	TrackWaitEventTypesInput() interface{}
+	TrackActiveQueries() any
+	SetTrackActiveQueries(val any)
+	TrackActiveQueriesInput() any
+	TrackWaitEvents() any
+	SetTrackWaitEvents(val any)
+	TrackWaitEventsInput() any
+	TrackWaitEventTypes() any
+	SetTrackWaitEventTypes(val any)
+	TrackWaitEventTypesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	ResetTrackWaitEventTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assistiveExperiencesEnabled",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Assi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assistiveExperiencesEnabledInput",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Assi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Crea
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Enab
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) MaxQ
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) PreserveComments() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) PreserveComments() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveComments",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Pres
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) PreserveCommentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) PreserveCommentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveCommentsInput",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Quer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) RecordApplicationTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) RecordApplicationTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordApplicationTags",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Reco
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) RecordApplicationTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) RecordApplicationTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordApplicationTagsInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackActiveQueries() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackActiveQueries() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trackActiveQueries",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackActiveQueriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackActiveQueriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trackActiveQueriesInput",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEvents() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEvents() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trackWaitEvents",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEventsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEventsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trackWaitEventsInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEventTypes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEventTypes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trackWaitEventTypes",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEventTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TrackWaitEventTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trackWaitEventTypesInput",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 	)
 	return returns
 }
-
 
 func NewGoogleAlloydbInstanceObservabilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceObservabilityConfigOutputReference {
 	_init_.Initialize()
@@ -373,7 +372,7 @@ func NewGoogleAlloydbInstanceObservabilityConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewGoogleAlloydbInstanceObservabilityConfigOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetAssistiveExperiencesEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetAssistiveExperiencesEnabled(val any) {
 	if err := j.validateSetAssistiveExperiencesEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetAs
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetInternalValue(val *GoogleAlloydbInstanceObservabilityConfig) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetInternalValue(val *GoogleAlloydbInstanceObservabilityConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetMaxQueryStringLength(val *float64) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetMaxQueryStringLength(val *float64) {
 	if err := j.validateSetMaxQueryStringLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetMa
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetPreserveComments(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetPreserveComments(val any) {
 	if err := j.validateSetPreserveCommentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetPr
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetQueryPlansPerMinute(val *float64) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetQueryPlansPerMinute(val *float64) {
 	if err := j.validateSetQueryPlansPerMinuteParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetQu
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetRecordApplicationTags(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetRecordApplicationTags(val any) {
 	if err := j.validateSetRecordApplicationTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTrackActiveQueries(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetTrackActiveQueries(val any) {
 	if err := j.validateSetTrackActiveQueriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTr
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTrackWaitEvents(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetTrackWaitEvents(val any) {
 	if err := j.validateSetTrackWaitEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTr
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTrackWaitEventTypes(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) SetTrackWaitEventTypes(val any) {
 	if err := j.validateSetTrackWaitEventTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ToSt
 
 	return returns
 }
-

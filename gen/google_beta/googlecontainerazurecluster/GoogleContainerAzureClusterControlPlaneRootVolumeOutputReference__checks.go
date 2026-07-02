@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterControlPlaneRootVolumeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAzureClusterControlPlaneRootVolumeOutputReference
 
 	return nil
 }
-

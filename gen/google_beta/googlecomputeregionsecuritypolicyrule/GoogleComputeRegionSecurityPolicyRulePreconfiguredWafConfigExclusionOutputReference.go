@@ -12,9 +12,9 @@ type GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputR
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,16 +27,16 @@ type GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputR
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RequestCookie() GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList
-	RequestCookieInput() interface{}
+	RequestCookieInput() any
 	RequestHeader() GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList
-	RequestHeaderInput() interface{}
+	RequestHeaderInput() any
 	RequestQueryParam() GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList
-	RequestQueryParamInput() interface{}
+	RequestQueryParamInput() any
 	RequestUri() GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList
-	RequestUriInput() interface{}
+	RequestUriInput() any
 	TargetRuleIds() *[]*string
 	SetTargetRuleIds(val *[]*string)
 	TargetRuleIdsInput() *[]*string
@@ -54,7 +54,7 @@ type GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputR
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,10 +75,10 @@ type GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputR
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRequestCookie(value interface{})
-	PutRequestHeader(value interface{})
-	PutRequestQueryParam(value interface{})
-	PutRequestUri(value interface{})
+	PutRequestCookie(value any)
+	PutRequestHeader(value any)
+	PutRequestQueryParam(value any)
+	PutRequestUri(value any)
 	ResetRequestCookie()
 	ResetRequestHeader()
 	ResetRequestQueryParam()
@@ -86,7 +86,7 @@ type GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputR
 	ResetTargetRuleIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclus
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestCookieInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestCookieInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestCookieInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestHeaderInput",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestQueryParamInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestQueryParamInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestQueryParamInput",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestUriInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) RequestUriInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestUriInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-
 func NewGoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewGoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutp
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewGoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutp
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetTargetRuleIds(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetTargetRuleIds(val *[]*string) {
 	if err := j.validateSetTargetRuleIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetTargetRuleSet(val *string) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetTargetRuleSet(val *string) {
 	if err := j.validateSetTargetRuleSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,16 +406,16 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,54 +572,54 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestCookie(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestCookie(value any) {
 	if err := g.validatePutRequestCookieParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRequestCookie",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestHeader(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestHeader(value any) {
 	if err := g.validatePutRequestHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRequestHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestQueryParam(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestQueryParam(value any) {
 	if err := g.validatePutRequestQueryParamParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRequestQueryParam",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestUri(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) PutRequestUri(value any) {
 	if err := g.validatePutRequestUriParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRequestUri",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 
 	return returns
 }
-

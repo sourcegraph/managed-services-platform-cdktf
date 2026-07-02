@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterSecondaryConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterSecondaryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterSecondaryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAlloydbClusterSecondaryConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

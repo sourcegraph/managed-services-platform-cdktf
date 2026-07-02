@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeNetworkFirewallPolicyWithRulesTimeoutsOutputReferen
 
 	return nil
 }
-

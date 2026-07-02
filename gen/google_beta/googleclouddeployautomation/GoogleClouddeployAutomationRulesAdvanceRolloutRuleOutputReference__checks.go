@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReferenc
 
 	return nil
 }
-

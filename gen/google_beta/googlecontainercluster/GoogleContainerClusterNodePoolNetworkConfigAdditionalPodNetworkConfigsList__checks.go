@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetwo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkC
 
 	return nil
 }
-

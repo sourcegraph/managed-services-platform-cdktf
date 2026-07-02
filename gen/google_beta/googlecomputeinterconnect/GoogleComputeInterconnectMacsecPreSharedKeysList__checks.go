@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectMacsecPreSharedKeysList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectMacsecPreSharedKeysList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectMacsecPreSharedKeysList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInterconnectMacsecPreSharedKeysListParameters(terra
 
 	return nil
 }
-

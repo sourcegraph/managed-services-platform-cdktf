@@ -11,7 +11,7 @@ import (
 type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalExtensions() GooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsList
-	AdditionalExtensionsInput() interface{}
+	AdditionalExtensionsInput() any
 	AiaOcspServers() *[]*string
 	SetAiaOcspServers(val *[]*string)
 	AiaOcspServersInput() *[]*string
@@ -19,9 +19,9 @@ type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interfac
 	CaOptionsInput() *GooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interfac
 	NameConstraints() GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
 	NameConstraintsInput() *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints
 	PolicyIds() GooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsList
-	PolicyIdsInput() interface{}
+	PolicyIdsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -53,7 +53,7 @@ type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,18 +74,18 @@ type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdditionalExtensions(value interface{})
+	PutAdditionalExtensions(value any)
 	PutCaOptions(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions)
 	PutKeyUsage(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage)
 	PutNameConstraints(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints)
-	PutPolicyIds(value interface{})
+	PutPolicyIds(value any)
 	ResetAdditionalExtensions()
 	ResetAiaOcspServers()
 	ResetNameConstraints()
 	ResetPolicyIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) AdditionalExtensionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) AdditionalExtensionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalExtensionsInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PolicyIdsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PolicyIdsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"policyIdsInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	return returns
 }
 
-
 func NewGooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewGooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateAuthority.GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewGooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateAuthority.GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference)SetAiaOcspServers(val *[]*string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) SetAiaOcspServers(val *[]*string) {
 	if err := j.validateSetAiaOcspServersParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference)SetInternalValue(val *GooglePrivatecaCertificateAuthorityConfigX509Config) {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) SetInternalValue(val *GooglePrivatecaCertificateAuthorityConfigX509Config) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,16 +394,16 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,21 +560,21 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutAdditionalExtensions(value interface{}) {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutAdditionalExtensions(value any) {
 	if err := g.validatePutAdditionalExtensionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAdditionalExtensions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putCaOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -597,7 +596,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putKeyUsage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -608,18 +607,18 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putNameConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutPolicyIds(value interface{}) {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutPolicyIds(value any) {
 	if err := g.validatePutPolicyIdsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPolicyIds",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,16 +654,16 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 
 	return returns
 }
-

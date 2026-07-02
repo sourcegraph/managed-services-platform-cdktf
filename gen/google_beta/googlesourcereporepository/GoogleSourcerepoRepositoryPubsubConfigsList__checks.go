@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleSourcerepoRepositoryPubsubConfigsListParameters(terraformR
 
 	return nil
 }
-

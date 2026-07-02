@@ -1,10 +1,8 @@
 package googlesqldatabaseinstance
 
-
 type GoogleSqlDatabaseInstanceSettingsDataCacheConfig struct {
 	// Whether data cache is enabled for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#data_cache_enabled GoogleSqlDatabaseInstance#data_cache_enabled}
-	DataCacheEnabled interface{} `field:"optional" json:"dataCacheEnabled" yaml:"dataCacheEnabled"`
+	DataCacheEnabled any `field:"optional" json:"dataCacheEnabled" yaml:"dataCacheEnabled"`
 }
-

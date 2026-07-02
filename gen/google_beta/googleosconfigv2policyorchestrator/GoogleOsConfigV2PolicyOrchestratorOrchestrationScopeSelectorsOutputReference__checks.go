@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectors
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectors
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOut
 
 	return nil
 }
-

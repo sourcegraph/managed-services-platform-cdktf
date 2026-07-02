@@ -1,6 +1,5 @@
 package googlegkeonprembaremetalcluster
 
-
 type GoogleGkeonpremBareMetalClusterNetworkConfig struct {
 	// Enables the use of advanced Anthos networking features, such as Bundled Load Balancing with BGP or the egress NAT gateway.
 	//
@@ -8,7 +7,7 @@ type GoogleGkeonpremBareMetalClusterNetworkConfig struct {
 	// set this flag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_cluster#advanced_networking GoogleGkeonpremBareMetalCluster#advanced_networking}
-	AdvancedNetworking interface{} `field:"optional" json:"advancedNetworking" yaml:"advancedNetworking"`
+	AdvancedNetworking any `field:"optional" json:"advancedNetworking" yaml:"advancedNetworking"`
 	// island_mode_cidr block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_cluster#island_mode_cidr GoogleGkeonpremBareMetalCluster#island_mode_cidr}
@@ -22,4 +21,3 @@ type GoogleGkeonpremBareMetalClusterNetworkConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_cluster#sr_iov_config GoogleGkeonpremBareMetalCluster#sr_iov_config}
 	SrIovConfig *GoogleGkeonpremBareMetalClusterNetworkConfigSrIovConfig `field:"optional" json:"srIovConfig" yaml:"srIovConfig"`
 }
-

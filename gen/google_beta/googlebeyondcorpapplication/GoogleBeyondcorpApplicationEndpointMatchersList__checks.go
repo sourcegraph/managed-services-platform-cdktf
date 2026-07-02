@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBeyondcorpApplicationEndpointMatchersList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpApplicationEndpointMatchersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpApplicationEndpointMatchersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBeyondcorpApplicationEndpointMatchersListParameters(terraf
 
 	return nil
 }
-

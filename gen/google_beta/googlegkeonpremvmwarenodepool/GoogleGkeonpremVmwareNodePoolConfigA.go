@@ -1,6 +1,5 @@
 package googlegkeonpremvmwarenodepool
 
-
 type GoogleGkeonpremVmwareNodePoolConfigA struct {
 	// The OS image to be used for each node in a node pool.
 	//
@@ -19,7 +18,7 @@ type GoogleGkeonpremVmwareNodePoolConfigA struct {
 	// Allow node pool traffic to be load balanced. Only works for clusters with MetalLB load balancers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_vmware_node_pool#enable_load_balancer GoogleGkeonpremVmwareNodePool#enable_load_balancer}
-	EnableLoadBalancer interface{} `field:"optional" json:"enableLoadBalancer" yaml:"enableLoadBalancer"`
+	EnableLoadBalancer any `field:"optional" json:"enableLoadBalancer" yaml:"enableLoadBalancer"`
 	// The OS image name in vCenter, only valid when using Windows.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_vmware_node_pool#image GoogleGkeonpremVmwareNodePool#image}
@@ -45,10 +44,9 @@ type GoogleGkeonpremVmwareNodePoolConfigA struct {
 	// taints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_vmware_node_pool#taints GoogleGkeonpremVmwareNodePool#taints}
-	Taints interface{} `field:"optional" json:"taints" yaml:"taints"`
+	Taints any `field:"optional" json:"taints" yaml:"taints"`
 	// vsphere_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_vmware_node_pool#vsphere_config GoogleGkeonpremVmwareNodePool#vsphere_config}
 	VsphereConfig *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig `field:"optional" json:"vsphereConfig" yaml:"vsphereConfig"`
 }
-

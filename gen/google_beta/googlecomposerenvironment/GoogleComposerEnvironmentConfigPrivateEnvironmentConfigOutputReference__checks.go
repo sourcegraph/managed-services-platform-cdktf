@@ -122,7 +122,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetEnablePrivateEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetEnablePrivateEndpointParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetEnablePrivatelyUsedPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetEnablePrivatelyUsedPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputRef
 
 	return nil
 }
-

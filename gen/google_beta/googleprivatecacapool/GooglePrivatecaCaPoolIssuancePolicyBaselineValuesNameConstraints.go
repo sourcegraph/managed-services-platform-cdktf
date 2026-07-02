@@ -1,11 +1,10 @@
 package googleprivatecacapool
 
-
 type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// Indicates whether or not the name constraints are marked critical.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_ca_pool#critical GooglePrivatecaCaPool#critical}
-	Critical interface{} `field:"required" json:"critical" yaml:"critical"`
+	Critical any `field:"required" json:"critical" yaml:"critical"`
 	// Contains excluded DNS names.
 	//
 	// Any DNS name that can be
@@ -77,4 +76,3 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_ca_pool#permitted_uris GooglePrivatecaCaPool#permitted_uris}
 	PermittedUris *[]*string `field:"optional" json:"permittedUris" yaml:"permittedUris"`
 }
-

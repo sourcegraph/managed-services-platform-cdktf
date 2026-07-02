@@ -12,9 +12,9 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	DiskSizeGb() *float64
 	SetDiskSizeGb(val *float64)
 	DiskSizeGbInput() *float64
-	EnableIpMasqAgent() interface{}
-	SetEnableIpMasqAgent(val interface{})
-	EnableIpMasqAgentInput() interface{}
+	EnableIpMasqAgent() any
+	SetEnableIpMasqAgent(val any)
+	EnableIpMasqAgentInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComposerEnvironmentConfigNodeConfig
@@ -78,7 +78,7 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	ResetZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ type jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Dis
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) EnableIpMasqAgent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) EnableIpMasqAgent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIpMasqAgent",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) EnableIpMasqAgentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) EnableIpMasqAgentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIpMasqAgentInput",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Zon
 	return returns
 }
 
-
 func NewGoogleComposerEnvironmentConfigNodeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComposerEnvironmentConfigNodeConfigOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewGoogleComposerEnvironmentConfigNodeConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewGoogleComposerEnvironmentConfigNodeConfigOutputReference_Override(g Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetComposerInternalIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetComposerInternalIpv4CidrBlock(val *string) {
 	if err := j.validateSetComposerInternalIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetComposerNetworkAttachment(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetComposerNetworkAttachment(val *string) {
 	if err := j.validateSetComposerNetworkAttachmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetDiskSizeGb(val *float64) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetDiskSizeGb(val *float64) {
 	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetEnableIpMasqAgent(val interface{}) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetEnableIpMasqAgent(val any) {
 	if err := j.validateSetEnableIpMasqAgentParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetInternalValue(val *GoogleComposerEnvironmentConfigNodeConfig) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetInternalValue(val *GoogleComposerEnvironmentConfigNodeConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetMaxPodsPerNode(val *float64) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetMaxPodsPerNode(val *float64) {
 	if err := j.validateSetMaxPodsPerNodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetN
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetOauthScopes(val *[]*string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetOauthScopes(val *[]*string) {
 	if err := j.validateSetOauthScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetO
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetSubnetwork(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetZone(val *string) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,16 +685,16 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Com
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Int
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		g,
 		"putIpAllocationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,16 +973,16 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ToS
 
 	return returns
 }
-

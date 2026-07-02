@@ -12,9 +12,9 @@ type GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOut
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOut
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOut
 	ResetKmsKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptio
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	return returns
 }
 
-
 func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)SetInternalValue(val *GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) SetInternalValue(val *GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)SetKmsKey(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 	)
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncry
 
 	return returns
 }
-

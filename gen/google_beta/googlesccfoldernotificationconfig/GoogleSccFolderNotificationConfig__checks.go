@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSccFolderNotificationConfig) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccFolderNotificationConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSccFolderNotificationConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSccFolderNotificationConfig) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccFolderNotificationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSccFolderNotificationConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleSccFolderNotificationConfig_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleSccFolderNotificationConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleSccFolderNotificationConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleSccFolderNotificationConfig_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleSccFolderNotificationConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSccFolderNotificationConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleSccFolderNotificationConfig_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleSccFolderNotificationConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSccFolderNotificationConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetConfigIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSccFolderNotificationConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewGoogleSccFolderNotificationConfigParameters(scope constructs.Con
 
 	return nil
 }
-

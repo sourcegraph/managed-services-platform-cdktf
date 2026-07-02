@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateOverrideLogical
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutDestinationIpRangesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutDestinationIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutDestinationI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutSourceIpRangesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutSourceIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleVmwareengineExternalAccessRule_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleVmwareengineExternalAccessRule_IsConstructParameters(x interface{}) error {
+func validateGoogleVmwareengineExternalAccessRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleVmwareengineExternalAccessRule_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleVmwareengineExternalAccessRule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVmwareengineExternalAccessRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleVmwareengineExternalAccessRule_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleVmwareengineExternalAccessRule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVmwareengineExternalAccessRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetActionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -479,7 +479,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetPriorityPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -551,4 +551,3 @@ func validateNewGoogleVmwareengineExternalAccessRuleParameters(scope constructs.
 
 	return nil
 }
-

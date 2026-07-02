@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueIamMemberConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleCloudTasksQueueIamMemberConditionOutputReferenceParameters
 
 	return nil
 }
-

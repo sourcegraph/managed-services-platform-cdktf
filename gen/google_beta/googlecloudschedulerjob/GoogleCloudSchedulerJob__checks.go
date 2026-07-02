@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudSchedulerJob) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSchedulerJob) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudSchedulerJob) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGoogleCloudSchedulerJob_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleCloudSchedulerJob_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudSchedulerJob_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateGoogleCloudSchedulerJob_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleCloudSchedulerJob_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudSchedulerJob_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateGoogleCloudSchedulerJob_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleCloudSchedulerJob_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudSchedulerJob_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetAttemptDeadlineParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -340,7 +340,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -545,4 +545,3 @@ func validateNewGoogleCloudSchedulerJobParameters(scope constructs.Construct, id
 
 	return nil
 }
-

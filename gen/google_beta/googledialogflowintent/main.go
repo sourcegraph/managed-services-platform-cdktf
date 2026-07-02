@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntent",
-		reflect.TypeOf((*GoogleDialogflowIntent)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntent](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookState", GoGetter: "WebhookState"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookStateInput", GoGetter: "WebhookStateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowIntent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,15 +106,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntentConfig",
-		reflect.TypeOf((*GoogleDialogflowIntentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfo",
-		reflect.TypeOf((*GoogleDialogflowIntentFollowupIntentInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntentFollowupIntentInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
-		reflect.TypeOf((*GoogleDialogflowIntentFollowupIntentInfoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntentFollowupIntentInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -135,7 +135,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoOutputReference",
-		reflect.TypeOf((*GoogleDialogflowIntentFollowupIntentInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntentFollowupIntentInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntentTimeouts",
-		reflect.TypeOf((*GoogleDialogflowIntentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDialogflowIntentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowIntentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowIntentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

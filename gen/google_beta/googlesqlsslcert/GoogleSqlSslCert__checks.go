@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSqlSslCert) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlSslCert) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSqlSslCert) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSqlSslCert) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlSslCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSqlSslCert) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSqlSslCert_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateGoogleSqlSslCert_IsConstructParameters(x interface{}) error {
+func validateGoogleSqlSslCert_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSqlSslCert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleSqlSslCert_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSqlSslCert_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSqlSslCert_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleSqlSslCert_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSqlSslCert_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleSqlSslCert) validateSetCommonNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlSslCert) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlSslCert) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleSqlSslCert) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlSslCert) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlSslCert) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleSqlSslCert) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlSslCert) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSqlSslCert) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleSqlSslCertParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

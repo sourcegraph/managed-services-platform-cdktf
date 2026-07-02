@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnection)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcProject", GoGetter: "VpcProject"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcProjectInput", GoGetter: "VpcProjectInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,19 +101,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionConfig",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetails",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetails)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsCloudRouter",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsCloudRouter)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsCloudRouter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsCloudRouterList",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsCloudRouterList)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsCloudRouterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudRouterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsCloudVpns",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsCloudVpns)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsCloudVpns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsCloudVpnsList",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsCloudVpnsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsCloudVpnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -192,7 +192,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsList",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionDetailsOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudRouter", GoGetter: "CloudRouter"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudVpns", GoGetter: "CloudVpns"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionTimeouts",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionVpcProject",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionVpcProject)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionVpcProject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnectionVpcProjectOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerVpnConnectionVpcProjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerVpnConnectionVpcProjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

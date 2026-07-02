@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplateJupyterSessionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplateJupyterSessionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocSessionTemplateJupyterSessionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataprocSessionTemplateJupyterSessionOutputReferenceParame
 
 	return nil
 }
-

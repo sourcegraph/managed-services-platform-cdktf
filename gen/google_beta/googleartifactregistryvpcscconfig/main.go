@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryVpcscConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryVpcscConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcscPolicy", GoGetter: "VpcscPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcscPolicyInput", GoGetter: "VpcscPolicyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryVpcscConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryVpcscConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryVpcscConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts",
-		reflect.TypeOf((*GoogleArtifactRegistryVpcscConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryVpcscConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryVpcscConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryVpcscConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryVpcscConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

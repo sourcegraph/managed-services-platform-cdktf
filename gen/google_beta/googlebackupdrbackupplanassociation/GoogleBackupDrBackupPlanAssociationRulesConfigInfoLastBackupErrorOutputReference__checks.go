@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErro
 
 	return nil
 }
-

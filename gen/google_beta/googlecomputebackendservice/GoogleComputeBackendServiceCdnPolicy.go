@@ -1,11 +1,10 @@
 package googlecomputebackendservice
 
-
 type GoogleComputeBackendServiceCdnPolicy struct {
 	// bypass_cache_on_request_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#bypass_cache_on_request_headers GoogleComputeBackendService#bypass_cache_on_request_headers}
-	BypassCacheOnRequestHeaders interface{} `field:"optional" json:"bypassCacheOnRequestHeaders" yaml:"bypassCacheOnRequestHeaders"`
+	BypassCacheOnRequestHeaders any `field:"optional" json:"bypassCacheOnRequestHeaders" yaml:"bypassCacheOnRequestHeaders"`
 	// cache_key_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#cache_key_policy GoogleComputeBackendService#cache_key_policy}
@@ -31,15 +30,15 @@ type GoogleComputeBackendServiceCdnPolicy struct {
 	// Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#negative_caching GoogleComputeBackendService#negative_caching}
-	NegativeCaching interface{} `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
+	NegativeCaching any `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
 	// negative_caching_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#negative_caching_policy GoogleComputeBackendService#negative_caching_policy}
-	NegativeCachingPolicy interface{} `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
+	NegativeCachingPolicy any `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
 	// If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#request_coalescing GoogleComputeBackendService#request_coalescing}
-	RequestCoalescing interface{} `field:"optional" json:"requestCoalescing" yaml:"requestCoalescing"`
+	RequestCoalescing any `field:"optional" json:"requestCoalescing" yaml:"requestCoalescing"`
 	// Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#serve_while_stale GoogleComputeBackendService#serve_while_stale}
@@ -59,4 +58,3 @@ type GoogleComputeBackendServiceCdnPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#signed_url_cache_max_age_sec GoogleComputeBackendService#signed_url_cache_max_age_sec}
 	SignedUrlCacheMaxAgeSec *float64 `field:"optional" json:"signedUrlCacheMaxAgeSec" yaml:"signedUrlCacheMaxAgeSec"`
 }
-

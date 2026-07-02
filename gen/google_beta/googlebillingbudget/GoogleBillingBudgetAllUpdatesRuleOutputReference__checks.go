@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetDisableDefaultIamRecipientsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetDisableDefaultIamRecipientsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetEnableProjectLevelRecipientsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) validateSetEnableProjectLevelRecipientsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewGoogleBillingBudgetAllUpdatesRuleOutputReferenceParameters(terra
 
 	return nil
 }
-

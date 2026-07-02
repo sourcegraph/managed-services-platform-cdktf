@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigAllowedPortsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigAllowedPortsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigAllowedPortsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleWorkstationsWorkstationConfigAllowedPortsListParameters(te
 
 	return nil
 }
-

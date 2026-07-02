@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerVersionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleComputeInstanceGroupManagerVersionOutputReferenceParameter
 
 	return nil
 }
-

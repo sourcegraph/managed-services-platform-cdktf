@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validatePutImportsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validatePutImportsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleDeploymentManagerDeploymentTargetOutputReferenceParameters
 
 	return nil
 }
-

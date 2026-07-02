@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputR
 
 	return nil
 }
-

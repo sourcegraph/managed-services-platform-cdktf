@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOpti
 
 	return nil
 }
-

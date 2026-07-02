@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertific
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkSecurityServerTlsPolicyServerCertificateCertificate
 
 	return nil
 }
-

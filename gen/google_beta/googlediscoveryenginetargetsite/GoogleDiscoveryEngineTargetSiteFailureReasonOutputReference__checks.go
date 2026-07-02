@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDiscoveryEngineTargetSiteFailureReasonOutputReferenceParam
 
 	return nil
 }
-

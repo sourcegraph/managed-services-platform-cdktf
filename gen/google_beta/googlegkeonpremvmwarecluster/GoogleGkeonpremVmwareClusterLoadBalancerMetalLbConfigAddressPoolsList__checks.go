@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPool
 
 	return nil
 }
-

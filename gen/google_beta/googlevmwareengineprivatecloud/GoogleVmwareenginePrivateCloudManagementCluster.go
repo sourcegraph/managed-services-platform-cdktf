@@ -1,6 +1,5 @@
 package googlevmwareengineprivatecloud
 
-
 type GoogleVmwareenginePrivateCloudManagementCluster struct {
 	// The user-provided identifier of the new Cluster.
 	//
@@ -20,10 +19,9 @@ type GoogleVmwareenginePrivateCloudManagementCluster struct {
 	// node_type_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
-	NodeTypeConfigs interface{} `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
+	NodeTypeConfigs any `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
 	// stretched_cluster_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_private_cloud#stretched_cluster_config GoogleVmwareenginePrivateCloud#stretched_cluster_config}
 	StretchedClusterConfig *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig `field:"optional" json:"stretchedClusterConfig" yaml:"stretchedClusterConfig"`
 }
-

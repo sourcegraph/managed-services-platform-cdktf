@@ -1,6 +1,5 @@
 package googledataplexdatascan
 
-
 type GoogleDataplexDatascanDataQualitySpecRules struct {
 	// The dimension name a rule belongs to.
 	//
@@ -21,7 +20,7 @@ type GoogleDataplexDatascanDataQualitySpecRules struct {
 	// In that case, such null rows are trivially considered passing. Only applicable to ColumnMap rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#ignore_null GoogleDataplexDatascan#ignore_null}
-	IgnoreNull interface{} `field:"optional" json:"ignoreNull" yaml:"ignoreNull"`
+	IgnoreNull any `field:"optional" json:"ignoreNull" yaml:"ignoreNull"`
 	// A mutable name for the rule.
 	//
 	// The name must contain only letters (a-z, A-Z), numbers (0-9), or hyphens (-).
@@ -62,7 +61,7 @@ type GoogleDataplexDatascanDataQualitySpecRules struct {
 	// Whether the Rule is active or suspended. Default = false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#suspended GoogleDataplexDatascan#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// table_condition_expectation block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#table_condition_expectation GoogleDataplexDatascan#table_condition_expectation}
@@ -76,4 +75,3 @@ type GoogleDataplexDatascanDataQualitySpecRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#uniqueness_expectation GoogleDataplexDatascan#uniqueness_expectation}
 	UniquenessExpectation *GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation `field:"optional" json:"uniquenessExpectation" yaml:"uniquenessExpectation"`
 }
-

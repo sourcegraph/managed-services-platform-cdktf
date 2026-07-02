@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTarget",
-		reflect.TypeOf((*GoogleClouddeployTarget)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTarget](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTarget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosCluster",
-		reflect.TypeOf((*GoogleClouddeployTargetAnthosCluster)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAnthosCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetAnthosClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAnthosClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAnthosClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,15 +165,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntities",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntities)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntities](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesAnthosClusters",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesAnthosClusters)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesAnthosClusters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -195,7 +195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,11 +230,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesGkeClusters",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesGkeClusters)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesGkeClusters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesGkeClustersList",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesGkeClustersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesGkeClustersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesGkeClustersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
@@ -289,7 +289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -297,7 +297,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesList",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetAssociatedEntitiesOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetAssociatedEntitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetAssociatedEntitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anthosClusters", GoGetter: "AnthosClusters"},
 			_jsii_.MemberProperty{JsiiProperty: "anthosClustersInput", GoGetter: "AnthosClustersInput"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,15 +361,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetConfig",
-		reflect.TypeOf((*GoogleClouddeployTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetCustomTarget",
-		reflect.TypeOf((*GoogleClouddeployTargetCustomTarget)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetCustomTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetCustomTargetOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetCustomTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetCustomTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetCustomTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -403,11 +403,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigs",
-		reflect.TypeOf((*GoogleClouddeployTargetExecutionConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetExecutionConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
-		reflect.TypeOf((*GoogleClouddeployTargetExecutionConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetExecutionConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -421,7 +421,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetExecutionConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -429,7 +429,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetExecutionConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetExecutionConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactStorage", GoGetter: "ArtifactStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactStorageInput", GoGetter: "ArtifactStorageInput"},
@@ -470,7 +470,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerPool", GoGetter: "WorkerPool"},
 			_jsii_.MemberProperty{JsiiProperty: "workerPoolInput", GoGetter: "WorkerPoolInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -478,11 +478,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetGke",
-		reflect.TypeOf((*GoogleClouddeployTargetGke)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetGke](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetGkeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetGkeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetGkeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -526,11 +526,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTarget",
-		reflect.TypeOf((*GoogleClouddeployTargetMultiTarget)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetMultiTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetMultiTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetMultiTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -556,7 +556,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetMultiTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -564,11 +564,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetRun",
-		reflect.TypeOf((*GoogleClouddeployTargetRun)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetRun](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetRunOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetRunOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetRunOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -594,7 +594,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetRunOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -602,11 +602,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetTimeouts",
-		reflect.TypeOf((*GoogleClouddeployTargetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleClouddeployTargetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployTargetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -639,7 +639,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployTargetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

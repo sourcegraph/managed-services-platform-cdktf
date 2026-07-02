@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleIapWebTypeAppEngineIamPolicy_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleIapWebTypeAppEngineIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleIapWebTypeAppEngineIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleIapWebTypeAppEngineIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleIapWebTypeAppEngineIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIapWebTypeAppEngineIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleIapWebTypeAppEngineIamPolicy_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleIapWebTypeAppEngineIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIapWebTypeAppEngineIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetAppIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleIapWebTypeAppEngineIamPolicyParameters(scope constructs.Co
 
 	return nil
 }
-

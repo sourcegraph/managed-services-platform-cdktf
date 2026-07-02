@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificateTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSslCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificateTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSslCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeSslCertificateTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

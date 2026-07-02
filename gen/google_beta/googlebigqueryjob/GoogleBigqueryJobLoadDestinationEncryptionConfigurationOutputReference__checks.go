@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadDestinationEncryptionConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadDestinationEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobLoadDestinationEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryJobLoadDestinationEncryptionConfigurationOutputRef
 
 	return nil
 }
-

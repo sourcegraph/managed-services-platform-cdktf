@@ -12,9 +12,9 @@ type GoogleComputeUrlMapPathMatcherOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,15 +41,15 @@ type GoogleComputeUrlMapPathMatcherOutputReference interface {
 	Fqn() *string
 	HeaderAction() GoogleComputeUrlMapPathMatcherHeaderActionOutputReference
 	HeaderActionInput() *GoogleComputeUrlMapPathMatcherHeaderAction
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	PathRule() GoogleComputeUrlMapPathMatcherPathRuleList
-	PathRuleInput() interface{}
+	PathRuleInput() any
 	RouteRules() GoogleComputeUrlMapPathMatcherRouteRulesList
-	RouteRulesInput() interface{}
+	RouteRulesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type GoogleComputeUrlMapPathMatcherOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,8 +86,8 @@ type GoogleComputeUrlMapPathMatcherOutputReference interface {
 	PutDefaultRouteAction(value *GoogleComputeUrlMapPathMatcherDefaultRouteAction)
 	PutDefaultUrlRedirect(value *GoogleComputeUrlMapPathMatcherDefaultUrlRedirect)
 	PutHeaderAction(value *GoogleComputeUrlMapPathMatcherHeaderAction)
-	PutPathRule(value interface{})
-	PutRouteRules(value interface{})
+	PutPathRule(value any)
+	PutRouteRules(value any)
 	ResetDefaultCustomErrorResponsePolicy()
 	ResetDefaultRouteAction()
 	ResetDefaultService()
@@ -98,7 +98,7 @@ type GoogleComputeUrlMapPathMatcherOutputReference interface {
 	ResetRouteRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ type jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) HeaderActionIn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PathRule() Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PathRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PathRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pathRuleInput",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) RouteRules() G
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) RouteRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) RouteRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"routeRulesInput",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewGoogleComputeUrlMapPathMatcherOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeUrlMapPathMatcherOutputReference {
 	_init_.Initialize()
 
@@ -372,7 +371,7 @@ func NewGoogleComputeUrlMapPathMatcherOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -384,12 +383,12 @@ func NewGoogleComputeUrlMapPathMatcherOutputReference_Override(g GoogleComputeUr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,7 +399,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetDefaultService(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetDefaultService(val *string) {
 	if err := j.validateSetDefaultServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetDefaultServi
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetDescription(
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetName(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,16 +489,16 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutDefaultCust
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultCustomErrorResponsePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -681,7 +680,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutDefaultRout
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultRouteAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -692,7 +691,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutDefaultUrlR
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultUrlRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -703,29 +702,29 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutHeaderActio
 	_jsii_.InvokeVoid(
 		g,
 		"putHeaderAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutPathRule(value interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutPathRule(value any) {
 	if err := g.validatePutPathRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPathRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutRouteRules(value interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) PutRouteRules(value any) {
 	if err := g.validatePutRouteRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRouteRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -793,16 +792,16 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) ResetRouteRule
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -821,4 +820,3 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) ToString() *st
 
 	return returns
 }
-

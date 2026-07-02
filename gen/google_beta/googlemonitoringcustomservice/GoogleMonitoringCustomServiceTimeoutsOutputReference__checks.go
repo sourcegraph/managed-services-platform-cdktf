@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleMonitoringCustomServiceTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

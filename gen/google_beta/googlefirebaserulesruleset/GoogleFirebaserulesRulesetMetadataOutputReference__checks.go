@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetMetadataOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFirebaserulesRulesetMetadataOutputReferenceParameters(terr
 
 	return nil
 }
-

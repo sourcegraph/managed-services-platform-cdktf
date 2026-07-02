@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
-		reflect.TypeOf((*GoogleComputeTargetSslProxy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetSslProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeTargetSslProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxyConfig",
-		reflect.TypeOf((*GoogleComputeTargetSslProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetSslProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxyTimeouts",
-		reflect.TypeOf((*GoogleComputeTargetSslProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetSslProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeTargetSslProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetSslProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeTargetSslProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

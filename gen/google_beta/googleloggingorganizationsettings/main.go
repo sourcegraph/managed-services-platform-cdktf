@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettings",
-		reflect.TypeOf((*GoogleLoggingOrganizationSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingOrganizationSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsConfig",
-		reflect.TypeOf((*GoogleLoggingOrganizationSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeouts",
-		reflect.TypeOf((*GoogleLoggingOrganizationSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSettings.GoogleLoggingOrganizationSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleLoggingOrganizationSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingOrganizationSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

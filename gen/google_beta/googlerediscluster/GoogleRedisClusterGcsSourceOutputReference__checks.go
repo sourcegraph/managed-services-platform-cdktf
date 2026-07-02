@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisClusterGcsSourceOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterGcsSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterGcsSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleRedisClusterGcsSourceOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleLoggingMetricBucketOptionsLinearBucketsOutputReferencePara
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeRegionDiskIamBinding_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleComputeRegionDiskIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionDiskIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeRegionDiskIamBinding_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleComputeRegionDiskIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionDiskIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeRegionDiskIamBinding_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleComputeRegionDiskIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionDiskIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeRegionDiskIamBinding_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleComputeRegionDiskIamBindingParameters(scope constructs.Con
 
 	return nil
 }
-

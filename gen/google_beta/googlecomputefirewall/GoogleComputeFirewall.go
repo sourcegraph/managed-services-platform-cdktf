@@ -13,22 +13,22 @@ import (
 type GoogleComputeFirewall interface {
 	cdktf.TerraformResource
 	Allow() GoogleComputeFirewallAllowList
-	AllowInput() interface{}
+	AllowInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	Deny() GoogleComputeFirewallDenyList
-	DenyInput() interface{}
+	DenyInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,12 +42,12 @@ type GoogleComputeFirewall interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
-	EnableLogging() interface{}
-	SetEnableLogging(val interface{})
-	EnableLoggingInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
+	EnableLogging() any
+	SetEnableLogging(val any)
+	EnableLoggingInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,11 +86,11 @@ type GoogleComputeFirewall interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	SourceRanges() *[]*string
 	SetSourceRanges(val *[]*string)
@@ -110,18 +110,18 @@ type GoogleComputeFirewall interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeFirewallTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -139,7 +139,7 @@ type GoogleComputeFirewall interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -151,15 +151,15 @@ type GoogleComputeFirewall interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAllow(value interface{})
-	PutDeny(value interface{})
+	PutAllow(value any)
+	PutDeny(value any)
 	PutLogConfig(value *GoogleComputeFirewallLogConfig)
 	PutParams(value *GoogleComputeFirewallParams)
 	PutTimeouts(value *GoogleComputeFirewallTimeouts)
@@ -184,17 +184,17 @@ type GoogleComputeFirewall interface {
 	ResetTargetServiceAccounts()
 	ResetTargetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeFirewall
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Allow() GoogleComputeFirewallAllowList
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) AllowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) AllowInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowInput",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Deny() GoogleComputeFirewallDenyList {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) DenyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) DenyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"denyInput",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) DirectionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) DisabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) EnableLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) EnableLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLogging",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) EnableLogging() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) EnableLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) EnableLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLoggingInput",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -742,8 +742,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_GoogleComputeFirewall) Timeouts() GoogleComputeFirewallTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewall) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -781,7 +781,6 @@ func (j *jsiiProxy_GoogleComputeFirewall) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_firewall google_compute_firewall} Resource.
 func NewGoogleComputeFirewall(scope constructs.Construct, id *string, config *GoogleComputeFirewallConfig) GoogleComputeFirewall {
@@ -794,7 +793,7 @@ func NewGoogleComputeFirewall(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeFirewall.GoogleComputeFirewall",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -807,12 +806,12 @@ func NewGoogleComputeFirewall_Override(g GoogleComputeFirewall, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeFirewall.GoogleComputeFirewall",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -842,7 +841,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetDestinationRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetDestinationRanges(val *[]*string) {
 	if err := j.validateSetDestinationRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetDestinationRanges(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetDirection(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetDirection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetEnableLogging(val interface{}) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetEnableLogging(val any) {
 	if err := j.validateSetEnableLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetEnableLogging(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -905,7 +904,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -916,7 +915,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -927,7 +926,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -938,7 +937,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -949,7 +948,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetPriority(val *float64) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -960,7 +959,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -971,7 +970,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -979,7 +978,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -990,7 +989,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetSourceRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetSourceRanges(val *[]*string) {
 	if err := j.validateSetSourceRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1000,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetSourceRanges(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetSourceServiceAccounts(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetSourceServiceAccounts(val *[]*string) {
 	if err := j.validateSetSourceServiceAccountsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1012,7 +1011,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetSourceServiceAccounts(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetSourceTags(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetSourceTags(val *[]*string) {
 	if err := j.validateSetSourceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1023,7 +1022,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetSourceTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetTargetServiceAccounts(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetTargetServiceAccounts(val *[]*string) {
 	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1034,7 +1033,7 @@ func (j *jsiiProxy_GoogleComputeFirewall)SetTargetServiceAccounts(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall)SetTargetTags(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewall) SetTargetTags(val *[]*string) {
 	if err := j.validateSetTargetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1056,7 @@ func GoogleComputeFirewall_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeFirewall.GoogleComputeFirewall",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func GoogleComputeFirewall_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeFirewall_IsConstruct(x interface{}) *bool {
+func GoogleComputeFirewall_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeFirewall_IsConstructParameters(x); err != nil {
@@ -1092,7 +1091,7 @@ func GoogleComputeFirewall_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeFirewall.GoogleComputeFirewall",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func GoogleComputeFirewall_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeFirewall_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeFirewall_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeFirewall_IsTerraformElementParameters(x); err != nil {
@@ -1111,7 +1110,7 @@ func GoogleComputeFirewall_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeFirewall.GoogleComputeFirewall",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1119,7 +1118,7 @@ func GoogleComputeFirewall_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeFirewall_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeFirewall_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeFirewall_IsTerraformResourceParameters(x); err != nil {
@@ -1130,7 +1129,7 @@ func GoogleComputeFirewall_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeFirewall.GoogleComputeFirewall",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1155,31 +1154,31 @@ func (g *jsiiProxy_GoogleComputeFirewall) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeFirewall) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1195,7 +1194,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1211,7 +1210,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1227,7 +1226,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1243,7 +1242,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1259,7 +1258,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1275,7 +1274,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1291,7 +1290,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1307,15 +1306,15 @@ func (g *jsiiProxy_GoogleComputeFirewall) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeFirewall) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1334,7 +1333,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1347,7 +1346,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1361,18 +1360,18 @@ func (g *jsiiProxy_GoogleComputeFirewall) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeFirewall) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1383,7 +1382,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1394,29 +1393,29 @@ func (g *jsiiProxy_GoogleComputeFirewall) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) PutAllow(value interface{}) {
+func (g *jsiiProxy_GoogleComputeFirewall) PutAllow(value any) {
 	if err := g.validatePutAllowParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAllow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) PutDeny(value interface{}) {
+func (g *jsiiProxy_GoogleComputeFirewall) PutDeny(value any) {
 	if err := g.validatePutDenyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDeny",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1427,7 +1426,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) PutLogConfig(value *GoogleComputeFirew
 	_jsii_.InvokeVoid(
 		g,
 		"putLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1438,7 +1437,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) PutParams(value *GoogleComputeFirewall
 	_jsii_.InvokeVoid(
 		g,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1449,7 +1448,7 @@ func (g *jsiiProxy_GoogleComputeFirewall) PutTimeouts(value *GoogleComputeFirewa
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1605,8 +1604,8 @@ func (g *jsiiProxy_GoogleComputeFirewall) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1618,8 +1617,8 @@ func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1631,8 +1630,8 @@ func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeFirewall) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1644,8 +1643,8 @@ func (g *jsiiProxy_GoogleComputeFirewall) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeFirewall) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1670,8 +1669,8 @@ func (g *jsiiProxy_GoogleComputeFirewall) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewall) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeFirewall) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1682,4 +1681,3 @@ func (g *jsiiProxy_GoogleComputeFirewall) ToTerraform() interface{} {
 
 	return returns
 }
-

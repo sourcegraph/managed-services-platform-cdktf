@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeNodeTemplateAcceleratorsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeTemplateAcceleratorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNodeTemplateAcceleratorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeNodeTemplateAcceleratorsListParameters(terraformRes
 
 	return nil
 }
-

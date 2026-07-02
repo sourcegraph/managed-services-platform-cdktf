@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamMemberConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleNetworkSecurityAddressGroupIamMemberConditionOutputReferen
 
 	return nil
 }
-

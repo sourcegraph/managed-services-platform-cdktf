@@ -18,15 +18,15 @@ type GoogleFirebaseStorageBucket interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,26 +57,26 @@ type GoogleFirebaseStorageBucket interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleFirebaseStorageBucketTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type GoogleFirebaseStorageBucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type GoogleFirebaseStorageBucket interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type GoogleFirebaseStorageBucket interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleFirebaseStorageBucket
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) Timeouts() GoogleFirebaseStorage
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -388,7 +388,6 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_storage_bucket google_firebase_storage_bucket} Resource.
 func NewGoogleFirebaseStorageBucket(scope constructs.Construct, id *string, config *GoogleFirebaseStorageBucketConfig) GoogleFirebaseStorageBucket {
@@ -401,7 +400,7 @@ func NewGoogleFirebaseStorageBucket(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -414,12 +413,12 @@ func NewGoogleFirebaseStorageBucket_Override(g GoogleFirebaseStorageBucket, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetBucketId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetBucketId(val *string) {
 	if err := j.validateSetBucketIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetBucketId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetProject(val *string) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func GoogleFirebaseStorageBucket_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func GoogleFirebaseStorageBucket_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleFirebaseStorageBucket_IsConstruct(x interface{}) *bool {
+func GoogleFirebaseStorageBucket_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseStorageBucket_IsConstructParameters(x); err != nil {
@@ -567,7 +566,7 @@ func GoogleFirebaseStorageBucket_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func GoogleFirebaseStorageBucket_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirebaseStorageBucket_IsTerraformElement(x interface{}) *bool {
+func GoogleFirebaseStorageBucket_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseStorageBucket_IsTerraformElementParameters(x); err != nil {
@@ -586,7 +585,7 @@ func GoogleFirebaseStorageBucket_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func GoogleFirebaseStorageBucket_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirebaseStorageBucket_IsTerraformResource(x interface{}) *bool {
+func GoogleFirebaseStorageBucket_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseStorageBucket_IsTerraformResourceParameters(x); err != nil {
@@ -605,7 +604,7 @@ func GoogleFirebaseStorageBucket_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -630,31 +629,31 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,15 +781,15 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -809,7 +808,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -822,7 +821,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,18 +835,18 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -858,7 +857,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -869,7 +868,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -880,7 +879,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) PutTimeouts(value *GoogleFirebas
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -924,8 +923,8 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -937,8 +936,8 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -950,8 +949,8 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -963,8 +962,8 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -989,8 +988,8 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1001,4 +1000,3 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) ToTerraform() interface{} {
 
 	return returns
 }
-

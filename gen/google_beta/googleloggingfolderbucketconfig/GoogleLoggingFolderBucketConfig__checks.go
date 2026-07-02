@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutCmekSettingsParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutIndexConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleLoggingFolderBucketConfig_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleLoggingFolderBucketConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingFolderBucketConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleLoggingFolderBucketConfig_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleLoggingFolderBucketConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingFolderBucketConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleLoggingFolderBucketConfig_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleLoggingFolderBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingFolderBucketConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetBucketIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetLocationParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewGoogleLoggingFolderBucketConfigParameters(scope constructs.Const
 
 	return nil
 }
-

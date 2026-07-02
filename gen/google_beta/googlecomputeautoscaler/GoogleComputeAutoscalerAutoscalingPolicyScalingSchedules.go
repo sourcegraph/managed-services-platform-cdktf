@@ -1,6 +1,5 @@
 package googlecomputeautoscaler
 
-
 type GoogleComputeAutoscalerAutoscalingPolicyScalingSchedules struct {
 	// The duration of time intervals (in seconds) for which this scaling schedule will be running.
 	//
@@ -29,7 +28,7 @@ type GoogleComputeAutoscalerAutoscalingPolicyScalingSchedules struct {
 	// If set to true, then a scaling schedule has no effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_autoscaler#disabled GoogleComputeAutoscaler#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// The time zone to be used when interpreting the schedule.
 	//
 	// The value of this field must be a time zone name from the tz database: http://en.wikipedia.org/wiki/Tz_database.
@@ -37,4 +36,3 @@ type GoogleComputeAutoscalerAutoscalingPolicyScalingSchedules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_autoscaler#time_zone GoogleComputeAutoscaler#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
-

@@ -1,11 +1,10 @@
 package googleprivatecacertificate
 
-
 type GooglePrivatecaCertificateConfigX509ConfigNameConstraints struct {
 	// Indicates whether or not the name constraints are marked critical.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate#critical GooglePrivatecaCertificate#critical}
-	Critical interface{} `field:"required" json:"critical" yaml:"critical"`
+	Critical any `field:"required" json:"critical" yaml:"critical"`
 	// Contains excluded DNS names.
 	//
 	// Any DNS name that can be
@@ -77,4 +76,3 @@ type GooglePrivatecaCertificateConfigX509ConfigNameConstraints struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate#permitted_uris GooglePrivatecaCertificate#permitted_uris}
 	PermittedUris *[]*string `field:"optional" json:"permittedUris" yaml:"permittedUris"`
 }
-

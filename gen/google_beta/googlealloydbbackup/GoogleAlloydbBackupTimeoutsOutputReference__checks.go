@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleAlloydbBackupTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

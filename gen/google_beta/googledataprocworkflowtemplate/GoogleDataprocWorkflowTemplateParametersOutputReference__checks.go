@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateParametersOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleDataprocWorkflowTemplateParametersOutputReferenceParameter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTime
 
 	return nil
 }
-

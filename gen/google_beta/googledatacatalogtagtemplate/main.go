@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplate",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplate)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateConfig",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFields",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFields)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsList",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,19 +166,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsType",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsType)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsType](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumType",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsTypeEnumType)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsTypeEnumType](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -234,7 +234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedValues", GoGetter: "AllowedValues"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedValuesInput", GoGetter: "AllowedValuesInput"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateFieldsTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateFieldsTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateTimeouts",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogTagTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTagTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTagTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

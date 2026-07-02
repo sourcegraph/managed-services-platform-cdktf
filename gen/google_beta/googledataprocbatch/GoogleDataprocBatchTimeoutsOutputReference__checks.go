@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocBatchTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataprocBatchTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDataprocBatchTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

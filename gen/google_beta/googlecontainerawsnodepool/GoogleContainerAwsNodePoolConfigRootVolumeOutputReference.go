@@ -12,9 +12,9 @@ type GoogleContainerAwsNodePoolConfigRootVolumeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleContainerAwsNodePoolConfigRootVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleContainerAwsNodePoolConfigRootVolumeOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Vo
 	return returns
 }
 
-
 func NewGoogleContainerAwsNodePoolConfigRootVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigRootVolumeOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleContainerAwsNodePoolConfigRootVolumeOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigRootVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleContainerAwsNodePoolConfigRootVolumeOutputReference_Override(g Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigRootVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetInternalValue(val *GoogleContainerAwsNodePoolConfigRootVolume) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetInternalValue(val *GoogleContainerAwsNodePoolConfigRootVolume) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetSizeGib(val *float64) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetSizeGib(val *float64) {
 	if err := j.validateSetSizeGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetThroughput(val *float64) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Co
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) In
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) To
 
 	return returns
 }
-

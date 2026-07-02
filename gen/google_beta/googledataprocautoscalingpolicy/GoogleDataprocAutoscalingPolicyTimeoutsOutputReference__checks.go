@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDataprocAutoscalingPolicyTimeoutsOutputReferenceParameters
 
 	return nil
 }
-

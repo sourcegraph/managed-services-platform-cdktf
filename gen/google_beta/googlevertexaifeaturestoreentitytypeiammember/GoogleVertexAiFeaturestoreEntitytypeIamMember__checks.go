@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateAddMov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateMoveFr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_GenerateConfigForImpo
 	return nil
 }
 
-func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstructParameters
 	return nil
 }
 
-func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElementPar
 	return nil
 }
 
-func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResourcePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetMem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleVertexAiFeaturestoreEntitytypeIamMemberParameters(scope co
 
 	return nil
 }
-

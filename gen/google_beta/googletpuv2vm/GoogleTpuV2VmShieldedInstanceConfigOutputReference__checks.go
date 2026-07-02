@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleTpuV2VmShieldedInstanceConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

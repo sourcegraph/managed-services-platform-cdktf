@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingBuildTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingBuildTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingBuildTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingBuildTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingBuildTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingBuildTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFirebaseAppHostingBuildTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

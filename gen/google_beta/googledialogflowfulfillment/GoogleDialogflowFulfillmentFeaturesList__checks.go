@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowFulfillmentFeaturesList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowFulfillmentFeaturesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowFulfillmentFeaturesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowFulfillmentFeaturesListParameters(terraformResou
 
 	return nil
 }
-

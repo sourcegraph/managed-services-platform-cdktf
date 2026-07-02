@@ -233,7 +233,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -383,4 +383,3 @@ func validateNewGoogleContainerClusterAddonsConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleContainerAzureCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleContainerAzureCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateGoogleContainerAzureCluster_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleContainerAzureCluster_IsConstructParameters(x interface{}) error {
+func validateGoogleContainerAzureCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validateGoogleContainerAzureCluster_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleContainerAzureCluster_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleContainerAzureCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateGoogleContainerAzureCluster_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleContainerAzureCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleContainerAzureCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetClientParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -483,7 +483,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -555,4 +555,3 @@ func validateNewGoogleContainerAzureClusterParameters(scope constructs.Construct
 
 	return nil
 }
-

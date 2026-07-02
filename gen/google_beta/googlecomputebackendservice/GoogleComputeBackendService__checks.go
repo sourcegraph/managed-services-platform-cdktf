@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeBackendService) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeBackendService) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeBackendService) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendService) validatePutBackendParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutBackendParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutConsistentHashParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutIapParameters(value *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendService) validatePutLocalityLbPoliciesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutLocalityLbPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -456,7 +456,7 @@ func validateGoogleComputeBackendService_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleComputeBackendService_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeBackendService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -464,7 +464,7 @@ func validateGoogleComputeBackendService_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleComputeBackendService_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeBackendService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -472,7 +472,7 @@ func validateGoogleComputeBackendService_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleComputeBackendService_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeBackendService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -496,7 +496,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetCompressionModeParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -537,7 +537,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetConnectionDrainingTim
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -626,7 +626,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetEdgeSecurityPolicyPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetEnableCdnParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -742,7 +742,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetProtocolParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -838,4 +838,3 @@ func validateNewGoogleComputeBackendServiceParameters(scope constructs.Construct
 
 	return nil
 }
-

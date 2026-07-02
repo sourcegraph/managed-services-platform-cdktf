@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigTaintList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigTaintList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigTaintList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerNodePoolNodeConfigTaintListParameters(terraformRe
 
 	return nil
 }
-

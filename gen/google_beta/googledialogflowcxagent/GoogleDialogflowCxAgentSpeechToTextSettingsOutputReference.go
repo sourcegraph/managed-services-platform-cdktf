@@ -12,9 +12,9 @@ type GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableSpeechAdaptation() interface{}
-	SetEnableSpeechAdaptation(val interface{})
-	EnableSpeechAdaptationInput() interface{}
+	EnableSpeechAdaptation() any
+	SetEnableSpeechAdaptation(val any)
+	EnableSpeechAdaptationInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDialogflowCxAgentSpeechToTextSettings
@@ -43,7 +43,7 @@ type GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference interface {
 	ResetEnableSpeechAdaptation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) EnableSpeechAdaptation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) EnableSpeechAdaptation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSpeechAdaptation",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) E
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) EnableSpeechAdaptationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) EnableSpeechAdaptationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSpeechAdaptationInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) T
 	return returns
 }
 
-
 func NewGoogleDialogflowCxAgentSpeechToTextSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewGoogleDialogflowCxAgentSpeechToTextSettingsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewGoogleDialogflowCxAgentSpeechToTextSettingsOutputReference_Override(g Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)SetEnableSpeechAdaptation(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) SetEnableSpeechAdaptation(val any) {
 	if err := j.validateSetEnableSpeechAdaptationParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)SetInternalValue(val *GoogleDialogflowCxAgentSpeechToTextSettings) {
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) SetInternalValue(val *GoogleDialogflowCxAgentSpeechToTextSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) C
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) I
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference) T
 
 	return returns
 }
-

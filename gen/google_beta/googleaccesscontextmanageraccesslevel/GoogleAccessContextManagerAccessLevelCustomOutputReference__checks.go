@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCustomOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCustomOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCustomOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleAccessContextManagerAccessLevelCustomOutputReferenceParame
 
 	return nil
 }
-

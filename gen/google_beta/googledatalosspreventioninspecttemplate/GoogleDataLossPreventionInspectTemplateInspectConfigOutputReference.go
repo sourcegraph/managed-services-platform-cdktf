@@ -12,9 +12,9 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,17 +29,17 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference interfa
 	// Experimental.
 	CreationStack() *[]*string
 	CustomInfoTypes() GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesList
-	CustomInfoTypesInput() interface{}
-	ExcludeInfoTypes() interface{}
-	SetExcludeInfoTypes(val interface{})
-	ExcludeInfoTypesInput() interface{}
+	CustomInfoTypesInput() any
+	ExcludeInfoTypes() any
+	SetExcludeInfoTypes(val any)
+	ExcludeInfoTypesInput() any
 	// Experimental.
 	Fqn() *string
-	IncludeQuote() interface{}
-	SetIncludeQuote(val interface{})
-	IncludeQuoteInput() interface{}
+	IncludeQuote() any
+	SetIncludeQuote(val any)
+	IncludeQuoteInput() any
 	InfoTypes() GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesList
-	InfoTypesInput() interface{}
+	InfoTypesInput() any
 	InternalValue() *GoogleDataLossPreventionInspectTemplateInspectConfig
 	SetInternalValue(val *GoogleDataLossPreventionInspectTemplateInspectConfig)
 	Limits() GoogleDataLossPreventionInspectTemplateInspectConfigLimitsOutputReference
@@ -48,7 +48,7 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference interfa
 	SetMinLikelihood(val *string)
 	MinLikelihoodInput() *string
 	RuleSet() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList
-	RuleSetInput() interface{}
+	RuleSetInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,7 +60,7 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,10 +81,10 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomInfoTypes(value interface{})
-	PutInfoTypes(value interface{})
+	PutCustomInfoTypes(value any)
+	PutInfoTypes(value any)
 	PutLimits(value *GoogleDataLossPreventionInspectTemplateInspectConfigLimits)
-	PutRuleSet(value interface{})
+	PutRuleSet(value any)
 	ResetContentOptions()
 	ResetCustomInfoTypes()
 	ResetExcludeInfoTypes()
@@ -95,7 +95,7 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference interfa
 	ResetRuleSet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) CustomInfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) CustomInfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customInfoTypesInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInfoTypes",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInfoTypesInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuote() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuote() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQuote",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuoteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuoteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQuoteInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) InfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) InfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"infoTypesInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) RuleSetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) RuleSetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleSetInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-
 func NewGoogleDataLossPreventionInspectTemplateInspectConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewGoogleDataLossPreventionInspectTemplateInspectConfigOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewGoogleDataLossPreventionInspectTemplateInspectConfigOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetContentOptions(val *[]*string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetContentOptions(val *[]*string) {
 	if err := j.validateSetContentOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetExcludeInfoTypes(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetExcludeInfoTypes(val any) {
 	if err := j.validateSetExcludeInfoTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetIncludeQuote(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetIncludeQuote(val any) {
 	if err := j.validateSetIncludeQuoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetInternalValue(val *GoogleDataLossPreventionInspectTemplateInspectConfig) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetInternalValue(val *GoogleDataLossPreventionInspectTemplateInspectConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetMinLikelihood(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetMinLikelihood(val *string) {
 	if err := j.validateSetMinLikelihoodParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,16 +477,16 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,32 +643,32 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) PutCustomInfoTypes(value interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) PutCustomInfoTypes(value any) {
 	if err := g.validatePutCustomInfoTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putCustomInfoTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) PutInfoTypes(value interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) PutInfoTypes(value any) {
 	if err := g.validatePutInfoTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInfoTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,18 +679,18 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"putLimits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) PutRuleSet(value interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) PutRuleSet(value any) {
 	if err := g.validatePutRuleSetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRuleSet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigOutputRef
 
 	return returns
 }
-

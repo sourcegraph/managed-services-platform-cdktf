@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeInstanceFromTemplateScratchDiskOutputReferenceParam
 
 	return nil
 }
-

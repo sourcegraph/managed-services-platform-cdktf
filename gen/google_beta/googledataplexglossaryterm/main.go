@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryTerm.GoogleDataplexGlossaryTerm",
-		reflect.TypeOf((*GoogleDataplexGlossaryTerm)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryTerm](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexGlossaryTerm{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryTerm.GoogleDataplexGlossaryTermConfig",
-		reflect.TypeOf((*GoogleDataplexGlossaryTermConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryTermConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryTerm.GoogleDataplexGlossaryTermTimeouts",
-		reflect.TypeOf((*GoogleDataplexGlossaryTermTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryTermTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryTerm.GoogleDataplexGlossaryTermTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataplexGlossaryTermTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryTermTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexGlossaryTermTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

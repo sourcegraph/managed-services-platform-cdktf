@@ -1,6 +1,5 @@
 package googlesqldatabaseinstance
 
-
 type GoogleSqlDatabaseInstanceSettings struct {
 	// The machine type to use.
 	//
@@ -41,7 +40,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// connection_pool_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#connection_pool_config GoogleSqlDatabaseInstance#connection_pool_config}
-	ConnectionPoolConfig interface{} `field:"optional" json:"connectionPoolConfig" yaml:"connectionPoolConfig"`
+	ConnectionPoolConfig any `field:"optional" json:"connectionPoolConfig" yaml:"connectionPoolConfig"`
 	// Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all the connections.
 	//
 	// If enabled, all the direct connections are rejected.
@@ -51,7 +50,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// database_flags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
-	DatabaseFlags interface{} `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
+	DatabaseFlags any `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
 	// data_cache_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#data_cache_config GoogleSqlDatabaseInstance#data_cache_config}
@@ -71,7 +70,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// Configuration to protect against accidental instance deletion.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#deletion_protection_enabled GoogleSqlDatabaseInstance#deletion_protection_enabled}
-	DeletionProtectionEnabled interface{} `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
+	DeletionProtectionEnabled any `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
 	// deny_maintenance_period block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#deny_maintenance_period GoogleSqlDatabaseInstance#deny_maintenance_period}
@@ -79,7 +78,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// Enables auto-resizing of the storage size. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
-	DiskAutoresize interface{} `field:"optional" json:"diskAutoresize" yaml:"diskAutoresize"`
+	DiskAutoresize any `field:"optional" json:"diskAutoresize" yaml:"diskAutoresize"`
 	// The maximum size, in GB, to which storage capacity can be automatically increased.
 	//
 	// The default value is 0, which specifies that there is no limit.
@@ -103,11 +102,11 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// Enables Dataplex Integration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#enable_dataplex_integration GoogleSqlDatabaseInstance#enable_dataplex_integration}
-	EnableDataplexIntegration interface{} `field:"optional" json:"enableDataplexIntegration" yaml:"enableDataplexIntegration"`
+	EnableDataplexIntegration any `field:"optional" json:"enableDataplexIntegration" yaml:"enableDataplexIntegration"`
 	// Enables Vertex AI Integration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#enable_google_ml_integration GoogleSqlDatabaseInstance#enable_google_ml_integration}
-	EnableGoogleMlIntegration interface{} `field:"optional" json:"enableGoogleMlIntegration" yaml:"enableGoogleMlIntegration"`
+	EnableGoogleMlIntegration any `field:"optional" json:"enableGoogleMlIntegration" yaml:"enableGoogleMlIntegration"`
 	// insights_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#insights_config GoogleSqlDatabaseInstance#insights_config}
@@ -137,7 +136,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#retain_backups_on_delete GoogleSqlDatabaseInstance#retain_backups_on_delete}
-	RetainBackupsOnDelete interface{} `field:"optional" json:"retainBackupsOnDelete" yaml:"retainBackupsOnDelete"`
+	RetainBackupsOnDelete any `field:"optional" json:"retainBackupsOnDelete" yaml:"retainBackupsOnDelete"`
 	// sql_server_audit_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
@@ -151,4 +150,3 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
 	UserLabels *map[string]*string `field:"optional" json:"userLabels" yaml:"userLabels"`
 }
-

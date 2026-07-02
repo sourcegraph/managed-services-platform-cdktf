@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOsCons
 
 	return nil
 }
-

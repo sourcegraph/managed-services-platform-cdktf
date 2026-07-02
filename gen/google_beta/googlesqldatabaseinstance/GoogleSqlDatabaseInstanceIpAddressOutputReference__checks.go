@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceIpAddressOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceIpAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceIpAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleSqlDatabaseInstanceIpAddressOutputReferenceParameters(terr
 
 	return nil
 }
-

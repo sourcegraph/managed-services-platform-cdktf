@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationAutoOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationAutoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationAutoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleSecretManagerSecretReplicationAutoOutputReferenceParameter
 
 	return nil
 }
-

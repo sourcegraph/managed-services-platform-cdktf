@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource
 
 	return nil
 }
-

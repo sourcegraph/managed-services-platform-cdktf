@@ -12,9 +12,9 @@ type GoogleComputeRouterPeerBfdOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type GoogleComputeRouterPeerBfdOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleComputeRouterPeerBfdOutputReference interface {
 	ResetMultiplier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_GoogleComputeRouterPeerBfdOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewGoogleComputeRouterPeerBfdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterPeerBfdOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewGoogleComputeRouterPeerBfdOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewGoogleComputeRouterPeerBfdOutputReference_Override(g GoogleComputeRouter
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetInternalValue(val *GoogleComputeRouterPeerBfd) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetInternalValue(val *GoogleComputeRouterPeerBfd) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetMinReceiveInterval(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetMinReceiveInterval(val *float64) {
 	if err := j.validateSetMinReceiveIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetMinReceiveInterv
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetMinTransmitInterval(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetMinTransmitInterval(val *float64) {
 	if err := j.validateSetMinTransmitIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetMinTransmitInter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetMultiplier(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetMultiplier(val *float64) {
 	if err := j.validateSetMultiplierParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetMultiplier(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetSessionInitializationMode(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetSessionInitializationMode(val *string) {
 	if err := j.validateSetSessionInitializationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetSessionInitializ
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) ResetMultiplier() 
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) ToString() *string
 
 	return returns
 }
-

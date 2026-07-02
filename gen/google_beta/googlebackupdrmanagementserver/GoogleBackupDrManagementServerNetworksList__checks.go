@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBackupDrManagementServerNetworksListParameters(terraformRe
 
 	return nil
 }
-

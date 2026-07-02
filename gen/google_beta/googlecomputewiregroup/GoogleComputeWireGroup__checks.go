@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeWireGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeWireGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) validatePutEndpointsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeWireGroup) validatePutEndpointsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateGoogleComputeWireGroup_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateGoogleComputeWireGroup_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeWireGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateGoogleComputeWireGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleComputeWireGroup_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeWireGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateGoogleComputeWireGroup_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleComputeWireGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeWireGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateGoogleComputeWireGroup_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) validateSetAdminEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroup) validateSetAdminEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup) validateSetAdminEnabledParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -466,7 +466,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -530,4 +530,3 @@ func validateNewGoogleComputeWireGroupParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

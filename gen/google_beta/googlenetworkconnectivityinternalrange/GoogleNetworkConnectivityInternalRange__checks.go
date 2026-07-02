@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleNetworkConnectivityInternalRange_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleNetworkConnectivityInternalRange_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkConnectivityInternalRange_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleNetworkConnectivityInternalRange_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleNetworkConnectivityInternalRange_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkConnectivityInternalRange_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleNetworkConnectivityInternalRange_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleNetworkConnectivityInternalRange_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkConnectivityInternalRange_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleNetworkConnectivityInternalRange_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -552,4 +552,3 @@ func validateNewGoogleNetworkConnectivityInternalRangeParameters(scope construct
 
 	return nil
 }
-

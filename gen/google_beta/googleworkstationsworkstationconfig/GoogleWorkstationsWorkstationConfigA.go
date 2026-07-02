@@ -13,7 +13,7 @@ import (
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
 	AllowedPorts() GoogleWorkstationsWorkstationConfigAllowedPortsList
-	AllowedPortsInput() interface{}
+	AllowedPortsInput() any
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -21,38 +21,38 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	CdktfStack() cdktf.TerraformStack
 	Conditions() GoogleWorkstationsWorkstationConfigConditionsList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Container() GoogleWorkstationsWorkstationConfigContainerOutputReference
 	ContainerInput() *GoogleWorkstationsWorkstationConfigContainer
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Degraded() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableTcpConnections() interface{}
-	SetDisableTcpConnections(val interface{})
-	DisableTcpConnectionsInput() interface{}
+	DisableTcpConnections() any
+	SetDisableTcpConnections(val any)
+	DisableTcpConnectionsInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
-	EnableAuditAgent() interface{}
-	SetEnableAuditAgent(val interface{})
-	EnableAuditAgentInput() interface{}
+	EnableAuditAgent() any
+	SetEnableAuditAgent(val any)
+	EnableAuditAgentInput() any
 	EncryptionKey() GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference
 	EncryptionKeyInput() *GoogleWorkstationsWorkstationConfigEncryptionKey
 	EphemeralDirectories() GoogleWorkstationsWorkstationConfigEphemeralDirectoriesList
-	EphemeralDirectoriesInput() interface{}
+	EphemeralDirectoriesInput() any
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -87,7 +87,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	// The tree node.
 	Node() constructs.Node
 	PersistentDirectories() GoogleWorkstationsWorkstationConfigPersistentDirectoriesList
-	PersistentDirectoriesInput() interface{}
+	PersistentDirectoriesInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -96,13 +96,13 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadinessChecks() GoogleWorkstationsWorkstationConfigReadinessChecksList
-	ReadinessChecksInput() interface{}
+	ReadinessChecksInput() any
 	ReplicaZones() *[]*string
 	SetReplicaZones(val *[]*string)
 	ReplicaZonesInput() *[]*string
@@ -113,11 +113,11 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleWorkstationsWorkstationConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	WorkstationClusterId() *string
 	SetWorkstationClusterId(val *string)
@@ -129,9 +129,9 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -149,7 +149,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -161,20 +161,20 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAllowedPorts(value interface{})
+	PutAllowedPorts(value any)
 	PutContainer(value *GoogleWorkstationsWorkstationConfigContainer)
 	PutEncryptionKey(value *GoogleWorkstationsWorkstationConfigEncryptionKey)
-	PutEphemeralDirectories(value interface{})
+	PutEphemeralDirectories(value any)
 	PutHost(value *GoogleWorkstationsWorkstationConfigHost)
-	PutPersistentDirectories(value interface{})
-	PutReadinessChecks(value interface{})
+	PutPersistentDirectories(value any)
+	PutReadinessChecks(value any)
 	PutTimeouts(value *GoogleWorkstationsWorkstationConfigTimeouts)
 	ResetAllowedPorts()
 	ResetAnnotations()
@@ -198,17 +198,17 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetReplicaZones()
 	ResetRunningTimeout()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleWorkstationsWorkstationConfigA
@@ -226,8 +226,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AllowedPorts() GoogleWo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AllowedPortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AllowedPortsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedPortsInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Conditions() GoogleWork
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ContainerInput() *Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DependsOn() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnections() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnections() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTcpConnections",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnections()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTcpConnectionsInput",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EffectiveLabels() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAuditAgent",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgent() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAuditAgentInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EphemeralDirectories() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EphemeralDirectoriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EphemeralDirectoriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralDirectoriesInput",
@@ -676,8 +676,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PersistentDirectories()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PersistentDirectoriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PersistentDirectoriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"persistentDirectoriesInput",
@@ -716,8 +716,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -726,8 +726,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -746,8 +746,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReadinessChecks() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReadinessChecksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReadinessChecksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readinessChecksInput",
@@ -816,8 +816,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TerraformLabels() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -846,8 +846,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Timeouts() GoogleWorkst
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -906,7 +906,6 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
@@ -918,7 +917,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -931,12 +930,12 @@ func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkst
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetAnnotations(val *map[
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -977,7 +976,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDisableTcpConnections(val interface{}) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetDisableTcpConnections(val any) {
 	if err := j.validateSetDisableTcpConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDisableTcpConnections
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDisplayName(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetEnableAuditAgent(val interface{}) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetEnableAuditAgent(val any) {
 	if err := j.validateSetEnableAuditAgentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetEnableAuditAgent(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1018,7 +1017,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetId(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1029,7 +1028,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetIdleTimeout(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetIdleTimeout(val *string) {
 	if err := j.validateSetIdleTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetIdleTimeout(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLabels(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetMaxUsableWorkstations(val *float64) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetMaxUsableWorkstations(val *float64) {
 	if err := j.validateSetMaxUsableWorkstationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetMaxUsableWorkstations
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProject(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,7 +1113,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetReplicaZones(val *[]*string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetReplicaZones(val *[]*string) {
 	if err := j.validateSetReplicaZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetReplicaZones(val *[]*
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetRunningTimeout(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetRunningTimeout(val *string) {
 	if err := j.validateSetRunningTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetRunningTimeout(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetWorkstationClusterId(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetWorkstationClusterId(val *string) {
 	if err := j.validateSetWorkstationClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetWorkstationClusterId(
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetWorkstationConfigId(val *string) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SetWorkstationConfigId(val *string) {
 	if err := j.validateSetWorkstationConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func GoogleWorkstationsWorkstationConfigA_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1194,7 +1193,7 @@ func GoogleWorkstationsWorkstationConfigA_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleWorkstationsWorkstationConfigA_IsConstruct(x interface{}) *bool {
+func GoogleWorkstationsWorkstationConfigA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleWorkstationsWorkstationConfigA_IsConstructParameters(x); err != nil {
@@ -1205,7 +1204,7 @@ func GoogleWorkstationsWorkstationConfigA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1213,7 +1212,7 @@ func GoogleWorkstationsWorkstationConfigA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleWorkstationsWorkstationConfigA_IsTerraformElement(x interface{}) *bool {
+func GoogleWorkstationsWorkstationConfigA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleWorkstationsWorkstationConfigA_IsTerraformElementParameters(x); err != nil {
@@ -1224,7 +1223,7 @@ func GoogleWorkstationsWorkstationConfigA_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func GoogleWorkstationsWorkstationConfigA_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func GoogleWorkstationsWorkstationConfigA_IsTerraformResource(x interface{}) *bool {
+func GoogleWorkstationsWorkstationConfigA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleWorkstationsWorkstationConfigA_IsTerraformResourceParameters(x); err != nil {
@@ -1243,7 +1242,7 @@ func GoogleWorkstationsWorkstationConfigA_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1268,31 +1267,31 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1308,7 +1307,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1324,7 +1323,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1340,7 +1339,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1356,7 +1355,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1372,7 +1371,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetNumberListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1388,7 +1387,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1404,7 +1403,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetStringAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1420,15 +1419,15 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1447,7 +1446,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1460,7 +1459,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) InterpolationForAttribu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1474,18 +1473,18 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1496,7 +1495,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1507,18 +1506,18 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutAllowedPorts(value interface{}) {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutAllowedPorts(value any) {
 	if err := g.validatePutAllowedPortsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAllowedPorts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1529,7 +1528,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutContainer(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1540,18 +1539,18 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutEncryptionKey(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutEphemeralDirectories(value interface{}) {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutEphemeralDirectories(value any) {
 	if err := g.validatePutEphemeralDirectoriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEphemeralDirectories",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1562,29 +1561,29 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutHost(value *GoogleWo
 	_jsii_.InvokeVoid(
 		g,
 		"putHost",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutPersistentDirectories(value interface{}) {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutPersistentDirectories(value any) {
 	if err := g.validatePutPersistentDirectoriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPersistentDirectories",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutReadinessChecks(value interface{}) {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutReadinessChecks(value any) {
 	if err := g.validatePutReadinessChecksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putReadinessChecks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1595,7 +1594,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutTimeouts(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1759,8 +1758,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1772,8 +1771,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SynthesizeAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1785,8 +1784,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) SynthesizeHclAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1798,8 +1797,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToHclTerraform() interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1824,8 +1823,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1836,4 +1835,3 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ToTerraform() interface
 
 	return returns
 }
-

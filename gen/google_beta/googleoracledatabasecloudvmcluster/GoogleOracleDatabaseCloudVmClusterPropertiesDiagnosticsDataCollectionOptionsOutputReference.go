@@ -12,9 +12,9 @@ type GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOption
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,17 +25,17 @@ type GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOption
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DiagnosticsEventsEnabled() interface{}
-	SetDiagnosticsEventsEnabled(val interface{})
-	DiagnosticsEventsEnabledInput() interface{}
+	DiagnosticsEventsEnabled() any
+	SetDiagnosticsEventsEnabled(val any)
+	DiagnosticsEventsEnabledInput() any
 	// Experimental.
 	Fqn() *string
-	HealthMonitoringEnabled() interface{}
-	SetHealthMonitoringEnabled(val interface{})
-	HealthMonitoringEnabledInput() interface{}
-	IncidentLogsEnabled() interface{}
-	SetIncidentLogsEnabled(val interface{})
-	IncidentLogsEnabledInput() interface{}
+	HealthMonitoringEnabled() any
+	SetHealthMonitoringEnabled(val any)
+	HealthMonitoringEnabledInput() any
+	IncidentLogsEnabled() any
+	SetIncidentLogsEnabled(val any)
+	IncidentLogsEnabledInput() any
 	InternalValue() *GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions
 	SetInternalValue(val *GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions)
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOption
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOption
 	ResetIncidentLogsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollec
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) DiagnosticsEventsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) DiagnosticsEventsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diagnosticsEventsEnabled",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) DiagnosticsEventsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) DiagnosticsEventsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diagnosticsEventsEnabledInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) HealthMonitoringEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) HealthMonitoringEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthMonitoringEnabled",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) HealthMonitoringEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) HealthMonitoringEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthMonitoringEnabledInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) IncidentLogsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) IncidentLogsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incidentLogsEnabled",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) IncidentLogsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) IncidentLogsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incidentLogsEnabledInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-
 func NewGoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOpt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOracleDatabaseCloudVmCluster.GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOpt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOracleDatabaseCloudVmCluster.GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetDiagnosticsEventsEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetDiagnosticsEventsEnabled(val any) {
 	if err := j.validateSetDiagnosticsEventsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetHealthMonitoringEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetHealthMonitoringEnabled(val any) {
 	if err := j.validateSetHealthMonitoringEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetIncidentLogsEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetIncidentLogsEnabled(val any) {
 	if err := j.validateSetIncidentLogsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetInternalValue(val *GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetInternalValue(val *GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCo
 
 	return returns
 }
-

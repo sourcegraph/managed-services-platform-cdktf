@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessages
 
 	return nil
 }
-

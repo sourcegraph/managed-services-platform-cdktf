@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationStatusLastKnownGoodStateFutureR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeFutureReservationStatusLastKnownGoodStateFutureRese
 
 	return nil
 }
-

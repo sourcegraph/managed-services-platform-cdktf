@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validatePutIntermediateCasParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validatePutIntermediateCasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validatePutTrustAnchorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validatePutTrustAnchorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewGoogleCertificateManagerTrustConfigTrustStoresOutputReferencePar
 
 	return nil
 }
-

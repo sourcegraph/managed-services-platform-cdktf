@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault",
-		reflect.TypeOf((*GoogleBackupDrBackupVault)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRestriction", GoGetter: "AccessRestriction"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRestrictionInput", GoGetter: "AccessRestrictionInput"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -120,15 +120,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultConfig",
-		reflect.TypeOf((*GoogleBackupDrBackupVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultTimeouts",
-		reflect.TypeOf((*GoogleBackupDrBackupVaultTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupVaultTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupVault.GoogleBackupDrBackupVaultTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBackupDrBackupVaultTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupVaultTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupVaultTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

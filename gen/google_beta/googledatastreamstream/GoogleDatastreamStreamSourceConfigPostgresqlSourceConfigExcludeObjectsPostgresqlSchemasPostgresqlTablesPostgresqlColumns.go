@@ -1,6 +1,5 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns struct {
 	// Column name.
 	//
@@ -13,7 +12,7 @@ type GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostg
 	// Whether or not the column can accept a null value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
-	Nullable interface{} `field:"optional" json:"nullable" yaml:"nullable"`
+	Nullable any `field:"optional" json:"nullable" yaml:"nullable"`
 	// The ordinal position of the column in the table.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
@@ -21,6 +20,5 @@ type GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostg
 	// Whether or not the column represents a primary key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
-	PrimaryKey interface{} `field:"optional" json:"primaryKey" yaml:"primaryKey"`
+	PrimaryKey any `field:"optional" json:"primaryKey" yaml:"primaryKey"`
 }
-

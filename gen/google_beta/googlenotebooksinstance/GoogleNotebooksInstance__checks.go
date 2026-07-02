@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNotebooksInstance) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNotebooksInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNotebooksInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNotebooksInstance) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNotebooksInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNotebooksInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleNotebooksInstance_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleNotebooksInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleNotebooksInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateGoogleNotebooksInstance_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleNotebooksInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNotebooksInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateGoogleNotebooksInstance_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleNotebooksInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNotebooksInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetBootDiskTypeParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetInstallGpuDriverParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetInstallGpuDriverParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -572,7 +572,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNicTypeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoProxyAccessParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoProxyAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -592,7 +592,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoProxyAccessParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -612,7 +612,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoPublicIpParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoRemoveDataDiskParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetNoRemoveDataDiskParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -648,7 +648,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -752,4 +752,3 @@ func validateNewGoogleNotebooksInstanceParameters(scope constructs.Construct, id
 
 	return nil
 }
-

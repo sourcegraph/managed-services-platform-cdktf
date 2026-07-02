@@ -12,9 +12,9 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutput
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Critical() interface{}
-	SetCritical(val interface{})
-	CriticalInput() interface{}
+	Critical() any
+	SetCritical(val any)
+	CriticalInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ObjectId() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference
 	ObjectIdInput() *GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 	// Experimental.
@@ -48,7 +48,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutput
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutput
 	PutObjectId(value *GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtens
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) Critical() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) Critical() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"critical",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) CriticalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) CriticalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"criticalInput",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	return returns
 }
 
-
 func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetCritical(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetCritical(val any) {
 	if err := j.validateSetCriticalParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -513,20 +512,20 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 	_jsii_.InvokeVoid(
 		g,
 		"putObjectId",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalEx
 
 	return returns
 }
-

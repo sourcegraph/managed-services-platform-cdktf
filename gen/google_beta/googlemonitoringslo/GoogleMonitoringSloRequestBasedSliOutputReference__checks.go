@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleMonitoringSloRequestBasedSliOutputReferenceParameters(terr
 
 	return nil
 }
-

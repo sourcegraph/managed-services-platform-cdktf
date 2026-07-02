@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewri
 
 	return nil
 }
-

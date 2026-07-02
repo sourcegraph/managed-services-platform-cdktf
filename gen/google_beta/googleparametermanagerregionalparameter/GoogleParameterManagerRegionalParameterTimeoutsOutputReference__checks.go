@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleParameterManagerRegionalParameterTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameterTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleParameterManagerRegionalParameterTimeoutsOutputReferencePa
 
 	return nil
 }
-

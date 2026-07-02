@@ -6,9 +6,9 @@ import (
 
 type GoogleStorageBucketObjectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleStorageBucketObjectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the containing bucket.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object#bucket GoogleStorageBucketObject#bucket}
@@ -66,11 +66,11 @@ type GoogleStorageBucketObjectConfig struct {
 	// Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object#event_based_hold GoogleStorageBucketObject#event_based_hold}
-	EventBasedHold interface{} `field:"optional" json:"eventBasedHold" yaml:"eventBasedHold"`
+	EventBasedHold any `field:"optional" json:"eventBasedHold" yaml:"eventBasedHold"`
 	// Flag to set empty Content-Type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object#force_empty_content_type GoogleStorageBucketObject#force_empty_content_type}
-	ForceEmptyContentType interface{} `field:"optional" json:"forceEmptyContentType" yaml:"forceEmptyContentType"`
+	ForceEmptyContentType any `field:"optional" json:"forceEmptyContentType" yaml:"forceEmptyContentType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object#id GoogleStorageBucketObject#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -109,10 +109,9 @@ type GoogleStorageBucketObjectConfig struct {
 	// While this flag is set to true, the object is protected against deletion and overwrites.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object#temporary_hold GoogleStorageBucketObject#temporary_hold}
-	TemporaryHold interface{} `field:"optional" json:"temporaryHold" yaml:"temporaryHold"`
+	TemporaryHold any `field:"optional" json:"temporaryHold" yaml:"temporaryHold"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object#timeouts GoogleStorageBucketObject#timeouts}
 	Timeouts *GoogleStorageBucketObjectTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

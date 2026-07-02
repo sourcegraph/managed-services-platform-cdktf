@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleWorkstationsWorkstationConfigEphemeralDirectoriesOutputRef
 
 	return nil
 }
-

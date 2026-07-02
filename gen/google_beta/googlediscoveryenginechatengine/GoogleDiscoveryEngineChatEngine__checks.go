@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleDiscoveryEngineChatEngine_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleDiscoveryEngineChatEngine_IsConstructParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineChatEngine_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleDiscoveryEngineChatEngine_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleDiscoveryEngineChatEngine_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineChatEngine_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleDiscoveryEngineChatEngine_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleDiscoveryEngineChatEngine_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineChatEngine_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetCollectionIdParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -439,7 +439,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,4 +503,3 @@ func validateNewGoogleDiscoveryEngineChatEngineParameters(scope constructs.Const
 
 	return nil
 }
-

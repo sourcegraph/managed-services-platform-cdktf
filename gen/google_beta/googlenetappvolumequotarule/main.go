@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappVolumeQuotaRule.GoogleNetappVolumeQuotaRule",
-		reflect.TypeOf((*GoogleNetappVolumeQuotaRule)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappVolumeQuotaRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeName", GoGetter: "VolumeName"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeNameInput", GoGetter: "VolumeNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappVolumeQuotaRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappVolumeQuotaRule.GoogleNetappVolumeQuotaRuleConfig",
-		reflect.TypeOf((*GoogleNetappVolumeQuotaRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappVolumeQuotaRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappVolumeQuotaRule.GoogleNetappVolumeQuotaRuleTimeouts",
-		reflect.TypeOf((*GoogleNetappVolumeQuotaRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappVolumeQuotaRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappVolumeQuotaRule.GoogleNetappVolumeQuotaRuleTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetappVolumeQuotaRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappVolumeQuotaRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

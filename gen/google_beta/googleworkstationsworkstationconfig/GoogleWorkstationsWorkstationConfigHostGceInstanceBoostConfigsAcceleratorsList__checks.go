@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAc
 
 	return nil
 }
-

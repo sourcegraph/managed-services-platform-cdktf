@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOut
 
 	return nil
 }
-

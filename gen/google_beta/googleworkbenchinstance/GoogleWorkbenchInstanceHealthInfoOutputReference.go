@@ -12,9 +12,9 @@ type GoogleWorkbenchInstanceHealthInfoOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,7 +40,7 @@ type GoogleWorkbenchInstanceHealthInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,7 +63,7 @@ type GoogleWorkbenchInstanceHealthInfoOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,8 +76,8 @@ type jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,7 +146,6 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewGoogleWorkbenchInstanceHealthInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceHealthInfoOutputReference {
 	_init_.Initialize()
 
@@ -157,7 +156,7 @@ func NewGoogleWorkbenchInstanceHealthInfoOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -169,12 +168,12 @@ func NewGoogleWorkbenchInstanceHealthInfoOutputReference_Override(g GoogleWorkbe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -185,7 +184,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetInternalValue(val *GoogleWorkbenchInstanceHealthInfo) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) SetInternalValue(val *GoogleWorkbenchInstanceHealthInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,16 +241,16 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -267,7 +266,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -283,7 +282,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -299,7 +298,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,23 +407,23 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -443,4 +442,3 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) ToString() 
 
 	return returns
 }
-

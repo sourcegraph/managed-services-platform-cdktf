@@ -1,6 +1,5 @@
 package googleprivatecacertificatetemplate
 
-
 type GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage struct {
 	// base_key_usage block.
 	//
@@ -13,6 +12,5 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage struct {
 	// unknown_extended_key_usages block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#unknown_extended_key_usages GooglePrivatecaCertificateTemplate#unknown_extended_key_usages}
-	UnknownExtendedKeyUsages interface{} `field:"optional" json:"unknownExtendedKeyUsages" yaml:"unknownExtendedKeyUsages"`
+	UnknownExtendedKeyUsages any `field:"optional" json:"unknownExtendedKeyUsages" yaml:"unknownExtendedKeyUsages"`
 }
-

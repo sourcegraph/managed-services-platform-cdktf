@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleServiceDirectoryServiceIamBinding_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleServiceDirectoryServiceIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleServiceDirectoryServiceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleServiceDirectoryServiceIamBinding_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleServiceDirectoryServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleServiceDirectoryServiceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleServiceDirectoryServiceIamBinding_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleServiceDirectoryServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleServiceDirectoryServiceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleServiceDirectoryServiceIamBinding_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetNameParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleServiceDirectoryServiceIamBindingParameters(scope construc
 
 	return nil
 }
-

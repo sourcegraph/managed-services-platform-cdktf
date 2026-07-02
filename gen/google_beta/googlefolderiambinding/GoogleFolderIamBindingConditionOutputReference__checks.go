@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFolderIamBindingConditionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleFolderIamBindingConditionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

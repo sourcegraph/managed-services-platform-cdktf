@@ -1,6 +1,5 @@
 package googleworkstationsworkstationconfig
 
-
 type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs struct {
 	// The id to be used for the boost config.
 	//
@@ -12,7 +11,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workstations_workstation_config#accelerators GoogleWorkstationsWorkstationConfigA#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// Size of the boot disk in GB. The minimum boot disk size is '30' GB. Defaults to '50' GB.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workstations_workstation_config#boot_disk_size_gb GoogleWorkstationsWorkstationConfigA#boot_disk_size_gb}
@@ -22,7 +21,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs struct {
 	// See https://cloud.google.com/workstations/docs/reference/rest/v1beta/projects.locations.workstationClusters.workstationConfigs#GceInstance.FIELDS.enable_nested_virtualization
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workstations_workstation_config#enable_nested_virtualization GoogleWorkstationsWorkstationConfigA#enable_nested_virtualization}
-	EnableNestedVirtualization interface{} `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
+	EnableNestedVirtualization any `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
 	// The type of machine that boosted VM instances will use—for example, e2-standard-4.
 	//
 	// For more information about machine types that Cloud Workstations supports, see the list of available machine types https://cloud.google.com/workstations/docs/available-machine-types. Defaults to e2-standard-4.
@@ -34,4 +33,3 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workstations_workstation_config#pool_size GoogleWorkstationsWorkstationConfigA#pool_size}
 	PoolSize *float64 `field:"optional" json:"poolSize" yaml:"poolSize"`
 }
-

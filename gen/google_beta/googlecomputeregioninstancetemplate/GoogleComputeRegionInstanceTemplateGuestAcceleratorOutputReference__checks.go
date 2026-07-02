@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReferen
 
 	return nil
 }
-

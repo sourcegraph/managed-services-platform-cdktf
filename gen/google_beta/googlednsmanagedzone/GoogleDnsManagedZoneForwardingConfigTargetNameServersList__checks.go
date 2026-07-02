@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDnsManagedZoneForwardingConfigTargetNameServersListParamet
 
 	return nil
 }
-

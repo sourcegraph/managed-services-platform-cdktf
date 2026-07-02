@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleContainerAzureClusterAuthorizationAdminGroupsOutputReferen
 
 	return nil
 }
-

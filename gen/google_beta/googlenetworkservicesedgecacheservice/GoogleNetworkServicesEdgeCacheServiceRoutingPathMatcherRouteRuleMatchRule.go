@@ -1,6 +1,5 @@
 package googlenetworkservicesedgecacheservice
 
-
 type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRule struct {
 	// For satisfying the matchRule condition, the path of the request must exactly match the value specified in fullPathMatch after removing any query parameters and anchor that may be part of the original URL.
 	//
@@ -9,11 +8,11 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRule s
 	// header_match block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#header_match GoogleNetworkServicesEdgeCacheService#header_match}
-	HeaderMatch interface{} `field:"optional" json:"headerMatch" yaml:"headerMatch"`
+	HeaderMatch any `field:"optional" json:"headerMatch" yaml:"headerMatch"`
 	// Specifies that prefixMatch and fullPathMatch matches are case sensitive.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#ignore_case GoogleNetworkServicesEdgeCacheService#ignore_case}
-	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
+	IgnoreCase any `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// For satisfying the matchRule condition, the path of the request must match the wildcard pattern specified in pathTemplateMatch after removing any query parameters and anchor that may be part of the original URL.
 	//
 	// pathTemplateMatch must be between 1 and 255 characters
@@ -32,6 +31,5 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRule s
 	// query_parameter_match block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#query_parameter_match GoogleNetworkServicesEdgeCacheService#query_parameter_match}
-	QueryParameterMatch interface{} `field:"optional" json:"queryParameterMatch" yaml:"queryParameterMatch"`
+	QueryParameterMatch any `field:"optional" json:"queryParameterMatch" yaml:"queryParameterMatch"`
 }
-

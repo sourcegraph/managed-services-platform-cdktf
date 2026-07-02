@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
-		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcareFhirStoreIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcareFhirStoreIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberCondition",
-		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcareFhirStoreIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcareFhirStoreIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcareFhirStoreIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConfig",
-		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcareFhirStoreIamMemberConfig](),
 	)
 }

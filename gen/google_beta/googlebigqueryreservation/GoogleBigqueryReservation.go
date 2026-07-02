@@ -20,15 +20,15 @@ type GoogleBigqueryReservation interface {
 	SetConcurrency(val *float64)
 	ConcurrencyInput() *float64
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,9 +47,9 @@ type GoogleBigqueryReservation interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreIdleSlots() interface{}
-	SetIgnoreIdleSlots(val interface{})
-	IgnoreIdleSlotsInput() interface{}
+	IgnoreIdleSlots() any
+	SetIgnoreIdleSlots(val any)
+	IgnoreIdleSlotsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -72,11 +72,11 @@ type GoogleBigqueryReservation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicationStatus() GoogleBigqueryReservationReplicationStatusList
 	SecondaryLocation() *string
 	SetSecondaryLocation(val *string)
@@ -87,18 +87,18 @@ type GoogleBigqueryReservation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleBigqueryReservationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type GoogleBigqueryReservation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type GoogleBigqueryReservation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type GoogleBigqueryReservation interface {
 	ResetProject()
 	ResetSecondaryLocation()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBigqueryReservation
@@ -217,8 +217,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) ConcurrencyInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) IgnoreIdleSlots() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) IgnoreIdleSlots() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreIdleSlots",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) IgnoreIdleSlots() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) IgnoreIdleSlotsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) IgnoreIdleSlotsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreIdleSlotsInput",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_GoogleBigqueryReservation) Timeouts() GoogleBigqueryReservati
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryReservation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -576,7 +576,6 @@ func (j *jsiiProxy_GoogleBigqueryReservation) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) GoogleBigqueryReservation {
@@ -589,7 +588,7 @@ func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryReservation.GoogleBigqueryReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewGoogleBigqueryReservation_Override(g GoogleBigqueryReservation, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryReservation.GoogleBigqueryReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetConcurrency(val *float64) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetConcurrency(val *float64) {
 	if err := j.validateSetConcurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetConcurrency(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetEdition(val *string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetEdition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetIgnoreIdleSlots(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetIgnoreIdleSlots(val any) {
 	if err := j.validateSetIgnoreIdleSlotsParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetIgnoreIdleSlots(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetName(val *string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -741,7 +740,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetSecondaryLocation(val *string) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetSecondaryLocation(val *string) {
 	if err := j.validateSetSecondaryLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetSecondaryLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation)SetSlotCapacity(val *float64) {
+func (j *jsiiProxy_GoogleBigqueryReservation) SetSlotCapacity(val *float64) {
 	if err := j.validateSetSlotCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func GoogleBigqueryReservation_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func GoogleBigqueryReservation_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBigqueryReservation_IsConstruct(x interface{}) *bool {
+func GoogleBigqueryReservation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryReservation_IsConstructParameters(x); err != nil {
@@ -821,7 +820,7 @@ func GoogleBigqueryReservation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func GoogleBigqueryReservation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryReservation_IsTerraformElement(x interface{}) *bool {
+func GoogleBigqueryReservation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryReservation_IsTerraformElementParameters(x); err != nil {
@@ -840,7 +839,7 @@ func GoogleBigqueryReservation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func GoogleBigqueryReservation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryReservation_IsTerraformResource(x interface{}) *bool {
+func GoogleBigqueryReservation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryReservation_IsTerraformResourceParameters(x); err != nil {
@@ -859,7 +858,7 @@ func GoogleBigqueryReservation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -884,31 +883,31 @@ func (g *jsiiProxy_GoogleBigqueryReservation) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBigqueryReservation) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,15 +1035,15 @@ func (g *jsiiProxy_GoogleBigqueryReservation) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryReservation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1063,7 +1062,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,18 +1089,18 @@ func (g *jsiiProxy_GoogleBigqueryReservation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBigqueryReservation) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) PutAutoscale(value *GoogleBigquery
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoscale",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (g *jsiiProxy_GoogleBigqueryReservation) PutTimeouts(value *GoogleBigqueryR
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1229,8 +1228,8 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryReservation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1242,8 +1241,8 @@ func (g *jsiiProxy_GoogleBigqueryReservation) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryReservation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1255,8 +1254,8 @@ func (g *jsiiProxy_GoogleBigqueryReservation) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryReservation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1268,8 +1267,8 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryReservation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1294,8 +1293,8 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryReservation) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryReservation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1306,4 +1305,3 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ToTerraform() interface{} {
 
 	return returns
 }
-

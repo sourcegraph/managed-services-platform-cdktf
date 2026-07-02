@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleDnsRecordSetRoutingPolicyWrrOutputReferenceParameters(terr
 
 	return nil
 }
-

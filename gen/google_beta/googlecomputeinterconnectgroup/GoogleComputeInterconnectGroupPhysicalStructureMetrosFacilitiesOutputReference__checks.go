@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFaciliti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesO
 
 	return nil
 }
-

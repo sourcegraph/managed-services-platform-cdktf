@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfig
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOauth2Clien
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCredentialsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDatastreamConnectionProfileSalesforceProfileOauth2ClientCr
 
 	return nil
 }
-

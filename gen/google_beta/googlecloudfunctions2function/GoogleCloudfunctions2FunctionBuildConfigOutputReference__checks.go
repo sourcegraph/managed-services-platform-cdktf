@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -279,4 +279,3 @@ func validateNewGoogleCloudfunctions2FunctionBuildConfigOutputReferenceParameter
 
 	return nil
 }
-

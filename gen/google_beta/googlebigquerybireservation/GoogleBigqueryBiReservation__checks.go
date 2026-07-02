@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryBiReservation) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryBiReservation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryBiReservation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryBiReservation) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryBiReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryBiReservation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleBigqueryBiReservation) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryBiReservation) validatePutPreferredTablesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryBiReservation) validatePutPreferredTablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleBigqueryBiReservation_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleBigqueryBiReservation_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryBiReservation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleBigqueryBiReservation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleBigqueryBiReservation_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryBiReservation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleBigqueryBiReservation_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleBigqueryBiReservation_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryBiReservation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleBigqueryBiReservation_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -480,4 +480,3 @@ func validateNewGoogleBigqueryBiReservationParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validatePutDestinationsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validatePutDestinationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validateSetOriginalDestinationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) validateSetOriginalDestinationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewGoogleNetworkServicesTcpRouteRulesActionOutputReferenceParameter
 
 	return nil
 }
-

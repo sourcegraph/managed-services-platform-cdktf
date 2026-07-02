@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingRuntimeDataOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingRuntimeDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingRuntimeDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIntegrationConnectorsConnectionEventingRuntimeDataOutputRe
 
 	return nil
 }
-

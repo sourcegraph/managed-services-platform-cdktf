@@ -1,6 +1,5 @@
 package googlecloudrunv2workerpool
 
-
 type GoogleCloudRunV2WorkerPoolBinaryAuthorization struct {
 	// If present, indicates to use Breakglass using this justification.
 	//
@@ -15,6 +14,5 @@ type GoogleCloudRunV2WorkerPoolBinaryAuthorization struct {
 	// If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool#use_default GoogleCloudRunV2WorkerPool#use_default}
-	UseDefault interface{} `field:"optional" json:"useDefault" yaml:"useDefault"`
+	UseDefault any `field:"optional" json:"useDefault" yaml:"useDefault"`
 }
-

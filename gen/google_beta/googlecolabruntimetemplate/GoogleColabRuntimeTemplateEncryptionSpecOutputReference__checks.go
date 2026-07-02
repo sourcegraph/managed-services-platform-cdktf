@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleColabRuntimeTemplateEncryptionSpecOutputReferenceParameter
 
 	return nil
 }
-

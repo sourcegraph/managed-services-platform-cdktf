@@ -15,15 +15,15 @@ type GoogleDataLossPreventionJobTrigger interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,35 +64,35 @@ type GoogleDataLossPreventionJobTrigger interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDataLossPreventionJobTriggerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TriggerId() *string
 	SetTriggerId(val *string)
 	TriggerIdInput() *string
 	Triggers() GoogleDataLossPreventionJobTriggerTriggersList
-	TriggersInput() interface{}
+	TriggersInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type GoogleDataLossPreventionJobTrigger interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type GoogleDataLossPreventionJobTrigger interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,7 +131,7 @@ type GoogleDataLossPreventionJobTrigger interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutInspectJob(value *GoogleDataLossPreventionJobTriggerInspectJob)
 	PutTimeouts(value *GoogleDataLossPreventionJobTriggerTimeouts)
-	PutTriggers(value interface{})
+	PutTriggers(value any)
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
@@ -142,17 +142,17 @@ type GoogleDataLossPreventionJobTrigger interface {
 	ResetStatus()
 	ResetTimeouts()
 	ResetTriggerId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataLossPreventionJobTrigger
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Timeouts() GoogleDataLoss
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Triggers() GoogleDataLoss
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TriggersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TriggersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"triggersInput",
@@ -540,7 +540,6 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
 func NewGoogleDataLossPreventionJobTrigger(scope constructs.Construct, id *string, config *GoogleDataLossPreventionJobTriggerConfig) GoogleDataLossPreventionJobTrigger {
 	_init_.Initialize()
@@ -552,7 +551,7 @@ func NewGoogleDataLossPreventionJobTrigger(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -565,12 +564,12 @@ func NewGoogleDataLossPreventionJobTrigger_Override(g GoogleDataLossPreventionJo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDisplayName(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetParent(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetStatus(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetTriggerId(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) SetTriggerId(val *string) {
 	if err := j.validateSetTriggerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func GoogleDataLossPreventionJobTrigger_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func GoogleDataLossPreventionJobTrigger_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataLossPreventionJobTrigger_IsConstruct(x interface{}) *bool {
+func GoogleDataLossPreventionJobTrigger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataLossPreventionJobTrigger_IsConstructParameters(x); err != nil {
@@ -751,7 +750,7 @@ func GoogleDataLossPreventionJobTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func GoogleDataLossPreventionJobTrigger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataLossPreventionJobTrigger_IsTerraformElement(x interface{}) *bool {
+func GoogleDataLossPreventionJobTrigger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataLossPreventionJobTrigger_IsTerraformElementParameters(x); err != nil {
@@ -770,7 +769,7 @@ func GoogleDataLossPreventionJobTrigger_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func GoogleDataLossPreventionJobTrigger_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func GoogleDataLossPreventionJobTrigger_IsTerraformResource(x interface{}) *bool {
+func GoogleDataLossPreventionJobTrigger_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataLossPreventionJobTrigger_IsTerraformResourceParameters(x); err != nil {
@@ -789,7 +788,7 @@ func GoogleDataLossPreventionJobTrigger_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,31 +813,31 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,15 +965,15 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -993,7 +992,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) InterpolationForAttribute
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,18 +1019,18 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutInspectJob(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putInspectJob",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1075,18 +1074,18 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutTimeouts(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutTriggers(value interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutTriggers(value any) {
 	if err := g.validatePutTriggersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTriggers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,8 +1153,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetTriggerId() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1167,8 +1166,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeAttributes() *m
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1180,8 +1179,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeHclAttributes()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1193,8 +1192,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToHclTerraform() interfac
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1219,8 +1218,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1231,4 +1230,3 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToTerraform() interface{}
 
 	return returns
 }
-

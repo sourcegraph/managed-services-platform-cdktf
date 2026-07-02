@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) validateInte
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) validatePutDefaultKeySpecsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) validatePutDefaultKeySpecsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGoogleDnsManagedZoneDnssecConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

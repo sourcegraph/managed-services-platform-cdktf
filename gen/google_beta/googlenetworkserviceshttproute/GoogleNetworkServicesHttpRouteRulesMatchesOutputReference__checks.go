@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validatePutHeadersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validatePutHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validatePutQueryParametersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validatePutQueryParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,7 +233,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validateSetIgnoreCaseParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validateSetIgnoreCaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -328,4 +328,3 @@ func validateNewGoogleNetworkServicesHttpRouteRulesMatchesOutputReferenceParamet
 
 	return nil
 }
-

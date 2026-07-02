@@ -6,9 +6,9 @@ import (
 
 type GoogleNetworkServicesEdgeCacheKeysetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleNetworkServicesEdgeCacheKeysetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource;
 	//
 	// provided by the client when the resource is created.
@@ -48,7 +48,7 @@ type GoogleNetworkServicesEdgeCacheKeysetConfig struct {
 	// public_key block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_keyset#public_key GoogleNetworkServicesEdgeCacheKeyset#public_key}
-	PublicKey interface{} `field:"optional" json:"publicKey" yaml:"publicKey"`
+	PublicKey any `field:"optional" json:"publicKey" yaml:"publicKey"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_keyset#timeouts GoogleNetworkServicesEdgeCacheKeyset#timeouts}
@@ -56,6 +56,5 @@ type GoogleNetworkServicesEdgeCacheKeysetConfig struct {
 	// validation_shared_keys block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_keyset#validation_shared_keys GoogleNetworkServicesEdgeCacheKeyset#validation_shared_keys}
-	ValidationSharedKeys interface{} `field:"optional" json:"validationSharedKeys" yaml:"validationSharedKeys"`
+	ValidationSharedKeys any `field:"optional" json:"validationSharedKeys" yaml:"validationSharedKeys"`
 }
-

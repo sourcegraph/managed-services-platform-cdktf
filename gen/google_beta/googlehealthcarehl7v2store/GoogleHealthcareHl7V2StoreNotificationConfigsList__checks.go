@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleHealthcareHl7V2StoreNotificationConfigsListParameters(terr
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleSecretManagerRegionalSecretConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleSecretManagerRegionalSecretConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the regional secret. eg us-central1.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret#location GoogleSecretManagerRegionalSecret#location}
@@ -59,7 +59,7 @@ type GoogleSecretManagerRegionalSecretConfig struct {
 	// or 'terraform destroy' that would delete the federation will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret#deletion_protection GoogleSecretManagerRegionalSecret#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Timestamp in UTC when the regional secret is scheduled to expire.
 	//
 	// This is always provided on
@@ -106,7 +106,7 @@ type GoogleSecretManagerRegionalSecretConfig struct {
 	// topics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret#topics GoogleSecretManagerRegionalSecret#topics}
-	Topics interface{} `field:"optional" json:"topics" yaml:"topics"`
+	Topics any `field:"optional" json:"topics" yaml:"topics"`
 	// The TTL for the regional secret.
 	//
 	// A duration in seconds with up to nine fractional digits,
@@ -136,4 +136,3 @@ type GoogleSecretManagerRegionalSecretConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret#version_destroy_ttl GoogleSecretManagerRegionalSecret#version_destroy_ttl}
 	VersionDestroyTtl *string `field:"optional" json:"versionDestroyTtl" yaml:"versionDestroyTtl"`
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAncho
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsL
 
 	return nil
 }
-

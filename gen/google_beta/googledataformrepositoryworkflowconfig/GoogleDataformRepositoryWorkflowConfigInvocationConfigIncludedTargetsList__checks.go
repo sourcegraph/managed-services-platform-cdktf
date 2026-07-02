@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigInclude
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTa
 
 	return nil
 }
-

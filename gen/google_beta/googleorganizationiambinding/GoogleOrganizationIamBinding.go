@@ -17,15 +17,15 @@ type GoogleOrganizationIamBinding interface {
 	Condition() GoogleOrganizationIamBindingConditionOutputReference
 	ConditionInput() *GoogleOrganizationIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type GoogleOrganizationIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GoogleOrganizationIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleOrganizationIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type GoogleOrganizationIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleOrganizationIamBinding
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) ConditionInput() *GoogleOrganiz
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOrganizationIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleOrganizationIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOrganizationIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleOrganizationIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOrganizationIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleOrganizationIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_organization_iam_binding google_organization_iam_binding} Resource.
 func NewGoogleOrganizationIamBinding(scope constructs.Construct, id *string, config *GoogleOrganizationIamBindingConfig) GoogleOrganizationIamBinding {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewGoogleOrganizationIamBinding(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewGoogleOrganizationIamBinding_Override(g GoogleOrganizationIamBinding, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetOrgId(val *string) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleOrganizationIamBinding)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GoogleOrganizationIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func GoogleOrganizationIamBinding_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func GoogleOrganizationIamBinding_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleOrganizationIamBinding_IsConstruct(x interface{}) *bool {
+func GoogleOrganizationIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOrganizationIamBinding_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func GoogleOrganizationIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func GoogleOrganizationIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleOrganizationIamBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleOrganizationIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOrganizationIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func GoogleOrganizationIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func GoogleOrganizationIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleOrganizationIamBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleOrganizationIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOrganizationIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func GoogleOrganizationIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleOrganizationIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOrganizationIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOrganizationIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleOrganizationIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) PutCondition(value *GoogleOrgan
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) ResetOverrideLogicalId() {
 	)
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleOrganizationIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -953,8 +952,8 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleOrganizationIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -966,8 +965,8 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOrganizationIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -979,8 +978,8 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOrganizationIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1005,8 +1004,8 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrganizationIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOrganizationIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1017,4 +1016,3 @@ func (g *jsiiProxy_GoogleOrganizationIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,7 +28,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HeaderOverrides() GoogleCloudTasksQueueHttpTargetHeaderOverridesList
-	HeaderOverridesInput() interface{}
+	HeaderOverridesInput() any
 	HttpMethod() *string
 	SetHttpMethod(val *string)
 	HttpMethodInput() *string
@@ -51,7 +51,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHeaderOverrides(value interface{})
+	PutHeaderOverrides(value any)
 	PutOauthToken(value *GoogleCloudTasksQueueHttpTargetOauthToken)
 	PutOidcToken(value *GoogleCloudTasksQueueHttpTargetOidcToken)
 	PutUriOverride(value *GoogleCloudTasksQueueHttpTargetUriOverride)
@@ -83,7 +83,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	ResetUriOverride()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) HeaderOverrid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) HeaderOverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) HeaderOverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headerOverridesInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) UriOverrideIn
 	return returns
 }
 
-
 func NewGoogleCloudTasksQueueHttpTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudTasksQueueHttpTargetOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleCloudTasksQueueHttpTargetOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleCloudTasksQueueHttpTargetOutputReference_Override(g GoogleCloudTas
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetHttpMethod(val *string) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) SetHttpMethod(val *string) {
 	if err := j.validateSetHttpMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetHttpMethod(
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetInternalValue(val *GoogleCloudTasksQueueHttpTarget) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) SetInternalValue(val *GoogleCloudTasksQueueHttpTarget) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,16 +372,16 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,21 +538,21 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) PutHeaderOverrides(value interface{}) {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) PutHeaderOverrides(value any) {
 	if err := g.validatePutHeaderOverridesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putHeaderOverrides",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -564,7 +563,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) PutOauthToken
 	_jsii_.InvokeVoid(
 		g,
 		"putOauthToken",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,7 +574,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) PutOidcToken(
 	_jsii_.InvokeVoid(
 		g,
 		"putOidcToken",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) PutUriOverrid
 	_jsii_.InvokeVoid(
 		g,
 		"putUriOverride",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ResetUriOverr
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ToString() *s
 
 	return returns
 }
-

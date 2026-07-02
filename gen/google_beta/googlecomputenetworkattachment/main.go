@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachment",
-		reflect.TypeOf((*GoogleComputeNetworkAttachment)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachmentConfig",
-		reflect.TypeOf((*GoogleComputeNetworkAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachmentConnectionEndpoints",
-		reflect.TypeOf((*GoogleComputeNetworkAttachmentConnectionEndpoints)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachmentConnectionEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachmentConnectionEndpointsList",
-		reflect.TypeOf((*GoogleComputeNetworkAttachmentConnectionEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachmentConnectionEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkAttachmentConnectionEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachmentConnectionEndpointsOutputReference",
-		reflect.TypeOf((*GoogleComputeNetworkAttachmentConnectionEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachmentConnectionEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkAttachmentConnectionEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachmentTimeouts",
-		reflect.TypeOf((*GoogleComputeNetworkAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkAttachment.GoogleComputeNetworkAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeNetworkAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

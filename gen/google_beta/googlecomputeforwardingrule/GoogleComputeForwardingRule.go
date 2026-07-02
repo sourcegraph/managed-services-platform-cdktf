@@ -12,15 +12,15 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
 type GoogleComputeForwardingRule interface {
 	cdktf.TerraformResource
-	AllowGlobalAccess() interface{}
-	SetAllowGlobalAccess(val interface{})
-	AllowGlobalAccessInput() interface{}
-	AllowPscGlobalAccess() interface{}
-	SetAllowPscGlobalAccess(val interface{})
-	AllowPscGlobalAccessInput() interface{}
-	AllPorts() interface{}
-	SetAllPorts(val interface{})
-	AllPortsInput() interface{}
+	AllowGlobalAccess() any
+	SetAllowGlobalAccess(val any)
+	AllowGlobalAccessInput() any
+	AllowPscGlobalAccess() any
+	SetAllowPscGlobalAccess(val any)
+	AllowPscGlobalAccessInput() any
+	AllPorts() any
+	SetAllPorts(val any)
+	AllPortsInput() any
 	BackendService() *string
 	SetBackendService(val *string)
 	BackendServiceInput() *string
@@ -28,15 +28,15 @@ type GoogleComputeForwardingRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,9 +70,9 @@ type GoogleComputeForwardingRule interface {
 	IpVersion() *string
 	SetIpVersion(val *string)
 	IpVersionInput() *string
-	IsMirroringCollector() interface{}
-	SetIsMirroringCollector(val interface{})
-	IsMirroringCollectorInput() interface{}
+	IsMirroringCollector() any
+	SetIsMirroringCollector(val any)
+	IsMirroringCollectorInput() any
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -93,9 +93,9 @@ type GoogleComputeForwardingRule interface {
 	NetworkTier() *string
 	SetNetworkTier(val *string)
 	NetworkTierInput() *string
-	NoAutomateDnsZone() interface{}
-	SetNoAutomateDnsZone(val interface{})
-	NoAutomateDnsZoneInput() interface{}
+	NoAutomateDnsZone() any
+	SetNoAutomateDnsZone(val any)
+	NoAutomateDnsZoneInput() any
 	// The tree node.
 	Node() constructs.Node
 	PortRange() *string
@@ -112,16 +112,16 @@ type GoogleComputeForwardingRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscConnectionId() *string
 	PscConnectionStatus() *string
 	// Experimental.
-	RawOverrides() interface{}
-	RecreateClosedPsc() interface{}
-	SetRecreateClosedPsc(val interface{})
-	RecreateClosedPscInput() interface{}
+	RawOverrides() any
+	RecreateClosedPsc() any
+	SetRecreateClosedPsc(val any)
+	RecreateClosedPscInput() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -145,18 +145,18 @@ type GoogleComputeForwardingRule interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeForwardingRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -174,7 +174,7 @@ type GoogleComputeForwardingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -186,7 +186,7 @@ type GoogleComputeForwardingRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -225,17 +225,17 @@ type GoogleComputeForwardingRule interface {
 	ResetSubnetwork()
 	ResetTarget()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeForwardingRule
@@ -243,8 +243,8 @@ type jsiiProxy_GoogleComputeForwardingRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) AllowGlobalAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) AllowGlobalAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowGlobalAccess",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) AllowGlobalAccess() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) AllowGlobalAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) AllowGlobalAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowGlobalAccessInput",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) AllowGlobalAccessInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) AllowPscGlobalAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) AllowPscGlobalAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPscGlobalAccess",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) AllowPscGlobalAccess() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) AllowPscGlobalAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) AllowPscGlobalAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPscGlobalAccessInput",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) AllowPscGlobalAccessInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) AllPorts() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) AllPorts() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allPorts",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) AllPorts() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) AllPortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) AllPortsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allPortsInput",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) IpVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) IsMirroringCollector() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) IsMirroringCollector() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMirroringCollector",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) IsMirroringCollector() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) IsMirroringCollectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) IsMirroringCollectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMirroringCollectorInput",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) NetworkTierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) NoAutomateDnsZone() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) NoAutomateDnsZone() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noAutomateDnsZone",
@@ -713,8 +713,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) NoAutomateDnsZone() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) NoAutomateDnsZoneInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) NoAutomateDnsZoneInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noAutomateDnsZoneInput",
@@ -803,8 +803,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -833,8 +833,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) PscConnectionStatus() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -843,8 +843,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPsc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPsc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recreateClosedPsc",
@@ -853,8 +853,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPsc() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPscInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPscInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recreateClosedPscInput",
@@ -1023,8 +1023,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1053,8 +1053,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) Timeouts() GoogleComputeForwardi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1062,7 +1062,6 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) GoogleComputeForwardingRule {
@@ -1075,7 +1074,7 @@ func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1088,12 +1087,12 @@ func NewGoogleComputeForwardingRule_Override(g GoogleComputeForwardingRule, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetAllowGlobalAccess(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetAllowGlobalAccess(val any) {
 	if err := j.validateSetAllowGlobalAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetAllowGlobalAccess(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetAllowPscGlobalAccess(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetAllowPscGlobalAccess(val any) {
 	if err := j.validateSetAllowPscGlobalAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetAllowPscGlobalAccess(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetAllPorts(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetAllPorts(val any) {
 	if err := j.validateSetAllPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetAllPorts(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetBackendService(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetBackendService(val *string) {
 	if err := j.validateSetBackendServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetBackendService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1186,7 +1185,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1197,7 +1196,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpAddress(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetIpAddress(val *string) {
 	if err := j.validateSetIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1208,7 +1207,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpCollection(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetIpCollection(val *string) {
 	if err := j.validateSetIpCollectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1219,7 +1218,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpCollection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpProtocol(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetIpProtocol(val *string) {
 	if err := j.validateSetIpProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1230,7 +1229,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpVersion(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetIpVersion(val *string) {
 	if err := j.validateSetIpVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1241,7 +1240,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetIsMirroringCollector(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetIsMirroringCollector(val any) {
 	if err := j.validateSetIsMirroringCollectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1252,7 +1251,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetIsMirroringCollector(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1263,7 +1262,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1274,7 +1273,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1285,7 +1284,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetLoadBalancingScheme(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1296,7 +1295,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1307,7 +1306,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetNetworkTier(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetNetworkTier(val *string) {
 	if err := j.validateSetNetworkTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1318,7 +1317,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetNetworkTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetNoAutomateDnsZone(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetNoAutomateDnsZone(val any) {
 	if err := j.validateSetNoAutomateDnsZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1329,7 +1328,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetNoAutomateDnsZone(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetPortRange(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetPortRange(val *string) {
 	if err := j.validateSetPortRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1340,7 +1339,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetPortRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetPorts(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetPorts(val *[]*string) {
 	if err := j.validateSetPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1351,7 +1350,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetPorts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1362,7 +1361,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1370,7 +1369,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1381,7 +1380,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetRecreateClosedPsc(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetRecreateClosedPsc(val any) {
 	if err := j.validateSetRecreateClosedPscParameters(val); err != nil {
 		panic(err)
 	}
@@ -1392,7 +1391,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetRecreateClosedPsc(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1403,7 +1402,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetServiceLabel(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetServiceLabel(val *string) {
 	if err := j.validateSetServiceLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1414,7 +1413,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetServiceLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetSourceIpRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetSourceIpRanges(val *[]*string) {
 	if err := j.validateSetSourceIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1425,7 +1424,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetSourceIpRanges(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetSubnetwork(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1436,7 +1435,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetSubnetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule)SetTarget(val *string) {
+func (j *jsiiProxy_GoogleComputeForwardingRule) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1459,7 +1458,7 @@ func GoogleComputeForwardingRule_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1483,7 +1482,7 @@ func GoogleComputeForwardingRule_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
+func GoogleComputeForwardingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeForwardingRule_IsConstructParameters(x); err != nil {
@@ -1494,7 +1493,7 @@ func GoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1502,7 +1501,7 @@ func GoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeForwardingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeForwardingRule_IsTerraformElementParameters(x); err != nil {
@@ -1513,7 +1512,7 @@ func GoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1521,7 +1520,7 @@ func GoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeForwardingRule_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeForwardingRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x); err != nil {
@@ -1532,7 +1531,7 @@ func GoogleComputeForwardingRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1557,31 +1556,31 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeForwardingRule) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeForwardingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1597,7 +1596,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1613,7 +1612,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1629,7 +1628,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1645,7 +1644,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1661,7 +1660,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1677,7 +1676,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1693,7 +1692,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1709,15 +1708,15 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeForwardingRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1736,7 +1735,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1749,7 +1748,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1763,18 +1762,18 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeForwardingRule) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1785,7 +1784,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1796,7 +1795,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1807,7 +1806,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) PutServiceDirectoryRegistrations
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceDirectoryRegistrations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1818,7 +1817,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) PutTimeouts(value *GoogleCompute
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2046,8 +2045,8 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeForwardingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2059,8 +2058,8 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeForwardingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2072,8 +2071,8 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeForwardingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2085,8 +2084,8 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeForwardingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2111,8 +2110,8 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeForwardingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2123,4 +2122,3 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ToTerraform() interface{} {
 
 	return returns
 }
-

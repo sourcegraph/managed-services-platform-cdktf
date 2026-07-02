@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference) validatePutItemsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewGoogleCloudRunV2ServiceTemplateVolumesSecretOutputReferenceParam
 
 	return nil
 }
-

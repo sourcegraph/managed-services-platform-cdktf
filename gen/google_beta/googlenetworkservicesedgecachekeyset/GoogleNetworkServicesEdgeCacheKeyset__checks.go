@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateOverrideLogical
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutPublicKeyParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutPublicKeyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutTimeoutsPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleNetworkServicesEdgeCacheKeyset_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleNetworkServicesEdgeCacheKeyset_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkServicesEdgeCacheKeyset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleNetworkServicesEdgeCacheKeyset_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateGoogleNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -455,7 +455,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewGoogleNetworkServicesEdgeCacheKeysetParameters(scope constructs.
 
 	return nil
 }
-

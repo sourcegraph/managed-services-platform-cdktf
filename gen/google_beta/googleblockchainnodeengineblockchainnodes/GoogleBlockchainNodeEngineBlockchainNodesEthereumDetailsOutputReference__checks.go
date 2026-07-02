@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateSetApiEnableAdminParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateSetApiEnableAdminParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateSetApiEnableDebugParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateSetApiEnableDebugParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,4 +292,3 @@ func validateNewGoogleBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRe
 
 	return nil
 }
-

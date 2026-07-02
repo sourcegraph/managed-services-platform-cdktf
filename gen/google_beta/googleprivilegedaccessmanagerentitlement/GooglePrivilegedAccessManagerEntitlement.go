@@ -19,22 +19,22 @@ type GooglePrivilegedAccessManagerEntitlement interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EligibleUsers() GooglePrivilegedAccessManagerEntitlementEligibleUsersList
-	EligibleUsersInput() interface{}
+	EligibleUsersInput() any
 	EntitlementId() *string
 	SetEntitlementId(val *string)
 	EntitlementIdInput() *string
@@ -73,30 +73,30 @@ type GooglePrivilegedAccessManagerEntitlement interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequesterJustificationConfig() GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference
 	RequesterJustificationConfigInput() *GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GooglePrivilegedAccessManagerEntitlementTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GooglePrivilegedAccessManagerEntitlement interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type GooglePrivilegedAccessManagerEntitlement interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,7 +135,7 @@ type GooglePrivilegedAccessManagerEntitlement interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdditionalNotificationTargets(value *GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets)
 	PutApprovalWorkflow(value *GooglePrivilegedAccessManagerEntitlementApprovalWorkflow)
-	PutEligibleUsers(value interface{})
+	PutEligibleUsers(value any)
 	PutPrivilegedAccess(value *GooglePrivilegedAccessManagerEntitlementPrivilegedAccess)
 	PutRequesterJustificationConfig(value *GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig)
 	PutTimeouts(value *GooglePrivilegedAccessManagerEntitlementTimeouts)
@@ -146,17 +146,17 @@ type GooglePrivilegedAccessManagerEntitlement interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GooglePrivilegedAccessManagerEntitlement
@@ -214,8 +214,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) EligibleUsers() Goo
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) EligibleUsersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) EligibleUsersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eligibleUsersInput",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Provisioners() *[]i
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) Timeouts() GooglePr
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -594,7 +594,6 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) UpdateTime() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Resource.
 func NewGooglePrivilegedAccessManagerEntitlement(scope constructs.Construct, id *string, config *GooglePrivilegedAccessManagerEntitlementConfig) GooglePrivilegedAccessManagerEntitlement {
 	_init_.Initialize()
@@ -606,7 +605,7 @@ func NewGooglePrivilegedAccessManagerEntitlement(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -619,12 +618,12 @@ func NewGooglePrivilegedAccessManagerEntitlement_Override(g GooglePrivilegedAcce
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetConnection(val interface{}) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetCount(val interface{}) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetEntitlementId(val *string) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetEntitlementId(val *string) {
 	if err := j.validateSetEntitlementIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetEntitlementId(val
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -673,7 +672,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetId(val *string) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetLocation(val *string) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetLocation(val *str
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetMaxRequestDuration(val *string) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetMaxRequestDuration(val *string) {
 	if err := j.validateSetMaxRequestDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetMaxRequestDuratio
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetParent(val *string) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetParent(val *strin
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func GooglePrivilegedAccessManagerEntitlement_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func GooglePrivilegedAccessManagerEntitlement_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GooglePrivilegedAccessManagerEntitlement_IsConstruct(x interface{}) *bool {
+func GooglePrivilegedAccessManagerEntitlement_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivilegedAccessManagerEntitlement_IsConstructParameters(x); err != nil {
@@ -794,7 +793,7 @@ func GooglePrivilegedAccessManagerEntitlement_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func GooglePrivilegedAccessManagerEntitlement_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GooglePrivilegedAccessManagerEntitlement_IsTerraformElement(x interface{}) *bool {
+func GooglePrivilegedAccessManagerEntitlement_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivilegedAccessManagerEntitlement_IsTerraformElementParameters(x); err != nil {
@@ -813,7 +812,7 @@ func GooglePrivilegedAccessManagerEntitlement_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func GooglePrivilegedAccessManagerEntitlement_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func GooglePrivilegedAccessManagerEntitlement_IsTerraformResource(x interface{}) *bool {
+func GooglePrivilegedAccessManagerEntitlement_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivilegedAccessManagerEntitlement_IsTerraformResourceParameters(x); err != nil {
@@ -832,7 +831,7 @@ func GooglePrivilegedAccessManagerEntitlement_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,31 +856,31 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetBooleanAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetListAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetNumberAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetNumberListAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetNumberMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetStringAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,15 +1008,15 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) GetStringMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1036,7 +1035,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) InterpolationForAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,18 +1062,18 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1107,7 +1106,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutAdditionalNotifi
 	_jsii_.InvokeVoid(
 		g,
 		"putAdditionalNotificationTargets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1118,18 +1117,18 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutApprovalWorkflow
 	_jsii_.InvokeVoid(
 		g,
 		"putApprovalWorkflow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutEligibleUsers(value interface{}) {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutEligibleUsers(value any) {
 	if err := g.validatePutEligibleUsersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEligibleUsers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1140,7 +1139,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutPrivilegedAccess
 	_jsii_.InvokeVoid(
 		g,
 		"putPrivilegedAccess",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1151,7 +1150,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutRequesterJustifi
 	_jsii_.InvokeVoid(
 		g,
 		"putRequesterJustificationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1162,7 +1161,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) PutTimeouts(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,8 +1205,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1219,8 +1218,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SynthesizeAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1232,8 +1231,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) SynthesizeHclAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1245,8 +1244,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToHclTerraform() in
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1271,8 +1270,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToString() *string 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1283,4 +1282,3 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) ToTerraform() inter
 
 	return returns
 }
-

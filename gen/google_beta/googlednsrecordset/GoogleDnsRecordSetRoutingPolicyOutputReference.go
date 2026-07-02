@@ -12,9 +12,9 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableGeoFencing() interface{}
-	SetEnableGeoFencing(val interface{})
-	EnableGeoFencingInput() interface{}
+	EnableGeoFencing() any
+	SetEnableGeoFencing(val any)
+	EnableGeoFencingInput() any
 	// Experimental.
 	Fqn() *string
 	Geo() GoogleDnsRecordSetRoutingPolicyGeoList
-	GeoInput() interface{}
+	GeoInput() any
 	HealthCheck() *string
 	SetHealthCheck(val *string)
 	HealthCheckInput() *string
@@ -48,11 +48,11 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Wrr() GoogleDnsRecordSetRoutingPolicyWrrList
-	WrrInput() interface{}
+	WrrInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,9 +73,9 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutGeo(value interface{})
+	PutGeo(value any)
 	PutPrimaryBackup(value *GoogleDnsRecordSetRoutingPolicyPrimaryBackup)
-	PutWrr(value interface{})
+	PutWrr(value any)
 	ResetEnableGeoFencing()
 	ResetGeo()
 	ResetHealthCheck()
@@ -83,7 +83,7 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	ResetWrr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) CreationStack
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFencing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFencing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableGeoFencing",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFencingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFencingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableGeoFencingInput",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) Geo() GoogleD
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GeoInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GeoInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"geoInput",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) Wrr() GoogleD
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) WrrInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) WrrInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"wrrInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) WrrInput() in
 	)
 	return returns
 }
-
 
 func NewGoogleDnsRecordSetRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDnsRecordSetRoutingPolicyOutputReference {
 	_init_.Initialize()
@@ -277,7 +276,7 @@ func NewGoogleDnsRecordSetRoutingPolicyOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleDnsRecordSetRoutingPolicyOutputReference_Override(g GoogleDnsRecor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetEnableGeoFencing(val interface{}) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetEnableGeoFencing(val any) {
 	if err := j.validateSetEnableGeoFencingParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetEnableGeoFe
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetHealthCheck(val *string) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetHealthCheck(val *string) {
 	if err := j.validateSetHealthCheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetHealthCheck
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetInternalValue(val *GoogleDnsRecordSetRoutingPolicy) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetInternalValue(val *GoogleDnsRecordSetRoutingPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,16 +383,16 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,21 +549,21 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutGeo(value interface{}) {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutGeo(value any) {
 	if err := g.validatePutGeoParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putGeo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,18 +574,18 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutPrimaryBac
 	_jsii_.InvokeVoid(
 		g,
 		"putPrimaryBackup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutWrr(value interface{}) {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutWrr(value any) {
 	if err := g.validatePutWrrParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putWrr",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ResetWrr() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ToString() *s
 
 	return returns
 }
-

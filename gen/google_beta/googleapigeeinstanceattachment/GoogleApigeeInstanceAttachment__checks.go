@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApigeeInstanceAttachment) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeInstanceAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApigeeInstanceAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApigeeInstanceAttachment) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeInstanceAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApigeeInstanceAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleApigeeInstanceAttachment_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleApigeeInstanceAttachment_IsConstructParameters(x interface{}) error {
+func validateGoogleApigeeInstanceAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleApigeeInstanceAttachment_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleApigeeInstanceAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApigeeInstanceAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleApigeeInstanceAttachment_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleApigeeInstanceAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApigeeInstanceAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleApigeeInstanceAttachment_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApigeeInstanceAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGoogleApigeeInstanceAttachmentParameters(scope constructs.Constr
 
 	return nil
 }
-

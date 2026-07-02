@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapHeaderActionRequestHeadersToAddList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionRequestHeadersToAddList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionRequestHeadersToAddList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeUrlMapHeaderActionRequestHeadersToAddListParameters
 
 	return nil
 }
-

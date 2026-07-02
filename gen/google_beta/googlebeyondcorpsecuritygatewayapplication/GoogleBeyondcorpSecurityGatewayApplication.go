@@ -18,15 +18,15 @@ type GoogleBeyondcorpSecurityGatewayApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,7 +36,7 @@ type GoogleBeyondcorpSecurityGatewayApplication interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EndpointMatchers() GoogleBeyondcorpSecurityGatewayApplicationEndpointMatchersList
-	EndpointMatchersInput() interface{}
+	EndpointMatchersInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,32 +63,32 @@ type GoogleBeyondcorpSecurityGatewayApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGatewayId() *string
 	SetSecurityGatewayId(val *string)
 	SecurityGatewayIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleBeyondcorpSecurityGatewayApplicationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Upstreams() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsList
-	UpstreamsInput() interface{}
+	UpstreamsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type GoogleBeyondcorpSecurityGatewayApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,16 +118,16 @@ type GoogleBeyondcorpSecurityGatewayApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEndpointMatchers(value interface{})
+	PutEndpointMatchers(value any)
 	PutTimeouts(value *GoogleBeyondcorpSecurityGatewayApplicationTimeouts)
-	PutUpstreams(value interface{})
+	PutUpstreams(value any)
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -136,17 +136,17 @@ type GoogleBeyondcorpSecurityGatewayApplication interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetUpstreams()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBeyondcorpSecurityGatewayApplication
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Connection() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) EndpointMatchers(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) EndpointMatchersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) EndpointMatchersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointMatchersInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Provisioners() *[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Timeouts() Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) Upstreams() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) UpstreamsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) UpstreamsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"upstreamsInput",
@@ -503,7 +503,6 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) UpstreamsInput() 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource.
 func NewGoogleBeyondcorpSecurityGatewayApplication(scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayApplicationConfig) GoogleBeyondcorpSecurityGatewayApplication {
@@ -516,7 +515,7 @@ func NewGoogleBeyondcorpSecurityGatewayApplication(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewGoogleBeyondcorpSecurityGatewayApplication_Override(g GoogleBeyondcorpSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetApplicationId(val *string) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetApplicationId(val *string) {
 	if err := j.validateSetApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetApplicationId(v
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetDisplayName(val
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetId(val *string) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetProject(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetProvisioners(va
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication)SetSecurityGatewayId(val *string) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SetSecurityGatewayId(val *string) {
 	if err := j.validateSetSecurityGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBeyondcorpSecurityGatewayApplication_IsConstruct(x interface{}) *bool {
+func GoogleBeyondcorpSecurityGatewayApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBeyondcorpSecurityGatewayApplication_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformElement(x interface{}) *bool {
+func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformElement(x interface{}
 }
 
 // Experimental.
-func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformResource(x interface{}) *bool {
+func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func GoogleBeyondcorpSecurityGatewayApplication_IsTerraformResource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) AddMoveTarget(mov
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ImportFrom(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) MoveFromId(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) MoveToId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,18 +1005,18 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) PutEndpointMatchers(value interface{}) {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) PutEndpointMatchers(value any) {
 	if err := g.validatePutEndpointMatchersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEndpointMatchers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1028,18 +1027,18 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) PutTimeouts(value
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) PutUpstreams(value interface{}) {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) PutUpstreams(value any) {
 	if err := g.validatePutUpstreamsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putUpstreams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1091,8 +1090,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ResetUpstreams() 
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1104,8 +1103,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SynthesizeAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1117,8 +1116,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) SynthesizeHclAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1130,8 +1129,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToHclTerraform() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1156,8 +1155,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToString() *strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1168,4 +1167,3 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) ToTerraform() int
 
 	return returns
 }
-

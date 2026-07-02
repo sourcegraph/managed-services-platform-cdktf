@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMemberConditionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleHealthcareDicomStoreIamMemberConditionOutputReferenceParam
 
 	return nil
 }
-

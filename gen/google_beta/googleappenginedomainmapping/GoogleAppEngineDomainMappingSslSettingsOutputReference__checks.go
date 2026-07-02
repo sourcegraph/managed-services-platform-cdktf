@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAppEngineDomainMappingSslSettingsOutputReferenceParameters
 
 	return nil
 }
-

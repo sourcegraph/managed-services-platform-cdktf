@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionResizeRequestStatusOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionResizeRequestStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionResizeRequestStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeRegionResizeRequestStatusOutputReferenceParameters(
 
 	return nil
 }
-

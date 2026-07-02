@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutp
 
 	return nil
 }
-

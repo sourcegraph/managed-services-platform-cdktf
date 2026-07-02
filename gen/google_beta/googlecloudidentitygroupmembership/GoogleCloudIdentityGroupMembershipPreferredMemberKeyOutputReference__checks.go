@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputRefere
 
 	return nil
 }
-

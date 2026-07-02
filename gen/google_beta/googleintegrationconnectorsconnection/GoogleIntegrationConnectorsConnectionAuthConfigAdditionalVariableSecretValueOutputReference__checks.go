@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVari
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariabl
 
 	return nil
 }
-

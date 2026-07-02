@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputR
 
 	return nil
 }
-

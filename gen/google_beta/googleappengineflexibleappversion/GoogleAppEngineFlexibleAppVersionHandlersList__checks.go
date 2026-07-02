@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionHandlersListParameters(terrafor
 
 	return nil
 }
-

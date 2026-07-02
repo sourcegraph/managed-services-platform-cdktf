@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMonitoringServiceTelemetryOutputReferenceParameters(terraf
 
 	return nil
 }
-

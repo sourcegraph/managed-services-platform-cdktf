@@ -1,11 +1,10 @@
 package googledataplexdatascan
 
-
 type GoogleDataplexDatascanDataQualitySpec struct {
 	// If set, the latest DataScan job result will be published to Dataplex Catalog.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#catalog_publishing_enabled GoogleDataplexDatascan#catalog_publishing_enabled}
-	CatalogPublishingEnabled interface{} `field:"optional" json:"catalogPublishingEnabled" yaml:"catalogPublishingEnabled"`
+	CatalogPublishingEnabled any `field:"optional" json:"catalogPublishingEnabled" yaml:"catalogPublishingEnabled"`
 	// post_scan_actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#post_scan_actions GoogleDataplexDatascan#post_scan_actions}
@@ -19,7 +18,7 @@ type GoogleDataplexDatascanDataQualitySpec struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
-	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	Rules any `field:"optional" json:"rules" yaml:"rules"`
 	// The percentage of the records to be selected from the dataset for DataScan.
 	//
 	// Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
@@ -28,4 +27,3 @@ type GoogleDataplexDatascanDataQualitySpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
 	SamplingPercent *float64 `field:"optional" json:"samplingPercent" yaml:"samplingPercent"`
 }
-

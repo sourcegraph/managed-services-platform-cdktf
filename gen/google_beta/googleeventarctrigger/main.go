@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
-		reflect.TypeOf((*GoogleEventarcTrigger)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTrigger](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTrigger{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,19 +104,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerConfig",
-		reflect.TypeOf((*GoogleEventarcTriggerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestination",
-		reflect.TypeOf((*GoogleEventarcTriggerDestination)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestination](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationCloudRunService",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationCloudRunService)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationCloudRunService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationCloudRunServiceOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationCloudRunServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationCloudRunServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerDestinationCloudRunServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationGke",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationGke)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationGke](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationGkeOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationGkeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationGkeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerDestinationGkeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -203,11 +203,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationHttpEndpoint",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationHttpEndpoint)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationHttpEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationHttpEndpointOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationHttpEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationHttpEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerDestinationHttpEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationNetworkConfig",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationNetworkConfigOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerDestinationNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,7 +279,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunction", GoGetter: "CloudFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudRunService", GoGetter: "CloudRunService"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflow", GoGetter: "Workflow"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowInput", GoGetter: "WorkflowInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,11 +331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteria",
-		reflect.TypeOf((*GoogleEventarcTriggerMatchingCriteria)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerMatchingCriteria](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList",
-		reflect.TypeOf((*GoogleEventarcTriggerMatchingCriteriaList)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerMatchingCriteriaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerMatchingCriteriaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -357,7 +357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerMatchingCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerMatchingCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -396,11 +396,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerTimeouts",
-		reflect.TypeOf((*GoogleEventarcTriggerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -441,11 +441,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerTransport",
-		reflect.TypeOf((*GoogleEventarcTriggerTransport)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerTransport](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerTransportOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerTransportOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerTransportOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerTransportOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -481,11 +481,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerTransportPubsub",
-		reflect.TypeOf((*GoogleEventarcTriggerTransportPubsub)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerTransportPubsub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTriggerTransportPubsubOutputReference",
-		reflect.TypeOf((*GoogleEventarcTriggerTransportPubsubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcTriggerTransportPubsubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -513,7 +513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcTriggerTransportPubsubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

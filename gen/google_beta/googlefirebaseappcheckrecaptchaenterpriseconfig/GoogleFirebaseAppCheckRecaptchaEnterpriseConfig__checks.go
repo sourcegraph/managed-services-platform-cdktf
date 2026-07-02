@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateAddM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateMove
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_GenerateConfigForIm
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsConstructParamete
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElementP
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaEnterpriseConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleFirebaseAppCheckRecaptchaEnterpriseConfigParameters(scope 
 
 	return nil
 }
-

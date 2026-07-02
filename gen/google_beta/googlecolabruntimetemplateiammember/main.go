@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplateIamMember.GoogleColabRuntimeTemplateIamMember",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplateIamMember.GoogleColabRuntimeTemplateIamMemberCondition",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplateIamMember.GoogleColabRuntimeTemplateIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplateIamMember.GoogleColabRuntimeTemplateIamMemberConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateIamMemberConfig](),
 	)
 }

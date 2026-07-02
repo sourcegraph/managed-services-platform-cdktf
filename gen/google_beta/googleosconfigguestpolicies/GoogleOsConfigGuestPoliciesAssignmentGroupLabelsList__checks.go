@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleOsConfigGuestPoliciesAssignmentGroupLabelsListParameters(t
 
 	return nil
 }
-

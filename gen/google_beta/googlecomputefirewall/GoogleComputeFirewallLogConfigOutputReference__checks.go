@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFirewallLogConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeFirewallLogConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleCloudRunDomainMappingTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

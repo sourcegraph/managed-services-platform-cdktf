@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeHubFleet) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeHubFleet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeHubFleet) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeHubFleet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleGkeHubFleet_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateGoogleGkeHubFleet_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeHubFleet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleGkeHubFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleGkeHubFleet_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeHubFleet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleGkeHubFleet_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleGkeHubFleet_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeHubFleet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleGkeHubFleet_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFleet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleGkeHubFleet) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFleet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleGkeHubFleet) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFleet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleGkeHubFleetParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

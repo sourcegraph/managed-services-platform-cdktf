@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateSetArchive
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleDataplexTaskNotebookOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

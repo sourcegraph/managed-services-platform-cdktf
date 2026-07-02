@@ -17,35 +17,35 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Cors() GoogleStorageBucketCorsList
-	CorsInput() interface{}
+	CorsInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomPlacementConfig() GoogleStorageBucketCustomPlacementConfigOutputReference
 	CustomPlacementConfigInput() *GoogleStorageBucketCustomPlacementConfig
-	DefaultEventBasedHold() interface{}
-	SetDefaultEventBasedHold(val interface{})
-	DefaultEventBasedHoldInput() interface{}
+	DefaultEventBasedHold() any
+	SetDefaultEventBasedHold(val any)
+	DefaultEventBasedHoldInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
-	EnableObjectRetention() interface{}
-	SetEnableObjectRetention(val interface{})
-	EnableObjectRetentionInput() interface{}
+	EnableObjectRetention() any
+	SetEnableObjectRetention(val any)
+	EnableObjectRetentionInput() any
 	Encryption() GoogleStorageBucketEncryptionOutputReference
 	EncryptionInput() *GoogleStorageBucketEncryption
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,7 +69,7 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LifecycleRule() GoogleStorageBucketLifecycleRuleList
-	LifecycleRuleInput() interface{}
+	LifecycleRuleInput() any
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -89,17 +89,17 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicAccessPrevention() *string
 	SetPublicAccessPrevention(val *string)
 	PublicAccessPreventionInput() *string
 	// Experimental.
-	RawOverrides() interface{}
-	RequesterPays() interface{}
-	SetRequesterPays(val interface{})
-	RequesterPaysInput() interface{}
+	RawOverrides() any
+	RequesterPays() any
+	SetRequesterPays(val any)
+	RequesterPaysInput() any
 	RetentionPolicy() GoogleStorageBucketRetentionPolicyOutputReference
 	RetentionPolicyInput() *GoogleStorageBucketRetentionPolicy
 	Rpo() *string
@@ -115,15 +115,15 @@ type GoogleStorageBucket interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimeCreated() *string
 	Timeouts() GoogleStorageBucketTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	UniformBucketLevelAccess() interface{}
-	SetUniformBucketLevelAccess(val interface{})
-	UniformBucketLevelAccessInput() interface{}
+	TimeoutsInput() any
+	UniformBucketLevelAccess() any
+	SetUniformBucketLevelAccess(val any)
+	UniformBucketLevelAccessInput() any
 	Updated() *string
 	Url() *string
 	Versioning() GoogleStorageBucketVersioningOutputReference
@@ -134,9 +134,9 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -154,7 +154,7 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -166,7 +166,7 @@ type GoogleStorageBucket interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -174,12 +174,12 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoclass(value *GoogleStorageBucketAutoclass)
-	PutCors(value interface{})
+	PutCors(value any)
 	PutCustomPlacementConfig(value *GoogleStorageBucketCustomPlacementConfig)
 	PutEncryption(value *GoogleStorageBucketEncryption)
 	PutHierarchicalNamespace(value *GoogleStorageBucketHierarchicalNamespace)
 	PutIpFilter(value *GoogleStorageBucketIpFilter)
-	PutLifecycleRule(value interface{})
+	PutLifecycleRule(value any)
 	PutLogging(value *GoogleStorageBucketLogging)
 	PutRetentionPolicy(value *GoogleStorageBucketRetentionPolicy)
 	PutSoftDeletePolicy(value *GoogleStorageBucketSoftDeletePolicy)
@@ -213,17 +213,17 @@ type GoogleStorageBucket interface {
 	ResetUniformBucketLevelAccess()
 	ResetVersioning()
 	ResetWebsite()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleStorageBucket
@@ -261,8 +261,8 @@ func (j *jsiiProxy_GoogleStorageBucket) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_GoogleStorageBucket) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleStorageBucket) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_GoogleStorageBucket) Cors() GoogleStorageBucketCorsList {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) CorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) CorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"corsInput",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_GoogleStorageBucket) CorsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_GoogleStorageBucket) CustomPlacementConfigInput() *GoogleStor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) DefaultEventBasedHold() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) DefaultEventBasedHold() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultEventBasedHold",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_GoogleStorageBucket) DefaultEventBasedHold() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) DefaultEventBasedHoldInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) DefaultEventBasedHoldInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultEventBasedHoldInput",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_GoogleStorageBucket) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetention() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetention() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableObjectRetention",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetention() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetentionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetentionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableObjectRetentionInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_GoogleStorageBucket) EncryptionInput() *GoogleStorageBucketEn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_GoogleStorageBucket) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_GoogleStorageBucket) LifecycleRule() GoogleStorageBucketLifec
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) LifecycleRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) LifecycleRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lifecycleRuleInput",
@@ -681,8 +681,8 @@ func (j *jsiiProxy_GoogleStorageBucket) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleStorageBucket) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -711,8 +711,8 @@ func (j *jsiiProxy_GoogleStorageBucket) PublicAccessPreventionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -721,8 +721,8 @@ func (j *jsiiProxy_GoogleStorageBucket) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) RequesterPays() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) RequesterPays() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPays",
@@ -731,8 +731,8 @@ func (j *jsiiProxy_GoogleStorageBucket) RequesterPays() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) RequesterPaysInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) RequesterPaysInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPaysInput",
@@ -851,8 +851,8 @@ func (j *jsiiProxy_GoogleStorageBucket) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleStorageBucket) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -891,8 +891,8 @@ func (j *jsiiProxy_GoogleStorageBucket) Timeouts() GoogleStorageBucketTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -901,8 +901,8 @@ func (j *jsiiProxy_GoogleStorageBucket) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"uniformBucketLevelAccess",
@@ -911,8 +911,8 @@ func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"uniformBucketLevelAccessInput",
@@ -981,7 +981,6 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
@@ -993,7 +992,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1006,12 +1005,12 @@ func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetDefaultEventBasedHold(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetDefaultEventBasedHold(val any) {
 	if err := j.validateSetDefaultEventBasedHoldParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetDefaultEventBasedHold(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetEnableObjectRetention(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetEnableObjectRetention(val any) {
 	if err := j.validateSetEnableObjectRetentionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetEnableObjectRetention(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleStorageBucket) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetId(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleStorageBucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetName(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetProject(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleStorageBucket) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1156,7 +1155,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetPublicAccessPrevention(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetPublicAccessPrevention(val *string) {
 	if err := j.validateSetPublicAccessPreventionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetPublicAccessPrevention(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetRequesterPays(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetRequesterPays(val any) {
 	if err := j.validateSetRequesterPaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetRequesterPays(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetRpo(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetRpo(val *string) {
 	if err := j.validateSetRpoParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetRpo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetStorageClass(val *string) {
+func (j *jsiiProxy_GoogleStorageBucket) SetStorageClass(val *string) {
 	if err := j.validateSetStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_GoogleStorageBucket)SetStorageClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucket)SetUniformBucketLevelAccess(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucket) SetUniformBucketLevelAccess(val any) {
 	if err := j.validateSetUniformBucketLevelAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func GoogleStorageBucket_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucket",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1258,7 +1257,7 @@ func GoogleStorageBucket_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleStorageBucket_IsConstruct(x interface{}) *bool {
+func GoogleStorageBucket_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleStorageBucket_IsConstructParameters(x); err != nil {
@@ -1269,7 +1268,7 @@ func GoogleStorageBucket_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucket",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func GoogleStorageBucket_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleStorageBucket_IsTerraformElement(x interface{}) *bool {
+func GoogleStorageBucket_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleStorageBucket_IsTerraformElementParameters(x); err != nil {
@@ -1288,7 +1287,7 @@ func GoogleStorageBucket_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucket",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1296,7 +1295,7 @@ func GoogleStorageBucket_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleStorageBucket_IsTerraformResource(x interface{}) *bool {
+func GoogleStorageBucket_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleStorageBucket_IsTerraformResourceParameters(x); err != nil {
@@ -1307,7 +1306,7 @@ func GoogleStorageBucket_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucket",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1332,31 +1331,31 @@ func (g *jsiiProxy_GoogleStorageBucket) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleStorageBucket) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleStorageBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1372,7 +1371,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1388,7 +1387,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1404,7 +1403,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1420,7 +1419,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1436,7 +1435,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1452,7 +1451,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1468,7 +1467,7 @@ func (g *jsiiProxy_GoogleStorageBucket) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1484,15 +1483,15 @@ func (g *jsiiProxy_GoogleStorageBucket) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleStorageBucket) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1511,7 +1510,7 @@ func (g *jsiiProxy_GoogleStorageBucket) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1524,7 +1523,7 @@ func (g *jsiiProxy_GoogleStorageBucket) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1538,18 +1537,18 @@ func (g *jsiiProxy_GoogleStorageBucket) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleStorageBucket) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1560,7 +1559,7 @@ func (g *jsiiProxy_GoogleStorageBucket) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1571,7 +1570,7 @@ func (g *jsiiProxy_GoogleStorageBucket) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1582,18 +1581,18 @@ func (g *jsiiProxy_GoogleStorageBucket) PutAutoclass(value *GoogleStorageBucketA
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoclass",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) PutCors(value interface{}) {
+func (g *jsiiProxy_GoogleStorageBucket) PutCors(value any) {
 	if err := g.validatePutCorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putCors",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1604,7 +1603,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutCustomPlacementConfig(value *GoogleSt
 	_jsii_.InvokeVoid(
 		g,
 		"putCustomPlacementConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1615,7 +1614,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutEncryption(value *GoogleStorageBucket
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1626,7 +1625,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutHierarchicalNamespace(value *GoogleSt
 	_jsii_.InvokeVoid(
 		g,
 		"putHierarchicalNamespace",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1637,18 +1636,18 @@ func (g *jsiiProxy_GoogleStorageBucket) PutIpFilter(value *GoogleStorageBucketIp
 	_jsii_.InvokeVoid(
 		g,
 		"putIpFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) PutLifecycleRule(value interface{}) {
+func (g *jsiiProxy_GoogleStorageBucket) PutLifecycleRule(value any) {
 	if err := g.validatePutLifecycleRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putLifecycleRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1659,7 +1658,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutLogging(value *GoogleStorageBucketLog
 	_jsii_.InvokeVoid(
 		g,
 		"putLogging",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1670,7 +1669,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutRetentionPolicy(value *GoogleStorageB
 	_jsii_.InvokeVoid(
 		g,
 		"putRetentionPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1681,7 +1680,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutSoftDeletePolicy(value *GoogleStorage
 	_jsii_.InvokeVoid(
 		g,
 		"putSoftDeletePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1692,7 +1691,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutTimeouts(value *GoogleStorageBucketTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1703,7 +1702,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutVersioning(value *GoogleStorageBucket
 	_jsii_.InvokeVoid(
 		g,
 		"putVersioning",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1714,7 +1713,7 @@ func (g *jsiiProxy_GoogleStorageBucket) PutWebsite(value *GoogleStorageBucketWeb
 	_jsii_.InvokeVoid(
 		g,
 		"putWebsite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1918,8 +1917,8 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetWebsite() {
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleStorageBucket) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1931,8 +1930,8 @@ func (g *jsiiProxy_GoogleStorageBucket) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleStorageBucket) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1944,8 +1943,8 @@ func (g *jsiiProxy_GoogleStorageBucket) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleStorageBucket) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1957,8 +1956,8 @@ func (g *jsiiProxy_GoogleStorageBucket) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleStorageBucket) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1983,8 +1982,8 @@ func (g *jsiiProxy_GoogleStorageBucket) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleStorageBucket) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1995,4 +1994,3 @@ func (g *jsiiProxy_GoogleStorageBucket) ToTerraform() interface{} {
 
 	return returns
 }
-

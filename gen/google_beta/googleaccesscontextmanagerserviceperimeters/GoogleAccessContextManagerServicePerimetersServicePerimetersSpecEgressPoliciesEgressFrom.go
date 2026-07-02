@@ -1,6 +1,5 @@
 package googleaccesscontextmanagerserviceperimeters
 
-
 type GoogleAccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFrom struct {
 	// Identities can be an individual user, service account, Google group, or third-party identity.
 	//
@@ -27,6 +26,5 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersSpecEgressPolic
 	// sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeters#sources GoogleAccessContextManagerServicePerimeters#sources}
-	Sources interface{} `field:"optional" json:"sources" yaml:"sources"`
+	Sources any `field:"optional" json:"sources" yaml:"sources"`
 }
-

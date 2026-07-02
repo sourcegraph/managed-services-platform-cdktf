@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterPeer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterPeer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutAdvertisedIpRangesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutAdvertisedIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutBfdParameters(value *Goog
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutCustomLearnedIpRangesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutCustomLearnedIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateGoogleComputeRouterPeer_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleComputeRouterPeer_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRouterPeer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateGoogleComputeRouterPeer_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleComputeRouterPeer_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRouterPeer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateGoogleComputeRouterPeer_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleComputeRouterPeer_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRouterPeer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -363,7 +363,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetAdvertiseModeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetCustomLearnedRoutePriorit
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv4Parameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv4Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv4Parameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv6Parameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv6Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -633,7 +633,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -703,7 +703,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetRouterApplianceInstancePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -723,7 +723,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroAdvertisedRoutePriori
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroCustomLearnedRoutePriorityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroCustomLearnedRoutePriorityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -761,4 +761,3 @@ func validateNewGoogleComputeRouterPeerParameters(scope constructs.Construct, id
 
 	return nil
 }
-

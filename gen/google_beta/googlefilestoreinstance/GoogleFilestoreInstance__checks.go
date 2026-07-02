@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFilestoreInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFilestoreInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutInitialReplicationParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateGoogleFilestoreInstance_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleFilestoreInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleFilestoreInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func validateGoogleFilestoreInstance_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleFilestoreInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFilestoreInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func validateGoogleFilestoreInstance_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleFilestoreInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFilestoreInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -330,7 +330,7 @@ func validateGoogleFilestoreInstance_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -363,7 +363,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDeletionProtectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -520,7 +520,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProtocolParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -608,4 +608,3 @@ func validateNewGoogleFilestoreInstanceParameters(scope constructs.Construct, id
 
 	return nil
 }
-

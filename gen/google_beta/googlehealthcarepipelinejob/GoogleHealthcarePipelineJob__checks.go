@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleHealthcarePipelineJob_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleHealthcarePipelineJob_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcarePipelineJob_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleHealthcarePipelineJob_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleHealthcarePipelineJob_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcarePipelineJob_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleHealthcarePipelineJob_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleHealthcarePipelineJob_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcarePipelineJob_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateGoogleHealthcarePipelineJob_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -386,7 +386,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetDatasetParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetDisableLineageParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetDisableLineageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetNameParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -510,4 +510,3 @@ func validateNewGoogleHealthcarePipelineJobParameters(scope constructs.Construct
 
 	return nil
 }
-

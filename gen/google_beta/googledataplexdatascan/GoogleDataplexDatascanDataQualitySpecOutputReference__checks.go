@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetCatalogPublishingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetCatalogPublishingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewGoogleDataplexDatascanDataQualitySpecOutputReferenceParameters(t
 
 	return nil
 }
-

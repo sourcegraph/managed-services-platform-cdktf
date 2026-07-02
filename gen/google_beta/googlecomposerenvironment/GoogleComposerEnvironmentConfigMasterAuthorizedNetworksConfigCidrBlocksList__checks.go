@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCid
 
 	return nil
 }
-

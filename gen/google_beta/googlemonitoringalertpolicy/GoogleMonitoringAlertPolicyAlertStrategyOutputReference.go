@@ -15,9 +15,9 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	AutoCloseInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	InternalValue() *GoogleMonitoringAlertPolicyAlertStrategy
 	SetInternalValue(val *GoogleMonitoringAlertPolicyAlertStrategy)
 	NotificationChannelStrategy() GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
-	NotificationChannelStrategyInput() interface{}
+	NotificationChannelStrategyInput() any
 	NotificationPrompts() *[]*string
 	SetNotificationPrompts(val *[]*string)
 	NotificationPromptsInput() *[]*string
@@ -50,7 +50,7 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNotificationChannelStrategy(value interface{})
+	PutNotificationChannelStrategy(value any)
 	PutNotificationRateLimit(value *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit)
 	ResetAutoClose()
 	ResetNotificationChannelStrategy()
@@ -79,7 +79,7 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	ResetNotificationRateLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Auto
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Noti
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) NotificationChannelStrategyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) NotificationChannelStrategyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationChannelStrategyInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Terr
 	return returns
 }
 
-
 func NewGoogleMonitoringAlertPolicyAlertStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyAlertStrategyOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleMonitoringAlertPolicyAlertStrategyOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleMonitoringAlertPolicyAlertStrategyOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetAutoClose(val *string) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetAutoClose(val *string) {
 	if err := j.validateSetAutoCloseParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetAu
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetInternalValue(val *GoogleMonitoringAlertPolicyAlertStrategy) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetInternalValue(val *GoogleMonitoringAlertPolicyAlertStrategy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetNotificationPrompts(val *[]*string) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetNotificationPrompts(val *[]*string) {
 	if err := j.validateSetNotificationPromptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetNo
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,16 +359,16 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,21 +525,21 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) PutNotificationChannelStrategy(value interface{}) {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) PutNotificationChannelStrategy(value any) {
 	if err := g.validatePutNotificationChannelStrategyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNotificationChannelStrategy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) PutN
 	_jsii_.InvokeVoid(
 		g,
 		"putNotificationRateLimit",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) ToSt
 
 	return returns
 }
-

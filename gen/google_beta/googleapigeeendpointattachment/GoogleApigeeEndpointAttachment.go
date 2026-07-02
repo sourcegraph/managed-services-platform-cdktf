@@ -15,16 +15,16 @@ type GoogleApigeeEndpointAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionState() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,29 +62,29 @@ type GoogleApigeeEndpointAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAttachment() *string
 	SetServiceAttachment(val *string)
 	ServiceAttachmentInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleApigeeEndpointAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleApigeeEndpointAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleApigeeEndpointAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type GoogleApigeeEndpointAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleApigeeEndpointAttachment
@@ -155,8 +155,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) ConnectionState() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) Timeouts() GoogleApigeeEndpoi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -454,7 +454,6 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource.
 func NewGoogleApigeeEndpointAttachment(scope constructs.Construct, id *string, config *GoogleApigeeEndpointAttachmentConfig) GoogleApigeeEndpointAttachment {
@@ -467,7 +466,7 @@ func NewGoogleApigeeEndpointAttachment(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApigeeEndpointAttachment.GoogleApigeeEndpointAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -480,12 +479,12 @@ func NewGoogleApigeeEndpointAttachment_Override(g GoogleApigeeEndpointAttachment
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApigeeEndpointAttachment.GoogleApigeeEndpointAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetEndpointAttachmentId(val *string) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetEndpointAttachmentId(val *string) {
 	if err := j.validateSetEndpointAttachmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetEndpointAttachmentId(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetId(val *string) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetOrgId(val *string) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEndpointAttachment)SetServiceAttachment(val *string) {
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) SetServiceAttachment(val *string) {
 	if err := j.validateSetServiceAttachmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func GoogleApigeeEndpointAttachment_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeEndpointAttachment.GoogleApigeeEndpointAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func GoogleApigeeEndpointAttachment_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleApigeeEndpointAttachment_IsConstruct(x interface{}) *bool {
+func GoogleApigeeEndpointAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApigeeEndpointAttachment_IsConstructParameters(x); err != nil {
@@ -655,7 +654,7 @@ func GoogleApigeeEndpointAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeEndpointAttachment.GoogleApigeeEndpointAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func GoogleApigeeEndpointAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApigeeEndpointAttachment_IsTerraformElement(x interface{}) *bool {
+func GoogleApigeeEndpointAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApigeeEndpointAttachment_IsTerraformElementParameters(x); err != nil {
@@ -674,7 +673,7 @@ func GoogleApigeeEndpointAttachment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeEndpointAttachment.GoogleApigeeEndpointAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func GoogleApigeeEndpointAttachment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApigeeEndpointAttachment_IsTerraformResource(x interface{}) *bool {
+func GoogleApigeeEndpointAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApigeeEndpointAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -693,7 +692,7 @@ func GoogleApigeeEndpointAttachment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeEndpointAttachment.GoogleApigeeEndpointAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,31 +717,31 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,15 +869,15 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -910,7 +909,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,18 +923,18 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -957,7 +956,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -968,7 +967,7 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) PutTimeouts(value *GoogleApig
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -996,8 +995,8 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1009,8 +1008,8 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,8 +1021,8 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1035,8 +1034,8 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1061,8 +1060,8 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1073,4 +1072,3 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) ToTerraform() interface{} {
 
 	return returns
 }
-

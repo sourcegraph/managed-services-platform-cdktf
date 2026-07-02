@@ -17,15 +17,15 @@ type GoogleOsConfigGuestPolicies interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,9 +59,9 @@ type GoogleOsConfigGuestPolicies interface {
 	// The tree node.
 	Node() constructs.Node
 	PackageRepositories() GoogleOsConfigGuestPoliciesPackageRepositoriesList
-	PackageRepositoriesInput() interface{}
+	PackageRepositoriesInput() any
 	Packages() GoogleOsConfigGuestPoliciesPackagesList
-	PackagesInput() interface{}
+	PackagesInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -70,29 +70,29 @@ type GoogleOsConfigGuestPolicies interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Recipes() GoogleOsConfigGuestPoliciesRecipesList
-	RecipesInput() interface{}
+	RecipesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleOsConfigGuestPoliciesTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type GoogleOsConfigGuestPolicies interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type GoogleOsConfigGuestPolicies interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,9 +130,9 @@ type GoogleOsConfigGuestPolicies interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAssignment(value *GoogleOsConfigGuestPoliciesAssignment)
-	PutPackageRepositories(value interface{})
-	PutPackages(value interface{})
-	PutRecipes(value interface{})
+	PutPackageRepositories(value any)
+	PutPackages(value any)
+	PutRecipes(value any)
 	PutTimeouts(value *GoogleOsConfigGuestPoliciesTimeouts)
 	ResetDescription()
 	ResetEtag()
@@ -145,17 +145,17 @@ type GoogleOsConfigGuestPolicies interface {
 	ResetProject()
 	ResetRecipes()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleOsConfigGuestPolicies
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) PackageRepositories() GoogleOsCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) PackageRepositoriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) PackageRepositoriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"packageRepositoriesInput",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Packages() GoogleOsConfigGuestPo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) PackagesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) PackagesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"packagesInput",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Recipes() GoogleOsConfigGuestPol
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) RecipesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) RecipesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recipesInput",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) Timeouts() GoogleOsConfigGuestPo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -553,7 +553,6 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies} Resource.
 func NewGoogleOsConfigGuestPolicies(scope constructs.Construct, id *string, config *GoogleOsConfigGuestPoliciesConfig) GoogleOsConfigGuestPolicies {
 	_init_.Initialize()
@@ -565,7 +564,7 @@ func NewGoogleOsConfigGuestPolicies(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -578,12 +577,12 @@ func NewGoogleOsConfigGuestPolicies_Override(g GoogleOsConfigGuestPolicies, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -613,7 +612,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetEtag(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetEtag(val *string) {
 	if err := j.validateSetEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -643,7 +642,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetGuestPolicyId(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetGuestPolicyId(val *string) {
 	if err := j.validateSetGuestPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetGuestPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetId(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetProject(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func GoogleOsConfigGuestPolicies_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func GoogleOsConfigGuestPolicies_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleOsConfigGuestPolicies_IsConstruct(x interface{}) *bool {
+func GoogleOsConfigGuestPolicies_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOsConfigGuestPolicies_IsConstructParameters(x); err != nil {
@@ -753,7 +752,7 @@ func GoogleOsConfigGuestPolicies_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func GoogleOsConfigGuestPolicies_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleOsConfigGuestPolicies_IsTerraformElement(x interface{}) *bool {
+func GoogleOsConfigGuestPolicies_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOsConfigGuestPolicies_IsTerraformElementParameters(x); err != nil {
@@ -772,7 +771,7 @@ func GoogleOsConfigGuestPolicies_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func GoogleOsConfigGuestPolicies_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleOsConfigGuestPolicies_IsTerraformResource(x interface{}) *bool {
+func GoogleOsConfigGuestPolicies_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOsConfigGuestPolicies_IsTerraformResourceParameters(x); err != nil {
@@ -791,7 +790,7 @@ func GoogleOsConfigGuestPolicies_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -816,31 +815,31 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,15 +967,15 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,18 +1021,18 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1044,7 +1043,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1066,40 +1065,40 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutAssignment(value *GoogleOsCon
 	_jsii_.InvokeVoid(
 		g,
 		"putAssignment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutPackageRepositories(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutPackageRepositories(value any) {
 	if err := g.validatePutPackageRepositoriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPackageRepositories",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutPackages(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutPackages(value any) {
 	if err := g.validatePutPackagesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPackages",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutRecipes(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutRecipes(value any) {
 	if err := g.validatePutRecipesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRecipes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) PutTimeouts(value *GoogleOsConfi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1186,8 +1185,8 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1199,8 +1198,8 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1212,8 +1211,8 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1225,8 +1224,8 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1251,8 +1250,8 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1263,4 +1262,3 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ToTerraform() interface{} {
 
 	return returns
 }
-

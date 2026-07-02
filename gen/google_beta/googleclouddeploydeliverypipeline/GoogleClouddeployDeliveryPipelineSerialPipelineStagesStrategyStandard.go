@@ -1,6 +1,5 @@
 package googleclouddeploydeliverypipeline
 
-
 type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard struct {
 	// postdeploy block.
 	//
@@ -13,6 +12,5 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard struc
 	// Whether to verify a deployment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
-	Verify interface{} `field:"optional" json:"verify" yaml:"verify"`
+	Verify any `field:"optional" json:"verify" yaml:"verify"`
 }
-

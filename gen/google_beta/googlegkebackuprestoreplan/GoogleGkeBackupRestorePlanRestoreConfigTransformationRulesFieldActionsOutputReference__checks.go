@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFie
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFie
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldA
 
 	return nil
 }
-

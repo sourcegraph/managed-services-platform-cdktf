@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -263,4 +263,3 @@ func validateNewGoogleContainerAzureNodePoolConfigAOutputReferenceParameters(ter
 
 	return nil
 }
-

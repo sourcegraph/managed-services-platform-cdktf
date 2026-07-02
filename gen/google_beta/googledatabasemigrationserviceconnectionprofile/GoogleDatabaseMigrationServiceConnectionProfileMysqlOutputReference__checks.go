@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleDatabaseMigrationServiceConnectionProfileMysqlOutputRefere
 
 	return nil
 }
-

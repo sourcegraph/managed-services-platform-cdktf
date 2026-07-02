@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkServicesHttpRouteRulesMatchesHeadersListParameters(
 
 	return nil
 }
-

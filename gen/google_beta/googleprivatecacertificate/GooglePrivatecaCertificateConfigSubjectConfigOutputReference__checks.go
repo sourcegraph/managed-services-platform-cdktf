@@ -120,7 +120,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigSubjectConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateConfigSubjectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigSubjectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGooglePrivatecaCertificateConfigSubjectConfigOutputReferencePara
 
 	return nil
 }
-

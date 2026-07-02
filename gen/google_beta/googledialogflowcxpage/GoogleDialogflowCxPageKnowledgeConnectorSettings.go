@@ -1,15 +1,14 @@
 package googledialogflowcxpage
 
-
 type GoogleDialogflowCxPageKnowledgeConnectorSettings struct {
 	// data_store_connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#data_store_connections GoogleDialogflowCxPage#data_store_connections}
-	DataStoreConnections interface{} `field:"optional" json:"dataStoreConnections" yaml:"dataStoreConnections"`
+	DataStoreConnections any `field:"optional" json:"dataStoreConnections" yaml:"dataStoreConnections"`
 	// Whether Knowledge Connector is enabled or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#enabled GoogleDialogflowCxPage#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The target flow to transition to.
 	//
 	// Format: projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/flows/<FlowID>.
@@ -30,4 +29,3 @@ type GoogleDialogflowCxPageKnowledgeConnectorSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#trigger_fulfillment GoogleDialogflowCxPage#trigger_fulfillment}
 	TriggerFulfillment *GoogleDialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment `field:"optional" json:"triggerFulfillment" yaml:"triggerFulfillment"`
 }
-

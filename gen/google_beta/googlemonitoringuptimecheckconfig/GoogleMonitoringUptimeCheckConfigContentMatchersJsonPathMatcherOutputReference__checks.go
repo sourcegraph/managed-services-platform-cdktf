@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatch
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherO
 
 	return nil
 }
-

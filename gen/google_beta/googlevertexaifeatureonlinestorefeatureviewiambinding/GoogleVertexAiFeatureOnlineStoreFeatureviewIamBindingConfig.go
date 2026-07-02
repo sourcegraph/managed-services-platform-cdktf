@@ -6,9 +6,9 @@ import (
 
 type GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_online_store}.
 	FeatureOnlineStore *string `field:"required" json:"featureOnlineStore" yaml:"featureOnlineStore"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#feature_view GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#feature_view}.
@@ -41,4 +41,3 @@ type GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding#region GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
-

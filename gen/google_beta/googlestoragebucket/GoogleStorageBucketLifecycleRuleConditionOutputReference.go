@@ -15,9 +15,9 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	AgeInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,18 +59,18 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	NumNewerVersions() *float64
 	SetNumNewerVersions(val *float64)
 	NumNewerVersionsInput() *float64
-	SendAgeIfZero() interface{}
-	SetSendAgeIfZero(val interface{})
-	SendAgeIfZeroInput() interface{}
-	SendDaysSinceCustomTimeIfZero() interface{}
-	SetSendDaysSinceCustomTimeIfZero(val interface{})
-	SendDaysSinceCustomTimeIfZeroInput() interface{}
-	SendDaysSinceNoncurrentTimeIfZero() interface{}
-	SetSendDaysSinceNoncurrentTimeIfZero(val interface{})
-	SendDaysSinceNoncurrentTimeIfZeroInput() interface{}
-	SendNumNewerVersionsIfZero() interface{}
-	SetSendNumNewerVersionsIfZero(val interface{})
-	SendNumNewerVersionsIfZeroInput() interface{}
+	SendAgeIfZero() any
+	SetSendAgeIfZero(val any)
+	SendAgeIfZeroInput() any
+	SendDaysSinceCustomTimeIfZero() any
+	SetSendDaysSinceCustomTimeIfZero(val any)
+	SendDaysSinceCustomTimeIfZeroInput() any
+	SendDaysSinceNoncurrentTimeIfZero() any
+	SetSendDaysSinceNoncurrentTimeIfZero(val any)
+	SendDaysSinceNoncurrentTimeIfZeroInput() any
+	SendNumNewerVersionsIfZero() any
+	SetSendNumNewerVersionsIfZero(val any)
+	SendNumNewerVersionsIfZeroInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,7 +85,7 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetWithState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Age
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Num
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendAgeIfZero",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZeroInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZeroInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendAgeIfZeroInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZero() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZero() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendDaysSinceCustomTimeIfZero",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZeroInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZeroInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendDaysSinceCustomTimeIfZeroInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZero() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZero() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendDaysSinceNoncurrentTimeIfZero",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZeroInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZeroInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendDaysSinceNoncurrentTimeIfZeroInput",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZero() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZero() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendNumNewerVersionsIfZero",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Sen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZeroInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZeroInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendNumNewerVersionsIfZeroInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Wit
 	return returns
 }
 
-
 func NewGoogleStorageBucketLifecycleRuleConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageBucketLifecycleRuleConditionOutputReference {
 	_init_.Initialize()
 
@@ -517,7 +516,7 @@ func NewGoogleStorageBucketLifecycleRuleConditionOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewGoogleStorageBucketLifecycleRuleConditionOutputReference_Override(g Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetAge(val *float64) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetAge(val *float64) {
 	if err := j.validateSetAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetCreatedBefore(val *string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetCreatedBefore(val *string) {
 	if err := j.validateSetCreatedBeforeParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetCustomTimeBefore(val *string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetCustomTimeBefore(val *string) {
 	if err := j.validateSetCustomTimeBeforeParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetDaysSinceCustomTime(val *float64) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetDaysSinceCustomTime(val *float64) {
 	if err := j.validateSetDaysSinceCustomTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetDaysSinceNoncurrentTime(val *float64) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetDaysSinceNoncurrentTime(val *float64) {
 	if err := j.validateSetDaysSinceNoncurrentTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetInternalValue(val *GoogleStorageBucketLifecycleRuleCondition) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetInternalValue(val *GoogleStorageBucketLifecycleRuleCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetMatchesPrefix(val *[]*string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetMatchesPrefix(val *[]*string) {
 	if err := j.validateSetMatchesPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetMatchesStorageClass(val *[]*string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetMatchesStorageClass(val *[]*string) {
 	if err := j.validateSetMatchesStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetMatchesSuffix(val *[]*string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetMatchesSuffix(val *[]*string) {
 	if err := j.validateSetMatchesSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetNoncurrentTimeBefore(val *string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetNoncurrentTimeBefore(val *string) {
 	if err := j.validateSetNoncurrentTimeBeforeParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetN
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetNumNewerVersions(val *float64) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetNumNewerVersions(val *float64) {
 	if err := j.validateSetNumNewerVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetN
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendAgeIfZero(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetSendAgeIfZero(val any) {
 	if err := j.validateSetSendAgeIfZeroParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendDaysSinceCustomTimeIfZero(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetSendDaysSinceCustomTimeIfZero(val any) {
 	if err := j.validateSetSendDaysSinceCustomTimeIfZeroParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendDaysSinceNoncurrentTimeIfZero(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetSendDaysSinceNoncurrentTimeIfZero(val any) {
 	if err := j.validateSetSendDaysSinceNoncurrentTimeIfZeroParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetSendNumNewerVersionsIfZero(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetSendNumNewerVersionsIfZero(val any) {
 	if err := j.validateSetSendNumNewerVersionsIfZeroParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetWithState(val *string) {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) SetWithState(val *string) {
 	if err := j.validateSetWithStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,16 +766,16 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Com
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Int
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1060,16 +1059,16 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1088,4 +1087,3 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ToS
 
 	return returns
 }
-

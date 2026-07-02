@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userAgent", GoGetter: "UserAgent"},
 			_jsii_.MemberProperty{JsiiProperty: "userAgentInput", GoGetter: "UserAgentInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecurityScannerScanConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthentication",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigAuthentication)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigAuthentication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationCustomAccount",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigAuthenticationCustomAccount)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigAuthenticationCustomAccount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationGoogleAccount",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigAuthenticationGoogleAccount)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigAuthenticationGoogleAccount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputReference",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,7 +185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationOutputReference",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,15 +225,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigConfig",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigSchedule",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigSchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigScheduleOutputReference",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecurityScannerScanConfigScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,11 +270,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigTimeouts",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSecurityScannerScanConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecurityScannerScanConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecurityScannerScanConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

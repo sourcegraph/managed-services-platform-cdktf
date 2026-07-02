@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDatastreamPrivateConnectionTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

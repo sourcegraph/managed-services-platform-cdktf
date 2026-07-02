@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutput
 
 	return nil
 }
-

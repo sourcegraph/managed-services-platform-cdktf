@@ -17,15 +17,15 @@ type GoogleContainerAnalysisNoteIamMember interface {
 	Condition() GoogleContainerAnalysisNoteIamMemberConditionOutputReference
 	ConditionInput() *GoogleContainerAnalysisNoteIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type GoogleContainerAnalysisNoteIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleContainerAnalysisNoteIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleContainerAnalysisNoteIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GoogleContainerAnalysisNoteIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleContainerAnalysisNoteIamMember
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ConditionInput() *Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member} Resource.
 func NewGoogleContainerAnalysisNoteIamMember(scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteIamMemberConfig) GoogleContainerAnalysisNoteIamMember {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewGoogleContainerAnalysisNoteIamMember(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewGoogleContainerAnalysisNoteIamMember_Override(g GoogleContainerAnalysisN
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetNote(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetNote(val *string) {
 	if err := j.validateSetNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetProject(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func GoogleContainerAnalysisNoteIamMember_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func GoogleContainerAnalysisNoteIamMember_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleContainerAnalysisNoteIamMember_IsConstruct(x interface{}) *bool {
+func GoogleContainerAnalysisNoteIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerAnalysisNoteIamMember_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func GoogleContainerAnalysisNoteIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func GoogleContainerAnalysisNoteIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerAnalysisNoteIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleContainerAnalysisNoteIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerAnalysisNoteIamMember_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func GoogleContainerAnalysisNoteIamMember_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func GoogleContainerAnalysisNoteIamMember_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func GoogleContainerAnalysisNoteIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleContainerAnalysisNoteIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerAnalysisNoteIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func GoogleContainerAnalysisNoteIamMember_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetNumberListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetStringAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) InterpolationForAttribu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) PutCondition(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -996,8 +995,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SynthesizeAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1009,8 +1008,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) SynthesizeHclAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,8 +1021,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToHclTerraform() interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1060,4 +1059,3 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteIamMember) ToTerraform() interface
 
 	return returns
 }
-

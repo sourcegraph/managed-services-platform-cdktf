@@ -1,11 +1,10 @@
 package googlecomputeinstance
 
-
 type GoogleComputeInstanceScheduling struct {
 	// Specifies if the instance should be restarted if it was terminated by Compute Engine (not a user).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#automatic_restart GoogleComputeInstance#automatic_restart}
-	AutomaticRestart interface{} `field:"optional" json:"automaticRestart" yaml:"automaticRestart"`
+	AutomaticRestart any `field:"optional" json:"automaticRestart" yaml:"automaticRestart"`
 	// Specifies the availability domain, which this instance should be scheduled on.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#availability_domain GoogleComputeInstance#availability_domain}
@@ -39,7 +38,7 @@ type GoogleComputeInstanceScheduling struct {
 	// node_affinities block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#node_affinities GoogleComputeInstance#node_affinities}
-	NodeAffinities interface{} `field:"optional" json:"nodeAffinities" yaml:"nodeAffinities"`
+	NodeAffinities any `field:"optional" json:"nodeAffinities" yaml:"nodeAffinities"`
 	// Describes maintenance behavior for the instance. One of MIGRATE or TERMINATE,.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#on_host_maintenance GoogleComputeInstance#on_host_maintenance}
@@ -51,7 +50,7 @@ type GoogleComputeInstanceScheduling struct {
 	// Whether the instance is preemptible.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#preemptible GoogleComputeInstance#preemptible}
-	Preemptible interface{} `field:"optional" json:"preemptible" yaml:"preemptible"`
+	Preemptible any `field:"optional" json:"preemptible" yaml:"preemptible"`
 	// Whether the instance is spot. If this is set as SPOT.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#provisioning_model GoogleComputeInstance#provisioning_model}
@@ -64,4 +63,3 @@ type GoogleComputeInstanceScheduling struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#termination_time GoogleComputeInstance#termination_time}
 	TerminationTime *string `field:"optional" json:"terminationTime" yaml:"terminationTime"`
 }
-

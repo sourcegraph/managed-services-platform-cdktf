@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGooglePubsubTopicIamMemberConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

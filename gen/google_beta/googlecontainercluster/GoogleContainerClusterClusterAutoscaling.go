@@ -1,6 +1,5 @@
 package googlecontainercluster
 
-
 type GoogleContainerClusterClusterAutoscaling struct {
 	// auto_provisioning_defaults block.
 	//
@@ -19,10 +18,9 @@ type GoogleContainerClusterClusterAutoscaling struct {
 	// Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// resource_limits block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#resource_limits GoogleContainerCluster#resource_limits}
-	ResourceLimits interface{} `field:"optional" json:"resourceLimits" yaml:"resourceLimits"`
+	ResourceLimits any `field:"optional" json:"resourceLimits" yaml:"resourceLimits"`
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBigtableInstanceClusterListParameters(terraformResource cd
 
 	return nil
 }
-

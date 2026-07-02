@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepe
 
 	return nil
 }
-

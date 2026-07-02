@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReferenceP
 
 	return nil
 }
-

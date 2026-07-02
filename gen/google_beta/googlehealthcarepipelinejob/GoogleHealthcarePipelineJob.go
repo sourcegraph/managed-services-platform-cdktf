@@ -17,15 +17,15 @@ type GoogleHealthcarePipelineJob interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
@@ -33,9 +33,9 @@ type GoogleHealthcarePipelineJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableLineage() interface{}
-	SetDisableLineage(val interface{})
-	DisableLineageInput() interface{}
+	DisableLineage() any
+	SetDisableLineage(val any)
+	DisableLineageInput() any
 	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -70,11 +70,11 @@ type GoogleHealthcarePipelineJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReconciliationPipelineJob() GoogleHealthcarePipelineJobReconciliationPipelineJobOutputReference
 	ReconciliationPipelineJobInput() *GoogleHealthcarePipelineJobReconciliationPipelineJob
 	SelfLink() *string
@@ -82,18 +82,18 @@ type GoogleHealthcarePipelineJob interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleHealthcarePipelineJobTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleHealthcarePipelineJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleHealthcarePipelineJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type GoogleHealthcarePipelineJob interface {
 	ResetOverrideLogicalId()
 	ResetReconciliationPipelineJob()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleHealthcarePipelineJob
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) DisableLineage() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) DisableLineage() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableLineage",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) DisableLineage() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) DisableLineageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) DisableLineageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableLineageInput",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) Timeouts() GoogleHealthcarePipel
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -551,7 +551,6 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_healthcare_pipeline_job google_healthcare_pipeline_job} Resource.
 func NewGoogleHealthcarePipelineJob(scope constructs.Construct, id *string, config *GoogleHealthcarePipelineJobConfig) GoogleHealthcarePipelineJob {
@@ -564,7 +563,7 @@ func NewGoogleHealthcarePipelineJob(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -577,12 +576,12 @@ func NewGoogleHealthcarePipelineJob_Override(g GoogleHealthcarePipelineJob, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetDataset(val *string) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetDataset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetDisableLineage(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetDisableLineage(val any) {
 	if err := j.validateSetDisableLineageParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetDisableLineage(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetId(val *string) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetName(val *string) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -705,7 +704,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func GoogleHealthcarePipelineJob_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func GoogleHealthcarePipelineJob_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleHealthcarePipelineJob_IsConstruct(x interface{}) *bool {
+func GoogleHealthcarePipelineJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleHealthcarePipelineJob_IsConstructParameters(x); err != nil {
@@ -763,7 +762,7 @@ func GoogleHealthcarePipelineJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func GoogleHealthcarePipelineJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleHealthcarePipelineJob_IsTerraformElement(x interface{}) *bool {
+func GoogleHealthcarePipelineJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleHealthcarePipelineJob_IsTerraformElementParameters(x); err != nil {
@@ -782,7 +781,7 @@ func GoogleHealthcarePipelineJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func GoogleHealthcarePipelineJob_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleHealthcarePipelineJob_IsTerraformResource(x interface{}) *bool {
+func GoogleHealthcarePipelineJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleHealthcarePipelineJob_IsTerraformResourceParameters(x); err != nil {
@@ -801,7 +800,7 @@ func GoogleHealthcarePipelineJob_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,31 +825,31 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,15 +977,15 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,18 +1031,18 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) PutBackfillPipelineJob(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putBackfillPipelineJob",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) PutMappingPipelineJob(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putMappingPipelineJob",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) PutReconciliationPipelineJob(val
 	_jsii_.InvokeVoid(
 		g,
 		"putReconciliationPipelineJob",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1109,7 +1108,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) PutTimeouts(value *GoogleHealthc
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1177,8 +1176,8 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1190,8 +1189,8 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1203,8 +1202,8 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1216,8 +1215,8 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1242,8 +1241,8 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1254,4 +1253,3 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTagsTagValueIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagValueIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsTagValueIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleTagsTagValueIamMemberConditionOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_Genera
 	return nil
 }
 
-func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsConstructParameters(x interface{}) error {
+func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsCons
 	return nil
 }
 
-func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsTerr
 	return nil
 }
 
-func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleSccManagementFolderSecurityHealthAnalyticsCustomModule_IsTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewGoogleSccManagementFolderSecurityHealthAnalyticsCustomModulePara
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
-		reflect.TypeOf((*DataGoogleComputeSslCertificate)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeSslCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeSslCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificateConfig",
-		reflect.TypeOf((*DataGoogleComputeSslCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeSslCertificateConfig](),
 	)
 }

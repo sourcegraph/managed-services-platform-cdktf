@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
-		reflect.TypeOf((*GoogleAppEngineServiceSplitTraffic)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineServiceSplitTraffic](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineServiceSplitTraffic{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficConfig",
-		reflect.TypeOf((*GoogleAppEngineServiceSplitTrafficConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineServiceSplitTrafficConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficSplit",
-		reflect.TypeOf((*GoogleAppEngineServiceSplitTrafficSplit)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineServiceSplitTrafficSplit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficSplitOutputReference",
-		reflect.TypeOf((*GoogleAppEngineServiceSplitTrafficSplitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineServiceSplitTrafficSplitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocations", GoGetter: "Allocations"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationsInput", GoGetter: "AllocationsInput"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineServiceSplitTrafficSplitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficTimeouts",
-		reflect.TypeOf((*GoogleAppEngineServiceSplitTrafficTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineServiceSplitTrafficTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

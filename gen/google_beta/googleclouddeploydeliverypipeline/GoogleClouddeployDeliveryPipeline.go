@@ -19,15 +19,15 @@ type GoogleClouddeployDeliveryPipeline interface {
 	CdktfStack() cdktf.TerraformStack
 	Condition() GoogleClouddeployDeliveryPipelineConditionList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,34 +73,34 @@ type GoogleClouddeployDeliveryPipeline interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SerialPipeline() GoogleClouddeployDeliveryPipelineSerialPipelineOutputReference
 	SerialPipelineInput() *GoogleClouddeployDeliveryPipelineSerialPipeline
-	Suspended() interface{}
-	SetSuspended(val interface{})
-	SuspendedInput() interface{}
+	Suspended() any
+	SetSuspended(val any)
+	SuspendedInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleClouddeployDeliveryPipelineTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleClouddeployDeliveryPipeline interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type GoogleClouddeployDeliveryPipeline interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type GoogleClouddeployDeliveryPipeline interface {
 	ResetSerialPipeline()
 	ResetSuspended()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleClouddeployDeliveryPipeline
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Condition() GoogleClouddep
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SerialPipelineInput() *Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Suspended() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Suspended() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suspended",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Suspended() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SuspendedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SuspendedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suspendedInput",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TerraformLabels() cdktf.St
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Timeouts() GoogleClouddepl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -608,7 +608,6 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) GoogleClouddeployDeliveryPipeline {
 	_init_.Initialize()
@@ -620,7 +619,7 @@ func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -633,12 +632,12 @@ func NewGoogleClouddeployDeliveryPipeline_Override(g GoogleClouddeployDeliveryPi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetAnnotations(val *map[str
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetDescription(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetId(val *string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetLabels(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetName(val *string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetProject(val *string) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -772,7 +771,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetSuspended(val interface{}) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) SetSuspended(val any) {
 	if err := j.validateSetSuspendedParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func GoogleClouddeployDeliveryPipeline_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func GoogleClouddeployDeliveryPipeline_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleClouddeployDeliveryPipeline_IsConstruct(x interface{}) *bool {
+func GoogleClouddeployDeliveryPipeline_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleClouddeployDeliveryPipeline_IsConstructParameters(x); err != nil {
@@ -841,7 +840,7 @@ func GoogleClouddeployDeliveryPipeline_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func GoogleClouddeployDeliveryPipeline_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleClouddeployDeliveryPipeline_IsTerraformElement(x interface{}) *bool {
+func GoogleClouddeployDeliveryPipeline_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleClouddeployDeliveryPipeline_IsTerraformElementParameters(x); err != nil {
@@ -860,7 +859,7 @@ func GoogleClouddeployDeliveryPipeline_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func GoogleClouddeployDeliveryPipeline_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleClouddeployDeliveryPipeline_IsTerraformResource(x interface{}) *bool {
+func GoogleClouddeployDeliveryPipeline_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleClouddeployDeliveryPipeline_IsTerraformResourceParameters(x); err != nil {
@@ -879,7 +878,7 @@ func GoogleClouddeployDeliveryPipeline_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,31 +903,31 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,15 +1055,15 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1083,7 +1082,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,18 +1109,18 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) PutSerialPipeline(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putSerialPipeline",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1165,7 +1164,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) PutTimeouts(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1241,8 +1240,8 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1254,8 +1253,8 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1267,8 +1266,8 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1280,8 +1279,8 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToHclTerraform() interface
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1306,8 +1305,8 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1318,4 +1317,3 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipeline) ToTerraform() interface{} 
 
 	return returns
 }
-

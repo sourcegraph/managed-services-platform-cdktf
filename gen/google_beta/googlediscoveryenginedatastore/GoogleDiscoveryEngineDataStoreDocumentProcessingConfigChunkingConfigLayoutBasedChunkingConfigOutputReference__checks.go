@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference) validateSetIncludeAncestorHeadingsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference) validateSetIncludeAncestorHeadingsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingCo
 
 	return nil
 }
-

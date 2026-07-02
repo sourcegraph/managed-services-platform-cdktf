@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutp
 
 	return nil
 }
-

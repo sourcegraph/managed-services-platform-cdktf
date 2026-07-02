@@ -1,6 +1,5 @@
 package googlecloudrunservice
 
-
 type GoogleCloudRunServiceTemplateSpecVolumesNfs struct {
 	// Path exported by the NFS server.
 	//
@@ -13,6 +12,5 @@ type GoogleCloudRunServiceTemplateSpecVolumesNfs struct {
 	// If true, mount the NFS volume as read only in all mounts. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#read_only GoogleCloudRunService#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

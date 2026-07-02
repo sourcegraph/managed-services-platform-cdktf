@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStac
 
 	return nil
 }
-

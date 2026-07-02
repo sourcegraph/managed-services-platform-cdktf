@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleProjectIamAuditConfig) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamAuditConfig) validatePutAuditLogConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleProjectIamAuditConfig) validatePutAuditLogConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateGoogleProjectIamAuditConfig_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleProjectIamAuditConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleProjectIamAuditConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateGoogleProjectIamAuditConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleProjectIamAuditConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleProjectIamAuditConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateGoogleProjectIamAuditConfig_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleProjectIamAuditConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleProjectIamAuditConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGoogleProjectIamAuditConfig_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,4 +461,3 @@ func validateNewGoogleProjectIamAuditConfigParameters(scope constructs.Construct
 
 	return nil
 }
-

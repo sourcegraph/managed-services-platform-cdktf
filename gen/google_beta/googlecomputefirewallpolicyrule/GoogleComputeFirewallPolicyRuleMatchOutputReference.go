@@ -12,9 +12,9 @@ type GoogleComputeFirewallPolicyRuleMatchOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type GoogleComputeFirewallPolicyRuleMatchOutputReference interface {
 	InternalValue() *GoogleComputeFirewallPolicyRuleMatch
 	SetInternalValue(val *GoogleComputeFirewallPolicyRuleMatch)
 	Layer4Configs() GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsList
-	Layer4ConfigsInput() interface{}
+	Layer4ConfigsInput() any
 	SrcAddressGroups() *[]*string
 	SetSrcAddressGroups(val *[]*string)
 	SrcAddressGroupsInput() *[]*string
@@ -68,7 +68,7 @@ type GoogleComputeFirewallPolicyRuleMatchOutputReference interface {
 	SetSrcRegionCodes(val *[]*string)
 	SrcRegionCodesInput() *[]*string
 	SrcSecureTags() GoogleComputeFirewallPolicyRuleMatchSrcSecureTagsList
-	SrcSecureTagsInput() interface{}
+	SrcSecureTagsInput() any
 	SrcThreatIntelligences() *[]*string
 	SetSrcThreatIntelligences(val *[]*string)
 	SrcThreatIntelligencesInput() *[]*string
@@ -83,7 +83,7 @@ type GoogleComputeFirewallPolicyRuleMatchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,8 +104,8 @@ type GoogleComputeFirewallPolicyRuleMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLayer4Configs(value interface{})
-	PutSrcSecureTags(value interface{})
+	PutLayer4Configs(value any)
+	PutSrcSecureTags(value any)
 	ResetDestAddressGroups()
 	ResetDestFqdns()
 	ResetDestIpRanges()
@@ -122,7 +122,7 @@ type GoogleComputeFirewallPolicyRuleMatchOutputReference interface {
 	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,8 +135,8 @@ type jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Layer4Co
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Layer4ConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Layer4ConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"layer4ConfigsInput",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SrcSecur
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SrcSecureTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SrcSecureTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"srcSecureTagsInput",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Terrafor
 	return returns
 }
 
-
 func NewGoogleComputeFirewallPolicyRuleMatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeFirewallPolicyRuleMatchOutputReference {
 	_init_.Initialize()
 
@@ -516,7 +515,7 @@ func NewGoogleComputeFirewallPolicyRuleMatchOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -528,12 +527,12 @@ func NewGoogleComputeFirewallPolicyRuleMatchOutputReference_Override(g GoogleCom
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestAddressGroups(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetDestAddressGroups(val *[]*string) {
 	if err := j.validateSetDestAddressGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestAd
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestFqdns(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetDestFqdns(val *[]*string) {
 	if err := j.validateSetDestFqdnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestFq
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestIpRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetDestIpRanges(val *[]*string) {
 	if err := j.validateSetDestIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestIp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestNetworkScope(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetDestNetworkScope(val *string) {
 	if err := j.validateSetDestNetworkScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestNe
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestRegionCodes(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetDestRegionCodes(val *[]*string) {
 	if err := j.validateSetDestRegionCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestRe
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestThreatIntelligences(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetDestThreatIntelligences(val *[]*string) {
 	if err := j.validateSetDestThreatIntelligencesParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetDestTh
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetInternalValue(val *GoogleComputeFirewallPolicyRuleMatch) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetInternalValue(val *GoogleComputeFirewallPolicyRuleMatch) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcAddressGroups(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcAddressGroups(val *[]*string) {
 	if err := j.validateSetSrcAddressGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcAdd
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcFqdns(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcFqdns(val *[]*string) {
 	if err := j.validateSetSrcFqdnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcFqd
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcIpRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcIpRanges(val *[]*string) {
 	if err := j.validateSetSrcIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcIpR
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcNetworks(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcNetworks(val *[]*string) {
 	if err := j.validateSetSrcNetworksParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcNet
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcNetworkScope(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcNetworkScope(val *string) {
 	if err := j.validateSetSrcNetworkScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcNet
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcRegionCodes(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcRegionCodes(val *[]*string) {
 	if err := j.validateSetSrcRegionCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcReg
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcThreatIntelligences(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetSrcThreatIntelligences(val *[]*string) {
 	if err := j.validateSetSrcThreatIntelligencesParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetSrcThr
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,16 +743,16 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,32 +909,32 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) PutLayer4Configs(value interface{}) {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) PutLayer4Configs(value any) {
 	if err := g.validatePutLayer4ConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putLayer4Configs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) PutSrcSecureTags(value interface{}) {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) PutSrcSecureTags(value any) {
 	if err := g.validatePutSrcSecureTagsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSrcSecureTags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1051,16 +1050,16 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) ResetSrc
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1079,4 +1078,3 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) ToString
 
 	return returns
 }
-

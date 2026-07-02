@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputRefe
 
 	return nil
 }
-

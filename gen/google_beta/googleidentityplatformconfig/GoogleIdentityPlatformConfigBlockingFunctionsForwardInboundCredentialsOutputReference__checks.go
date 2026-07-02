@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetAccessTokenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetAccessTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetIdTokenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetIdTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetRefreshTokenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetRefreshTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCrede
 
 	return nil
 }
-

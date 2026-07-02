@@ -18,15 +18,15 @@ type GoogleEdgecontainerVpnConnection interface {
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -34,9 +34,9 @@ type GoogleEdgecontainerVpnConnection interface {
 	SetDependsOn(val *[]*string)
 	Details() GoogleEdgecontainerVpnConnectionDetailsList
 	EffectiveLabels() cdktf.StringMap
-	EnableHighAvailability() interface{}
-	SetEnableHighAvailability(val interface{})
-	EnableHighAvailabilityInput() interface{}
+	EnableHighAvailability() any
+	SetEnableHighAvailability(val any)
+	EnableHighAvailabilityInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,11 +74,11 @@ type GoogleEdgecontainerVpnConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Router() *string
 	SetRouter(val *string)
 	RouterInput() *string
@@ -86,11 +86,11 @@ type GoogleEdgecontainerVpnConnection interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleEdgecontainerVpnConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Vpc() *string
 	SetVpc(val *string)
@@ -101,9 +101,9 @@ type GoogleEdgecontainerVpnConnection interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleEdgecontainerVpnConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type GoogleEdgecontainerVpnConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type GoogleEdgecontainerVpnConnection interface {
 	ResetTimeouts()
 	ResetVpc()
 	ResetVpcProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleEdgecontainerVpnConnection
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) EffectiveLabels() cdktf.Str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) EnableHighAvailability() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) EnableHighAvailability() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHighAvailability",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) EnableHighAvailability() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) EnableHighAvailabilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) EnableHighAvailabilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHighAvailabilityInput",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) TerraformLabels() cdktf.Str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) Timeouts() GoogleEdgecontai
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -622,7 +622,6 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) VpcProjectInput() *GoogleEd
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_edgecontainer_vpn_connection google_edgecontainer_vpn_connection} Resource.
 func NewGoogleEdgecontainerVpnConnection(scope constructs.Construct, id *string, config *GoogleEdgecontainerVpnConnectionConfig) GoogleEdgecontainerVpnConnection {
 	_init_.Initialize()
@@ -634,7 +633,7 @@ func NewGoogleEdgecontainerVpnConnection(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -647,12 +646,12 @@ func NewGoogleEdgecontainerVpnConnection_Override(g GoogleEdgecontainerVpnConnec
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetCluster(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -693,7 +692,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetEnableHighAvailability(val interface{}) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetEnableHighAvailability(val any) {
 	if err := j.validateSetEnableHighAvailabilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetEnableHighAvailability(va
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetId(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetLabels(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetName(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetNatGatewayIp(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetNatGatewayIp(val *string) {
 	if err := j.validateSetNatGatewayIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetNatGatewayIp(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetProject(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -797,7 +796,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetRouter(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetRouter(val *string) {
 	if err := j.validateSetRouterParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetRouter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection)SetVpc(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) SetVpc(val *string) {
 	if err := j.validateSetVpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func GoogleEdgecontainerVpnConnection_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func GoogleEdgecontainerVpnConnection_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleEdgecontainerVpnConnection_IsConstruct(x interface{}) *bool {
+func GoogleEdgecontainerVpnConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEdgecontainerVpnConnection_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func GoogleEdgecontainerVpnConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func GoogleEdgecontainerVpnConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool {
+func GoogleEdgecontainerVpnConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEdgecontainerVpnConnection_IsTerraformElementParameters(x); err != nil {
@@ -896,7 +895,7 @@ func GoogleEdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func GoogleEdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEdgecontainerVpnConnection_IsTerraformResource(x interface{}) *bool {
+func GoogleEdgecontainerVpnConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEdgecontainerVpnConnection_IsTerraformResourceParameters(x); err != nil {
@@ -915,7 +914,7 @@ func GoogleEdgecontainerVpnConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEdgecontainerVpnConnection.GoogleEdgecontainerVpnConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,31 +939,31 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,15 +1091,15 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1119,7 +1118,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,18 +1145,18 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) PutTimeouts(value *GoogleEd
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) PutVpcProject(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putVpcProject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1285,8 +1284,8 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ResetVpcProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1298,8 +1297,8 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) SynthesizeAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1311,8 +1310,8 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1324,8 +1323,8 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToHclTerraform() interface{
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1350,8 +1349,8 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1362,4 +1361,3 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

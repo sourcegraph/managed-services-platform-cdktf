@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAcl",
-		reflect.TypeOf((*GoogleManagedKafkaAcl)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAcl](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclEntries", GoGetter: "AclEntries"},
 			_jsii_.MemberProperty{JsiiProperty: "aclEntriesInput", GoGetter: "AclEntriesInput"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaAcl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAclAclEntries",
-		reflect.TypeOf((*GoogleManagedKafkaAclAclEntries)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAclAclEntries](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAclAclEntriesList",
-		reflect.TypeOf((*GoogleManagedKafkaAclAclEntriesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAclAclEntriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaAclAclEntriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAclAclEntriesOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaAclAclEntriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAclAclEntriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,15 +153,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAclConfig",
-		reflect.TypeOf((*GoogleManagedKafkaAclConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAclConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAclTimeouts",
-		reflect.TypeOf((*GoogleManagedKafkaAclTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAclTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaAcl.GoogleManagedKafkaAclTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaAclTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaAclTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaAclTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

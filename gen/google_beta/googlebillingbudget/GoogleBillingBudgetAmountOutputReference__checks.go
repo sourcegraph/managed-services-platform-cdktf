@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetInternal
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetLastPeriodAmountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetLastPeriodAmountParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,4 +229,3 @@ func validateNewGoogleBillingBudgetAmountOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

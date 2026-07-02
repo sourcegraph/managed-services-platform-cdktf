@@ -1,6 +1,5 @@
 package googlenetworkservicesedgecachekeyset
 
-
 type GoogleNetworkServicesEdgeCacheKeysetPublicKey struct {
 	// The ID of the public key.
 	//
@@ -16,7 +15,7 @@ type GoogleNetworkServicesEdgeCacheKeysetPublicKey struct {
 	// Set to true to have the CDN automatically manage this public key value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_keyset#managed GoogleNetworkServicesEdgeCacheKeyset#managed}
-	Managed interface{} `field:"optional" json:"managed" yaml:"managed"`
+	Managed any `field:"optional" json:"managed" yaml:"managed"`
 	// The base64-encoded value of the Ed25519 public key.
 	//
 	// The base64 encoding can be padded (44 bytes) or unpadded (43 bytes).
@@ -25,4 +24,3 @@ type GoogleNetworkServicesEdgeCacheKeysetPublicKey struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_keyset#value GoogleNetworkServicesEdgeCacheKeyset#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
-

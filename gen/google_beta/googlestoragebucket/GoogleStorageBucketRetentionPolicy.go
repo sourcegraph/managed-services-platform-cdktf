@@ -1,6 +1,5 @@
 package googlestoragebucket
 
-
 type GoogleStorageBucketRetentionPolicy struct {
 	// The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived.
 	//
@@ -13,6 +12,5 @@ type GoogleStorageBucketRetentionPolicy struct {
 	// Caution: Locking a bucket is an irreversible action.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#is_locked GoogleStorageBucket#is_locked}
-	IsLocked interface{} `field:"optional" json:"isLocked" yaml:"isLocked"`
+	IsLocked any `field:"optional" json:"isLocked" yaml:"isLocked"`
 }
-

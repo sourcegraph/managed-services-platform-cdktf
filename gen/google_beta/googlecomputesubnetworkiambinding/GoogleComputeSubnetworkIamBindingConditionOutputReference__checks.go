@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSubnetworkIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeSubnetworkIamBindingConditionOutputReferenceParamet
 
 	return nil
 }
-

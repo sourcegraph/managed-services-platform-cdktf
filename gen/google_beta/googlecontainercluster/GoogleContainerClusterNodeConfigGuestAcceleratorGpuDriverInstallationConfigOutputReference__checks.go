@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInst
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstall
 
 	return nil
 }
-

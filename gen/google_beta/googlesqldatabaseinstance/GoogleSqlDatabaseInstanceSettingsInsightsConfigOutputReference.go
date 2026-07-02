@@ -12,9 +12,9 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,21 +29,21 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceSettingsInsightsConfig
 	SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsInsightsConfig)
-	QueryInsightsEnabled() interface{}
-	SetQueryInsightsEnabled(val interface{})
-	QueryInsightsEnabledInput() interface{}
+	QueryInsightsEnabled() any
+	SetQueryInsightsEnabled(val any)
+	QueryInsightsEnabledInput() any
 	QueryPlansPerMinute() *float64
 	SetQueryPlansPerMinute(val *float64)
 	QueryPlansPerMinuteInput() *float64
 	QueryStringLength() *float64
 	SetQueryStringLength(val *float64)
 	QueryStringLengthInput() *float64
-	RecordApplicationTags() interface{}
-	SetRecordApplicationTags(val interface{})
-	RecordApplicationTagsInput() interface{}
-	RecordClientAddress() interface{}
-	SetRecordClientAddress(val interface{})
-	RecordClientAddressInput() interface{}
+	RecordApplicationTags() any
+	SetRecordApplicationTags(val any)
+	RecordApplicationTagsInput() any
+	RecordClientAddress() any
+	SetRecordClientAddress(val any)
+	RecordClientAddressInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	ResetRecordClientAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryInsightsEnabled",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryInsightsEnabledInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordApplicationTags",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordApplicationTagsInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordClientAddress",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordClientAddressInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-
 func NewGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsInsightsConfig) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsInsightsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryInsightsEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetQueryInsightsEnabled(val any) {
 	if err := j.validateSetQueryInsightsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryPlansPerMinute(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetQueryPlansPerMinute(val *float64) {
 	if err := j.validateSetQueryPlansPerMinuteParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryStringLength(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetQueryStringLength(val *float64) {
 	if err := j.validateSetQueryStringLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetRecordApplicationTags(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetRecordApplicationTags(val any) {
 	if err := j.validateSetRecordApplicationTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetRecordClientAddress(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetRecordClientAddress(val any) {
 	if err := j.validateSetRecordClientAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 
 	return returns
 }
-

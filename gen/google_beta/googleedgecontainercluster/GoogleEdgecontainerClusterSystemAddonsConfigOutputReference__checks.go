@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleEdgecontainerClusterSystemAddonsConfigOutputReferenceParam
 
 	return nil
 }
-

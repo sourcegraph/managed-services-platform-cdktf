@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetAll
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSqlDatabaseInstanceCloneOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleSecretManagerSecretConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleSecretManagerSecretConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// replication block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_secret#replication GoogleSecretManagerSecret#replication}
@@ -55,7 +55,7 @@ type GoogleSecretManagerSecretConfig struct {
 	// or 'terraform destroy' that would delete the secret will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_secret#deletion_protection GoogleSecretManagerSecret#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Timestamp in UTC when the Secret is scheduled to expire.
 	//
 	// This is always provided on output, regardless of what was sent on input.
@@ -108,7 +108,7 @@ type GoogleSecretManagerSecretConfig struct {
 	// topics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_secret#topics GoogleSecretManagerSecret#topics}
-	Topics interface{} `field:"optional" json:"topics" yaml:"topics"`
+	Topics any `field:"optional" json:"topics" yaml:"topics"`
 	// The TTL for the Secret.
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
@@ -138,4 +138,3 @@ type GoogleSecretManagerSecretConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_secret#version_destroy_ttl GoogleSecretManagerSecret#version_destroy_ttl}
 	VersionDestroyTtl *string `field:"optional" json:"versionDestroyTtl" yaml:"versionDestroyTtl"`
 }
-

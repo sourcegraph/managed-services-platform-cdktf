@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateInter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validatePutInterconnectsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validatePutInterconnectsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateSetEn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroupEndpointsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGoogleComputeWireGroupEndpointsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

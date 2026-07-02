@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTranscoderJobTemplateConfigEncryptionsListParameters(terra
 
 	return nil
 }
-

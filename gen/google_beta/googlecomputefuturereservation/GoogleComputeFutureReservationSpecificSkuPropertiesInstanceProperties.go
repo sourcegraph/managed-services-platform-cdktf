@@ -1,15 +1,14 @@
 package googlecomputefuturereservation
 
-
 type GoogleComputeFutureReservationSpecificSkuPropertiesInstanceProperties struct {
 	// guest_accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#guest_accelerators GoogleComputeFutureReservation#guest_accelerators}
-	GuestAccelerators interface{} `field:"optional" json:"guestAccelerators" yaml:"guestAccelerators"`
+	GuestAccelerators any `field:"optional" json:"guestAccelerators" yaml:"guestAccelerators"`
 	// local_ssds block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#local_ssds GoogleComputeFutureReservation#local_ssds}
-	LocalSsds interface{} `field:"optional" json:"localSsds" yaml:"localSsds"`
+	LocalSsds any `field:"optional" json:"localSsds" yaml:"localSsds"`
 	// An opaque location hint used to place the allocation close to other resources.
 	//
 	// This field is for use by internal tools that use the public API.
@@ -35,4 +34,3 @@ type GoogleComputeFutureReservationSpecificSkuPropertiesInstanceProperties struc
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#min_cpu_platform GoogleComputeFutureReservation#min_cpu_platform}
 	MinCpuPlatform *string `field:"optional" json:"minCpuPlatform" yaml:"minCpuPlatform"`
 }
-

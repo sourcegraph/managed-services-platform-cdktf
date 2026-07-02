@@ -12,9 +12,9 @@ type GoogleDataprocGdcServiceInstanceGdceClusterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type GoogleDataprocGdcServiceInstanceGdceClusterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type GoogleDataprocGdcServiceInstanceGdceClusterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) T
 	return returns
 }
 
-
 func NewGoogleDataprocGdcServiceInstanceGdceClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocGdcServiceInstanceGdceClusterOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewGoogleDataprocGdcServiceInstanceGdceClusterOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceGdceClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewGoogleDataprocGdcServiceInstanceGdceClusterOutputReference_Override(g Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceGdceClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)SetGdceCluster(val *string) {
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) SetGdceCluster(val *string) {
 	if err := j.validateSetGdceClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)SetInternalValue(val *GoogleDataprocGdcServiceInstanceGdceCluster) {
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) SetInternalValue(val *GoogleDataprocGdcServiceInstanceGdceCluster) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) C
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) I
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (g *jsiiProxy_GoogleDataprocGdcServiceInstanceGdceClusterOutputReference) T
 
 	return returns
 }
-

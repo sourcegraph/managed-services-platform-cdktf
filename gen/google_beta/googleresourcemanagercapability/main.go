@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleResourceManagerCapability.GoogleResourceManagerCapability",
-		reflect.TypeOf((*GoogleResourceManagerCapability)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerCapability](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleResourceManagerCapability{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleResourceManagerCapability.GoogleResourceManagerCapabilityConfig",
-		reflect.TypeOf((*GoogleResourceManagerCapabilityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerCapabilityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleResourceManagerCapability.GoogleResourceManagerCapabilityTimeouts",
-		reflect.TypeOf((*GoogleResourceManagerCapabilityTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerCapabilityTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleResourceManagerCapability.GoogleResourceManagerCapabilityTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleResourceManagerCapabilityTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerCapabilityTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecor
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateAddMo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateMoveF
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleOracleDatabaseCloudExadataInfrastructure_GenerateConfigForImp
 	return nil
 }
 
-func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsConstructParameters(x interface{}) error {
+func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsConstructParameter
 	return nil
 }
 
-func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElementPa
 	return nil
 }
 
-func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetCl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetPr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewGoogleOracleDatabaseCloudExadataInfrastructureParameters(scope c
 
 	return nil
 }
-

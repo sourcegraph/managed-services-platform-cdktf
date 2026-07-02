@@ -109,7 +109,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetCriticalParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetCriticalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExte
 
 	return nil
 }
-

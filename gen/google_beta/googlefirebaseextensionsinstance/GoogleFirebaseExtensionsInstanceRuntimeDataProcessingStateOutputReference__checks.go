@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOutput
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
-		reflect.TypeOf((*GoogleDiscoveryEngineSitemap)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineSitemap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineSitemap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemapConfig",
-		reflect.TypeOf((*GoogleDiscoveryEngineSitemapConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineSitemapConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemapTimeouts",
-		reflect.TypeOf((*GoogleDiscoveryEngineSitemapTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineSitemapTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemapTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineSitemapTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineSitemapTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineSitemapTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

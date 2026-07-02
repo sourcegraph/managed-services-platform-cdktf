@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyServerValidationCaList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyServerValidationCaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyServerValidationCaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkSecurityClientTlsPolicyServerValidationCaListParame
 
 	return nil
 }
-

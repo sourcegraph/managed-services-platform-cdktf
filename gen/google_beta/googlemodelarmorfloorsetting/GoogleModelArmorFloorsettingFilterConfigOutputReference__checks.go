@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewGoogleModelArmorFloorsettingFilterConfigOutputReferenceParameter
 
 	return nil
 }
-

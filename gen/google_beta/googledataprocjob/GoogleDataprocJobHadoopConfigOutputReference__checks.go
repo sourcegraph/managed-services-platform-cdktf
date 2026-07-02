@@ -125,7 +125,7 @@ func (j *jsiiProxy_GoogleDataprocJobHadoopConfigOutputReference) validateSetArgs
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobHadoopConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobHadoopConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,4 +265,3 @@ func validateNewGoogleDataprocJobHadoopConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohunt",
-		reflect.TypeOf((*GoogleChronicleRetrohunt)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohunt](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleChronicleRetrohunt{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntConfig",
-		reflect.TypeOf((*GoogleChronicleRetrohuntConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntExecutionInterval",
-		reflect.TypeOf((*GoogleChronicleRetrohuntExecutionInterval)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntExecutionInterval](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntExecutionIntervalList",
-		reflect.TypeOf((*GoogleChronicleRetrohuntExecutionIntervalList)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntExecutionIntervalList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleChronicleRetrohuntExecutionIntervalList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntExecutionIntervalOutputReference",
-		reflect.TypeOf((*GoogleChronicleRetrohuntExecutionIntervalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntExecutionIntervalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleChronicleRetrohuntExecutionIntervalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessInterval",
-		reflect.TypeOf((*GoogleChronicleRetrohuntProcessInterval)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntProcessInterval](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntProcessIntervalOutputReference",
-		reflect.TypeOf((*GoogleChronicleRetrohuntProcessIntervalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntProcessIntervalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleChronicleRetrohuntProcessIntervalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeouts",
-		reflect.TypeOf((*GoogleChronicleRetrohuntTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleChronicleRetrohunt.GoogleChronicleRetrohuntTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleChronicleRetrohuntTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleChronicleRetrohuntTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleChronicleRetrohuntTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

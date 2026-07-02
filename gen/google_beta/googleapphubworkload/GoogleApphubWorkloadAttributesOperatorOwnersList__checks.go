@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOperatorOwnersList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOperatorOwnersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOperatorOwnersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApphubWorkloadAttributesOperatorOwnersListParameters(terra
 
 	return nil
 }
-

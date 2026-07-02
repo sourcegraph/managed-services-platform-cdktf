@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleEdgenetworkInterconnectAttachmentTimeoutsOutputReferencePa
 
 	return nil
 }
-

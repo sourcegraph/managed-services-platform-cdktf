@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleOsConfigPatchDeployment_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleOsConfigPatchDeployment_IsConstructParameters(x interface{}) error {
+func validateGoogleOsConfigPatchDeployment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateGoogleOsConfigPatchDeployment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleOsConfigPatchDeployment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOsConfigPatchDeployment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateGoogleOsConfigPatchDeployment_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleOsConfigPatchDeployment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOsConfigPatchDeployment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func validateGoogleOsConfigPatchDeployment_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -343,7 +343,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewGoogleOsConfigPatchDeploymentParameters(scope constructs.Constru
 
 	return nil
 }
-

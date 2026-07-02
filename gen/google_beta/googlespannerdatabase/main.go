@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerDatabase.GoogleSpannerDatabase",
-		reflect.TypeOf((*GoogleSpannerDatabase)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerDatabase](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionRetentionPeriod", GoGetter: "VersionRetentionPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "versionRetentionPeriodInput", GoGetter: "VersionRetentionPeriodInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerDatabase{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig",
-		reflect.TypeOf((*GoogleSpannerDatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerDatabaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfig",
-		reflect.TypeOf((*GoogleSpannerDatabaseEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerDatabaseEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleSpannerDatabaseEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerDatabaseEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts",
-		reflect.TypeOf((*GoogleSpannerDatabaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerDatabaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSpannerDatabaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerDatabaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

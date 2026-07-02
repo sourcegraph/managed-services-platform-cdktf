@@ -12,9 +12,9 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -286,7 +286,6 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Terr
 	return returns
 }
 
-
 func NewGoogleSccProjectCustomModuleCustomConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSccProjectCustomModuleCustomConfigOutputReference {
 	_init_.Initialize()
 
@@ -297,7 +296,7 @@ func NewGoogleSccProjectCustomModuleCustomConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccProjectCustomModule.GoogleSccProjectCustomModuleCustomConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewGoogleSccProjectCustomModuleCustomConfigOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccProjectCustomModule.GoogleSccProjectCustomModuleCustomConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetDe
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetInternalValue(val *GoogleSccProjectCustomModuleCustomConfig) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetInternalValue(val *GoogleSccProjectCustomModuleCustomConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetRecommendation(val *string) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetRecommendation(val *string) {
 	if err := j.validateSetRecommendationParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetSeverity(val *string) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetSeverity(val *string) {
 	if err := j.validateSetSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetSe
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) PutC
 	_jsii_.InvokeVoid(
 		g,
 		"putCustomOutput",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -606,7 +605,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) PutP
 	_jsii_.InvokeVoid(
 		g,
 		"putPredicate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -617,7 +616,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) PutR
 	_jsii_.InvokeVoid(
 		g,
 		"putResourceSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -637,16 +636,16 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -665,4 +664,3 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) ToSt
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package googlenetappvolume
 
-
 type GoogleNetappVolumeTieringPolicy struct {
 	// Optional.
 	//
@@ -12,7 +11,7 @@ type GoogleNetappVolumeTieringPolicy struct {
 	// Optional. Flag indicating that the hot tier bypass mode is enabled. Default is false. Only applicable to Flex service level.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#hot_tier_bypass_mode_enabled GoogleNetappVolume#hot_tier_bypass_mode_enabled}
-	HotTierBypassModeEnabled interface{} `field:"optional" json:"hotTierBypassModeEnabled" yaml:"hotTierBypassModeEnabled"`
+	HotTierBypassModeEnabled any `field:"optional" json:"hotTierBypassModeEnabled" yaml:"hotTierBypassModeEnabled"`
 	// Optional.
 	//
 	// Flag indicating if the volume has tiering policy enable/pause. Default is PAUSED. Default value: "PAUSED" Possible values: ["ENABLED", "PAUSED"]
@@ -20,4 +19,3 @@ type GoogleNetappVolumeTieringPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#tier_action GoogleNetappVolume#tier_action}
 	TierAction *string `field:"optional" json:"tierAction" yaml:"tierAction"`
 }
-

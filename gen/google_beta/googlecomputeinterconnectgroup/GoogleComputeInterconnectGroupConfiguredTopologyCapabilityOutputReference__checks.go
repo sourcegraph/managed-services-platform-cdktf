@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutput
 
 	return nil
 }
-

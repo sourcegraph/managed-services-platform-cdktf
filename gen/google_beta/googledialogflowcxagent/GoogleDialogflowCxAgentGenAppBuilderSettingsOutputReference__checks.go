@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxAgentGenAppBuilderSettingsOutputReferenceParam
 
 	return nil
 }
-

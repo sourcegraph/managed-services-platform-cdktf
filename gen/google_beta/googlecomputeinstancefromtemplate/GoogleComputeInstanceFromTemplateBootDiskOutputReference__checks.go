@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetAutoDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,7 +226,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetForceAttachParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -321,4 +321,3 @@ func validateNewGoogleComputeInstanceFromTemplateBootDiskOutputReferenceParamete
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApigeeEnvKeystore) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvKeystore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApigeeEnvKeystore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApigeeEnvKeystore) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvKeystore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApigeeEnvKeystore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleApigeeEnvKeystore_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleApigeeEnvKeystore_IsConstructParameters(x interface{}) error {
+func validateGoogleApigeeEnvKeystore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleApigeeEnvKeystore_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleApigeeEnvKeystore_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApigeeEnvKeystore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleApigeeEnvKeystore_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleApigeeEnvKeystore_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApigeeEnvKeystore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleApigeeEnvKeystore_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvKeystore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGoogleApigeeEnvKeystoreParameters(scope constructs.Construct, id
 
 	return nil
 }
-

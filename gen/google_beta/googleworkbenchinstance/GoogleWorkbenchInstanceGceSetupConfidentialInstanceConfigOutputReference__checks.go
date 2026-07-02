@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputR
 
 	return nil
 }
-

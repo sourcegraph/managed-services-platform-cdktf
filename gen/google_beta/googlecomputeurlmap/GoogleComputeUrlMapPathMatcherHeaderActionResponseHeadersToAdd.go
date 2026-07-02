@@ -1,6 +1,5 @@
 package googlecomputeurlmap
 
-
 type GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd struct {
 	// The name of the header.
 	//
@@ -16,6 +15,5 @@ type GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd struct {
 	// were set for that header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#replace GoogleComputeUrlMap#replace}
-	Replace interface{} `field:"required" json:"replace" yaml:"replace"`
+	Replace any `field:"required" json:"replace" yaml:"replace"`
 }
-

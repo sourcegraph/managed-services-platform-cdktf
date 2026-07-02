@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleChronicleRuleCompilationDiagnosticsPositionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleRuleCompilationDiagnosticsPositionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleRuleCompilationDiagnosticsPositionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleChronicleRuleCompilationDiagnosticsPositionOutputReference
 
 	return nil
 }
-

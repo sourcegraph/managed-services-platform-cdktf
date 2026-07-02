@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validatePutInstancesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validatePutInstancesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validatePutSubnetworksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validatePutSubnetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -268,4 +268,3 @@ func validateNewGoogleComputePacketMirroringMirroredResourcesOutputReferencePara
 
 	return nil
 }
-

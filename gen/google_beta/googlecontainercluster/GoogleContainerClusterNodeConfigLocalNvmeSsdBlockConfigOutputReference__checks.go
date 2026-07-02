@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputRef
 
 	return nil
 }
-

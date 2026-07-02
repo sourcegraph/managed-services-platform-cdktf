@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOut
 
 	return nil
 }
-

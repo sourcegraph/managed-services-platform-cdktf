@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validatePutLayer4ConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validatePutLayer4ConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validatePutSrcSecureTagsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validatePutSrcSecureTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -364,4 +364,3 @@ func validateNewGoogleComputeFirewallPolicyRuleMatchOutputReferenceParameters(te
 
 	return nil
 }
-

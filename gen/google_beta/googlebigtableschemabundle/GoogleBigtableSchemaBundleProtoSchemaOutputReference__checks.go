@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigtableSchemaBundleProtoSchemaOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableSchemaBundleProtoSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableSchemaBundleProtoSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigtableSchemaBundleProtoSchemaOutputReferenceParameters(t
 
 	return nil
 }
-

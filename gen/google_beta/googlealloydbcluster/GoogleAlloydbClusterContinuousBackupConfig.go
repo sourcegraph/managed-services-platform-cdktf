@@ -1,11 +1,10 @@
 package googlealloydbcluster
 
-
 type GoogleAlloydbClusterContinuousBackupConfig struct {
 	// Whether continuous backup recovery is enabled. If not set, defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#enabled GoogleAlloydbCluster#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#encryption_config GoogleAlloydbCluster#encryption_config}
@@ -19,4 +18,3 @@ type GoogleAlloydbClusterContinuousBackupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#recovery_window_days GoogleAlloydbCluster#recovery_window_days}
 	RecoveryWindowDays *float64 `field:"optional" json:"recoveryWindowDays" yaml:"recoveryWindowDays"`
 }
-

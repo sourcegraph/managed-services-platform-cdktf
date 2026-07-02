@@ -1,6 +1,5 @@
 package googledatapipelinepipeline
 
-
 type GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameters struct {
 	// The job name to use for the created job.
 	//
@@ -26,6 +25,5 @@ type GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParame
 	// If set, replace the existing pipeline with the name specified by jobName with this pipeline, preserving state.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#update GoogleDataPipelinePipeline#update}
-	Update interface{} `field:"optional" json:"update" yaml:"update"`
+	Update any `field:"optional" json:"update" yaml:"update"`
 }
-

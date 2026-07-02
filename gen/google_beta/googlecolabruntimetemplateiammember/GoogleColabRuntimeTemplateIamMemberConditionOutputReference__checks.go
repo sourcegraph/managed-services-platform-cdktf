@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIamMemberConditionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleColabRuntimeTemplateIamMemberConditionOutputReferenceParam
 
 	return nil
 }
-

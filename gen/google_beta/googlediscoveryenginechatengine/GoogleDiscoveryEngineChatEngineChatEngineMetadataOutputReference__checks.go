@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlecomputeregionautoscaler
 
-
 type GoogleComputeRegionAutoscalerAutoscalingPolicy struct {
 	// The maximum number of instances that the autoscaler can scale up to.
 	//
@@ -43,7 +42,7 @@ type GoogleComputeRegionAutoscalerAutoscalingPolicy struct {
 	// metric block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_autoscaler#metric GoogleComputeRegionAutoscaler#metric}
-	Metric interface{} `field:"optional" json:"metric" yaml:"metric"`
+	Metric any `field:"optional" json:"metric" yaml:"metric"`
 	// Defines operating mode for this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_autoscaler#mode GoogleComputeRegionAutoscaler#mode}
@@ -59,6 +58,5 @@ type GoogleComputeRegionAutoscalerAutoscalingPolicy struct {
 	// scaling_schedules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_autoscaler#scaling_schedules GoogleComputeRegionAutoscaler#scaling_schedules}
-	ScalingSchedules interface{} `field:"optional" json:"scalingSchedules" yaml:"scalingSchedules"`
+	ScalingSchedules any `field:"optional" json:"scalingSchedules" yaml:"scalingSchedules"`
 }
-

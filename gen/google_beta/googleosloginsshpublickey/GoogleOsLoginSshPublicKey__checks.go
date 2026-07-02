@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleOsLoginSshPublicKey_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleOsLoginSshPublicKey_IsConstructParameters(x interface{}) error {
+func validateGoogleOsLoginSshPublicKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleOsLoginSshPublicKey_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleOsLoginSshPublicKey_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOsLoginSshPublicKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleOsLoginSshPublicKey_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleOsLoginSshPublicKey_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOsLoginSshPublicKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleOsLoginSshPublicKey_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleOsLoginSshPublicKeyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

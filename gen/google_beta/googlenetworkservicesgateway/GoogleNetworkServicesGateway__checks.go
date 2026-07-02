@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesGateway) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesGateway) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesGateway) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkServicesGateway_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleNetworkServicesGateway_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkServicesGateway_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkServicesGateway_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleNetworkServicesGateway_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkServicesGateway_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkServicesGateway_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleNetworkServicesGateway_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkServicesGateway_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCertificateUrlsParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDeleteSwgAutogenRouterOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDeleteSwgAutogenRouterOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -477,7 +477,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -581,4 +581,3 @@ func validateNewGoogleNetworkServicesGatewayParameters(scope constructs.Construc
 
 	return nil
 }
-

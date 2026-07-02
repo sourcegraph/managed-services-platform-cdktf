@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigConfidentialNodesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigConfidentialNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigConfidentialNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigConfidentialNodesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigConfidentialNodesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigConfidentialNodesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleContainerClusterNodeConfigConfidentialNodesOutputReference
 
 	return nil
 }
-

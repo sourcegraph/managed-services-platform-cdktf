@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeImageShieldedInstanceInitialStatePkOutputReferenceP
 
 	return nil
 }
-

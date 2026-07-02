@@ -1,11 +1,10 @@
 package googlecloudfunctions2function
 
-
 type GoogleCloudfunctions2FunctionEventTrigger struct {
 	// event_filters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#event_filters GoogleCloudfunctions2Function#event_filters}
-	EventFilters interface{} `field:"optional" json:"eventFilters" yaml:"eventFilters"`
+	EventFilters any `field:"optional" json:"eventFilters" yaml:"eventFilters"`
 	// Required. The type of event to observe.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#event_type GoogleCloudfunctions2Function#event_type}
@@ -38,4 +37,3 @@ type GoogleCloudfunctions2FunctionEventTrigger struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#trigger_region GoogleCloudfunctions2Function#trigger_region}
 	TriggerRegion *string `field:"optional" json:"triggerRegion" yaml:"triggerRegion"`
 }
-

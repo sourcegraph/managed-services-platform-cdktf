@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
-		reflect.TypeOf((*GoogleApigeeEnvReferences)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvReferences](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvReferences{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesConfig",
-		reflect.TypeOf((*GoogleApigeeEnvReferencesConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvReferencesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesTimeouts",
-		reflect.TypeOf((*GoogleApigeeEnvReferencesTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvReferencesTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeEnvReferencesTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvReferencesTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvReferencesTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

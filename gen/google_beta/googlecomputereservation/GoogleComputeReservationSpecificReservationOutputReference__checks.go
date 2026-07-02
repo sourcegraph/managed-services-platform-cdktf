@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewGoogleComputeReservationSpecificReservationOutputReferenceParame
 
 	return nil
 }
-

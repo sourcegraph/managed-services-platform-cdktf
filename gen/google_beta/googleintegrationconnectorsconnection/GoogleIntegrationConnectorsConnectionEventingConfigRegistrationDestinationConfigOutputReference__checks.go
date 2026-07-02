@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrati
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validatePutDestinationParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validatePutDestinationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewGoogleIntegrationConnectorsConnectionEventingConfigRegistrationD
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetAllowNonIncrementalDefinitionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetAllowNonIncrementalDefinitionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetEnableRefreshParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetEnableRefreshParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewGoogleBigqueryTableMaterializedViewOutputReferenceParameters(ter
 
 	return nil
 }
-

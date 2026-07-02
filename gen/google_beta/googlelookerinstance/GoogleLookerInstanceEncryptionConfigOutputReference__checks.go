@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLookerInstanceEncryptionConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstanceEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleLookerInstanceEncryptionConfigOutputReferenceParameters(te
 
 	return nil
 }
-

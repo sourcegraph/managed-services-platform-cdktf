@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGroupIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogEntryGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataCatalogEntryGroupIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

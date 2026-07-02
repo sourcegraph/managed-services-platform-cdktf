@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedF
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFiel
 
 	return nil
 }
-

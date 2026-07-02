@@ -6,9 +6,9 @@ import (
 
 type GoogleBigtableInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleBigtableInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name (also called Instance Id in the Cloud Console) of the Cloud Bigtable instance.
 	//
 	// Must be 6-33 characters and must only contain hyphens, lowercase letters and numbers.
@@ -28,13 +28,13 @@ type GoogleBigtableInstanceConfig struct {
 	// cluster block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_instance#cluster GoogleBigtableInstance#cluster}
-	Cluster interface{} `field:"optional" json:"cluster" yaml:"cluster"`
+	Cluster any `field:"optional" json:"cluster" yaml:"cluster"`
 	// When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the instance will fail.
 	//
 	// When the field is set to false, deleting the instance is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_instance#deletion_protection GoogleBigtableInstance#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// The human-readable display name of the Bigtable instance. Defaults to the instance name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_instance#display_name GoogleBigtableInstance#display_name}
@@ -42,7 +42,7 @@ type GoogleBigtableInstanceConfig struct {
 	// When deleting a BigTable instance, this boolean option will delete all backups within the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_instance#force_destroy GoogleBigtableInstance#force_destroy}
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -70,4 +70,3 @@ type GoogleBigtableInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_instance#timeouts GoogleBigtableInstance#timeouts}
 	Timeouts *GoogleBigtableInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

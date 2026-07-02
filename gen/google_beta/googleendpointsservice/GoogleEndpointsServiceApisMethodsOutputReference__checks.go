@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceApisMethodsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceApisMethodsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceApisMethodsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEndpointsServiceApisMethodsOutputReferenceParameters(terra
 
 	return nil
 }
-

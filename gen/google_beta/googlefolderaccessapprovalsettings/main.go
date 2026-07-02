@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersionInput", GoGetter: "ActiveKeyVersionInput"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderAccessApprovalSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsConfig",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServices",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettingsEnrolledServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettingsEnrolledServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudProductInput", GoGetter: "CloudProductInput"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeouts",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderAccessApprovalSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

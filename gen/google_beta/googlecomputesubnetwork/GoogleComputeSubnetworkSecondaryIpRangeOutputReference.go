@@ -12,9 +12,9 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
@@ -49,7 +49,7 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	ResetReservedInternalRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Terra
 	return returns
 }
 
-
 func NewGoogleComputeSubnetworkSecondaryIpRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeSubnetworkSecondaryIpRangeOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewGoogleComputeSubnetworkSecondaryIpRangeOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewGoogleComputeSubnetworkSecondaryIpRangeOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetIpCidrRange(val *string) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetIpCidrRange(val *string) {
 	if err := j.validateSetIpCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetIpC
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetRangeName(val *string) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetRangeName(val *string) {
 	if err := j.validateSetRangeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetRan
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetReservedInternalRange(val *string) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetReservedInternalRange(val *string) {
 	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetRes
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ToStr
 
 	return returns
 }
-

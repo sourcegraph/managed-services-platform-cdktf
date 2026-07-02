@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataflowJob) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataflowJob) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataflowJob) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataflowJob) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataflowJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataflowJob) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataflowJob_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateGoogleDataflowJob_IsConstructParameters(x interface{}) error {
+func validateGoogleDataflowJob_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataflowJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleDataflowJob_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataflowJob_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataflowJob_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleDataflowJob_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataflowJob_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetAdditionalExperimentsParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowJob) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataflowJob) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowJob) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataflowJob) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowJob) validateSetEnableStreamingEngineParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataflowJob) validateSetEnableStreamingEngineParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -469,7 +469,7 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowJob) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataflowJob) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,7 +531,7 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetServiceAccountEmailParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowJob) validateSetSkipWaitOnJobTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataflowJob) validateSetSkipWaitOnJobTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -609,4 +609,3 @@ func validateNewGoogleDataflowJobParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

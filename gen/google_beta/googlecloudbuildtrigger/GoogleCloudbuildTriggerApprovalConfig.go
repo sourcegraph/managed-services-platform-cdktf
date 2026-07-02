@@ -1,6 +1,5 @@
 package googlecloudbuildtrigger
 
-
 type GoogleCloudbuildTriggerApprovalConfig struct {
 	// Whether or not approval is needed.
 	//
@@ -8,6 +7,5 @@ type GoogleCloudbuildTriggerApprovalConfig struct {
 	// and will need to be explicitly approved to start.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#approval_required GoogleCloudbuildTrigger#approval_required}
-	ApprovalRequired interface{} `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
+	ApprovalRequired any `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
 }
-

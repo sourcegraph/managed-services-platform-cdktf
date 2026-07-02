@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleClouddeployTargetIamMember) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployTargetIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleClouddeployTargetIamMember) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployTargetIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleClouddeployTargetIamMember_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleClouddeployTargetIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleClouddeployTargetIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleClouddeployTargetIamMember_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleClouddeployTargetIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleClouddeployTargetIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleClouddeployTargetIamMember_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleClouddeployTargetIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleClouddeployTargetIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleClouddeployTargetIamMember_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleClouddeployTargetIamMemberParameters(scope constructs.Cons
 
 	return nil
 }
-

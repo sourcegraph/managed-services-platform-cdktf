@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReferenceP
 
 	return nil
 }
-

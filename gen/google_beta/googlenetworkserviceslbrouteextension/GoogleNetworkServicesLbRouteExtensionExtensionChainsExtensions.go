@@ -1,6 +1,5 @@
 package googlenetworkserviceslbrouteextension
 
-
 type GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// The name for this extension.
 	//
@@ -28,7 +27,7 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// configuring a custom error response in the load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_lb_route_extension#fail_open GoogleNetworkServicesLbRouteExtension#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// List of the HTTP headers to forward to the extension (from the client or backend).
 	//
 	// If omitted, all headers are sent. Each element is a string indicating the header name.
@@ -43,4 +42,3 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_lb_route_extension#timeout GoogleNetworkServicesLbRouteExtension#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
-

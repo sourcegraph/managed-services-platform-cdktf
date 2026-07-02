@@ -15,15 +15,15 @@ type GoogleMonitoringGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,9 +45,9 @@ type GoogleMonitoringGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsCluster() interface{}
-	SetIsCluster(val interface{})
-	IsClusterInput() interface{}
+	IsCluster() any
+	SetIsCluster(val any)
+	IsClusterInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,26 +66,26 @@ type GoogleMonitoringGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleMonitoringGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type GoogleMonitoringGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleMonitoringGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type GoogleMonitoringGroup interface {
 	ResetParentName()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleMonitoringGroup
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) IsCluster() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) IsCluster() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCluster",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) IsCluster() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) IsClusterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) IsClusterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isClusterInput",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) Timeouts() GoogleMonitoringGroupTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GoogleMonitoringGroup) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
 func NewGoogleMonitoringGroup(scope constructs.Construct, id *string, config *GoogleMonitoringGroupConfig) GoogleMonitoringGroup {
@@ -471,7 +470,7 @@ func NewGoogleMonitoringGroup(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringGroup.GoogleMonitoringGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -484,12 +483,12 @@ func NewGoogleMonitoringGroup_Override(g GoogleMonitoringGroup, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringGroup.GoogleMonitoringGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetId(val *string) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetIsCluster(val interface{}) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetIsCluster(val any) {
 	if err := j.validateSetIsClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetIsCluster(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetParentName(val *string) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetParentName(val *string) {
 	if err := j.validateSetParentNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetParentName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetProject(val *string) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleMonitoringGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func GoogleMonitoringGroup_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMonitoringGroup.GoogleMonitoringGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func GoogleMonitoringGroup_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleMonitoringGroup_IsConstruct(x interface{}) *bool {
+func GoogleMonitoringGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMonitoringGroup_IsConstructParameters(x); err != nil {
@@ -670,7 +669,7 @@ func GoogleMonitoringGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMonitoringGroup.GoogleMonitoringGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func GoogleMonitoringGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleMonitoringGroup_IsTerraformElement(x interface{}) *bool {
+func GoogleMonitoringGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMonitoringGroup_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func GoogleMonitoringGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMonitoringGroup.GoogleMonitoringGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func GoogleMonitoringGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleMonitoringGroup_IsTerraformResource(x interface{}) *bool {
+func GoogleMonitoringGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMonitoringGroup_IsTerraformResourceParameters(x); err != nil {
@@ -708,7 +707,7 @@ func GoogleMonitoringGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMonitoringGroup.GoogleMonitoringGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,31 +732,31 @@ func (g *jsiiProxy_GoogleMonitoringGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleMonitoringGroup) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMonitoringGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,15 +884,15 @@ func (g *jsiiProxy_GoogleMonitoringGroup) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMonitoringGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,18 +938,18 @@ func (g *jsiiProxy_GoogleMonitoringGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleMonitoringGroup) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -961,7 +960,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleMonitoringGroup) PutTimeouts(value *GoogleMonitoringGro
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1035,8 +1034,8 @@ func (g *jsiiProxy_GoogleMonitoringGroup) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMonitoringGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GoogleMonitoringGroup) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMonitoringGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1061,8 +1060,8 @@ func (g *jsiiProxy_GoogleMonitoringGroup) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMonitoringGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1074,8 +1073,8 @@ func (g *jsiiProxy_GoogleMonitoringGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMonitoringGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1100,8 +1099,8 @@ func (g *jsiiProxy_GoogleMonitoringGroup) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMonitoringGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1112,4 +1111,3 @@ func (g *jsiiProxy_GoogleMonitoringGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

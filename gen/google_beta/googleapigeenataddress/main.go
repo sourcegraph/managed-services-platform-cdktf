@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
-		reflect.TypeOf((*GoogleApigeeNatAddress)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeNatAddress](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activate", GoGetter: "Activate"},
 			_jsii_.MemberProperty{JsiiProperty: "activateInput", GoGetter: "ActivateInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeNatAddress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeNatAddress.GoogleApigeeNatAddressConfig",
-		reflect.TypeOf((*GoogleApigeeNatAddressConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeNatAddressConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeouts",
-		reflect.TypeOf((*GoogleApigeeNatAddressTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeNatAddressTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeNatAddressTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeNatAddressTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeNatAddressTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

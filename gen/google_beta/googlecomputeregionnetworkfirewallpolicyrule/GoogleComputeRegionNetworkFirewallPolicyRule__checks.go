@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateAddMove
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateMoveFro
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validatePutMatc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validatePutTargetSecureTagsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validatePutTargetSecureTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleComputeRegionNetworkFirewallPolicyRule_GenerateConfigForImpor
 	return nil
 }
 
-func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsConstructParameters(
 	return nil
 }
 
-func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformElementPara
 	return nil
 }
 
-func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetActi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetConn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -411,7 +411,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetDire
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetDisa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -491,7 +491,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetProj
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -569,7 +569,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetTarg
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetTlsInspectParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) validateSetTlsInspectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -607,4 +607,3 @@ func validateNewGoogleComputeRegionNetworkFirewallPolicyRuleParameters(scope con
 
 	return nil
 }
-

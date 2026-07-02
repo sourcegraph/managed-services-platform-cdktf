@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyVersionTemplateOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyVersionTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersionTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleKmsCryptoKeyVersionTemplateOutputReferenceParameters(terra
 
 	return nil
 }
-

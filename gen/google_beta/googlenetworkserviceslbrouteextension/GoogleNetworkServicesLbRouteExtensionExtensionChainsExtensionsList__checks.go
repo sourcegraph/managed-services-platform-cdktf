@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtension
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsLi
 
 	return nil
 }
-

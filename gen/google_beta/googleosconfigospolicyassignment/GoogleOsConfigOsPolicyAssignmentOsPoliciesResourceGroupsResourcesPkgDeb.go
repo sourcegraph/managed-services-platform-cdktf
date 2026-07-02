@@ -1,6 +1,5 @@
 package googleosconfigospolicyassignment
 
-
 type GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkgDeb struct {
 	// source block.
 	//
@@ -11,6 +10,5 @@ type GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkgDeb str
 	// - install when false: 'dpkg -i package' - install when true: 'apt-get update && apt-get -y install package.deb'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_os_policy_assignment#pull_deps GoogleOsConfigOsPolicyAssignment#pull_deps}
-	PullDeps interface{} `field:"optional" json:"pullDeps" yaml:"pullDeps"`
+	PullDeps any `field:"optional" json:"pullDeps" yaml:"pullDeps"`
 }
-

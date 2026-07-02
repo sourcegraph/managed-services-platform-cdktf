@@ -6,9 +6,9 @@ import (
 
 type GoogleVmwareengineExternalAccessRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleVmwareengineExternalAccessRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The action that the external access rule performs. Possible values: ["ALLOW", "DENY"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_external_access_rule#action GoogleVmwareengineExternalAccessRule#action}
@@ -26,7 +26,7 @@ type GoogleVmwareengineExternalAccessRuleConfig struct {
 	// destination_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_external_access_rule#destination_ip_ranges GoogleVmwareengineExternalAccessRule#destination_ip_ranges}
-	DestinationIpRanges interface{} `field:"required" json:"destinationIpRanges" yaml:"destinationIpRanges"`
+	DestinationIpRanges any `field:"required" json:"destinationIpRanges" yaml:"destinationIpRanges"`
 	// A list of destination ports to which the external access rule applies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_external_access_rule#destination_ports GoogleVmwareengineExternalAccessRule#destination_ports}
@@ -50,7 +50,7 @@ type GoogleVmwareengineExternalAccessRuleConfig struct {
 	// source_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_external_access_rule#source_ip_ranges GoogleVmwareengineExternalAccessRule#source_ip_ranges}
-	SourceIpRanges interface{} `field:"required" json:"sourceIpRanges" yaml:"sourceIpRanges"`
+	SourceIpRanges any `field:"required" json:"sourceIpRanges" yaml:"sourceIpRanges"`
 	// A list of source ports to which the external access rule applies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_external_access_rule#source_ports GoogleVmwareengineExternalAccessRule#source_ports}
@@ -69,4 +69,3 @@ type GoogleVmwareengineExternalAccessRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_external_access_rule#timeouts GoogleVmwareengineExternalAccessRule#timeouts}
 	Timeouts *GoogleVmwareengineExternalAccessRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePool",
-		reflect.TypeOf((*GoogleComputeStoragePool)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolConfig",
-		reflect.TypeOf((*GoogleComputeStoragePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolResourceStatus",
-		reflect.TypeOf((*GoogleComputeStoragePoolResourceStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolResourceStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolResourceStatusList",
-		reflect.TypeOf((*GoogleComputeStoragePoolResourceStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolResourceStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolResourceStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolResourceStatusOutputReference",
-		reflect.TypeOf((*GoogleComputeStoragePoolResourceStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolResourceStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalProvisionedDiskIops", GoGetter: "TotalProvisionedDiskIops"},
 			_jsii_.MemberProperty{JsiiProperty: "totalProvisionedDiskThroughput", GoGetter: "TotalProvisionedDiskThroughput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolResourceStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,11 +171,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolStatus",
-		reflect.TypeOf((*GoogleComputeStoragePoolStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolStatusList",
-		reflect.TypeOf((*GoogleComputeStoragePoolStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -196,7 +196,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolStatusOutputReference",
-		reflect.TypeOf((*GoogleComputeStoragePoolStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalProvisionedDiskIops", GoGetter: "TotalProvisionedDiskIops"},
 			_jsii_.MemberProperty{JsiiProperty: "totalProvisionedDiskThroughput", GoGetter: "TotalProvisionedDiskThroughput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,11 +238,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolTimeouts",
-		reflect.TypeOf((*GoogleComputeStoragePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePool.GoogleComputeStoragePoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeStoragePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

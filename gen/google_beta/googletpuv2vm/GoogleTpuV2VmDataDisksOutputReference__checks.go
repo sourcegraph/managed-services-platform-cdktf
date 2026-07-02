@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleTpuV2VmDataDisksOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

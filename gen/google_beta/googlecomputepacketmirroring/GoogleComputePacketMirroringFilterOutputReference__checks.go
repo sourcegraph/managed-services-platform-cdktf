@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroringFilterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePacketMirroringFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePacketMirroringFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputePacketMirroringFilterOutputReferenceParameters(terr
 
 	return nil
 }
-

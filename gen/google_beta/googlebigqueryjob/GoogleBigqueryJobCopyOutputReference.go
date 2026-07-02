@@ -12,9 +12,9 @@ type GoogleBigqueryJobCopyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,7 +37,7 @@ type GoogleBigqueryJobCopyOutputReference interface {
 	InternalValue() *GoogleBigqueryJobCopy
 	SetInternalValue(val *GoogleBigqueryJobCopy)
 	SourceTables() GoogleBigqueryJobCopySourceTablesList
-	SourceTablesInput() interface{}
+	SourceTablesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type GoogleBigqueryJobCopyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,14 +75,14 @@ type GoogleBigqueryJobCopyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDestinationEncryptionConfiguration(value *GoogleBigqueryJobCopyDestinationEncryptionConfiguration)
 	PutDestinationTable(value *GoogleBigqueryJobCopyDestinationTable)
-	PutSourceTables(value interface{})
+	PutSourceTables(value any)
 	ResetCreateDisposition()
 	ResetDestinationEncryptionConfiguration()
 	ResetDestinationTable()
 	ResetWriteDisposition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_GoogleBigqueryJobCopyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SourceTables() GoogleBi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SourceTablesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SourceTablesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourceTablesInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) WriteDispositionInput()
 	return returns
 }
 
-
 func NewGoogleBigqueryJobCopyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryJobCopyOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewGoogleBigqueryJobCopyOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobCopyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewGoogleBigqueryJobCopyOutputReference_Override(g GoogleBigqueryJobCopyOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobCopyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetCreateDisposition(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetCreateDisposition(val *string) {
 	if err := j.validateSetCreateDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetCreateDisposition(val
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetInternalValue(val *GoogleBigqueryJobCopy) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetInternalValue(val *GoogleBigqueryJobCopy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetInternalValue(val *Go
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference)SetWriteDisposition(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobCopyOutputReference) SetWriteDisposition(val *string) {
 	if err := j.validateSetWriteDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,16 +382,16 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) PutDestinationEncryptio
 	_jsii_.InvokeVoid(
 		g,
 		"putDestinationEncryptionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -574,18 +573,18 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) PutDestinationTable(val
 	_jsii_.InvokeVoid(
 		g,
 		"putDestinationTable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) PutSourceTables(value interface{}) {
+func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) PutSourceTables(value any) {
 	if err := g.validatePutSourceTablesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceTables",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) ResetWriteDisposition()
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (g *jsiiProxy_GoogleBigqueryJobCopyOutputReference) ToString() *string {
 
 	return returns
 }
-

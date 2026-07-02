@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) validatePutConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) validatePutConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSettingEnabledToolOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewGoogleGeminiCodeToolsSettingEnabledToolOutputReferenceParameters
 
 	return nil
 }
-

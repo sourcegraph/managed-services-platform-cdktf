@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionIamBindingConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsEkmConnectionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleKmsEkmConnectionIamBindingConditionOutputReferenceParamete
 
 	return nil
 }
-

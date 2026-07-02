@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
-		reflect.TypeOf((*GoogleActiveDirectoryDomain)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleActiveDirectoryDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainConfig",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainTimeouts",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

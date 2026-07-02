@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReferenc
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference) validatePutRouteRuleParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference) validatePutRouteRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewGoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputRef
 
 	return nil
 }
-

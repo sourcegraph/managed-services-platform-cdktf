@@ -1,6 +1,5 @@
 package googlecomputeregionurlmap
 
-
 type GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy struct {
 	// In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 	//
@@ -8,7 +7,7 @@ type GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy struct {
 	// Default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#allow_credentials GoogleComputeRegionUrlMap#allow_credentials}
-	AllowCredentials interface{} `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
+	AllowCredentials any `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
 	// Specifies the content for the Access-Control-Allow-Headers header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#allow_headers GoogleComputeRegionUrlMap#allow_headers}
@@ -36,7 +35,7 @@ type GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy struct {
 	// The default value of false, which indicates that the CORS policy is in effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#disabled GoogleComputeRegionUrlMap#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Specifies the content for the Access-Control-Expose-Headers header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#expose_headers GoogleComputeRegionUrlMap#expose_headers}
@@ -46,4 +45,3 @@ type GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#max_age GoogleComputeRegionUrlMap#max_age}
 	MaxAge *float64 `field:"optional" json:"maxAge" yaml:"maxAge"`
 }
-

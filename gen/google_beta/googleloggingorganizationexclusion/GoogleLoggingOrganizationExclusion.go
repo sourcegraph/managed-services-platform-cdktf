@@ -15,15 +15,15 @@ type GoogleLoggingOrganizationExclusion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,9 +31,9 @@ type GoogleLoggingOrganizationExclusion interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -65,24 +65,24 @@ type GoogleLoggingOrganizationExclusion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleLoggingOrganizationExclusion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleLoggingOrganizationExclusion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type GoogleLoggingOrganizationExclusion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleLoggingOrganizationExclusion
@@ -153,8 +153,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) DescriptionInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_organization_exclusion google_logging_organization_exclusion} Resource.
 func NewGoogleLoggingOrganizationExclusion(scope constructs.Construct, id *string, config *GoogleLoggingOrganizationExclusionConfig) GoogleLoggingOrganizationExclusion {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewGoogleLoggingOrganizationExclusion(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewGoogleLoggingOrganizationExclusion_Override(g GoogleLoggingOrganizationE
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetDisabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetId(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetName(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetOrgId(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationExclusion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func GoogleLoggingOrganizationExclusion_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func GoogleLoggingOrganizationExclusion_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleLoggingOrganizationExclusion_IsConstruct(x interface{}) *bool {
+func GoogleLoggingOrganizationExclusion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingOrganizationExclusion_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func GoogleLoggingOrganizationExclusion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func GoogleLoggingOrganizationExclusion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool {
+func GoogleLoggingOrganizationExclusion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingOrganizationExclusion_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func GoogleLoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func GoogleLoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func GoogleLoggingOrganizationExclusion_IsTerraformResource(x interface{}) *bool {
+func GoogleLoggingOrganizationExclusion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingOrganizationExclusion_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func GoogleLoggingOrganizationExclusion_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) InterpolationForAttribute
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,8 +971,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ResetOverrideLogicalId() 
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -985,8 +984,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) SynthesizeAttributes() *m
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -998,8 +997,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) SynthesizeHclAttributes()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1011,8 +1010,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToHclTerraform() interfac
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1037,8 +1036,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1049,4 +1048,3 @@ func (g *jsiiProxy_GoogleLoggingOrganizationExclusion) ToTerraform() interface{}
 
 	return returns
 }
-

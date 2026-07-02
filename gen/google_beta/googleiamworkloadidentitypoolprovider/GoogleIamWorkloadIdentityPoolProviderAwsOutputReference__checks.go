@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderAwsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderAwsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderAwsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIamWorkloadIdentityPoolProviderAwsOutputReferenceParameter
 
 	return nil
 }
-

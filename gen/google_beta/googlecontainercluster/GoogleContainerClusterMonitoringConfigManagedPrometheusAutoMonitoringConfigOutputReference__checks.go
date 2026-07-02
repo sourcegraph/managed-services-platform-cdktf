@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonit
 
 	return nil
 }
-

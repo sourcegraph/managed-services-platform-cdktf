@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleNotebooksRuntimeSoftwareConfigKernelsOutputReferenceParame
 
 	return nil
 }
-

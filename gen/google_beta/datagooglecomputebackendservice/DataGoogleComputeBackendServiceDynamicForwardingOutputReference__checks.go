@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceDynamicForwardingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceDynamicForwardingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceDynamicForwardingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeBackendServiceDynamicForwardingOutputReferenceP
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -395,4 +395,3 @@ func validateNewGoogleComputeInstanceTemplateNetworkInterfaceOutputReferencePara
 
 	return nil
 }
-

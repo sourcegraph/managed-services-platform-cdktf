@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReferen
 
 	return nil
 }
-

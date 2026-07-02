@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeGlobalNetworkEndpoint_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleComputeGlobalNetworkEndpoint_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeGlobalNetworkEndpoint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeGlobalNetworkEndpoint_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleComputeGlobalNetworkEndpoint_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeGlobalNetworkEndpoint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeGlobalNetworkEndpoint_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleComputeGlobalNetworkEndpoint_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeGlobalNetworkEndpoint_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeGlobalNetworkEndpoint_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleComputeGlobalNetworkEndpointParameters(scope constructs.Co
 
 	return nil
 }
-

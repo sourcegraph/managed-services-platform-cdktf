@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayHubsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayHubsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayHubsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBeyondcorpSecurityGatewayHubsListParameters(terraformResou
 
 	return nil
 }
-

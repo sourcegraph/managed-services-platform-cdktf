@@ -1,6 +1,5 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas struct {
 	// Schema name.
 	//
@@ -9,6 +8,5 @@ type GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas struct 
 	// oracle_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
-	OracleTables interface{} `field:"optional" json:"oracleTables" yaml:"oracleTables"`
+	OracleTables any `field:"optional" json:"oracleTables" yaml:"oracleTables"`
 }
-

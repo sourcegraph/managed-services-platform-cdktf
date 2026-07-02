@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAdBreaksList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigAdBreaksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigAdBreaksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTranscoderJobTemplateConfigAdBreaksListParameters(terrafor
 
 	return nil
 }
-

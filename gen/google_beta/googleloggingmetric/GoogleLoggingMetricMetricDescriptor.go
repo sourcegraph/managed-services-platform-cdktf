@@ -1,6 +1,5 @@
 package googleloggingmetric
 
-
 type GoogleLoggingMetricMetricDescriptor struct {
 	// Whether the metric records instantaneous values, changes to a value, etc.
 	//
@@ -27,7 +26,7 @@ type GoogleLoggingMetricMetricDescriptor struct {
 	// labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_metric#labels GoogleLoggingMetric#labels}
-	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
+	Labels any `field:"optional" json:"labels" yaml:"labels"`
 	// The unit in which the metric value is reported.
 	//
 	// It is only applicable if the valueType is
@@ -37,4 +36,3 @@ type GoogleLoggingMetricMetricDescriptor struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_metric#unit GoogleLoggingMetric#unit}
 	Unit *string `field:"optional" json:"unit" yaml:"unit"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessA)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
 			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,15 +108,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessAConfig",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessAConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessConditionA",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessConditionA)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessConditionA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessConditionAOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessConditionAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessConditionAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessConditionAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,11 +159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetA",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetA)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessDatasetA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetAOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessDatasetAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessDatasetAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,11 +200,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetDatasetA",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetDatasetA)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessDatasetDatasetA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,11 +240,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessRoutineA",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessRoutineA)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessRoutineA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessRoutineAOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessRoutineAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessRoutineAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessRoutineAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessTimeouts",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,11 +324,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessViewA",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessViewA)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessViewA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessViewAOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessViewAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryDatasetAccessViewAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryDatasetAccessViewAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GooglePubsubSubscription) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GooglePubsubSubscription) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GooglePubsubSubscription) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GooglePubsubSubscription) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (g *jsiiProxy_GooglePubsubSubscription) validatePutExpirationPolicyParamete
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscription) validatePutMessageTransformsParameters(value interface{}) error {
+func (g *jsiiProxy_GooglePubsubSubscription) validatePutMessageTransformsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateGooglePubsubSubscription_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateGooglePubsubSubscription_IsConstructParameters(x interface{}) error {
+func validateGooglePubsubSubscription_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -336,7 +336,7 @@ func validateGooglePubsubSubscription_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateGooglePubsubSubscription_IsTerraformElementParameters(x interface{}) error {
+func validateGooglePubsubSubscription_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -344,7 +344,7 @@ func validateGooglePubsubSubscription_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateGooglePubsubSubscription_IsTerraformResourceParameters(x interface{}) error {
+func validateGooglePubsubSubscription_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -360,7 +360,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetAckDeadlineSecondsParame
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -450,7 +450,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetEnableExactlyOnceDeliveryParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetEnableExactlyOnceDeliveryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -470,7 +470,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetEnableExactlyOnceDeliver
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetEnableMessageOrderingParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetEnableMessageOrderingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -546,7 +546,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -592,7 +592,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetRetainAckedMessagesParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetRetainAckedMessagesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -638,4 +638,3 @@ func validateNewGooglePubsubSubscriptionParameters(scope constructs.Construct, i
 
 	return nil
 }
-

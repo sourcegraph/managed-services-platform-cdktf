@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFirebaserulesRulesetSourceFilesListParameters(terraformRes
 
 	return nil
 }
-

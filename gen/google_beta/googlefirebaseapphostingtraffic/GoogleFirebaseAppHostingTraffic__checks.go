@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleFirebaseAppHostingTraffic_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleFirebaseAppHostingTraffic_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseAppHostingTraffic_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleFirebaseAppHostingTraffic_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleFirebaseAppHostingTraffic_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseAppHostingTraffic_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleFirebaseAppHostingTraffic_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleFirebaseAppHostingTraffic_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseAppHostingTraffic_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetBackendParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -407,7 +407,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -471,4 +471,3 @@ func validateNewGoogleFirebaseAppHostingTrafficParameters(scope constructs.Const
 
 	return nil
 }
-

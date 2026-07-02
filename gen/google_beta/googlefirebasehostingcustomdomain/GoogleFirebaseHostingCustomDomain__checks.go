@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleFirebaseHostingCustomDomain_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleFirebaseHostingCustomDomain_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseHostingCustomDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleFirebaseHostingCustomDomain_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleFirebaseHostingCustomDomain_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseHostingCustomDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleFirebaseHostingCustomDomain_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleFirebaseHostingCustomDomain_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseHostingCustomDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetCertPreferenceP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -447,7 +447,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetSiteIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetWaitDnsVerificationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateSetWaitDnsVerificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,4 +485,3 @@ func validateNewGoogleFirebaseHostingCustomDomainParameters(scope constructs.Con
 
 	return nil
 }
-

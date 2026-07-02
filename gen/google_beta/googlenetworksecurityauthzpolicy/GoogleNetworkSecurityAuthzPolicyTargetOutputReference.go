@@ -12,9 +12,9 @@ type GoogleNetworkSecurityAuthzPolicyTargetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GoogleNetworkSecurityAuthzPolicyTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleNetworkSecurityAuthzPolicyTargetOutputReference interface {
 	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) Terraf
 	return returns
 }
 
-
 func NewGoogleNetworkSecurityAuthzPolicyTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityAuthzPolicyTargetOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGoogleNetworkSecurityAuthzPolicyTargetOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityAuthzPolicy.GoogleNetworkSecurityAuthzPolicyTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleNetworkSecurityAuthzPolicyTargetOutputReference_Override(g GoogleN
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityAuthzPolicy.GoogleNetworkSecurityAuthzPolicyTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetInternalValue(val *GoogleNetworkSecurityAuthzPolicyTarget) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetInternalValue(val *GoogleNetworkSecurityAuthzPolicyTarget) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetLoad
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetReso
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) ResetR
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyTargetOutputReference) ToStri
 
 	return returns
 }
-

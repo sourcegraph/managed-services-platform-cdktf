@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionInstallationStateOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionInstallationStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionInstallationStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDeveloperConnectConnectionInstallationStateOutputReference
 
 	return nil
 }
-

@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateSetContinueOnFailureParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateSetContinueOnFailureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,4 +272,3 @@ func validateNewGoogleDataprocWorkflowTemplateJobsPrestoJobOutputReferenceParame
 
 	return nil
 }
-

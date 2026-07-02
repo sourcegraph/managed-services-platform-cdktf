@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGoogleBigqueryDatasetAccessA_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleBigqueryDatasetAccessA_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryDatasetAccessA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateGoogleBigqueryDatasetAccessA_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleBigqueryDatasetAccessA_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryDatasetAccessA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateGoogleBigqueryDatasetAccessA_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleBigqueryDatasetAccessA_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryDatasetAccessA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateGoogleBigqueryDatasetAccessA_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -445,7 +445,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -533,4 +533,3 @@ func validateNewGoogleBigqueryDatasetAccessAParameters(scope constructs.Construc
 
 	return nil
 }
-

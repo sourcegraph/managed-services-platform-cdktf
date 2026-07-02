@@ -15,9 +15,9 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputRef
 	AccessLevelsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,11 +29,11 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputRef
 	// Experimental.
 	CreationStack() *[]*string
 	EgressPolicies() GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList
-	EgressPoliciesInput() interface{}
+	EgressPoliciesInput() any
 	// Experimental.
 	Fqn() *string
 	IngressPolicies() GoogleAccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesList
-	IngressPoliciesInput() interface{}
+	IngressPoliciesInput() any
 	InternalValue() *GoogleAccessContextManagerServicePerimetersServicePerimetersStatus
 	SetInternalValue(val *GoogleAccessContextManagerServicePerimetersServicePerimetersStatus)
 	Resources() *[]*string
@@ -55,7 +55,7 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputRef
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,8 +76,8 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEgressPolicies(value interface{})
-	PutIngressPolicies(value interface{})
+	PutEgressPolicies(value any)
+	PutIngressPolicies(value any)
 	PutVpcAccessibleServices(value *GoogleAccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServices)
 	ResetAccessLevels()
 	ResetEgressPolicies()
@@ -87,7 +87,7 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputRef
 	ResetVpcAccessibleServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) EgressPoliciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) EgressPoliciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"egressPoliciesInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) IngressPoliciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) IngressPoliciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressPoliciesInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return returns
 }
 
-
 func NewGoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewGoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeters.GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewGoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeters.GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetAccessLevels(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetAccessLevels(val *[]*string) {
 	if err := j.validateSetAccessLevelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetInternalValue(val *GoogleAccessContextManagerServicePerimetersServicePerimetersStatus) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetInternalValue(val *GoogleAccessContextManagerServicePerimetersServicePerimetersStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetRestrictedServices(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetRestrictedServices(val *[]*string) {
 	if err := j.validateSetRestrictedServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,16 +418,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,32 +584,32 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) PutEgressPolicies(value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) PutEgressPolicies(value any) {
 	if err := g.validatePutEgressPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEgressPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) PutIngressPolicies(value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) PutIngressPolicies(value any) {
 	if err := g.validatePutIngressPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putIngressPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	_jsii_.InvokeVoid(
 		g,
 		"putVpcAccessibleServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 
 	return returns
 }
-

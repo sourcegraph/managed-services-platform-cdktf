@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleBinaryAuthorizationAttestorIamPolicy_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetAttest
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleBinaryAuthorizationAttestorIamPolicyParameters(scope const
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
-		reflect.TypeOf((*GoogleVmwareengineNetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetwork](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetworks", GoGetter: "VpcNetworks"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineNetwork{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig",
-		reflect.TypeOf((*GoogleVmwareengineNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts",
-		reflect.TypeOf((*GoogleVmwareengineNetworkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetworkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleVmwareengineNetworkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetworkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineNetworkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworks",
-		reflect.TypeOf((*GoogleVmwareengineNetworkVpcNetworks)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetworkVpcNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksList",
-		reflect.TypeOf((*GoogleVmwareengineNetworkVpcNetworksList)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetworkVpcNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineNetworkVpcNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
-		reflect.TypeOf((*GoogleVmwareengineNetworkVpcNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineNetworkVpcNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineNetworkVpcNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

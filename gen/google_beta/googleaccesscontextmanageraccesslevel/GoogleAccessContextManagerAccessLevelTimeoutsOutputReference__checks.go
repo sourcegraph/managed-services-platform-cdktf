@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case *GoogleAccessContextManagerAccessLevelTimeouts:
 		val := val.(*GoogleAccessContextManagerAccessLevelTimeouts)
@@ -238,4 +238,3 @@ func validateNewGoogleAccessContextManagerAccessLevelTimeoutsOutputReferencePara
 
 	return nil
 }
-

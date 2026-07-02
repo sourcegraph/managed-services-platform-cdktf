@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeFutureReservationAggregateReservationReservedResour
 
 	return nil
 }
-

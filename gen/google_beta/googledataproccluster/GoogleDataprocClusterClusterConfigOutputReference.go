@@ -13,13 +13,13 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	AutoscalingConfig() GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference
 	AutoscalingConfigInput() *GoogleDataprocClusterClusterConfigAutoscalingConfig
 	AuxiliaryNodeGroups() GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList
-	AuxiliaryNodeGroupsInput() interface{}
+	AuxiliaryNodeGroupsInput() any
 	Bucket() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	GceClusterConfig() GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference
 	GceClusterConfigInput() *GoogleDataprocClusterClusterConfigGceClusterConfig
 	InitializationAction() GoogleDataprocClusterClusterConfigInitializationActionList
-	InitializationActionInput() interface{}
+	InitializationActionInput() any
 	InternalValue() *GoogleDataprocClusterClusterConfig
 	SetInternalValue(val *GoogleDataprocClusterClusterConfig)
 	LifecycleConfig() GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference
@@ -75,7 +75,7 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,12 +97,12 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscalingConfig(value *GoogleDataprocClusterClusterConfigAutoscalingConfig)
-	PutAuxiliaryNodeGroups(value interface{})
+	PutAuxiliaryNodeGroups(value any)
 	PutDataprocMetricConfig(value *GoogleDataprocClusterClusterConfigDataprocMetricConfig)
 	PutEncryptionConfig(value *GoogleDataprocClusterClusterConfigEncryptionConfig)
 	PutEndpointConfig(value *GoogleDataprocClusterClusterConfigEndpointConfig)
 	PutGceClusterConfig(value *GoogleDataprocClusterClusterConfigGceClusterConfig)
-	PutInitializationAction(value interface{})
+	PutInitializationAction(value any)
 	PutLifecycleConfig(value *GoogleDataprocClusterClusterConfigLifecycleConfig)
 	PutMasterConfig(value *GoogleDataprocClusterClusterConfigMasterConfig)
 	PutMetastoreConfig(value *GoogleDataprocClusterClusterConfigMetastoreConfig)
@@ -128,7 +128,7 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	ResetWorkerConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) AuxiliaryN
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"auxiliaryNodeGroupsInput",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Bucket() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Initializa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) InitializationActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) InitializationActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"initializationActionInput",
@@ -541,7 +541,6 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) WorkerConf
 	return returns
 }
 
-
 func NewGoogleDataprocClusterClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocClusterClusterConfigOutputReference {
 	_init_.Initialize()
 
@@ -552,7 +551,7 @@ func NewGoogleDataprocClusterClusterConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -564,12 +563,12 @@ func NewGoogleDataprocClusterClusterConfigOutputReference_Override(g GoogleDatap
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetInternalValue(val *GoogleDataprocClusterClusterConfig) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetInternalValue(val *GoogleDataprocClusterClusterConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetStagingBucket(val *string) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetStagingBucket(val *string) {
 	if err := j.validateSetStagingBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetStagingB
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetTempBucket(val *string) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetTempBucket(val *string) {
 	if err := j.validateSetTempBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetTempBuck
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,16 +658,16 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -839,18 +838,18 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutAutosca
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoscalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutAuxiliaryNodeGroups(value interface{}) {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutAuxiliaryNodeGroups(value any) {
 	if err := g.validatePutAuxiliaryNodeGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAuxiliaryNodeGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,7 +860,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutDatapro
 	_jsii_.InvokeVoid(
 		g,
 		"putDataprocMetricConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutEncrypt
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -883,7 +882,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutEndpoin
 	_jsii_.InvokeVoid(
 		g,
 		"putEndpointConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -894,18 +893,18 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutGceClus
 	_jsii_.InvokeVoid(
 		g,
 		"putGceClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutInitializationAction(value interface{}) {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutInitializationAction(value any) {
 	if err := g.validatePutInitializationActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInitializationAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -916,7 +915,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutLifecyc
 	_jsii_.InvokeVoid(
 		g,
 		"putLifecycleConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutMasterC
 	_jsii_.InvokeVoid(
 		g,
 		"putMasterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,7 +937,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutMetasto
 	_jsii_.InvokeVoid(
 		g,
 		"putMetastoreConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,7 +948,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutPreempt
 	_jsii_.InvokeVoid(
 		g,
 		"putPreemptibleWorkerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutSecurit
 	_jsii_.InvokeVoid(
 		g,
 		"putSecurityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -971,7 +970,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutSoftwar
 	_jsii_.InvokeVoid(
 		g,
 		"putSoftwareConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutWorkerC
 	_jsii_.InvokeVoid(
 		g,
 		"putWorkerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1114,16 +1113,16 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetWorke
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1142,4 +1141,3 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ToString()
 
 	return returns
 }
-

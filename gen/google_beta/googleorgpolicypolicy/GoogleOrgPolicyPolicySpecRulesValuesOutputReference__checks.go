@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicySpecRulesValuesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicySpecRulesValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicySpecRulesValuesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleOrgPolicyPolicySpecRulesValuesOutputReferenceParameters(te
 
 	return nil
 }
-

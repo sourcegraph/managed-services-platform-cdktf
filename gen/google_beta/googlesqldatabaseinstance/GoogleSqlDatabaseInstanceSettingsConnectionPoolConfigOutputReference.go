@@ -12,28 +12,28 @@ type GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference interf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConnectionPoolingEnabled() interface{}
-	SetConnectionPoolingEnabled(val interface{})
-	ConnectionPoolingEnabledInput() interface{}
+	ConnectionPoolingEnabled() any
+	SetConnectionPoolingEnabled(val any)
+	ConnectionPoolingEnabledInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	Flags() GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList
-	FlagsInput() interface{}
+	FlagsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFlags(value interface{})
+	PutFlags(value any)
 	ResetConnectionPoolingEnabled()
 	ResetFlags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) ConnectionPoolingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) ConnectionPoolingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectionPoolingEnabled",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) ConnectionPoolingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) ConnectionPoolingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectionPoolingEnabledInput",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) FlagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) FlagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flagsInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	return returns
 }
 
-
 func NewGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)SetConnectionPoolingEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) SetConnectionPoolingEnabled(val any) {
 	if err := j.validateSetConnectionPoolingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) PutFlags(value interface{}) {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) PutFlags(value any) {
 	if err := g.validatePutFlagsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putFlags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigOutputRe
 
 	return returns
 }
-

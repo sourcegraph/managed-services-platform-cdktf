@@ -1,6 +1,5 @@
 package googleaccesscontextmanagerserviceperimeters
 
-
 type GoogleAccessContextManagerServicePerimetersServicePerimetersSpec struct {
 	// A list of AccessLevel resource names that allow resources within the ServicePerimeter to be accessed from the internet.
 	//
@@ -18,11 +17,11 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersSpec struct {
 	// egress_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeters#egress_policies GoogleAccessContextManagerServicePerimeters#egress_policies}
-	EgressPolicies interface{} `field:"optional" json:"egressPolicies" yaml:"egressPolicies"`
+	EgressPolicies any `field:"optional" json:"egressPolicies" yaml:"egressPolicies"`
 	// ingress_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeters#ingress_policies GoogleAccessContextManagerServicePerimeters#ingress_policies}
-	IngressPolicies interface{} `field:"optional" json:"ingressPolicies" yaml:"ingressPolicies"`
+	IngressPolicies any `field:"optional" json:"ingressPolicies" yaml:"ingressPolicies"`
 	// A list of GCP resources that are inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeters#resources GoogleAccessContextManagerServicePerimeters#resources}
@@ -41,4 +40,3 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeters#vpc_accessible_services GoogleAccessContextManagerServicePerimeters#vpc_accessible_services}
 	VpcAccessibleServices *GoogleAccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices `field:"optional" json:"vpcAccessibleServices" yaml:"vpcAccessibleServices"`
 }
-

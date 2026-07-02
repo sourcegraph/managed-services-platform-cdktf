@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleDataFusionInstanceEventPublishConfigOutputReferenceParamet
 
 	return nil
 }
-

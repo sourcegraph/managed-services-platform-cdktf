@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetwork",
-		reflect.TypeOf((*GoogleComputeSubnetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetwork](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSubnetwork{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -141,15 +141,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkConfig",
-		reflect.TypeOf((*GoogleComputeSubnetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfig",
-		reflect.TypeOf((*GoogleComputeSubnetworkLogConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeSubnetworkLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInterval", GoGetter: "AggregationInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationIntervalInput", GoGetter: "AggregationIntervalInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSubnetworkLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkParams",
-		reflect.TypeOf((*GoogleComputeSubnetworkParams)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkParamsOutputReference",
-		reflect.TypeOf((*GoogleComputeSubnetworkParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSubnetworkParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,11 +235,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRange",
-		reflect.TypeOf((*GoogleComputeSubnetworkSecondaryIpRange)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkSecondaryIpRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeList",
-		reflect.TypeOf((*GoogleComputeSubnetworkSecondaryIpRangeList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkSecondaryIpRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -261,7 +261,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeOutputReference",
-		reflect.TypeOf((*GoogleComputeSubnetworkSecondaryIpRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkSecondaryIpRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -301,11 +301,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeouts",
-		reflect.TypeOf((*GoogleComputeSubnetworkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeSubnetworkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSubnetworkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -338,7 +338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSubnetworkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

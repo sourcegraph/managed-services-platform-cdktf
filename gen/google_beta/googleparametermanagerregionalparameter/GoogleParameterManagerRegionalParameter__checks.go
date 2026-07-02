@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleParameterManagerRegionalParameter_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleParameterManagerRegionalParameter_IsConstructParameters(x interface{}) error {
+func validateGoogleParameterManagerRegionalParameter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleParameterManagerRegionalParameter_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleParameterManagerRegionalParameter_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleParameterManagerRegionalParameter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleParameterManagerRegionalParameter_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleParameterManagerRegionalParameter_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleParameterManagerRegionalParameter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleParameterManagerRegionalParameter_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleParameterManagerRegionalParameterParameters(scope construc
 
 	return nil
 }
-

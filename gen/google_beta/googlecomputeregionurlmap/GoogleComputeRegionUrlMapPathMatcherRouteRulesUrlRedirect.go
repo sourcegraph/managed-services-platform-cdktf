@@ -1,6 +1,5 @@
 package googlecomputeregionurlmap
 
-
 type GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// The host that will be used in the redirect response instead of the one that was supplied in the request.
 	//
@@ -17,7 +16,7 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// permitted. The default is set to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#https_redirect GoogleComputeRegionUrlMap#https_redirect}
-	HttpsRedirect interface{} `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
+	HttpsRedirect any `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
 	// The path that will be used in the redirect response instead of the one that was supplied in the request.
 	//
 	// pathRedirect cannot be supplied
@@ -58,6 +57,5 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// portion of the original URL is retained. The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#strip_query GoogleComputeRegionUrlMap#strip_query}
-	StripQuery interface{} `field:"optional" json:"stripQuery" yaml:"stripQuery"`
+	StripQuery any `field:"optional" json:"stripQuery" yaml:"stripQuery"`
 }
-

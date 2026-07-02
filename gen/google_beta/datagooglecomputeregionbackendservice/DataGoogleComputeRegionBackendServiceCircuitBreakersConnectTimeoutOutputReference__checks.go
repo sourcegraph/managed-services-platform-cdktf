@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceCircuitBreakersConnectTi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionBackendServiceCircuitBreakersConnectTimeo
 
 	return nil
 }
-

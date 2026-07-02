@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApigeeOrganizationPropertiesPropertyList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeOrganizationPropertiesPropertyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeOrganizationPropertiesPropertyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApigeeOrganizationPropertiesPropertyListParameters(terrafo
 
 	return nil
 }
-

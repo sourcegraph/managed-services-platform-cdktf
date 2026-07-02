@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceConsistentHashOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceConsistentHashOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceConsistentHashOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewGoogleComputeBackendServiceConsistentHashOutputReferenceParamete
 
 	return nil
 }
-

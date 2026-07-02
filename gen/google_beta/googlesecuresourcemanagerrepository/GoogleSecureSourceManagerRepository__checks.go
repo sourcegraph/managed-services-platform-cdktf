@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleSecureSourceManagerRepository_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleSecureSourceManagerRepository_IsConstructParameters(x interface{}) error {
+func validateGoogleSecureSourceManagerRepository_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleSecureSourceManagerRepository_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleSecureSourceManagerRepository_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSecureSourceManagerRepository_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleSecureSourceManagerRepository_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleSecureSourceManagerRepository_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSecureSourceManagerRepository_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleSecureSourceManagerRepository_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleSecureSourceManagerRepositoryParameters(scope constructs.C
 
 	return nil
 }
-

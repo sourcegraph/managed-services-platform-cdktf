@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowLi
 
 	return nil
 }
-

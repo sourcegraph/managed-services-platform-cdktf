@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleVmwareengineClusterNodeTypeConfigsListParameters(terraform
 
 	return nil
 }
-

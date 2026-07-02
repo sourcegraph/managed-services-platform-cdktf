@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
-		reflect.TypeOf((*GoogleBigtableInstanceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableInstanceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableInstanceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBindingCondition",
-		reflect.TypeOf((*GoogleBigtableInstanceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableInstanceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleBigtableInstanceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableInstanceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableInstanceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBindingConfig",
-		reflect.TypeOf((*GoogleBigtableInstanceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableInstanceIamBindingConfig](),
 	)
 }

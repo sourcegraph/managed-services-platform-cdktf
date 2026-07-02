@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetEnableMultiLanguageDetectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetEnableMultiLanguageDetectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOu
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) validatePutServerCertificatesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) validatePutServerCertificatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewGoogleKmsEkmConnectionServiceResolversOutputReferenceParameters(
 
 	return nil
 }
-

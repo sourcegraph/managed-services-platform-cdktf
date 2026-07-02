@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleRedisClusterAutomatedBackupConfigOutputReferenceParameters
 
 	return nil
 }
-

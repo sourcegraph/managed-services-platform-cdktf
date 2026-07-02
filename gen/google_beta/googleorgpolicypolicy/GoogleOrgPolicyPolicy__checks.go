@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleOrgPolicyPolicy_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateGoogleOrgPolicyPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleOrgPolicyPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleOrgPolicyPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleOrgPolicyPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOrgPolicyPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleOrgPolicyPolicy_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleOrgPolicyPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOrgPolicyPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateGoogleOrgPolicyPolicy_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -399,7 +399,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetParentParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -463,4 +463,3 @@ func validateNewGoogleOrgPolicyPolicyParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

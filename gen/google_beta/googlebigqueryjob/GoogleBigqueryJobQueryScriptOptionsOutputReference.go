@@ -12,9 +12,9 @@ type GoogleBigqueryJobQueryScriptOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GoogleBigqueryJobQueryScriptOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleBigqueryJobQueryScriptOptionsOutputReference interface {
 	ResetStatementTimeoutMs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) Terraform
 	return returns
 }
 
-
 func NewGoogleBigqueryJobQueryScriptOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryJobQueryScriptOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleBigqueryJobQueryScriptOptionsOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobQueryScriptOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleBigqueryJobQueryScriptOptionsOutputReference_Override(g GoogleBigq
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobQueryScriptOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetInternalValue(val *GoogleBigqueryJobQueryScriptOptions) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetInternalValue(val *GoogleBigqueryJobQueryScriptOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetKeyResultStatement(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetKeyResultStatement(val *string) {
 	if err := j.validateSetKeyResultStatementParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetKeyResu
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetStatementByteBudget(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetStatementByteBudget(val *string) {
 	if err := j.validateSetStatementByteBudgetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetStateme
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetStatementTimeoutMs(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetStatementTimeoutMs(val *string) {
 	if err := j.validateSetStatementTimeoutMsParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetStateme
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) ResetStat
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference) ToString(
 
 	return returns
 }
-

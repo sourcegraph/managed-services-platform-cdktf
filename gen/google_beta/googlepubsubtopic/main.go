@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopic",
-		reflect.TypeOf((*GooglePubsubTopic)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopic](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopic{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,19 +100,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicConfig",
-		reflect.TypeOf((*GooglePubsubTopicConfig)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettings",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettings)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsRoleArn", GoGetter: "AwsRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "awsRoleArnInput", GoGetter: "AwsRoleArnInput"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsAwsMsk",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsAwsMsk)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsAwsMsk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsRoleArn", GoGetter: "AwsRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "awsRoleArnInput", GoGetter: "AwsRoleArnInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,15 +253,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStorage",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStorage)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStorage](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,7 +293,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avroFormat", GoGetter: "AvroFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "avroFormatInput", GoGetter: "AvroFormatInput"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textFormatInput", GoGetter: "TextFormatInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -345,11 +345,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -373,7 +373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -381,11 +381,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,11 +420,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServer", GoGetter: "BootstrapServer"},
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServerInput", GoGetter: "BootstrapServerInput"},
@@ -459,7 +459,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -467,7 +467,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsKinesis", GoGetter: "AwsKinesis"},
 			_jsii_.MemberProperty{JsiiProperty: "awsKinesisInput", GoGetter: "AwsKinesisInput"},
@@ -515,7 +515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -523,11 +523,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -554,7 +554,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -562,11 +562,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicy",
-		reflect.TypeOf((*GooglePubsubTopicMessageStoragePolicy)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageStoragePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicMessageStoragePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageStoragePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedPersistenceRegions", GoGetter: "AllowedPersistenceRegions"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedPersistenceRegionsInput", GoGetter: "AllowedPersistenceRegionsInput"},
@@ -595,7 +595,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -603,15 +603,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageTransforms",
-		reflect.TypeOf((*GooglePubsubTopicMessageTransforms)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageTransforms](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageTransformsJavascriptUdf",
-		reflect.TypeOf((*GooglePubsubTopicMessageTransformsJavascriptUdf)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageTransformsJavascriptUdf](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageTransformsJavascriptUdfOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicMessageTransformsJavascriptUdfOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageTransformsJavascriptUdfOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "codeInput", GoGetter: "CodeInput"},
@@ -639,7 +639,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicMessageTransformsJavascriptUdfOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -647,7 +647,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageTransformsList",
-		reflect.TypeOf((*GooglePubsubTopicMessageTransformsList)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageTransformsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -661,7 +661,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicMessageTransformsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -669,7 +669,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicMessageTransformsOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicMessageTransformsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicMessageTransformsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -700,7 +700,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -708,11 +708,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicSchemaSettings",
-		reflect.TypeOf((*GooglePubsubTopicSchemaSettings)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicSchemaSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicSchemaSettingsOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicSchemaSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicSchemaSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -741,7 +741,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicSchemaSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -749,11 +749,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicTimeouts",
-		reflect.TypeOf((*GooglePubsubTopicTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicTimeoutsOutputReference",
-		reflect.TypeOf((*GooglePubsubTopicTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubTopicTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -786,7 +786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubTopicTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

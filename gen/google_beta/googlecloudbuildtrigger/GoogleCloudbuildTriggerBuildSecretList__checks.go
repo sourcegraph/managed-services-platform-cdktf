@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildSecretList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudbuildTriggerBuildSecretListParameters(terraformResour
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeRouterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeRouterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// The name must be 1-63 characters long, and
@@ -45,7 +45,7 @@ type GoogleComputeRouterConfig struct {
 	// Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router#encrypted_interconnect_router GoogleComputeRouter#encrypted_interconnect_router}
-	EncryptedInterconnectRouter interface{} `field:"optional" json:"encryptedInterconnectRouter" yaml:"encryptedInterconnectRouter"`
+	EncryptedInterconnectRouter any `field:"optional" json:"encryptedInterconnectRouter" yaml:"encryptedInterconnectRouter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router#id GoogleComputeRouter#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -66,4 +66,3 @@ type GoogleComputeRouterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router#timeouts GoogleComputeRouter#timeouts}
 	Timeouts *GoogleComputeRouterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

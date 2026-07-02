@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputReference) validateSetBooleanValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputReference) validateSetBooleanValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConfigVariableOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewGoogleIntegrationConnectorsConnectionConfigVariableOutputReferen
 
 	return nil
 }
-

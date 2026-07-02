@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (g *jsiiProxy_GoogleBetaProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBetaProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func validateGoogleBetaProvider_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleBetaProvider_IsConstructParameters(x interface{}) error {
+func validateGoogleBetaProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func validateGoogleBetaProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleBetaProvider_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBetaProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func validateGoogleBetaProvider_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleBetaProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateGoogleBetaProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func validateGoogleBetaProvider_IsTerraformProviderParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -116,7 +116,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -144,7 +144,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) validateSetUserProjectOverrideParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBetaProvider) validateSetUserProjectOverrideParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -176,4 +176,3 @@ func validateNewGoogleBetaProviderParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

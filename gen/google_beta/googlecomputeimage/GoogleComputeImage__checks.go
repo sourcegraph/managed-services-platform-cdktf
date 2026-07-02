@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeImage) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImage) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeImage) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeImage) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeImage) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeImage) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImage) validatePutGuestOsFeaturesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeImage) validatePutGuestOsFeaturesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateGoogleComputeImage_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleComputeImage_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeImage_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -336,7 +336,7 @@ func validateGoogleComputeImage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleComputeImage_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeImage_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -344,7 +344,7 @@ func validateGoogleComputeImage_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleComputeImage_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeImage_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -352,7 +352,7 @@ func validateGoogleComputeImage_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImage) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImage) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeImage) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImage) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImage) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -514,7 +514,7 @@ func (j *jsiiProxy_GoogleComputeImage) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImage) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeImage) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -610,4 +610,3 @@ func validateNewGoogleComputeImageParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

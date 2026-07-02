@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialOauth2ClientCr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleIntegrationsAuthConfigDecryptedCredentialOauth2ClientCrede
 
 	return nil
 }
-

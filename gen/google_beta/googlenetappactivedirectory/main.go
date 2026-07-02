@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
-		reflect.TypeOf((*GoogleNetappActiveDirectory)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappActiveDirectory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappActiveDirectory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,15 +129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectoryConfig",
-		reflect.TypeOf((*GoogleNetappActiveDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappActiveDirectoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectoryTimeouts",
-		reflect.TypeOf((*GoogleNetappActiveDirectoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappActiveDirectoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectoryTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetappActiveDirectoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappActiveDirectoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappActiveDirectoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

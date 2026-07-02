@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReferencePa
 
 	return nil
 }
-

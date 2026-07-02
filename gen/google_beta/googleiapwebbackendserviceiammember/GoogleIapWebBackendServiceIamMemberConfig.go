@@ -6,9 +6,9 @@ import (
 
 type GoogleIapWebBackendServiceIamMemberConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleIapWebBackendServiceIamMemberConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iap_web_backend_service_iam_member#member GoogleIapWebBackendServiceIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iap_web_backend_service_iam_member#role GoogleIapWebBackendServiceIamMember#role}.
@@ -37,4 +37,3 @@ type GoogleIapWebBackendServiceIamMemberConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iap_web_backend_service_iam_member#project GoogleIapWebBackendServiceIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

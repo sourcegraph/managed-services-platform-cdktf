@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexZoneIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexZoneIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexZoneIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataplexZoneIamBindingConditionOutputReferenceParameters(t
 
 	return nil
 }
-

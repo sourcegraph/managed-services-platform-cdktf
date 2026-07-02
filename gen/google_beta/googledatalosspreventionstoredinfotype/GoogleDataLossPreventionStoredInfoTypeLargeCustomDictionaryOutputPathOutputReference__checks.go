@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutpu
 
 	return nil
 }
-

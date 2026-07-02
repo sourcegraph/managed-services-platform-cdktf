@@ -1,6 +1,5 @@
 package googleaccesscontextmanagerserviceperimeteregresspolicy
 
-
 type GoogleAccessContextManagerServicePerimeterEgressPolicyEgressTo struct {
 	// A list of external resources that are allowed to be accessed.
 	//
@@ -13,7 +12,7 @@ type GoogleAccessContextManagerServicePerimeterEgressPolicyEgressTo struct {
 	// operations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter_egress_policy#operations GoogleAccessContextManagerServicePerimeterEgressPolicy#operations}
-	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
+	Operations any `field:"optional" json:"operations" yaml:"operations"`
 	// A list of resources, currently only projects in the form 'projects/<projectnumber>', that match this to stanza.
 	//
 	// A request matches
@@ -28,4 +27,3 @@ type GoogleAccessContextManagerServicePerimeterEgressPolicyEgressTo struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter_egress_policy#roles GoogleAccessContextManagerServicePerimeterEgressPolicy#roles}
 	Roles *[]*string `field:"optional" json:"roles" yaml:"roles"`
 }
-

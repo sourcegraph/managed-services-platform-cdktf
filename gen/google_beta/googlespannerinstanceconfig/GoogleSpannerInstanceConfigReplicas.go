@@ -1,11 +1,10 @@
 package googlespannerinstanceconfig
 
-
 type GoogleSpannerInstanceConfigReplicas struct {
 	// If true, this location is designated as the default leader location where leader replicas are placed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_instance_config#default_leader_location GoogleSpannerInstanceConfigA#default_leader_location}
-	DefaultLeaderLocation interface{} `field:"optional" json:"defaultLeaderLocation" yaml:"defaultLeaderLocation"`
+	DefaultLeaderLocation any `field:"optional" json:"defaultLeaderLocation" yaml:"defaultLeaderLocation"`
 	// The location of the serving resources, e.g. "us-central1".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_instance_config#location GoogleSpannerInstanceConfigA#location}
@@ -15,4 +14,3 @@ type GoogleSpannerInstanceConfigReplicas struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_instance_config#type GoogleSpannerInstanceConfigA#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

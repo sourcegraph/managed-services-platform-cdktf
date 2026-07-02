@@ -17,15 +17,15 @@ type GoogleCloudRunV2WorkerPoolIamBinding interface {
 	Condition() GoogleCloudRunV2WorkerPoolIamBindingConditionOutputReference
 	ConditionInput() *GoogleCloudRunV2WorkerPoolIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type GoogleCloudRunV2WorkerPoolIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type GoogleCloudRunV2WorkerPoolIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleCloudRunV2WorkerPoolIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type GoogleCloudRunV2WorkerPoolIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleCloudRunV2WorkerPoolIamBinding
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ConditionInput() *Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_binding google_cloud_run_v2_worker_pool_iam_binding} Resource.
 func NewGoogleCloudRunV2WorkerPoolIamBinding(scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolIamBindingConfig) GoogleCloudRunV2WorkerPoolIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewGoogleCloudRunV2WorkerPoolIamBinding(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPoolIamBinding.GoogleCloudRunV2WorkerPoolIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewGoogleCloudRunV2WorkerPoolIamBinding_Override(g GoogleCloudRunV2WorkerPo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPoolIamBinding.GoogleCloudRunV2WorkerPoolIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetMembers(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetName(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPoolIamBinding.GoogleCloudRunV2WorkerPoolIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleCloudRunV2WorkerPoolIamBinding_IsConstruct(x interface{}) *bool {
+func GoogleCloudRunV2WorkerPoolIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudRunV2WorkerPoolIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPoolIamBinding.GoogleCloudRunV2WorkerPoolIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudRunV2WorkerPoolIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPoolIamBinding.GoogleCloudRunV2WorkerPoolIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudRunV2WorkerPoolIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func GoogleCloudRunV2WorkerPoolIamBinding_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPoolIamBinding.GoogleCloudRunV2WorkerPoolIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetNumberListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetStringAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) InterpolationForAttribu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) PutCondition(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SynthesizeAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1052,8 +1051,8 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) SynthesizeHclAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1065,8 +1064,8 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToHclTerraform() interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1091,8 +1090,8 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1103,4 +1102,3 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolIamBinding) ToTerraform() interface
 
 	return returns
 }
-

@@ -21,21 +21,21 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CrossClusterReplicationConfig() GoogleRedisClusterCrossClusterReplicationConfigOutputReference
 	CrossClusterReplicationConfigInput() *GoogleRedisClusterCrossClusterReplicationConfig
-	DeletionProtectionEnabled() interface{}
-	SetDeletionProtectionEnabled(val interface{})
-	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionEnabled() any
+	SetDeletionProtectionEnabled(val any)
+	DeletionProtectionEnabledInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -86,15 +86,15 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscConfigs() GoogleRedisClusterPscConfigsList
-	PscConfigsInput() interface{}
+	PscConfigsInput() any
 	PscConnections() GoogleRedisClusterPscConnectionsList
 	PscServiceAttachments() GoogleRedisClusterPscServiceAttachmentsList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedisConfigs() *map[string]*string
 	SetRedisConfigs(val *map[string]*string)
 	RedisConfigsInput() *map[string]*string
@@ -113,11 +113,11 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleRedisClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitEncryptionMode() *string
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
@@ -128,9 +128,9 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -148,7 +148,7 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -160,7 +160,7 @@ type GoogleRedisCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -173,7 +173,7 @@ type GoogleRedisCluster interface {
 	PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy)
 	PutManagedBackupSource(value *GoogleRedisClusterManagedBackupSource)
 	PutPersistenceConfig(value *GoogleRedisClusterPersistenceConfig)
-	PutPscConfigs(value interface{})
+	PutPscConfigs(value any)
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
 	PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
@@ -199,17 +199,17 @@ type GoogleRedisCluster interface {
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleRedisCluster
@@ -277,8 +277,8 @@ func (j *jsiiProxy_GoogleRedisCluster) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_GoogleRedisCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleRedisCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_GoogleRedisCluster) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_GoogleRedisCluster) CrossClusterReplicationConfigInput() *Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) DeletionProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) DeletionProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabled",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_GoogleRedisCluster) DeletionProtectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) DeletionProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) DeletionProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabledInput",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_GoogleRedisCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleRedisCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -667,8 +667,8 @@ func (j *jsiiProxy_GoogleRedisCluster) PscConfigs() GoogleRedisClusterPscConfigs
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) PscConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) PscConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscConfigsInput",
@@ -697,8 +697,8 @@ func (j *jsiiProxy_GoogleRedisCluster) PscServiceAttachments() GoogleRedisCluste
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -827,8 +827,8 @@ func (j *jsiiProxy_GoogleRedisCluster) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleRedisCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -857,8 +857,8 @@ func (j *jsiiProxy_GoogleRedisCluster) Timeouts() GoogleRedisClusterTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -917,7 +917,6 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
@@ -929,7 +928,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleRedisCluster.GoogleRedisCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -942,12 +941,12 @@ func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleRedisCluster.GoogleRedisCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetAuthorizationMode(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetAuthorizationMode(val *string) {
 	if err := j.validateSetAuthorizationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetAuthorizationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleRedisCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleRedisCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetDeletionProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleRedisCluster) SetDeletionProtectionEnabled(val any) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetDeletionProtectionEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -999,7 +998,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleRedisCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1007,7 +1006,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetId(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1018,7 +1017,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetKmsKey(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1029,7 +1028,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleRedisCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetName(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetNodeType(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetProject(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleRedisCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1081,7 +1080,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleRedisCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1092,7 +1091,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetRedisConfigs(val *map[string]*string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetRedisConfigs(val *map[string]*string) {
 	if err := j.validateSetRedisConfigsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetRedisConfigs(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,7 +1113,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetReplicaCount(val *float64) {
+func (j *jsiiProxy_GoogleRedisCluster) SetReplicaCount(val *float64) {
 	if err := j.validateSetReplicaCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetReplicaCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetShardCount(val *float64) {
+func (j *jsiiProxy_GoogleRedisCluster) SetShardCount(val *float64) {
 	if err := j.validateSetShardCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_GoogleRedisCluster)SetShardCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisCluster)SetTransitEncryptionMode(val *string) {
+func (j *jsiiProxy_GoogleRedisCluster) SetTransitEncryptionMode(val *string) {
 	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func GoogleRedisCluster_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleRedisCluster.GoogleRedisCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1183,7 +1182,7 @@ func GoogleRedisCluster_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleRedisCluster_IsConstruct(x interface{}) *bool {
+func GoogleRedisCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleRedisCluster_IsConstructParameters(x); err != nil {
@@ -1194,7 +1193,7 @@ func GoogleRedisCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleRedisCluster.GoogleRedisCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1202,7 +1201,7 @@ func GoogleRedisCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleRedisCluster_IsTerraformElement(x interface{}) *bool {
+func GoogleRedisCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleRedisCluster_IsTerraformElementParameters(x); err != nil {
@@ -1213,7 +1212,7 @@ func GoogleRedisCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleRedisCluster.GoogleRedisCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1221,7 +1220,7 @@ func GoogleRedisCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleRedisCluster_IsTerraformResource(x interface{}) *bool {
+func GoogleRedisCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleRedisCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1232,7 +1231,7 @@ func GoogleRedisCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleRedisCluster.GoogleRedisCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1257,31 +1256,31 @@ func (g *jsiiProxy_GoogleRedisCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleRedisCluster) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleRedisCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1297,7 +1296,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1313,7 +1312,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1329,7 +1328,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1345,7 +1344,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1361,7 +1360,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1377,7 +1376,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1393,7 +1392,7 @@ func (g *jsiiProxy_GoogleRedisCluster) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1409,15 +1408,15 @@ func (g *jsiiProxy_GoogleRedisCluster) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleRedisCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1436,7 +1435,7 @@ func (g *jsiiProxy_GoogleRedisCluster) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1449,7 +1448,7 @@ func (g *jsiiProxy_GoogleRedisCluster) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1463,18 +1462,18 @@ func (g *jsiiProxy_GoogleRedisCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleRedisCluster) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1485,7 +1484,7 @@ func (g *jsiiProxy_GoogleRedisCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1496,7 +1495,7 @@ func (g *jsiiProxy_GoogleRedisCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1507,7 +1506,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutAutomatedBackupConfig(value *GoogleRed
 	_jsii_.InvokeVoid(
 		g,
 		"putAutomatedBackupConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1518,7 +1517,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutCrossClusterReplicationConfig(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putCrossClusterReplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1529,7 +1528,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutGcsSource(value *GoogleRedisClusterGcs
 	_jsii_.InvokeVoid(
 		g,
 		"putGcsSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1540,7 +1539,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutMaintenancePolicy(value *GoogleRedisCl
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1551,7 +1550,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutManagedBackupSource(value *GoogleRedis
 	_jsii_.InvokeVoid(
 		g,
 		"putManagedBackupSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1562,18 +1561,18 @@ func (g *jsiiProxy_GoogleRedisCluster) PutPersistenceConfig(value *GoogleRedisCl
 	_jsii_.InvokeVoid(
 		g,
 		"putPersistenceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) PutPscConfigs(value interface{}) {
+func (g *jsiiProxy_GoogleRedisCluster) PutPscConfigs(value any) {
 	if err := g.validatePutPscConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPscConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1584,7 +1583,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutTimeouts(value *GoogleRedisClusterTime
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1595,7 +1594,7 @@ func (g *jsiiProxy_GoogleRedisCluster) PutZoneDistributionConfig(value *GoogleRe
 	_jsii_.InvokeVoid(
 		g,
 		"putZoneDistributionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1767,8 +1766,8 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetZoneDistributionConfig() {
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleRedisCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1780,8 +1779,8 @@ func (g *jsiiProxy_GoogleRedisCluster) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleRedisCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1793,8 +1792,8 @@ func (g *jsiiProxy_GoogleRedisCluster) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleRedisCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1806,8 +1805,8 @@ func (g *jsiiProxy_GoogleRedisCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleRedisCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1832,8 +1831,8 @@ func (g *jsiiProxy_GoogleRedisCluster) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleRedisCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1844,4 +1843,3 @@ func (g *jsiiProxy_GoogleRedisCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

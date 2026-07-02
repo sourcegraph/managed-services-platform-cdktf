@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindo
 
 	return nil
 }
-

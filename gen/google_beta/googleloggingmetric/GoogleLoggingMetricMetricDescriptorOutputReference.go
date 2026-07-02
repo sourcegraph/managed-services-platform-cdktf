@@ -12,9 +12,9 @@ type GoogleLoggingMetricMetricDescriptorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type GoogleLoggingMetricMetricDescriptorOutputReference interface {
 	InternalValue() *GoogleLoggingMetricMetricDescriptor
 	SetInternalValue(val *GoogleLoggingMetricMetricDescriptor)
 	Labels() GoogleLoggingMetricMetricDescriptorLabelsList
-	LabelsInput() interface{}
+	LabelsInput() any
 	MetricKind() *string
 	SetMetricKind(val *string)
 	MetricKindInput() *string
@@ -54,7 +54,7 @@ type GoogleLoggingMetricMetricDescriptorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,13 +75,13 @@ type GoogleLoggingMetricMetricDescriptorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLabels(value interface{})
+	PutLabels(value any)
 	ResetDisplayName()
 	ResetLabels()
 	ResetUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) Labels() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) LabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) LabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelsInput",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) ValueType
 	return returns
 }
 
-
 func NewGoogleLoggingMetricMetricDescriptorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricMetricDescriptorOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewGoogleLoggingMetricMetricDescriptorOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewGoogleLoggingMetricMetricDescriptorOutputReference_Override(g GoogleLogg
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetDisplay
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetInternalValue(val *GoogleLoggingMetricMetricDescriptor) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetInternalValue(val *GoogleLoggingMetricMetricDescriptor) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetMetricKind(val *string) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetMetricKind(val *string) {
 	if err := j.validateSetMetricKindParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetMetricK
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetUnit(val *string) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetUnit(val *string) {
 	if err := j.validateSetUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetUnit(va
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference)SetValueType(val *string) {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) SetValueType(val *string) {
 	if err := j.validateSetValueTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,16 +403,16 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,21 +569,21 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) PutLabels(value interface{}) {
+func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) PutLabels(value any) {
 	if err := g.validatePutLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,16 +611,16 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) ResetUnit
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference) ToString(
 
 	return returns
 }
-

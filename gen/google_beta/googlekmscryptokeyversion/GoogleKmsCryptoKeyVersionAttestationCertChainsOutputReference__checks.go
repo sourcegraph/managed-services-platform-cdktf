@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleKmsCryptoKeyVersionAttestationCertChainsOutputReferencePar
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleKmsKeyRingIamPolicy_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleKmsKeyRingIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleKmsKeyRingIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleKmsKeyRingIamPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleKmsKeyRingIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleKmsKeyRingIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleKmsKeyRingIamPolicy_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleKmsKeyRingIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleKmsKeyRingIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleKmsKeyRingIamPolicy_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetPolicyDataParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewGoogleKmsKeyRingIamPolicyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

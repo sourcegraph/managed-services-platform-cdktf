@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputRefer
 
 	return nil
 }
-

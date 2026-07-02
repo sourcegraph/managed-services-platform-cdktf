@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleIamPrincipalAccessBoundaryPolicy_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleIamPrincipalAccessBoundaryPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleIamPrincipalAccessBoundaryPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleIamPrincipalAccessBoundaryPolicy_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetAnnotation
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetPrincipalA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleIamPrincipalAccessBoundaryPolicyParameters(scope construct
 
 	return nil
 }
-

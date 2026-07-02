@@ -1,6 +1,5 @@
 package googlefirebaseapphostingtraffic
 
-
 type GoogleFirebaseAppHostingTrafficRolloutPolicy struct {
 	// Specifies a branch that triggers a new build to be started with this policy.
 	//
@@ -11,6 +10,5 @@ type GoogleFirebaseAppHostingTrafficRolloutPolicy struct {
 	// A flag that, if true, prevents rollouts from being created via this RolloutPolicy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_app_hosting_traffic#disabled GoogleFirebaseAppHostingTraffic#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 }
-

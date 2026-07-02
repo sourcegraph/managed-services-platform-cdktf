@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAd
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAd
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA
 
 	return nil
 }
-

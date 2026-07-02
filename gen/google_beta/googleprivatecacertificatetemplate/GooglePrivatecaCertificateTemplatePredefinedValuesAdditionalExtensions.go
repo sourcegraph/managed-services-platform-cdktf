@@ -1,6 +1,5 @@
 package googleprivatecacertificatetemplate
 
-
 type GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions struct {
 	// object_id block.
 	//
@@ -15,6 +14,5 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions stru
 	// Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#critical GooglePrivatecaCertificateTemplate#critical}
-	Critical interface{} `field:"optional" json:"critical" yaml:"critical"`
+	Critical any `field:"optional" json:"critical" yaml:"critical"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeWireGroupWiresWirePropertiesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupWiresWirePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroupWiresWirePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeWireGroupWiresWirePropertiesOutputReferenceParamete
 
 	return nil
 }
-

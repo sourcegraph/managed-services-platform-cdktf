@@ -25,18 +25,18 @@ type GoogleBigqueryConnection interface {
 	CloudSql() GoogleBigqueryConnectionCloudSqlOutputReference
 	CloudSqlInput() *GoogleBigqueryConnectionCloudSql
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -80,28 +80,28 @@ type GoogleBigqueryConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spark() GoogleBigqueryConnectionSparkOutputReference
 	SparkInput() *GoogleBigqueryConnectionSpark
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleBigqueryConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type GoogleBigqueryConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type GoogleBigqueryConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -162,17 +162,17 @@ type GoogleBigqueryConnection interface {
 	ResetProject()
 	ResetSpark()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBigqueryConnection
@@ -290,8 +290,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) CloudSqlInput() *GoogleBigqueryConn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) ConnectionIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -630,8 +630,8 @@ func (j *jsiiProxy_GoogleBigqueryConnection) Timeouts() GoogleBigqueryConnection
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -639,7 +639,6 @@ func (j *jsiiProxy_GoogleBigqueryConnection) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
 func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config *GoogleBigqueryConnectionConfig) GoogleBigqueryConnection {
@@ -652,7 +651,7 @@ func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -665,12 +664,12 @@ func NewGoogleBigqueryConnection_Override(g GoogleBigqueryConnection, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetConnectionId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetConnectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -730,7 +729,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetFriendlyName(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetFriendlyName(val *string) {
 	if err := j.validateSetFriendlyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetFriendlyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetKmsKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -804,7 +803,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func GoogleBigqueryConnection_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func GoogleBigqueryConnection_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBigqueryConnection_IsConstruct(x interface{}) *bool {
+func GoogleBigqueryConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryConnection_IsConstructParameters(x); err != nil {
@@ -862,7 +861,7 @@ func GoogleBigqueryConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func GoogleBigqueryConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryConnection_IsTerraformElement(x interface{}) *bool {
+func GoogleBigqueryConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryConnection_IsTerraformElementParameters(x); err != nil {
@@ -881,7 +880,7 @@ func GoogleBigqueryConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func GoogleBigqueryConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryConnection_IsTerraformResource(x interface{}) *bool {
+func GoogleBigqueryConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryConnection_IsTerraformResourceParameters(x); err != nil {
@@ -900,7 +899,7 @@ func GoogleBigqueryConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -925,31 +924,31 @@ func (g *jsiiProxy_GoogleBigqueryConnection) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBigqueryConnection) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,15 +1076,15 @@ func (g *jsiiProxy_GoogleBigqueryConnection) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1104,7 +1103,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1117,7 +1116,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1131,18 +1130,18 @@ func (g *jsiiProxy_GoogleBigqueryConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBigqueryConnection) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1153,7 +1152,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutAws(value *GoogleBigqueryConnect
 	_jsii_.InvokeVoid(
 		g,
 		"putAws",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1186,7 +1185,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutAzure(value *GoogleBigqueryConne
 	_jsii_.InvokeVoid(
 		g,
 		"putAzure",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1197,7 +1196,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutCloudResource(value *GoogleBigqu
 	_jsii_.InvokeVoid(
 		g,
 		"putCloudResource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1208,7 +1207,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutCloudSpanner(value *GoogleBigque
 	_jsii_.InvokeVoid(
 		g,
 		"putCloudSpanner",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1219,7 +1218,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutCloudSql(value *GoogleBigqueryCo
 	_jsii_.InvokeVoid(
 		g,
 		"putCloudSql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1230,7 +1229,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutSpark(value *GoogleBigqueryConne
 	_jsii_.InvokeVoid(
 		g,
 		"putSpark",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1241,7 +1240,7 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutTimeouts(value *GoogleBigqueryCo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1365,8 +1364,8 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1378,8 +1377,8 @@ func (g *jsiiProxy_GoogleBigqueryConnection) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1391,8 +1390,8 @@ func (g *jsiiProxy_GoogleBigqueryConnection) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1404,8 +1403,8 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1430,8 +1429,8 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1442,4 +1441,3 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

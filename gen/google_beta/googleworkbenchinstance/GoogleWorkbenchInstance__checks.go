@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstance) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstance) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleWorkbenchInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleWorkbenchInstance_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleWorkbenchInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleWorkbenchInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleWorkbenchInstance_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleWorkbenchInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleWorkbenchInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleWorkbenchInstance_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleWorkbenchInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleWorkbenchInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleWorkbenchInstance_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDesiredStateParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDisableProxyAccessParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDisableProxyAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDisableProxyAccessParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetEnableThirdPartyIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetEnableThirdPartyIdentityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewGoogleWorkbenchInstanceParameters(scope constructs.Construct, id
 
 	return nil
 }
-

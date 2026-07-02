@@ -18,15 +18,15 @@ type GoogleDocumentAiWarehouseLocation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseType() *string
 	SetDatabaseType(val *string)
 	DatabaseTypeInput() *string
@@ -68,26 +68,26 @@ type GoogleDocumentAiWarehouseLocation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDocumentAiWarehouseLocationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type GoogleDocumentAiWarehouseLocation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type GoogleDocumentAiWarehouseLocation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type GoogleDocumentAiWarehouseLocation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDocumentAiWarehouseLocation
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) Timeouts() GoogleDocumentA
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_document_ai_warehouse_location google_document_ai_warehouse_location} Resource.
 func NewGoogleDocumentAiWarehouseLocation(scope constructs.Construct, id *string, config *GoogleDocumentAiWarehouseLocationConfig) GoogleDocumentAiWarehouseLocation {
@@ -482,7 +481,7 @@ func NewGoogleDocumentAiWarehouseLocation(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseLocation.GoogleDocumentAiWarehouseLocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewGoogleDocumentAiWarehouseLocation_Override(g GoogleDocumentAiWarehouseLo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseLocation.GoogleDocumentAiWarehouseLocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetAccessControlMode(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetAccessControlMode(val *string) {
 	if err := j.validateSetAccessControlModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetAccessControlMode(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetDatabaseType(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetDatabaseType(val *string) {
 	if err := j.validateSetDatabaseTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetDatabaseType(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetDocumentCreatorDefaultRole(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetDocumentCreatorDefaultRole(val *string) {
 	if err := j.validateSetDocumentCreatorDefaultRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetDocumentCreatorDefaultRo
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetId(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetKmsKey(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetProjectNumber(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetProjectNumber(val *string) {
 	if err := j.validateSetProjectNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetProjectNumber(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func GoogleDocumentAiWarehouseLocation_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseLocation.GoogleDocumentAiWarehouseLocation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func GoogleDocumentAiWarehouseLocation_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool {
+func GoogleDocumentAiWarehouseLocation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDocumentAiWarehouseLocation_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func GoogleDocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseLocation.GoogleDocumentAiWarehouseLocation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func GoogleDocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool {
+func GoogleDocumentAiWarehouseLocation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDocumentAiWarehouseLocation_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func GoogleDocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseLocation.GoogleDocumentAiWarehouseLocation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func GoogleDocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDocumentAiWarehouseLocation_IsTerraformResource(x interface{}) *bool {
+func GoogleDocumentAiWarehouseLocation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDocumentAiWarehouseLocation_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func GoogleDocumentAiWarehouseLocation_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseLocation.GoogleDocumentAiWarehouseLocation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -934,7 +933,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) PutTimeouts(value *GoogleD
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1049,8 +1048,8 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1062,8 +1061,8 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1075,8 +1074,8 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1088,8 +1087,8 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToHclTerraform() interface
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1114,8 +1113,8 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1126,4 +1125,3 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) ToTerraform() interface{} 
 
 	return returns
 }
-

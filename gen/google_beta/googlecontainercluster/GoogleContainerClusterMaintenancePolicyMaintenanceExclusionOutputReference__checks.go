@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutpu
 
 	return nil
 }
-

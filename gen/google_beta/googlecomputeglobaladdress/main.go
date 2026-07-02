@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
-		reflect.TypeOf((*GoogleComputeGlobalAddress)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeGlobalAddress](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeGlobalAddress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeGlobalAddress.GoogleComputeGlobalAddressConfig",
-		reflect.TypeOf((*GoogleComputeGlobalAddressConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeGlobalAddressConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeGlobalAddress.GoogleComputeGlobalAddressTimeouts",
-		reflect.TypeOf((*GoogleComputeGlobalAddressTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeGlobalAddressTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeGlobalAddress.GoogleComputeGlobalAddressTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeGlobalAddressTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeGlobalAddressTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeGlobalAddressTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

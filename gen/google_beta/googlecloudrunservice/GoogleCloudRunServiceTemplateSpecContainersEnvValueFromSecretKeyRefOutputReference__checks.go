@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecret
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKey
 
 	return nil
 }
-

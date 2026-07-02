@@ -1,11 +1,10 @@
 package googlecloudrunv2service
 
-
 type GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet struct {
 	// http_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_service#http_headers GoogleCloudRunV2Service#http_headers}
-	HttpHeaders interface{} `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
+	HttpHeaders any `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
 	// Path to access on the HTTP server. Defaults to '/'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_service#path GoogleCloudRunV2Service#path}
@@ -18,4 +17,3 @@ type GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_service#port GoogleCloudRunV2Service#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
-		reflect.TypeOf((*GoogleComputeSharedVpcHostProject)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSharedVpcHostProject](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSharedVpcHostProject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectConfig",
-		reflect.TypeOf((*GoogleComputeSharedVpcHostProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSharedVpcHostProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeouts",
-		reflect.TypeOf((*GoogleComputeSharedVpcHostProjectTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSharedVpcHostProjectTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeSharedVpcHostProjectTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeSharedVpcHostProjectTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeSharedVpcHostProjectTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

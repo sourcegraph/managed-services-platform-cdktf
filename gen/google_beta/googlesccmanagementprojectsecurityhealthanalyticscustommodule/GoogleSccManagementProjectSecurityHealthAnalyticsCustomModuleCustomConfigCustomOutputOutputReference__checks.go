@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validatePutPropertiesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validatePutPropertiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCus
 
 	return nil
 }
-

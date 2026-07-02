@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRuleOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAppEngineApplicationUrlDispatchRuleOutputReferenceParamete
 
 	return nil
 }
-

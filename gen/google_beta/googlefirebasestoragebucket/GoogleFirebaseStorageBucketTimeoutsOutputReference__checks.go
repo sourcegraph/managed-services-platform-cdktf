@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleFirebaseStorageBucketTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleGkeonpremBareMetalNodePool_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleGkeonpremBareMetalNodePool_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeonpremBareMetalNodePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleGkeonpremBareMetalNodePool_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleGkeonpremBareMetalNodePool_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeonpremBareMetalNodePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleGkeonpremBareMetalNodePool_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleGkeonpremBareMetalNodePool_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeonpremBareMetalNodePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetBareMetalCluster
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,4 +484,3 @@ func validateNewGoogleGkeonpremBareMetalNodePoolParameters(scope constructs.Cons
 
 	return nil
 }
-

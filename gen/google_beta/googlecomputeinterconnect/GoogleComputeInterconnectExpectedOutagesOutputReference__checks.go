@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectExpectedOutagesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectExpectedOutagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectExpectedOutagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInterconnectExpectedOutagesOutputReferenceParameter
 
 	return nil
 }
-

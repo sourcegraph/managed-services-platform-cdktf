@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleModelArmorFloorsettingTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

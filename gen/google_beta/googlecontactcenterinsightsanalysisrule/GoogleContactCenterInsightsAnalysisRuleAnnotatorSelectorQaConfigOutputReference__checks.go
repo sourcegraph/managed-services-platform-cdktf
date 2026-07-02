@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorQaCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfig
 
 	return nil
 }
-

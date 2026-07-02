@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfig",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,19 +86,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigConfig",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificates",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificates)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "x509Certificate", GoGetter: "X509Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "x509CertificateInput", GoGetter: "X509CertificateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigSpConfig",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigSpConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigSpConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputReference",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "callbackUri", GoGetter: "CallbackUri"},
 			_jsii_.MemberProperty{JsiiProperty: "callbackUriInput", GoGetter: "CallbackUriInput"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,11 +238,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -263,7 +263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "x509Certificate", GoGetter: "X509Certificate"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -296,11 +296,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigTimeouts",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

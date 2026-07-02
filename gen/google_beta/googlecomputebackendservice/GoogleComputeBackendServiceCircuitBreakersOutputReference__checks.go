@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleComputeBackendServiceCircuitBreakersOutputReferenceParamet
 
 	return nil
 }
-

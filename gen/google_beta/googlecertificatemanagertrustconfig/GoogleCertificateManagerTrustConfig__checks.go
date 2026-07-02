@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateOverrideLogicalI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutAllowlistedCertificatesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutAllowlistedCertificatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutTimeoutsParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutTrustStoresParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutTrustStoresParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleCertificateManagerTrustConfig_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleCertificateManagerTrustConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleCertificateManagerTrustConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleCertificateManagerTrustConfig_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleCertificateManagerTrustConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCertificateManagerTrustConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleCertificateManagerTrustConfig_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleCertificateManagerTrustConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCertificateManagerTrustConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateGoogleCertificateManagerTrustConfig_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -527,4 +527,3 @@ func validateNewGoogleCertificateManagerTrustConfigParameters(scope constructs.C
 
 	return nil
 }
-

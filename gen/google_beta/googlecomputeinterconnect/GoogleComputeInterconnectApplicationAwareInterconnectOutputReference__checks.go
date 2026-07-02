@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectOutputReference) validatePutShapeAveragePercentageParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectOutputReference) validatePutShapeAveragePercentageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,4 +259,3 @@ func validateNewGoogleComputeInterconnectApplicationAwareInterconnectOutputRefer
 
 	return nil
 }
-

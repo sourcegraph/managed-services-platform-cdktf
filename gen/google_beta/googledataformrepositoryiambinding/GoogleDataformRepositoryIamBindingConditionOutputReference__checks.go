@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataformRepositoryIamBindingConditionOutputReferenceParame
 
 	return nil
 }
-

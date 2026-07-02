@@ -6,9 +6,9 @@ import (
 
 type GoogleTpuV2VmConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleTpuV2VmConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The immutable name of the TPU.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm#name GoogleTpuV2Vm#name}
@@ -52,7 +52,7 @@ type GoogleTpuV2VmConfig struct {
 	// data_disks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm#data_disks GoogleTpuV2Vm#data_disks}
-	DataDisks interface{} `field:"optional" json:"dataDisks" yaml:"dataDisks"`
+	DataDisks any `field:"optional" json:"dataDisks" yaml:"dataDisks"`
 	// Text description of the TPU.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm#description GoogleTpuV2Vm#description}
@@ -80,7 +80,7 @@ type GoogleTpuV2VmConfig struct {
 	// network_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm#network_configs GoogleTpuV2Vm#network_configs}
-	NetworkConfigs interface{} `field:"optional" json:"networkConfigs" yaml:"networkConfigs"`
+	NetworkConfigs any `field:"optional" json:"networkConfigs" yaml:"networkConfigs"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// scheduling_config block.
@@ -108,4 +108,3 @@ type GoogleTpuV2VmConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm#zone GoogleTpuV2Vm#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

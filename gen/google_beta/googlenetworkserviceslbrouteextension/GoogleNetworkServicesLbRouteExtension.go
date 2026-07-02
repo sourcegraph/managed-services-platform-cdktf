@@ -15,15 +15,15 @@ type GoogleNetworkServicesLbRouteExtension interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,7 +33,7 @@ type GoogleNetworkServicesLbRouteExtension interface {
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	ExtensionChains() GoogleNetworkServicesLbRouteExtensionExtensionChainsList
-	ExtensionChainsInput() interface{}
+	ExtensionChainsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,27 +74,27 @@ type GoogleNetworkServicesLbRouteExtension interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkServicesLbRouteExtensionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleNetworkServicesLbRouteExtension interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,14 +124,14 @@ type GoogleNetworkServicesLbRouteExtension interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutExtensionChains(value interface{})
+	PutExtensionChains(value any)
 	PutTimeouts(value *GoogleNetworkServicesLbRouteExtensionTimeouts)
 	ResetDescription()
 	ResetId()
@@ -141,17 +141,17 @@ type GoogleNetworkServicesLbRouteExtension interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkServicesLbRouteExtension
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ExtensionChains() Goog
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ExtensionChainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ExtensionChainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"extensionChainsInput",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TerraformLabels() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) Timeouts() GoogleNetwo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -538,7 +538,6 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) TimeoutsInput() interf
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_lb_route_extension google_network_services_lb_route_extension} Resource.
 func NewGoogleNetworkServicesLbRouteExtension(scope constructs.Construct, id *string, config *GoogleNetworkServicesLbRouteExtensionConfig) GoogleNetworkServicesLbRouteExtension {
@@ -551,7 +550,7 @@ func NewGoogleNetworkServicesLbRouteExtension(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -564,12 +563,12 @@ func NewGoogleNetworkServicesLbRouteExtension_Override(g GoogleNetworkServicesLb
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetForwardingRules(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetForwardingRules(val *[]*string) {
 	if err := j.validateSetForwardingRulesParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetForwardingRules(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLabels(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLoadBalancingScheme(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetLocation(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func GoogleNetworkServicesLbRouteExtension_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func GoogleNetworkServicesLbRouteExtension_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool {
+func GoogleNetworkServicesLbRouteExtension_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkServicesLbRouteExtension_IsConstructParameters(x); err != nil {
@@ -772,7 +771,7 @@ func GoogleNetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func GoogleNetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkServicesLbRouteExtension_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkServicesLbRouteExtension_IsTerraformElementParameters(x); err != nil {
@@ -791,7 +790,7 @@ func GoogleNetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func GoogleNetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func GoogleNetworkServicesLbRouteExtension_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkServicesLbRouteExtension_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkServicesLbRouteExtension_IsTerraformResourceParameters(x); err != nil {
@@ -810,7 +809,7 @@ func GoogleNetworkServicesLbRouteExtension_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -835,31 +834,31 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetListAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetNumberListAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetStringAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,15 +986,15 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) GetStringMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1014,7 +1013,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) InterpolationForAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,18 +1040,18 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1074,18 +1073,18 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) PutExtensionChains(value interface{}) {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) PutExtensionChains(value any) {
 	if err := g.validatePutExtensionChainsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putExtensionChains",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) PutTimeouts(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1148,8 +1147,8 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1161,8 +1160,8 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SynthesizeAttributes()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1174,8 +1173,8 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) SynthesizeHclAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1187,8 +1186,8 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToHclTerraform() inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1213,8 +1212,8 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1225,4 +1224,3 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtension) ToTerraform() interfac
 
 	return returns
 }
-

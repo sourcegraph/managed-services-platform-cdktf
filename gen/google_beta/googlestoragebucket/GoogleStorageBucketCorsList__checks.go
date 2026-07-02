@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleStorageBucketCorsList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketCorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketCorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleStorageBucketCorsListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

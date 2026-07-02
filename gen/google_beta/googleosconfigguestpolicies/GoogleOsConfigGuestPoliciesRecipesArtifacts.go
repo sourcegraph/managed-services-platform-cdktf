@@ -1,6 +1,5 @@
 package googleosconfigguestpolicies
 
-
 type GoogleOsConfigGuestPoliciesRecipesArtifacts struct {
 	// Id of the artifact, which the installation and update steps of this recipe can reference.
 	//
@@ -18,7 +17,7 @@ type GoogleOsConfigGuestPoliciesRecipesArtifacts struct {
 	// GCS: An object generation number must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#allow_insecure GoogleOsConfigGuestPolicies#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// gcs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#gcs GoogleOsConfigGuestPolicies#gcs}
@@ -28,4 +27,3 @@ type GoogleOsConfigGuestPoliciesRecipesArtifacts struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#remote GoogleOsConfigGuestPolicies#remote}
 	Remote *GoogleOsConfigGuestPoliciesRecipesArtifactsRemote `field:"optional" json:"remote" yaml:"remote"`
 }
-

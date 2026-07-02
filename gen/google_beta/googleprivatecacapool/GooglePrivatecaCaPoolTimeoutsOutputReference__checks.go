@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGooglePrivatecaCaPoolTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

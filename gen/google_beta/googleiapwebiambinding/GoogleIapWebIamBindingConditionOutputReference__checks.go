@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapWebIamBindingConditionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIapWebIamBindingConditionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

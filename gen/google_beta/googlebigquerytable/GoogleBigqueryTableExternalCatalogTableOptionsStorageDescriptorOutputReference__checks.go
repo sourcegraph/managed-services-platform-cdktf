@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalCatalogTableOptionsStorageDescript
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorO
 
 	return nil
 }
-

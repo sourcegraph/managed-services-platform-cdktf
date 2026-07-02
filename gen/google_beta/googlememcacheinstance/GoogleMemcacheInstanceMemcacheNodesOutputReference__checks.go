@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMemcacheInstanceMemcacheNodesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemcacheInstanceMemcacheNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemcacheInstanceMemcacheNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMemcacheInstanceMemcacheNodesOutputReferenceParameters(ter
 
 	return nil
 }
-

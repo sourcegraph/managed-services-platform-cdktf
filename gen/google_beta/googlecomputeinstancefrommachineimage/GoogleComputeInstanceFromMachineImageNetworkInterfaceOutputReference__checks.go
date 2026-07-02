@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -403,4 +403,3 @@ func validateNewGoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRefer
 
 	return nil
 }
-

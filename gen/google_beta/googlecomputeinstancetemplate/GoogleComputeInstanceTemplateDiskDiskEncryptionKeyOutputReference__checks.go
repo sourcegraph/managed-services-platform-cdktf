@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReferenc
 
 	return nil
 }
-

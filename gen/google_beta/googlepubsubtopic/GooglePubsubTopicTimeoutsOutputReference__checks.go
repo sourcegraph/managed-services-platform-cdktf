@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubTopicTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GooglePubsubTopicTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGooglePubsubTopicTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

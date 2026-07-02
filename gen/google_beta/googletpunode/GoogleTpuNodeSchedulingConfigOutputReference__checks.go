@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference) validateSetPreemptibleParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference) validateSetPreemptibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleTpuNodeSchedulingConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

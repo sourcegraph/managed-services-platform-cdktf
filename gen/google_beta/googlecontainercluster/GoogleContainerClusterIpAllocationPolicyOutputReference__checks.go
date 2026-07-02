@@ -136,7 +136,7 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewGoogleContainerClusterIpAllocationPolicyOutputReferenceParameter
 
 	return nil
 }
-

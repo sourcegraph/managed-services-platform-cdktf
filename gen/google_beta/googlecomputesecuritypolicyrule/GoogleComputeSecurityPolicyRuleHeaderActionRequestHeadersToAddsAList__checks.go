@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAd
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA
 
 	return nil
 }
-

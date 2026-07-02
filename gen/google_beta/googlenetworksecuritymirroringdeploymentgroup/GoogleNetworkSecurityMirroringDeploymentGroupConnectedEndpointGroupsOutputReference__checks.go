@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroupConnectedEndpoin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkSecurityMirroringDeploymentGroupConnectedEndpointGr
 
 	return nil
 }
-

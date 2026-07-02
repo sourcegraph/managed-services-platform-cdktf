@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference) validatePutMaintenanceWindowsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference) validatePutMaintenanceWindowsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleAlloydbClusterMaintenanceUpdatePolicyOutputReferenceParame
 
 	return nil
 }
-

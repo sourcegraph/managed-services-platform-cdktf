@@ -6,9 +6,9 @@ import (
 
 type GoogleNetworkManagementConnectivityTestConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleNetworkManagementConnectivityTestConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// destination block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_management_connectivity_test#destination GoogleNetworkManagementConnectivityTest#destination}
@@ -34,7 +34,7 @@ type GoogleNetworkManagementConnectivityTestConfig struct {
 	// Whether the analysis should skip firewall checking. Default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_management_connectivity_test#bypass_firewall_checks GoogleNetworkManagementConnectivityTest#bypass_firewall_checks}
-	BypassFirewallChecks interface{} `field:"optional" json:"bypassFirewallChecks" yaml:"bypassFirewallChecks"`
+	BypassFirewallChecks any `field:"optional" json:"bypassFirewallChecks" yaml:"bypassFirewallChecks"`
 	// The user-supplied description of the Connectivity Test. Maximum of 512 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_management_connectivity_test#description GoogleNetworkManagementConnectivityTest#description}
@@ -64,10 +64,9 @@ type GoogleNetworkManagementConnectivityTestConfig struct {
 	// Whether run analysis for the return path from destination to source. Default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_management_connectivity_test#round_trip GoogleNetworkManagementConnectivityTest#round_trip}
-	RoundTrip interface{} `field:"optional" json:"roundTrip" yaml:"roundTrip"`
+	RoundTrip any `field:"optional" json:"roundTrip" yaml:"roundTrip"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_management_connectivity_test#timeouts GoogleNetworkManagementConnectivityTest#timeouts}
 	Timeouts *GoogleNetworkManagementConnectivityTestTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

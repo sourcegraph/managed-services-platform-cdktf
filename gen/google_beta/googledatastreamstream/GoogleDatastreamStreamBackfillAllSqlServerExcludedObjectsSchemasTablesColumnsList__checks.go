@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas
 
 	return nil
 }
-

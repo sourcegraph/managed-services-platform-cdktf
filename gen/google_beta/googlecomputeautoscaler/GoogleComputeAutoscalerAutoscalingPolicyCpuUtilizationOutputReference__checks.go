@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputRefe
 
 	return nil
 }
-

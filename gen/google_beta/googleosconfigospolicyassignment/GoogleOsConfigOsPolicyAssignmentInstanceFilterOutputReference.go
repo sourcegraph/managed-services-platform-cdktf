@@ -10,14 +10,14 @@ import (
 
 type GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference interface {
 	cdktf.ComplexObject
-	All() interface{}
-	SetAll(val interface{})
-	AllInput() interface{}
+	All() any
+	SetAll(val any)
+	AllInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,15 +29,15 @@ type GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	ExclusionLabels() GoogleOsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList
-	ExclusionLabelsInput() interface{}
+	ExclusionLabelsInput() any
 	// Experimental.
 	Fqn() *string
 	InclusionLabels() GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList
-	InclusionLabelsInput() interface{}
+	InclusionLabelsInput() any
 	InternalValue() *GoogleOsConfigOsPolicyAssignmentInstanceFilter
 	SetInternalValue(val *GoogleOsConfigOsPolicyAssignmentInstanceFilter)
 	Inventories() GoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesList
-	InventoriesInput() interface{}
+	InventoriesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutExclusionLabels(value interface{})
-	PutInclusionLabels(value interface{})
-	PutInventories(value interface{})
+	PutExclusionLabels(value any)
+	PutInclusionLabels(value any)
+	PutInventories(value any)
 	ResetAll()
 	ResetExclusionLabels()
 	ResetInclusionLabels()
 	ResetInventories()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) All() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) All() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"all",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) AllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) AllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) ExclusionLabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) ExclusionLabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exclusionLabelsInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) InclusionLabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) InclusionLabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inclusionLabelsInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) InventoriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) InventoriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inventoriesInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-
 func NewGoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference_Override(g
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference)SetAll(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) SetAll(val any) {
 	if err := j.validateSetAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference)SetInternalValue(val *GoogleOsConfigOsPolicyAssignmentInstanceFilter) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) SetInternalValue(val *GoogleOsConfigOsPolicyAssignmentInstanceFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,43 +514,43 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) PutExclusionLabels(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) PutExclusionLabels(value any) {
 	if err := g.validatePutExclusionLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putExclusionLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) PutInclusionLabels(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) PutInclusionLabels(value any) {
 	if err := g.validatePutInclusionLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInclusionLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) PutInventories(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) PutInventories(value any) {
 	if err := g.validatePutInventoriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInventories",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterOutputReference
 
 	return returns
 }
-

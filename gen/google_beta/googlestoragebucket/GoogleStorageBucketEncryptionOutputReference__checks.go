@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketEncryptionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleStorageBucketEncryptionOutputReferenceParameters(terraform
 
 	return nil
 }
-

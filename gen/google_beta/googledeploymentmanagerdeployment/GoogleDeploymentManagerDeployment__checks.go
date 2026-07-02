@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateOverrideLogicalIdP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validatePutLabelsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validatePutLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleDeploymentManagerDeployment_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleDeploymentManagerDeployment_IsConstructParameters(x interface{}) error {
+func validateGoogleDeploymentManagerDeployment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleDeploymentManagerDeployment_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleDeploymentManagerDeployment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDeploymentManagerDeployment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleDeploymentManagerDeployment_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleDeploymentManagerDeployment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDeploymentManagerDeployment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateGoogleDeploymentManagerDeployment_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeployment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -527,4 +527,3 @@ func validateNewGoogleDeploymentManagerDeploymentParameters(scope constructs.Con
 
 	return nil
 }
-

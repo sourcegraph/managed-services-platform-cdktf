@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleClouddeployTargetAnthosClusterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetAnthosClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetAnthosClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleClouddeployTargetAnthosClusterOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleFirebaserulesRulesetSourceFilesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleFirebaserulesRulesetSourceFilesOutputReference interface {
 	FingerprintInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type GoogleFirebaserulesRulesetSourceFilesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type GoogleFirebaserulesRulesetSourceFilesOutputReference interface {
 	ResetFingerprint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) Terrafo
 	return returns
 }
 
-
 func NewGoogleFirebaserulesRulesetSourceFilesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaserulesRulesetSourceFilesOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewGoogleFirebaserulesRulesetSourceFilesOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewGoogleFirebaserulesRulesetSourceFilesOutputReference_Override(g GoogleFi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetContent(val *string) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetConte
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetFingerprint(val *string) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetFingerprint(val *string) {
 	if err := j.validateSetFingerprintParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetFinge
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetName(
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) Compute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) ResetFi
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) ToStrin
 
 	return returns
 }
-

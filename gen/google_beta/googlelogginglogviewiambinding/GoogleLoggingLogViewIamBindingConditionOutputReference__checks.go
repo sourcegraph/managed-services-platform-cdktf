@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingLogViewIamBindingConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogViewIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogViewIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleLoggingLogViewIamBindingConditionOutputReferenceParameters
 
 	return nil
 }
-

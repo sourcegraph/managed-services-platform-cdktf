@@ -1,6 +1,5 @@
 package googlecomputeurlmap
 
-
 type GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd struct {
 	// The name of the header to add.
 	//
@@ -15,6 +14,5 @@ type GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRes
 	// If true, headerValue is set for the header, discarding any values that were set for that header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#replace GoogleComputeUrlMap#replace}
-	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
+	Replace any `field:"optional" json:"replace" yaml:"replace"`
 }
-

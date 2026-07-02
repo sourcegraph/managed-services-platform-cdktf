@@ -1,6 +1,5 @@
 package googledataprocworkflowtemplate
 
-
 type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfig struct {
 	// autoscaling_config block.
 	//
@@ -25,7 +24,7 @@ type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfig struct {
 	// initialization_actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#initialization_actions GoogleDataprocWorkflowTemplate#initialization_actions}
-	InitializationActions interface{} `field:"optional" json:"initializationActions" yaml:"initializationActions"`
+	InitializationActions any `field:"optional" json:"initializationActions" yaml:"initializationActions"`
 	// lifecycle_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#lifecycle_config GoogleDataprocWorkflowTemplate#lifecycle_config}
@@ -67,4 +66,3 @@ type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#worker_config GoogleDataprocWorkflowTemplate#worker_config}
 	WorkerConfig *GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig `field:"optional" json:"workerConfig" yaml:"workerConfig"`
 }
-

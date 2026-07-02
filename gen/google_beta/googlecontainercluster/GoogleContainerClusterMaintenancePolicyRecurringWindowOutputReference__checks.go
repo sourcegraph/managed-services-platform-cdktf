@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyRecurringWindowOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleContainerClusterMaintenancePolicyRecurringWindowOutputRefe
 
 	return nil
 }
-

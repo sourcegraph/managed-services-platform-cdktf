@@ -10,14 +10,14 @@ import (
 
 type GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference interface {
 	cdktf.ComplexObject
-	AllowInsecure() interface{}
-	SetAllowInsecure(val interface{})
-	AllowInsecureInput() interface{}
+	AllowInsecure() any
+	SetAllowInsecure(val any)
+	AllowInsecureInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Remote() GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference
 	RemoteInput() *GoogleOsConfigGuestPoliciesRecipesArtifactsRemote
 	// Experimental.
@@ -50,7 +50,7 @@ type GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference interface {
 	ResetRemote()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) AllowInsecure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) AllowInsecure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowInsecure",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) AllowInsecureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) AllowInsecureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowInsecureInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) T
 	return returns
 }
 
-
 func NewGoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewGoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference_Override(g Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetAllowInsecure(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetAllowInsecure(val any) {
 	if err := j.validateSetAllowInsecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetId(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,16 +358,16 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) C
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) I
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) P
 	_jsii_.InvokeVoid(
 		g,
 		"putGcs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) P
 	_jsii_.InvokeVoid(
 		g,
 		"putRemote",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference) T
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputePreviewFeatureTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePreviewFeatureTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePreviewFeatureTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputePreviewFeatureTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePreviewFeatureTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePreviewFeatureTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputePreviewFeatureTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -125,7 +125,7 @@ func (j *jsiiProxy_GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewGoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputRefere
 
 	return nil
 }
-

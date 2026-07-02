@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateIn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validatePutContainersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -279,7 +279,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -358,4 +358,3 @@ func validateNewGoogleCloudRunV2WorkerPoolTemplateOutputReferenceParameters(terr
 
 	return nil
 }
-

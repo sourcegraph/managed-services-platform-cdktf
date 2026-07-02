@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutCmekSettingsPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutIndexConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleLoggingProjectBucketConfig_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleLoggingProjectBucketConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingProjectBucketConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleLoggingProjectBucketConfig_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleLoggingProjectBucketConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingProjectBucketConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleLoggingProjectBucketConfig_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleLoggingProjectBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingProjectBucketConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetBucketIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetDescriptionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetEnableAnalyticsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetEnableAnalyticsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -436,7 +436,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetLocationParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetLockedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetLockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -464,7 +464,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -536,4 +536,3 @@ func validateNewGoogleLoggingProjectBucketConfigParameters(scope constructs.Cons
 
 	return nil
 }
-

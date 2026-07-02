@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleSiteVerificationWebResource_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleSiteVerificationWebResource_IsConstructParameters(x interface{}) error {
+func validateGoogleSiteVerificationWebResource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleSiteVerificationWebResource_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleSiteVerificationWebResource_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSiteVerificationWebResource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleSiteVerificationWebResource_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleSiteVerificationWebResource_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSiteVerificationWebResource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleSiteVerificationWebResource_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -444,4 +444,3 @@ func validateNewGoogleSiteVerificationWebResourceParameters(scope constructs.Con
 
 	return nil
 }
-

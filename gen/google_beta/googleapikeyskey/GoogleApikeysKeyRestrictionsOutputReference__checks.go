@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validatePutAndro
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validatePutApiTargetsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validatePutApiTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewGoogleApikeysKeyRestrictionsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

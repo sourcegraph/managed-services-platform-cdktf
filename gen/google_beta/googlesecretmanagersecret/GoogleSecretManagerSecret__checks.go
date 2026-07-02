@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecret) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecret) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerSecret) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecret) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerSecret) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecret) validatePutTimeoutsParameters(valu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecret) validatePutTopicsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerSecret) validatePutTopicsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateGoogleSecretManagerSecret_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleSecretManagerSecret_IsConstructParameters(x interface{}) error {
+func validateGoogleSecretManagerSecret_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateGoogleSecretManagerSecret_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleSecretManagerSecret_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSecretManagerSecret_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateGoogleSecretManagerSecret_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleSecretManagerSecret_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSecretManagerSecret_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetAnnotationsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -570,4 +570,3 @@ func validateNewGoogleSecretManagerSecretParameters(scope constructs.Construct, 
 
 	return nil
 }
-

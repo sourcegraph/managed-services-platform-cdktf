@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeDiskConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeDiskConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -55,7 +55,7 @@ type GoogleComputeDiskConfig struct {
 	// The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#create_snapshot_before_destroy GoogleComputeDisk#create_snapshot_before_destroy}
-	CreateSnapshotBeforeDestroy interface{} `field:"optional" json:"createSnapshotBeforeDestroy" yaml:"createSnapshotBeforeDestroy"`
+	CreateSnapshotBeforeDestroy any `field:"optional" json:"createSnapshotBeforeDestroy" yaml:"createSnapshotBeforeDestroy"`
 	// This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#create_snapshot_before_destroy_prefix GoogleComputeDisk#create_snapshot_before_destroy_prefix}
@@ -73,11 +73,11 @@ type GoogleComputeDiskConfig struct {
 	// Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#enable_confidential_compute GoogleComputeDisk#enable_confidential_compute}
-	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
+	EnableConfidentialCompute any `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 	// guest_os_features block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#guest_os_features GoogleComputeDisk#guest_os_features}
-	GuestOsFeatures interface{} `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
+	GuestOsFeatures any `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -117,7 +117,7 @@ type GoogleComputeDiskConfig struct {
 	// Indicates whether or not the disk can be read/write attached to more than one instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
-	MultiWriter interface{} `field:"optional" json:"multiWriter" yaml:"multiWriter"`
+	MultiWriter any `field:"optional" json:"multiWriter" yaml:"multiWriter"`
 	// params block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#params GoogleComputeDisk#params}
@@ -257,4 +257,3 @@ type GoogleComputeDiskConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

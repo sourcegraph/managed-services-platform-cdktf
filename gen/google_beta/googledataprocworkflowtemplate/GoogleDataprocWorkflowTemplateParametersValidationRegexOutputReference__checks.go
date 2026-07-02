@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationRegexOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationRegexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationRegexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocWorkflowTemplateParametersValidationRegexOutputRef
 
 	return nil
 }
-

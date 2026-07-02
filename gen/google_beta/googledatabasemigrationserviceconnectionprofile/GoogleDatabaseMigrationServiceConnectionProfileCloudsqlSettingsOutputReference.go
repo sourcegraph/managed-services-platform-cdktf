@@ -13,9 +13,9 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	ActivationPolicy() *string
 	SetActivationPolicy(val *string)
 	ActivationPolicyInput() *string
-	AutoStorageIncrease() interface{}
-	SetAutoStorageIncrease(val interface{})
-	AutoStorageIncreaseInput() interface{}
+	AutoStorageIncrease() any
+	SetAutoStorageIncrease(val any)
+	AutoStorageIncreaseInput() any
 	CmekKeyName() *string
 	SetCmekKeyName(val *string)
 	CmekKeyNameInput() *string
@@ -24,9 +24,9 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	CollationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -88,7 +88,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	ResetZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) AutoStorageIncrease() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) AutoStorageIncrease() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoStorageIncrease",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) AutoStorageIncreaseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) AutoStorageIncreaseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoStorageIncreaseInput",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -540,7 +540,6 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-
 func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference {
 	_init_.Initialize()
 
@@ -551,7 +550,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -563,12 +562,12 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetActivationPolicy(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetActivationPolicy(val *string) {
 	if err := j.validateSetActivationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetAutoStorageIncrease(val interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetAutoStorageIncrease(val any) {
 	if err := j.validateSetAutoStorageIncreaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetCmekKeyName(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetCmekKeyName(val *string) {
 	if err := j.validateSetCmekKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetCollation(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetCollation(val *string) {
 	if err := j.validateSetCollationParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetDatabaseFlags(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetDatabaseFlags(val *map[string]*string) {
 	if err := j.validateSetDatabaseFlagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetDatabaseVersion(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetDatabaseVersion(val *string) {
 	if err := j.validateSetDatabaseVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetDataDiskSizeGb(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetDataDiskSizeGb(val *string) {
 	if err := j.validateSetDataDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetDataDiskType(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetDataDiskType(val *string) {
 	if err := j.validateSetDataDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetEdition(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetInternalValue(val *GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetInternalValue(val *GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetRootPassword(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetRootPassword(val *string) {
 	if err := j.validateSetRootPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetSourceId(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetSourceId(val *string) {
 	if err := j.validateSetSourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetStorageAutoResizeLimit(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetStorageAutoResizeLimit(val *string) {
 	if err := j.validateSetStorageAutoResizeLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetTier(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetUserLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetUserLabels(val *map[string]*string) {
 	if err := j.validateSetUserLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetZone(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,16 +800,16 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.InvokeVoid(
 		g,
 		"putIpConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1105,16 +1104,16 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1133,4 +1132,3 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 
 	return returns
 }
-

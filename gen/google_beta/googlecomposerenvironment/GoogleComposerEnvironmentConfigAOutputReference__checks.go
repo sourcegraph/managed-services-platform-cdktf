@@ -230,7 +230,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -295,7 +295,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,4 +394,3 @@ func validateNewGoogleComposerEnvironmentConfigAOutputReferenceParameters(terraf
 
 	return nil
 }
-

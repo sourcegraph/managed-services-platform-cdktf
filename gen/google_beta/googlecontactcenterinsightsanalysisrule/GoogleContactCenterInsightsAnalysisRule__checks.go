@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleContactCenterInsightsAnalysisRule_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleContactCenterInsightsAnalysisRule_IsConstructParameters(x interface{}) error {
+func validateGoogleContactCenterInsightsAnalysisRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleContactCenterInsightsAnalysisRule_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleContactCenterInsightsAnalysisRule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleContactCenterInsightsAnalysisRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleContactCenterInsightsAnalysisRule_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleContactCenterInsightsAnalysisRule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleContactCenterInsightsAnalysisRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleContactCenterInsightsAnalysisRule_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetActiveParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetActiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetAnalysisP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetConversat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewGoogleContactCenterInsightsAnalysisRuleParameters(scope construc
 
 	return nil
 }
-

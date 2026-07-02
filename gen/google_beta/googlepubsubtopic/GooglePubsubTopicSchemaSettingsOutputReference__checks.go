@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubTopicSchemaSettingsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicSchemaSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicSchemaSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGooglePubsubTopicSchemaSettingsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeInstantSnapshotIamMember_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleComputeInstantSnapshotIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeInstantSnapshotIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeInstantSnapshotIamMember_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleComputeInstantSnapshotIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeInstantSnapshotIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeInstantSnapshotIamMember_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleComputeInstantSnapshotIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeInstantSnapshotIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeInstantSnapshotIamMember_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstantSnapshotIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleComputeInstantSnapshotIamMemberParameters(scope constructs
 
 	return nil
 }
-

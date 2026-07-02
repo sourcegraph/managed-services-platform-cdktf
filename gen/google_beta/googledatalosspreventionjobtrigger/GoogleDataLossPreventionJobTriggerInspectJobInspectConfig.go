@@ -1,23 +1,22 @@
 package googledatalosspreventionjobtrigger
 
-
 type GoogleDataLossPreventionJobTriggerInspectJobInspectConfig struct {
 	// custom_info_types block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#custom_info_types GoogleDataLossPreventionJobTrigger#custom_info_types}
-	CustomInfoTypes interface{} `field:"optional" json:"customInfoTypes" yaml:"customInfoTypes"`
+	CustomInfoTypes any `field:"optional" json:"customInfoTypes" yaml:"customInfoTypes"`
 	// When true, excludes type information of the findings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#exclude_info_types GoogleDataLossPreventionJobTrigger#exclude_info_types}
-	ExcludeInfoTypes interface{} `field:"optional" json:"excludeInfoTypes" yaml:"excludeInfoTypes"`
+	ExcludeInfoTypes any `field:"optional" json:"excludeInfoTypes" yaml:"excludeInfoTypes"`
 	// When true, a contextual quote from the data that triggered a finding is included in the response.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#include_quote GoogleDataLossPreventionJobTrigger#include_quote}
-	IncludeQuote interface{} `field:"optional" json:"includeQuote" yaml:"includeQuote"`
+	IncludeQuote any `field:"optional" json:"includeQuote" yaml:"includeQuote"`
 	// info_types block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#info_types GoogleDataLossPreventionJobTrigger#info_types}
-	InfoTypes interface{} `field:"optional" json:"infoTypes" yaml:"infoTypes"`
+	InfoTypes any `field:"optional" json:"infoTypes" yaml:"infoTypes"`
 	// limits block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#limits GoogleDataLossPreventionJobTrigger#limits}
@@ -31,6 +30,5 @@ type GoogleDataLossPreventionJobTriggerInspectJobInspectConfig struct {
 	// rule_set block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#rule_set GoogleDataLossPreventionJobTrigger#rule_set}
-	RuleSet interface{} `field:"optional" json:"ruleSet" yaml:"ruleSet"`
+	RuleSet any `field:"optional" json:"ruleSet" yaml:"ruleSet"`
 }
-

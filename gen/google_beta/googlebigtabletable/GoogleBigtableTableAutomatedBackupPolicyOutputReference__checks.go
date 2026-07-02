@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleBigtableTableAutomatedBackupPolicyOutputReferenceParameter
 
 	return nil
 }
-

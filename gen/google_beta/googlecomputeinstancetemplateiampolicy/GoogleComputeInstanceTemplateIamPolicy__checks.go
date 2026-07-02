@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleComputeInstanceTemplateIamPolicy_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleComputeInstanceTemplateIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeInstanceTemplateIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleComputeInstanceTemplateIamPolicy_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleComputeInstanceTemplateIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeInstanceTemplateIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleComputeInstanceTemplateIamPolicy_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleComputeInstanceTemplateIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeInstanceTemplateIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleComputeInstanceTemplateIamPolicy_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleComputeInstanceTemplateIamPolicyParameters(scope construct
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigConditionsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleWorkstationsWorkstationConfigConditionsOutputReferencePara
 
 	return nil
 }
-

@@ -175,7 +175,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -299,4 +299,3 @@ func validateNewGoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReferencePar
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeMachineImageConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeMachineImageConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_machine_image#name GoogleComputeMachineImage#name}
@@ -38,7 +38,7 @@ type GoogleComputeMachineImageConfig struct {
 	// Currently only supported on Windows instances using the Volume Shadow Copy Service (VSS).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_machine_image#guest_flush GoogleComputeMachineImage#guest_flush}
-	GuestFlush interface{} `field:"optional" json:"guestFlush" yaml:"guestFlush"`
+	GuestFlush any `field:"optional" json:"guestFlush" yaml:"guestFlush"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_machine_image#id GoogleComputeMachineImage#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -55,4 +55,3 @@ type GoogleComputeMachineImageConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_machine_image#timeouts GoogleComputeMachineImage#timeouts}
 	Timeouts *GoogleComputeMachineImageTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

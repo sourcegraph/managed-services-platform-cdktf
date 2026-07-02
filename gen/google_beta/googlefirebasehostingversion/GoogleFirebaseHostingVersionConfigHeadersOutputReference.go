@@ -12,9 +12,9 @@ type GoogleFirebaseHostingVersionConfigHeadersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleFirebaseHostingVersionConfigHeadersOutputReference interface {
 	Headers() *map[string]*string
 	SetHeaders(val *map[string]*string)
 	HeadersInput() *map[string]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Regex() *string
 	SetRegex(val *string)
 	RegexInput() *string
@@ -49,7 +49,7 @@ type GoogleFirebaseHostingVersionConfigHeadersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type GoogleFirebaseHostingVersionConfigHeadersOutputReference interface {
 	ResetRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Hea
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Ter
 	return returns
 }
 
-
 func NewGoogleFirebaseHostingVersionConfigHeadersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaseHostingVersionConfigHeadersOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewGoogleFirebaseHostingVersionConfigHeadersOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigHeadersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewGoogleFirebaseHostingVersionConfigHeadersOutputReference_Override(g Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigHeadersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetGlob(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetGlob(val *string) {
 	if err := j.validateSetGlobParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetG
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetHeaders(val *map[string]*string) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetHeaders(val *map[string]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetH
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetRegex(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetRegex(val *string) {
 	if err := j.validateSetRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Com
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Int
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigHeadersOutputReference) ToS
 
 	return returns
 }
-

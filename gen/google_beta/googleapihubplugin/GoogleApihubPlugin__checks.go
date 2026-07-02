@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApihubPlugin) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubPlugin) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApihubPlugin) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApihubPlugin) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubPlugin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApihubPlugin) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleApihubPlugin) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubPlugin) validatePutActionsConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApihubPlugin) validatePutActionsConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateGoogleApihubPlugin_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleApihubPlugin_IsConstructParameters(x interface{}) error {
+func validateGoogleApihubPlugin_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateGoogleApihubPlugin_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleApihubPlugin_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApihubPlugin_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateGoogleApihubPlugin_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleApihubPlugin_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApihubPlugin_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateGoogleApihubPlugin_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPlugin) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPlugin) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -352,7 +352,7 @@ func (j *jsiiProxy_GoogleApihubPlugin) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPlugin) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPlugin) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -473,7 +473,7 @@ func (j *jsiiProxy_GoogleApihubPlugin) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPlugin) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApihubPlugin) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -537,4 +537,3 @@ func validateNewGoogleApihubPluginParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

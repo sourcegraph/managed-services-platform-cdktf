@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference
 
 	return nil
 }
-

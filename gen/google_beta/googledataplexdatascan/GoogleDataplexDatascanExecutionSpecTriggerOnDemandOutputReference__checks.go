@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReferenc
 
 	return nil
 }
-

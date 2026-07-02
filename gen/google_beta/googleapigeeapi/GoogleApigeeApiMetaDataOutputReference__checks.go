@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApigeeApiMetaDataOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeApiMetaDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeApiMetaDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApigeeApiMetaDataOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

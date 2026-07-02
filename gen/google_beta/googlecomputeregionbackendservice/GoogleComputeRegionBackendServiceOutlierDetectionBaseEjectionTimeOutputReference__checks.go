@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceOutlierDetectionBaseEjection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTim
 
 	return nil
 }
-

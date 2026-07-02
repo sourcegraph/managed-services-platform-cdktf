@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermedia
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermedia
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateC
 
 	return nil
 }
-

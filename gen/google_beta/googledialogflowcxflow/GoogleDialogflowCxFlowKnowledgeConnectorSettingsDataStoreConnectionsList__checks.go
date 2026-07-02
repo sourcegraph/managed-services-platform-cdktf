@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnect
 
 	return nil
 }
-

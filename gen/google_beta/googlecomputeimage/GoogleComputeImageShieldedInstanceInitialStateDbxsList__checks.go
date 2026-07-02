@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateDbxsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateDbxsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateDbxsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeImageShieldedInstanceInitialStateDbxsListParameters
 
 	return nil
 }
-

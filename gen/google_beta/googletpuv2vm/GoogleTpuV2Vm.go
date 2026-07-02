@@ -24,17 +24,17 @@ type GoogleTpuV2Vm interface {
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataDisks() GoogleTpuV2VmDataDisksList
-	DataDisksInput() interface{}
+	DataDisksInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,7 +73,7 @@ type GoogleTpuV2Vm interface {
 	NetworkConfig() GoogleTpuV2VmNetworkConfigOutputReference
 	NetworkConfigInput() *GoogleTpuV2VmNetworkConfig
 	NetworkConfigs() GoogleTpuV2VmNetworkConfigsList
-	NetworkConfigsInput() interface{}
+	NetworkConfigsInput() any
 	NetworkEndpoints() GoogleTpuV2VmNetworkEndpointsList
 	// The tree node.
 	Node() constructs.Node
@@ -85,12 +85,12 @@ type GoogleTpuV2Vm interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueuedResource() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuntimeVersion() *string
 	SetRuntimeVersion(val *string)
 	RuntimeVersionInput() *string
@@ -109,11 +109,11 @@ type GoogleTpuV2Vm interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleTpuV2VmTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -121,9 +121,9 @@ type GoogleTpuV2Vm interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -141,7 +141,7 @@ type GoogleTpuV2Vm interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -153,7 +153,7 @@ type GoogleTpuV2Vm interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -161,9 +161,9 @@ type GoogleTpuV2Vm interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAcceleratorConfig(value *GoogleTpuV2VmAcceleratorConfig)
-	PutDataDisks(value interface{})
+	PutDataDisks(value any)
 	PutNetworkConfig(value *GoogleTpuV2VmNetworkConfig)
-	PutNetworkConfigs(value interface{})
+	PutNetworkConfigs(value any)
 	PutSchedulingConfig(value *GoogleTpuV2VmSchedulingConfig)
 	PutServiceAccount(value *GoogleTpuV2VmServiceAccount)
 	PutShieldedInstanceConfig(value *GoogleTpuV2VmShieldedInstanceConfig)
@@ -188,17 +188,17 @@ type GoogleTpuV2Vm interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleTpuV2Vm
@@ -286,8 +286,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) DataDisks() GoogleTpuV2VmDataDisksList {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) DataDisksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) DataDisksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataDisksInput",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigs() GoogleTpuV2VmNetworkConfigsLi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkConfigsInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -636,8 +636,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) QueuedResource() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -816,8 +816,8 @@ func (j *jsiiProxy_GoogleTpuV2Vm) Timeouts() GoogleTpuV2VmTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2Vm) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -846,7 +846,6 @@ func (j *jsiiProxy_GoogleTpuV2Vm) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) GoogleTpuV2Vm {
 	_init_.Initialize()
@@ -858,7 +857,7 @@ func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2Vm",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -871,12 +870,12 @@ func NewGoogleTpuV2Vm_Override(g GoogleTpuV2Vm, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2Vm",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetAcceleratorType(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetAcceleratorType(val *string) {
 	if err := j.validateSetAcceleratorTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,7 +886,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetAcceleratorType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetCidrBlock(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -898,7 +897,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -920,7 +919,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -928,7 +927,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -939,7 +938,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -947,7 +946,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetId(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetName(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetProject(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetRuntimeVersion(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetRuntimeVersion(val *string) {
 	if err := j.validateSetRuntimeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetRuntimeVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetTags(val *[]*string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm)SetZone(val *string) {
+func (j *jsiiProxy_GoogleTpuV2Vm) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func GoogleTpuV2Vm_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2Vm",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func GoogleTpuV2Vm_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleTpuV2Vm_IsConstruct(x interface{}) *bool {
+func GoogleTpuV2Vm_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleTpuV2Vm_IsConstructParameters(x); err != nil {
@@ -1112,7 +1111,7 @@ func GoogleTpuV2Vm_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2Vm",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1120,7 +1119,7 @@ func GoogleTpuV2Vm_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool {
+func GoogleTpuV2Vm_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleTpuV2Vm_IsTerraformElementParameters(x); err != nil {
@@ -1131,7 +1130,7 @@ func GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2Vm",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleTpuV2Vm_IsTerraformResource(x interface{}) *bool {
+func GoogleTpuV2Vm_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleTpuV2Vm_IsTerraformResourceParameters(x); err != nil {
@@ -1150,7 +1149,7 @@ func GoogleTpuV2Vm_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2Vm",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1175,31 +1174,31 @@ func (g *jsiiProxy_GoogleTpuV2Vm) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleTpuV2Vm) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTpuV2Vm) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1215,7 +1214,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1231,7 +1230,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1247,7 +1246,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1263,7 +1262,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1279,7 +1278,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1295,7 +1294,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1311,7 +1310,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1327,15 +1326,15 @@ func (g *jsiiProxy_GoogleTpuV2Vm) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTpuV2Vm) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1354,7 +1353,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1367,7 +1366,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1381,18 +1380,18 @@ func (g *jsiiProxy_GoogleTpuV2Vm) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleTpuV2Vm) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1403,7 +1402,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1414,7 +1413,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1425,18 +1424,18 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutAcceleratorConfig(value *GoogleTpuV2VmAccel
 	_jsii_.InvokeVoid(
 		g,
 		"putAcceleratorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) PutDataDisks(value interface{}) {
+func (g *jsiiProxy_GoogleTpuV2Vm) PutDataDisks(value any) {
 	if err := g.validatePutDataDisksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDataDisks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1447,18 +1446,18 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutNetworkConfig(value *GoogleTpuV2VmNetworkCo
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) PutNetworkConfigs(value interface{}) {
+func (g *jsiiProxy_GoogleTpuV2Vm) PutNetworkConfigs(value any) {
 	if err := g.validatePutNetworkConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1469,7 +1468,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutSchedulingConfig(value *GoogleTpuV2VmSchedu
 	_jsii_.InvokeVoid(
 		g,
 		"putSchedulingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1480,7 +1479,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutServiceAccount(value *GoogleTpuV2VmServiceA
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceAccount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1491,7 +1490,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutShieldedInstanceConfig(value *GoogleTpuV2Vm
 	_jsii_.InvokeVoid(
 		g,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1502,7 +1501,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutTimeouts(value *GoogleTpuV2VmTimeouts) {
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1650,8 +1649,8 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ResetZone() {
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleTpuV2Vm) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1663,8 +1662,8 @@ func (g *jsiiProxy_GoogleTpuV2Vm) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleTpuV2Vm) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1676,8 +1675,8 @@ func (g *jsiiProxy_GoogleTpuV2Vm) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTpuV2Vm) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1689,8 +1688,8 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTpuV2Vm) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1715,8 +1714,8 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTpuV2Vm) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1727,4 +1726,3 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ToTerraform() interface{} {
 
 	return returns
 }
-

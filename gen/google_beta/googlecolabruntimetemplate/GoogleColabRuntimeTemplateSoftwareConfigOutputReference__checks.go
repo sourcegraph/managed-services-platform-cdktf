@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) validatePutEnvParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleColabRuntimeTemplateSoftwareConfigOutputReferenceParameter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseSta
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatus
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlenetworkserviceshttproute
 
-
 type GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters struct {
 	// The value of the query parameter must exactly match the contents of exactMatch.
 	//
@@ -9,7 +8,7 @@ type GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters struct {
 	// Specifies that the QueryParameterMatcher matches if request contains query parameter, irrespective of whether the parameter has a value or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#present_match GoogleNetworkServicesHttpRoute#present_match}
-	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
+	PresentMatch any `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// The name of the query parameter to match.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#query_parameter GoogleNetworkServicesHttpRoute#query_parameter}
@@ -19,4 +18,3 @@ type GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#regex_match GoogleNetworkServicesHttpRoute#regex_match}
 	RegexMatch *string `field:"optional" json:"regexMatch" yaml:"regexMatch"`
 }
-

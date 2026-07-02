@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeImageGuestOsFeaturesList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeImageGuestOsFeaturesListParameters(terraformResourc
 
 	return nil
 }
-

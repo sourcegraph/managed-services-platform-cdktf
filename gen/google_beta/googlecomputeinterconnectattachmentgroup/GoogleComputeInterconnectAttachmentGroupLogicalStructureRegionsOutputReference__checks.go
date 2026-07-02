@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureRegio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureRegionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureRegionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInterconnectAttachmentGroupLogicalStructureRegionsO
 
 	return nil
 }
-

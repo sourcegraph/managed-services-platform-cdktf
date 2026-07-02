@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateAddMoveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateMoveFromIdP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkManagementVpcFlowLogsConfig_GenerateConfigForImportPar
 	return nil
 }
 
-func validateGoogleNetworkManagementVpcFlowLogsConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkManagementVpcFlowLogsConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkManagementVpcFlowLogsConfig_IsConstructParameters(x in
 	return nil
 }
 
-func validateGoogleNetworkManagementVpcFlowLogsConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkManagementVpcFlowLogsConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkManagementVpcFlowLogsConfig_IsTerraformElementParamete
 	return nil
 }
 
-func validateGoogleNetworkManagementVpcFlowLogsConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkManagementVpcFlowLogsConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetAggregat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProjectP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -529,4 +529,3 @@ func validateNewGoogleNetworkManagementVpcFlowLogsConfigParameters(scope constru
 
 	return nil
 }
-

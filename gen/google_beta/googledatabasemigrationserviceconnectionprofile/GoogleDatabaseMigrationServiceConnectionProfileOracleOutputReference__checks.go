@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -282,4 +282,3 @@ func validateNewGoogleDatabaseMigrationServiceConnectionProfileOracleOutputRefer
 
 	return nil
 }
-

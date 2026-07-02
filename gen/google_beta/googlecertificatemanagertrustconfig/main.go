@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfig",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustStoresInput", GoGetter: "TrustStoresInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,11 +93,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigAllowlistedCertificates",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigAllowlistedCertificates)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigAllowlistedCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigAllowlistedCertificatesList",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigAllowlistedCertificatesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigAllowlistedCertificatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigAllowlistedCertificatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigAllowlistedCertificatesOutputReference",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigAllowlistedCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigAllowlistedCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigAllowlistedCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,15 +153,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigConfig",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTimeouts",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,15 +202,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStores",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStores)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStores](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresIntermediateCas",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresIntermediateCas)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresIntermediateCas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasList",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,7 +267,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresList",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -289,7 +289,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresOutputReference",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchors", GoGetter: "TrustAnchors"},
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchorsInput", GoGetter: "TrustAnchorsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -329,11 +329,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresTrustAnchors",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresTrustAnchors)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresTrustAnchors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -355,7 +355,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCertificateManagerTrustConfig.GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference",
-		reflect.TypeOf((*GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -382,7 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

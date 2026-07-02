@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validatePutInstanceFilterPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validatePutOsPoliciesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validatePutOsPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateGoogleOsConfigOsPolicyAssignment_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleOsConfigOsPolicyAssignment_IsConstructParameters(x interface{}) error {
+func validateGoogleOsConfigOsPolicyAssignment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateGoogleOsConfigOsPolicyAssignment_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleOsConfigOsPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOsConfigOsPolicyAssignment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateGoogleOsConfigOsPolicyAssignment_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleOsConfigOsPolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOsConfigOsPolicyAssignment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateGoogleOsConfigOsPolicyAssignment_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -446,7 +446,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -492,7 +492,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetProvisionersPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetSkipAwaitRolloutParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetSkipAwaitRolloutParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -530,4 +530,3 @@ func validateNewGoogleOsConfigOsPolicyAssignmentParameters(scope constructs.Cons
 
 	return nil
 }
-

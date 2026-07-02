@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeDnsZone.GoogleApigeeDnsZone",
-		reflect.TypeOf((*GoogleApigeeDnsZone)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeDnsZone](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeDnsZone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeDnsZone.GoogleApigeeDnsZoneConfig",
-		reflect.TypeOf((*GoogleApigeeDnsZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeDnsZoneConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeDnsZone.GoogleApigeeDnsZonePeeringConfig",
-		reflect.TypeOf((*GoogleApigeeDnsZonePeeringConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeDnsZonePeeringConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeDnsZone.GoogleApigeeDnsZonePeeringConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeDnsZonePeeringConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeDnsZonePeeringConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeDnsZonePeeringConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeDnsZone.GoogleApigeeDnsZoneTimeouts",
-		reflect.TypeOf((*GoogleApigeeDnsZoneTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeDnsZoneTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeDnsZone.GoogleApigeeDnsZoneTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeDnsZoneTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeDnsZoneTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeDnsZoneTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

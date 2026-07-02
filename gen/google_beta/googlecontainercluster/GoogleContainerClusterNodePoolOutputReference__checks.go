@@ -175,7 +175,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetIni
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -355,4 +355,3 @@ func validateNewGoogleContainerClusterNodePoolOutputReferenceParameters(terrafor
 
 	return nil
 }
-

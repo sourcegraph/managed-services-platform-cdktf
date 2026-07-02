@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutGuestAcceleratorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutGuestAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutLocalSsdsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutLocalSsdsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -284,4 +284,3 @@ func validateNewGoogleComputeReservationSpecificReservationInstancePropertiesOut
 
 	return nil
 }
-

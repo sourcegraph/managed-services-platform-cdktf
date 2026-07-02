@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeInterconnectAttachment_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleComputeInterconnectAttachment_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeInterconnectAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeInterconnectAttachment_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleComputeInterconnectAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeInterconnectAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeInterconnectAttachment_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleComputeInterconnectAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeInterconnectAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeInterconnectAttachment_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetAdminEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetAdminEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateSubn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -501,7 +501,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -613,4 +613,3 @@ func validateNewGoogleComputeInterconnectAttachmentParameters(scope constructs.C
 
 	return nil
 }
-

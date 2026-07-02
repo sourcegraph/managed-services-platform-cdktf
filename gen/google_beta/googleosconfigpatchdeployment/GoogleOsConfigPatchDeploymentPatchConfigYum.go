@@ -1,6 +1,5 @@
 package googleosconfigpatchdeployment
 
-
 type GoogleOsConfigPatchDeploymentPatchConfigYum struct {
 	// List of packages to exclude from update. These packages will be excluded.
 	//
@@ -17,10 +16,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigYum struct {
 	// Will cause patch to run yum update-minimal instead.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#minimal GoogleOsConfigPatchDeployment#minimal}
-	Minimal interface{} `field:"optional" json:"minimal" yaml:"minimal"`
+	Minimal any `field:"optional" json:"minimal" yaml:"minimal"`
 	// Adds the --security flag to yum update. Not supported on all platforms.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#security GoogleOsConfigPatchDeployment#security}
-	Security interface{} `field:"optional" json:"security" yaml:"security"`
+	Security any `field:"optional" json:"security" yaml:"security"`
 }
-

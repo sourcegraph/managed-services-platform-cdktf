@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSource
 
 	return nil
 }
-

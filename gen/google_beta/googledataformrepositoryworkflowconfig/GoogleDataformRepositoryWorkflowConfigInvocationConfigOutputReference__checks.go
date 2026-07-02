@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validatePutIncludedTargetsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validatePutIncludedTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetFullyRefreshIncrementalTablesEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetFullyRefreshIncrementalTablesEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,7 +254,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetTransitiveDependenciesIncludedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetTransitiveDependenciesIncludedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetTransitiveDependentsIncludedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) validateSetTransitiveDependentsIncludedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -305,4 +305,3 @@ func validateNewGoogleDataformRepositoryWorkflowConfigInvocationConfigOutputRefe
 
 	return nil
 }
-

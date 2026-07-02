@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validatePutTagsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validatePutTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceP
 
 	return nil
 }
-

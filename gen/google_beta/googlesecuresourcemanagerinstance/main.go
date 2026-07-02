@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstance",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforceIdentityFederationConfig", GoGetter: "WorkforceIdentityFederationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workforceIdentityFederationConfigInput", GoGetter: "WorkforceIdentityFederationConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecureSourceManagerInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceConfig",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceHostConfig",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceHostConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceHostConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceHostConfigList",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceHostConfigList)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceHostConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecureSourceManagerInstanceHostConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceHostConfigOutputReference",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceHostConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceHostConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecureSourceManagerInstanceHostConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstancePrivateConfig",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstancePrivateConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstancePrivateConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstancePrivateConfigOutputReference",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstancePrivateConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstancePrivateConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caPool", GoGetter: "CaPool"},
 			_jsii_.MemberProperty{JsiiProperty: "caPoolInput", GoGetter: "CaPoolInput"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,11 +207,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceTimeouts",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecureSourceManagerInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerInstance.GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference",
-		reflect.TypeOf((*GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyDela
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayOu
 
 	return nil
 }
-

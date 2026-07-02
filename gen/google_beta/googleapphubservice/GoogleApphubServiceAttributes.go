@@ -1,11 +1,10 @@
 package googleapphubservice
 
-
 type GoogleApphubServiceAttributes struct {
 	// business_owners block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apphub_service#business_owners GoogleApphubService#business_owners}
-	BusinessOwners interface{} `field:"optional" json:"businessOwners" yaml:"businessOwners"`
+	BusinessOwners any `field:"optional" json:"businessOwners" yaml:"businessOwners"`
 	// criticality block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apphub_service#criticality GoogleApphubService#criticality}
@@ -13,7 +12,7 @@ type GoogleApphubServiceAttributes struct {
 	// developer_owners block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apphub_service#developer_owners GoogleApphubService#developer_owners}
-	DeveloperOwners interface{} `field:"optional" json:"developerOwners" yaml:"developerOwners"`
+	DeveloperOwners any `field:"optional" json:"developerOwners" yaml:"developerOwners"`
 	// environment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apphub_service#environment GoogleApphubService#environment}
@@ -21,6 +20,5 @@ type GoogleApphubServiceAttributes struct {
 	// operator_owners block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apphub_service#operator_owners GoogleApphubService#operator_owners}
-	OperatorOwners interface{} `field:"optional" json:"operatorOwners" yaml:"operatorOwners"`
+	OperatorOwners any `field:"optional" json:"operatorOwners" yaml:"operatorOwners"`
 }
-

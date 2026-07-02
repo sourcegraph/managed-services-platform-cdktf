@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVaria
 
 	return nil
 }
-

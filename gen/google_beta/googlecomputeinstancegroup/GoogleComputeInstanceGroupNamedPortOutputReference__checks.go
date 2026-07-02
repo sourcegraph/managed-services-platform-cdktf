@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeInstanceGroupNamedPortOutputReferenceParameters(ter
 
 	return nil
 }
-

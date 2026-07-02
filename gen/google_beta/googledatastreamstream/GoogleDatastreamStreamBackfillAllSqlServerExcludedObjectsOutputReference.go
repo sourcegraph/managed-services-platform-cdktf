@@ -12,9 +12,9 @@ type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference in
 	InternalValue() *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects
 	SetInternalValue(val *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects)
 	Schemas() GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList
-	SchemasInput() interface{}
+	SchemasInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,10 +63,10 @@ type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSchemas(value interface{})
+	PutSchemas(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SchemasInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SchemasInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"schemasInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	return returns
 }
 
-
 func NewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference)SetInternalValue(val *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SetInternalValue(val *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,34 +430,34 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) PutSchemas(value interface{}) {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) PutSchemas(value any) {
 	if err := g.validatePutSchemasParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSchemas",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutp
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptor)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptor](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueType", GoGetter: "ValueType"},
 			_jsii_.MemberProperty{JsiiProperty: "valueTypeInput", GoGetter: "ValueTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringMetricDescriptor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorConfig",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorLabels",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorLabels)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorLabelsList",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorLabelsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringMetricDescriptorLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorLabelsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueType", GoGetter: "ValueType"},
 			_jsii_.MemberProperty{JsiiProperty: "valueTypeInput", GoGetter: "ValueTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadata",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorMetadata)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadataOutputReference",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringMetricDescriptorMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorTimeouts",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringMetricDescriptorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringMetricDescriptorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringMetricDescriptorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameter",
-		reflect.TypeOf((*GoogleParameterManagerParameter)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleParameterManagerParameter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameterConfig",
-		reflect.TypeOf((*GoogleParameterManagerParameterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameterPolicyMember",
-		reflect.TypeOf((*GoogleParameterManagerParameterPolicyMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameterPolicyMember](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameterPolicyMemberList",
-		reflect.TypeOf((*GoogleParameterManagerParameterPolicyMemberList)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameterPolicyMemberList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleParameterManagerParameterPolicyMemberList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameterPolicyMemberOutputReference",
-		reflect.TypeOf((*GoogleParameterManagerParameterPolicyMemberOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameterPolicyMemberOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleParameterManagerParameterPolicyMemberOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameterTimeouts",
-		reflect.TypeOf((*GoogleParameterManagerParameterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleParameterManagerParameter.GoogleParameterManagerParameterTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleParameterManagerParameterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleParameterManagerParameterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleParameterManagerParameterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

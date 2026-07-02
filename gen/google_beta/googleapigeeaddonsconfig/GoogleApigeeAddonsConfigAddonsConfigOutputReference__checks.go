@@ -153,7 +153,7 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGoogleApigeeAddonsConfigAddonsConfigOutputReferenceParameters(te
 
 	return nil
 }
-

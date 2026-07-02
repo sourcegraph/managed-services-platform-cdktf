@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
-		reflect.TypeOf((*GoogleComputePacketMirroring)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroring](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroring{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,11 +95,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringCollectorIlb",
-		reflect.TypeOf((*GoogleComputePacketMirroringCollectorIlb)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringCollectorIlb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringCollectorIlbOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringCollectorIlbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringCollectorIlbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringCollectorIlbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringConfig",
-		reflect.TypeOf((*GoogleComputePacketMirroringConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringFilter",
-		reflect.TypeOf((*GoogleComputePacketMirroringFilter)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringFilterOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrRanges", GoGetter: "CidrRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrRangesInput", GoGetter: "CidrRangesInput"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,15 +182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResources",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResources)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstances",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesInstances)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesInstancesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesInstancesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesInstancesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -212,7 +212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworks",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesSubnetworks)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesSubnetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworksList",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesSubnetworksList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesSubnetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -315,7 +315,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -349,11 +349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetwork",
-		reflect.TypeOf((*GoogleComputePacketMirroringNetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -387,11 +387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeouts",
-		reflect.TypeOf((*GoogleComputePacketMirroringTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputePacketMirroringTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePacketMirroringTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePacketMirroringTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

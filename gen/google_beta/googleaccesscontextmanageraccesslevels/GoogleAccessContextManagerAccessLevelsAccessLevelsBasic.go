@@ -1,11 +1,10 @@
 package googleaccesscontextmanageraccesslevels
 
-
 type GoogleAccessContextManagerAccessLevelsAccessLevelsBasic struct {
 	// conditions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_access_levels#conditions GoogleAccessContextManagerAccessLevels#conditions}
-	Conditions interface{} `field:"required" json:"conditions" yaml:"conditions"`
+	Conditions any `field:"required" json:"conditions" yaml:"conditions"`
 	// How the conditions list should be combined to determine if a request is granted this AccessLevel.
 	//
 	// If AND is used, each Condition in
@@ -16,4 +15,3 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasic struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_access_levels#combining_function GoogleAccessContextManagerAccessLevels#combining_function}
 	CombiningFunction *string `field:"optional" json:"combiningFunction" yaml:"combiningFunction"`
 }
-

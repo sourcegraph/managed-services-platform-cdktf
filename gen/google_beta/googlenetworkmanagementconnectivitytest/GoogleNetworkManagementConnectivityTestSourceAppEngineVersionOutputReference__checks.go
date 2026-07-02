@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersion
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkManagementConnectivityTestSourceAppEngineVersionOut
 
 	return nil
 }
-

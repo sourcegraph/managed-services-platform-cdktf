@@ -1,6 +1,5 @@
 package googlesecuritypostureposture
 
-
 type GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint struct {
 	// Organization policy canned constraint Id.
 	//
@@ -9,6 +8,5 @@ type GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint
 	// policy_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#policy_rules GoogleSecurityposturePosture#policy_rules}
-	PolicyRules interface{} `field:"required" json:"policyRules" yaml:"policyRules"`
+	PolicyRules any `field:"required" json:"policyRules" yaml:"policyRules"`
 }
-

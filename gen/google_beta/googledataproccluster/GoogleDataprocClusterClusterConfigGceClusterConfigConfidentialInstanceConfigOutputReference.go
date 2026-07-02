@@ -12,9 +12,9 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfi
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfi
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableConfidentialCompute() interface{}
-	SetEnableConfidentialCompute(val interface{})
-	EnableConfidentialComputeInput() interface{}
+	EnableConfidentialCompute() any
+	SetEnableConfidentialCompute(val any)
+	EnableConfidentialComputeInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig
@@ -43,7 +43,7 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfi
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfi
 	ResetEnableConfidentialCompute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialIns
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) EnableConfidentialCompute() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) EnableConfidentialCompute() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialCompute",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) EnableConfidentialComputeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) EnableConfidentialComputeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialComputeInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	return returns
 }
 
-
 func NewGoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewGoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewGoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)SetEnableConfidentialCompute(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) SetEnableConfidentialCompute(val any) {
 	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)SetInternalValue(val *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) SetInternalValue(val *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentia
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleBigqueryBiReservationPreferredTablesOutputReferenceParamet
 
 	return nil
 }
-

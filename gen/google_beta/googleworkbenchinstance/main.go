@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstance",
-		reflect.TypeOf((*GoogleWorkbenchInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "upgradeHistory", GoGetter: "UpgradeHistory"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,19 +107,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceConfig",
-		reflect.TypeOf((*GoogleWorkbenchInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetup",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetup)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetup](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigs",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupAcceleratorConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupAcceleratorConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigsList",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupAcceleratorConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupAcceleratorConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupBootDisk",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupBootDisk)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupBootDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupBootDiskOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupBootDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupBootDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupBootDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,11 +227,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfig",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,11 +266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupContainerImage",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupContainerImage)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupContainerImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupContainerImageOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupContainerImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupContainerImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupContainerImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,11 +307,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupDataDisks",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupDataDisks)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupDataDisks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupDataDisksOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupDataDisksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupDataDisksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupDataDisksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,15 +355,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfaces",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupNetworkInterfaces)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupNetworkInterfaces](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -385,7 +385,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,7 +419,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesList",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupNetworkInterfacesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupNetworkInterfacesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -441,7 +441,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfigs", GoGetter: "AccessConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "accessConfigsInput", GoGetter: "AccessConfigsInput"},
@@ -478,7 +478,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -486,7 +486,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigs", GoGetter: "AcceleratorConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigsInput", GoGetter: "AcceleratorConfigsInput"},
@@ -561,7 +561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmImage", GoGetter: "VmImage"},
 			_jsii_.MemberProperty{JsiiProperty: "vmImageInput", GoGetter: "VmImageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -569,11 +569,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupServiceAccounts",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupServiceAccounts)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupServiceAccounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupServiceAccountsList",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupServiceAccountsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupServiceAccountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -587,7 +587,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupServiceAccountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -595,7 +595,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -623,7 +623,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -631,11 +631,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -668,7 +668,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -676,11 +676,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupVmImage",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupVmImage)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupVmImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceGceSetupVmImageOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceGceSetupVmImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceGceSetupVmImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -713,7 +713,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceGceSetupVmImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -721,11 +721,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfo",
-		reflect.TypeOf((*GoogleWorkbenchInstanceHealthInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceHealthInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfoList",
-		reflect.TypeOf((*GoogleWorkbenchInstanceHealthInfoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceHealthInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -738,7 +738,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceHealthInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -746,7 +746,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceHealthInfoOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceHealthInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceHealthInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -778,11 +778,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeouts",
-		reflect.TypeOf((*GoogleWorkbenchInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -815,7 +815,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -823,11 +823,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistory",
-		reflect.TypeOf((*GoogleWorkbenchInstanceUpgradeHistory)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceUpgradeHistory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistoryList",
-		reflect.TypeOf((*GoogleWorkbenchInstanceUpgradeHistoryList)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceUpgradeHistoryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -840,7 +840,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -848,7 +848,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistoryOutputReference",
-		reflect.TypeOf((*GoogleWorkbenchInstanceUpgradeHistoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkbenchInstanceUpgradeHistoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -881,7 +881,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "vmImage", GoGetter: "VmImage"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirestoreDatabase) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirestoreDatabase) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleFirestoreDatabase_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleFirestoreDatabase_IsConstructParameters(x interface{}) error {
+func validateGoogleFirestoreDatabase_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleFirestoreDatabase_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleFirestoreDatabase_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirestoreDatabase_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleFirestoreDatabase_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleFirestoreDatabase_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirestoreDatabase_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetConcurrencyModeParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -444,7 +444,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -524,4 +524,3 @@ func validateNewGoogleFirestoreDatabaseParameters(scope constructs.Construct, id
 
 	return nil
 }
-

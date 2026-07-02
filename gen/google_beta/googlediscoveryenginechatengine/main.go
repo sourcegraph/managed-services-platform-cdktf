@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngine)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngine](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngine{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineConfig",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "business", GoGetter: "Business"},
 			_jsii_.MemberProperty{JsiiProperty: "businessInput", GoGetter: "BusinessInput"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentCreationConfig", GoGetter: "AgentCreationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "agentCreationConfigInput", GoGetter: "AgentCreationConfigInput"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,11 +187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineMetadata",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineMetadata)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineMetadataList",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineMetadataList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineMetadataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineMetadataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -212,7 +212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,11 +245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineCommonConfig",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineCommonConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineCommonConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineCommonConfigOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineCommonConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineCommonConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "companyName", GoGetter: "CompanyName"},
 			_jsii_.MemberProperty{JsiiProperty: "companyNameInput", GoGetter: "CompanyNameInput"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngineCommonConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,15 +284,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineConfig",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineTimeouts",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngineTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineChatEngineTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineChatEngineTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineChatEngineTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

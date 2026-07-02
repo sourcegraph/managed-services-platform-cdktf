@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobScheduleScheduleStartDateOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobScheduleScheduleStartDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageTransferJobScheduleScheduleStartDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleStorageTransferJobScheduleScheduleStartDateOutputReference
 
 	return nil
 }
-

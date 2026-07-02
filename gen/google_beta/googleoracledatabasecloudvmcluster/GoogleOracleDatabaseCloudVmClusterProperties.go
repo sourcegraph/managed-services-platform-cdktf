@@ -1,6 +1,5 @@
 package googleoracledatabasecloudvmcluster
 
-
 type GoogleOracleDatabaseCloudVmClusterProperties struct {
 	// Number of enabled CPU cores.
 	//
@@ -45,7 +44,7 @@ type GoogleOracleDatabaseCloudVmClusterProperties struct {
 	// Use local backup.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_cloud_vm_cluster#local_backup_enabled GoogleOracleDatabaseCloudVmCluster#local_backup_enabled}
-	LocalBackupEnabled interface{} `field:"optional" json:"localBackupEnabled" yaml:"localBackupEnabled"`
+	LocalBackupEnabled any `field:"optional" json:"localBackupEnabled" yaml:"localBackupEnabled"`
 	// Memory allocated in GBs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_cloud_vm_cluster#memory_size_gb GoogleOracleDatabaseCloudVmCluster#memory_size_gb}
@@ -61,7 +60,7 @@ type GoogleOracleDatabaseCloudVmClusterProperties struct {
 	// Use exadata sparse snapshots.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_cloud_vm_cluster#sparse_diskgroup_enabled GoogleOracleDatabaseCloudVmCluster#sparse_diskgroup_enabled}
-	SparseDiskgroupEnabled interface{} `field:"optional" json:"sparseDiskgroupEnabled" yaml:"sparseDiskgroupEnabled"`
+	SparseDiskgroupEnabled any `field:"optional" json:"sparseDiskgroupEnabled" yaml:"sparseDiskgroupEnabled"`
 	// SSH public keys to be stored with cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_cloud_vm_cluster#ssh_public_keys GoogleOracleDatabaseCloudVmCluster#ssh_public_keys}
@@ -71,4 +70,3 @@ type GoogleOracleDatabaseCloudVmClusterProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_cloud_vm_cluster#time_zone GoogleOracleDatabaseCloudVmCluster#time_zone}
 	TimeZone *GoogleOracleDatabaseCloudVmClusterPropertiesTimeZone `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
-

@@ -15,17 +15,17 @@ type GoogleBigqueryJob interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Copy() GoogleBigqueryJobCopyOutputReference
 	CopyInput() *GoogleBigqueryJobCopy
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,31 +73,31 @@ type GoogleBigqueryJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Query() GoogleBigqueryJobQueryOutputReference
 	QueryInput() *GoogleBigqueryJobQuery
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() GoogleBigqueryJobStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleBigqueryJobTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserEmail() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleBigqueryJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleBigqueryJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,17 +152,17 @@ type GoogleBigqueryJob interface {
 	ResetProject()
 	ResetQuery()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBigqueryJob
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) CopyInput() *GoogleBigqueryJobCopy {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) QueryInput() *GoogleBigqueryJobQuery {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -580,8 +580,8 @@ func (j *jsiiProxy_GoogleBigqueryJob) Timeouts() GoogleBigqueryJobTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJob) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -600,7 +600,6 @@ func (j *jsiiProxy_GoogleBigqueryJob) UserEmail() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_job google_bigquery_job} Resource.
 func NewGoogleBigqueryJob(scope constructs.Construct, id *string, config *GoogleBigqueryJobConfig) GoogleBigqueryJob {
 	_init_.Initialize()
@@ -612,7 +611,7 @@ func NewGoogleBigqueryJob(scope constructs.Construct, id *string, config *Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -625,12 +624,12 @@ func NewGoogleBigqueryJob_Override(g GoogleBigqueryJob, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetJobId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetJobId(val *string) {
 	if err := j.validateSetJobIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetJobId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetJobTimeoutMs(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetJobTimeoutMs(val *string) {
 	if err := j.validateSetJobTimeoutMsParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetJobTimeoutMs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_GoogleBigqueryJob)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func GoogleBigqueryJob_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func GoogleBigqueryJob_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBigqueryJob_IsConstruct(x interface{}) *bool {
+func GoogleBigqueryJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryJob_IsConstructParameters(x); err != nil {
@@ -811,7 +810,7 @@ func GoogleBigqueryJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func GoogleBigqueryJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryJob_IsTerraformElement(x interface{}) *bool {
+func GoogleBigqueryJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryJob_IsTerraformElementParameters(x); err != nil {
@@ -830,7 +829,7 @@ func GoogleBigqueryJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func GoogleBigqueryJob_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryJob_IsTerraformResource(x interface{}) *bool {
+func GoogleBigqueryJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryJob_IsTerraformResourceParameters(x); err != nil {
@@ -849,7 +848,7 @@ func GoogleBigqueryJob_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -874,31 +873,31 @@ func (g *jsiiProxy_GoogleBigqueryJob) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBigqueryJob) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,15 +1025,15 @@ func (g *jsiiProxy_GoogleBigqueryJob) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1053,7 +1052,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,18 +1079,18 @@ func (g *jsiiProxy_GoogleBigqueryJob) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBigqueryJob) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) PutCopy(value *GoogleBigqueryJobCopy) {
 	_jsii_.InvokeVoid(
 		g,
 		"putCopy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) PutExtract(value *GoogleBigqueryJobExtract
 	_jsii_.InvokeVoid(
 		g,
 		"putExtract",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) PutLoad(value *GoogleBigqueryJobLoad) {
 	_jsii_.InvokeVoid(
 		g,
 		"putLoad",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) PutQuery(value *GoogleBigqueryJobQuery) {
 	_jsii_.InvokeVoid(
 		g,
 		"putQuery",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (g *jsiiProxy_GoogleBigqueryJob) PutTimeouts(value *GoogleBigqueryJobTimeou
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1260,8 +1259,8 @@ func (g *jsiiProxy_GoogleBigqueryJob) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1273,8 +1272,8 @@ func (g *jsiiProxy_GoogleBigqueryJob) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1286,8 +1285,8 @@ func (g *jsiiProxy_GoogleBigqueryJob) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1299,8 +1298,8 @@ func (g *jsiiProxy_GoogleBigqueryJob) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1325,8 +1324,8 @@ func (g *jsiiProxy_GoogleBigqueryJob) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJob) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1337,4 +1336,3 @@ func (g *jsiiProxy_GoogleBigqueryJob) ToTerraform() interface{} {
 
 	return returns
 }
-

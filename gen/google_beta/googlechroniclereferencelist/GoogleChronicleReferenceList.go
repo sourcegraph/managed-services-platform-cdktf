@@ -15,15 +15,15 @@ type GoogleChronicleReferenceList interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,7 +33,7 @@ type GoogleChronicleReferenceList interface {
 	DescriptionInput() *string
 	DisplayName() *string
 	Entries() GoogleChronicleReferenceListEntriesList
-	EntriesInput() interface{}
+	EntriesInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,11 +66,11 @@ type GoogleChronicleReferenceList interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReferenceListId() *string
 	SetReferenceListId(val *string)
 	ReferenceListIdInput() *string
@@ -84,18 +84,18 @@ type GoogleChronicleReferenceList interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleChronicleReferenceListTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleChronicleReferenceList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,14 +125,14 @@ type GoogleChronicleReferenceList interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEntries(value interface{})
+	PutEntries(value any)
 	PutTimeouts(value *GoogleChronicleReferenceListTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -140,17 +140,17 @@ type GoogleChronicleReferenceList interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleChronicleReferenceList
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) Entries() GoogleChronicleRefere
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) EntriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) EntriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"entriesInput",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) Timeouts() GoogleChronicleRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleReferenceList) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -557,7 +557,6 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewGoogleChronicleReferenceList(scope constructs.Construct, id *string, config *GoogleChronicleReferenceListConfig) GoogleChronicleReferenceList {
@@ -570,7 +569,7 @@ func NewGoogleChronicleReferenceList(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleChronicleReferenceList.GoogleChronicleReferenceList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -583,12 +582,12 @@ func NewGoogleChronicleReferenceList_Override(g GoogleChronicleReferenceList, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleChronicleReferenceList.GoogleChronicleReferenceList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetId(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetInstance(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetProject(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -700,7 +699,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetReferenceListId(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetReferenceListId(val *string) {
 	if err := j.validateSetReferenceListIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList)SetReferenceListId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList)SetSyntaxType(val *string) {
+func (j *jsiiProxy_GoogleChronicleReferenceList) SetSyntaxType(val *string) {
 	if err := j.validateSetSyntaxTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func GoogleChronicleReferenceList_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleReferenceList.GoogleChronicleReferenceList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func GoogleChronicleReferenceList_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleChronicleReferenceList_IsConstruct(x interface{}) *bool {
+func GoogleChronicleReferenceList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleChronicleReferenceList_IsConstructParameters(x); err != nil {
@@ -780,7 +779,7 @@ func GoogleChronicleReferenceList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleReferenceList.GoogleChronicleReferenceList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func GoogleChronicleReferenceList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleChronicleReferenceList_IsTerraformElement(x interface{}) *bool {
+func GoogleChronicleReferenceList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleChronicleReferenceList_IsTerraformElementParameters(x); err != nil {
@@ -799,7 +798,7 @@ func GoogleChronicleReferenceList_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleReferenceList.GoogleChronicleReferenceList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func GoogleChronicleReferenceList_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleChronicleReferenceList_IsTerraformResource(x interface{}) *bool {
+func GoogleChronicleReferenceList_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleChronicleReferenceList_IsTerraformResourceParameters(x); err != nil {
@@ -818,7 +817,7 @@ func GoogleChronicleReferenceList_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleReferenceList.GoogleChronicleReferenceList",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -843,31 +842,31 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleChronicleReferenceList) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleChronicleReferenceList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,15 +994,15 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleReferenceList) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,7 +1021,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1035,7 +1034,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,18 +1048,18 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleChronicleReferenceList) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1071,7 +1070,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1082,18 +1081,18 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) PutEntries(value interface{}) {
+func (g *jsiiProxy_GoogleChronicleReferenceList) PutEntries(value any) {
 	if err := g.validatePutEntriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEntries",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1104,7 +1103,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) PutTimeouts(value *GoogleChroni
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1140,8 +1139,8 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleChronicleReferenceList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1153,8 +1152,8 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleChronicleReferenceList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1166,8 +1165,8 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleReferenceList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1179,8 +1178,8 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleReferenceList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1205,8 +1204,8 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleReferenceList) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleReferenceList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1217,4 +1216,3 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) ToTerraform() interface{} {
 
 	return returns
 }
-

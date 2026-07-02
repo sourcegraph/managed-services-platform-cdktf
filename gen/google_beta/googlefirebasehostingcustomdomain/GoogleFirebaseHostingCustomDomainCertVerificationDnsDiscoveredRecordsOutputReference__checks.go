@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscovere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRe
 
 	return nil
 }
-

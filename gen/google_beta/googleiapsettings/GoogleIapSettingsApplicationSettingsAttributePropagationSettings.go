@@ -1,13 +1,12 @@
 package googleiapsettings
 
-
 type GoogleIapSettingsApplicationSettingsAttributePropagationSettings struct {
 	// Whether the provided attribute propagation settings should be evaluated on user requests.
 	//
 	// If set to true, attributes returned from the expression will be propagated in the set output credentials.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iap_settings#enable GoogleIapSettings#enable}
-	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
+	Enable any `field:"optional" json:"enable" yaml:"enable"`
 	// Raw string CEL expression.
 	//
 	// Must return a list of attributes. A maximum of 45 attributes can
@@ -30,4 +29,3 @@ type GoogleIapSettingsApplicationSettingsAttributePropagationSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iap_settings#output_credentials GoogleIapSettings#output_credentials}
 	OutputCredentials *[]*string `field:"optional" json:"outputCredentials" yaml:"outputCredentials"`
 }
-

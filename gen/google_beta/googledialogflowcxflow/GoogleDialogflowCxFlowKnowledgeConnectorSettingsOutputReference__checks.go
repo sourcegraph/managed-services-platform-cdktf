@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validatePutDataStoreConnectionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validatePutDataStoreConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,4 +276,3 @@ func validateNewGoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferenceP
 
 	return nil
 }
-

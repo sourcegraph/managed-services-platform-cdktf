@@ -1,6 +1,5 @@
 package googlesqldatabaseinstance
 
-
 type GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig struct {
 	// List of consumer projects that are allow-listed for PSC connections to this instance.
 	//
@@ -11,10 +10,9 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig struct {
 	// psc_auto_connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#psc_auto_connections GoogleSqlDatabaseInstance#psc_auto_connections}
-	PscAutoConnections interface{} `field:"optional" json:"pscAutoConnections" yaml:"pscAutoConnections"`
+	PscAutoConnections any `field:"optional" json:"pscAutoConnections" yaml:"pscAutoConnections"`
 	// Whether PSC connectivity is enabled for this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#psc_enabled GoogleSqlDatabaseInstance#psc_enabled}
-	PscEnabled interface{} `field:"optional" json:"pscEnabled" yaml:"pscEnabled"`
+	PscEnabled any `field:"optional" json:"pscEnabled" yaml:"pscEnabled"`
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputRe
 
 	return nil
 }
-

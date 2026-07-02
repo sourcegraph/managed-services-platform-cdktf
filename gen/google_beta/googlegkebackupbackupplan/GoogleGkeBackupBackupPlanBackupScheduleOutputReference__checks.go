@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,4 +237,3 @@ func validateNewGoogleGkeBackupBackupPlanBackupScheduleOutputReferenceParameters
 
 	return nil
 }
-

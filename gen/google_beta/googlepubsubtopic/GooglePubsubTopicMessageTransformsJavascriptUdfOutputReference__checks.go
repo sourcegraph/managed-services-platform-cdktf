@@ -106,7 +106,7 @@ func (j *jsiiProxy_GooglePubsubTopicMessageTransformsJavascriptUdfOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGooglePubsubTopicMessageTransformsJavascriptUdfOutputReferencePa
 
 	return nil
 }
-

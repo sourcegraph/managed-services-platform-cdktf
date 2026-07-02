@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleCloudbuildWorkerPool_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleCloudbuildWorkerPool_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudbuildWorkerPool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleCloudbuildWorkerPool_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleCloudbuildWorkerPool_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudbuildWorkerPool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleCloudbuildWorkerPool_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleCloudbuildWorkerPool_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudbuildWorkerPool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetAnnotationsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -329,7 +329,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -498,4 +498,3 @@ func validateNewGoogleCloudbuildWorkerPoolParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReferen
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReferen
 	InternalValue() *GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig
 	SetInternalValue(val *GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig)
 	PolicyBindings() GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList
-	PolicyBindingsInput() interface{}
+	PolicyBindingsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReferen
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPolicyBindings(value interface{})
+	PutPolicyBindings(value any)
 	ResetEvaluationMode()
 	ResetPolicyBindings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOut
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) PolicyBindingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) PolicyBindingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"policyBindingsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	return returns
 }
 
-
 func NewGoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputRefe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeHubFleet.GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputRefe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeHubFleet.GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)SetEvaluationMode(val *string) {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) SetEvaluationMode(val *string) {
 	if err := j.validateSetEvaluationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)SetInternalValue(val *GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig) {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) SetInternalValue(val *GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) PutPolicyBindings(value interface{}) {
+func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) PutPolicyBindings(value any) {
 	if err := g.validatePutPolicyBindingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPolicyBindings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfi
 
 	return returns
 }
-

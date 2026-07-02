@@ -1,6 +1,5 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas struct {
 	// Schema name.
 	//
@@ -9,6 +8,5 @@ type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas struct {
 	// tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#tables GoogleDatastreamStream#tables}
-	Tables interface{} `field:"optional" json:"tables" yaml:"tables"`
+	Tables any `field:"optional" json:"tables" yaml:"tables"`
 }
-

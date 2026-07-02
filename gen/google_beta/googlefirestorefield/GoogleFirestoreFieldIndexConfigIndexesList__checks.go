@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFirestoreFieldIndexConfigIndexesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreFieldIndexConfigIndexesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreFieldIndexConfigIndexesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFirestoreFieldIndexConfigIndexesListParameters(terraformRe
 
 	return nil
 }
-

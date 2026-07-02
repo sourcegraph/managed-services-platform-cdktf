@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRef
 
 	return nil
 }
-

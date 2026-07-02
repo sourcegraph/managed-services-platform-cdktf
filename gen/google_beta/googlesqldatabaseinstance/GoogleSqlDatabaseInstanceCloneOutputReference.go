@@ -15,9 +15,9 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	AllocatedIpRangeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	ResetPreferredZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) AllocatedIpRan
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewGoogleSqlDatabaseInstanceCloneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceCloneOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewGoogleSqlDatabaseInstanceCloneOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceCloneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewGoogleSqlDatabaseInstanceCloneOutputReference_Override(g GoogleSqlDataba
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceCloneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetAllocatedIpRange(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetAllocatedIpRange(val *string) {
 	if err := j.validateSetAllocatedIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetAllocatedIpR
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetDatabaseNames(val *[]*string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetDatabaseNames(val *[]*string) {
 	if err := j.validateSetDatabaseNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetDatabaseName
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceClone) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetInternalValue(val *GoogleSqlDatabaseInstanceClone) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPointInTime(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetPointInTime(val *string) {
 	if err := j.validateSetPointInTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPointInTime(
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPreferredZone(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetPreferredZone(val *string) {
 	if err := j.validateSetPreferredZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPreferredZon
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetSourceInstanceName(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetSourceInstanceName(val *string) {
 	if err := j.validateSetSourceInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetSourceInstan
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetPreferred
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ToString() *st
 
 	return returns
 }
-

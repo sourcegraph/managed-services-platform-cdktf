@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleStorageBucketObjectCustomerEncryptionOutputReferenceParame
 
 	return nil
 }
-

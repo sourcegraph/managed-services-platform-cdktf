@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig
 
 	return nil
 }
-

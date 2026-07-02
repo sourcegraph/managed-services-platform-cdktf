@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobReplicationSpecGcsDataSinkOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobReplicationSpecGcsDataSinkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageTransferJobReplicationSpecGcsDataSinkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleStorageTransferJobReplicationSpecGcsDataSinkOutputReferenc
 
 	return nil
 }
-

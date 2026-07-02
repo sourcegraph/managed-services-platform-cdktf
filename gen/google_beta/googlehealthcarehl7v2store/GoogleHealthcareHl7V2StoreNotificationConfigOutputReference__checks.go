@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleHealthcareHl7V2StoreNotificationConfigOutputReferenceParam
 
 	return nil
 }
-

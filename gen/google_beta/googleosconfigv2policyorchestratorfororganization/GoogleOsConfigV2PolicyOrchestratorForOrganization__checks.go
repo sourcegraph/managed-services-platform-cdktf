@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateAd
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateMo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_GenerateConfigFor
 	return nil
 }
 
-func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsConstructParameters(x interface{}) error {
+func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsConstructParame
 	return nil
 }
 
-func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsTerraformElemen
 	return nil
 }
 
-func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOsConfigV2PolicyOrchestratorForOrganization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewGoogleOsConfigV2PolicyOrchestratorForOrganizationParameters(scop
 
 	return nil
 }
-

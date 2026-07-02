@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBinding",
-		reflect.TypeOf((*GoogleDataprocMetastoreTableIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreTableIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocMetastoreTableIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingCondition",
-		reflect.TypeOf((*GoogleDataprocMetastoreTableIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreTableIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleDataprocMetastoreTableIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreTableIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocMetastoreTableIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,6 +128,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreTableIamBinding.GoogleDataprocMetastoreTableIamBindingConfig",
-		reflect.TypeOf((*GoogleDataprocMetastoreTableIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreTableIamBindingConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRe
 
 	return nil
 }
-

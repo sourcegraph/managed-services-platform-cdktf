@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRet
 
 	return nil
 }
-

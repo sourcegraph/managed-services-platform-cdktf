@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleTpuV2Vm) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleTpuV2Vm) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validatePutAcceleratorConfigParameters(value *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) validatePutDataDisksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutDataDisksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigParameters(value *Goog
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -348,7 +348,7 @@ func validateGoogleTpuV2Vm_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateGoogleTpuV2Vm_IsConstructParameters(x interface{}) error {
+func validateGoogleTpuV2Vm_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -356,7 +356,7 @@ func validateGoogleTpuV2Vm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleTpuV2Vm_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleTpuV2Vm_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -364,7 +364,7 @@ func validateGoogleTpuV2Vm_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleTpuV2Vm_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleTpuV2Vm_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetCidrBlockParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -421,7 +421,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -534,7 +534,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetProjectParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2Vm) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -622,4 +622,3 @@ func validateNewGoogleTpuV2VmParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

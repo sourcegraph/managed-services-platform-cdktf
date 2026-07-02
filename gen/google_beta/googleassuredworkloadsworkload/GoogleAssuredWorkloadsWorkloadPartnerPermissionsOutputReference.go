@@ -10,14 +10,14 @@ import (
 
 type GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference interface {
 	cdktf.ComplexObject
-	AssuredWorkloadsMonitoring() interface{}
-	SetAssuredWorkloadsMonitoring(val interface{})
-	AssuredWorkloadsMonitoringInput() interface{}
+	AssuredWorkloadsMonitoring() any
+	SetAssuredWorkloadsMonitoring(val any)
+	AssuredWorkloadsMonitoringInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,16 +28,16 @@ type GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DataLogsViewer() interface{}
-	SetDataLogsViewer(val interface{})
-	DataLogsViewerInput() interface{}
+	DataLogsViewer() any
+	SetDataLogsViewer(val any)
+	DataLogsViewerInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleAssuredWorkloadsWorkloadPartnerPermissions
 	SetInternalValue(val *GoogleAssuredWorkloadsWorkloadPartnerPermissions)
-	ServiceAccessApprover() interface{}
-	SetServiceAccessApprover(val interface{})
-	ServiceAccessApproverInput() interface{}
+	ServiceAccessApprover() any
+	SetServiceAccessApprover(val any)
+	ServiceAccessApproverInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference interface {
 	ResetServiceAccessApprover()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) AssuredWorkloadsMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) AssuredWorkloadsMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assuredWorkloadsMonitoring",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) AssuredWorkloadsMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) AssuredWorkloadsMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assuredWorkloadsMonitoringInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) DataLogsViewer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) DataLogsViewer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataLogsViewer",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) DataLogsViewerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) DataLogsViewerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataLogsViewerInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) ServiceAccessApprover() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) ServiceAccessApprover() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceAccessApprover",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) ServiceAccessApproverInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) ServiceAccessApproverInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceAccessApproverInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-
 func NewGoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetAssuredWorkloadsMonitoring(val interface{}) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetAssuredWorkloadsMonitoring(val any) {
 	if err := j.validateSetAssuredWorkloadsMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetDataLogsViewer(val interface{}) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetDataLogsViewer(val any) {
 	if err := j.validateSetDataLogsViewerParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetInternalValue(val *GoogleAssuredWorkloadsWorkloadPartnerPermissions) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetInternalValue(val *GoogleAssuredWorkloadsWorkloadPartnerPermissions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetServiceAccessApprover(val interface{}) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetServiceAccessApprover(val any) {
 	if err := j.validateSetServiceAccessApproverParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 
 	return returns
 }
-

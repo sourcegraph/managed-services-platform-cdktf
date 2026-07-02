@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReferencePa
 
 	return nil
 }
-

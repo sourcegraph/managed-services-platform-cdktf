@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup",
-		reflect.TypeOf((*GoogleApigeeEnvgroup)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvgroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroup.GoogleApigeeEnvgroupConfig",
-		reflect.TypeOf((*GoogleApigeeEnvgroupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroup.GoogleApigeeEnvgroupTimeouts",
-		reflect.TypeOf((*GoogleApigeeEnvgroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroup.GoogleApigeeEnvgroupTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeEnvgroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvgroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

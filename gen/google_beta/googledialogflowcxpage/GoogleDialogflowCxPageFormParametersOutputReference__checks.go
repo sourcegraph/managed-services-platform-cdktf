@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,7 +233,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetIsListParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetIsListParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetRedactParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetRedactParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,4 +328,3 @@ func validateNewGoogleDialogflowCxPageFormParametersOutputReferenceParameters(te
 
 	return nil
 }
-

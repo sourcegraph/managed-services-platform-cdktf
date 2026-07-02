@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpListPar
 
 	return nil
 }
-

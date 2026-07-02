@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFirebaseHostingVersionConfigRedirectsListParameters(terraf
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigtableAppProfileStandardIsolationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfileStandardIsolationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfileStandardIsolationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigtableAppProfileStandardIsolationOutputReferenceParamete
 
 	return nil
 }
-

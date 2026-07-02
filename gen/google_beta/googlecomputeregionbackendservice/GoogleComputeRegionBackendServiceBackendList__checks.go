@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionBackendServiceBackendListParameters(terraform
 
 	return nil
 }
-

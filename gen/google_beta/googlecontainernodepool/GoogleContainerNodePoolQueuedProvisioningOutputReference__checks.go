@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolQueuedProvisioningOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolQueuedProvisioningOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolQueuedProvisioningOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolQueuedProvisioningOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolQueuedProvisioningOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolQueuedProvisioningOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleContainerNodePoolQueuedProvisioningOutputReferenceParamete
 
 	return nil
 }
-

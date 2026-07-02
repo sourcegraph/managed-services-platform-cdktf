@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTable",
-		reflect.TypeOf((*GoogleBigqueryTable)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
 			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableBiglakeConfiguration",
-		reflect.TypeOf((*GoogleBigqueryTableBiglakeConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableBiglakeConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableBiglakeConfigurationOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableBiglakeConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableBiglakeConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableBiglakeConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,15 +209,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableConfig",
-		reflect.TypeOf((*GoogleBigqueryTableConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfiguration",
-		reflect.TypeOf((*GoogleBigqueryTableEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalCatalogTableOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalCatalogTableOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalCatalogTableOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalCatalogTableOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalCatalogTableOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalCatalogTableOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -290,7 +290,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalCatalogTableOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -298,11 +298,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptor",
-		reflect.TypeOf((*GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptor)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -339,7 +339,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -347,11 +347,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfo",
-		reflect.TypeOf((*GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,15 +391,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationAvroOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationAvroOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -425,7 +425,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useAvroLogicalTypes", GoGetter: "UseAvroLogicalTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "useAvroLogicalTypesInput", GoGetter: "UseAvroLogicalTypesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -433,19 +433,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -459,7 +459,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -467,7 +467,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -509,7 +509,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -517,7 +517,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -531,7 +531,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -539,7 +539,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -579,7 +579,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -587,7 +587,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationBigtableOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationBigtableOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationBigtableOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columnFamily", GoGetter: "ColumnFamily"},
 			_jsii_.MemberProperty{JsiiProperty: "columnFamilyInput", GoGetter: "ColumnFamilyInput"},
@@ -624,7 +624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationBigtableOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -632,11 +632,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationCsvOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationCsvOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRows", GoGetter: "AllowJaggedRows"},
 			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRowsInput", GoGetter: "AllowJaggedRowsInput"},
@@ -677,7 +677,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -685,11 +685,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -719,7 +719,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -727,11 +727,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -764,7 +764,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -772,11 +772,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationJsonOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationJsonOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationJsonOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -803,7 +803,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -811,7 +811,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autodetect", GoGetter: "Autodetect"},
 			_jsii_.MemberProperty{JsiiProperty: "autodetectInput", GoGetter: "AutodetectInput"},
@@ -900,7 +900,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -908,11 +908,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationParquetOptions",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationParquetOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationParquetOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -942,7 +942,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -950,11 +950,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableMaterializedView",
-		reflect.TypeOf((*GoogleBigqueryTableMaterializedView)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableMaterializedView](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableMaterializedViewOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableMaterializedViewOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowNonIncrementalDefinition", GoGetter: "AllowNonIncrementalDefinition"},
 			_jsii_.MemberProperty{JsiiProperty: "allowNonIncrementalDefinitionInput", GoGetter: "AllowNonIncrementalDefinitionInput"},
@@ -989,7 +989,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -997,11 +997,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioning",
-		reflect.TypeOf((*GoogleBigqueryTableRangePartitioning)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableRangePartitioning](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableRangePartitioningOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableRangePartitioningOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1030,7 +1030,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1038,11 +1038,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRange",
-		reflect.TypeOf((*GoogleBigqueryTableRangePartitioningRange)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableRangePartitioningRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableRangePartitioningRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableRangePartitioningRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1072,7 +1072,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableRangePartitioningRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1080,11 +1080,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableSchemaForeignTypeInfo",
-		reflect.TypeOf((*GoogleBigqueryTableSchemaForeignTypeInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableSchemaForeignTypeInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableSchemaForeignTypeInfoOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableSchemaForeignTypeInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableSchemaForeignTypeInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1110,7 +1110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeSystem", GoGetter: "TypeSystem"},
 			_jsii_.MemberProperty{JsiiProperty: "typeSystemInput", GoGetter: "TypeSystemInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableSchemaForeignTypeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1118,19 +1118,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraints",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraints)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeys",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeys)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeys](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1158,7 +1158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1166,7 +1166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeysList",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeysList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1180,7 +1180,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1188,7 +1188,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeysOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columnReferences", GoGetter: "ColumnReferences"},
 			_jsii_.MemberProperty{JsiiProperty: "columnReferencesInput", GoGetter: "ColumnReferencesInput"},
@@ -1221,7 +1221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1229,11 +1229,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1263,7 +1263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1271,7 +1271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1303,7 +1303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1311,11 +1311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsPrimaryKey",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsPrimaryKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsPrimaryKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
 			_jsii_.MemberProperty{JsiiProperty: "columnsInput", GoGetter: "ColumnsInput"},
@@ -1341,7 +1341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1349,11 +1349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableReplicationInfo",
-		reflect.TypeOf((*GoogleBigqueryTableTableReplicationInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableReplicationInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTableReplicationInfoOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTableReplicationInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTableReplicationInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1386,7 +1386,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTableReplicationInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1394,11 +1394,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioning",
-		reflect.TypeOf((*GoogleBigqueryTableTimePartitioning)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTimePartitioning](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioningOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableTimePartitioningOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableTimePartitioningOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1433,7 +1433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1441,11 +1441,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableView",
-		reflect.TypeOf((*GoogleBigqueryTableView)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableView](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
-		reflect.TypeOf((*GoogleBigqueryTableViewOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryTableViewOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1474,7 +1474,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useLegacySql", GoGetter: "UseLegacySql"},
 			_jsii_.MemberProperty{JsiiProperty: "useLegacySqlInput", GoGetter: "UseLegacySqlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryTableViewOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreBigtableAutoScalingOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleVertexAiFeatureOnlineStoreBigtableAutoScalingOutputReferen
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateAddMoveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateMoveFromIdP
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validatePutApproval
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validatePutEligibleUsersParameters(value interface{}) error {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validatePutEligibleUsersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateGooglePrivilegedAccessManagerEntitlement_GenerateConfigForImportPar
 	return nil
 }
 
-func validateGooglePrivilegedAccessManagerEntitlement_IsConstructParameters(x interface{}) error {
+func validateGooglePrivilegedAccessManagerEntitlement_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func validateGooglePrivilegedAccessManagerEntitlement_IsConstructParameters(x in
 	return nil
 }
 
-func validateGooglePrivilegedAccessManagerEntitlement_IsTerraformElementParameters(x interface{}) error {
+func validateGooglePrivilegedAccessManagerEntitlement_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func validateGooglePrivilegedAccessManagerEntitlement_IsTerraformElementParamete
 	return nil
 }
 
-func validateGooglePrivilegedAccessManagerEntitlement_IsTerraformResourceParameters(x interface{}) error {
+func validateGooglePrivilegedAccessManagerEntitlement_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -330,7 +330,7 @@ func validateGooglePrivilegedAccessManagerEntitlement_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -363,7 +363,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -468,7 +468,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetParentPa
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlement) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewGooglePrivilegedAccessManagerEntitlementParameters(scope constru
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyE
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validatePutMethodSelectorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validatePutMethodSelectorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgre
 
 	return nil
 }
-

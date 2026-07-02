@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference) validatePutPostgresqlSchemasParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference) validatePutPostgresqlSchemasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutput
 
 	return nil
 }
-

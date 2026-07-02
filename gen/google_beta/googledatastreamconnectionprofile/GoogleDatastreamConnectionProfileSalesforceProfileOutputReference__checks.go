@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewGoogleDatastreamConnectionProfileSalesforceProfileOutputReferenc
 
 	return nil
 }
-

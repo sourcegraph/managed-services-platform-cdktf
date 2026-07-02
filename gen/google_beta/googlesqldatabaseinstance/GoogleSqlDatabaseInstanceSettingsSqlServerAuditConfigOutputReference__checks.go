@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputRefer
 
 	return nil
 }
-

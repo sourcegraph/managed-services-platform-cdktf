@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupBackupChannel.GoogleGkeBackupBackupChannel",
-		reflect.TypeOf((*GoogleGkeBackupBackupChannel)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupBackupChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupBackupChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupBackupChannel.GoogleGkeBackupBackupChannelConfig",
-		reflect.TypeOf((*GoogleGkeBackupBackupChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupBackupChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupBackupChannel.GoogleGkeBackupBackupChannelTimeouts",
-		reflect.TypeOf((*GoogleGkeBackupBackupChannelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupBackupChannelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupBackupChannel.GoogleGkeBackupBackupChannelTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupBackupChannelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupBackupChannelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupBackupChannelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

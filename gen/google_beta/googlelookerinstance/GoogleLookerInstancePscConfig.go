@@ -1,6 +1,5 @@
 package googlelookerinstance
 
-
 type GoogleLookerInstancePscConfig struct {
 	// List of VPCs that are allowed ingress into the Looker instance.
 	//
@@ -9,6 +8,5 @@ type GoogleLookerInstancePscConfig struct {
 	// service_attachments block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_looker_instance#service_attachments GoogleLookerInstance#service_attachments}
-	ServiceAttachments interface{} `field:"optional" json:"serviceAttachments" yaml:"serviceAttachments"`
+	ServiceAttachments any `field:"optional" json:"serviceAttachments" yaml:"serviceAttachments"`
 }
-

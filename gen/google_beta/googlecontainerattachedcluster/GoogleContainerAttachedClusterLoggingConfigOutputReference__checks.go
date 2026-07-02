@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContainerAttachedClusterLoggingConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAttachedClusterLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAttachedClusterLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleContainerAttachedClusterLoggingConfigOutputReferenceParame
 
 	return nil
 }
-

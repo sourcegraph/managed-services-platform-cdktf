@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigListPar
 
 	return nil
 }
-

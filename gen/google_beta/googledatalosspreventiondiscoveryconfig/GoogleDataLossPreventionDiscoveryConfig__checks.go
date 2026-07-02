@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateOverrideLogi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutActionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutOrgConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutTargetsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validatePutTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateGoogleDataLossPreventionDiscoveryConfig_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleDataLossPreventionDiscoveryConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleDataLossPreventionDiscoveryConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateGoogleDataLossPreventionDiscoveryConfig_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleDataLossPreventionDiscoveryConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataLossPreventionDiscoveryConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateGoogleDataLossPreventionDiscoveryConfig_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleDataLossPreventionDiscoveryConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataLossPreventionDiscoveryConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateGoogleDataLossPreventionDiscoveryConfig_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -466,7 +466,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetParentPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -538,4 +538,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigParameters(scope construc
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package googlecomputeinstancefromtemplate
 
-
 type GoogleComputeInstanceFromTemplateBootDisk struct {
 	// Whether the disk will be auto-deleted when the instance is deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_from_template#auto_delete GoogleComputeInstanceFromTemplate#auto_delete}
-	AutoDelete interface{} `field:"optional" json:"autoDelete" yaml:"autoDelete"`
+	AutoDelete any `field:"optional" json:"autoDelete" yaml:"autoDelete"`
 	// Name with which attached disk will be accessible under /dev/disk/by-id/.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
@@ -33,7 +32,7 @@ type GoogleComputeInstanceFromTemplateBootDisk struct {
 	// If you try to force attach a zonal disk to an instance, you will receive an error. Setting this parameter cause VM recreation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_from_template#force_attach GoogleComputeInstanceFromTemplate#force_attach}
-	ForceAttach interface{} `field:"optional" json:"forceAttach" yaml:"forceAttach"`
+	ForceAttach any `field:"optional" json:"forceAttach" yaml:"forceAttach"`
 	// A list of features to enable on the guest operating system. Applicable only for bootable images.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_from_template#guest_os_features GoogleComputeInstanceFromTemplate#guest_os_features}
@@ -63,4 +62,3 @@ type GoogleComputeInstanceFromTemplateBootDisk struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_from_template#source GoogleComputeInstanceFromTemplate#source}
 	Source *string `field:"optional" json:"source" yaml:"source"`
 }
-

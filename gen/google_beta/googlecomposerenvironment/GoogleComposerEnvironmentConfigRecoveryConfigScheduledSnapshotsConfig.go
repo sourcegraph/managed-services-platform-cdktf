@@ -1,11 +1,10 @@
 package googlecomposerenvironment
 
-
 type GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig struct {
 	// When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#enabled GoogleComposerEnvironment#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Snapshot schedule, in the unix-cron format.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#snapshot_creation_schedule GoogleComposerEnvironment#snapshot_creation_schedule}
@@ -21,4 +20,3 @@ type GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig struc
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#time_zone GoogleComposerEnvironment#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
-

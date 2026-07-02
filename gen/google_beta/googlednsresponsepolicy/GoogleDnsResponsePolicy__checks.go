@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutGkeClustersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutGkeClustersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutGkeClustersParameters(val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutNetworksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleDnsResponsePolicy_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleDnsResponsePolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleDnsResponsePolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleDnsResponsePolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleDnsResponsePolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDnsResponsePolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleDnsResponsePolicy_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleDnsResponsePolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDnsResponsePolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateGoogleDnsResponsePolicy_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -439,7 +439,7 @@ func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -511,4 +511,3 @@ func validateNewGoogleDnsResponsePolicyParameters(scope constructs.Construct, id
 
 	return nil
 }
-

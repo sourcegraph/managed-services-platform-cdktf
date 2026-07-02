@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleClouddeployTargetMultiTargetOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetMultiTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetMultiTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleClouddeployTargetMultiTargetOutputReferenceParameters(terr
 
 	return nil
 }
-

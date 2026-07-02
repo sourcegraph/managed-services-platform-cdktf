@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutpu
 
 	return nil
 }
-

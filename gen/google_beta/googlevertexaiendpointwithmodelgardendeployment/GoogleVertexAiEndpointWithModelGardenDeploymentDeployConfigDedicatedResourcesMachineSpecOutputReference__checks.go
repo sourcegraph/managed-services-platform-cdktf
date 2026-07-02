@@ -125,7 +125,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedic
 
 	return nil
 }
-

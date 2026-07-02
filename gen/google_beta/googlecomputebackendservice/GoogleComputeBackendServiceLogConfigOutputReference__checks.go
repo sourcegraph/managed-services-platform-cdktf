@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewGoogleComputeBackendServiceLogConfigOutputReferenceParameters(te
 
 	return nil
 }
-

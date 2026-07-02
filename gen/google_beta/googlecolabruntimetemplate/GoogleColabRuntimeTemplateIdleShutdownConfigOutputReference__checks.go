@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleColabRuntimeTemplateIdleShutdownConfigOutputReferenceParam
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	BuildAttribute() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -65,7 +65,7 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Buil
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Work
 	return returns
 }
 
-
 func NewGoogleCloudfunctions2FunctionBuildConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionBuildConfigOutputReference {
 	_init_.Initialize()
 
@@ -384,7 +383,7 @@ func NewGoogleCloudfunctions2FunctionBuildConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -396,12 +395,12 @@ func NewGoogleCloudfunctions2FunctionBuildConfigOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetDockerRepository(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetDockerRepository(val *string) {
 	if err := j.validateSetDockerRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetDo
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetEntryPoint(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetEntryPoint(val *string) {
 	if err := j.validateSetEntryPointParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetInternalValue(val *GoogleCloudfunctions2FunctionBuildConfig) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetInternalValue(val *GoogleCloudfunctions2FunctionBuildConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetRuntime(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetRuntime(val *string) {
 	if err := j.validateSetRuntimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetRu
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetSe
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetWorkerPool(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) SetWorkerPool(val *string) {
 	if err := j.validateSetWorkerPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,16 +534,16 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutA
 	_jsii_.InvokeVoid(
 		g,
 		"putAutomaticUpdatePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -726,7 +725,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutO
 	_jsii_.InvokeVoid(
 		g,
 		"putOnDeployUpdatePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutS
 	_jsii_.InvokeVoid(
 		g,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,16 +812,16 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -841,4 +840,3 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ToSt
 
 	return returns
 }
-

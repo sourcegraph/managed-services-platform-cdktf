@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
-		reflect.TypeOf((*GoogleFirebaserulesRuleset)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRuleset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRuleset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadata",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetMetadata)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataList",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetMetadataList)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetMetadataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRulesetMetadataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataOutputReference",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRulesetMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,15 +139,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSource",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFiles",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetSourceFiles)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetSourceFiles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesList",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetSourceFilesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetSourceFilesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRulesetSourceFilesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesOutputReference",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetSourceFilesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetSourceFilesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,7 +208,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceOutputReference",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRulesetSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,11 +246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaserulesRulesetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRulesetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRulesetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

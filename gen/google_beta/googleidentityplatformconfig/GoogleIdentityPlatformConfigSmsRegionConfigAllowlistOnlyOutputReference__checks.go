@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputRe
 
 	return nil
 }
-

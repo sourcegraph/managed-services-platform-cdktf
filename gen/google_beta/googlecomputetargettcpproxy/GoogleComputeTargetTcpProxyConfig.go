@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeTargetTcpProxyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeTargetTcpProxyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A reference to the BackendService resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_target_tcp_proxy#backend_service GoogleComputeTargetTcpProxy#backend_service}
@@ -49,7 +49,7 @@ type GoogleComputeTargetTcpProxyConfig struct {
 	// This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_target_tcp_proxy#proxy_bind GoogleComputeTargetTcpProxy#proxy_bind}
-	ProxyBind interface{} `field:"optional" json:"proxyBind" yaml:"proxyBind"`
+	ProxyBind any `field:"optional" json:"proxyBind" yaml:"proxyBind"`
 	// Specifies the type of proxy header to append before sending data to the backend.
 	//
 	// Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
@@ -61,4 +61,3 @@ type GoogleComputeTargetTcpProxyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_target_tcp_proxy#timeouts GoogleComputeTargetTcpProxy#timeouts}
 	Timeouts *GoogleComputeTargetTcpProxyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

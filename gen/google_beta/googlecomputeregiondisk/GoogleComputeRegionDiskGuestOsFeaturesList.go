@@ -17,8 +17,8 @@ type GoogleComputeRegionDiskGuestOsFeaturesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleComputeRegionDiskGuestOsFeaturesList interface {
 	Get(index *float64) GoogleComputeRegionDiskGuestOsFeaturesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewGoogleComputeRegionDiskGuestOsFeaturesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionDiskGuestOsFeaturesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleComputeRegionDiskGuestOsFeaturesList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleComputeRegionDiskGuestOsFeaturesList_Override(g GoogleComputeRegio
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) AllWithMapKey(map
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) Get(index *float6
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) ToString() *strin
 
 	return returns
 }
-

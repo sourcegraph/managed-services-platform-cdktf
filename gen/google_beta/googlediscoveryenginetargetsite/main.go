@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSite",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSite)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSite](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSite{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteConfig",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteFailureReason",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteFailureReason)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteFailureReason](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteFailureReasonList",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteFailureReasonList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteFailureReasonList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailure",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailure)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureList",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -178,7 +178,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalRequiredQuota", GoGetter: "TotalRequiredQuota"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteSiteVerificationInfo",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteSiteVerificationInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteSiteVerificationInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteSiteVerificationInfoList",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteSiteVerificationInfoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteSiteVerificationInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteSiteVerificationInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -236,7 +236,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteSiteVerificationInfoOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteSiteVerificationInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteSiteVerificationInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyTime", GoGetter: "VerifyTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteSiteVerificationInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,11 +270,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteTimeouts",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineTargetSite.GoogleDiscoveryEngineTargetSiteTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDiscoveryEngineTargetSiteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDiscoveryEngineTargetSiteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -304,7 +304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDiscoveryEngineTargetSiteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

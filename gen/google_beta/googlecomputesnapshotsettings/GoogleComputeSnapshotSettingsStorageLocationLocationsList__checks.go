@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeSnapshotSettingsStorageLocationLocationsListParamet
 
 	return nil
 }
-

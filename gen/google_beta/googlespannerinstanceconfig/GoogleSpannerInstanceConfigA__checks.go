@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validatePutReplicasParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSpannerInstanceConfigA) validatePutReplicasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleSpannerInstanceConfigA_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleSpannerInstanceConfigA_IsConstructParameters(x interface{}) error {
+func validateGoogleSpannerInstanceConfigA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleSpannerInstanceConfigA_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleSpannerInstanceConfigA_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSpannerInstanceConfigA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleSpannerInstanceConfigA_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleSpannerInstanceConfigA_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSpannerInstanceConfigA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetBaseConfigParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewGoogleSpannerInstanceConfigAParameters(scope constructs.Construc
 
 	return nil
 }
-

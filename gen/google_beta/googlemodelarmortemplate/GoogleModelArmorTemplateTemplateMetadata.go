@@ -1,6 +1,5 @@
 package googlemodelarmortemplate
 
-
 type GoogleModelArmorTemplateTemplateMetadata struct {
 	// Indicates the custom error code set by the user to be returned to the end user if the LLM response trips Model Armor filters.
 	//
@@ -25,18 +24,17 @@ type GoogleModelArmorTemplateTemplateMetadata struct {
 	// If true, partial detector failures should be ignored.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_model_armor_template#ignore_partial_invocation_failures GoogleModelArmorTemplate#ignore_partial_invocation_failures}
-	IgnorePartialInvocationFailures interface{} `field:"optional" json:"ignorePartialInvocationFailures" yaml:"ignorePartialInvocationFailures"`
+	IgnorePartialInvocationFailures any `field:"optional" json:"ignorePartialInvocationFailures" yaml:"ignorePartialInvocationFailures"`
 	// If true, log sanitize operations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_model_armor_template#log_sanitize_operations GoogleModelArmorTemplate#log_sanitize_operations}
-	LogSanitizeOperations interface{} `field:"optional" json:"logSanitizeOperations" yaml:"logSanitizeOperations"`
+	LogSanitizeOperations any `field:"optional" json:"logSanitizeOperations" yaml:"logSanitizeOperations"`
 	// If true, log template crud operations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_model_armor_template#log_template_operations GoogleModelArmorTemplate#log_template_operations}
-	LogTemplateOperations interface{} `field:"optional" json:"logTemplateOperations" yaml:"logTemplateOperations"`
+	LogTemplateOperations any `field:"optional" json:"logTemplateOperations" yaml:"logTemplateOperations"`
 	// multi_language_detection block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_model_armor_template#multi_language_detection GoogleModelArmorTemplate#multi_language_detection}
 	MultiLanguageDetection *GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection `field:"optional" json:"multiLanguageDetection" yaml:"multiLanguageDetection"`
 }
-

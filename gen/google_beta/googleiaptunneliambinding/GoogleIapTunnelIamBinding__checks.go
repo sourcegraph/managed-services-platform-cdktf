@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleIapTunnelIamBinding_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleIapTunnelIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleIapTunnelIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleIapTunnelIamBinding_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleIapTunnelIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIapTunnelIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleIapTunnelIamBinding_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleIapTunnelIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIapTunnelIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleIapTunnelIamBinding_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIapTunnelIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleIapTunnelIamBindingParameters(scope constructs.Construct, 
 
 	return nil
 }
-

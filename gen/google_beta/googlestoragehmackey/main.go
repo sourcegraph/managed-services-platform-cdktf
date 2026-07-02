@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageHmacKey.GoogleStorageHmacKey",
-		reflect.TypeOf((*GoogleStorageHmacKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageHmacKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessId", GoGetter: "AccessId"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updated", GoGetter: "Updated"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageHmacKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageHmacKey.GoogleStorageHmacKeyConfig",
-		reflect.TypeOf((*GoogleStorageHmacKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageHmacKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeouts",
-		reflect.TypeOf((*GoogleStorageHmacKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageHmacKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleStorageHmacKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageHmacKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageHmacKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

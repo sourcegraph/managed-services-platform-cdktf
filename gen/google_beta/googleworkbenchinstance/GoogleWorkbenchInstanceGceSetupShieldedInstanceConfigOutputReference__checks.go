@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputRefer
 
 	return nil
 }
-

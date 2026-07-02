@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleEventarcTriggerDestinationGkeOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTriggerDestinationGkeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcTriggerDestinationGkeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleEventarcTriggerDestinationGkeOutputReferenceParameters(ter
 
 	return nil
 }
-

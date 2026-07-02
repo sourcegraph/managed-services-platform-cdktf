@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -310,4 +310,3 @@ func validateNewGoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRe
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutp
 
 	return nil
 }
-

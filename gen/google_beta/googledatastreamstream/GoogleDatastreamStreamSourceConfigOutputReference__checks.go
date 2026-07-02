@@ -153,7 +153,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGoogleDatastreamStreamSourceConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

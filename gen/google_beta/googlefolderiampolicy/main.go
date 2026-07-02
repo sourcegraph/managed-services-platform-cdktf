@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderIamPolicy.GoogleFolderIamPolicy",
-		reflect.TypeOf((*GoogleFolderIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFolderIamPolicy.GoogleFolderIamPolicyConfig",
-		reflect.TypeOf((*GoogleFolderIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderIamPolicyConfig](),
 	)
 }

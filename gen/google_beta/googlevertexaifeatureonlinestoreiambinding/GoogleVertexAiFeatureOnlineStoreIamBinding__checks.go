@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleVertexAiFeatureOnlineStoreIamBinding_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleVertexAiFeatureOnlineStoreIamBinding_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleVertexAiFeatureOnlineStoreIamBindingParameters(scope const
 
 	return nil
 }
-

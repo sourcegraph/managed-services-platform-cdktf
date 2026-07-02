@@ -19,18 +19,18 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	Cloudsql() GoogleDatabaseMigrationServiceConnectionProfileCloudsqlOutputReference
 	CloudsqlInput() *GoogleDatabaseMigrationServiceConnectionProfileCloudsql
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionProfileId() *string
 	SetConnectionProfileId(val *string)
 	ConnectionProfileIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Dbprovider() *string
 	// Experimental.
@@ -80,28 +80,28 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,17 +158,17 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	ResetPostgresql()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDatabaseMigrationServiceConnectionProfile
@@ -226,8 +226,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) CloudsqlInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ConnectionPr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Provisioners
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -606,8 +606,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TerraformLab
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -636,8 +636,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Timeouts() G
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -645,7 +645,6 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TimeoutsInpu
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewGoogleDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServiceConnectionProfileConfig) GoogleDatabaseMigrationServiceConnectionProfile {
@@ -658,7 +657,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfile(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -671,12 +670,12 @@ func NewGoogleDatabaseMigrationServiceConnectionProfile_Override(g GoogleDatabas
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetConnection
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetConnectionProfileId(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetConnectionProfileId(val *string) {
 	if err := j.validateSetConnectionProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetConnection
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -717,7 +716,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetDisplayNam
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetId(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetLabels(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetLocation(v
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetProject(va
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -799,7 +798,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetProvider(v
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) *bool {
+func GoogleDatabaseMigrationServiceConnectionProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatabaseMigrationServiceConnectionProfile_IsConstructParameters(x); err != nil {
@@ -857,7 +856,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interface{}) *bool {
+func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatabaseMigrationServiceConnectionProfile_IsTerraformElementParameters(x); err != nil {
@@ -876,7 +875,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interf
 }
 
 // Experimental.
-func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformResource(x interface{}) *bool {
+func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatabaseMigrationServiceConnectionProfile_IsTerraformResourceParameters(x); err != nil {
@@ -895,7 +894,7 @@ func GoogleDatabaseMigrationServiceConnectionProfile_IsTerraformResource(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -920,31 +919,31 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) AddMoveTarge
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetBooleanAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetBooleanMa
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetListAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetNumberAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetNumberLis
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetNumberMap
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetStringAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,15 +1071,15 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetStringMap
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1099,7 +1098,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ImportFrom(i
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Interpolatio
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1126,18 +1125,18 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) MoveFromId(i
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1148,7 +1147,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) MoveToId(id 
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1159,7 +1158,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) OverrideLogi
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutAlloydb(v
 	_jsii_.InvokeVoid(
 		g,
 		"putAlloydb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutCloudsql(
 	_jsii_.InvokeVoid(
 		g,
 		"putCloudsql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutMysql(val
 	_jsii_.InvokeVoid(
 		g,
 		"putMysql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutOracle(va
 	_jsii_.InvokeVoid(
 		g,
 		"putOracle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutPostgresq
 	_jsii_.InvokeVoid(
 		g,
 		"putPostgresql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutTimeouts(
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1325,8 +1324,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ResetTimeout
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1338,8 +1337,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SynthesizeAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1351,8 +1350,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) SynthesizeHc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1364,8 +1363,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToHclTerrafo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1390,8 +1389,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToString() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1402,4 +1401,3 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ToTerraform(
 
 	return returns
 }
-

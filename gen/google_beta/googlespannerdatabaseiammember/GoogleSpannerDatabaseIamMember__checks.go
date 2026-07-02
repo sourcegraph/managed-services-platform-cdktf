@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSpannerDatabaseIamMember) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerDatabaseIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSpannerDatabaseIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSpannerDatabaseIamMember) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerDatabaseIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSpannerDatabaseIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSpannerDatabaseIamMember_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleSpannerDatabaseIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleSpannerDatabaseIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSpannerDatabaseIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleSpannerDatabaseIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSpannerDatabaseIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSpannerDatabaseIamMember_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleSpannerDatabaseIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSpannerDatabaseIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleSpannerDatabaseIamMember_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleSpannerDatabaseIamMemberParameters(scope constructs.Constr
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) validateSetEnableIpMasqAgentParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) validateSetEnableIpMasqAgentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,4 +317,3 @@ func validateNewGoogleComposerEnvironmentConfigNodeConfigOutputReferenceParamete
 
 	return nil
 }
-

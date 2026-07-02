@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleCloudQuotasQuotaPreference_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleCloudQuotasQuotaPreference_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudQuotasQuotaPreference_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleCloudQuotasQuotaPreference_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleCloudQuotasQuotaPreference_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudQuotasQuotaPreference_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleCloudQuotasQuotaPreference_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleCloudQuotasQuotaPreference_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudQuotasQuotaPreference_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleCloudQuotasQuotaPreference_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetContactEmailPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetParentParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewGoogleCloudQuotasQuotaPreferenceParameters(scope constructs.Cons
 
 	return nil
 }
-

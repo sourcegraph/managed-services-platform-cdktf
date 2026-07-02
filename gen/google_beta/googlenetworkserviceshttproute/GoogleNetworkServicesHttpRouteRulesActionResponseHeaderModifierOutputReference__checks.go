@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierO
 
 	return nil
 }
-

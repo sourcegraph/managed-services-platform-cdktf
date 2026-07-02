@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputRefere
 
 	return nil
 }
-

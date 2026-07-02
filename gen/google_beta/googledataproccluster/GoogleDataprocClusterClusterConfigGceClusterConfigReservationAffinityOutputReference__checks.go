@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigReservation
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataprocClusterClusterConfigGceClusterConfigReservationAff
 
 	return nil
 }
-

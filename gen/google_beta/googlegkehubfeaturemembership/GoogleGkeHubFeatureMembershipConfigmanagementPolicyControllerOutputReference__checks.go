@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetLogDeniesEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetLogDeniesEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetMutationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetMutationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetReferentialRulesEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetReferentialRulesEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetTemplateLibraryInstalledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetTemplateLibraryInstalledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,4 +325,3 @@ func validateNewGoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOut
 
 	return nil
 }
-

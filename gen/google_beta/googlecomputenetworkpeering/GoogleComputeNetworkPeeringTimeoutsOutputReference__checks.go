@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeNetworkPeeringTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

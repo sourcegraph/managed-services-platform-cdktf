@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlan",
-		reflect.TypeOf((*GoogleBackupDrBackupPlan)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlan](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,11 +90,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRules",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesList",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlanBackupRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesOutputReference",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupRetentionDays", GoGetter: "BackupRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "backupRetentionDaysInput", GoGetter: "BackupRetentionDaysInput"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,15 +155,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardSchedule",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesStandardSchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesStandardSchedule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindow",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindow)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputReference",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupWindow", GoGetter: "BackupWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "backupWindowInput", GoGetter: "BackupWindowInput"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekDayOfMonth", GoGetter: "WeekDayOfMonth"},
 			_jsii_.MemberProperty{JsiiProperty: "weekDayOfMonthInput", GoGetter: "WeekDayOfMonthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -256,11 +256,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonth",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonth)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekOfMonth", GoGetter: "WeekOfMonth"},
 			_jsii_.MemberProperty{JsiiProperty: "weekOfMonthInput", GoGetter: "WeekOfMonthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -296,15 +296,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanConfig",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanTimeouts",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBackupDrBackupPlanTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBackupDrBackupPlanTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBackupDrBackupPlanTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

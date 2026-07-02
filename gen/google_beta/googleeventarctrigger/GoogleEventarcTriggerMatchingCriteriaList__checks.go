@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleEventarcTriggerMatchingCriteriaListParameters(terraformRes
 
 	return nil
 }
-

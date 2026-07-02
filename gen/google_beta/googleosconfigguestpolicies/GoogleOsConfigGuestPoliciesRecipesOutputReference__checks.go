@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateIn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePutArtifactsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePutArtifactsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePutInstallStepsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePutInstallStepsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePutUpdateStepsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePutUpdateStepsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -339,4 +339,3 @@ func validateNewGoogleOsConfigGuestPoliciesRecipesOutputReferenceParameters(terr
 
 	return nil
 }
-

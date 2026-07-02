@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployCustomTargetTypeIamBinding.GoogleClouddeployCustomTargetTypeIamBinding",
-		reflect.TypeOf((*GoogleClouddeployCustomTargetTypeIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployCustomTargetTypeIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployCustomTargetTypeIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployCustomTargetTypeIamBinding.GoogleClouddeployCustomTargetTypeIamBindingCondition",
-		reflect.TypeOf((*GoogleClouddeployCustomTargetTypeIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployCustomTargetTypeIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddeployCustomTargetTypeIamBinding.GoogleClouddeployCustomTargetTypeIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleClouddeployCustomTargetTypeIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployCustomTargetTypeIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddeployCustomTargetTypeIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddeployCustomTargetTypeIamBinding.GoogleClouddeployCustomTargetTypeIamBindingConfig",
-		reflect.TypeOf((*GoogleClouddeployCustomTargetTypeIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddeployCustomTargetTypeIamBindingConfig](),
 	)
 }

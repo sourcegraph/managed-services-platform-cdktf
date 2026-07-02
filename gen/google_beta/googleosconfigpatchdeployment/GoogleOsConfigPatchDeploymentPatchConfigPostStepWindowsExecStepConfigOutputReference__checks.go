@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecSt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepC
 
 	return nil
 }
-

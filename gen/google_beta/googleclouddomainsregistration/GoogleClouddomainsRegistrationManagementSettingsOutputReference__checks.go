@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationManagementSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationManagementSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationManagementSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleClouddomainsRegistrationManagementSettingsOutputReferenceP
 
 	return nil
 }
-

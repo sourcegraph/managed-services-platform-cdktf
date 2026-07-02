@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateInt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validatePutContainersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,4 +292,3 @@ func validateNewGoogleCloudRunServiceTemplateSpecOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDataprocMetastoreServiceTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

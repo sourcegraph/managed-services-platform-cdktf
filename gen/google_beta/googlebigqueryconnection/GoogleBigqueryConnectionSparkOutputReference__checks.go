@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleBigqueryConnectionSparkOutputReferenceParameters(terraform
 
 	return nil
 }
-

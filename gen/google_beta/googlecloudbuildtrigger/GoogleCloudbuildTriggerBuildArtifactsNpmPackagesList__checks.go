@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsNpmPackagesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsNpmPackagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsNpmPackagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudbuildTriggerBuildArtifactsNpmPackagesListParameters(t
 
 	return nil
 }
-

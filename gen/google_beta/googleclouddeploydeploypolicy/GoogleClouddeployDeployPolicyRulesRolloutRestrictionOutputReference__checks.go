@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicyRulesRolloutRestrictionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicyRulesRolloutRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicyRulesRolloutRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleClouddeployDeployPolicyRulesRolloutRestrictionOutputRefere
 
 	return nil
 }
-

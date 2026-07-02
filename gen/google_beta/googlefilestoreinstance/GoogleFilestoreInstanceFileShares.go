@@ -1,6 +1,5 @@
 package googlefilestoreinstance
 
-
 type GoogleFilestoreInstanceFileShares struct {
 	// File share capacity in GiB.
 	//
@@ -16,10 +15,9 @@ type GoogleFilestoreInstanceFileShares struct {
 	// nfs_export_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_filestore_instance#nfs_export_options GoogleFilestoreInstance#nfs_export_options}
-	NfsExportOptions interface{} `field:"optional" json:"nfsExportOptions" yaml:"nfsExportOptions"`
+	NfsExportOptions any `field:"optional" json:"nfsExportOptions" yaml:"nfsExportOptions"`
 	// The resource name of the backup, in the format projects/{projectId}/locations/{locationId}/backups/{backupId}, that this file share has been restored from.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_filestore_instance#source_backup GoogleFilestoreInstance#source_backup}
 	SourceBackup *string `field:"optional" json:"sourceBackup" yaml:"sourceBackup"`
 }
-

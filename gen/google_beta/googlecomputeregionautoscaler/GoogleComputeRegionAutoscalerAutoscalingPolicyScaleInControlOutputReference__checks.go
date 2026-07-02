@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutp
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleSpannerInstanceConfigReplicasListParameters(terraformResou
 
 	return nil
 }
-

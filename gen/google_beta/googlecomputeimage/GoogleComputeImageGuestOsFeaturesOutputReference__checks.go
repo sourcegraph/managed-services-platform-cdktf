@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeImageGuestOsFeaturesOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeImageGuestOsFeaturesOutputReferenceParameters(terra
 
 	return nil
 }
-

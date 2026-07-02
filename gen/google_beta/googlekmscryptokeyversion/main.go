@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersion)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestation",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestation)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestation](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChains",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationCertChains)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationCertChains](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsList",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationCertChainsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationCertChainsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caviumCerts", GoGetter: "CaviumCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptions",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,7 +205,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationList",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationList)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -226,7 +226,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationOutputReference",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionAttestationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionAttestationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certChains", GoGetter: "CertChains"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,15 +262,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionConfig",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionExternalProtectionLevelOptions",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionExternalProtectionLevelOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionExternalProtectionLevelOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionTimeouts",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleKmsCryptoKeyVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsCryptoKeyVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsCryptoKeyVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

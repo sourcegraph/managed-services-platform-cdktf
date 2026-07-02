@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleLoggingBillingAccountBucketConfigIndexConfigsOutputReferen
 
 	return nil
 }
-

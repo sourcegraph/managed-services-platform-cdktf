@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) validatePutEgressPoliciesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) validatePutEgressPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) validatePutIngressPoliciesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) validatePutIngressPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -295,4 +295,3 @@ func validateNewGoogleAccessContextManagerServicePerimetersServicePerimetersSpec
 
 	return nil
 }
-

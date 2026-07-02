@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
-		reflect.TypeOf((*GoogleKmsSecretCiphertext)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsSecretCiphertext](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticatedData", GoGetter: "AdditionalAuthenticatedData"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticatedDataInput", GoGetter: "AdditionalAuthenticatedDataInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsSecretCiphertext{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextConfig",
-		reflect.TypeOf((*GoogleKmsSecretCiphertextConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsSecretCiphertextConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextTimeouts",
-		reflect.TypeOf((*GoogleKmsSecretCiphertextTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsSecretCiphertextTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleKmsSecretCiphertextTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsSecretCiphertextTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsSecretCiphertextTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

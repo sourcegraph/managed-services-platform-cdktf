@@ -12,9 +12,9 @@ type GoogleCloudbuildWorkerPoolWorkerConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type GoogleCloudbuildWorkerPoolWorkerConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
-	NoExternalIp() interface{}
-	SetNoExternalIp(val interface{})
-	NoExternalIpInput() interface{}
+	NoExternalIp() any
+	SetNoExternalIp(val any)
+	NoExternalIpInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleCloudbuildWorkerPoolWorkerConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleCloudbuildWorkerPoolWorkerConfigOutputReference interface {
 	ResetNoExternalIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) Machin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) NoExternalIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) NoExternalIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noExternalIp",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) NoExte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) NoExternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) NoExternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noExternalIpInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) Terraf
 	return returns
 }
 
-
 func NewGoogleCloudbuildWorkerPoolWorkerConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildWorkerPoolWorkerConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleCloudbuildWorkerPoolWorkerConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleCloudbuildWorkerPoolWorkerConfigOutputReference_Override(g GoogleC
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetDiskSizeGb(val *float64) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetDiskSizeGb(val *float64) {
 	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetDisk
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetInternalValue(val *GoogleCloudbuildWorkerPoolWorkerConfig) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetInternalValue(val *GoogleCloudbuildWorkerPoolWorkerConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetMach
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetNoExternalIp(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetNoExternalIp(val any) {
 	if err := j.validateSetNoExternalIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetNoEx
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) ResetN
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) ToStri
 
 	return returns
 }
-

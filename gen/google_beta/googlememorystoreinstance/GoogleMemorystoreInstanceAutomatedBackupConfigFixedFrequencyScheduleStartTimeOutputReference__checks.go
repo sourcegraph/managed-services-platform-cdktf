@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencySche
 
 	return nil
 }
-

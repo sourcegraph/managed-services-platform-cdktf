@@ -125,7 +125,7 @@ func (j *jsiiProxy_GoogleDataprocJobSparkConfigOutputReference) validateSetArgsP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobSparkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobSparkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,4 +265,3 @@ func validateNewGoogleDataprocJobSparkConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

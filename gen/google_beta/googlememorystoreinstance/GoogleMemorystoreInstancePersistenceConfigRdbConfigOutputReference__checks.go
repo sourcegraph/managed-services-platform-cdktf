@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReferen
 
 	return nil
 }
-

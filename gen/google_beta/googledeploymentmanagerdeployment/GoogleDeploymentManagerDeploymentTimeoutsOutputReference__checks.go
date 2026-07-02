@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDeploymentManagerDeploymentTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

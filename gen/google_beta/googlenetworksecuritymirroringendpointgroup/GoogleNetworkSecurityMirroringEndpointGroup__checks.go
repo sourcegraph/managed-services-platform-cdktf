@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateAddMoveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateMoveFrom
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkSecurityMirroringEndpointGroup_GenerateConfigForImport
 	return nil
 }
 
-func validateGoogleNetworkSecurityMirroringEndpointGroup_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkSecurityMirroringEndpointGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkSecurityMirroringEndpointGroup_IsConstructParameters(x
 	return nil
 }
 
-func validateGoogleNetworkSecurityMirroringEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkSecurityMirroringEndpointGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkSecurityMirroringEndpointGroup_IsTerraformElementParam
 	return nil
 }
 
-func validateGoogleNetworkSecurityMirroringEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkSecurityMirroringEndpointGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleNetworkSecurityMirroringEndpointGroup_IsTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetProje
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleNetworkSecurityMirroringEndpointGroupParameters(scope cons
 
 	return nil
 }
-

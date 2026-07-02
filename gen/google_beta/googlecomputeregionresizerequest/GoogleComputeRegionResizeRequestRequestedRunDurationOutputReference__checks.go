@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionResizeRequestRequestedRunDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionResizeRequestRequestedRunDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionResizeRequestRequestedRunDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeRegionResizeRequestRequestedRunDurationOutputRefere
 
 	return nil
 }
-

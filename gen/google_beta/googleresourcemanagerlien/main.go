@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
-		reflect.TypeOf((*GoogleResourceManagerLien)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerLien](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleResourceManagerLien{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLienConfig",
-		reflect.TypeOf((*GoogleResourceManagerLienConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerLienConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLienTimeouts",
-		reflect.TypeOf((*GoogleResourceManagerLienTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerLienTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLienTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleResourceManagerLienTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleResourceManagerLienTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleResourceManagerLienTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

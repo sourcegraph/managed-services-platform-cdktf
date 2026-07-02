@@ -1,6 +1,5 @@
 package googledialogflowcxgenerativesettings
 
-
 type GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates struct {
 	// Prompt name.
 	//
@@ -9,7 +8,7 @@ type GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates struct 
 	// If the flag is true, the prompt is frozen and cannot be modified by users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_generative_settings#frozen GoogleDialogflowCxGenerativeSettings#frozen}
-	Frozen interface{} `field:"optional" json:"frozen" yaml:"frozen"`
+	Frozen any `field:"optional" json:"frozen" yaml:"frozen"`
 	// Prompt text that is sent to a LLM on no-match default, placeholders are filled downstream.
 	//
 	// For example: "Here is a conversation $conversation, a response is: "
@@ -17,4 +16,3 @@ type GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates struct 
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_generative_settings#prompt_text GoogleDialogflowCxGenerativeSettings#prompt_text}
 	PromptText *string `field:"optional" json:"promptText" yaml:"promptText"`
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleDataprocAutoscalingPolicy_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleDataprocAutoscalingPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleDataprocAutoscalingPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleDataprocAutoscalingPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleDataprocAutoscalingPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataprocAutoscalingPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleDataprocAutoscalingPolicy_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleDataprocAutoscalingPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataprocAutoscalingPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateGoogleDataprocAutoscalingPolicy_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -418,7 +418,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -482,4 +482,3 @@ func validateNewGoogleDataprocAutoscalingPolicyParameters(scope constructs.Const
 
 	return nil
 }
-

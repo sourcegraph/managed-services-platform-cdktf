@@ -17,8 +17,8 @@ type GoogleBigtableInstanceClusterList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleBigtableInstanceClusterList interface {
 	Get(index *float64) GoogleBigtableInstanceClusterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewGoogleBigtableInstanceClusterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigtableInstanceClusterList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleBigtableInstanceClusterList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableInstance.GoogleBigtableInstanceClusterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleBigtableInstanceClusterList_Override(g GoogleBigtableInstanceClust
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableInstance.GoogleBigtableInstanceClusterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterList) Get(index *float64) Google
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigtableInstanceClusterList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterList) ToString() *string {
 
 	return returns
 }
-

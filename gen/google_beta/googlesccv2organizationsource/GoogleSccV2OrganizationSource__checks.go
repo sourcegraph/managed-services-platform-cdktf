@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSource) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationSource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSource) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationSource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSccV2OrganizationSource_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleSccV2OrganizationSource_IsConstructParameters(x interface{}) error {
+func validateGoogleSccV2OrganizationSource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSccV2OrganizationSource_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleSccV2OrganizationSource_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSccV2OrganizationSource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSccV2OrganizationSource_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleSccV2OrganizationSource_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSccV2OrganizationSource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleSccV2OrganizationSource_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetOrganizationParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleSccV2OrganizationSourceParameters(scope constructs.Constru
 
 	return nil
 }
-

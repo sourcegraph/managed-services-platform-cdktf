@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleArtifactRegistryRepositoryCleanupPoliciesListParameters(te
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewGoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReferenc
 
 	return nil
 }
-

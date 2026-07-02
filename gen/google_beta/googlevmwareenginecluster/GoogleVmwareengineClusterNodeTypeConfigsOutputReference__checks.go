@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineClusterNodeTypeConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleVmwareengineClusterNodeTypeConfigsOutputReferenceParameter
 
 	return nil
 }
-

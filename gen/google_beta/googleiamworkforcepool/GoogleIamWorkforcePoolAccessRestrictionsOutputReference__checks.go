@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validatePutAllowedServicesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validatePutAllowedServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateSetDisableProgrammaticSigninParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateSetDisableProgrammaticSigninParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewGoogleIamWorkforcePoolAccessRestrictionsOutputReferenceParameter
 
 	return nil
 }
-

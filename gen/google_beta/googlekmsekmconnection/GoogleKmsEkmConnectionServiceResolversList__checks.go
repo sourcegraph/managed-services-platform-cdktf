@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleKmsEkmConnectionServiceResolversListParameters(terraformRe
 
 	return nil
 }
-

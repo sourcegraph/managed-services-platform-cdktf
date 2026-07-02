@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigOutputReference) validatePutSecondaryClustersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigOutputReference) validatePutSecondaryClustersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -148,7 +148,7 @@ func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewGoogleRedisClusterCrossClusterReplicationConfigOutputReferencePa
 
 	return nil
 }
-

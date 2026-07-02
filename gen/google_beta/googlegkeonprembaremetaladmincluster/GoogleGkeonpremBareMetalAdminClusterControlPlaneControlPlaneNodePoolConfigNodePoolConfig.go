@@ -1,6 +1,5 @@
 package googlegkeonprembaremetaladmincluster
 
-
 type GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfig struct {
 	// The map of Kubernetes labels (key/value pairs) to be applied to each node.
 	//
@@ -19,7 +18,7 @@ type GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigN
 	// node_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_configs GoogleGkeonpremBareMetalAdminCluster#node_configs}
-	NodeConfigs interface{} `field:"optional" json:"nodeConfigs" yaml:"nodeConfigs"`
+	NodeConfigs any `field:"optional" json:"nodeConfigs" yaml:"nodeConfigs"`
 	// Specifies the nodes operating system (default: LINUX).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#operating_system GoogleGkeonpremBareMetalAdminCluster#operating_system}
@@ -27,6 +26,5 @@ type GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigN
 	// taints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#taints GoogleGkeonpremBareMetalAdminCluster#taints}
-	Taints interface{} `field:"optional" json:"taints" yaml:"taints"`
+	Taints any `field:"optional" json:"taints" yaml:"taints"`
 }
-

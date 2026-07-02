@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleNotebooksInstanceShieldedInstanceConfigOutputReferencePara
 
 	return nil
 }
-

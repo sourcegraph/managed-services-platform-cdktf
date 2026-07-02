@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepository",
-		reflect.TypeOf((*GoogleDataformRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepository](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceCompilationOverrides", GoGetter: "WorkspaceCompilationOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceCompilationOverridesInput", GoGetter: "WorkspaceCompilationOverridesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepository{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryConfig",
-		reflect.TypeOf((*GoogleDataformRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettings",
-		reflect.TypeOf((*GoogleDataformRepositoryGitRemoteSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryGitRemoteSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryGitRemoteSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryGitRemoteSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationTokenSecretVersion", GoGetter: "AuthenticationTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationTokenSecretVersionInput", GoGetter: "AuthenticationTokenSecretVersionInput"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig",
-		reflect.TypeOf((*GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPrivateKeySecretVersion", GoGetter: "UserPrivateKeySecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userPrivateKeySecretVersionInput", GoGetter: "UserPrivateKeySecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryTimeouts",
-		reflect.TypeOf((*GoogleDataformRepositoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryWorkspaceCompilationOverrides",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkspaceCompilationOverrides)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkspaceCompilationOverrides](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepository.GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

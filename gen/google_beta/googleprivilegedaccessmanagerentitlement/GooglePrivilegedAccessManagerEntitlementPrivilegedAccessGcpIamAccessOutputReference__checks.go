@@ -90,7 +90,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIa
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validatePutRoleBindingsParameters(value interface{}) error {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validatePutRoleBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIa
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAc
 
 	return nil
 }
-

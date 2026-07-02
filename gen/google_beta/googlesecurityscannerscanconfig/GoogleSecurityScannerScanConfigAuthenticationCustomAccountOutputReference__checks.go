@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationCustomAccountOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleSecurityScannerScanConfigAuthenticationCustomAccountOutput
 
 	return nil
 }
-

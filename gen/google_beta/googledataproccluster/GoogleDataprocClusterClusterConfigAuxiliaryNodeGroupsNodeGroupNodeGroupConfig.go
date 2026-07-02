@@ -1,11 +1,10 @@
 package googledataproccluster
 
-
 type GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// disk_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
@@ -25,4 +24,3 @@ type GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConf
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 	NumInstances *float64 `field:"optional" json:"numInstances" yaml:"numInstances"`
 }
-

@@ -1,6 +1,5 @@
 package googlecomputeinterconnect
 
-
 type GoogleComputeInterconnectMacsecPreSharedKeys struct {
 	// A name for this pre-shared key.
 	//
@@ -19,7 +18,7 @@ type GoogleComputeInterconnectMacsecPreSharedKeys struct {
 	// if the MKA session cannot be established with your router.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#fail_open GoogleComputeInterconnect#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// A RFC3339 timestamp on or after which the key is valid.
 	//
 	// startTime can be in the
@@ -31,4 +30,3 @@ type GoogleComputeInterconnectMacsecPreSharedKeys struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#start_time GoogleComputeInterconnect#start_time}
 	StartTime *string `field:"optional" json:"startTime" yaml:"startTime"`
 }
-

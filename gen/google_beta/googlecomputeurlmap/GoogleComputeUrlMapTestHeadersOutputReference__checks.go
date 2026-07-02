@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeUrlMapTestHeadersOutputReferenceParameters(terrafor
 
 	return nil
 }
-

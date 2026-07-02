@@ -1,6 +1,5 @@
 package googleintegrationconnectorsconnection
 
-
 type GoogleIntegrationConnectorsConnectionAuthConfig struct {
 	// authType of the Connection Possible values: ["AUTH_TYPE_UNSPECIFIED", "USER_PASSWORD", "OAUTH2_JWT_BEARER", "OAUTH2_CLIENT_CREDENTIALS", "SSH_PUBLIC_KEY", "OAUTH2_AUTH_CODE_FLOW"].
 	//
@@ -9,7 +8,7 @@ type GoogleIntegrationConnectorsConnectionAuthConfig struct {
 	// additional_variable block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#additional_variable GoogleIntegrationConnectorsConnection#additional_variable}
-	AdditionalVariable interface{} `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
+	AdditionalVariable any `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
 	// The type of authentication configured.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#auth_key GoogleIntegrationConnectorsConnection#auth_key}
@@ -35,4 +34,3 @@ type GoogleIntegrationConnectorsConnectionAuthConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#user_password GoogleIntegrationConnectorsConnection#user_password}
 	UserPassword *GoogleIntegrationConnectorsConnectionAuthConfigUserPassword `field:"optional" json:"userPassword" yaml:"userPassword"`
 }
-

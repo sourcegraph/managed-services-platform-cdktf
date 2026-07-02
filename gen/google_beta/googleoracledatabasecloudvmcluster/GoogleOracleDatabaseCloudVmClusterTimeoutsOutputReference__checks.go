@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmClusterTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleOracleDatabaseCloudVmClusterTimeoutsOutputReferenceParamet
 
 	return nil
 }
-

@@ -24,15 +24,15 @@ type GoogleApiGatewayApiConfigA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,7 +52,7 @@ type GoogleApiGatewayApiConfigA interface {
 	GatewayConfig() GoogleApiGatewayApiConfigGatewayConfigOutputReference
 	GatewayConfigInput() *GoogleApiGatewayApiConfigGatewayConfig
 	GrpcServices() GoogleApiGatewayApiConfigGrpcServicesList
-	GrpcServicesInput() interface{}
+	GrpcServicesInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -64,12 +64,12 @@ type GoogleApiGatewayApiConfigA interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ManagedServiceConfigs() GoogleApiGatewayApiConfigManagedServiceConfigsList
-	ManagedServiceConfigsInput() interface{}
+	ManagedServiceConfigsInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	OpenapiDocuments() GoogleApiGatewayApiConfigOpenapiDocumentsList
-	OpenapiDocumentsInput() interface{}
+	OpenapiDocumentsInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -78,28 +78,28 @@ type GoogleApiGatewayApiConfigA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceConfigId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleApiGatewayApiConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type GoogleApiGatewayApiConfigA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type GoogleApiGatewayApiConfigA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,9 +137,9 @@ type GoogleApiGatewayApiConfigA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGatewayConfig(value *GoogleApiGatewayApiConfigGatewayConfig)
-	PutGrpcServices(value interface{})
-	PutManagedServiceConfigs(value interface{})
-	PutOpenapiDocuments(value interface{})
+	PutGrpcServices(value any)
+	PutManagedServiceConfigs(value any)
+	PutOpenapiDocuments(value any)
 	PutTimeouts(value *GoogleApiGatewayApiConfigTimeouts)
 	ResetApiConfigId()
 	ResetApiConfigIdPrefix()
@@ -155,17 +155,17 @@ type GoogleApiGatewayApiConfigA interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleApiGatewayApiConfigA
@@ -243,8 +243,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) GrpcServices() GoogleApiGatewayAp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) GrpcServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) GrpcServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"grpcServicesInput",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) ManagedServiceConfigs() GoogleApi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) ManagedServiceConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) ManagedServiceConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedServiceConfigsInput",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) OpenapiDocuments() GoogleApiGatew
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) OpenapiDocumentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) OpenapiDocumentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"openapiDocumentsInput",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) Timeouts() GoogleApiGatewayApiCon
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -612,7 +612,6 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config google_api_gateway_api_config} Resource.
 func NewGoogleApiGatewayApiConfigA(scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfigAConfig) GoogleApiGatewayApiConfigA {
@@ -625,7 +624,7 @@ func NewGoogleApiGatewayApiConfigA(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -638,12 +637,12 @@ func NewGoogleApiGatewayApiConfigA_Override(g GoogleApiGatewayApiConfigA, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetApi(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetApi(val *string) {
 	if err := j.validateSetApiParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetApi(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetApiConfigId(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetApiConfigId(val *string) {
 	if err := j.validateSetApiConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetApiConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetApiConfigIdPrefix(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetApiConfigIdPrefix(val *string) {
 	if err := j.validateSetApiConfigIdPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetApiConfigIdPrefix(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -725,7 +724,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetId(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetProject(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func GoogleApiGatewayApiConfigA_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func GoogleApiGatewayApiConfigA_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleApiGatewayApiConfigA_IsConstruct(x interface{}) *bool {
+func GoogleApiGatewayApiConfigA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApiGatewayApiConfigA_IsConstructParameters(x); err != nil {
@@ -835,7 +834,7 @@ func GoogleApiGatewayApiConfigA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func GoogleApiGatewayApiConfigA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApiGatewayApiConfigA_IsTerraformElement(x interface{}) *bool {
+func GoogleApiGatewayApiConfigA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApiGatewayApiConfigA_IsTerraformElementParameters(x); err != nil {
@@ -854,7 +853,7 @@ func GoogleApiGatewayApiConfigA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func GoogleApiGatewayApiConfigA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApiGatewayApiConfigA_IsTerraformResource(x interface{}) *bool {
+func GoogleApiGatewayApiConfigA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApiGatewayApiConfigA_IsTerraformResourceParameters(x); err != nil {
@@ -873,7 +872,7 @@ func GoogleApiGatewayApiConfigA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -898,31 +897,31 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,15 +1049,15 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1077,7 +1076,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1104,18 +1103,18 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1126,7 +1125,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1137,7 +1136,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1148,40 +1147,40 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutGatewayConfig(value *GoogleApi
 	_jsii_.InvokeVoid(
 		g,
 		"putGatewayConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutGrpcServices(value interface{}) {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutGrpcServices(value any) {
 	if err := g.validatePutGrpcServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putGrpcServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutManagedServiceConfigs(value interface{}) {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutManagedServiceConfigs(value any) {
 	if err := g.validatePutManagedServiceConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putManagedServiceConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutOpenapiDocuments(value interface{}) {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutOpenapiDocuments(value any) {
 	if err := g.validatePutOpenapiDocumentsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putOpenapiDocuments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) PutTimeouts(value *GoogleApiGatew
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1292,8 +1291,8 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1305,8 +1304,8 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1318,8 +1317,8 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1331,8 +1330,8 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1357,8 +1356,8 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1369,4 +1368,3 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigA) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package googleapihubapihubinstance
 
-
 type GoogleApihubApiHubInstanceConfigA struct {
 	// Optional.
 	//
@@ -15,7 +14,7 @@ type GoogleApihubApiHubInstanceConfigA struct {
 	// Optional. If true, the search will be disabled for the instance. The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_api_hub_instance#disable_search GoogleApihubApiHubInstance#disable_search}
-	DisableSearch interface{} `field:"optional" json:"disableSearch" yaml:"disableSearch"`
+	DisableSearch any `field:"optional" json:"disableSearch" yaml:"disableSearch"`
 	// Optional.
 	//
 	// Encryption type for the region. If the encryption type is CMEK, the
@@ -33,4 +32,3 @@ type GoogleApihubApiHubInstanceConfigA struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_api_hub_instance#vertex_location GoogleApihubApiHubInstance#vertex_location}
 	VertexLocation *string `field:"optional" json:"vertexLocation" yaml:"vertexLocation"`
 }
-

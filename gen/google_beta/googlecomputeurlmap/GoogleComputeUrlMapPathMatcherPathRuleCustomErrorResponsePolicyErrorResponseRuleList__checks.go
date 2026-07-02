@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePoli
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyE
 
 	return nil
 }
-

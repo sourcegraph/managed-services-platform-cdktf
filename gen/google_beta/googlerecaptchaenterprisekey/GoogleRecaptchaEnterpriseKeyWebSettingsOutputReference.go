@@ -10,12 +10,12 @@ import (
 
 type GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AllowAllDomains() interface{}
-	SetAllowAllDomains(val interface{})
-	AllowAllDomainsInput() interface{}
-	AllowAmpTraffic() interface{}
-	SetAllowAmpTraffic(val interface{})
-	AllowAmpTrafficInput() interface{}
+	AllowAllDomains() any
+	SetAllowAllDomains(val any)
+	AllowAllDomainsInput() any
+	AllowAmpTraffic() any
+	SetAllowAmpTraffic(val any)
+	AllowAmpTrafficInput() any
 	AllowedDomains() *[]*string
 	SetAllowedDomains(val *[]*string)
 	AllowedDomainsInput() *[]*string
@@ -24,9 +24,9 @@ type GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	ChallengeSecurityPreferenceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	ResetChallengeSecurityPreference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomains() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomains() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllDomains",
@@ -105,8 +105,8 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Allow
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllDomainsInput",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Allow
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTraffic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTraffic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAmpTraffic",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Allow
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTrafficInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTrafficInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAmpTrafficInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Chall
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Terra
 	return returns
 }
 
-
 func NewGoogleRecaptchaEnterpriseKeyWebSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewGoogleRecaptchaEnterpriseKeyWebSettingsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewGoogleRecaptchaEnterpriseKeyWebSettingsOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowAllDomains(val interface{}) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetAllowAllDomains(val any) {
 	if err := j.validateSetAllowAllDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetAll
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowAmpTraffic(val interface{}) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetAllowAmpTraffic(val any) {
 	if err := j.validateSetAllowAmpTrafficParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetAll
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowedDomains(val *[]*string) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetAllowedDomains(val *[]*string) {
 	if err := j.validateSetAllowedDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetAll
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetChallengeSecurityPreference(val *string) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetChallengeSecurityPreference(val *string) {
 	if err := j.validateSetChallengeSecurityPreferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetCha
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetIntegrationType(val *string) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetIntegrationType(val *string) {
 	if err := j.validateSetIntegrationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetInternalValue(val *GoogleRecaptchaEnterpriseKeyWebSettings) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetInternalValue(val *GoogleRecaptchaEnterpriseKeyWebSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference) ToStr
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReferencePar
 
 	return nil
 }
-

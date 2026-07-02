@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validatePutMessagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validateSetReturnPartialResponsesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) validateSetReturnPartialResponsesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRe
 
 	return nil
 }
-

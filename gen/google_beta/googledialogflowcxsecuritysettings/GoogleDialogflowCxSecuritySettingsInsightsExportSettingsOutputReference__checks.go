@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetEnableInsightsExportParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetEnableInsightsExportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputRe
 
 	return nil
 }
-

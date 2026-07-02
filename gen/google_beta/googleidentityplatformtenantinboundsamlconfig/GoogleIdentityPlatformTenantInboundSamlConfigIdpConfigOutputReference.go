@@ -12,9 +12,9 @@ type GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,15 +28,15 @@ type GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference inter
 	// Experimental.
 	Fqn() *string
 	IdpCertificates() GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList
-	IdpCertificatesInput() interface{}
+	IdpCertificatesInput() any
 	IdpEntityId() *string
 	SetIdpEntityId(val *string)
 	IdpEntityIdInput() *string
 	InternalValue() *GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig
 	SetInternalValue(val *GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig)
-	SignRequest() interface{}
-	SetSignRequest(val interface{})
-	SignRequestInput() interface{}
+	SignRequest() any
+	SetSignRequest(val any)
+	SignRequestInput() any
 	SsoUrl() *string
 	SetSsoUrl(val *string)
 	SsoUrlInput() *string
@@ -51,7 +51,7 @@ type GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,11 +72,11 @@ type GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIdpCertificates(value interface{})
+	PutIdpCertificates(value any)
 	ResetSignRequest()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) IdpCertificatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) IdpCertificatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idpCertificatesInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SignRequest() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SignRequest() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"signRequest",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SignRequestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SignRequestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"signRequestInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	return returns
 }
 
-
 func NewGoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewGoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewGoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformTenantInboundSamlConfig.GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetIdpEntityId(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetIdpEntityId(val *string) {
 	if err := j.validateSetIdpEntityIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetInternalValue(val *GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetInternalValue(val *GoogleIdentityPlatformTenantInboundSamlConfigIdpConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetSignRequest(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetSignRequest(val any) {
 	if err := j.validateSetSignRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetSsoUrl(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetSsoUrl(val *string) {
 	if err := j.validateSetSsoUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,16 +367,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,21 +533,21 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) PutIdpCertificates(value interface{}) {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) PutIdpCertificates(value any) {
 	if err := g.validatePutIdpCertificatesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putIdpCertificates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -560,16 +559,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigOutputR
 
 	return returns
 }
-

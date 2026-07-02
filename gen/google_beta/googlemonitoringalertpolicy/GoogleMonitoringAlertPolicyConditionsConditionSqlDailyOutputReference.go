@@ -12,9 +12,9 @@ type GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference inter
 	ResetExecutionTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	return returns
 }
 
-
 func NewGoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)SetInternalValue(val *GoogleMonitoringAlertPolicyConditionsConditionSqlDaily) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) SetInternalValue(val *GoogleMonitoringAlertPolicyConditionsConditionSqlDaily) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)SetPeriodicity(val *float64) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) SetPeriodicity(val *float64) {
 	if err := j.validateSetPeriodicityParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"putExecutionTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputR
 
 	return returns
 }
-

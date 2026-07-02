@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReferen
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type GoogleStorageBucketIpFilterVpcNetworkSourcesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleStorageBucketIpFilterVpcNetworkSourcesList interface {
 	Get(index *float64) GoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) WrapsSet() 
 	return returns
 }
 
-
 func NewGoogleStorageBucketIpFilterVpcNetworkSourcesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleStorageBucketIpFilterVpcNetworkSourcesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleStorageBucketIpFilterVpcNetworkSourcesList(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSourcesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleStorageBucketIpFilterVpcNetworkSourcesList_Override(g GoogleStorag
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSourcesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) AllWithMapK
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) Get(index *
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) ToString() 
 
 	return returns
 }
-

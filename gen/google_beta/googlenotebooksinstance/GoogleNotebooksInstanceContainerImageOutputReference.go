@@ -12,9 +12,9 @@ type GoogleNotebooksInstanceContainerImageOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GoogleNotebooksInstanceContainerImageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleNotebooksInstanceContainerImageOutputReference interface {
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) Terrafo
 	return returns
 }
 
-
 func NewGoogleNotebooksInstanceContainerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceContainerImageOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGoogleNotebooksInstanceContainerImageOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleNotebooksInstanceContainerImageOutputReference_Override(g GoogleNo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetInternalValue(val *GoogleNotebooksInstanceContainerImage) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetInternalValue(val *GoogleNotebooksInstanceContainerImage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetRepository(val *string) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetRepos
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetTag(val *string) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetTag(val *string) {
 	if err := j.validateSetTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetTag(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) Compute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) ResetTa
 	)
 }
 
-func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleNotebooksInstanceContainerImageOutputReference) ToStrin
 
 	return returns
 }
-

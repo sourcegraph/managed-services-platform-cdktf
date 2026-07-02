@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysAnimationsAnimationFadeOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleTranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRe
 
 	return nil
 }
-

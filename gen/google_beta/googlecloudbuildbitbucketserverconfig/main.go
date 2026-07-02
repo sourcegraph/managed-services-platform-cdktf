@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookKey", GoGetter: "WebhookKey"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildBitbucketServerConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConfig",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositories",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigConnectedRepositories)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigConnectedRepositories](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigSecrets",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigSecrets)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigSecrets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigSecretsOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigSecretsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigSecretsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminAccessTokenVersionName", GoGetter: "AdminAccessTokenVersionName"},
 			_jsii_.MemberProperty{JsiiProperty: "adminAccessTokenVersionNameInput", GoGetter: "AdminAccessTokenVersionNameInput"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretVersionName", GoGetter: "WebhookSecretVersionName"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretVersionNameInput", GoGetter: "WebhookSecretVersionNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,11 +204,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigTimeouts",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildBitbucketServerConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildBitbucketServerConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildBitbucketServerConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

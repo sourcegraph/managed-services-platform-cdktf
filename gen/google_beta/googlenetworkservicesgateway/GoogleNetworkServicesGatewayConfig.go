@@ -6,9 +6,9 @@ import (
 
 type GoogleNetworkServicesGatewayConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleNetworkServicesGatewayConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the Gateway resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
@@ -55,7 +55,7 @@ type GoogleNetworkServicesGatewayConfig struct {
 	// If there is no other gateway of type 'SECURE_WEB_GATEWAY' remaining for that region and network it will be deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
-	DeleteSwgAutogenRouterOnDestroy interface{} `field:"optional" json:"deleteSwgAutogenRouterOnDestroy" yaml:"deleteSwgAutogenRouterOnDestroy"`
+	DeleteSwgAutogenRouterOnDestroy any `field:"optional" json:"deleteSwgAutogenRouterOnDestroy" yaml:"deleteSwgAutogenRouterOnDestroy"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
@@ -139,4 +139,3 @@ type GoogleNetworkServicesGatewayConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
 	Timeouts *GoogleNetworkServicesGatewayTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

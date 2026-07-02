@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference) validatePutEgressPoliciesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference) validatePutEgressPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference) validatePutIngressPoliciesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference) validatePutIngressPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -295,4 +295,3 @@ func validateNewGoogleAccessContextManagerServicePerimeterSpecOutputReferencePar
 
 	return nil
 }
-

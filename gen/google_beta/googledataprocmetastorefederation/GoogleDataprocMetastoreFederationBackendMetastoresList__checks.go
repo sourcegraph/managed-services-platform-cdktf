@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataprocMetastoreFederationBackendMetastoresListParameters
 
 	return nil
 }
-

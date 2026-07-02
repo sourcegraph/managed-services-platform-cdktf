@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutput
 
 	return nil
 }
-

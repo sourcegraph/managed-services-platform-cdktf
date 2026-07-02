@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,7 +231,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetIamMem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -314,4 +314,3 @@ func validateNewGoogleBigqueryDatasetAccessOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

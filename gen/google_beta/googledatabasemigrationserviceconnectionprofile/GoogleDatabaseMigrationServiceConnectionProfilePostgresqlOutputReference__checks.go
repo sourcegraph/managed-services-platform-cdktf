@@ -125,7 +125,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputR
 
 	return nil
 }
-

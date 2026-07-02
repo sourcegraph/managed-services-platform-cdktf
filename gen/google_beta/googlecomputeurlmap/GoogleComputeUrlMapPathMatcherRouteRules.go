@@ -1,6 +1,5 @@
 package googlecomputeurlmap
 
-
 type GoogleComputeUrlMapPathMatcherRouteRules struct {
 	// For routeRules within a given pathMatcher, priority determines the order in which load balancer will interpret routeRules.
 	//
@@ -32,15 +31,15 @@ type GoogleComputeUrlMapPathMatcherRouteRules struct {
 	// http_filter_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#http_filter_configs GoogleComputeUrlMap#http_filter_configs}
-	HttpFilterConfigs interface{} `field:"optional" json:"httpFilterConfigs" yaml:"httpFilterConfigs"`
+	HttpFilterConfigs any `field:"optional" json:"httpFilterConfigs" yaml:"httpFilterConfigs"`
 	// http_filter_metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#http_filter_metadata GoogleComputeUrlMap#http_filter_metadata}
-	HttpFilterMetadata interface{} `field:"optional" json:"httpFilterMetadata" yaml:"httpFilterMetadata"`
+	HttpFilterMetadata any `field:"optional" json:"httpFilterMetadata" yaml:"httpFilterMetadata"`
 	// match_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#match_rules GoogleComputeUrlMap#match_rules}
-	MatchRules interface{} `field:"optional" json:"matchRules" yaml:"matchRules"`
+	MatchRules any `field:"optional" json:"matchRules" yaml:"matchRules"`
 	// route_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#route_action GoogleComputeUrlMap#route_action}
@@ -61,4 +60,3 @@ type GoogleComputeUrlMapPathMatcherRouteRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#url_redirect GoogleComputeUrlMap#url_redirect}
 	UrlRedirect *GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
-

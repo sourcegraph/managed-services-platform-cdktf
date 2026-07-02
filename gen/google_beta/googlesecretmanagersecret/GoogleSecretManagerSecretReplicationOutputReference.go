@@ -14,9 +14,9 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	AutoInput() *GoogleSecretManagerSecretReplicationAuto
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	ResetUserManaged()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) AutoInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) UserMana
 	return returns
 }
 
-
 func NewGoogleSecretManagerSecretReplicationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretReplicationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleSecretManagerSecretReplicationOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleSecretManagerSecretReplicationOutputReference_Override(g GoogleSec
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetInternalValue(val *GoogleSecretManagerSecretReplication) {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) SetInternalValue(val *GoogleSecretManagerSecretReplication) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutAuto(
 	_jsii_.InvokeVoid(
 		g,
 		"putAuto",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutUserM
 	_jsii_.InvokeVoid(
 		g,
 		"putUserManaged",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ResetUse
 	)
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ToString
 
 	return returns
 }
-

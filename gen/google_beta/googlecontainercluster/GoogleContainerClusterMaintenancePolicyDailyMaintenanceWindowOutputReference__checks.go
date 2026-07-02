@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindow
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOut
 
 	return nil
 }
-

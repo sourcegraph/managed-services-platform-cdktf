@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validatePutNetworkInterfacesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validatePutNetworkInterfacesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewGoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReferenceParame
 
 	return nil
 }
-

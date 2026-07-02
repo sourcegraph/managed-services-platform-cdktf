@@ -1,6 +1,5 @@
 package googlealloydbcluster
 
-
 type GoogleAlloydbClusterAutomatedBackupPolicy struct {
 	// The length of the time window during which a backup can be taken.
 	//
@@ -15,7 +14,7 @@ type GoogleAlloydbClusterAutomatedBackupPolicy struct {
 	// Whether automated backups are enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#enabled GoogleAlloydbCluster#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#encryption_config GoogleAlloydbCluster#encryption_config}
@@ -43,4 +42,3 @@ type GoogleAlloydbClusterAutomatedBackupPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
 	WeeklySchedule *GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule `field:"optional" json:"weeklySchedule" yaml:"weeklySchedule"`
 }
-

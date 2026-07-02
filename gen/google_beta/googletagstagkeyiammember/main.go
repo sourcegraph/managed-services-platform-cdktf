@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMember",
-		reflect.TypeOf((*GoogleTagsTagKeyIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagKeyIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTagsTagKeyIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberCondition",
-		reflect.TypeOf((*GoogleTagsTagKeyIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagKeyIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleTagsTagKeyIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagKeyIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTagsTagKeyIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberConfig",
-		reflect.TypeOf((*GoogleTagsTagKeyIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagKeyIamMemberConfig](),
 	)
 }

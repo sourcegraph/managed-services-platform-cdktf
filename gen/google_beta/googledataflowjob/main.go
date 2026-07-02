@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataflowJob.GoogleDataflowJob",
-		reflect.TypeOf((*GoogleDataflowJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataflowJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperimentsInput", GoGetter: "AdditionalExperimentsInput"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataflowJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -130,15 +130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataflowJob.GoogleDataflowJobConfig",
-		reflect.TypeOf((*GoogleDataflowJobConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataflowJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataflowJob.GoogleDataflowJobTimeouts",
-		reflect.TypeOf((*GoogleDataflowJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataflowJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataflowJob.GoogleDataflowJobTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataflowJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataflowJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataflowJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
-		reflect.TypeOf((*GoogleNetworkConnectivityInternalRange)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityInternalRange](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usageInput", GoGetter: "UsageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityInternalRange{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -110,15 +110,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeConfig",
-		reflect.TypeOf((*GoogleNetworkConnectivityInternalRangeConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityInternalRangeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeMigration",
-		reflect.TypeOf((*GoogleNetworkConnectivityInternalRangeMigration)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityInternalRangeMigration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeMigrationOutputReference",
-		reflect.TypeOf((*GoogleNetworkConnectivityInternalRangeMigrationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityInternalRangeMigrationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityInternalRangeMigrationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -154,11 +154,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeTimeouts",
-		reflect.TypeOf((*GoogleNetworkConnectivityInternalRangeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityInternalRangeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

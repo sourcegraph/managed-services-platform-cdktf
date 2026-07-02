@@ -34,7 +34,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersList) va
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGooglePrivilegedAccessManagerEntitlementEligibleUsersListParamet
 
 	return nil
 }
-

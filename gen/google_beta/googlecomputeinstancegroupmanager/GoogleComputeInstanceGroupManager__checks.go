@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutInstanceLifecyc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutNamedPortParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutNamedPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStandbyPolicyPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -332,7 +332,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulExternalIpParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulExternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -363,7 +363,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulExterna
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -416,7 +416,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutUpdatePolicyPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutVersionParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutVersionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func validateGoogleComputeInstanceGroupManager_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleComputeInstanceGroupManager_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeInstanceGroupManager_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -471,7 +471,7 @@ func validateGoogleComputeInstanceGroupManager_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleComputeInstanceGroupManager_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeInstanceGroupManager_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -479,7 +479,7 @@ func validateGoogleComputeInstanceGroupManager_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleComputeInstanceGroupManager_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeInstanceGroupManager_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -495,7 +495,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetBaseInstanceNam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -528,7 +528,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -633,7 +633,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -711,7 +711,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetTargetSuspended
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetWaitForInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetWaitForInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -765,4 +765,3 @@ func validateNewGoogleComputeInstanceGroupManagerParameters(scope constructs.Con
 
 	return nil
 }
-

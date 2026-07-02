@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBeyondcorpApplicationUpstreamsListParameters(terraformReso
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryCategory.GoogleDataplexGlossaryCategory",
-		reflect.TypeOf((*GoogleDataplexGlossaryCategory)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryCategory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexGlossaryCategory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryCategory.GoogleDataplexGlossaryCategoryConfig",
-		reflect.TypeOf((*GoogleDataplexGlossaryCategoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryCategoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryCategory.GoogleDataplexGlossaryCategoryTimeouts",
-		reflect.TypeOf((*GoogleDataplexGlossaryCategoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryCategoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexGlossaryCategory.GoogleDataplexGlossaryCategoryTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataplexGlossaryCategoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexGlossaryCategoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexGlossaryCategoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

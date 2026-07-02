@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleKmsCryptoKeyPrimaryOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

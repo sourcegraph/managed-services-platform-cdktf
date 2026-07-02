@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceDynamicForwardingIpPortSelecti
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceDynamicForwardingIpPortSelectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceDynamicForwardingIpPortSelectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeBackendServiceDynamicForwardingIpPortSelectionO
 
 	return nil
 }
-

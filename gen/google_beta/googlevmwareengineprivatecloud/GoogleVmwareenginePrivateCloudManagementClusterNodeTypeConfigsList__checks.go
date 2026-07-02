@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsLi
 
 	return nil
 }
-

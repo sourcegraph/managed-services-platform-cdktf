@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFilestoreBackup.GoogleFilestoreBackup",
-		reflect.TypeOf((*GoogleFilestoreBackup)(nil)).Elem(),
+		reflect.TypeFor[GoogleFilestoreBackup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFilestoreBackup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFilestoreBackup.GoogleFilestoreBackupConfig",
-		reflect.TypeOf((*GoogleFilestoreBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFilestoreBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts",
-		reflect.TypeOf((*GoogleFilestoreBackupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFilestoreBackupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFilestoreBackup.GoogleFilestoreBackupTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFilestoreBackupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFilestoreBackupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFilestoreBackupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

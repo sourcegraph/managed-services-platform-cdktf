@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSourceMachineImageEncryp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeInstanceFromMachineImageSourceMachineImageEncryptio
 
 	return nil
 }
-

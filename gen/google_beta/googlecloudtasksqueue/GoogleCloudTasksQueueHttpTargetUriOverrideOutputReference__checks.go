@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetUriOverrideOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetUriOverrideOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetUriOverrideOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -252,4 +252,3 @@ func validateNewGoogleCloudTasksQueueHttpTargetUriOverrideOutputReferenceParamet
 
 	return nil
 }
-

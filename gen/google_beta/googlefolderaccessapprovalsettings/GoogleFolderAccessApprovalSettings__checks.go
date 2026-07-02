@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateOverrideLogicalId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validatePutEnrolledServicesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validatePutEnrolledServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleFolderAccessApprovalSettings_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleFolderAccessApprovalSettings_IsConstructParameters(x interface{}) error {
+func validateGoogleFolderAccessApprovalSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleFolderAccessApprovalSettings_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleFolderAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFolderAccessApprovalSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleFolderAccessApprovalSettings_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleFolderAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFolderAccessApprovalSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetActiveKeyVersi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -416,7 +416,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetNotificationEm
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -480,4 +480,3 @@ func validateNewGoogleFolderAccessApprovalSettingsParameters(scope constructs.Co
 
 	return nil
 }
-

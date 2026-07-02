@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleGkeHubMembershipRbacRoleBinding_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleGkeHubMembershipRbacRoleBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeHubMembershipRbacRoleBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleGkeHubMembershipRbacRoleBinding_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleGkeHubMembershipRbacRoleBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeHubMembershipRbacRoleBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleGkeHubMembershipRbacRoleBinding_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleGkeHubMembershipRbacRoleBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeHubMembershipRbacRoleBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleGkeHubMembershipRbacRoleBinding_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleGkeHubMembershipRbacRoleBindingParameters(scope constructs
 
 	return nil
 }
-

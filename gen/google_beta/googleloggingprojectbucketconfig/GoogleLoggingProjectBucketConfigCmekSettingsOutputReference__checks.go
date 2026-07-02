@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfigCmekSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfigCmekSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfigCmekSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleLoggingProjectBucketConfigCmekSettingsOutputReferenceParam
 
 	return nil
 }
-

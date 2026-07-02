@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateAdd
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateMov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkSecurityBackendAuthenticationConfig_GenerateConfigForI
 	return nil
 }
 
-func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsConstructParamet
 	return nil
 }
 
-func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElement
 	return nil
 }
 
-func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewGoogleNetworkSecurityBackendAuthenticationConfigParameters(scope
 
 	return nil
 }
-

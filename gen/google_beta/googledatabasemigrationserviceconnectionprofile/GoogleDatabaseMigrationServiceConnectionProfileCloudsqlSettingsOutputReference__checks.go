@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetAutoStorageIncreaseParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetAutoStorageIncreaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -153,7 +153,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -341,4 +341,3 @@ func validateNewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsO
 
 	return nil
 }
-

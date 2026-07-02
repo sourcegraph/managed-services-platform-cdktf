@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleSiteVerificationWebResourceSiteOutputReferenceParameters(t
 
 	return nil
 }
-

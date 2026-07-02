@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateAddMoveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateMoveFromId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleArtifactRegistryRepositoryIamPolicy_GenerateConfigForImportPa
 	return nil
 }
 
-func validateGoogleArtifactRegistryRepositoryIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleArtifactRegistryRepositoryIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleArtifactRegistryRepositoryIamPolicy_IsConstructParameters(x i
 	return nil
 }
 
-func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformElementParamet
 	return nil
 }
 
-func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGoogleArtifactRegistryRepositoryIamPolicyParameters(scope constr
 
 	return nil
 }
-

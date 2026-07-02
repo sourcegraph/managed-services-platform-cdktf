@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputRef
 
 	return nil
 }
-

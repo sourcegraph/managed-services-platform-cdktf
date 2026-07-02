@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputRe
 
 	return nil
 }
-

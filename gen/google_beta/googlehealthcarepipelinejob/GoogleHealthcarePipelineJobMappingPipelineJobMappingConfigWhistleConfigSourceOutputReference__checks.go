@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistl
 
 	return nil
 }
-

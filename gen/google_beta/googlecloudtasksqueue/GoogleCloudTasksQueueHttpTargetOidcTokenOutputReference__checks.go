@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleCloudTasksQueueHttpTargetOidcTokenOutputReferenceParameter
 
 	return nil
 }
-

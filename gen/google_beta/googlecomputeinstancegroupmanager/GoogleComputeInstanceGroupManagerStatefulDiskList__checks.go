@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulDiskList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceGroupManagerStatefulDiskListParameters(terr
 
 	return nil
 }
-

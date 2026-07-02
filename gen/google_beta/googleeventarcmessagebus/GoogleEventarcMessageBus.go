@@ -18,15 +18,15 @@ type GoogleEventarcMessageBus interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
@@ -78,29 +78,29 @@ type GoogleEventarcMessageBus interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleEventarcMessageBusTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleEventarcMessageBus interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type GoogleEventarcMessageBus interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type GoogleEventarcMessageBus interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleEventarcMessageBus
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) Timeouts() GoogleEventarcMessageBus
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcMessageBus) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -608,7 +608,6 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus} Resource.
 func NewGoogleEventarcMessageBus(scope constructs.Construct, id *string, config *GoogleEventarcMessageBusConfig) GoogleEventarcMessageBus {
 	_init_.Initialize()
@@ -620,7 +619,7 @@ func NewGoogleEventarcMessageBus(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -633,12 +632,12 @@ func NewGoogleEventarcMessageBus_Override(g GoogleEventarcMessageBus, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetAnnotations(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetCryptoKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetId(val *string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetMessageBusId(val *string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetMessageBusId(val *string) {
 	if err := j.validateSetMessageBusIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetMessageBusId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetProject(val *string) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBus)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleEventarcMessageBus) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func GoogleEventarcMessageBus_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func GoogleEventarcMessageBus_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleEventarcMessageBus_IsConstruct(x interface{}) *bool {
+func GoogleEventarcMessageBus_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcMessageBus_IsConstructParameters(x); err != nil {
@@ -841,7 +840,7 @@ func GoogleEventarcMessageBus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func GoogleEventarcMessageBus_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEventarcMessageBus_IsTerraformElement(x interface{}) *bool {
+func GoogleEventarcMessageBus_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcMessageBus_IsTerraformElementParameters(x); err != nil {
@@ -860,7 +859,7 @@ func GoogleEventarcMessageBus_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func GoogleEventarcMessageBus_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEventarcMessageBus_IsTerraformResource(x interface{}) *bool {
+func GoogleEventarcMessageBus_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcMessageBus_IsTerraformResourceParameters(x); err != nil {
@@ -879,7 +878,7 @@ func GoogleEventarcMessageBus_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,31 +903,31 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleEventarcMessageBus) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleEventarcMessageBus) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,15 +1055,15 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcMessageBus) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1083,7 +1082,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,18 +1109,18 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleEventarcMessageBus) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) PutLoggingConfig(value *GoogleEvent
 	_jsii_.InvokeVoid(
 		g,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1165,7 +1164,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) PutTimeouts(value *GoogleEventarcMe
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1241,8 +1240,8 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEventarcMessageBus) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1254,8 +1253,8 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEventarcMessageBus) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1267,8 +1266,8 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcMessageBus) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1280,8 +1279,8 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcMessageBus) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1306,8 +1305,8 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBus) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcMessageBus) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1318,4 +1317,3 @@ func (g *jsiiProxy_GoogleEventarcMessageBus) ToTerraform() interface{} {
 
 	return returns
 }
-

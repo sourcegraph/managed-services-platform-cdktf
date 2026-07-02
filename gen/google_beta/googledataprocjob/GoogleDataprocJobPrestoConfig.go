@@ -1,6 +1,5 @@
 package googledataprocjob
 
-
 type GoogleDataprocJobPrestoConfig struct {
 	// Presto client tags to attach to this query.
 	//
@@ -11,7 +10,7 @@ type GoogleDataprocJobPrestoConfig struct {
 	// Setting to true can be useful when executing independent parallel queries. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
-	ContinueOnFailure interface{} `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
+	ContinueOnFailure any `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
 	// logging_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
@@ -35,4 +34,3 @@ type GoogleDataprocJobPrestoConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
 	QueryList *[]*string `field:"optional" json:"queryList" yaml:"queryList"`
 }
-

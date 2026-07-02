@@ -6,9 +6,9 @@ import (
 
 type GoogleTpuNodeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleTpuNodeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The type of hardware accelerators associated with this node.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_node#accelerator_type GoogleTpuNode#accelerator_type}
@@ -86,10 +86,9 @@ type GoogleTpuNodeConfig struct {
 	// TPU Node to is a Shared VPC network, the node must be created with this this field enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_node#use_service_networking GoogleTpuNode#use_service_networking}
-	UseServiceNetworking interface{} `field:"optional" json:"useServiceNetworking" yaml:"useServiceNetworking"`
+	UseServiceNetworking any `field:"optional" json:"useServiceNetworking" yaml:"useServiceNetworking"`
 	// The GCP location for the TPU. If it is not provided, the provider zone is used.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tpu_node#zone GoogleTpuNode#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

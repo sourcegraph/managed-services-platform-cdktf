@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupAttachmentsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupAttachmentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupAttachmentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInterconnectAttachmentGroupAttachmentsListParameter
 
 	return nil
 }
-

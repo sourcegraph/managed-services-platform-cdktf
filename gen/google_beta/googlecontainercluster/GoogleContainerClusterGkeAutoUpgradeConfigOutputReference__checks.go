@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterGkeAutoUpgradeConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterGkeAutoUpgradeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterGkeAutoUpgradeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterGkeAutoUpgradeConfigOutputReferenceParamet
 
 	return nil
 }
-

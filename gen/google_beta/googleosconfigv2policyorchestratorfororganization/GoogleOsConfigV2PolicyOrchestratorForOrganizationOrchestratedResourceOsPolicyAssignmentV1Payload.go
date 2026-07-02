@@ -1,6 +1,5 @@
 package googleosconfigv2policyorchestratorfororganization
 
-
 type GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1Payload struct {
 	// instance_filter block.
 	//
@@ -9,7 +8,7 @@ type GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPoli
 	// os_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization#os_policies GoogleOsConfigV2PolicyOrchestratorForOrganization#os_policies}
-	OsPolicies interface{} `field:"required" json:"osPolicies" yaml:"osPolicies"`
+	OsPolicies any `field:"required" json:"osPolicies" yaml:"osPolicies"`
 	// rollout block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization#rollout GoogleOsConfigV2PolicyOrchestratorForOrganization#rollout}
@@ -32,4 +31,3 @@ type GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPoli
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization#name GoogleOsConfigV2PolicyOrchestratorForOrganization#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

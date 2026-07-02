@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReferencePa
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type GoogleResourceManagerLien interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,11 +58,11 @@ type GoogleResourceManagerLien interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reason() *string
 	SetReason(val *string)
 	ReasonInput() *string
@@ -72,18 +72,18 @@ type GoogleResourceManagerLien interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleResourceManagerLienTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type GoogleResourceManagerLien interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleResourceManagerLien interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GoogleResourceManagerLien interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleResourceManagerLien
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_GoogleResourceManagerLien) Timeouts() GoogleResourceManagerLi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleResourceManagerLien) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -443,7 +443,6 @@ func (j *jsiiProxy_GoogleResourceManagerLien) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_resource_manager_lien google_resource_manager_lien} Resource.
 func NewGoogleResourceManagerLien(scope constructs.Construct, id *string, config *GoogleResourceManagerLienConfig) GoogleResourceManagerLien {
@@ -456,7 +455,7 @@ func NewGoogleResourceManagerLien(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -469,12 +468,12 @@ func NewGoogleResourceManagerLien_Override(g GoogleResourceManagerLien, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetId(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetOrigin(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetOrigin(val *string) {
 	if err := j.validateSetOriginParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetOrigin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetParent(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetReason(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetReason(val *string) {
 	if err := j.validateSetReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleResourceManagerLien)SetReason(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerLien)SetRestrictions(val *[]*string) {
+func (j *jsiiProxy_GoogleResourceManagerLien) SetRestrictions(val *[]*string) {
 	if err := j.validateSetRestrictionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func GoogleResourceManagerLien_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func GoogleResourceManagerLien_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleResourceManagerLien_IsConstruct(x interface{}) *bool {
+func GoogleResourceManagerLien_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleResourceManagerLien_IsConstructParameters(x); err != nil {
@@ -644,7 +643,7 @@ func GoogleResourceManagerLien_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func GoogleResourceManagerLien_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleResourceManagerLien_IsTerraformElement(x interface{}) *bool {
+func GoogleResourceManagerLien_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleResourceManagerLien_IsTerraformElementParameters(x); err != nil {
@@ -663,7 +662,7 @@ func GoogleResourceManagerLien_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func GoogleResourceManagerLien_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleResourceManagerLien_IsTerraformResource(x interface{}) *bool {
+func GoogleResourceManagerLien_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleResourceManagerLien_IsTerraformResourceParameters(x); err != nil {
@@ -682,7 +681,7 @@ func GoogleResourceManagerLien_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,31 +706,31 @@ func (g *jsiiProxy_GoogleResourceManagerLien) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleResourceManagerLien) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleResourceManagerLien) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,15 +858,15 @@ func (g *jsiiProxy_GoogleResourceManagerLien) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleResourceManagerLien) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -886,7 +885,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,18 +912,18 @@ func (g *jsiiProxy_GoogleResourceManagerLien) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleResourceManagerLien) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -957,7 +956,7 @@ func (g *jsiiProxy_GoogleResourceManagerLien) PutTimeouts(value *GoogleResourceM
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -985,8 +984,8 @@ func (g *jsiiProxy_GoogleResourceManagerLien) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleResourceManagerLien) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -998,8 +997,8 @@ func (g *jsiiProxy_GoogleResourceManagerLien) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleResourceManagerLien) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1011,8 +1010,8 @@ func (g *jsiiProxy_GoogleResourceManagerLien) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleResourceManagerLien) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1024,8 +1023,8 @@ func (g *jsiiProxy_GoogleResourceManagerLien) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleResourceManagerLien) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1050,8 +1049,8 @@ func (g *jsiiProxy_GoogleResourceManagerLien) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleResourceManagerLien) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleResourceManagerLien) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1062,4 +1061,3 @@ func (g *jsiiProxy_GoogleResourceManagerLien) ToTerraform() interface{} {
 
 	return returns
 }
-

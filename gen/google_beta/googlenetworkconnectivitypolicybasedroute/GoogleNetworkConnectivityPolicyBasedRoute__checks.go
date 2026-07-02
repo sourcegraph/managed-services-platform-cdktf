@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateAddMoveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateMoveFromId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleNetworkConnectivityPolicyBasedRoute_GenerateConfigForImportPa
 	return nil
 }
 
-func validateGoogleNetworkConnectivityPolicyBasedRoute_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkConnectivityPolicyBasedRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleNetworkConnectivityPolicyBasedRoute_IsConstructParameters(x i
 	return nil
 }
 
-func validateGoogleNetworkConnectivityPolicyBasedRoute_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkConnectivityPolicyBasedRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleNetworkConnectivityPolicyBasedRoute_IsTerraformElementParamet
 	return nil
 }
 
-func validateGoogleNetworkConnectivityPolicyBasedRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkConnectivityPolicyBasedRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateGoogleNetworkConnectivityPolicyBasedRoute_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -522,4 +522,3 @@ func validateNewGoogleNetworkConnectivityPolicyBasedRouteParameters(scope constr
 
 	return nil
 }
-

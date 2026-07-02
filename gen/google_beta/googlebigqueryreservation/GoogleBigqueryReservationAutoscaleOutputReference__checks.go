@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryReservationAutoscaleOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservationAutoscaleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryReservationAutoscaleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryReservationAutoscaleOutputReferenceParameters(terr
 
 	return nil
 }
-

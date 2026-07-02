@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateA
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleAccessContextManagerServicePerimeterResource_GenerateConfigFo
 	return nil
 }
 
-func validateGoogleAccessContextManagerServicePerimeterResource_IsConstructParameters(x interface{}) error {
+func validateGoogleAccessContextManagerServicePerimeterResource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleAccessContextManagerServicePerimeterResource_IsConstructParam
 	return nil
 }
 
-func validateGoogleAccessContextManagerServicePerimeterResource_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAccessContextManagerServicePerimeterResource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleAccessContextManagerServicePerimeterResource_IsTerraformEleme
 	return nil
 }
 
-func validateGoogleAccessContextManagerServicePerimeterResource_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAccessContextManagerServicePerimeterResource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleAccessContextManagerServicePerimeterResource_IsTerraformResou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGoogleAccessContextManagerServicePerimeterResourceParameters(sco
 
 	return nil
 }
-

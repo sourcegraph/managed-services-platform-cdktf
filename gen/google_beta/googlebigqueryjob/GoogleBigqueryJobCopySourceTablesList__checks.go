@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopySourceTablesList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBigqueryJobCopySourceTablesListParameters(terraformResourc
 
 	return nil
 }
-

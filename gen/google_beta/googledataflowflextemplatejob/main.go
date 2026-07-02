@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
-		reflect.TypeOf((*GoogleDataflowFlexTemplateJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataflowFlexTemplateJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperimentsInput", GoGetter: "AdditionalExperimentsInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformNameMappingInput", GoGetter: "TransformNameMappingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataflowFlexTemplateJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -142,6 +142,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJobConfig",
-		reflect.TypeOf((*GoogleDataflowFlexTemplateJobConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataflowFlexTemplateJobConfig](),
 	)
 }

@@ -1,11 +1,10 @@
 package googleosconfigguestpolicies
 
-
 type GoogleOsConfigGuestPoliciesAssignment struct {
 	// group_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#group_labels GoogleOsConfigGuestPolicies#group_labels}
-	GroupLabels interface{} `field:"optional" json:"groupLabels" yaml:"groupLabels"`
+	GroupLabels any `field:"optional" json:"groupLabels" yaml:"groupLabels"`
 	// Targets VM instances whose name starts with one of these prefixes.
 	//
 	// Like labels, this is another way to group VM instances when targeting configs,
@@ -27,7 +26,7 @@ type GoogleOsConfigGuestPoliciesAssignment struct {
 	// os_types block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#os_types GoogleOsConfigGuestPolicies#os_types}
-	OsTypes interface{} `field:"optional" json:"osTypes" yaml:"osTypes"`
+	OsTypes any `field:"optional" json:"osTypes" yaml:"osTypes"`
 	// Targets instances in any of these zones.
 	//
 	// Leave empty to target instances in any zone.
@@ -36,4 +35,3 @@ type GoogleOsConfigGuestPoliciesAssignment struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#zones GoogleOsConfigGuestPolicies#zones}
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }
-

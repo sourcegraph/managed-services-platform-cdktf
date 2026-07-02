@@ -112,7 +112,7 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) validatePutMetricParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) validatePutMetricParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) validatePutScalingSchedulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) validatePutScalingSchedulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -336,4 +336,3 @@ func validateNewGoogleComputeAutoscalerAutoscalingPolicyOutputReferenceParameter
 
 	return nil
 }
-

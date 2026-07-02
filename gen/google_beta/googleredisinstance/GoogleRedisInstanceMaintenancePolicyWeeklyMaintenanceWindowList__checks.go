@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowLi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowListP
 
 	return nil
 }
-

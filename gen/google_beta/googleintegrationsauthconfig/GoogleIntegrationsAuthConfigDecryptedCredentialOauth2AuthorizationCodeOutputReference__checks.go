@@ -122,7 +122,7 @@ func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialOauth2Authoriz
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleIntegrationsAuthConfigDecryptedCredentialOauth2Authorizati
 
 	return nil
 }
-

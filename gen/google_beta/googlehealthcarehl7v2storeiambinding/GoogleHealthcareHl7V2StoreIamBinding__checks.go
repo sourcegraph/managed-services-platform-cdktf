@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleHealthcareHl7V2StoreIamBinding_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleHealthcareHl7V2StoreIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleHealthcareHl7V2StoreIamBinding_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetMembersParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleHealthcareHl7V2StoreIamBindingParameters(scope constructs.
 
 	return nil
 }
-

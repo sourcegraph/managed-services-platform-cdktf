@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareDatasetIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDatasetIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDatasetIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleHealthcareDatasetIamBindingConditionOutputReferenceParamet
 
 	return nil
 }
-

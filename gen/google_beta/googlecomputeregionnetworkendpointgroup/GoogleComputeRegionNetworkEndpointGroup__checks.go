@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleComputeRegionNetworkEndpointGroup_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleComputeRegionNetworkEndpointGroup_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionNetworkEndpointGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateGoogleComputeRegionNetworkEndpointGroup_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -343,7 +343,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -456,7 +456,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -544,4 +544,3 @@ func validateNewGoogleComputeRegionNetworkEndpointGroupParameters(scope construc
 
 	return nil
 }
-

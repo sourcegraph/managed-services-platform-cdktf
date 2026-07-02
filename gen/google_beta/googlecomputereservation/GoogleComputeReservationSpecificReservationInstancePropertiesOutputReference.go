@@ -12,9 +12,9 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,11 +28,11 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	// Experimental.
 	Fqn() *string
 	GuestAccelerators() GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList
-	GuestAcceleratorsInput() interface{}
+	GuestAcceleratorsInput() any
 	InternalValue() *GoogleComputeReservationSpecificReservationInstanceProperties
 	SetInternalValue(val *GoogleComputeReservationSpecificReservationInstanceProperties)
 	LocalSsds() GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList
-	LocalSsdsInput() interface{}
+	LocalSsdsInput() any
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -53,7 +53,7 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,15 +74,15 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutGuestAccelerators(value interface{})
-	PutLocalSsds(value interface{})
+	PutGuestAccelerators(value any)
+	PutLocalSsds(value any)
 	ResetGuestAccelerators()
 	ResetLocalSsds()
 	ResetMaintenanceInterval()
 	ResetMinCpuPlatform()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutp
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) GuestAcceleratorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) GuestAcceleratorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestAcceleratorsInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) LocalSsdsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) LocalSsdsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"localSsdsInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return returns
 }
 
-
 func NewGoogleComputeReservationSpecificReservationInstancePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewGoogleComputeReservationSpecificReservationInstancePropertiesOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewGoogleComputeReservationSpecificReservationInstancePropertiesOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetInternalValue(val *GoogleComputeReservationSpecificReservationInstanceProperties) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetInternalValue(val *GoogleComputeReservationSpecificReservationInstanceProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetMaintenanceInterval(val *string) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetMaintenanceInterval(val *string) {
 	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetMinCpuPlatform(val *string) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetMinCpuPlatform(val *string) {
 	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,16 +393,16 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,32 +559,32 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) PutGuestAccelerators(value interface{}) {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) PutGuestAccelerators(value any) {
 	if err := g.validatePutGuestAcceleratorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putGuestAccelerators",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) PutLocalSsds(value interface{}) {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) PutLocalSsds(value any) {
 	if err := g.validatePutLocalSsdsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putLocalSsds",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 
 	return returns
 }
-

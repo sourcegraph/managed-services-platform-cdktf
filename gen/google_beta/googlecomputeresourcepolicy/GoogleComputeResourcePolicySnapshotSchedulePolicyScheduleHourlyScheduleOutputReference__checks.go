@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHour
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyS
 
 	return nil
 }
-

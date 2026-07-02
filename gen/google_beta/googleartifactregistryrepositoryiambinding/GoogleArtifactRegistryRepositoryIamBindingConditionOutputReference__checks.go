@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBindingConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleArtifactRegistryRepositoryIamBindingConditionOutputReferen
 
 	return nil
 }
-

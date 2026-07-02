@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
-		reflect.TypeOf((*DataGoogleRuntimeconfigVariable)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRuntimeconfigVariable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRuntimeconfigVariable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariableConfig",
-		reflect.TypeOf((*DataGoogleRuntimeconfigVariableConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRuntimeconfigVariableConfig](),
 	)
 }

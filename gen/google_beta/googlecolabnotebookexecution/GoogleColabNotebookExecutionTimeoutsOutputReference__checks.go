@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleColabNotebookExecutionTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

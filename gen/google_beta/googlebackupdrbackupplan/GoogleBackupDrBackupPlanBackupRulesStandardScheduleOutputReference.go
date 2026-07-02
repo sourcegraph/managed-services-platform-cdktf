@@ -14,9 +14,9 @@ type GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference interfac
 	BackupWindowInput() *GoogleBackupDrBackupPlanBackupRulesStandardScheduleBackupWindow
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -62,7 +62,7 @@ type GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference interfac
 	ResetWeekDayOfMonth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -336,7 +336,6 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	return returns
 }
 
-
 func NewGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference {
 	_init_.Initialize()
 
@@ -347,7 +346,7 @@ func NewGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -359,12 +358,12 @@ func NewGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBackupDrBackupPlan.GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetDaysOfMonth(val *[]*float64) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetDaysOfMonth(val *[]*float64) {
 	if err := j.validateSetDaysOfMonthParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetDaysOfWeek(val *[]*string) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetDaysOfWeek(val *[]*string) {
 	if err := j.validateSetDaysOfWeekParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetHourlyFrequency(val *float64) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetHourlyFrequency(val *float64) {
 	if err := j.validateSetHourlyFrequencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetInternalValue(val *GoogleBackupDrBackupPlanBackupRulesStandardSchedule) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetInternalValue(val *GoogleBackupDrBackupPlanBackupRulesStandardSchedule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetMonths(val *[]*string) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetMonths(val *[]*string) {
 	if err := j.validateSetMonthsParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetRecurrenceType(val *string) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetRecurrenceType(val *string) {
 	if err := j.validateSetRecurrenceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,16 +497,16 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putBackupWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -689,7 +688,7 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putWeekDayOfMonth",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -741,16 +740,16 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -769,4 +768,3 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputRefe
 
 	return returns
 }
-

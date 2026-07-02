@@ -10,17 +10,17 @@ import (
 
 type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	cdktf.ComplexObject
-	AutomaticRestart() interface{}
-	SetAutomaticRestart(val interface{})
-	AutomaticRestartInput() interface{}
+	AutomaticRestart() any
+	SetAutomaticRestart(val any)
+	AutomaticRestartInput() any
 	AvailabilityDomain() *float64
 	SetAvailabilityDomain(val *float64)
 	AvailabilityDomainInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	InternalValue() *GoogleComputeInstanceTemplateScheduling
 	SetInternalValue(val *GoogleComputeInstanceTemplateScheduling)
 	LocalSsdRecoveryTimeout() GoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
-	LocalSsdRecoveryTimeoutInput() interface{}
+	LocalSsdRecoveryTimeoutInput() any
 	MaintenanceInterval() *string
 	SetMaintenanceInterval(val *string)
 	MaintenanceIntervalInput() *string
@@ -54,15 +54,15 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	SetMinNodeCpus(val *float64)
 	MinNodeCpusInput() *float64
 	NodeAffinities() GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList
-	NodeAffinitiesInput() interface{}
+	NodeAffinitiesInput() any
 	OnHostMaintenance() *string
 	SetOnHostMaintenance(val *string)
 	OnHostMaintenanceInput() *string
 	OnInstanceStopAction() GoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference
 	OnInstanceStopActionInput() *GoogleComputeInstanceTemplateSchedulingOnInstanceStopAction
-	Preemptible() interface{}
-	SetPreemptible(val interface{})
-	PreemptibleInput() interface{}
+	Preemptible() any
+	SetPreemptible(val any)
+	PreemptibleInput() any
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
@@ -80,7 +80,7 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,9 +102,9 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGracefulShutdown(value *GoogleComputeInstanceTemplateSchedulingGracefulShutdown)
-	PutLocalSsdRecoveryTimeout(value interface{})
+	PutLocalSsdRecoveryTimeout(value any)
 	PutMaxRunDuration(value *GoogleComputeInstanceTemplateSchedulingMaxRunDuration)
-	PutNodeAffinities(value interface{})
+	PutNodeAffinities(value any)
 	PutOnInstanceStopAction(value *GoogleComputeInstanceTemplateSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
 	ResetAvailabilityDomain()
@@ -123,7 +123,7 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -136,8 +136,8 @@ type jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) AutomaticRestart() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) AutomaticRestart() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticRestart",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Autom
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) AutomaticRestartInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) AutomaticRestartInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticRestartInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Avail
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Local
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeoutInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeoutInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"localSsdRecoveryTimeoutInput",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) NodeA
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) NodeAffinitiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) NodeAffinitiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nodeAffinitiesInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) OnIns
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Preemptible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Preemptible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptible",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Preem
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PreemptibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PreemptibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptibleInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Terra
 	return returns
 }
 
-
 func NewGoogleComputeInstanceTemplateSchedulingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceTemplateSchedulingOutputReference {
 	_init_.Initialize()
 
@@ -517,7 +516,7 @@ func NewGoogleComputeInstanceTemplateSchedulingOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewGoogleComputeInstanceTemplateSchedulingOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetAutomaticRestart(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetAutomaticRestart(val any) {
 	if err := j.validateSetAutomaticRestartParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetAut
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetAvailabilityDomain(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetAvailabilityDomain(val *float64) {
 	if err := j.validateSetAvailabilityDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetAva
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetHostErrorTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetHostErrorTimeoutSeconds(val *float64) {
 	if err := j.validateSetHostErrorTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetHos
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetInstanceTerminationAction(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetInstanceTerminationAction(val *string) {
 	if err := j.validateSetInstanceTerminationActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetIns
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetInternalValue(val *GoogleComputeInstanceTemplateScheduling) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetInternalValue(val *GoogleComputeInstanceTemplateScheduling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetMaintenanceInterval(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetMaintenanceInterval(val *string) {
 	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetMai
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetMinNodeCpus(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetMinNodeCpus(val *float64) {
 	if err := j.validateSetMinNodeCpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetMin
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetOnHostMaintenance(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetOnHostMaintenance(val *string) {
 	if err := j.validateSetOnHostMaintenanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetOnH
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetPreemptible(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetPreemptible(val any) {
 	if err := j.validateSetPreemptibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetPre
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetProvisioningModel(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetProvisioningModel(val *string) {
 	if err := j.validateSetProvisioningModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetPro
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetTerminationTime(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetTerminationTime(val *string) {
 	if err := j.validateSetTerminationTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,16 +711,16 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutGr
 	_jsii_.InvokeVoid(
 		g,
 		"putGracefulShutdown",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value any) {
 	if err := g.validatePutLocalSsdRecoveryTimeoutParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putLocalSsdRecoveryTimeout",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -914,18 +913,18 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutMa
 	_jsii_.InvokeVoid(
 		g,
 		"putMaxRunDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutNodeAffinities(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutNodeAffinities(value any) {
 	if err := g.validatePutNodeAffinitiesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeAffinities",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutOn
 	_jsii_.InvokeVoid(
 		g,
 		"putOnInstanceStopAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1060,16 +1059,16 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1088,4 +1087,3 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ToStr
 
 	return returns
 }
-

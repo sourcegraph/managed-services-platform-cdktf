@@ -34,7 +34,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGooglePrivatecaCertificateConfigX509ConfigPolicyIdsListParameter
 
 	return nil
 }
-

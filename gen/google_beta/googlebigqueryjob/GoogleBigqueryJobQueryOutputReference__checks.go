@@ -134,7 +134,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validatePutScriptOptio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validatePutUserDefinedFunctionResourcesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validatePutUserDefinedFunctionResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetAllowLargeResultsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetAllowLargeResultsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetAllowLargeR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -258,7 +258,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetContinuousParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetContinuousParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetCreateDispo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetFlattenResultsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetFlattenResultsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetUseLegacySqlParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetUseLegacySqlParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetUseLegacySq
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetUseQueryCacheParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetUseQueryCacheParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,4 +437,3 @@ func validateNewGoogleBigqueryJobQueryOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

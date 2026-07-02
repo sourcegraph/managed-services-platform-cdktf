@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExte
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExte
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtende
 
 	return nil
 }
-

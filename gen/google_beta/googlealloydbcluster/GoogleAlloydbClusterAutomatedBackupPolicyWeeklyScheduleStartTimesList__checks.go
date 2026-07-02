@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTime
 
 	return nil
 }
-

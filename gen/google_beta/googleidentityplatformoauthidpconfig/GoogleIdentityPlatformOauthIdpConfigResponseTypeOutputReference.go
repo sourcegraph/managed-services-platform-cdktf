@@ -10,14 +10,14 @@ import (
 
 type GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference interface {
 	cdktf.ComplexObject
-	Code() interface{}
-	SetCode(val interface{})
-	CodeInput() interface{}
+	Code() any
+	SetCode(val any)
+	CodeInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IdToken() interface{}
-	SetIdToken(val interface{})
-	IdTokenInput() interface{}
+	IdToken() any
+	SetIdToken(val any)
+	IdTokenInput() any
 	InternalValue() *GoogleIdentityPlatformOauthIdpConfigResponseType
 	SetInternalValue(val *GoogleIdentityPlatformOauthIdpConfigResponseType)
 	// Experimental.
@@ -46,7 +46,7 @@ type GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference interface {
 	ResetIdToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) Code() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) Code() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"code",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) CodeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) CodeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"codeInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) IdToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) IdToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idToken",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) IdTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) IdTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idTokenInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return returns
 }
 
-
 func NewGoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformOauthIdpConfig.GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformOauthIdpConfig.GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetCode(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetCode(val any) {
 	if err := j.validateSetCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetIdToken(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetIdToken(val any) {
 	if err := j.validateSetIdTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetInternalValue(val *GoogleIdentityPlatformOauthIdpConfigResponseType) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetInternalValue(val *GoogleIdentityPlatformOauthIdpConfigResponseType) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 
 	return returns
 }
-

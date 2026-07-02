@@ -1,6 +1,5 @@
 package googleosconfigv2policyorchestratorfororganization
 
-
 type GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDeb struct {
 	// source block.
 	//
@@ -13,6 +12,5 @@ type GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPoli
 	// package.deb'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator_for_organization#pull_deps GoogleOsConfigV2PolicyOrchestratorForOrganization#pull_deps}
-	PullDeps interface{} `field:"optional" json:"pullDeps" yaml:"pullDeps"`
+	PullDeps any `field:"optional" json:"pullDeps" yaml:"pullDeps"`
 }
-

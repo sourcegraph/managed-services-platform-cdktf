@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validatePutGroupLabelsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validatePutGroupLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validatePutOsTypesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validatePutOsTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -284,4 +284,3 @@ func validateNewGoogleOsConfigGuestPoliciesAssignmentOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputRe
 
 	return nil
 }
-

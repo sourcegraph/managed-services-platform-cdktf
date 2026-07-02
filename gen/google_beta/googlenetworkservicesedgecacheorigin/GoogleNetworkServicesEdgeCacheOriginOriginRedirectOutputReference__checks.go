@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReferenc
 
 	return nil
 }
-

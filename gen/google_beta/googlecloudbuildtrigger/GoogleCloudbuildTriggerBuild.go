@@ -1,11 +1,10 @@
 package googlecloudbuildtrigger
 
-
 type GoogleCloudbuildTriggerBuild struct {
 	// step block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#step GoogleCloudbuildTrigger#step}
-	Step interface{} `field:"required" json:"step" yaml:"step"`
+	Step any `field:"required" json:"step" yaml:"step"`
 	// artifacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#artifacts GoogleCloudbuildTrigger#artifacts}
@@ -42,7 +41,7 @@ type GoogleCloudbuildTriggerBuild struct {
 	// secret block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#secret GoogleCloudbuildTrigger#secret}
-	Secret interface{} `field:"optional" json:"secret" yaml:"secret"`
+	Secret any `field:"optional" json:"secret" yaml:"secret"`
 	// source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#source GoogleCloudbuildTrigger#source}
@@ -65,4 +64,3 @@ type GoogleCloudbuildTriggerBuild struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#timeout GoogleCloudbuildTrigger#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
-

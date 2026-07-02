@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validatePutUserDefinedFieldsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validatePutUserDefinedFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -285,4 +285,3 @@ func validateNewGoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReferenc
 
 	return nil
 }
-

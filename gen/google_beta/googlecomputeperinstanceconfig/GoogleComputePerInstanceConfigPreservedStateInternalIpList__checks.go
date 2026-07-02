@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputePerInstanceConfigPreservedStateInternalIpListParame
 
 	return nil
 }
-

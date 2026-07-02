@@ -6,9 +6,9 @@ import (
 
 type GoogleApigeeOrganizationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleApigeeOrganizationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The project ID associated with the Apigee organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_organization#project_id GoogleApigeeOrganization#project_id}
@@ -67,7 +67,7 @@ type GoogleApigeeOrganizationConfig struct {
 	// of any Apigee runtime instance and can be updated only when there are no runtime instances.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_organization#disable_vpc_peering GoogleApigeeOrganization#disable_vpc_peering}
-	DisableVpcPeering interface{} `field:"optional" json:"disableVpcPeering" yaml:"disableVpcPeering"`
+	DisableVpcPeering any `field:"optional" json:"disableVpcPeering" yaml:"disableVpcPeering"`
 	// The display name of the Apigee organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_organization#display_name GoogleApigeeOrganization#display_name}
@@ -107,4 +107,3 @@ type GoogleApigeeOrganizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_organization#timeouts GoogleApigeeOrganization#timeouts}
 	Timeouts *GoogleApigeeOrganizationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

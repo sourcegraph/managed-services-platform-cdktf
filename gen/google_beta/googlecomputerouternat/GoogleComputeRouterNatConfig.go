@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeRouterNatConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeRouterNatConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the NAT service. The name must be 1-63 characters long and comply with RFC1035.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#name GoogleComputeRouterNat#name}
@@ -65,11 +65,11 @@ type GoogleComputeRouterNatConfig struct {
 	// Mutually exclusive with enableEndpointIndependentMapping.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#enable_dynamic_port_allocation GoogleComputeRouterNat#enable_dynamic_port_allocation}
-	EnableDynamicPortAllocation interface{} `field:"optional" json:"enableDynamicPortAllocation" yaml:"enableDynamicPortAllocation"`
+	EnableDynamicPortAllocation any `field:"optional" json:"enableDynamicPortAllocation" yaml:"enableDynamicPortAllocation"`
 	// Enable endpoint independent mapping. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#enable_endpoint_independent_mapping GoogleComputeRouterNat#enable_endpoint_independent_mapping}
-	EnableEndpointIndependentMapping interface{} `field:"optional" json:"enableEndpointIndependentMapping" yaml:"enableEndpointIndependentMapping"`
+	EnableEndpointIndependentMapping any `field:"optional" json:"enableEndpointIndependentMapping" yaml:"enableEndpointIndependentMapping"`
 	// Specifies the endpoint Types supported by the NAT Gateway.
 	//
 	// Supported values include:
@@ -112,7 +112,7 @@ type GoogleComputeRouterNatConfig struct {
 	// nat64_subnetwork block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#nat64_subnetwork GoogleComputeRouterNat#nat64_subnetwork}
-	Nat64Subnetwork interface{} `field:"optional" json:"nat64Subnetwork" yaml:"nat64Subnetwork"`
+	Nat64Subnetwork any `field:"optional" json:"nat64Subnetwork" yaml:"nat64Subnetwork"`
 	// How external IPs should be allocated for this NAT.
 	//
 	// Valid values are
@@ -140,7 +140,7 @@ type GoogleComputeRouterNatConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#rules GoogleComputeRouterNat#rules}
-	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	Rules any `field:"optional" json:"rules" yaml:"rules"`
 	// Specify the Nat option for NAT64, which can take one of the following values: ALL_IPV6_SUBNETWORKS: All of the IP ranges in every Subnetwork are allowed to Nat.
 	//
 	// LIST_OF_IPV6_SUBNETWORKS: A list of Subnetworks are allowed to Nat (specified in the field nat64Subnetwork below).
@@ -152,7 +152,7 @@ type GoogleComputeRouterNatConfig struct {
 	// subnetwork block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#subnetwork GoogleComputeRouterNat#subnetwork}
-	Subnetwork interface{} `field:"optional" json:"subnetwork" yaml:"subnetwork"`
+	Subnetwork any `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 	// Timeout (in seconds) for TCP established connections. Defaults to 1200s if not set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#tcp_established_idle_timeout_sec GoogleComputeRouterNat#tcp_established_idle_timeout_sec}
@@ -182,4 +182,3 @@ type GoogleComputeRouterNatConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat#udp_idle_timeout_sec GoogleComputeRouterNat#udp_idle_timeout_sec}
 	UdpIdleTimeoutSec *float64 `field:"optional" json:"udpIdleTimeoutSec" yaml:"udpIdleTimeoutSec"`
 }
-

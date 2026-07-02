@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJobHttpTargetOidcTokenOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJobHttpTargetOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJobHttpTargetOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleCloudSchedulerJobHttpTargetOidcTokenOutputReferenceParamet
 
 	return nil
 }
-

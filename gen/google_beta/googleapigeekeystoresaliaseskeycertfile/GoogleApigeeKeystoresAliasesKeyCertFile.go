@@ -23,15 +23,15 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	CertsInfo() GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference
 	CertsInfoInput() *GoogleApigeeKeystoresAliasesKeyCertFileCertsInfo
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,27 +73,27 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type GoogleApigeeKeystoresAliasesKeyCertFile interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleApigeeKeystoresAliasesKeyCertFile
@@ -228,8 +228,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) CertsInfoInput() *Go
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Timeouts() GoogleApi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -528,7 +528,6 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource.
 func NewGoogleApigeeKeystoresAliasesKeyCertFile(scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesKeyCertFileConfig) GoogleApigeeKeystoresAliasesKeyCertFile {
 	_init_.Initialize()
@@ -540,7 +539,7 @@ func NewGoogleApigeeKeystoresAliasesKeyCertFile(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewGoogleApigeeKeystoresAliasesKeyCertFile_Override(g GoogleApigeeKeystores
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetAlias(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetAlias(val *string) {
 	if err := j.validateSetAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetAlias(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetCert(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetCert(val *string) {
 	if err := j.validateSetCertParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetCert(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetEnvironment(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetEnvironment(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetId(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetKey(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetKeystore(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetKeystore(val *string) {
 	if err := j.validateSetKeystoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetKeystore(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetOrgId(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetOrgId(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetPassword(val *string) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetPassword(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool {
+func GoogleApigeeKeystoresAliasesKeyCertFile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApigeeKeystoresAliasesKeyCertFile_IsConstructParameters(x); err != nil {
@@ -761,7 +760,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *bool {
+func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElementParameters(x); err != nil {
@@ -780,7 +779,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x interface{}) *bool {
+func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformResourceParameters(x); err != nil {
@@ -799,7 +798,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -824,31 +823,31 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetBooleanAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetNumberAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetNumberListAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetNumberMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetStringAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,15 +975,15 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) GetStringMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1003,7 +1002,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) InterpolationForAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,18 +1029,18 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) PutCertsInfo(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putCertsInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) PutTimeouts(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1137,8 +1136,8 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1150,8 +1149,8 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SynthesizeAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1163,8 +1162,8 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) SynthesizeHclAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1176,8 +1175,8 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToHclTerraform() int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1202,8 +1201,8 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1214,4 +1213,3 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile) ToTerraform() interf
 
 	return returns
 }
-

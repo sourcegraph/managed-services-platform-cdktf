@@ -1,6 +1,5 @@
 package googledataproccluster
 
-
 type GoogleDataprocClusterClusterConfig struct {
 	// autoscaling_config block.
 	//
@@ -9,7 +8,7 @@ type GoogleDataprocClusterClusterConfig struct {
 	// auxiliary_node_groups block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#auxiliary_node_groups GoogleDataprocCluster#auxiliary_node_groups}
-	AuxiliaryNodeGroups interface{} `field:"optional" json:"auxiliaryNodeGroups" yaml:"auxiliaryNodeGroups"`
+	AuxiliaryNodeGroups any `field:"optional" json:"auxiliaryNodeGroups" yaml:"auxiliaryNodeGroups"`
 	// dataproc_metric_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#dataproc_metric_config GoogleDataprocCluster#dataproc_metric_config}
@@ -29,7 +28,7 @@ type GoogleDataprocClusterClusterConfig struct {
 	// initialization_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#initialization_action GoogleDataprocCluster#initialization_action}
-	InitializationAction interface{} `field:"optional" json:"initializationAction" yaml:"initializationAction"`
+	InitializationAction any `field:"optional" json:"initializationAction" yaml:"initializationAction"`
 	// lifecycle_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#lifecycle_config GoogleDataprocCluster#lifecycle_config}
@@ -71,4 +70,3 @@ type GoogleDataprocClusterClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#worker_config GoogleDataprocCluster#worker_config}
 	WorkerConfig *GoogleDataprocClusterClusterConfigWorkerConfig `field:"optional" json:"workerConfig" yaml:"workerConfig"`
 }
-

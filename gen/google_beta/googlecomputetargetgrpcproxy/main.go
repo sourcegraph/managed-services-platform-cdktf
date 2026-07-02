@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxy",
-		reflect.TypeOf((*GoogleComputeTargetGrpcProxy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetGrpcProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateForProxyless", GoGetter: "ValidateForProxyless"},
 			_jsii_.MemberProperty{JsiiProperty: "validateForProxylessInput", GoGetter: "ValidateForProxylessInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeTargetGrpcProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyConfig",
-		reflect.TypeOf((*GoogleComputeTargetGrpcProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetGrpcProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyTimeouts",
-		reflect.TypeOf((*GoogleComputeTargetGrpcProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetGrpcProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeTargetGrpcProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetGrpcProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeTargetGrpcProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

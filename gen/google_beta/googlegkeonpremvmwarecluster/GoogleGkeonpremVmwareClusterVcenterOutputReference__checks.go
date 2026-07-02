@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleGkeonpremVmwareClusterVcenterOutputReferenceParameters(ter
 
 	return nil
 }
-

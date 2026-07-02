@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialAuthTokenOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleIntegrationsAuthConfigDecryptedCredentialAuthTokenOutputRe
 
 	return nil
 }
-

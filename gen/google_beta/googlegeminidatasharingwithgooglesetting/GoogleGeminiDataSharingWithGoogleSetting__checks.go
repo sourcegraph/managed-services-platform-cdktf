@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateAddMoveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateMoveFromIdP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleGeminiDataSharingWithGoogleSetting_GenerateConfigForImportPar
 	return nil
 }
 
-func validateGoogleGeminiDataSharingWithGoogleSetting_IsConstructParameters(x interface{}) error {
+func validateGoogleGeminiDataSharingWithGoogleSetting_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleGeminiDataSharingWithGoogleSetting_IsConstructParameters(x in
 	return nil
 }
 
-func validateGoogleGeminiDataSharingWithGoogleSetting_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGeminiDataSharingWithGoogleSetting_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleGeminiDataSharingWithGoogleSetting_IsTerraformElementParamete
 	return nil
 }
 
-func validateGoogleGeminiDataSharingWithGoogleSetting_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGeminiDataSharingWithGoogleSetting_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleGeminiDataSharingWithGoogleSetting_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetDataShar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetEnableDataSharingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetEnableDataSharingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetEnableDa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetEnablePreviewDataSharingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetEnablePreviewDataSharingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetProjectP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewGoogleGeminiDataSharingWithGoogleSettingParameters(scope constru
 
 	return nil
 }
-

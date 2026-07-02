@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateSetPermanentObjectDeletionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateSetPermanentObjectDeletionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleStorageBatchOperationsJobDeleteObjectOutputReferenceParame
 
 	return nil
 }
-

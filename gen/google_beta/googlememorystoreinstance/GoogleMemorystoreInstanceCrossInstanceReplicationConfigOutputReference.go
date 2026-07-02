@@ -12,9 +12,9 @@ type GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference inte
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,7 +36,7 @@ type GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference inte
 	PrimaryInstance() GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference
 	PrimaryInstanceInput() *GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance
 	SecondaryInstances() GoogleMemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList
-	SecondaryInstancesInput() interface{}
+	SecondaryInstancesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference inte
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,13 +71,13 @@ type GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPrimaryInstance(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance)
-	PutSecondaryInstances(value interface{})
+	PutSecondaryInstances(value any)
 	ResetInstanceRole()
 	ResetPrimaryInstance()
 	ResetSecondaryInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputRefe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SecondaryInstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SecondaryInstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondaryInstancesInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	return returns
 }
 
-
 func NewGoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewGoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference(t
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewGoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference_O
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference)SetInstanceRole(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SetInstanceRole(val *string) {
 	if err := j.validateSetInstanceRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference)SetInternalValue(val *GoogleMemorystoreInstanceCrossInstanceReplicationConfig) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SetInternalValue(val *GoogleMemorystoreInstanceCrossInstanceReplicationConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -527,18 +526,18 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	_jsii_.InvokeVoid(
 		g,
 		"putPrimaryInstance",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) PutSecondaryInstances(value interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) PutSecondaryInstances(value any) {
 	if err := g.validatePutSecondaryInstancesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSecondaryInstances",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -566,16 +565,16 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -594,4 +593,3 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 
 	return returns
 }
-

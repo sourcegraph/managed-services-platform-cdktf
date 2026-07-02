@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) validateSetCa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewGoogleBillingBudgetBudgetFilterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

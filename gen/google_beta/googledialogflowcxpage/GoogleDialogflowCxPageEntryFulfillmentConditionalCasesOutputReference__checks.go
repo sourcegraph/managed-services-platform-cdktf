@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputRefe
 
 	return nil
 }
-

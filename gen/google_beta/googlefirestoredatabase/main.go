@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirestoreDatabase.GoogleFirestoreDatabase",
-		reflect.TypeOf((*GoogleFirestoreDatabase)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirestoreDatabase](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "versionRetentionPeriod", GoGetter: "VersionRetentionPeriod"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirestoreDatabase{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,11 +109,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirestoreDatabase.GoogleFirestoreDatabaseCmekConfig",
-		reflect.TypeOf((*GoogleFirestoreDatabaseCmekConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirestoreDatabaseCmekConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirestoreDatabase.GoogleFirestoreDatabaseCmekConfigOutputReference",
-		reflect.TypeOf((*GoogleFirestoreDatabaseCmekConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirestoreDatabaseCmekConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirestoreDatabaseCmekConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,15 +148,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig",
-		reflect.TypeOf((*GoogleFirestoreDatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirestoreDatabaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirestoreDatabase.GoogleFirestoreDatabaseTimeouts",
-		reflect.TypeOf((*GoogleFirestoreDatabaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirestoreDatabaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirestoreDatabase.GoogleFirestoreDatabaseTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirestoreDatabaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirestoreDatabaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirestoreDatabaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

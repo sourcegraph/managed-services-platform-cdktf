@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
-		reflect.TypeOf((*GoogleContainerAzureNodePool)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,11 +107,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolAutoscaling",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolAutoscaling)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolAutoscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolAutoscalingOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolAutoscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolAutoscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolAutoscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigA",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigA)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmSize", GoGetter: "VmSize"},
 			_jsii_.MemberProperty{JsiiProperty: "vmSizeInput", GoGetter: "VmSizeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigProxyConfig",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigProxyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigProxyConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigProxyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigProxyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolConfigProxyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,11 +250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigRootVolume",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigRootVolume)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigRootVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigRootVolumeOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigRootVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigRootVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolConfigRootVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigSshConfig",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigSshConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigSshConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigSshConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolConfigSshConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolConfigSshConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizedKey", GoGetter: "AuthorizedKey"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedKeyInput", GoGetter: "AuthorizedKeyInput"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolConfigSshConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolManagement",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolManagement)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolManagement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolManagementOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolManagementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolManagementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRepair", GoGetter: "AutoRepair"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRepairInput", GoGetter: "AutoRepairInput"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolManagementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -366,11 +366,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolMaxPodsConstraint",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolMaxPodsConstraint)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolMaxPodsConstraint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,11 +404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureNodePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureNodePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -441,7 +441,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

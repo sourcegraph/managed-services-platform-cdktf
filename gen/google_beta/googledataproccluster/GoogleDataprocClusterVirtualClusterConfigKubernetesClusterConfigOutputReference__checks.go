@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewGoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig
 
 	return nil
 }
-

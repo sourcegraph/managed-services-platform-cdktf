@@ -6,9 +6,9 @@ import (
 
 type GoogleBigqueryAnalyticsHubListingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleBigqueryAnalyticsHubListingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the data exchange.
 	//
 	// Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
@@ -77,7 +77,7 @@ type GoogleBigqueryAnalyticsHubListingConfig struct {
 	// Once enabled, this setting cannot be turned off.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing#log_linked_dataset_query_user_email GoogleBigqueryAnalyticsHubListing#log_linked_dataset_query_user_email}
-	LogLinkedDatasetQueryUserEmail interface{} `field:"optional" json:"logLinkedDatasetQueryUserEmail" yaml:"logLinkedDatasetQueryUserEmail"`
+	LogLinkedDatasetQueryUserEmail any `field:"optional" json:"logLinkedDatasetQueryUserEmail" yaml:"logLinkedDatasetQueryUserEmail"`
 	// Email or URL of the primary point of contact of the listing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing#primary_contact GoogleBigqueryAnalyticsHubListing#primary_contact}
@@ -105,4 +105,3 @@ type GoogleBigqueryAnalyticsHubListingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing#timeouts GoogleBigqueryAnalyticsHubListing#timeouts}
 	Timeouts *GoogleBigqueryAnalyticsHubListingTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJob",
-		reflect.TypeOf((*GoogleHealthcarePipelineJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,11 +95,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobBackfillPipelineJob",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobBackfillPipelineJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobBackfillPipelineJob](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobBackfillPipelineJobOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobBackfillPipelineJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobBackfillPipelineJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobBackfillPipelineJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,19 +134,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobConfig",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJob",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSource",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -183,11 +183,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobMappingConfig",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobMappingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobMappingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "whistleConfigSource", GoGetter: "WhistleConfigSource"},
 			_jsii_.MemberProperty{JsiiProperty: "whistleConfigSourceInput", GoGetter: "WhistleConfigSourceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSource",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,7 +266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobMappingPipelineJobOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobMappingPipelineJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobMappingPipelineJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -311,15 +311,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobReconciliationPipelineJob",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobReconciliationPipelineJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobReconciliationPipelineJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfig",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "whistleConfigSource", GoGetter: "WhistleConfigSource"},
 			_jsii_.MemberProperty{JsiiProperty: "whistleConfigSourceInput", GoGetter: "WhistleConfigSourceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,11 +357,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSource",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -397,7 +397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobReconciliationPipelineJobOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobReconciliationPipelineJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobReconciliationPipelineJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -429,7 +429,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobReconciliationPipelineJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -437,11 +437,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobTimeouts",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcarePipelineJob.GoogleHealthcarePipelineJobTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleHealthcarePipelineJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcarePipelineJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -474,7 +474,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

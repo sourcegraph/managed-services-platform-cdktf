@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleStorageBucketIpFilterVpcNetworkSourcesListParameters(terra
 
 	return nil
 }
-

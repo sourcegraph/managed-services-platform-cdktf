@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolAutoscalingOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleContainerAzureNodePoolAutoscalingOutputReferenceParameters
 
 	return nil
 }
-

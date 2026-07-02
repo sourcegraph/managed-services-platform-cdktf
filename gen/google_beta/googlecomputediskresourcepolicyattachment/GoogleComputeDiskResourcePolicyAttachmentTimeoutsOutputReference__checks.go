@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference
 
 	return nil
 }
-

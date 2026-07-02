@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnection",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnection)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConfig", GoGetter: "VpcPeeringConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConfigInput", GoGetter: "VpcPeeringConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionConfig",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionError",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionError)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionErrorList",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionErrorList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -121,7 +121,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionErrorOutputReference",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionTimeouts",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,11 +200,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfig",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServicePrivateConnection.GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference",
-		reflect.TypeOf((*GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcName", GoGetter: "VpcName"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcNameInput", GoGetter: "VpcNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

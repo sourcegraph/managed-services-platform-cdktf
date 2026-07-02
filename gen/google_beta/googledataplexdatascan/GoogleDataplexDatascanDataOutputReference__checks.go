@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataplexDatascanDataOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleBigqueryRoutineSparkOptionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRoutineSparkOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryRoutineSparkOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -278,4 +278,3 @@ func validateNewGoogleBigqueryRoutineSparkOptionsOutputReferenceParameters(terra
 
 	return nil
 }
-

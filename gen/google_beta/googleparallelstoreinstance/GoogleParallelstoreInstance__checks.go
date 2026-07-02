@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParallelstoreInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleParallelstoreInstance_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleParallelstoreInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleParallelstoreInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleParallelstoreInstance_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleParallelstoreInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleParallelstoreInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleParallelstoreInstance_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleParallelstoreInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleParallelstoreInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetCapacityGibParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewGoogleParallelstoreInstanceParameters(scope constructs.Construct
 
 	return nil
 }
-

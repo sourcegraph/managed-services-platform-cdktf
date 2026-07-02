@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleContainerClusterNodeConfigTaintOutputReferenceParameters(t
 
 	return nil
 }
-

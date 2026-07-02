@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowNluSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowNluSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowNluSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDialogflowCxFlowNluSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference) validateSetAllowSubjectAltNamesPassthroughParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference) validateSetAllowSubjectAltNamesPassthroughParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference) validateSetAllowSubjectPassthroughParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference) validateSetAllowSubjectPassthroughParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -149,7 +149,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputRefe
 
 	return nil
 }
-

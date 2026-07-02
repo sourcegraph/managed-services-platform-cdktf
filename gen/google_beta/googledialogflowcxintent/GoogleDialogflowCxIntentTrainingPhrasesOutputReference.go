@@ -12,9 +12,9 @@ type GoogleDialogflowCxIntentTrainingPhrasesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,10 +28,10 @@ type GoogleDialogflowCxIntentTrainingPhrasesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Parts() GoogleDialogflowCxIntentTrainingPhrasesPartsList
-	PartsInput() interface{}
+	PartsInput() any
 	RepeatCount() *float64
 	SetRepeatCount(val *float64)
 	RepeatCountInput() *float64
@@ -46,7 +46,7 @@ type GoogleDialogflowCxIntentTrainingPhrasesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,11 +67,11 @@ type GoogleDialogflowCxIntentTrainingPhrasesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutParts(value interface{})
+	PutParts(value any)
 	ResetRepeatCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Id() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Parts
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) PartsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) PartsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"partsInput",
@@ -204,7 +204,6 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Terra
 	return returns
 }
 
-
 func NewGoogleDialogflowCxIntentTrainingPhrasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleDialogflowCxIntentTrainingPhrasesOutputReference {
 	_init_.Initialize()
 
@@ -215,7 +214,7 @@ func NewGoogleDialogflowCxIntentTrainingPhrasesOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -227,12 +226,12 @@ func NewGoogleDialogflowCxIntentTrainingPhrasesOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetRepeatCount(val *float64) {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) SetRepeatCount(val *float64) {
 	if err := j.validateSetRepeatCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetRep
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,21 +476,21 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) PutParts(value interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) PutParts(value any) {
 	if err := g.validatePutPartsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putParts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -503,16 +502,16 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -531,4 +530,3 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesOutputReference) ToStr
 
 	return returns
 }
-

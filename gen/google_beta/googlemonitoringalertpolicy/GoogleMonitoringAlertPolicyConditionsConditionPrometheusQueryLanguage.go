@@ -1,6 +1,5 @@
 package googlemonitoringalertpolicy
 
-
 type GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage struct {
 	// The PromQL expression to evaluate.
 	//
@@ -33,7 +32,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage struc
 	// name of the non-existent metric in the alerting policy condition.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_monitoring_alert_policy#disable_metric_validation GoogleMonitoringAlertPolicy#disable_metric_validation}
-	DisableMetricValidation interface{} `field:"optional" json:"disableMetricValidation" yaml:"disableMetricValidation"`
+	DisableMetricValidation any `field:"optional" json:"disableMetricValidation" yaml:"disableMetricValidation"`
 	// Alerts are considered firing once their PromQL expression evaluated to be "true" for this long.
 	//
 	// Alerts whose PromQL expression was not
@@ -73,4 +72,3 @@ type GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage struc
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_monitoring_alert_policy#rule_group GoogleMonitoringAlertPolicy#rule_group}
 	RuleGroup *string `field:"optional" json:"ruleGroup" yaml:"ruleGroup"`
 }
-

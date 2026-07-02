@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdm
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdm
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminU
 
 	return nil
 }
-

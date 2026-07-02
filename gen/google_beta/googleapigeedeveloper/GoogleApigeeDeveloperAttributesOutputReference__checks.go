@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApigeeDeveloperAttributesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeDeveloperAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeDeveloperAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleApigeeDeveloperAttributesOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeDeveloperAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeDeveloperAttributesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleApigeeDeveloperAttributesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

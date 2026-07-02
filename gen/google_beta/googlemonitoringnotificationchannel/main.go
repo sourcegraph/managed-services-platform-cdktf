@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
-		reflect.TypeOf((*GoogleMonitoringNotificationChannel)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringNotificationChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationStatus", GoGetter: "VerificationStatus"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringNotificationChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelConfig",
-		reflect.TypeOf((*GoogleMonitoringNotificationChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringNotificationChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabels",
-		reflect.TypeOf((*GoogleMonitoringNotificationChannelSensitiveLabels)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringNotificationChannelSensitiveLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authToken", GoGetter: "AuthToken"},
 			_jsii_.MemberProperty{JsiiProperty: "authTokenInput", GoGetter: "AuthTokenInput"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelTimeouts",
-		reflect.TypeOf((*GoogleMonitoringNotificationChannelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringNotificationChannelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringNotificationChannelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringNotificationChannelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringNotificationChannelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

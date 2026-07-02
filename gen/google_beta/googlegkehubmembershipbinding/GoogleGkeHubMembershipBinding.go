@@ -15,15 +15,15 @@ type GoogleGkeHubMembershipBinding interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeleteTime() *string
 	// Experimental.
@@ -69,11 +69,11 @@ type GoogleGkeHubMembershipBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -82,20 +82,20 @@ type GoogleGkeHubMembershipBinding interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleGkeHubMembershipBindingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleGkeHubMembershipBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type GoogleGkeHubMembershipBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type GoogleGkeHubMembershipBinding interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleGkeHubMembershipBinding
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) Timeouts() GoogleGkeHubMembers
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -558,7 +558,6 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_membership_binding google_gke_hub_membership_binding} Resource.
 func NewGoogleGkeHubMembershipBinding(scope constructs.Construct, id *string, config *GoogleGkeHubMembershipBindingConfig) GoogleGkeHubMembershipBinding {
 	_init_.Initialize()
@@ -570,7 +569,7 @@ func NewGoogleGkeHubMembershipBinding(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeHubMembershipBinding.GoogleGkeHubMembershipBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -583,12 +582,12 @@ func NewGoogleGkeHubMembershipBinding_Override(g GoogleGkeHubMembershipBinding, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeHubMembershipBinding.GoogleGkeHubMembershipBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -626,7 +625,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetLabels(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetMembershipBindingId(val *string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetMembershipBindingId(val *string) {
 	if err := j.validateSetMembershipBindingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetMembershipBindingId(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetMembershipId(val *string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetMembershipId(val *string) {
 	if err := j.validateSetMembershipIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetMembershipId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetProject(val *string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipBinding)SetScope(val *string) {
+func (j *jsiiProxy_GoogleGkeHubMembershipBinding) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func GoogleGkeHubMembershipBinding_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeHubMembershipBinding.GoogleGkeHubMembershipBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func GoogleGkeHubMembershipBinding_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleGkeHubMembershipBinding_IsConstruct(x interface{}) *bool {
+func GoogleGkeHubMembershipBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGkeHubMembershipBinding_IsConstructParameters(x); err != nil {
@@ -780,7 +779,7 @@ func GoogleGkeHubMembershipBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeHubMembershipBinding.GoogleGkeHubMembershipBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func GoogleGkeHubMembershipBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGkeHubMembershipBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleGkeHubMembershipBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGkeHubMembershipBinding_IsTerraformElementParameters(x); err != nil {
@@ -799,7 +798,7 @@ func GoogleGkeHubMembershipBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeHubMembershipBinding.GoogleGkeHubMembershipBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func GoogleGkeHubMembershipBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGkeHubMembershipBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleGkeHubMembershipBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGkeHubMembershipBinding_IsTerraformResourceParameters(x); err != nil {
@@ -818,7 +817,7 @@ func GoogleGkeHubMembershipBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeHubMembershipBinding.GoogleGkeHubMembershipBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -843,31 +842,31 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,15 +994,15 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,7 +1021,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1035,7 +1034,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,18 +1048,18 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1071,7 +1070,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1082,7 +1081,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1093,7 +1092,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) PutTimeouts(value *GoogleGkeHu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1137,8 +1136,8 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1150,8 +1149,8 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1163,8 +1162,8 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1176,8 +1175,8 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1202,8 +1201,8 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1214,4 +1213,3 @@ func (g *jsiiProxy_GoogleGkeHubMembershipBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

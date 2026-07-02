@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateInter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutGeoParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutGeoParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutPr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutWrrParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutWrrParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,7 +236,7 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetEnableGeoFencingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetEnableGeoFencingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,4 +299,3 @@ func validateNewGoogleDnsRecordSetRoutingPolicyOutputReferenceParameters(terrafo
 
 	return nil
 }
-

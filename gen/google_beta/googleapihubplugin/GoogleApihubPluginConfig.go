@@ -6,9 +6,9 @@ import (
 
 type GoogleApihubPluginConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleApihubPluginConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name of the plugin. Max length is 50 characters (Unicode code points).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin#display_name GoogleApihubPlugin#display_name}
@@ -47,7 +47,7 @@ type GoogleApihubPluginConfig struct {
 	// actions_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin#actions_config GoogleApihubPlugin#actions_config}
-	ActionsConfig interface{} `field:"optional" json:"actionsConfig" yaml:"actionsConfig"`
+	ActionsConfig any `field:"optional" json:"actionsConfig" yaml:"actionsConfig"`
 	// config_template block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin#config_template GoogleApihubPlugin#config_template}
@@ -80,4 +80,3 @@ type GoogleApihubPluginConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin#timeouts GoogleApihubPlugin#timeouts}
 	Timeouts *GoogleApihubPluginTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

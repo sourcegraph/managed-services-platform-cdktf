@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSqlOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleBigqueryConnectionCloudSqlOutputReferenceParameters(terraf
 
 	return nil
 }
-

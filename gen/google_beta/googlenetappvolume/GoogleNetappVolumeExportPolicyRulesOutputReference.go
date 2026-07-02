@@ -18,9 +18,9 @@ type GoogleNetappVolumeExportPolicyRulesOutputReference interface {
 	AllowedClientsInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,32 +36,32 @@ type GoogleNetappVolumeExportPolicyRulesOutputReference interface {
 	HasRootAccess() *string
 	SetHasRootAccess(val *string)
 	HasRootAccessInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Kerberos5IReadOnly() interface{}
-	SetKerberos5IReadOnly(val interface{})
-	Kerberos5IReadOnlyInput() interface{}
-	Kerberos5IReadWrite() interface{}
-	SetKerberos5IReadWrite(val interface{})
-	Kerberos5IReadWriteInput() interface{}
-	Kerberos5PReadOnly() interface{}
-	SetKerberos5PReadOnly(val interface{})
-	Kerberos5PReadOnlyInput() interface{}
-	Kerberos5PReadWrite() interface{}
-	SetKerberos5PReadWrite(val interface{})
-	Kerberos5PReadWriteInput() interface{}
-	Kerberos5ReadOnly() interface{}
-	SetKerberos5ReadOnly(val interface{})
-	Kerberos5ReadOnlyInput() interface{}
-	Kerberos5ReadWrite() interface{}
-	SetKerberos5ReadWrite(val interface{})
-	Kerberos5ReadWriteInput() interface{}
-	Nfsv3() interface{}
-	SetNfsv3(val interface{})
-	Nfsv3Input() interface{}
-	Nfsv4() interface{}
-	SetNfsv4(val interface{})
-	Nfsv4Input() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Kerberos5IReadOnly() any
+	SetKerberos5IReadOnly(val any)
+	Kerberos5IReadOnlyInput() any
+	Kerberos5IReadWrite() any
+	SetKerberos5IReadWrite(val any)
+	Kerberos5IReadWriteInput() any
+	Kerberos5PReadOnly() any
+	SetKerberos5PReadOnly(val any)
+	Kerberos5PReadOnlyInput() any
+	Kerberos5PReadWrite() any
+	SetKerberos5PReadWrite(val any)
+	Kerberos5PReadWriteInput() any
+	Kerberos5ReadOnly() any
+	SetKerberos5ReadOnly(val any)
+	Kerberos5ReadOnlyInput() any
+	Kerberos5ReadWrite() any
+	SetKerberos5ReadWrite(val any)
+	Kerberos5ReadWriteInput() any
+	Nfsv3() any
+	SetNfsv3(val any)
+	Nfsv3Input() any
+	Nfsv4() any
+	SetNfsv4(val any)
+	Nfsv4Input() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +73,7 @@ type GoogleNetappVolumeExportPolicyRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type GoogleNetappVolumeExportPolicyRulesOutputReference interface {
 	ResetNfsv4()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) AllowedCl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) HasRootAc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5IReadOnly",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5IReadOnlyInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadWrite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadWrite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5IReadWrite",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadWriteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5IReadWriteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5IReadWriteInput",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5PReadOnly",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5PReadOnlyInput",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadWrite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadWrite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5PReadWrite",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadWriteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5PReadWriteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5PReadWriteInput",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5ReadOnly",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5ReadOnlyInput",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadWrite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadWrite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5ReadWrite",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadWriteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5ReadWriteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberos5ReadWriteInput",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Kerberos5
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv3() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv3() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsv3",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv3() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv3Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv3Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsv3Input",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv3Inpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv4() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv4() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsv4",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv4() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv4Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Nfsv4Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsv4Input",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Terraform
 	return returns
 }
 
-
 func NewGoogleNetappVolumeExportPolicyRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleNetappVolumeExportPolicyRulesOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewGoogleNetappVolumeExportPolicyRulesOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolumeExportPolicyRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewGoogleNetappVolumeExportPolicyRulesOutputReference_Override(g GoogleNeta
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolumeExportPolicyRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetAccessType(val *string) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetAccessType(val *string) {
 	if err := j.validateSetAccessTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetAccessT
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetAllowedClients(val *string) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetAllowedClients(val *string) {
 	if err := j.validateSetAllowedClientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetAllowed
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetHasRootAccess(val *string) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetHasRootAccess(val *string) {
 	if err := j.validateSetHasRootAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetHasRoot
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerberos5IReadOnly(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetKerberos5IReadOnly(val any) {
 	if err := j.validateSetKerberos5IReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerbero
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerberos5IReadWrite(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetKerberos5IReadWrite(val any) {
 	if err := j.validateSetKerberos5IReadWriteParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerbero
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerberos5PReadOnly(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetKerberos5PReadOnly(val any) {
 	if err := j.validateSetKerberos5PReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerbero
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerberos5PReadWrite(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetKerberos5PReadWrite(val any) {
 	if err := j.validateSetKerberos5PReadWriteParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerbero
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerberos5ReadOnly(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetKerberos5ReadOnly(val any) {
 	if err := j.validateSetKerberos5ReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerbero
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerberos5ReadWrite(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetKerberos5ReadWrite(val any) {
 	if err := j.validateSetKerberos5ReadWriteParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetKerbero
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetNfsv3(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetNfsv3(val any) {
 	if err := j.validateSetNfsv3Parameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetNfsv3(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetNfsv4(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetNfsv4(val any) {
 	if err := j.validateSetNfsv4Parameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetNfsv4(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) ResetNfsv
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyRulesOutputReference) ToString(
 
 	return returns
 }
-

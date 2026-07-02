@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleNetworkManagementConnectivityTest_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleNetworkManagementConnectivityTest_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkManagementConnectivityTest_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleNetworkManagementConnectivityTest_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleNetworkManagementConnectivityTest_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkManagementConnectivityTest_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleNetworkManagementConnectivityTest_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleNetworkManagementConnectivityTest_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkManagementConnectivityTest_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateGoogleNetworkManagementConnectivityTest_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetBypassFirewallChecksParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetBypassFirewallChecksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetBypassFir
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetProtocolP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,7 +497,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetRelatedPr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetRoundTripParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetRoundTripParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -535,4 +535,3 @@ func validateNewGoogleNetworkManagementConnectivityTestParameters(scope construc
 
 	return nil
 }
-

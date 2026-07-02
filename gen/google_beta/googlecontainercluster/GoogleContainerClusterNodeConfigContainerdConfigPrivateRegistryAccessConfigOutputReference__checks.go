@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegist
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validatePutCertificateAuthorityDomainConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validatePutCertificateAuthorityDomainConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegist
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegist
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryA
 
 	return nil
 }
-

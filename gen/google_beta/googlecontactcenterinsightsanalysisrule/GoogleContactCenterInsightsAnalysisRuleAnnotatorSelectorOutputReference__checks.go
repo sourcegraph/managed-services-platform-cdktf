@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunEntityAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunEntityAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIntentAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIntentAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunInterruptionAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunInterruptionAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIssueModelAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIssueModelAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunPhraseMatcherAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunPhraseMatcherAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunQaAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunQaAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSentimentAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSentimentAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSilenceAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSilenceAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSummarizationAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSummarizationAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -416,4 +416,3 @@ func validateNewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRe
 
 	return nil
 }
-

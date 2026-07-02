@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewGoogleStorageControlProjectIntelligenceConfigFilterOutputReferen
 
 	return nil
 }
-

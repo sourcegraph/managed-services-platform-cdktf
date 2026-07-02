@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigObjectMetadataReportOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewGoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutp
 
 	return nil
 }
-

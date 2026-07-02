@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleMonitoringCustomService) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringCustomService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringCustomService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleMonitoringCustomService) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringCustomService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringCustomService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleMonitoringCustomService_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleMonitoringCustomService_IsConstructParameters(x interface{}) error {
+func validateGoogleMonitoringCustomService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleMonitoringCustomService_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleMonitoringCustomService_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleMonitoringCustomService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleMonitoringCustomService_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleMonitoringCustomService_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleMonitoringCustomService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleMonitoringCustomService_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleMonitoringCustomServiceParameters(scope constructs.Constru
 
 	return nil
 }
-

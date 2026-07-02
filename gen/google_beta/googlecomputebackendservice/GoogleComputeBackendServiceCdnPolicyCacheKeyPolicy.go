@@ -1,11 +1,10 @@
 package googlecomputebackendservice
 
-
 type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// If true requests to different hosts will be cached separately.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#include_host GoogleComputeBackendService#include_host}
-	IncludeHost interface{} `field:"optional" json:"includeHost" yaml:"includeHost"`
+	IncludeHost any `field:"optional" json:"includeHost" yaml:"includeHost"`
 	// Allows HTTP request headers (by name) to be used in the cache key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#include_http_headers GoogleComputeBackendService#include_http_headers}
@@ -17,7 +16,7 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// If true, http and https requests will be cached separately.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#include_protocol GoogleComputeBackendService#include_protocol}
-	IncludeProtocol interface{} `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
+	IncludeProtocol any `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
 	// If true, include query string parameters in the cache key according to query_string_whitelist and query_string_blacklist.
 	//
 	// If neither is set, the entire query
@@ -27,7 +26,7 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// key entirely.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#include_query_string GoogleComputeBackendService#include_query_string}
-	IncludeQueryString interface{} `field:"optional" json:"includeQueryString" yaml:"includeQueryString"`
+	IncludeQueryString any `field:"optional" json:"includeQueryString" yaml:"includeQueryString"`
 	// Names of query string parameters to exclude in cache keys.
 	//
 	// All other parameters will be included. Either specify
@@ -47,4 +46,3 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#query_string_whitelist GoogleComputeBackendService#query_string_whitelist}
 	QueryStringWhitelist *[]*string `field:"optional" json:"queryStringWhitelist" yaml:"queryStringWhitelist"`
 }
-

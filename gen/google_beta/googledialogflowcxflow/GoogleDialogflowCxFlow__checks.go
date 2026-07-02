@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlow) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlow) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlow) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutAdvancedSettingsParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutEventHandlersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutEventHandlersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutTimeoutsParameters(value *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutTransitionRoutesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutTransitionRoutesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func validateGoogleDialogflowCxFlow_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateGoogleDialogflowCxFlow_IsConstructParameters(x interface{}) error {
+func validateGoogleDialogflowCxFlow_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func validateGoogleDialogflowCxFlow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleDialogflowCxFlow_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDialogflowCxFlow_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func validateGoogleDialogflowCxFlow_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleDialogflowCxFlow_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDialogflowCxFlow_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -350,7 +350,7 @@ func validateGoogleDialogflowCxFlow_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -383,7 +383,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -464,7 +464,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -508,7 +508,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetParentParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -580,4 +580,3 @@ func validateNewGoogleDialogflowCxFlowParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

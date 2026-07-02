@@ -109,7 +109,7 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGooglePubsubTopicMessageTransformsOutputReferenceParameters(terr
 
 	return nil
 }
-

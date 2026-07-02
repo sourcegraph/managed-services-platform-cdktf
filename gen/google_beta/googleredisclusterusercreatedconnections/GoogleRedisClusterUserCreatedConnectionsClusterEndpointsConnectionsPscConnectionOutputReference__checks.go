@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsConne
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleRedisClusterUserCreatedConnectionsClusterEndpointsConnecti
 
 	return nil
 }
-

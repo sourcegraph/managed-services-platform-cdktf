@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKey",
-		reflect.TypeOf((*GoogleApikeysKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,23 +82,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyConfig",
-		reflect.TypeOf((*GoogleApikeysKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictions",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictions)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictions",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictions)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsAndroidKeyRestrictions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,7 +156,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedApplications", GoGetter: "AllowedApplications"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedApplicationsInput", GoGetter: "AllowedApplicationsInput"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,11 +191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargets",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsApiTargets)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsApiTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsApiTargetsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsApiTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsApiTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -217,7 +217,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsApiTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsApiTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsApiTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,11 +254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsBrowserKeyRestrictions",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsBrowserKeyRestrictions)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsBrowserKeyRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedReferrers", GoGetter: "AllowedReferrers"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedReferrersInput", GoGetter: "AllowedReferrersInput"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -292,11 +292,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsIosKeyRestrictions",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsIosKeyRestrictions)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsIosKeyRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedBundleIds", GoGetter: "AllowedBundleIds"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedBundleIdsInput", GoGetter: "AllowedBundleIdsInput"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,7 +330,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "androidKeyRestrictions", GoGetter: "AndroidKeyRestrictions"},
 			_jsii_.MemberProperty{JsiiProperty: "androidKeyRestrictionsInput", GoGetter: "AndroidKeyRestrictionsInput"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,11 +382,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsServerKeyRestrictions",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsServerKeyRestrictions)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsServerKeyRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIps", GoGetter: "AllowedIps"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpsInput", GoGetter: "AllowedIpsInput"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,11 +420,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyTimeouts",
-		reflect.TypeOf((*GoogleApikeysKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApikeysKey.GoogleApikeysKeyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApikeysKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApikeysKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -457,7 +457,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

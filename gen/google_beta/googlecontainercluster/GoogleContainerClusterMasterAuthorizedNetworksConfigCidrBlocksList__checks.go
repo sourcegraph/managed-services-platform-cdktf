@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlock
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksLi
 
 	return nil
 }
-

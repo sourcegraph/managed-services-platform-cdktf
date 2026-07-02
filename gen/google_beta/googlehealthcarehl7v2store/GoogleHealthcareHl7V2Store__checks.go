@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validatePutNotificationConfigPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validatePutNotificationConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validatePutNotificationConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateGoogleHealthcareHl7V2Store_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleHealthcareHl7V2Store_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareHl7V2Store_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateGoogleHealthcareHl7V2Store_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleHealthcareHl7V2Store_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareHl7V2Store_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateGoogleHealthcareHl7V2Store_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleHealthcareHl7V2Store_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareHl7V2Store_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateGoogleHealthcareHl7V2Store_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetRejectDuplicateMessageParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2Store) validateSetRejectDuplicateMessageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -522,4 +522,3 @@ func validateNewGoogleHealthcareHl7V2StoreParameters(scope constructs.Construct,
 
 	return nil
 }
-

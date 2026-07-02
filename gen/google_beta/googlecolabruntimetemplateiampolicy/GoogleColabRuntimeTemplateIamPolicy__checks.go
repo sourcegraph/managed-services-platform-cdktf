@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleColabRuntimeTemplateIamPolicy_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleColabRuntimeTemplateIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleColabRuntimeTemplateIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleColabRuntimeTemplateIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleColabRuntimeTemplateIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleColabRuntimeTemplateIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleColabRuntimeTemplateIamPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleColabRuntimeTemplateIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleColabRuntimeTemplateIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleColabRuntimeTemplateIamPolicy_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGoogleColabRuntimeTemplateIamPolicyParameters(scope constructs.C
 
 	return nil
 }
-

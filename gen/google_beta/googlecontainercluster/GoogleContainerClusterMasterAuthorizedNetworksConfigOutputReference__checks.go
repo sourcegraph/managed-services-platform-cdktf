@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validatePutCidrBlocksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validatePutCidrBlocksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetGcpPublicCidrsAccessEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetGcpPublicCidrsAccessEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetPrivateEndpointEnforcementEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetPrivateEndpointEnforcementEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,4 +269,3 @@ func validateNewGoogleContainerClusterMasterAuthorizedNetworksConfigOutputRefere
 
 	return nil
 }
-

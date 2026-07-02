@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkServicesAuthzExtension_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleNetworkServicesAuthzExtension_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkServicesAuthzExtension_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkServicesAuthzExtension_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleNetworkServicesAuthzExtension_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkServicesAuthzExtension_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkServicesAuthzExtension_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleNetworkServicesAuthzExtension_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkServicesAuthzExtension_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetAuthorityPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetDescriptionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -541,4 +541,3 @@ func validateNewGoogleNetworkServicesAuthzExtensionParameters(scope constructs.C
 
 	return nil
 }
-

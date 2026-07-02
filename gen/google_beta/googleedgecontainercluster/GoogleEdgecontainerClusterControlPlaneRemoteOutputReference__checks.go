@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterControlPlaneRemoteOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterControlPlaneRemoteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterControlPlaneRemoteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerClusterControlPlaneRemoteOutputReferenceParam
 
 	return nil
 }
-

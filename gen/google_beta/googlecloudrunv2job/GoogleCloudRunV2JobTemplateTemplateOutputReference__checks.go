@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutContainersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -322,4 +322,3 @@ func validateNewGoogleCloudRunV2JobTemplateTemplateOutputReferenceParameters(ter
 
 	return nil
 }
-

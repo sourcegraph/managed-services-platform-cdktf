@@ -112,7 +112,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validatePutParsingConfigOverridesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validatePutParsingConfigOverridesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewGoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputRefe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleLoggingProjectBucketConfigIndexConfigsOutputReferenceParam
 
 	return nil
 }
-

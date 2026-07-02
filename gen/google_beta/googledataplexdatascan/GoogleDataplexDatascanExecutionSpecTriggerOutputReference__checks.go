@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataplexDatascanExecutionSpecTriggerOutputReferenceParamet
 
 	return nil
 }
-

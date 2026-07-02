@@ -1,15 +1,14 @@
 package googlediscoveryenginedatastore
 
-
 type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig struct {
 	// If true, the LLM based annotation is added to the image during parsing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_data_store#enable_image_annotation GoogleDiscoveryEngineDataStore#enable_image_annotation}
-	EnableImageAnnotation interface{} `field:"optional" json:"enableImageAnnotation" yaml:"enableImageAnnotation"`
+	EnableImageAnnotation any `field:"optional" json:"enableImageAnnotation" yaml:"enableImageAnnotation"`
 	// If true, the LLM based annotation is added to the table during parsing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_data_store#enable_table_annotation GoogleDiscoveryEngineDataStore#enable_table_annotation}
-	EnableTableAnnotation interface{} `field:"optional" json:"enableTableAnnotation" yaml:"enableTableAnnotation"`
+	EnableTableAnnotation any `field:"optional" json:"enableTableAnnotation" yaml:"enableTableAnnotation"`
 	// List of HTML classes to exclude from the parsed content.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_data_store#exclude_html_classes GoogleDiscoveryEngineDataStore#exclude_html_classes}
@@ -27,4 +26,3 @@ type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigL
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_data_store#structured_content_types GoogleDiscoveryEngineDataStore#structured_content_types}
 	StructuredContentTypes *[]*string `field:"optional" json:"structuredContentTypes" yaml:"structuredContentTypes"`
 }
-

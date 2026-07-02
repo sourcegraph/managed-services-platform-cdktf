@@ -10,14 +10,14 @@ import (
 
 type GoogleHealthcareHl7V2StoreParserConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllowNullHeader() interface{}
-	SetAllowNullHeader(val interface{})
-	AllowNullHeaderInput() interface{}
+	AllowNullHeader() any
+	SetAllowNullHeader(val any)
+	AllowNullHeaderInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type GoogleHealthcareHl7V2StoreParserConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleHealthcareHl7V2StoreParserConfigOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) AllowNullHeader() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) AllowNullHeader() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNullHeader",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) AllowN
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) AllowNullHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) AllowNullHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNullHeaderInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) AllowN
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) Versio
 	return returns
 }
 
-
 func NewGoogleHealthcareHl7V2StoreParserConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareHl7V2StoreParserConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleHealthcareHl7V2StoreParserConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreParserConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleHealthcareHl7V2StoreParserConfigOutputReference_Override(g GoogleH
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreParserConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetAllowNullHeader(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetAllowNullHeader(val any) {
 	if err := j.validateSetAllowNullHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetAllo
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetInternalValue(val *GoogleHealthcareHl7V2StoreParserConfig) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetInternalValue(val *GoogleHealthcareHl7V2StoreParserConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetSchema(val *string) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetSchema(val *string) {
 	if err := j.validateSetSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetSche
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetSegmentTerminator(val *string) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetSegmentTerminator(val *string) {
 	if err := j.validateSetSegmentTerminatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetSegm
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) ResetV
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference) ToStri
 
 	return returns
 }
-

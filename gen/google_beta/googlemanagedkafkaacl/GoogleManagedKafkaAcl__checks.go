@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleManagedKafkaAcl) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaAcl) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleManagedKafkaAcl) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleManagedKafkaAcl) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleManagedKafkaAcl) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleManagedKafkaAcl) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaAcl) validatePutAclEntriesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleManagedKafkaAcl) validatePutAclEntriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleManagedKafkaAcl_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateGoogleManagedKafkaAcl_IsConstructParameters(x interface{}) error {
+func validateGoogleManagedKafkaAcl_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleManagedKafkaAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleManagedKafkaAcl_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleManagedKafkaAcl_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleManagedKafkaAcl_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleManagedKafkaAcl_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleManagedKafkaAcl_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetClusterParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -488,4 +488,3 @@ func validateNewGoogleManagedKafkaAclParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

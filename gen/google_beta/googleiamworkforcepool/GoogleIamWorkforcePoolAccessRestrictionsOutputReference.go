@@ -11,12 +11,12 @@ import (
 type GoogleIamWorkforcePoolAccessRestrictionsOutputReference interface {
 	cdktf.ComplexObject
 	AllowedServices() GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList
-	AllowedServicesInput() interface{}
+	AllowedServicesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type GoogleIamWorkforcePoolAccessRestrictionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableProgrammaticSignin() interface{}
-	SetDisableProgrammaticSignin(val interface{})
-	DisableProgrammaticSigninInput() interface{}
+	DisableProgrammaticSignin() any
+	SetDisableProgrammaticSignin(val any)
+	DisableProgrammaticSigninInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleIamWorkforcePoolAccessRestrictions
@@ -45,7 +45,7 @@ type GoogleIamWorkforcePoolAccessRestrictionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type GoogleIamWorkforcePoolAccessRestrictionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAllowedServices(value interface{})
+	PutAllowedServices(value any)
 	ResetAllowedServices()
 	ResetDisableProgrammaticSignin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Allo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) AllowedServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) AllowedServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedServicesInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Allo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Crea
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSignin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSignin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProgrammaticSignin",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Disa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSigninInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSigninInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProgrammaticSigninInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Terr
 	return returns
 }
 
-
 func NewGoogleIamWorkforcePoolAccessRestrictionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIamWorkforcePoolAccessRestrictionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleIamWorkforcePoolAccessRestrictionsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleIamWorkforcePoolAccessRestrictionsOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetDisableProgrammaticSignin(val interface{}) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) SetDisableProgrammaticSignin(val any) {
 	if err := j.validateSetDisableProgrammaticSigninParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetDi
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetInternalValue(val *GoogleIamWorkforcePoolAccessRestrictions) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) SetInternalValue(val *GoogleIamWorkforcePoolAccessRestrictions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) PutAllowedServices(value interface{}) {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) PutAllowedServices(value any) {
 	if err := g.validatePutAllowedServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAllowedServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) ToSt
 
 	return returns
 }
-

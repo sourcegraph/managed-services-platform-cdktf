@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleBigqueryConnectionIamBinding_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleBigqueryConnectionIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryConnectionIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleBigqueryConnectionIamBinding_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleBigqueryConnectionIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryConnectionIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleBigqueryConnectionIamBinding_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleBigqueryConnectionIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryConnectionIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleBigqueryConnectionIamBinding_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetConnectionIdPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleBigqueryConnectionIamBindingParameters(scope constructs.Co
 
 	return nil
 }
-

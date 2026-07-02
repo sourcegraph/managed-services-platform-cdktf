@@ -6,9 +6,9 @@ import (
 
 type GoogleProjectServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type GoogleProjectServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service#service GoogleProjectService#service}.
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service#check_if_service_has_usage_on_destroy GoogleProjectService#check_if_service_has_usage_on_destroy}.
-	CheckIfServiceHasUsageOnDestroy interface{} `field:"optional" json:"checkIfServiceHasUsageOnDestroy" yaml:"checkIfServiceHasUsageOnDestroy"`
+	CheckIfServiceHasUsageOnDestroy any `field:"optional" json:"checkIfServiceHasUsageOnDestroy" yaml:"checkIfServiceHasUsageOnDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service#disable_dependent_services GoogleProjectService#disable_dependent_services}.
-	DisableDependentServices interface{} `field:"optional" json:"disableDependentServices" yaml:"disableDependentServices"`
+	DisableDependentServices any `field:"optional" json:"disableDependentServices" yaml:"disableDependentServices"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service#disable_on_destroy GoogleProjectService#disable_on_destroy}.
-	DisableOnDestroy interface{} `field:"optional" json:"disableOnDestroy" yaml:"disableOnDestroy"`
+	DisableOnDestroy any `field:"optional" json:"disableOnDestroy" yaml:"disableOnDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service#id GoogleProjectService#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,4 +39,3 @@ type GoogleProjectServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service#timeouts GoogleProjectService#timeouts}
 	Timeouts *GoogleProjectServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

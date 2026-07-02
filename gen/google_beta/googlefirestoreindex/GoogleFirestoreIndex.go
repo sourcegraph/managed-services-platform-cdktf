@@ -21,15 +21,15 @@ type GoogleFirestoreIndex interface {
 	SetCollection(val *string)
 	CollectionInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -41,7 +41,7 @@ type GoogleFirestoreIndex interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Fields() GoogleFirestoreIndexFieldsList
-	FieldsInput() interface{}
+	FieldsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,9 +57,9 @@ type GoogleFirestoreIndex interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Multikey() interface{}
-	SetMultikey(val interface{})
-	MultikeyInput() interface{}
+	Multikey() any
+	SetMultikey(val any)
+	MultikeyInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -71,29 +71,29 @@ type GoogleFirestoreIndex interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryScope() *string
 	SetQueryScope(val *string)
 	QueryScopeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleFirestoreIndexTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleFirestoreIndex interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type GoogleFirestoreIndex interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFields(value interface{})
+	PutFields(value any)
 	PutTimeouts(value *GoogleFirestoreIndexTimeouts)
 	ResetApiScope()
 	ResetDatabase()
@@ -143,17 +143,17 @@ type GoogleFirestoreIndex interface {
 	ResetProject()
 	ResetQueryScope()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleFirestoreIndex
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) CollectionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Fields() GoogleFirestoreIndexFieldsList
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) FieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) FieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fieldsInput",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) Multikey() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) Multikey() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multikey",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Multikey() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) MultikeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) MultikeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multikeyInput",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) QueryScopeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Timeouts() GoogleFirestoreIndexTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndex) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_GoogleFirestoreIndex) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firestore_index google_firestore_index} Resource.
 func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *GoogleFirestoreIndexConfig) GoogleFirestoreIndex {
@@ -543,7 +542,7 @@ func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewGoogleFirestoreIndex_Override(g GoogleFirestoreIndex, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetApiScope(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetApiScope(val *string) {
 	if err := j.validateSetApiScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetApiScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetCollection(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetCollection(val *string) {
 	if err := j.validateSetCollectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetCollection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetDatabase(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetDensity(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetDensity(val *string) {
 	if err := j.validateSetDensityParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetDensity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -643,7 +642,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetId(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetMultikey(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetMultikey(val any) {
 	if err := j.validateSetMultikeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetMultikey(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetProject(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndex)SetQueryScope(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndex) SetQueryScope(val *string) {
 	if err := j.validateSetQueryScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func GoogleFirestoreIndex_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func GoogleFirestoreIndex_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleFirestoreIndex_IsConstruct(x interface{}) *bool {
+func GoogleFirestoreIndex_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirestoreIndex_IsConstructParameters(x); err != nil {
@@ -764,7 +763,7 @@ func GoogleFirestoreIndex_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func GoogleFirestoreIndex_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirestoreIndex_IsTerraformElement(x interface{}) *bool {
+func GoogleFirestoreIndex_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirestoreIndex_IsTerraformElementParameters(x); err != nil {
@@ -783,7 +782,7 @@ func GoogleFirestoreIndex_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func GoogleFirestoreIndex_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bool {
+func GoogleFirestoreIndex_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirestoreIndex_IsTerraformResourceParameters(x); err != nil {
@@ -802,7 +801,7 @@ func GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,31 +826,31 @@ func (g *jsiiProxy_GoogleFirestoreIndex) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleFirestoreIndex) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirestoreIndex) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,15 +978,15 @@ func (g *jsiiProxy_GoogleFirestoreIndex) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirestoreIndex) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,18 +1032,18 @@ func (g *jsiiProxy_GoogleFirestoreIndex) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleFirestoreIndex) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1066,18 +1065,18 @@ func (g *jsiiProxy_GoogleFirestoreIndex) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) PutFields(value interface{}) {
+func (g *jsiiProxy_GoogleFirestoreIndex) PutFields(value any) {
 	if err := g.validatePutFieldsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putFields",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (g *jsiiProxy_GoogleFirestoreIndex) PutTimeouts(value *GoogleFirestoreIndex
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (g *jsiiProxy_GoogleFirestoreIndex) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirestoreIndex) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1177,8 +1176,8 @@ func (g *jsiiProxy_GoogleFirestoreIndex) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirestoreIndex) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1190,8 +1189,8 @@ func (g *jsiiProxy_GoogleFirestoreIndex) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirestoreIndex) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1203,8 +1202,8 @@ func (g *jsiiProxy_GoogleFirestoreIndex) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirestoreIndex) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1229,8 +1228,8 @@ func (g *jsiiProxy_GoogleFirestoreIndex) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndex) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirestoreIndex) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1241,4 +1240,3 @@ func (g *jsiiProxy_GoogleFirestoreIndex) ToTerraform() interface{} {
 
 	return returns
 }
-
