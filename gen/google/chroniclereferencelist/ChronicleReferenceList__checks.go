@@ -19,7 +19,7 @@ func (c *jsiiProxy_ChronicleReferenceList) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ChronicleReferenceList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ChronicleReferenceList) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ChronicleReferenceList) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ChronicleReferenceList) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceList) validatePutEntriesParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleReferenceList) validatePutEntriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateChronicleReferenceList_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateChronicleReferenceList_IsConstructParameters(x interface{}) error {
+func validateChronicleReferenceList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateChronicleReferenceList_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateChronicleReferenceList_IsTerraformElementParameters(x interface{}) error {
+func validateChronicleReferenceList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateChronicleReferenceList_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateChronicleReferenceList_IsTerraformResourceParameters(x interface{}) error {
+func validateChronicleReferenceList_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateChronicleReferenceList_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceList) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceList) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ChronicleReferenceList) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ChronicleReferenceList) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceList) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceList) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewChronicleReferenceListParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

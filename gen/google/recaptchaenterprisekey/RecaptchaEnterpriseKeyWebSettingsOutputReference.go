@@ -10,12 +10,12 @@ import (
 
 type RecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AllowAllDomains() interface{}
-	SetAllowAllDomains(val interface{})
-	AllowAllDomainsInput() interface{}
-	AllowAmpTraffic() interface{}
-	SetAllowAmpTraffic(val interface{})
-	AllowAmpTrafficInput() interface{}
+	AllowAllDomains() any
+	SetAllowAllDomains(val any)
+	AllowAllDomainsInput() any
+	AllowAmpTraffic() any
+	SetAllowAmpTraffic(val any)
+	AllowAmpTrafficInput() any
 	AllowedDomains() *[]*string
 	SetAllowedDomains(val *[]*string)
 	AllowedDomainsInput() *[]*string
@@ -24,9 +24,9 @@ type RecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	ChallengeSecurityPreferenceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type RecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type RecaptchaEnterpriseKeyWebSettingsOutputReference interface {
 	ResetChallengeSecurityPreference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomains() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomains() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllDomains",
@@ -105,8 +105,8 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDom
 	return returns
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDomainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllDomainsInput",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAllDom
 	return returns
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTraffic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTraffic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAmpTraffic",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTra
 	return returns
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTrafficInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) AllowAmpTrafficInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAmpTrafficInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) ChallengeSe
 	return returns
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewRecaptchaEnterpriseKeyWebSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RecaptchaEnterpriseKeyWebSettingsOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewRecaptchaEnterpriseKeyWebSettingsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewRecaptchaEnterpriseKeyWebSettingsOutputReference_Override(r RecaptchaEnt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowAllDomains(val interface{}) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetAllowAllDomains(val any) {
 	if err := j.validateSetAllowAllDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowAllD
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowAmpTraffic(val interface{}) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetAllowAmpTraffic(val any) {
 	if err := j.validateSetAllowAmpTrafficParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowAmpT
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowedDomains(val *[]*string) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetAllowedDomains(val *[]*string) {
 	if err := j.validateSetAllowedDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetAllowedDo
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetChallengeSecurityPreference(val *string) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetChallengeSecurityPreference(val *string) {
 	if err := j.validateSetChallengeSecurityPreferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetChallenge
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetIntegrationType(val *string) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetIntegrationType(val *string) {
 	if err := j.validateSetIntegrationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetIntegrati
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetInternalValue(val *RecaptchaEnterpriseKeyWebSettings) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetInternalValue(val *RecaptchaEnterpriseKeyWebSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) Interpolati
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) ResetChalle
 	)
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) ToString() 
 
 	return returns
 }
-

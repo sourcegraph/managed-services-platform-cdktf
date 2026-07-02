@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionCommitment) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionCommitment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionCommitment) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionCommitment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (c *jsiiProxy_ComputeRegionCommitment) validatePutLicenseResourceParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitment) validatePutResourcesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionCommitment) validatePutResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateComputeRegionCommitment_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateComputeRegionCommitment_IsConstructParameters(x interface{}) error {
+func validateComputeRegionCommitment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateComputeRegionCommitment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateComputeRegionCommitment_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionCommitment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateComputeRegionCommitment_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateComputeRegionCommitment_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionCommitment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateComputeRegionCommitment_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitment) validateSetAutoRenewParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCommitment) validateSetAutoRenewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_ComputeRegionCommitment) validateSetCategoryParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCommitment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ComputeRegionCommitment) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCommitment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -471,7 +471,7 @@ func (j *jsiiProxy_ComputeRegionCommitment) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionCommitment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -551,4 +551,3 @@ func validateNewComputeRegionCommitmentParameters(scope constructs.Construct, id
 
 	return nil
 }
-

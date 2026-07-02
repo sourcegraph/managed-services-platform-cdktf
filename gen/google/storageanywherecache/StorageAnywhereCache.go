@@ -22,15 +22,15 @@ type StorageAnywhereCache interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,20 +59,20 @@ type StorageAnywhereCache interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StorageAnywhereCacheTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Ttl() *string
 	SetTtl(val *string)
 	TtlInput() *string
@@ -84,9 +84,9 @@ type StorageAnywhereCache interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type StorageAnywhereCache interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type StorageAnywhereCache interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type StorageAnywhereCache interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetTtl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StorageAnywhereCache
@@ -209,8 +209,8 @@ func (j *jsiiProxy_StorageAnywhereCache) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageAnywhereCache) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_StorageAnywhereCache) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageAnywhereCache) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_StorageAnywhereCache) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageAnywhereCache) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_StorageAnywhereCache) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StorageAnywhereCache) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_StorageAnywhereCache) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageAnywhereCache) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_StorageAnywhereCache) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageAnywhereCache) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_StorageAnywhereCache) Timeouts() StorageAnywhereCacheTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_StorageAnywhereCache) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageAnywhereCache) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -479,7 +479,6 @@ func (j *jsiiProxy_StorageAnywhereCache) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
 func NewStorageAnywhereCache(scope constructs.Construct, id *string, config *StorageAnywhereCacheConfig) StorageAnywhereCache {
 	_init_.Initialize()
@@ -491,7 +490,7 @@ func NewStorageAnywhereCache(scope constructs.Construct, id *string, config *Sto
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageAnywhereCache.StorageAnywhereCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewStorageAnywhereCache_Override(s StorageAnywhereCache, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageAnywhereCache.StorageAnywhereCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetAdmissionPolicy(val *string) {
+func (j *jsiiProxy_StorageAnywhereCache) SetAdmissionPolicy(val *string) {
 	if err := j.validateSetAdmissionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetAdmissionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetBucket(val *string) {
+func (j *jsiiProxy_StorageAnywhereCache) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageAnywhereCache) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetCount(val interface{}) {
+func (j *jsiiProxy_StorageAnywhereCache) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageAnywhereCache) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -561,7 +560,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageAnywhereCache) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -569,7 +568,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetId(val *string) {
+func (j *jsiiProxy_StorageAnywhereCache) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageAnywhereCache) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageAnywhereCache) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageAnywhereCache) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetTtl(val *string) {
+func (j *jsiiProxy_StorageAnywhereCache) SetTtl(val *string) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_StorageAnywhereCache)SetTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageAnywhereCache)SetZone(val *string) {
+func (j *jsiiProxy_StorageAnywhereCache) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func StorageAnywhereCache_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageAnywhereCache.StorageAnywhereCache",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func StorageAnywhereCache_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StorageAnywhereCache_IsConstruct(x interface{}) *bool {
+func StorageAnywhereCache_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageAnywhereCache_IsConstructParameters(x); err != nil {
@@ -679,7 +678,7 @@ func StorageAnywhereCache_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageAnywhereCache.StorageAnywhereCache",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func StorageAnywhereCache_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageAnywhereCache_IsTerraformElement(x interface{}) *bool {
+func StorageAnywhereCache_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageAnywhereCache_IsTerraformElementParameters(x); err != nil {
@@ -698,7 +697,7 @@ func StorageAnywhereCache_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageAnywhereCache.StorageAnywhereCache",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func StorageAnywhereCache_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageAnywhereCache_IsTerraformResource(x interface{}) *bool {
+func StorageAnywhereCache_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageAnywhereCache_IsTerraformResourceParameters(x); err != nil {
@@ -717,7 +716,7 @@ func StorageAnywhereCache_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageAnywhereCache.StorageAnywhereCache",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,31 +741,31 @@ func (s *jsiiProxy_StorageAnywhereCache) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StorageAnywhereCache) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageAnywhereCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (s *jsiiProxy_StorageAnywhereCache) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,15 +893,15 @@ func (s *jsiiProxy_StorageAnywhereCache) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageAnywhereCache) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -921,7 +920,7 @@ func (s *jsiiProxy_StorageAnywhereCache) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -934,7 +933,7 @@ func (s *jsiiProxy_StorageAnywhereCache) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,18 +947,18 @@ func (s *jsiiProxy_StorageAnywhereCache) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StorageAnywhereCache) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -970,7 +969,7 @@ func (s *jsiiProxy_StorageAnywhereCache) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -981,7 +980,7 @@ func (s *jsiiProxy_StorageAnywhereCache) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -992,7 +991,7 @@ func (s *jsiiProxy_StorageAnywhereCache) PutTimeouts(value *StorageAnywhereCache
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1036,8 +1035,8 @@ func (s *jsiiProxy_StorageAnywhereCache) ResetTtl() {
 	)
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageAnywhereCache) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1049,8 +1048,8 @@ func (s *jsiiProxy_StorageAnywhereCache) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageAnywhereCache) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1062,8 +1061,8 @@ func (s *jsiiProxy_StorageAnywhereCache) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageAnywhereCache) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1075,8 +1074,8 @@ func (s *jsiiProxy_StorageAnywhereCache) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageAnywhereCache) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1101,8 +1100,8 @@ func (s *jsiiProxy_StorageAnywhereCache) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StorageAnywhereCache) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageAnywhereCache) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1113,4 +1112,3 @@ func (s *jsiiProxy_StorageAnywhereCache) ToTerraform() interface{} {
 
 	return returns
 }
-

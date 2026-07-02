@@ -136,7 +136,7 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewContainerClusterIpAllocationPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

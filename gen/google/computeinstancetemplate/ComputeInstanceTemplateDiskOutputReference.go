@@ -13,17 +13,17 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	Architecture() *string
 	SetArchitecture(val *string)
 	ArchitectureInput() *string
-	AutoDelete() interface{}
-	SetAutoDelete(val interface{})
-	AutoDeleteInput() interface{}
-	Boot() interface{}
-	SetBoot(val interface{})
-	BootInput() interface{}
+	AutoDelete() any
+	SetAutoDelete(val any)
+	AutoDeleteInput() any
+	Boot() any
+	SetBoot(val any)
+	BootInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -56,8 +56,8 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -103,7 +103,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -151,7 +151,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ArchitectureInput
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoDelete",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDelete() inte
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoDeleteInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDeleteInput()
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Boot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Boot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"boot",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Boot() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) BootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) BootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bootInput",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) BootInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterfaceInput() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -674,7 +674,6 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) TypeInput() *stri
 	return returns
 }
 
-
 func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceTemplateDiskOutputReference {
 	_init_.Initialize()
 
@@ -685,7 +684,7 @@ func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -697,12 +696,12 @@ func NewComputeInstanceTemplateDiskOutputReference_Override(c ComputeInstanceTem
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetArchitecture(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetArchitecture(val *string) {
 	if err := j.validateSetArchitectureParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetArchitecture(va
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetAutoDelete(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetAutoDelete(val any) {
 	if err := j.validateSetAutoDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetAutoDelete(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetBoot(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetBoot(val any) {
 	if err := j.validateSetBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetBoot(val interf
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDeviceName(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDeviceName(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskName(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetDiskName(val *string) {
 	if err := j.validateSetDiskNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskName(val *s
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskSizeGb(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetDiskSizeGb(val *float64) {
 	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskSizeGb(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskType(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetDiskType(val *string) {
 	if err := j.validateSetDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskType(val *s
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetGuestOsFeatures(val *[]*string) {
 	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetGuestOsFeatures
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetInterface(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetInterface(val *string) {
 	if err := j.validateSetInterfaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetInterface(val *
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetLabels(val *map
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetMode(val *strin
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetProvisionedIops(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetProvisionedIops(val *float64) {
 	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetProvisionedIops
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetProvisionedThroughput(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetProvisionedThroughput(val *float64) {
 	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetProvisionedThro
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetResourceManagerTags(val *map[string]*string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetResourceManagerTags(val *map[string]*string) {
 	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -889,7 +888,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetResourceManager
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetResourcePolicies(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetResourcePolicies(val *[]*string) {
 	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
 		panic(err)
 	}
@@ -900,7 +899,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetResourcePolicie
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSource(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -911,7 +910,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSource(val *str
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSourceImage(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetSourceImage(val *string) {
 	if err := j.validateSetSourceImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -922,7 +921,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSourceImage(val
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSourceSnapshot(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetSourceSnapshot(val *string) {
 	if err := j.validateSetSourceSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -933,7 +932,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSourceSnapshot(
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -944,7 +943,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -955,7 +954,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -979,16 +978,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,7 +1115,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1159,7 +1158,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutDiskEncryption
 	_jsii_.InvokeVoid(
 		c,
 		"putDiskEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutSourceImageEnc
 	_jsii_.InvokeVoid(
 		c,
 		"putSourceImageEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutSourceSnapshot
 	_jsii_.InvokeVoid(
 		c,
 		"putSourceSnapshotEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1361,16 +1360,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetType() {
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1389,4 +1388,3 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ToString() *strin
 
 	return returns
 }
-

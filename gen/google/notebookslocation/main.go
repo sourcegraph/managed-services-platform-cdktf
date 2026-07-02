@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
-		reflect.TypeOf((*NotebooksLocation)(nil)).Elem(),
+		reflect.TypeFor[NotebooksLocation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksLocation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksLocation.NotebooksLocationConfig",
-		reflect.TypeOf((*NotebooksLocationConfig)(nil)).Elem(),
+		reflect.TypeFor[NotebooksLocationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksLocation.NotebooksLocationTimeouts",
-		reflect.TypeOf((*NotebooksLocationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NotebooksLocationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksLocation.NotebooksLocationTimeoutsOutputReference",
-		reflect.TypeOf((*NotebooksLocationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksLocationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksLocationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

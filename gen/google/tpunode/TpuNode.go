@@ -21,15 +21,15 @@ type TpuNode interface {
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,11 +73,11 @@ type TpuNode interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SchedulingConfig() TpuNodeSchedulingConfigOutputReference
 	SchedulingConfigInput() *TpuNodeSchedulingConfig
 	ServiceAccount() *string
@@ -88,14 +88,14 @@ type TpuNode interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() TpuNodeTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	UseServiceNetworking() interface{}
-	SetUseServiceNetworking(val interface{})
-	UseServiceNetworkingInput() interface{}
+	TimeoutsInput() any
+	UseServiceNetworking() any
+	SetUseServiceNetworking(val any)
+	UseServiceNetworkingInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -103,9 +103,9 @@ type TpuNode interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type TpuNode interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type TpuNode interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -157,17 +157,17 @@ type TpuNode interface {
 	ResetTimeouts()
 	ResetUseServiceNetworking()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TpuNode
@@ -225,8 +225,8 @@ func (j *jsiiProxy_TpuNode) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TpuNode) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_TpuNode) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TpuNode) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_TpuNode) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TpuNode) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_TpuNode) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TpuNode) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_TpuNode) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TpuNode) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_TpuNode) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TpuNode) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -585,8 +585,8 @@ func (j *jsiiProxy_TpuNode) Timeouts() TpuNodeTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TpuNode) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -595,8 +595,8 @@ func (j *jsiiProxy_TpuNode) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) UseServiceNetworking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TpuNode) UseServiceNetworking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useServiceNetworking",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_TpuNode) UseServiceNetworking() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TpuNode) UseServiceNetworkingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TpuNode) UseServiceNetworkingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useServiceNetworkingInput",
@@ -635,7 +635,6 @@ func (j *jsiiProxy_TpuNode) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/tpu_node google_tpu_node} Resource.
 func NewTpuNode(scope constructs.Construct, id *string, config *TpuNodeConfig) TpuNode {
 	_init_.Initialize()
@@ -647,7 +646,7 @@ func NewTpuNode(scope constructs.Construct, id *string, config *TpuNodeConfig) T
 
 	_jsii_.Create(
 		"@cdktf/provider-google.tpuNode.TpuNode",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -660,12 +659,12 @@ func NewTpuNode_Override(t TpuNode, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.tpuNode.TpuNode",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetAcceleratorType(val *string) {
+func (j *jsiiProxy_TpuNode) SetAcceleratorType(val *string) {
 	if err := j.validateSetAcceleratorTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_TpuNode)SetAcceleratorType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetCidrBlock(val *string) {
+func (j *jsiiProxy_TpuNode) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_TpuNode)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetConnection(val interface{}) {
+func (j *jsiiProxy_TpuNode) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_TpuNode)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetCount(val interface{}) {
+func (j *jsiiProxy_TpuNode) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_TpuNode)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TpuNode) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -717,7 +716,7 @@ func (j *jsiiProxy_TpuNode)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetDescription(val *string) {
+func (j *jsiiProxy_TpuNode) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_TpuNode)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TpuNode) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_TpuNode)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetId(val *string) {
+func (j *jsiiProxy_TpuNode) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_TpuNode)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_TpuNode) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_TpuNode)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TpuNode) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_TpuNode)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetName(val *string) {
+func (j *jsiiProxy_TpuNode) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_TpuNode)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetNetwork(val *string) {
+func (j *jsiiProxy_TpuNode) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_TpuNode)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetProject(val *string) {
+func (j *jsiiProxy_TpuNode) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_TpuNode)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TpuNode) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -810,7 +809,7 @@ func (j *jsiiProxy_TpuNode)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TpuNode) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_TpuNode)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetTensorflowVersion(val *string) {
+func (j *jsiiProxy_TpuNode) SetTensorflowVersion(val *string) {
 	if err := j.validateSetTensorflowVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_TpuNode)SetTensorflowVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetUseServiceNetworking(val interface{}) {
+func (j *jsiiProxy_TpuNode) SetUseServiceNetworking(val any) {
 	if err := j.validateSetUseServiceNetworkingParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_TpuNode)SetUseServiceNetworking(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TpuNode)SetZone(val *string) {
+func (j *jsiiProxy_TpuNode) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func TpuNode_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tpuNode.TpuNode",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func TpuNode_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TpuNode_IsConstruct(x interface{}) *bool {
+func TpuNode_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTpuNode_IsConstructParameters(x); err != nil {
@@ -901,7 +900,7 @@ func TpuNode_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tpuNode.TpuNode",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func TpuNode_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TpuNode_IsTerraformElement(x interface{}) *bool {
+func TpuNode_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTpuNode_IsTerraformElementParameters(x); err != nil {
@@ -920,7 +919,7 @@ func TpuNode_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tpuNode.TpuNode",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func TpuNode_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TpuNode_IsTerraformResource(x interface{}) *bool {
+func TpuNode_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTpuNode_IsTerraformResourceParameters(x); err != nil {
@@ -939,7 +938,7 @@ func TpuNode_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tpuNode.TpuNode",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -964,31 +963,31 @@ func (t *jsiiProxy_TpuNode) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TpuNode) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TpuNode) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TpuNode) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TpuNode) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (t *jsiiProxy_TpuNode) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (t *jsiiProxy_TpuNode) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (t *jsiiProxy_TpuNode) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (t *jsiiProxy_TpuNode) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (t *jsiiProxy_TpuNode) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (t *jsiiProxy_TpuNode) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (t *jsiiProxy_TpuNode) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,15 +1115,15 @@ func (t *jsiiProxy_TpuNode) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TpuNode) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TpuNode) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1143,7 +1142,7 @@ func (t *jsiiProxy_TpuNode) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1156,7 +1155,7 @@ func (t *jsiiProxy_TpuNode) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1170,18 +1169,18 @@ func (t *jsiiProxy_TpuNode) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TpuNode) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TpuNode) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (t *jsiiProxy_TpuNode) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (t *jsiiProxy_TpuNode) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (t *jsiiProxy_TpuNode) PutSchedulingConfig(value *TpuNodeSchedulingConfig) 
 	_jsii_.InvokeVoid(
 		t,
 		"putSchedulingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (t *jsiiProxy_TpuNode) PutTimeouts(value *TpuNodeTimeouts) {
 	_jsii_.InvokeVoid(
 		t,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1317,8 +1316,8 @@ func (t *jsiiProxy_TpuNode) ResetZone() {
 	)
 }
 
-func (t *jsiiProxy_TpuNode) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TpuNode) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1330,8 +1329,8 @@ func (t *jsiiProxy_TpuNode) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TpuNode) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TpuNode) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1343,8 +1342,8 @@ func (t *jsiiProxy_TpuNode) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TpuNode) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TpuNode) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1356,8 +1355,8 @@ func (t *jsiiProxy_TpuNode) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TpuNode) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TpuNode) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1382,8 +1381,8 @@ func (t *jsiiProxy_TpuNode) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TpuNode) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TpuNode) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1394,4 +1393,3 @@ func (t *jsiiProxy_TpuNode) ToTerraform() interface{} {
 
 	return returns
 }
-

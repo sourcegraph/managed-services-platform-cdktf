@@ -10,17 +10,17 @@ import (
 
 type BigqueryTableExternalDataConfigurationCsvOptionsOutputReference interface {
 	cdktf.ComplexObject
-	AllowJaggedRows() interface{}
-	SetAllowJaggedRows(val interface{})
-	AllowJaggedRowsInput() interface{}
-	AllowQuotedNewlines() interface{}
-	SetAllowQuotedNewlines(val interface{})
-	AllowQuotedNewlinesInput() interface{}
+	AllowJaggedRows() any
+	SetAllowJaggedRows(val any)
+	AllowJaggedRowsInput() any
+	AllowQuotedNewlines() any
+	SetAllowQuotedNewlines(val any)
+	AllowQuotedNewlinesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type BigqueryTableExternalDataConfigurationCsvOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type BigqueryTableExternalDataConfigurationCsvOptionsOutputReference interface {
 	ResetSkipLeadingRows()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowJaggedRows() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowJaggedRows() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowJaggedRows",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowJaggedRowsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowJaggedRowsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowJaggedRowsInput",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowQuotedNewlines() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowQuotedNewlines() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowQuotedNewlines",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowQuotedNewlinesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) AllowQuotedNewlinesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowQuotedNewlinesInput",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return returns
 }
 
-
 func NewBigqueryTableExternalDataConfigurationCsvOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableExternalDataConfigurationCsvOptionsOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewBigqueryTableExternalDataConfigurationCsvOptionsOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewBigqueryTableExternalDataConfigurationCsvOptionsOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetAllowJaggedRows(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetAllowJaggedRows(val any) {
 	if err := j.validateSetAllowJaggedRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetAllowQuotedNewlines(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetAllowQuotedNewlines(val any) {
 	if err := j.validateSetAllowQuotedNewlinesParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetFieldDelimiter(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetFieldDelimiter(val *string) {
 	if err := j.validateSetFieldDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetInternalValue(val *BigqueryTableExternalDataConfigurationCsvOptions) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetInternalValue(val *BigqueryTableExternalDataConfigurationCsvOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetQuote(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetQuote(val *string) {
 	if err := j.validateSetQuoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetSkipLeadingRows(val *float64) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetSkipLeadingRows(val *float64) {
 	if err := j.validateSetSkipLeadingRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 
 	return returns
 }
-

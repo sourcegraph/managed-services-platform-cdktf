@@ -6,9 +6,9 @@ import (
 
 type BeyondcorpApplicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BeyondcorpApplicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Optional.
 	//
 	// User-settable Application resource ID.
@@ -31,7 +31,7 @@ type BeyondcorpApplicationConfig struct {
 	// endpoint_matchers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application#endpoint_matchers BeyondcorpApplication#endpoint_matchers}
-	EndpointMatchers interface{} `field:"required" json:"endpointMatchers" yaml:"endpointMatchers"`
+	EndpointMatchers any `field:"required" json:"endpointMatchers" yaml:"endpointMatchers"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application#security_gateways_id BeyondcorpApplication#security_gateways_id}
@@ -54,6 +54,5 @@ type BeyondcorpApplicationConfig struct {
 	// upstreams block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application#upstreams BeyondcorpApplication#upstreams}
-	Upstreams interface{} `field:"optional" json:"upstreams" yaml:"upstreams"`
+	Upstreams any `field:"optional" json:"upstreams" yaml:"upstreams"`
 }
-

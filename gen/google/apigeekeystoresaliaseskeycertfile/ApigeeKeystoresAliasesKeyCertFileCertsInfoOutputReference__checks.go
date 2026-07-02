@@ -90,7 +90,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) validatePutCertInfoParameters(value interface{}) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) validatePutCertInfoParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReferenceParamet
 
 	return nil
 }
-

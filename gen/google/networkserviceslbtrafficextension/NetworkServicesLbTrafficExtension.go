@@ -15,15 +15,15 @@ type NetworkServicesLbTrafficExtension interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,7 +33,7 @@ type NetworkServicesLbTrafficExtension interface {
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	ExtensionChains() NetworkServicesLbTrafficExtensionExtensionChainsList
-	ExtensionChainsInput() interface{}
+	ExtensionChainsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,27 +74,27 @@ type NetworkServicesLbTrafficExtension interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesLbTrafficExtensionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type NetworkServicesLbTrafficExtension interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,14 +124,14 @@ type NetworkServicesLbTrafficExtension interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutExtensionChains(value interface{})
+	PutExtensionChains(value any)
 	PutTimeouts(value *NetworkServicesLbTrafficExtensionTimeouts)
 	ResetDescription()
 	ResetId()
@@ -142,17 +142,17 @@ type NetworkServicesLbTrafficExtension interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesLbTrafficExtension
@@ -170,8 +170,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) ExtensionChains() NetworkS
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) ExtensionChainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) ExtensionChainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"extensionChainsInput",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TerraformLabels() cdktf.St
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) Timeouts() NetworkServices
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -539,7 +539,6 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension} Resource.
 func NewNetworkServicesLbTrafficExtension(scope constructs.Construct, id *string, config *NetworkServicesLbTrafficExtensionConfig) NetworkServicesLbTrafficExtension {
@@ -552,7 +551,7 @@ func NewNetworkServicesLbTrafficExtension(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesLbTrafficExtension.NetworkServicesLbTrafficExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -565,12 +564,12 @@ func NewNetworkServicesLbTrafficExtension_Override(n NetworkServicesLbTrafficExt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesLbTrafficExtension.NetworkServicesLbTrafficExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetDescription(val *string)
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetForwardingRules(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetForwardingRules(val *[]*string) {
 	if err := j.validateSetForwardingRulesParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetForwardingRules(val *[]*
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLabels(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLoadBalancingScheme(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -715,7 +714,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtension)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtension) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func NetworkServicesLbTrafficExtension_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbTrafficExtension.NetworkServicesLbTrafficExtension",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func NetworkServicesLbTrafficExtension_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesLbTrafficExtension_IsConstruct(x interface{}) *bool {
+func NetworkServicesLbTrafficExtension_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesLbTrafficExtension_IsConstructParameters(x); err != nil {
@@ -773,7 +772,7 @@ func NetworkServicesLbTrafficExtension_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbTrafficExtension.NetworkServicesLbTrafficExtension",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func NetworkServicesLbTrafficExtension_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesLbTrafficExtension_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesLbTrafficExtension_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesLbTrafficExtension_IsTerraformElementParameters(x); err != nil {
@@ -792,7 +791,7 @@ func NetworkServicesLbTrafficExtension_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbTrafficExtension.NetworkServicesLbTrafficExtension",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func NetworkServicesLbTrafficExtension_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesLbTrafficExtension_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesLbTrafficExtension_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesLbTrafficExtension_IsTerraformResourceParameters(x); err != nil {
@@ -811,7 +810,7 @@ func NetworkServicesLbTrafficExtension_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbTrafficExtension.NetworkServicesLbTrafficExtension",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,31 +835,31 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetListAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,15 +987,15 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1015,7 +1014,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) InterpolationForAttribute(
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,18 +1041,18 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1075,18 +1074,18 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) PutExtensionChains(value interface{}) {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) PutExtensionChains(value any) {
 	if err := n.validatePutExtensionChainsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putExtensionChains",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) PutTimeouts(value *Network
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,8 +1156,8 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1170,8 +1169,8 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1183,8 +1182,8 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1196,8 +1195,8 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToHclTerraform() interface
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1222,8 +1221,8 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1234,4 +1233,3 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtension) ToTerraform() interface{} 
 
 	return returns
 }
-

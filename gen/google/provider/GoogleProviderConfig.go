@@ -1,6 +1,5 @@
 package provider
 
-
 type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}.
 	AccessApprovalCustomEndpoint *string `field:"optional" json:"accessApprovalCustomEndpoint" yaml:"accessApprovalCustomEndpoint"`
@@ -11,7 +10,7 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}.
 	ActiveDirectoryCustomEndpoint *string `field:"optional" json:"activeDirectoryCustomEndpoint" yaml:"activeDirectoryCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}.
-	AddTerraformAttributionLabel interface{} `field:"optional" json:"addTerraformAttributionLabel" yaml:"addTerraformAttributionLabel"`
+	AddTerraformAttributionLabel any `field:"optional" json:"addTerraformAttributionLabel" yaml:"addTerraformAttributionLabel"`
 	// Alias name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#alias GoogleProvider#alias}
@@ -37,7 +36,7 @@ type GoogleProviderConfig struct {
 	// batching block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#batching GoogleProvider#batching}
-	Batching interface{} `field:"optional" json:"batching" yaml:"batching"`
+	Batching any `field:"optional" json:"batching" yaml:"batching"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
 	BeyondcorpCustomEndpoint *string `field:"optional" json:"beyondcorpCustomEndpoint" yaml:"beyondcorpCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}.
@@ -175,7 +174,7 @@ type GoogleProviderConfig struct {
 	// external_credentials block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#external_credentials GoogleProvider#external_credentials}
-	ExternalCredentials interface{} `field:"optional" json:"externalCredentials" yaml:"externalCredentials"`
+	ExternalCredentials any `field:"optional" json:"externalCredentials" yaml:"externalCredentials"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}.
 	FilestoreCustomEndpoint *string `field:"optional" json:"filestoreCustomEndpoint" yaml:"filestoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}.
@@ -357,7 +356,7 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#universe_domain GoogleProvider#universe_domain}.
 	UniverseDomain *string `field:"optional" json:"universeDomain" yaml:"universeDomain"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#user_project_override GoogleProvider#user_project_override}.
-	UserProjectOverride interface{} `field:"optional" json:"userProjectOverride" yaml:"userProjectOverride"`
+	UserProjectOverride any `field:"optional" json:"userProjectOverride" yaml:"userProjectOverride"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}.
 	VertexAiCustomEndpoint *string `field:"optional" json:"vertexAiCustomEndpoint" yaml:"vertexAiCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}.
@@ -371,4 +370,3 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs#zone GoogleProvider#zone}.
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

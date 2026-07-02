@@ -12,9 +12,9 @@ type VertexAiIndexMetadataOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type VertexAiIndexMetadataOutputReference interface {
 	Fqn() *string
 	InternalValue() *VertexAiIndexMetadata
 	SetInternalValue(val *VertexAiIndexMetadata)
-	IsCompleteOverwrite() interface{}
-	SetIsCompleteOverwrite(val interface{})
-	IsCompleteOverwriteInput() interface{}
+	IsCompleteOverwrite() any
+	SetIsCompleteOverwrite(val any)
+	IsCompleteOverwriteInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type VertexAiIndexMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type VertexAiIndexMetadataOutputReference interface {
 	ResetIsCompleteOverwrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_VertexAiIndexMetadataOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) InternalValue() *Vertex
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) IsCompleteOverwrite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) IsCompleteOverwrite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCompleteOverwrite",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) IsCompleteOverwrite() i
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) IsCompleteOverwriteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) IsCompleteOverwriteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCompleteOverwriteInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewVertexAiIndexMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiIndexMetadataOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewVertexAiIndexMetadataOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewVertexAiIndexMetadataOutputReference_Override(v VertexAiIndexMetadataOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetContentsDeltaUri(val *string) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetContentsDeltaUri(val *string) {
 	if err := j.validateSetContentsDeltaUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetContentsDeltaUri(val 
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetInternalValue(val *VertexAiIndexMetadata) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetInternalValue(val *VertexAiIndexMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetInternalValue(val *Ve
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetIsCompleteOverwrite(val interface{}) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetIsCompleteOverwrite(val any) {
 	if err := j.validateSetIsCompleteOverwriteParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetIsCompleteOverwrite(v
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) PutConfig(value *Vertex
 	_jsii_.InvokeVoid(
 		v,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) ResetIsCompleteOverwrit
 	)
 }
 
-func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -153,7 +153,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDatastreamStreamSourceConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -10,9 +10,9 @@ import (
 
 type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllTrafficOnLatestRevision() interface{}
-	SetAllTrafficOnLatestRevision(val interface{})
-	AllTrafficOnLatestRevisionInput() interface{}
+	AllTrafficOnLatestRevision() any
+	SetAllTrafficOnLatestRevision(val any)
+	AllTrafficOnLatestRevisionInput() any
 	AvailableCpu() *string
 	SetAvailableCpu(val *string)
 	AvailableCpuInput() *string
@@ -24,9 +24,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	BinaryAuthorizationPolicyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,9 +58,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	SetMinInstanceCount(val *float64)
 	MinInstanceCountInput() *float64
 	SecretEnvironmentVariables() Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList
-	SecretEnvironmentVariablesInput() interface{}
+	SecretEnvironmentVariablesInput() any
 	SecretVolumes() Cloudfunctions2FunctionServiceConfigSecretVolumesList
-	SecretVolumesInput() interface{}
+	SecretVolumesInput() any
 	Service() *string
 	SetService(val *string)
 	ServiceAccountEmail() *string
@@ -88,7 +88,7 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,8 +109,8 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSecretEnvironmentVariables(value interface{})
-	PutSecretVolumes(value interface{})
+	PutSecretEnvironmentVariables(value any)
+	PutSecretVolumes(value any)
 	ResetAllTrafficOnLatestRevision()
 	ResetAvailableCpu()
 	ResetAvailableMemory()
@@ -129,7 +129,7 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	ResetVpcConnectorEgressSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -142,8 +142,8 @@ type jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTrafficOnLatestRevision() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTrafficOnLatestRevision() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allTrafficOnLatestRevision",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTraff
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTrafficOnLatestRevisionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTrafficOnLatestRevisionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allTrafficOnLatestRevisionInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) BinaryAu
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SecretEn
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SecretEnvironmentVariablesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SecretEnvironmentVariablesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretEnvironmentVariablesInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SecretVo
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SecretVolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SecretVolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretVolumesInput",
@@ -552,7 +552,6 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) VpcConne
 	return returns
 }
 
-
 func NewCloudfunctions2FunctionServiceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionServiceConfigOutputReference {
 	_init_.Initialize()
 
@@ -563,7 +562,7 @@ func NewCloudfunctions2FunctionServiceConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -575,12 +574,12 @@ func NewCloudfunctions2FunctionServiceConfigOutputReference_Override(c Cloudfunc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAllTrafficOnLatestRevision(val interface{}) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetAllTrafficOnLatestRevision(val any) {
 	if err := j.validateSetAllTrafficOnLatestRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAllTra
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvailableCpu(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetAvailableCpu(val *string) {
 	if err := j.validateSetAvailableCpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvaila
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvailableMemory(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetAvailableMemory(val *string) {
 	if err := j.validateSetAvailableMemoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvaila
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetBinaryAuthorizationPolicy(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetBinaryAuthorizationPolicy(val *string) {
 	if err := j.validateSetBinaryAuthorizationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetBinary
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetEnviro
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetIngressSettings(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetIngressSettings(val *string) {
 	if err := j.validateSetIngressSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetIngres
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetInternalValue(val *Cloudfunctions2FunctionServiceConfig) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetInternalValue(val *Cloudfunctions2FunctionServiceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMaxInstanceCount(val *float64) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetMaxInstanceCount(val *float64) {
 	if err := j.validateSetMaxInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMaxIns
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMaxInstanceRequestConcurrency(val *float64) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetMaxInstanceRequestConcurrency(val *float64) {
 	if err := j.validateSetMaxInstanceRequestConcurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMaxIns
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMinInstanceCount(val *float64) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetMinInstanceCount(val *float64) {
 	if err := j.validateSetMinInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMinIns
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetService(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetServic
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetServic
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTimeou
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetVpcConnector(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetVpcConnector(val *string) {
 	if err := j.validateSetVpcConnectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetVpcCon
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetVpcConnectorEgressSettings(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) SetVpcConnectorEgressSettings(val *string) {
 	if err := j.validateSetVpcConnectorEgressSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,16 +801,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ComputeF
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,32 +967,32 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) PutSecretEnvironmentVariables(value interface{}) {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) PutSecretEnvironmentVariables(value any) {
 	if err := c.validatePutSecretEnvironmentVariablesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecretEnvironmentVariables",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) PutSecretVolumes(value interface{}) {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) PutSecretVolumes(value any) {
 	if err := c.validatePutSecretVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecretVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1125,16 +1124,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetVpc
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1153,4 +1152,3 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ToString
 
 	return returns
 }
-

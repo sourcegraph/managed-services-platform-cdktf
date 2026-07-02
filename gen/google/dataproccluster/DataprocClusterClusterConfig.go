@@ -1,6 +1,5 @@
 package dataproccluster
 
-
 type DataprocClusterClusterConfig struct {
 	// autoscaling_config block.
 	//
@@ -9,7 +8,7 @@ type DataprocClusterClusterConfig struct {
 	// auxiliary_node_groups block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_cluster#auxiliary_node_groups DataprocCluster#auxiliary_node_groups}
-	AuxiliaryNodeGroups interface{} `field:"optional" json:"auxiliaryNodeGroups" yaml:"auxiliaryNodeGroups"`
+	AuxiliaryNodeGroups any `field:"optional" json:"auxiliaryNodeGroups" yaml:"auxiliaryNodeGroups"`
 	// dataproc_metric_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_cluster#dataproc_metric_config DataprocCluster#dataproc_metric_config}
@@ -29,7 +28,7 @@ type DataprocClusterClusterConfig struct {
 	// initialization_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_cluster#initialization_action DataprocCluster#initialization_action}
-	InitializationAction interface{} `field:"optional" json:"initializationAction" yaml:"initializationAction"`
+	InitializationAction any `field:"optional" json:"initializationAction" yaml:"initializationAction"`
 	// lifecycle_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_cluster#lifecycle_config DataprocCluster#lifecycle_config}
@@ -71,4 +70,3 @@ type DataprocClusterClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_cluster#worker_config DataprocCluster#worker_config}
 	WorkerConfig *DataprocClusterClusterConfigWorkerConfig `field:"optional" json:"workerConfig" yaml:"workerConfig"`
 }
-

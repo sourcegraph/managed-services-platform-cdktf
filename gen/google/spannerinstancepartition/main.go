@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerInstancePartition.SpannerInstancePartition",
-		reflect.TypeOf((*SpannerInstancePartition)(nil)).Elem(),
+		reflect.TypeFor[SpannerInstancePartition](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerInstancePartition{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig",
-		reflect.TypeOf((*SpannerInstancePartitionConfig)(nil)).Elem(),
+		reflect.TypeFor[SpannerInstancePartitionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts",
-		reflect.TypeOf((*SpannerInstancePartitionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SpannerInstancePartitionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeoutsOutputReference",
-		reflect.TypeOf((*SpannerInstancePartitionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerInstancePartitionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

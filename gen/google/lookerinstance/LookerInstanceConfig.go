@@ -6,9 +6,9 @@ import (
 
 type LookerInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LookerInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the instance or a fully qualified identifier for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#name LookerInstance#name}
@@ -58,7 +58,7 @@ type LookerInstanceConfig struct {
 	// FIPS 140-2 Encryption enablement for Looker (Google Cloud Core).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#fips_enabled LookerInstance#fips_enabled}
-	FipsEnabled interface{} `field:"optional" json:"fipsEnabled" yaml:"fipsEnabled"`
+	FipsEnabled any `field:"optional" json:"fipsEnabled" yaml:"fipsEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#id LookerInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -85,7 +85,7 @@ type LookerInstanceConfig struct {
 	// Whether private IP is enabled on the Looker instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#private_ip_enabled LookerInstance#private_ip_enabled}
-	PrivateIpEnabled interface{} `field:"optional" json:"privateIpEnabled" yaml:"privateIpEnabled"`
+	PrivateIpEnabled any `field:"optional" json:"privateIpEnabled" yaml:"privateIpEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#project LookerInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// psc_config block.
@@ -95,11 +95,11 @@ type LookerInstanceConfig struct {
 	// Whether Public Service Connect (PSC) is enabled on the Looker instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#psc_enabled LookerInstance#psc_enabled}
-	PscEnabled interface{} `field:"optional" json:"pscEnabled" yaml:"pscEnabled"`
+	PscEnabled any `field:"optional" json:"pscEnabled" yaml:"pscEnabled"`
 	// Whether public IP is enabled on the Looker instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#public_ip_enabled LookerInstance#public_ip_enabled}
-	PublicIpEnabled interface{} `field:"optional" json:"publicIpEnabled" yaml:"publicIpEnabled"`
+	PublicIpEnabled any `field:"optional" json:"publicIpEnabled" yaml:"publicIpEnabled"`
 	// The name of the Looker region of the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#region LookerInstance#region}
@@ -119,4 +119,3 @@ type LookerInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/looker_instance#user_metadata LookerInstance#user_metadata}
 	UserMetadata *LookerInstanceUserMetadata `field:"optional" json:"userMetadata" yaml:"userMetadata"`
 }
-

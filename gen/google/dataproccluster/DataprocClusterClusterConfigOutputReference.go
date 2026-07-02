@@ -13,13 +13,13 @@ type DataprocClusterClusterConfigOutputReference interface {
 	AutoscalingConfig() DataprocClusterClusterConfigAutoscalingConfigOutputReference
 	AutoscalingConfigInput() *DataprocClusterClusterConfigAutoscalingConfig
 	AuxiliaryNodeGroups() DataprocClusterClusterConfigAuxiliaryNodeGroupsList
-	AuxiliaryNodeGroupsInput() interface{}
+	AuxiliaryNodeGroupsInput() any
 	Bucket() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	GceClusterConfig() DataprocClusterClusterConfigGceClusterConfigOutputReference
 	GceClusterConfigInput() *DataprocClusterClusterConfigGceClusterConfig
 	InitializationAction() DataprocClusterClusterConfigInitializationActionList
-	InitializationActionInput() interface{}
+	InitializationActionInput() any
 	InternalValue() *DataprocClusterClusterConfig
 	SetInternalValue(val *DataprocClusterClusterConfig)
 	LifecycleConfig() DataprocClusterClusterConfigLifecycleConfigOutputReference
@@ -75,7 +75,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,12 +97,12 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscalingConfig(value *DataprocClusterClusterConfigAutoscalingConfig)
-	PutAuxiliaryNodeGroups(value interface{})
+	PutAuxiliaryNodeGroups(value any)
 	PutDataprocMetricConfig(value *DataprocClusterClusterConfigDataprocMetricConfig)
 	PutEncryptionConfig(value *DataprocClusterClusterConfigEncryptionConfig)
 	PutEndpointConfig(value *DataprocClusterClusterConfigEndpointConfig)
 	PutGceClusterConfig(value *DataprocClusterClusterConfigGceClusterConfig)
-	PutInitializationAction(value interface{})
+	PutInitializationAction(value any)
 	PutLifecycleConfig(value *DataprocClusterClusterConfigLifecycleConfig)
 	PutMasterConfig(value *DataprocClusterClusterConfigMasterConfig)
 	PutMetastoreConfig(value *DataprocClusterClusterConfigMetastoreConfig)
@@ -128,7 +128,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	ResetWorkerConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AuxiliaryNodeGro
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"auxiliaryNodeGroupsInput",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) Bucket() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) InitializationAc
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) InitializationActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) InitializationActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"initializationActionInput",
@@ -541,7 +541,6 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) WorkerConfigInpu
 	return returns
 }
 
-
 func NewDataprocClusterClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocClusterClusterConfigOutputReference {
 	_init_.Initialize()
 
@@ -552,7 +551,7 @@ func NewDataprocClusterClusterConfigOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -564,12 +563,12 @@ func NewDataprocClusterClusterConfigOutputReference_Override(d DataprocClusterCl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetInternalValue(val *DataprocClusterClusterConfig) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetInternalValue(val *DataprocClusterClusterConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetStagingBucket(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetStagingBucket(val *string) {
 	if err := j.validateSetStagingBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetStagingBucket(
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTempBucket(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetTempBucket(val *string) {
 	if err := j.validateSetTempBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTempBucket(val
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,16 +658,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -839,18 +838,18 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutAutoscalingCo
 	_jsii_.InvokeVoid(
 		d,
 		"putAutoscalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutAuxiliaryNodeGroups(value interface{}) {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutAuxiliaryNodeGroups(value any) {
 	if err := d.validatePutAuxiliaryNodeGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAuxiliaryNodeGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,7 +860,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutDataprocMetri
 	_jsii_.InvokeVoid(
 		d,
 		"putDataprocMetricConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -872,7 +871,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutEncryptionCon
 	_jsii_.InvokeVoid(
 		d,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -883,7 +882,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutEndpointConfi
 	_jsii_.InvokeVoid(
 		d,
 		"putEndpointConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -894,18 +893,18 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutGceClusterCon
 	_jsii_.InvokeVoid(
 		d,
 		"putGceClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutInitializationAction(value interface{}) {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutInitializationAction(value any) {
 	if err := d.validatePutInitializationActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInitializationAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -916,7 +915,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutLifecycleConf
 	_jsii_.InvokeVoid(
 		d,
 		"putLifecycleConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -927,7 +926,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutMasterConfig(
 	_jsii_.InvokeVoid(
 		d,
 		"putMasterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,7 +937,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutMetastoreConf
 	_jsii_.InvokeVoid(
 		d,
 		"putMetastoreConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,7 +948,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutPreemptibleWo
 	_jsii_.InvokeVoid(
 		d,
 		"putPreemptibleWorkerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutSecurityConfi
 	_jsii_.InvokeVoid(
 		d,
 		"putSecurityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -971,7 +970,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutSoftwareConfi
 	_jsii_.InvokeVoid(
 		d,
 		"putSoftwareConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutWorkerConfig(
 	_jsii_.InvokeVoid(
 		d,
 		"putWorkerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1114,16 +1113,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetWorkerConfi
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1142,4 +1141,3 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ToString() *stri
 
 	return returns
 }
-

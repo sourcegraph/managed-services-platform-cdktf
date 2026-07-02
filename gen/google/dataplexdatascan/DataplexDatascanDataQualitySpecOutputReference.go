@@ -10,14 +10,14 @@ import (
 
 type DataplexDatascanDataQualitySpecOutputReference interface {
 	cdktf.ComplexObject
-	CatalogPublishingEnabled() interface{}
-	SetCatalogPublishingEnabled(val interface{})
-	CatalogPublishingEnabledInput() interface{}
+	CatalogPublishingEnabled() any
+	SetCatalogPublishingEnabled(val any)
+	CatalogPublishingEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,7 +38,7 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	SetRowFilter(val *string)
 	RowFilterInput() *string
 	Rules() DataplexDatascanDataQualitySpecRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	SamplingPercent() *float64
 	SetSamplingPercent(val *float64)
 	SamplingPercentInput() *float64
@@ -53,7 +53,7 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPostScanActions(value *DataplexDatascanDataQualitySpecPostScanActions)
-	PutRules(value interface{})
+	PutRules(value any)
 	ResetCatalogPublishingEnabled()
 	ResetPostScanActions()
 	ResetRowFilter()
@@ -83,7 +83,7 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	ResetSamplingPercent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_DataplexDatascanDataQualitySpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"catalogPublishingEnabled",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublis
 	return returns
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"catalogPublishingEnabledInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublis
 	return returns
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) Rules() Datap
 	return returns
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewDataplexDatascanDataQualitySpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexDatascanDataQualitySpecOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewDataplexDatascanDataQualitySpecOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewDataplexDatascanDataQualitySpecOutputReference_Override(d DataplexDatasc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetCatalogPublishingEnabled(val interface{}) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetCatalogPublishingEnabled(val any) {
 	if err := j.validateSetCatalogPublishingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetCatalogPubl
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetInternalValue(val *DataplexDatascanDataQualitySpec) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetInternalValue(val *DataplexDatascanDataQualitySpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetRowFilter(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetRowFilter(val *string) {
 	if err := j.validateSetRowFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetRowFilter(v
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetSamplingPercent(val *float64) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetSamplingPercent(val *float64) {
 	if err := j.validateSetSamplingPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetSamplingPer
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,16 +394,16 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetNumberList
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) Interpolation
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -575,18 +574,18 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutPostScanAc
 	_jsii_.InvokeVoid(
 		d,
 		"putPostScanActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutRules(value interface{}) {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutRules(value any) {
 	if err := d.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ResetSampling
 	)
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ToString() *s
 
 	return returns
 }
-

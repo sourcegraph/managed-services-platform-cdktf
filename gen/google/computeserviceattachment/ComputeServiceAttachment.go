@@ -16,23 +16,23 @@ type ComputeServiceAttachment interface {
 	CdktfStack() cdktf.TerraformStack
 	ConnectedEndpoints() ComputeServiceAttachmentConnectedEndpointsList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionPreference() *string
 	SetConnectionPreference(val *string)
 	ConnectionPreferenceInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerAcceptLists() ComputeServiceAttachmentConsumerAcceptListsList
-	ConsumerAcceptListsInput() interface{}
+	ConsumerAcceptListsInput() any
 	ConsumerRejectLists() *[]*string
 	SetConsumerRejectLists(val *[]*string)
 	ConsumerRejectListsInput() *[]*string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,9 +43,9 @@ type ComputeServiceAttachment interface {
 	DomainNames() *[]*string
 	SetDomainNames(val *[]*string)
 	DomainNamesInput() *[]*string
-	EnableProxyProtocol() interface{}
-	SetEnableProxyProtocol(val interface{})
-	EnableProxyProtocolInput() interface{}
+	EnableProxyProtocol() any
+	SetEnableProxyProtocol(val any)
+	EnableProxyProtocolInput() any
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -81,39 +81,39 @@ type ComputeServiceAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	ReconcileConnections() interface{}
-	SetReconcileConnections(val interface{})
-	ReconcileConnectionsInput() interface{}
+	RawOverrides() any
+	ReconcileConnections() any
+	SetReconcileConnections(val any)
+	ReconcileConnectionsInput() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
-	SendPropagatedConnectionLimitIfZero() interface{}
-	SetSendPropagatedConnectionLimitIfZero(val interface{})
-	SendPropagatedConnectionLimitIfZeroInput() interface{}
+	SendPropagatedConnectionLimitIfZero() any
+	SetSendPropagatedConnectionLimitIfZero(val any)
+	SendPropagatedConnectionLimitIfZeroInput() any
 	TargetService() *string
 	SetTargetService(val *string)
 	TargetServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeServiceAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type ComputeServiceAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -143,14 +143,14 @@ type ComputeServiceAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConsumerAcceptLists(value interface{})
+	PutConsumerAcceptLists(value any)
 	PutTimeouts(value *ComputeServiceAttachmentTimeouts)
 	ResetConsumerAcceptLists()
 	ResetConsumerRejectLists()
@@ -166,17 +166,17 @@ type ComputeServiceAttachment interface {
 	ResetRegion()
 	ResetSendPropagatedConnectionLimitIfZero()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeServiceAttachment
@@ -204,8 +204,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) ConnectedEndpoints() ComputeService
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) ConnectionPreferenceInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) ConsumerAcceptLists() ComputeServic
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) ConsumerAcceptListsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) ConsumerAcceptListsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"consumerAcceptListsInput",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) ConsumerRejectListsInput() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) DomainNamesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) EnableProxyProtocol() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) EnableProxyProtocol() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableProxyProtocol",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) EnableProxyProtocol() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) EnableProxyProtocolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) EnableProxyProtocolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableProxyProtocolInput",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnections() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnections() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reconcileConnections",
@@ -564,8 +564,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnections() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reconcileConnectionsInput",
@@ -604,8 +604,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) SendPropagatedConnectionLimitIfZero() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) SendPropagatedConnectionLimitIfZero() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendPropagatedConnectionLimitIfZero",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) SendPropagatedConnectionLimitIfZero
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) SendPropagatedConnectionLimitIfZeroInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) SendPropagatedConnectionLimitIfZeroInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendPropagatedConnectionLimitIfZeroInput",
@@ -654,8 +654,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -684,8 +684,8 @@ func (j *jsiiProxy_ComputeServiceAttachment) Timeouts() ComputeServiceAttachment
 	return returns
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeServiceAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -693,7 +693,6 @@ func (j *jsiiProxy_ComputeServiceAttachment) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment(scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) ComputeServiceAttachment {
@@ -706,7 +705,7 @@ func NewComputeServiceAttachment(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -719,12 +718,12 @@ func NewComputeServiceAttachment_Override(c ComputeServiceAttachment, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetConnectionPreference(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetConnectionPreference(val *string) {
 	if err := j.validateSetConnectionPreferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetConnectionPreference(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetConsumerRejectLists(val *[]*string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetConsumerRejectLists(val *[]*string) {
 	if err := j.validateSetConsumerRejectListsParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetConsumerRejectLists(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -776,7 +775,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetDomainNames(val *[]*string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetDomainNames(val *[]*string) {
 	if err := j.validateSetDomainNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetDomainNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetEnableProxyProtocol(val interface{}) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetEnableProxyProtocol(val any) {
 	if err := j.validateSetEnableProxyProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetEnableProxyProtocol(val interface
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -817,7 +816,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetId(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetName(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetNatSubnets(val *[]*string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetNatSubnets(val *[]*string) {
 	if err := j.validateSetNatSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetNatSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetProject(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetPropagatedConnectionLimit(val *float64) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetPropagatedConnectionLimit(val *float64) {
 	if err := j.validateSetPropagatedConnectionLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +882,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetPropagatedConnectionLimit(val *fl
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -891,7 +890,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetReconcileConnections(val interface{}) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetReconcileConnections(val any) {
 	if err := j.validateSetReconcileConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetReconcileConnections(val interfac
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -924,7 +923,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetSendPropagatedConnectionLimitIfZero(val interface{}) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetSendPropagatedConnectionLimitIfZero(val any) {
 	if err := j.validateSetSendPropagatedConnectionLimitIfZeroParameters(val); err != nil {
 		panic(err)
 	}
@@ -935,7 +934,7 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetSendPropagatedConnectionLimitIfZe
 	)
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment)SetTargetService(val *string) {
+func (j *jsiiProxy_ComputeServiceAttachment) SetTargetService(val *string) {
 	if err := j.validateSetTargetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func ComputeServiceAttachment_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func ComputeServiceAttachment_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeServiceAttachment_IsConstruct(x interface{}) *bool {
+func ComputeServiceAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeServiceAttachment_IsConstructParameters(x); err != nil {
@@ -993,7 +992,7 @@ func ComputeServiceAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func ComputeServiceAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeServiceAttachment_IsTerraformElement(x interface{}) *bool {
+func ComputeServiceAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeServiceAttachment_IsTerraformElementParameters(x); err != nil {
@@ -1012,7 +1011,7 @@ func ComputeServiceAttachment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func ComputeServiceAttachment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeServiceAttachment_IsTerraformResource(x interface{}) *bool {
+func ComputeServiceAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeServiceAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -1031,7 +1030,7 @@ func ComputeServiceAttachment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1056,31 +1055,31 @@ func (c *jsiiProxy_ComputeServiceAttachment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeServiceAttachment) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeServiceAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,7 +1143,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1160,7 +1159,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1176,7 +1175,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1192,7 +1191,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1208,15 +1207,15 @@ func (c *jsiiProxy_ComputeServiceAttachment) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeServiceAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1235,7 +1234,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1248,7 +1247,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1262,18 +1261,18 @@ func (c *jsiiProxy_ComputeServiceAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeServiceAttachment) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1284,7 +1283,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1295,18 +1294,18 @@ func (c *jsiiProxy_ComputeServiceAttachment) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) PutConsumerAcceptLists(value interface{}) {
+func (c *jsiiProxy_ComputeServiceAttachment) PutConsumerAcceptLists(value any) {
 	if err := c.validatePutConsumerAcceptListsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putConsumerAcceptLists",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1317,7 +1316,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) PutTimeouts(value *ComputeServiceAt
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1417,8 +1416,8 @@ func (c *jsiiProxy_ComputeServiceAttachment) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeServiceAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1430,8 +1429,8 @@ func (c *jsiiProxy_ComputeServiceAttachment) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeServiceAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1443,8 +1442,8 @@ func (c *jsiiProxy_ComputeServiceAttachment) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeServiceAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1456,8 +1455,8 @@ func (c *jsiiProxy_ComputeServiceAttachment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeServiceAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1482,8 +1481,8 @@ func (c *jsiiProxy_ComputeServiceAttachment) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeServiceAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1494,4 +1493,3 @@ func (c *jsiiProxy_ComputeServiceAttachment) ToTerraform() interface{} {
 
 	return returns
 }
-

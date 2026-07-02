@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettings",
-		reflect.TypeOf((*IapSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessSettings", GoGetter: "AccessSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "accessSettingsInput", GoGetter: "AccessSettingsInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettings",
-		reflect.TypeOf((*IapSettingsAccessSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsAllowedDomainsSettings",
-		reflect.TypeOf((*IapSettingsAccessSettingsAllowedDomainsSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsAllowedDomainsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsCorsSettings",
-		reflect.TypeOf((*IapSettingsAccessSettingsCorsSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsCorsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsCorsSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsCorsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsCorsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowHttpOptions", GoGetter: "AllowHttpOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "allowHttpOptionsInput", GoGetter: "AllowHttpOptionsInput"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,11 +163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsGcipSettings",
-		reflect.TypeOf((*IapSettingsAccessSettingsGcipSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsGcipSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsGcipSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsGcipSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsGcipSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsGcipSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,11 +205,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings",
-		reflect.TypeOf((*IapSettingsAccessSettingsOauthSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsOauthSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsOauthSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsOauthSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedDomainsSettings", GoGetter: "AllowedDomainsSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedDomainsSettingsInput", GoGetter: "AllowedDomainsSettingsInput"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforceIdentitySettings", GoGetter: "WorkforceIdentitySettings"},
 			_jsii_.MemberProperty{JsiiProperty: "workforceIdentitySettingsInput", GoGetter: "WorkforceIdentitySettingsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,11 +306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsReauthSettings",
-		reflect.TypeOf((*IapSettingsAccessSettingsReauthSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsReauthSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsReauthSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsReauthSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsReauthSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -340,7 +340,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsReauthSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -348,15 +348,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettings",
-		reflect.TypeOf((*IapSettingsAccessSettingsWorkforceIdentitySettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsWorkforceIdentitySettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2",
-		reflect.TypeOf((*IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -395,7 +395,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference",
-		reflect.TypeOf((*IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePools", GoGetter: "WorkforcePools"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolsInput", GoGetter: "WorkforcePoolsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -434,15 +434,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettings",
-		reflect.TypeOf((*IapSettingsApplicationSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettings",
-		reflect.TypeOf((*IapSettingsApplicationSettingsAccessDeniedPageSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsAccessDeniedPageSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessDeniedPageUri", GoGetter: "AccessDeniedPageUri"},
 			_jsii_.MemberProperty{JsiiProperty: "accessDeniedPageUriInput", GoGetter: "AccessDeniedPageUriInput"},
@@ -475,7 +475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -483,11 +483,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsAttributePropagationSettings",
-		reflect.TypeOf((*IapSettingsApplicationSettingsAttributePropagationSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsAttributePropagationSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -520,7 +520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -528,11 +528,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsCsmSettings",
-		reflect.TypeOf((*IapSettingsApplicationSettingsCsmSettings)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsCsmSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsCsmSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsApplicationSettingsCsmSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsCsmSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -559,7 +559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -567,7 +567,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsOutputReference",
-		reflect.TypeOf((*IapSettingsApplicationSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsApplicationSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessDeniedPageSettings", GoGetter: "AccessDeniedPageSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "accessDeniedPageSettingsInput", GoGetter: "AccessDeniedPageSettingsInput"},
@@ -606,7 +606,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsApplicationSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -614,15 +614,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsConfig",
-		reflect.TypeOf((*IapSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapSettings.IapSettingsTimeouts",
-		reflect.TypeOf((*IapSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapSettings.IapSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*IapSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -655,7 +655,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
-		reflect.TypeOf((*ComputeServiceAttachment)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeServiceAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig",
-		reflect.TypeOf((*ComputeServiceAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpoints",
-		reflect.TypeOf((*ComputeServiceAttachmentConnectedEndpoints)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConnectedEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
-		reflect.TypeOf((*ComputeServiceAttachmentConnectedEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConnectedEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -138,7 +138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
-		reflect.TypeOf((*ComputeServiceAttachmentConnectedEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConnectedEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeServiceAttachmentConnectedEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -175,11 +175,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists",
-		reflect.TypeOf((*ComputeServiceAttachmentConsumerAcceptLists)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConsumerAcceptLists](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
-		reflect.TypeOf((*ComputeServiceAttachmentConsumerAcceptListsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConsumerAcceptListsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -201,7 +201,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
-		reflect.TypeOf((*ComputeServiceAttachmentConsumerAcceptListsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentConsumerAcceptListsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts",
-		reflect.TypeOf((*ComputeServiceAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeServiceAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeServiceAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeServiceAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

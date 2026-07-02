@@ -123,7 +123,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutBackup
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutConnectionPoolConfigParameters(value interface{}) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutConnectionPoolConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutConnec
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDatabaseFlagsParameters(value interface{}) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDatabaseFlagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetCollat
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -378,7 +378,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDeletionProtectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDeleti
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskAutoresizeParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskAutoresizeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -450,7 +450,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEditio
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnableDataplexIntegrationParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnableDataplexIntegrationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -470,7 +470,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnable
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnableGoogleMlIntegrationParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEnableGoogleMlIntegrationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -506,7 +506,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetPricin
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetRetainBackupsOnDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetRetainBackupsOnDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -577,4 +577,3 @@ func validateNewSqlDatabaseInstanceSettingsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

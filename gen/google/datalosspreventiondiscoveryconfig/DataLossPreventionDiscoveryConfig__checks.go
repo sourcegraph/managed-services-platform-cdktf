@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateAddMoveTargetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateMoveFromIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validateOverrideLogicalIdP
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutActionsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutOrgConfigParame
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutTargetsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfig) validatePutTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateDataLossPreventionDiscoveryConfig_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDataLossPreventionDiscoveryConfig_IsConstructParameters(x interface{}) error {
+func validateDataLossPreventionDiscoveryConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateDataLossPreventionDiscoveryConfig_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDataLossPreventionDiscoveryConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDataLossPreventionDiscoveryConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateDataLossPreventionDiscoveryConfig_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateDataLossPreventionDiscoveryConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateDataLossPreventionDiscoveryConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateDataLossPreventionDiscoveryConfig_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -466,7 +466,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetParentParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -538,4 +538,3 @@ func validateNewDataLossPreventionDiscoveryConfigParameters(scope constructs.Con
 
 	return nil
 }
-

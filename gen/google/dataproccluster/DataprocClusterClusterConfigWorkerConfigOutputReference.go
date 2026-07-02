@@ -11,12 +11,12 @@ import (
 type DataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	cdktf.ComplexObject
 	Accelerators() DataprocClusterClusterConfigWorkerConfigAcceleratorsList
-	AcceleratorsInput() interface{}
+	AcceleratorsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -60,7 +60,7 @@ type DataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type DataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAccelerators(value interface{})
+	PutAccelerators(value any)
 	PutDiskConfig(value *DataprocClusterClusterConfigWorkerConfigDiskConfig)
 	ResetAccelerators()
 	ResetDiskConfig()
@@ -92,7 +92,7 @@ type DataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	ResetNumInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Acce
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) AcceleratorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) AcceleratorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceleratorsInput",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Acce
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -325,7 +325,6 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Terr
 	return returns
 }
 
-
 func NewDataprocClusterClusterConfigWorkerConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocClusterClusterConfigWorkerConfigOutputReference {
 	_init_.Initialize()
 
@@ -336,7 +335,7 @@ func NewDataprocClusterClusterConfigWorkerConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -348,12 +347,12 @@ func NewDataprocClusterClusterConfigWorkerConfigOutputReference_Override(d Datap
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetImageUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetImageUri(val *string) {
 	if err := j.validateSetImageUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetIm
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetInternalValue(val *DataprocClusterClusterConfigWorkerConfig) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetInternalValue(val *DataprocClusterClusterConfigWorkerConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetMa
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetMinCpuPlatform(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetMinCpuPlatform(val *string) {
 	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetMi
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetMinNumInstances(val *float64) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetMinNumInstances(val *float64) {
 	if err := j.validateSetMinNumInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetMi
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetNumInstances(val *float64) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetNumInstances(val *float64) {
 	if err := j.validateSetNumInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetNu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Comp
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetL
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,21 +641,21 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) PutAccelerators(value interface{}) {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) PutAccelerators(value any) {
 	if err := d.validatePutAcceleratorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAccelerators",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) PutD
 	_jsii_.InvokeVoid(
 		d,
 		"putDiskConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -727,16 +726,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -755,4 +754,3 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) ToSt
 
 	return returns
 }
-

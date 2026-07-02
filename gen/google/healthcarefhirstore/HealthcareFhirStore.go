@@ -18,38 +18,38 @@ type HealthcareFhirStore interface {
 	SetComplexDataTypeReferenceParsing(val *string)
 	ComplexDataTypeReferenceParsingInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
-	DefaultSearchHandlingStrict() interface{}
-	SetDefaultSearchHandlingStrict(val interface{})
-	DefaultSearchHandlingStrictInput() interface{}
+	DefaultSearchHandlingStrict() any
+	SetDefaultSearchHandlingStrict(val any)
+	DefaultSearchHandlingStrictInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableReferentialIntegrity() interface{}
-	SetDisableReferentialIntegrity(val interface{})
-	DisableReferentialIntegrityInput() interface{}
-	DisableResourceVersioning() interface{}
-	SetDisableResourceVersioning(val interface{})
-	DisableResourceVersioningInput() interface{}
+	DisableReferentialIntegrity() any
+	SetDisableReferentialIntegrity(val any)
+	DisableReferentialIntegrityInput() any
+	DisableResourceVersioning() any
+	SetDisableResourceVersioning(val any)
+	DisableResourceVersioningInput() any
 	EffectiveLabels() cdktf.StringMap
-	EnableHistoryImport() interface{}
-	SetEnableHistoryImport(val interface{})
-	EnableHistoryImportInput() interface{}
-	EnableUpdateCreate() interface{}
-	SetEnableUpdateCreate(val interface{})
-	EnableUpdateCreateInput() interface{}
+	EnableHistoryImport() any
+	SetEnableHistoryImport(val any)
+	EnableHistoryImportInput() any
+	EnableUpdateCreate() any
+	SetEnableUpdateCreate(val any)
+	EnableUpdateCreateInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,29 +76,29 @@ type HealthcareFhirStore interface {
 	NotificationConfig() HealthcareFhirStoreNotificationConfigOutputReference
 	NotificationConfigInput() *HealthcareFhirStoreNotificationConfig
 	NotificationConfigs() HealthcareFhirStoreNotificationConfigsList
-	NotificationConfigsInput() interface{}
+	NotificationConfigsInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	StreamConfigs() HealthcareFhirStoreStreamConfigsList
-	StreamConfigsInput() interface{}
+	StreamConfigsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() HealthcareFhirStoreTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -106,9 +106,9 @@ type HealthcareFhirStore interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type HealthcareFhirStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,7 +138,7 @@ type HealthcareFhirStore interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,8 +146,8 @@ type HealthcareFhirStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNotificationConfig(value *HealthcareFhirStoreNotificationConfig)
-	PutNotificationConfigs(value interface{})
-	PutStreamConfigs(value interface{})
+	PutNotificationConfigs(value any)
+	PutStreamConfigs(value any)
 	PutTimeouts(value *HealthcareFhirStoreTimeouts)
 	ResetComplexDataTypeReferenceParsing()
 	ResetDefaultSearchHandlingStrict()
@@ -164,17 +164,17 @@ type HealthcareFhirStore interface {
 	ResetOverrideLogicalId()
 	ResetStreamConfigs()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for HealthcareFhirStore
@@ -212,8 +212,8 @@ func (j *jsiiProxy_HealthcareFhirStore) ComplexDataTypeReferenceParsingInput() *
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_HealthcareFhirStore) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareFhirStore) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_HealthcareFhirStore) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_HealthcareFhirStore) DatasetInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) DefaultSearchHandlingStrict() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) DefaultSearchHandlingStrict() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultSearchHandlingStrict",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_HealthcareFhirStore) DefaultSearchHandlingStrict() interface{
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) DefaultSearchHandlingStrictInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) DefaultSearchHandlingStrictInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultSearchHandlingStrictInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_HealthcareFhirStore) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) DisableReferentialIntegrity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) DisableReferentialIntegrity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableReferentialIntegrity",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_HealthcareFhirStore) DisableReferentialIntegrity() interface{
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) DisableReferentialIntegrityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) DisableReferentialIntegrityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableReferentialIntegrityInput",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_HealthcareFhirStore) DisableReferentialIntegrityInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) DisableResourceVersioning() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) DisableResourceVersioning() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableResourceVersioning",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_HealthcareFhirStore) DisableResourceVersioning() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) DisableResourceVersioningInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) DisableResourceVersioningInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableResourceVersioningInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_HealthcareFhirStore) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) EnableHistoryImport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) EnableHistoryImport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHistoryImport",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_HealthcareFhirStore) EnableHistoryImport() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) EnableHistoryImportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) EnableHistoryImportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHistoryImportInput",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_HealthcareFhirStore) EnableHistoryImportInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) EnableUpdateCreate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) EnableUpdateCreate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableUpdateCreate",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_HealthcareFhirStore) EnableUpdateCreate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) EnableUpdateCreateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) EnableUpdateCreateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableUpdateCreateInput",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_HealthcareFhirStore) NotificationConfigs() HealthcareFhirStor
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) NotificationConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) NotificationConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationConfigsInput",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_HealthcareFhirStore) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_HealthcareFhirStore) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_HealthcareFhirStore) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_HealthcareFhirStore) StreamConfigs() HealthcareFhirStoreStrea
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) StreamConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) StreamConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"streamConfigsInput",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_HealthcareFhirStore) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareFhirStore) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_HealthcareFhirStore) Timeouts() HealthcareFhirStoreTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStore) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -672,7 +672,6 @@ func (j *jsiiProxy_HealthcareFhirStore) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *HealthcareFhirStoreConfig) HealthcareFhirStore {
 	_init_.Initialize()
@@ -684,7 +683,7 @@ func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *Heal
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -697,12 +696,12 @@ func NewHealthcareFhirStore_Override(h HealthcareFhirStore, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetComplexDataTypeReferenceParsing(val *string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetComplexDataTypeReferenceParsing(val *string) {
 	if err := j.validateSetComplexDataTypeReferenceParsingParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetComplexDataTypeReferenceParsing(val *s
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetConnection(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetCount(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetDataset(val *string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetDataset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetDefaultSearchHandlingStrict(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetDefaultSearchHandlingStrict(val any) {
 	if err := j.validateSetDefaultSearchHandlingStrictParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetDefaultSearchHandlingStrict(val interf
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -765,7 +764,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetDisableReferentialIntegrity(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetDisableReferentialIntegrity(val any) {
 	if err := j.validateSetDisableReferentialIntegrityParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetDisableReferentialIntegrity(val interf
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetDisableResourceVersioning(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetDisableResourceVersioning(val any) {
 	if err := j.validateSetDisableResourceVersioningParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetDisableResourceVersioning(val interfac
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetEnableHistoryImport(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetEnableHistoryImport(val any) {
 	if err := j.validateSetEnableHistoryImportParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetEnableHistoryImport(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetEnableUpdateCreate(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetEnableUpdateCreate(val any) {
 	if err := j.validateSetEnableUpdateCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetEnableUpdateCreate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_HealthcareFhirStore) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -817,7 +816,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetId(val *string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_HealthcareFhirStore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetName(val *string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_HealthcareFhirStore) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -869,7 +868,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_HealthcareFhirStore) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_HealthcareFhirStore)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStore)SetVersion(val *string) {
+func (j *jsiiProxy_HealthcareFhirStore) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func HealthcareFhirStore_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func HealthcareFhirStore_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func HealthcareFhirStore_IsConstruct(x interface{}) *bool {
+func HealthcareFhirStore_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareFhirStore_IsConstructParameters(x); err != nil {
@@ -938,7 +937,7 @@ func HealthcareFhirStore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func HealthcareFhirStore_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareFhirStore_IsTerraformElement(x interface{}) *bool {
+func HealthcareFhirStore_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareFhirStore_IsTerraformElementParameters(x); err != nil {
@@ -957,7 +956,7 @@ func HealthcareFhirStore_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func HealthcareFhirStore_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareFhirStore_IsTerraformResource(x interface{}) *bool {
+func HealthcareFhirStore_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareFhirStore_IsTerraformResourceParameters(x); err != nil {
@@ -976,7 +975,7 @@ func HealthcareFhirStore_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1001,31 +1000,31 @@ func (h *jsiiProxy_HealthcareFhirStore) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) AddOverride(path *string, value interface{}) {
+func (h *jsiiProxy_HealthcareFhirStore) AddOverride(path *string, value any) {
 	if err := h.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareFhirStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,7 +1056,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,7 +1072,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,7 +1088,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,7 +1104,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1137,7 +1136,7 @@ func (h *jsiiProxy_HealthcareFhirStore) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1153,15 +1152,15 @@ func (h *jsiiProxy_HealthcareFhirStore) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) HasResourceMove() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareFhirStore) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1180,7 +1179,7 @@ func (h *jsiiProxy_HealthcareFhirStore) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		h,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1193,7 +1192,7 @@ func (h *jsiiProxy_HealthcareFhirStore) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1207,18 +1206,18 @@ func (h *jsiiProxy_HealthcareFhirStore) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) MoveTo(moveTarget *string, index interface{}) {
+func (h *jsiiProxy_HealthcareFhirStore) MoveTo(moveTarget *string, index any) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1229,7 +1228,7 @@ func (h *jsiiProxy_HealthcareFhirStore) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1240,7 +1239,7 @@ func (h *jsiiProxy_HealthcareFhirStore) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		h,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1251,29 +1250,29 @@ func (h *jsiiProxy_HealthcareFhirStore) PutNotificationConfig(value *HealthcareF
 	_jsii_.InvokeVoid(
 		h,
 		"putNotificationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) PutNotificationConfigs(value interface{}) {
+func (h *jsiiProxy_HealthcareFhirStore) PutNotificationConfigs(value any) {
 	if err := h.validatePutNotificationConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putNotificationConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) PutStreamConfigs(value interface{}) {
+func (h *jsiiProxy_HealthcareFhirStore) PutStreamConfigs(value any) {
 	if err := h.validatePutStreamConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putStreamConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1284,7 +1283,7 @@ func (h *jsiiProxy_HealthcareFhirStore) PutTimeouts(value *HealthcareFhirStoreTi
 	_jsii_.InvokeVoid(
 		h,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1392,8 +1391,8 @@ func (h *jsiiProxy_HealthcareFhirStore) ResetTimeouts() {
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareFhirStore) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1405,8 +1404,8 @@ func (h *jsiiProxy_HealthcareFhirStore) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareFhirStore) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1418,8 +1417,8 @@ func (h *jsiiProxy_HealthcareFhirStore) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) ToHclTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareFhirStore) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1431,8 +1430,8 @@ func (h *jsiiProxy_HealthcareFhirStore) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) ToMetadata() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareFhirStore) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1457,8 +1456,8 @@ func (h *jsiiProxy_HealthcareFhirStore) ToString() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) ToTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareFhirStore) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1469,4 +1468,3 @@ func (h *jsiiProxy_HealthcareFhirStore) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -24,19 +24,19 @@ type OracleDatabaseCloudVmCluster interface {
 	SetCloudVmClusterId(val *string)
 	CloudVmClusterIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -86,27 +86,27 @@ type OracleDatabaseCloudVmCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OracleDatabaseCloudVmClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type OracleDatabaseCloudVmCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type OracleDatabaseCloudVmCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -155,17 +155,17 @@ type OracleDatabaseCloudVmCluster interface {
 	ResetProject()
 	ResetProperties()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OracleDatabaseCloudVmCluster
@@ -243,8 +243,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) CloudVmClusterIdInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) CreateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) DeletionProtection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) Timeouts() OracleDatabaseCloudV
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -642,7 +642,6 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, config *OracleDatabaseCloudVmClusterConfig) OracleDatabaseCloudVmCluster {
@@ -655,7 +654,7 @@ func NewOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -668,12 +667,12 @@ func NewOracleDatabaseCloudVmCluster_Override(o OracleDatabaseCloudVmCluster, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetBackupSubnetCidr(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetBackupSubnetCidr(val *string) {
 	if err := j.validateSetBackupSubnetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetBackupSubnetCidr(val *string)
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetCidr(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetCloudVmClusterId(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetCloudVmClusterId(val *string) {
 	if err := j.validateSetCloudVmClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetCloudVmClusterId(val *string)
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetDeletionProtection(val interf
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -747,7 +746,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetDisplayName(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetExadataInfrastructure(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetExadataInfrastructure(val *string) {
 	if err := j.validateSetExadataInfrastructureParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetExadataInfrastructure(val *st
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -777,7 +776,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetId(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetLocation(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetNetwork(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetProject(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -851,7 +850,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func OracleDatabaseCloudVmCluster_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func OracleDatabaseCloudVmCluster_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OracleDatabaseCloudVmCluster_IsConstruct(x interface{}) *bool {
+func OracleDatabaseCloudVmCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseCloudVmCluster_IsConstructParameters(x); err != nil {
@@ -909,7 +908,7 @@ func OracleDatabaseCloudVmCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func OracleDatabaseCloudVmCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseCloudVmCluster_IsTerraformElement(x interface{}) *bool {
+func OracleDatabaseCloudVmCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseCloudVmCluster_IsTerraformElementParameters(x); err != nil {
@@ -928,7 +927,7 @@ func OracleDatabaseCloudVmCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func OracleDatabaseCloudVmCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseCloudVmCluster_IsTerraformResource(x interface{}) *bool {
+func OracleDatabaseCloudVmCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseCloudVmCluster_IsTerraformResourceParameters(x); err != nil {
@@ -947,7 +946,7 @@ func OracleDatabaseCloudVmCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -972,31 +971,31 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,15 +1123,15 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1151,7 +1150,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1178,18 +1177,18 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1200,7 +1199,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1222,7 +1221,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) PutProperties(value *OracleData
 	_jsii_.InvokeVoid(
 		o,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1233,7 +1232,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) PutTimeouts(value *OracleDataba
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1301,8 +1300,8 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1314,8 +1313,8 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1327,8 +1326,8 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1340,8 +1339,8 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1366,8 +1365,8 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1378,4 +1377,3 @@ func (o *jsiiProxy_OracleDatabaseCloudVmCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

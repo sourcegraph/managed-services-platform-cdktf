@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnector",
-		reflect.TypeOf((*DeveloperConnectAccountConnector)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectAccountConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountConnectorId", GoGetter: "AccountConnectorId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountConnectorIdInput", GoGetter: "AccountConnectorIdInput"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectAccountConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorConfig",
-		reflect.TypeOf((*DeveloperConnectAccountConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectAccountConnectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorProviderOauthConfig",
-		reflect.TypeOf((*DeveloperConnectAccountConnectorProviderOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectAccountConnectorProviderOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorProviderOauthConfigOutputReference",
-		reflect.TypeOf((*DeveloperConnectAccountConnectorProviderOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectAccountConnectorProviderOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectAccountConnectorProviderOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorTimeouts",
-		reflect.TypeOf((*DeveloperConnectAccountConnectorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectAccountConnectorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorTimeoutsOutputReference",
-		reflect.TypeOf((*DeveloperConnectAccountConnectorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectAccountConnectorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectAccountConnectorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

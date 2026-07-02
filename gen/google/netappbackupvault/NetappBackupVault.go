@@ -23,15 +23,15 @@ type NetappBackupVault interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -76,11 +76,11 @@ type NetappBackupVault interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceBackupVault() *string
 	SourceRegion() *string
 	State() *string
@@ -88,18 +88,18 @@ type NetappBackupVault interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetappBackupVaultTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type NetappBackupVault interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type NetappBackupVault interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type NetappBackupVault interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetappBackupVault
@@ -237,8 +237,8 @@ func (j *jsiiProxy_NetappBackupVault) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappBackupVault) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_NetappBackupVault) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappBackupVault) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_NetappBackupVault) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappBackupVault) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_NetappBackupVault) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetappBackupVault) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_NetappBackupVault) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappBackupVault) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_NetappBackupVault) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappBackupVault) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_NetappBackupVault) Timeouts() NetappBackupVaultTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVault) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappBackupVault) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -596,7 +596,6 @@ func (j *jsiiProxy_NetappBackupVault) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewNetappBackupVault(scope constructs.Construct, id *string, config *NetappBackupVaultConfig) NetappBackupVault {
@@ -609,7 +608,7 @@ func NewNetappBackupVault(scope constructs.Construct, id *string, config *Netapp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -622,12 +621,12 @@ func NewNetappBackupVault_Override(n NetappBackupVault, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetBackupRegion(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetBackupRegion(val *string) {
 	if err := j.validateSetBackupRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_NetappBackupVault)SetBackupRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetBackupVaultType(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetBackupVaultType(val *string) {
 	if err := j.validateSetBackupVaultTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_NetappBackupVault)SetBackupVaultType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetappBackupVault) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_NetappBackupVault)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetCount(val interface{}) {
+func (j *jsiiProxy_NetappBackupVault) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_NetappBackupVault)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetappBackupVault) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_NetappBackupVault)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetDescription(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_NetappBackupVault)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetappBackupVault) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -698,7 +697,7 @@ func (j *jsiiProxy_NetappBackupVault)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetId(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_NetappBackupVault)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetappBackupVault) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_NetappBackupVault)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetappBackupVault) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_NetappBackupVault)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetLocation(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_NetappBackupVault)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetName(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_NetappBackupVault)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetProject(val *string) {
+func (j *jsiiProxy_NetappBackupVault) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_NetappBackupVault)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetappBackupVault) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -772,7 +771,7 @@ func (j *jsiiProxy_NetappBackupVault)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVault)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetappBackupVault) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func NetappBackupVault_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func NetappBackupVault_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetappBackupVault_IsConstruct(x interface{}) *bool {
+func NetappBackupVault_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappBackupVault_IsConstructParameters(x); err != nil {
@@ -830,7 +829,7 @@ func NetappBackupVault_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func NetappBackupVault_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappBackupVault_IsTerraformElement(x interface{}) *bool {
+func NetappBackupVault_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappBackupVault_IsTerraformElementParameters(x); err != nil {
@@ -849,7 +848,7 @@ func NetappBackupVault_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func NetappBackupVault_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappBackupVault_IsTerraformResource(x interface{}) *bool {
+func NetappBackupVault_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappBackupVault_IsTerraformResourceParameters(x); err != nil {
@@ -868,7 +867,7 @@ func NetappBackupVault_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -893,31 +892,31 @@ func (n *jsiiProxy_NetappBackupVault) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetappBackupVault) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetappBackupVault) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetappBackupVault) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappBackupVault) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (n *jsiiProxy_NetappBackupVault) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (n *jsiiProxy_NetappBackupVault) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (n *jsiiProxy_NetappBackupVault) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (n *jsiiProxy_NetappBackupVault) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (n *jsiiProxy_NetappBackupVault) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (n *jsiiProxy_NetappBackupVault) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (n *jsiiProxy_NetappBackupVault) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,15 +1044,15 @@ func (n *jsiiProxy_NetappBackupVault) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVault) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappBackupVault) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1072,7 +1071,7 @@ func (n *jsiiProxy_NetappBackupVault) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (n *jsiiProxy_NetappBackupVault) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,18 +1098,18 @@ func (n *jsiiProxy_NetappBackupVault) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetappBackupVault) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetappBackupVault) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1121,7 +1120,7 @@ func (n *jsiiProxy_NetappBackupVault) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (n *jsiiProxy_NetappBackupVault) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (n *jsiiProxy_NetappBackupVault) PutBackupRetentionPolicy(value *NetappBack
 	_jsii_.InvokeVoid(
 		n,
 		"putBackupRetentionPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (n *jsiiProxy_NetappBackupVault) PutTimeouts(value *NetappBackupVaultTimeou
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1230,8 +1229,8 @@ func (n *jsiiProxy_NetappBackupVault) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetappBackupVault) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappBackupVault) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1243,8 +1242,8 @@ func (n *jsiiProxy_NetappBackupVault) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVault) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappBackupVault) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1256,8 +1255,8 @@ func (n *jsiiProxy_NetappBackupVault) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVault) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappBackupVault) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1269,8 +1268,8 @@ func (n *jsiiProxy_NetappBackupVault) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVault) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappBackupVault) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1295,8 +1294,8 @@ func (n *jsiiProxy_NetappBackupVault) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVault) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappBackupVault) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1307,4 +1306,3 @@ func (n *jsiiProxy_NetappBackupVault) ToTerraform() interface{} {
 
 	return returns
 }
-

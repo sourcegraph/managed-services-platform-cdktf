@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeTieringPolicyOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeTieringPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeTieringPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetappVolumeTieringPolicyOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

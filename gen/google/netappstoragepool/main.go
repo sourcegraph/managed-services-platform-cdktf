@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
-		reflect.TypeOf((*NetappStoragePool)(nil)).Elem(),
+		reflect.TypeFor[NetappStoragePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectory", GoGetter: "ActiveDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryInput", GoGetter: "ActiveDirectoryInput"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappStoragePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -119,15 +119,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePoolConfig",
-		reflect.TypeOf((*NetappStoragePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappStoragePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePoolTimeouts",
-		reflect.TypeOf((*NetappStoragePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappStoragePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference",
-		reflect.TypeOf((*NetappStoragePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappStoragePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappStoragePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

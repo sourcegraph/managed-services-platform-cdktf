@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterAddonsConfig struct {
 	// cloudrun_config block.
 	//
@@ -49,10 +48,9 @@ type ContainerClusterAddonsConfig struct {
 	// ray_operator_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#ray_operator_config ContainerCluster#ray_operator_config}
-	RayOperatorConfig interface{} `field:"optional" json:"rayOperatorConfig" yaml:"rayOperatorConfig"`
+	RayOperatorConfig any `field:"optional" json:"rayOperatorConfig" yaml:"rayOperatorConfig"`
 	// stateful_ha_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#stateful_ha_config ContainerCluster#stateful_ha_config}
 	StatefulHaConfig *ContainerClusterAddonsConfigStatefulHaConfig `field:"optional" json:"statefulHaConfig" yaml:"statefulHaConfig"`
 }
-

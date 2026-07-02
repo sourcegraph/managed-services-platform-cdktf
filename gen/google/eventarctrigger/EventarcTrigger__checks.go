@@ -19,7 +19,7 @@ func (e *jsiiProxy_EventarcTrigger) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EventarcTrigger) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EventarcTrigger) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EventarcTrigger) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_EventarcTrigger) validatePutDestinationParameters(value *Even
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTrigger) validatePutMatchingCriteriaParameters(value interface{}) error {
+func (e *jsiiProxy_EventarcTrigger) validatePutMatchingCriteriaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateEventarcTrigger_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateEventarcTrigger_IsConstructParameters(x interface{}) error {
+func validateEventarcTrigger_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateEventarcTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEventarcTrigger_IsTerraformElementParameters(x interface{}) error {
+func validateEventarcTrigger_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateEventarcTrigger_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEventarcTrigger_IsTerraformResourceParameters(x interface{}) error {
+func validateEventarcTrigger_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_EventarcTrigger) validateSetChannelParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTrigger) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTrigger) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_EventarcTrigger) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTrigger) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTrigger) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -462,7 +462,7 @@ func (j *jsiiProxy_EventarcTrigger) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTrigger) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EventarcTrigger) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -534,4 +534,3 @@ func validateNewEventarcTriggerParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

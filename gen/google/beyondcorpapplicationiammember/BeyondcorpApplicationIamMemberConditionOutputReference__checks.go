@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBeyondcorpApplicationIamMemberConditionOutputReferenceParameters
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type ComputeSubnetwork interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -32,9 +32,9 @@ type ComputeSubnetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EnableFlowLogs() interface{}
-	SetEnableFlowLogs(val interface{})
-	EnableFlowLogsInput() interface{}
+	EnableFlowLogs() any
+	SetEnableFlowLogs(val any)
+	EnableFlowLogsInput() any
 	ExternalIpv6Prefix() *string
 	SetExternalIpv6Prefix(val *string)
 	ExternalIpv6PrefixInput() *string
@@ -79,9 +79,9 @@ type ComputeSubnetwork interface {
 	Node() constructs.Node
 	Params() ComputeSubnetworkParamsOutputReference
 	ParamsInput() *ComputeSubnetworkParams
-	PrivateIpGoogleAccess() interface{}
-	SetPrivateIpGoogleAccess(val interface{})
-	PrivateIpGoogleAccessInput() interface{}
+	PrivateIpGoogleAccess() any
+	SetPrivateIpGoogleAccess(val any)
+	PrivateIpGoogleAccessInput() any
 	PrivateIpv6GoogleAccess() *string
 	SetPrivateIpv6GoogleAccess(val *string)
 	PrivateIpv6GoogleAccessInput() *string
@@ -93,14 +93,14 @@ type ComputeSubnetwork interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Purpose() *string
 	SetPurpose(val *string)
 	PurposeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -111,11 +111,11 @@ type ComputeSubnetwork interface {
 	SetRole(val *string)
 	RoleInput() *string
 	SecondaryIpRange() ComputeSubnetworkSecondaryIpRangeList
-	SecondaryIpRangeInput() interface{}
+	SecondaryIpRangeInput() any
 	SelfLink() *string
-	SendSecondaryIpRangeIfEmpty() interface{}
-	SetSendSecondaryIpRangeIfEmpty(val interface{})
-	SendSecondaryIpRangeIfEmptyInput() interface{}
+	SendSecondaryIpRangeIfEmpty() any
+	SetSendSecondaryIpRangeIfEmpty(val any)
+	SendSecondaryIpRangeIfEmptyInput() any
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
@@ -124,18 +124,18 @@ type ComputeSubnetwork interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeSubnetworkTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -153,7 +153,7 @@ type ComputeSubnetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -165,7 +165,7 @@ type ComputeSubnetwork interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -174,7 +174,7 @@ type ComputeSubnetwork interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *ComputeSubnetworkLogConfig)
 	PutParams(value *ComputeSubnetworkParams)
-	PutSecondaryIpRange(value interface{})
+	PutSecondaryIpRange(value any)
 	PutTimeouts(value *ComputeSubnetworkTimeouts)
 	ResetDescription()
 	ResetEnableFlowLogs()
@@ -199,17 +199,17 @@ type ComputeSubnetwork interface {
 	ResetSendSecondaryIpRangeIfEmpty()
 	ResetStackType()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeSubnetwork
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ComputeSubnetwork) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ComputeSubnetwork) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeSubnetwork) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_ComputeSubnetwork) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_ComputeSubnetwork) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFlowLogs",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogs() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFlowLogsInput",
@@ -597,8 +597,8 @@ func (j *jsiiProxy_ComputeSubnetwork) ParamsInput() *ComputeSubnetworkParams {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) PrivateIpGoogleAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) PrivateIpGoogleAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateIpGoogleAccess",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_ComputeSubnetwork) PrivateIpGoogleAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) PrivateIpGoogleAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) PrivateIpGoogleAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateIpGoogleAccessInput",
@@ -667,8 +667,8 @@ func (j *jsiiProxy_ComputeSubnetwork) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeSubnetwork) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -697,8 +697,8 @@ func (j *jsiiProxy_ComputeSubnetwork) PurposeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -777,8 +777,8 @@ func (j *jsiiProxy_ComputeSubnetwork) SecondaryIpRange() ComputeSubnetworkSecond
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) SecondaryIpRangeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) SecondaryIpRangeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondaryIpRangeInput",
@@ -797,8 +797,8 @@ func (j *jsiiProxy_ComputeSubnetwork) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmpty() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmpty() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendSecondaryIpRangeIfEmpty",
@@ -807,8 +807,8 @@ func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmpty() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmptyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmptyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendSecondaryIpRangeIfEmptyInput",
@@ -867,8 +867,8 @@ func (j *jsiiProxy_ComputeSubnetwork) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeSubnetwork) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -897,8 +897,8 @@ func (j *jsiiProxy_ComputeSubnetwork) Timeouts() ComputeSubnetworkTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -906,7 +906,6 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
@@ -919,7 +918,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -932,12 +931,12 @@ func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeSubnetwork) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeSubnetwork) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -967,7 +966,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetEnableFlowLogs(val interface{}) {
+func (j *jsiiProxy_ComputeSubnetwork) SetEnableFlowLogs(val any) {
 	if err := j.validateSetEnableFlowLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetEnableFlowLogs(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetExternalIpv6Prefix(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetExternalIpv6Prefix(val *string) {
 	if err := j.validateSetExternalIpv6PrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetExternalIpv6Prefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeSubnetwork) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetId(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetIpCidrRange(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetIpCidrRange(val *string) {
 	if err := j.validateSetIpCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetIpCidrRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetIpCollection(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetIpCollection(val *string) {
 	if err := j.validateSetIpCollectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetIpCollection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetIpv6AccessType(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetIpv6AccessType(val *string) {
 	if err := j.validateSetIpv6AccessTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetIpv6AccessType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeSubnetwork) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetName(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetNetwork(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetPrivateIpGoogleAccess(val interface{}) {
+func (j *jsiiProxy_ComputeSubnetwork) SetPrivateIpGoogleAccess(val any) {
 	if err := j.validateSetPrivateIpGoogleAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetPrivateIpGoogleAccess(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetPrivateIpv6GoogleAccess(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetPrivateIpv6GoogleAccess(val *string) {
 	if err := j.validateSetPrivateIpv6GoogleAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetPrivateIpv6GoogleAccess(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetProject(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeSubnetwork) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeSubnetwork) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetPurpose(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetPurpose(val *string) {
 	if err := j.validateSetPurposeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetPurpose(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetReservedInternalRange(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetReservedInternalRange(val *string) {
 	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetReservedInternalRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetRole(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetSendSecondaryIpRangeIfEmpty(val interface{}) {
+func (j *jsiiProxy_ComputeSubnetwork) SetSendSecondaryIpRangeIfEmpty(val any) {
 	if err := j.validateSetSendSecondaryIpRangeIfEmptyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_ComputeSubnetwork)SetSendSecondaryIpRangeIfEmpty(val interfac
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetwork)SetStackType(val *string) {
+func (j *jsiiProxy_ComputeSubnetwork) SetStackType(val *string) {
 	if err := j.validateSetStackTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1215,7 +1214,7 @@ func ComputeSubnetwork_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1239,7 +1238,7 @@ func ComputeSubnetwork_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeSubnetwork_IsConstruct(x interface{}) *bool {
+func ComputeSubnetwork_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSubnetwork_IsConstructParameters(x); err != nil {
@@ -1250,7 +1249,7 @@ func ComputeSubnetwork_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1258,7 +1257,7 @@ func ComputeSubnetwork_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeSubnetwork_IsTerraformElement(x interface{}) *bool {
+func ComputeSubnetwork_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSubnetwork_IsTerraformElementParameters(x); err != nil {
@@ -1269,7 +1268,7 @@ func ComputeSubnetwork_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func ComputeSubnetwork_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeSubnetwork_IsTerraformResource(x interface{}) *bool {
+func ComputeSubnetwork_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSubnetwork_IsTerraformResourceParameters(x); err != nil {
@@ -1288,7 +1287,7 @@ func ComputeSubnetwork_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1313,31 +1312,31 @@ func (c *jsiiProxy_ComputeSubnetwork) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeSubnetwork) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeSubnetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1353,7 +1352,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1369,7 +1368,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1385,7 +1384,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1401,7 +1400,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1417,7 +1416,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1433,7 +1432,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1449,7 +1448,7 @@ func (c *jsiiProxy_ComputeSubnetwork) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1465,15 +1464,15 @@ func (c *jsiiProxy_ComputeSubnetwork) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSubnetwork) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1492,7 +1491,7 @@ func (c *jsiiProxy_ComputeSubnetwork) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1505,7 +1504,7 @@ func (c *jsiiProxy_ComputeSubnetwork) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1519,18 +1518,18 @@ func (c *jsiiProxy_ComputeSubnetwork) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeSubnetwork) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1541,7 +1540,7 @@ func (c *jsiiProxy_ComputeSubnetwork) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1552,7 +1551,7 @@ func (c *jsiiProxy_ComputeSubnetwork) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1563,7 +1562,7 @@ func (c *jsiiProxy_ComputeSubnetwork) PutLogConfig(value *ComputeSubnetworkLogCo
 	_jsii_.InvokeVoid(
 		c,
 		"putLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1574,18 +1573,18 @@ func (c *jsiiProxy_ComputeSubnetwork) PutParams(value *ComputeSubnetworkParams) 
 	_jsii_.InvokeVoid(
 		c,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) PutSecondaryIpRange(value interface{}) {
+func (c *jsiiProxy_ComputeSubnetwork) PutSecondaryIpRange(value any) {
 	if err := c.validatePutSecondaryIpRangeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecondaryIpRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1596,7 +1595,7 @@ func (c *jsiiProxy_ComputeSubnetwork) PutTimeouts(value *ComputeSubnetworkTimeou
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1768,8 +1767,8 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeSubnetwork) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1781,8 +1780,8 @@ func (c *jsiiProxy_ComputeSubnetwork) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeSubnetwork) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1794,8 +1793,8 @@ func (c *jsiiProxy_ComputeSubnetwork) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSubnetwork) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1807,8 +1806,8 @@ func (c *jsiiProxy_ComputeSubnetwork) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSubnetwork) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1833,8 +1832,8 @@ func (c *jsiiProxy_ComputeSubnetwork) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSubnetwork) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSubnetwork) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1845,4 +1844,3 @@ func (c *jsiiProxy_ComputeSubnetwork) ToTerraform() interface{} {
 
 	return returns
 }
-

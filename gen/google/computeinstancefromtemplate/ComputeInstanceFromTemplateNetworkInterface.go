@@ -1,15 +1,14 @@
 package computeinstancefromtemplate
 
-
 type ComputeInstanceFromTemplateNetworkInterface struct {
 	// access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_from_template#access_config ComputeInstanceFromTemplate#access_config}
-	AccessConfig interface{} `field:"optional" json:"accessConfig" yaml:"accessConfig"`
+	AccessConfig any `field:"optional" json:"accessConfig" yaml:"accessConfig"`
 	// alias_ip_range block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_from_template#alias_ip_range ComputeInstanceFromTemplate#alias_ip_range}
-	AliasIpRange interface{} `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
+	AliasIpRange any `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
 	// The prefix length of the primary internal IPv6 range.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_from_template#internal_ipv6_prefix_length ComputeInstanceFromTemplate#internal_ipv6_prefix_length}
@@ -17,7 +16,7 @@ type ComputeInstanceFromTemplateNetworkInterface struct {
 	// ipv6_access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_from_template#ipv6_access_config ComputeInstanceFromTemplate#ipv6_access_config}
-	Ipv6AccessConfig interface{} `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
+	Ipv6AccessConfig any `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
 	// An IPv6 internal network address for this network interface.
 	//
 	// If not specified, Google Cloud will automatically assign an internal IPv6 address from the instance's subnetwork.
@@ -61,4 +60,3 @@ type ComputeInstanceFromTemplateNetworkInterface struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_from_template#subnetwork_project ComputeInstanceFromTemplate#subnetwork_project}
 	SubnetworkProject *string `field:"optional" json:"subnetworkProject" yaml:"subnetworkProject"`
 }
-

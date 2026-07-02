@@ -20,21 +20,21 @@ type DialogflowCxAgent interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultLanguageCode() *string
 	SetDefaultLanguageCode(val *string)
 	DefaultLanguageCodeInput() *string
-	DeleteChatEngineOnDestroy() interface{}
-	SetDeleteChatEngineOnDestroy(val interface{})
-	DeleteChatEngineOnDestroyInput() interface{}
+	DeleteChatEngineOnDestroy() any
+	SetDeleteChatEngineOnDestroy(val any)
+	DeleteChatEngineOnDestroyInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,12 +45,12 @@ type DialogflowCxAgent interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
-	EnableSpellCorrection() interface{}
-	SetEnableSpellCorrection(val interface{})
-	EnableSpellCorrectionInput() interface{}
-	EnableStackdriverLogging() interface{}
-	SetEnableStackdriverLogging(val interface{})
-	EnableStackdriverLoggingInput() interface{}
+	EnableSpellCorrection() any
+	SetEnableSpellCorrection(val any)
+	EnableSpellCorrectionInput() any
+	EnableStackdriverLogging() any
+	SetEnableStackdriverLogging(val any)
+	EnableStackdriverLoggingInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -84,11 +84,11 @@ type DialogflowCxAgent interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecuritySettings() *string
 	SetSecuritySettings(val *string)
 	SecuritySettingsInput() *string
@@ -101,13 +101,13 @@ type DialogflowCxAgent interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TextToSpeechSettings() DialogflowCxAgentTextToSpeechSettingsOutputReference
 	TextToSpeechSettingsInput() *DialogflowCxAgentTextToSpeechSettings
 	Timeouts() DialogflowCxAgentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -115,9 +115,9 @@ type DialogflowCxAgent interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -135,7 +135,7 @@ type DialogflowCxAgent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -147,7 +147,7 @@ type DialogflowCxAgent interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -178,17 +178,17 @@ type DialogflowCxAgent interface {
 	ResetSupportedLanguageCodes()
 	ResetTextToSpeechSettings()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DialogflowCxAgent
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DialogflowCxAgent) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DialogflowCxAgent) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowCxAgent) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DialogflowCxAgent) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DialogflowCxAgent) DefaultLanguageCodeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) DeleteChatEngineOnDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) DeleteChatEngineOnDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteChatEngineOnDestroy",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DialogflowCxAgent) DeleteChatEngineOnDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) DeleteChatEngineOnDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) DeleteChatEngineOnDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteChatEngineOnDestroyInput",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_DialogflowCxAgent) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) EnableSpellCorrection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) EnableSpellCorrection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSpellCorrection",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_DialogflowCxAgent) EnableSpellCorrection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) EnableSpellCorrectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) EnableSpellCorrectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSpellCorrectionInput",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DialogflowCxAgent) EnableSpellCorrectionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) EnableStackdriverLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) EnableStackdriverLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLogging",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_DialogflowCxAgent) EnableStackdriverLogging() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) EnableStackdriverLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) EnableStackdriverLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLoggingInput",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_DialogflowCxAgent) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DialogflowCxAgent) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -586,8 +586,8 @@ func (j *jsiiProxy_DialogflowCxAgent) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -676,8 +676,8 @@ func (j *jsiiProxy_DialogflowCxAgent) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowCxAgent) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -726,8 +726,8 @@ func (j *jsiiProxy_DialogflowCxAgent) Timeouts() DialogflowCxAgentTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgent) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgent) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -756,7 +756,6 @@ func (j *jsiiProxy_DialogflowCxAgent) TimeZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewDialogflowCxAgent(scope constructs.Construct, id *string, config *DialogflowCxAgentConfig) DialogflowCxAgent {
 	_init_.Initialize()
@@ -768,7 +767,7 @@ func NewDialogflowCxAgent(scope constructs.Construct, id *string, config *Dialog
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -781,12 +780,12 @@ func NewDialogflowCxAgent_Override(d DialogflowCxAgent, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetAvatarUri(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetAvatarUri(val *string) {
 	if err := j.validateSetAvatarUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetAvatarUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetConnection(val interface{}) {
+func (j *jsiiProxy_DialogflowCxAgent) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetCount(val interface{}) {
+func (j *jsiiProxy_DialogflowCxAgent) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetDefaultLanguageCode(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetDefaultLanguageCode(val *string) {
 	if err := j.validateSetDefaultLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetDefaultLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetDeleteChatEngineOnDestroy(val interface{}) {
+func (j *jsiiProxy_DialogflowCxAgent) SetDeleteChatEngineOnDestroy(val any) {
 	if err := j.validateSetDeleteChatEngineOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetDeleteChatEngineOnDestroy(val interface{
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -849,7 +848,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetDescription(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetDisplayName(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetEnableSpellCorrection(val interface{}) {
+func (j *jsiiProxy_DialogflowCxAgent) SetEnableSpellCorrection(val any) {
 	if err := j.validateSetEnableSpellCorrectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetEnableSpellCorrection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetEnableStackdriverLogging(val interface{}) {
+func (j *jsiiProxy_DialogflowCxAgent) SetEnableStackdriverLogging(val any) {
 	if err := j.validateSetEnableStackdriverLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetEnableStackdriverLogging(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DialogflowCxAgent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -901,7 +900,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetId(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DialogflowCxAgent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetLocation(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetProject(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DialogflowCxAgent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -953,7 +952,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DialogflowCxAgent) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetSecuritySettings(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetSecuritySettings(val *string) {
 	if err := j.validateSetSecuritySettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,7 +974,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetSecuritySettings(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetSupportedLanguageCodes(val *[]*string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetSupportedLanguageCodes(val *[]*string) {
 	if err := j.validateSetSupportedLanguageCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_DialogflowCxAgent)SetSupportedLanguageCodes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgent)SetTimeZone(val *string) {
+func (j *jsiiProxy_DialogflowCxAgent) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func DialogflowCxAgent_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func DialogflowCxAgent_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DialogflowCxAgent_IsConstruct(x interface{}) *bool {
+func DialogflowCxAgent_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowCxAgent_IsConstructParameters(x); err != nil {
@@ -1044,7 +1043,7 @@ func DialogflowCxAgent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func DialogflowCxAgent_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowCxAgent_IsTerraformElement(x interface{}) *bool {
+func DialogflowCxAgent_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowCxAgent_IsTerraformElementParameters(x); err != nil {
@@ -1063,7 +1062,7 @@ func DialogflowCxAgent_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func DialogflowCxAgent_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowCxAgent_IsTerraformResource(x interface{}) *bool {
+func DialogflowCxAgent_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowCxAgent_IsTerraformResourceParameters(x); err != nil {
@@ -1082,7 +1081,7 @@ func DialogflowCxAgent_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1107,31 +1106,31 @@ func (d *jsiiProxy_DialogflowCxAgent) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DialogflowCxAgent) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1147,7 +1146,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1163,7 +1162,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1179,7 +1178,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1195,7 +1194,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1211,7 +1210,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1227,7 +1226,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1243,7 +1242,7 @@ func (d *jsiiProxy_DialogflowCxAgent) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1259,15 +1258,15 @@ func (d *jsiiProxy_DialogflowCxAgent) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxAgent) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1286,7 +1285,7 @@ func (d *jsiiProxy_DialogflowCxAgent) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1299,7 +1298,7 @@ func (d *jsiiProxy_DialogflowCxAgent) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1313,18 +1312,18 @@ func (d *jsiiProxy_DialogflowCxAgent) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DialogflowCxAgent) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1335,7 +1334,7 @@ func (d *jsiiProxy_DialogflowCxAgent) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1346,7 +1345,7 @@ func (d *jsiiProxy_DialogflowCxAgent) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1357,7 +1356,7 @@ func (d *jsiiProxy_DialogflowCxAgent) PutAdvancedSettings(value *DialogflowCxAge
 	_jsii_.InvokeVoid(
 		d,
 		"putAdvancedSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1368,7 +1367,7 @@ func (d *jsiiProxy_DialogflowCxAgent) PutGenAppBuilderSettings(value *Dialogflow
 	_jsii_.InvokeVoid(
 		d,
 		"putGenAppBuilderSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1379,7 +1378,7 @@ func (d *jsiiProxy_DialogflowCxAgent) PutGitIntegrationSettings(value *Dialogflo
 	_jsii_.InvokeVoid(
 		d,
 		"putGitIntegrationSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1390,7 +1389,7 @@ func (d *jsiiProxy_DialogflowCxAgent) PutSpeechToTextSettings(value *DialogflowC
 	_jsii_.InvokeVoid(
 		d,
 		"putSpeechToTextSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1401,7 +1400,7 @@ func (d *jsiiProxy_DialogflowCxAgent) PutTextToSpeechSettings(value *DialogflowC
 	_jsii_.InvokeVoid(
 		d,
 		"putTextToSpeechSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1412,7 +1411,7 @@ func (d *jsiiProxy_DialogflowCxAgent) PutTimeouts(value *DialogflowCxAgentTimeou
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1544,8 +1543,8 @@ func (d *jsiiProxy_DialogflowCxAgent) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowCxAgent) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1557,8 +1556,8 @@ func (d *jsiiProxy_DialogflowCxAgent) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowCxAgent) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1570,8 +1569,8 @@ func (d *jsiiProxy_DialogflowCxAgent) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxAgent) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1583,8 +1582,8 @@ func (d *jsiiProxy_DialogflowCxAgent) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxAgent) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1609,8 +1608,8 @@ func (d *jsiiProxy_DialogflowCxAgent) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxAgent) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxAgent) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1621,4 +1620,3 @@ func (d *jsiiProxy_DialogflowCxAgent) ToTerraform() interface{} {
 
 	return returns
 }
-

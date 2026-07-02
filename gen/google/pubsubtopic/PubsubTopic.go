@@ -15,15 +15,15 @@ type PubsubTopic interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,7 +58,7 @@ type PubsubTopic interface {
 	MessageStoragePolicy() PubsubTopicMessageStoragePolicyOutputReference
 	MessageStoragePolicyInput() *PubsubTopicMessageStoragePolicy
 	MessageTransforms() PubsubTopicMessageTransformsList
-	MessageTransformsInput() interface{}
+	MessageTransformsInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -72,29 +72,29 @@ type PubsubTopic interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SchemaSettings() PubsubTopicSchemaSettingsOutputReference
 	SchemaSettingsInput() *PubsubTopicSchemaSettings
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() PubsubTopicTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type PubsubTopic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type PubsubTopic interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,7 +133,7 @@ type PubsubTopic interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIngestionDataSourceSettings(value *PubsubTopicIngestionDataSourceSettings)
 	PutMessageStoragePolicy(value *PubsubTopicMessageStoragePolicy)
-	PutMessageTransforms(value interface{})
+	PutMessageTransforms(value any)
 	PutSchemaSettings(value *PubsubTopicSchemaSettings)
 	PutTimeouts(value *PubsubTopicTimeouts)
 	ResetId()
@@ -149,17 +149,17 @@ type PubsubTopic interface {
 	ResetProject()
 	ResetSchemaSettings()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PubsubTopic
@@ -177,8 +177,8 @@ func (j *jsiiProxy_PubsubTopic) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopic) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_PubsubTopic) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubTopic) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_PubsubTopic) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopic) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_PubsubTopic) MessageTransforms() PubsubTopicMessageTransforms
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) MessageTransformsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopic) MessageTransformsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"messageTransformsInput",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_PubsubTopic) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PubsubTopic) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_PubsubTopic) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopic) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_PubsubTopic) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubTopic) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_PubsubTopic) Timeouts() PubsubTopicTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopic) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopic) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_PubsubTopic) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicConfig) PubsubTopic {
@@ -579,7 +578,7 @@ func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -592,12 +591,12 @@ func NewPubsubTopic_Override(p PubsubTopic, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetConnection(val interface{}) {
+func (j *jsiiProxy_PubsubTopic) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_PubsubTopic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetCount(val interface{}) {
+func (j *jsiiProxy_PubsubTopic) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_PubsubTopic)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PubsubTopic) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_PubsubTopic)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PubsubTopic) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_PubsubTopic)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetId(val *string) {
+func (j *jsiiProxy_PubsubTopic) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_PubsubTopic)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_PubsubTopic) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_PubsubTopic)SetKmsKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_PubsubTopic) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_PubsubTopic)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PubsubTopic) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_PubsubTopic)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetMessageRetentionDuration(val *string) {
+func (j *jsiiProxy_PubsubTopic) SetMessageRetentionDuration(val *string) {
 	if err := j.validateSetMessageRetentionDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_PubsubTopic)SetMessageRetentionDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetName(val *string) {
+func (j *jsiiProxy_PubsubTopic) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_PubsubTopic)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetProject(val *string) {
+func (j *jsiiProxy_PubsubTopic) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_PubsubTopic)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PubsubTopic) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -720,7 +719,7 @@ func (j *jsiiProxy_PubsubTopic)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopic)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PubsubTopic) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func PubsubTopic_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func PubsubTopic_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PubsubTopic_IsConstruct(x interface{}) *bool {
+func PubsubTopic_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubTopic_IsConstructParameters(x); err != nil {
@@ -778,7 +777,7 @@ func PubsubTopic_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func PubsubTopic_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubTopic_IsTerraformElement(x interface{}) *bool {
+func PubsubTopic_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubTopic_IsTerraformElementParameters(x); err != nil {
@@ -797,7 +796,7 @@ func PubsubTopic_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func PubsubTopic_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubTopic_IsTerraformResource(x interface{}) *bool {
+func PubsubTopic_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubTopic_IsTerraformResourceParameters(x); err != nil {
@@ -816,7 +815,7 @@ func PubsubTopic_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -841,31 +840,31 @@ func (p *jsiiProxy_PubsubTopic) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopic) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PubsubTopic) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopic) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopic) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (p *jsiiProxy_PubsubTopic) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (p *jsiiProxy_PubsubTopic) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (p *jsiiProxy_PubsubTopic) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (p *jsiiProxy_PubsubTopic) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (p *jsiiProxy_PubsubTopic) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (p *jsiiProxy_PubsubTopic) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (p *jsiiProxy_PubsubTopic) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,15 +992,15 @@ func (p *jsiiProxy_PubsubTopic) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopic) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopic) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1020,7 +1019,7 @@ func (p *jsiiProxy_PubsubTopic) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1033,7 +1032,7 @@ func (p *jsiiProxy_PubsubTopic) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,18 +1046,18 @@ func (p *jsiiProxy_PubsubTopic) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopic) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PubsubTopic) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1069,7 +1068,7 @@ func (p *jsiiProxy_PubsubTopic) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1080,7 +1079,7 @@ func (p *jsiiProxy_PubsubTopic) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1091,7 +1090,7 @@ func (p *jsiiProxy_PubsubTopic) PutIngestionDataSourceSettings(value *PubsubTopi
 	_jsii_.InvokeVoid(
 		p,
 		"putIngestionDataSourceSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1102,18 +1101,18 @@ func (p *jsiiProxy_PubsubTopic) PutMessageStoragePolicy(value *PubsubTopicMessag
 	_jsii_.InvokeVoid(
 		p,
 		"putMessageStoragePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopic) PutMessageTransforms(value interface{}) {
+func (p *jsiiProxy_PubsubTopic) PutMessageTransforms(value any) {
 	if err := p.validatePutMessageTransformsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putMessageTransforms",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (p *jsiiProxy_PubsubTopic) PutSchemaSettings(value *PubsubTopicSchemaSettin
 	_jsii_.InvokeVoid(
 		p,
 		"putSchemaSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (p *jsiiProxy_PubsubTopic) PutTimeouts(value *PubsubTopicTimeouts) {
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,8 +1226,8 @@ func (p *jsiiProxy_PubsubTopic) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_PubsubTopic) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubTopic) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1240,8 +1239,8 @@ func (p *jsiiProxy_PubsubTopic) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopic) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubTopic) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1253,8 +1252,8 @@ func (p *jsiiProxy_PubsubTopic) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopic) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopic) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1266,8 +1265,8 @@ func (p *jsiiProxy_PubsubTopic) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopic) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopic) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1292,8 +1291,8 @@ func (p *jsiiProxy_PubsubTopic) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopic) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopic) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1304,4 +1303,3 @@ func (p *jsiiProxy_PubsubTopic) ToTerraform() interface{} {
 
 	return returns
 }
-

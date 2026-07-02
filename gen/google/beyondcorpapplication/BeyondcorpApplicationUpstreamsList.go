@@ -17,8 +17,8 @@ type BeyondcorpApplicationUpstreamsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BeyondcorpApplicationUpstreamsList interface {
 	Get(index *float64) BeyondcorpApplicationUpstreamsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewBeyondcorpApplicationUpstreamsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BeyondcorpApplicationUpstreamsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBeyondcorpApplicationUpstreamsList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBeyondcorpApplicationUpstreamsList_Override(b BeyondcorpApplicationUpstr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BeyondcorpApplicationUpstreamsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) Get(index *float64) Beyon
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) ToString() *string {
 
 	return returns
 }
-

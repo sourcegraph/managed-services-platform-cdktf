@@ -15,15 +15,15 @@ type ComputeVpnTunnel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -84,11 +84,11 @@ type ComputeVpnTunnel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -110,11 +110,11 @@ type ComputeVpnTunnel interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeVpnTunnelTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TunnelId() *string
 	VpnGateway() *string
 	SetVpnGateway(val *string)
@@ -126,9 +126,9 @@ type ComputeVpnTunnel interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -146,7 +146,7 @@ type ComputeVpnTunnel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -158,7 +158,7 @@ type ComputeVpnTunnel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -186,17 +186,17 @@ type ComputeVpnTunnel interface {
 	ResetTimeouts()
 	ResetVpnGateway()
 	ResetVpnGatewayInterface()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeVpnTunnel
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -734,8 +734,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -764,8 +764,8 @@ func (j *jsiiProxy_ComputeVpnTunnel) Timeouts() ComputeVpnTunnelTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeVpnTunnel) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -824,7 +824,6 @@ func (j *jsiiProxy_ComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) ComputeVpnTunnel {
 	_init_.Initialize()
@@ -836,7 +835,7 @@ func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *Compute
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -849,12 +848,12 @@ func NewComputeVpnTunnel_Override(c ComputeVpnTunnel, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -876,7 +875,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -884,7 +883,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -903,7 +902,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetId(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -914,7 +913,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetIkeVersion(val *float64) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetIkeVersion(val *float64) {
 	if err := j.validateSetIkeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -925,7 +924,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetIkeVersion(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -936,7 +935,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetLocalTrafficSelector(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetLocalTrafficSelector(val *[]*string) {
 	if err := j.validateSetLocalTrafficSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetLocalTrafficSelector(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetName(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetPeerExternalGateway(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetPeerExternalGateway(val *string) {
 	if err := j.validateSetPeerExternalGatewayParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetPeerExternalGateway(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetPeerExternalGatewayInterface(val *float64) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetPeerExternalGatewayInterface(val *float64) {
 	if err := j.validateSetPeerExternalGatewayInterfaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetPeerExternalGatewayInterface(val *float64
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetPeerGcpGateway(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetPeerGcpGateway(val *string) {
 	if err := j.validateSetPeerGcpGatewayParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetPeerGcpGateway(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetPeerIp(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetPeerIp(val *string) {
 	if err := j.validateSetPeerIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetPeerIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetProject(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,7 +1023,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetRemoteTrafficSelector(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetRemoteTrafficSelector(val *[]*string) {
 	if err := j.validateSetRemoteTrafficSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetRemoteTrafficSelector(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetRouter(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetRouter(val *string) {
 	if err := j.validateSetRouterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetRouter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetSharedSecret(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetSharedSecret(val *string) {
 	if err := j.validateSetSharedSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetSharedSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetTargetVpnGateway(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetTargetVpnGateway(val *string) {
 	if err := j.validateSetTargetVpnGatewayParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetTargetVpnGateway(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetVpnGateway(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetVpnGateway(val *string) {
 	if err := j.validateSetVpnGatewayParameters(val); err != nil {
 		panic(err)
 	}
@@ -1109,7 +1108,7 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetVpnGateway(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnel)SetVpnGatewayInterface(val *float64) {
+func (j *jsiiProxy_ComputeVpnTunnel) SetVpnGatewayInterface(val *float64) {
 	if err := j.validateSetVpnGatewayInterfaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func ComputeVpnTunnel_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1156,7 +1155,7 @@ func ComputeVpnTunnel_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeVpnTunnel_IsConstruct(x interface{}) *bool {
+func ComputeVpnTunnel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeVpnTunnel_IsConstructParameters(x); err != nil {
@@ -1167,7 +1166,7 @@ func ComputeVpnTunnel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1175,7 +1174,7 @@ func ComputeVpnTunnel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool {
+func ComputeVpnTunnel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeVpnTunnel_IsTerraformElementParameters(x); err != nil {
@@ -1186,7 +1185,7 @@ func ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1194,7 +1193,7 @@ func ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeVpnTunnel_IsTerraformResource(x interface{}) *bool {
+func ComputeVpnTunnel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeVpnTunnel_IsTerraformResourceParameters(x); err != nil {
@@ -1205,7 +1204,7 @@ func ComputeVpnTunnel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1230,31 +1229,31 @@ func (c *jsiiProxy_ComputeVpnTunnel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeVpnTunnel) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeVpnTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1270,7 +1269,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1286,7 +1285,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1302,7 +1301,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1318,7 +1317,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1334,7 +1333,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1350,7 +1349,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1366,7 +1365,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1382,15 +1381,15 @@ func (c *jsiiProxy_ComputeVpnTunnel) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeVpnTunnel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1409,7 +1408,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1422,7 +1421,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1436,18 +1435,18 @@ func (c *jsiiProxy_ComputeVpnTunnel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeVpnTunnel) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1458,7 +1457,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1469,7 +1468,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1480,7 +1479,7 @@ func (c *jsiiProxy_ComputeVpnTunnel) PutTimeouts(value *ComputeVpnTunnelTimeouts
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1628,8 +1627,8 @@ func (c *jsiiProxy_ComputeVpnTunnel) ResetVpnGatewayInterface() {
 	)
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeVpnTunnel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1641,8 +1640,8 @@ func (c *jsiiProxy_ComputeVpnTunnel) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeVpnTunnel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1654,8 +1653,8 @@ func (c *jsiiProxy_ComputeVpnTunnel) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeVpnTunnel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1667,8 +1666,8 @@ func (c *jsiiProxy_ComputeVpnTunnel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeVpnTunnel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1693,8 +1692,8 @@ func (c *jsiiProxy_ComputeVpnTunnel) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeVpnTunnel) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeVpnTunnel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1705,4 +1704,3 @@ func (c *jsiiProxy_ComputeVpnTunnel) ToTerraform() interface{} {
 
 	return returns
 }
-

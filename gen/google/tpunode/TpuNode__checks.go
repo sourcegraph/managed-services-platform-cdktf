@@ -19,7 +19,7 @@ func (t *jsiiProxy_TpuNode) validateAddMoveTargetParameters(moveTarget *string) 
 	return nil
 }
 
-func (t *jsiiProxy_TpuNode) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TpuNode) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TpuNode) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TpuNode) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TpuNode) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateTpuNode_GenerateConfigForImportParameters(scope constructs.Construc
 	return nil
 }
 
-func validateTpuNode_IsConstructParameters(x interface{}) error {
+func validateTpuNode_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateTpuNode_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTpuNode_IsTerraformElementParameters(x interface{}) error {
+func validateTpuNode_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateTpuNode_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTpuNode_IsTerraformResourceParameters(x interface{}) error {
+func validateTpuNode_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_TpuNode) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TpuNode) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TpuNode) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_TpuNode) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_TpuNode) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TpuNode) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_TpuNode) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TpuNode) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TpuNode) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -482,7 +482,7 @@ func (j *jsiiProxy_TpuNode) validateSetTensorflowVersionParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_TpuNode) validateSetUseServiceNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_TpuNode) validateSetUseServiceNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -528,4 +528,3 @@ func validateNewTpuNodeParameters(scope constructs.Construct, id *string, config
 
 	return nil
 }
-
