@@ -6,9 +6,9 @@ import (
 
 type MagicNetworkMonitoringRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MagicNetworkMonitoringRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_network_monitoring_rule#account_id MagicNetworkMonitoringRule#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the rule.
@@ -32,7 +32,7 @@ type MagicNetworkMonitoringRuleConfig struct {
 	// Only available for users of Magic Transit.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_network_monitoring_rule#automatic_advertisement MagicNetworkMonitoringRule#automatic_advertisement}
-	AutomaticAdvertisement interface{} `field:"optional" json:"automaticAdvertisement" yaml:"automaticAdvertisement"`
+	AutomaticAdvertisement any `field:"optional" json:"automaticAdvertisement" yaml:"automaticAdvertisement"`
 	// The number of bits per second for the rule.
 	//
 	// When this value is exceeded for the set duration, an alert notification is sent. Minimum of 1 and no maximum.
@@ -55,4 +55,3 @@ type MagicNetworkMonitoringRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_network_monitoring_rule#prefixes MagicNetworkMonitoringRule#prefixes}.
 	Prefixes *[]*string `field:"optional" json:"prefixes" yaml:"prefixes"`
 }
-

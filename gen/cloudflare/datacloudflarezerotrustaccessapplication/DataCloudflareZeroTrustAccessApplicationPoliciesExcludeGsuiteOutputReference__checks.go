@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesExcludeGsuite
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustAccessApplicationPoliciesExcludeGsuiteOut
 
 	return nil
 }
-

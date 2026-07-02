@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZeroTrustAccessPolicyRequireIpOutputReferenceParameters(terrafor
 
 	return nil
 }
-

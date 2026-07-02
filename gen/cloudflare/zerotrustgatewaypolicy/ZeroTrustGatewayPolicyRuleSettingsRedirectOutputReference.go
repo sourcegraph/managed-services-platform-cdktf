@@ -12,9 +12,9 @@ type ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeContext() interface{}
-	SetIncludeContext(val interface{})
-	IncludeContextInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	PreservePathAndQuery() interface{}
-	SetPreservePathAndQuery(val interface{})
-	PreservePathAndQueryInput() interface{}
+	IncludeContext() any
+	SetIncludeContext(val any)
+	IncludeContextInput() any
+	InternalValue() any
+	SetInternalValue(val any)
+	PreservePathAndQuery() any
+	SetPreservePathAndQuery(val any)
+	PreservePathAndQueryInput() any
 	TargetUri() *string
 	SetTargetUri(val *string)
 	TargetUriInput() *string
@@ -49,7 +49,7 @@ type ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference interface {
 	ResetPreservePathAndQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Fq
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) IncludeContext() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) IncludeContext() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContext",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) IncludeContextInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) IncludeContextInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContextInput",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) PreservePathAndQuery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) PreservePathAndQuery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preservePathAndQuery",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Pr
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) PreservePathAndQueryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) PreservePathAndQueryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preservePathAndQueryInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Te
 	return returns
 }
 
-
 func NewZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference_Override(z Zer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetIncludeContext(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetIncludeContext(val any) {
 	if err := j.validateSetIncludeContextParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetPreservePathAndQuery(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetPreservePathAndQuery(val any) {
 	if err := j.validateSetPreservePathAndQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetTargetUri(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetTargetUri(val *string) {
 	if err := j.validateSetTargetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Co
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) In
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Re
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference) To
 
 	return returns
 }
-

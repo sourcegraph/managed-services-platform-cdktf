@@ -98,7 +98,7 @@ func (s *jsiiProxy_SnippetRulesRulesOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetDescriptionParam
 	return nil
 }
 
-func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetExpressionParame
 	return nil
 }
 
-func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SnippetRulesRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewSnippetRulesRulesOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

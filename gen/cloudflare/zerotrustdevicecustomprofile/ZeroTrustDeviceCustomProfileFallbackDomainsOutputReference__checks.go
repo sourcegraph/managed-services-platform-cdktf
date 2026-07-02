@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewZeroTrustDeviceCustomProfileFallbackDomainsOutputReferenceParame
 
 	return nil
 }
-

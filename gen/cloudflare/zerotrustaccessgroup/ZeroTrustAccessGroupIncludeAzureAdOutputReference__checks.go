@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustAccessGroupIncludeAzureAdOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRateLimitMatchOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimitMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRateLimitMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareRateLimitMatchOutputReferenceParameters(terraformR
 
 	return nil
 }
-

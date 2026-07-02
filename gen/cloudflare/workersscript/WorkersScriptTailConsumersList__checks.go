@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkersScriptTailConsumersList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptTailConsumersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptTailConsumersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkersScriptTailConsumersListParameters(terraformResource cdktf
 
 	return nil
 }
-

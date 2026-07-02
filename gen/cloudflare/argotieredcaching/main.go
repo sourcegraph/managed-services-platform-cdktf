@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
-		reflect.TypeOf((*ArgoTieredCaching)(nil)).Elem(),
+		reflect.TypeFor[ArgoTieredCaching](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ArgoTieredCaching{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCachingConfig",
-		reflect.TypeOf((*ArgoTieredCachingConfig)(nil)).Elem(),
+		reflect.TypeFor[ArgoTieredCachingConfig](),
 	)
 }

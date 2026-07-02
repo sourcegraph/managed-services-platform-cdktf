@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateAddMoveTargetParam
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateMoveFromIdParamete
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApiShieldSchemaValidationSettings_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateApiShieldSchemaValidationSettings_IsConstructParameters(x interface{}) error {
+func validateApiShieldSchemaValidationSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApiShieldSchemaValidationSettings_IsConstructParameters(x interface
 	return nil
 }
 
-func validateApiShieldSchemaValidationSettings_IsTerraformElementParameters(x interface{}) error {
+func validateApiShieldSchemaValidationSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApiShieldSchemaValidationSettings_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateApiShieldSchemaValidationSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateApiShieldSchemaValidationSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateApiShieldSchemaValidationSettings_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApiShieldSchemaValidationSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewApiShieldSchemaValidationSettingsParameters(scope constructs.Con
 
 	return nil
 }
-

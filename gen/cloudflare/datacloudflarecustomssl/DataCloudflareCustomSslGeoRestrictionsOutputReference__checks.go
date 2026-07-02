@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareCustomSslGeoRestrictionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslGeoRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomSslGeoRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareCustomSslGeoRestrictionsOutputReferenceParameters(
 
 	return nil
 }
-

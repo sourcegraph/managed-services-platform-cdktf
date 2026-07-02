@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareMagicNetworkMonitoringRules_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDataCloudflareMagicNetworkMonitoringRules_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareMagicNetworkMonitoringRules_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareMagicNetworkMonitoringRules_IsConstructParameters(x i
 	return nil
 }
 
-func validateDataCloudflareMagicNetworkMonitoringRules_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareMagicNetworkMonitoringRules_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareMagicNetworkMonitoringRules_IsTerraformDataSourcePara
 	return nil
 }
 
-func validateDataCloudflareMagicNetworkMonitoringRules_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareMagicNetworkMonitoringRules_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) validateSetAccount
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareMagicNetworkMonitoringRulesParameters(scope constr
 
 	return nil
 }
-

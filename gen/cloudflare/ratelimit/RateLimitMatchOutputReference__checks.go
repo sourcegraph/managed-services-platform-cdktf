@@ -90,7 +90,7 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) validateInterpolationForAttrib
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchOutputReference) validatePutHeadersParameters(value interface{}) error {
+func (r *jsiiProxy_RateLimitMatchOutputReference) validatePutHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -267,4 +267,3 @@ func validateNewRateLimitMatchOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

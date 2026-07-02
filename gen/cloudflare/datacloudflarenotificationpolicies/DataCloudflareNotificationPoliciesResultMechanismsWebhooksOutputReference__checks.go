@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareNotificationPoliciesResultMechanismsWebhooksOut
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPoliciesResultMechanismsWebhooksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareNotificationPoliciesResultMechanismsWebhooksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareNotificationPoliciesResultMechanismsWebhooksOutput
 
 	return nil
 }
-

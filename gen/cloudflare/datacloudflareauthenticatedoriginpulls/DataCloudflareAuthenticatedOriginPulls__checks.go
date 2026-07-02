@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareAuthenticatedOriginPulls_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataCloudflareAuthenticatedOriginPulls_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareAuthenticatedOriginPulls_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareAuthenticatedOriginPulls_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataCloudflareAuthenticatedOriginPulls_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareAuthenticatedOriginPulls_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareAuthenticatedOriginPulls_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataCloudflareAuthenticatedOriginPulls_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareAuthenticatedOriginPulls_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareAuthenticatedOriginPulls_IsTerraformElementParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareAuthenticatedOriginPullsParameters(scope construct
 
 	return nil
 }
-

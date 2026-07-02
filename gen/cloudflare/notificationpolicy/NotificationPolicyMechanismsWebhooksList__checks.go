@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsWebhooksList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsWebhooksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsWebhooksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotificationPolicyMechanismsWebhooksListParameters(terraformReso
 
 	return nil
 }
-

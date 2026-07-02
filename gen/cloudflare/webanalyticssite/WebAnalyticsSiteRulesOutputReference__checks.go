@@ -98,7 +98,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWebAnalyticsSiteRulesOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

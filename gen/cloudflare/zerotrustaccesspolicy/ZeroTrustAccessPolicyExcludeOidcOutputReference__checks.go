@@ -114,7 +114,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOidcOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOidcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOidcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOidcOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOidcOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOidcOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewZeroTrustAccessPolicyExcludeOidcOutputReferenceParameters(terraf
 
 	return nil
 }
-

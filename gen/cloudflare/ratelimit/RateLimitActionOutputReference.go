@@ -12,9 +12,9 @@ type RateLimitActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,13 +27,13 @@ type RateLimitActionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
 	Response() RateLimitActionResponseOutputReference
-	ResponseInput() interface{}
+	ResponseInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type RateLimitActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type RateLimitActionOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_RateLimitActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimitActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_RateLimitActionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimitActionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_RateLimitActionOutputReference) Response() RateLimitActionRes
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) ResponseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimitActionOutputReference) ResponseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"responseInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_RateLimitActionOutputReference) TimeoutInput() *float64 {
 	return returns
 }
 
-
 func NewRateLimitActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RateLimitActionOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewRateLimitActionOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewRateLimitActionOutputReference_Override(r RateLimitActionOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetTimeout(val *float64) {
+func (j *jsiiProxy_RateLimitActionOutputReference) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (r *jsiiProxy_RateLimitActionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RateLimitActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RateLimitActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (r *jsiiProxy_RateLimitActionOutputReference) PutResponse(value *RateLimitA
 	_jsii_.InvokeVoid(
 		r,
 		"putResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_RateLimitActionOutputReference) ResetTimeout() {
 	)
 }
 
-func (r *jsiiProxy_RateLimitActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RateLimitActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_RateLimitActionOutputReference) ToString() *string {
 
 	return returns
 }
-

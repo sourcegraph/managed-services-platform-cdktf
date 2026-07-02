@@ -6,9 +6,9 @@ import (
 
 type ZeroTrustDeviceCustomProfileConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ZeroTrustDeviceCustomProfileConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The wirefilter expression to match devices. Available values: "identity.email", "identity.groups.id", "identity.groups.name", "identity.groups.email", "identity.service_token_uuid", "identity.saml_attributes", "network", "os.name", "os.version".
@@ -38,15 +38,15 @@ type ZeroTrustDeviceCustomProfileConfig struct {
 	// Whether to allow devices to leave the organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#allowed_to_leave ZeroTrustDeviceCustomProfile#allowed_to_leave}
-	AllowedToLeave interface{} `field:"optional" json:"allowedToLeave" yaml:"allowedToLeave"`
+	AllowedToLeave any `field:"optional" json:"allowedToLeave" yaml:"allowedToLeave"`
 	// Whether to allow the user to switch WARP between modes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#allow_mode_switch ZeroTrustDeviceCustomProfile#allow_mode_switch}
-	AllowModeSwitch interface{} `field:"optional" json:"allowModeSwitch" yaml:"allowModeSwitch"`
+	AllowModeSwitch any `field:"optional" json:"allowModeSwitch" yaml:"allowModeSwitch"`
 	// Whether to receive update notifications when a new version of the client is available.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#allow_updates ZeroTrustDeviceCustomProfile#allow_updates}
-	AllowUpdates interface{} `field:"optional" json:"allowUpdates" yaml:"allowUpdates"`
+	AllowUpdates any `field:"optional" json:"allowUpdates" yaml:"allowUpdates"`
 	// The amount of time in seconds to reconnect after having been disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#auto_connect ZeroTrustDeviceCustomProfile#auto_connect}
@@ -62,27 +62,27 @@ type ZeroTrustDeviceCustomProfileConfig struct {
 	// If the `dns_server` field of a fallback domain is not present, the client will fall back to a best guess of the default/system DNS resolvers unless this policy option is set to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#disable_auto_fallback ZeroTrustDeviceCustomProfile#disable_auto_fallback}
-	DisableAutoFallback interface{} `field:"optional" json:"disableAutoFallback" yaml:"disableAutoFallback"`
+	DisableAutoFallback any `field:"optional" json:"disableAutoFallback" yaml:"disableAutoFallback"`
 	// Whether the policy will be applied to matching devices.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#enabled ZeroTrustDeviceCustomProfile#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// List of routes excluded in the WARP client's tunnel.
 	//
 	// Both 'exclude' and 'include' cannot be set in the same request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#exclude ZeroTrustDeviceCustomProfile#exclude}
-	Exclude interface{} `field:"optional" json:"exclude" yaml:"exclude"`
+	Exclude any `field:"optional" json:"exclude" yaml:"exclude"`
 	// Whether to add Microsoft IPs to Split Tunnel exclusions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#exclude_office_ips ZeroTrustDeviceCustomProfile#exclude_office_ips}
-	ExcludeOfficeIps interface{} `field:"optional" json:"excludeOfficeIps" yaml:"excludeOfficeIps"`
+	ExcludeOfficeIps any `field:"optional" json:"excludeOfficeIps" yaml:"excludeOfficeIps"`
 	// List of routes included in the WARP client's tunnel.
 	//
 	// Both 'exclude' and 'include' cannot be set in the same request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#include ZeroTrustDeviceCustomProfile#include}
-	Include interface{} `field:"optional" json:"include" yaml:"include"`
+	Include any `field:"optional" json:"include" yaml:"include"`
 	// The amount of time in minutes a user is allowed access to their LAN.
 	//
 	// A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
@@ -98,11 +98,11 @@ type ZeroTrustDeviceCustomProfileConfig struct {
 	// Determines if the operating system will register WARP's local interface IP with your on-premises DNS server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#register_interface_ip_with_dns ZeroTrustDeviceCustomProfile#register_interface_ip_with_dns}
-	RegisterInterfaceIpWithDns interface{} `field:"optional" json:"registerInterfaceIpWithDns" yaml:"registerInterfaceIpWithDns"`
+	RegisterInterfaceIpWithDns any `field:"optional" json:"registerInterfaceIpWithDns" yaml:"registerInterfaceIpWithDns"`
 	// Determines whether the WARP client indicates to SCCM that it is inside a VPN boundary. (Windows only).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#sccm_vpn_boundary_support ZeroTrustDeviceCustomProfile#sccm_vpn_boundary_support}
-	SccmVpnBoundarySupport interface{} `field:"optional" json:"sccmVpnBoundarySupport" yaml:"sccmVpnBoundarySupport"`
+	SccmVpnBoundarySupport any `field:"optional" json:"sccmVpnBoundarySupport" yaml:"sccmVpnBoundarySupport"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}.
 	ServiceModeV2 *ZeroTrustDeviceCustomProfileServiceModeV2 `field:"optional" json:"serviceModeV2" yaml:"serviceModeV2"`
 	// The URL to launch when the Send Feedback button is clicked.
@@ -112,10 +112,9 @@ type ZeroTrustDeviceCustomProfileConfig struct {
 	// Whether to allow the user to turn off the WARP switch and disconnect the client.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#switch_locked ZeroTrustDeviceCustomProfile#switch_locked}
-	SwitchLocked interface{} `field:"optional" json:"switchLocked" yaml:"switchLocked"`
+	SwitchLocked any `field:"optional" json:"switchLocked" yaml:"switchLocked"`
 	// Determines which tunnel protocol to use.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile#tunnel_protocol ZeroTrustDeviceCustomProfile#tunnel_protocol}
 	TunnelProtocol *string `field:"optional" json:"tunnelProtocol" yaml:"tunnelProtocol"`
 }
-

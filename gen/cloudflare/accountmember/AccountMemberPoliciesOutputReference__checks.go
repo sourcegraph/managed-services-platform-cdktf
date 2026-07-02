@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccountMemberPoliciesOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesOutputReference) validatePutPermissionGroupsParameters(value interface{}) error {
+func (a *jsiiProxy_AccountMemberPoliciesOutputReference) validatePutPermissionGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (a *jsiiProxy_AccountMemberPoliciesOutputReference) validatePutPermissionGr
 	return nil
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesOutputReference) validatePutResourceGroupsParameters(value interface{}) error {
+func (a *jsiiProxy_AccountMemberPoliciesOutputReference) validatePutResourceGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -168,7 +168,7 @@ func (j *jsiiProxy_AccountMemberPoliciesOutputReference) validateSetAccessParame
 	return nil
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountMemberPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,7 +233,7 @@ func (j *jsiiProxy_AccountMemberPoliciesOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountMemberPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -292,4 +292,3 @@ func validateNewAccountMemberPoliciesOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

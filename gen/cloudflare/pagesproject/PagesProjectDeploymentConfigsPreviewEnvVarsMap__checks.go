@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewEnvVarsMapParameters(terrafo
 
 	return nil
 }
-

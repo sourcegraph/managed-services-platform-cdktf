@@ -12,9 +12,9 @@ type PagesDomainValidationDataOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type PagesDomainValidationDataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,7 +68,7 @@ type PagesDomainValidationDataOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,8 +81,8 @@ type jsiiProxy_PagesDomainValidationDataOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PagesDomainValidationDataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesDomainValidationDataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,7 +201,6 @@ func (j *jsiiProxy_PagesDomainValidationDataOutputReference) TxtValue() *string 
 	return returns
 }
 
-
 func NewPagesDomainValidationDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesDomainValidationDataOutputReference {
 	_init_.Initialize()
 
@@ -212,7 +211,7 @@ func NewPagesDomainValidationDataOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainValidationDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -224,12 +223,12 @@ func NewPagesDomainValidationDataOutputReference_Override(p PagesDomainValidatio
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainValidationDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PagesDomainValidationDataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PagesDomainValidationDataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetInternalValue(val *PagesDomainValidationData) {
+func (j *jsiiProxy_PagesDomainValidationDataOutputReference) SetInternalValue(val *PagesDomainValidationData) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesDomainValidationDataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_PagesDomainValidationDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesDomainValidationDataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,16 +296,16 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,23 +462,23 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PagesDomainValidationDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesDomainValidationDataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -498,4 +497,3 @@ func (p *jsiiProxy_PagesDomainValidationDataOutputReference) ToString() *string 
 
 	return returns
 }
-

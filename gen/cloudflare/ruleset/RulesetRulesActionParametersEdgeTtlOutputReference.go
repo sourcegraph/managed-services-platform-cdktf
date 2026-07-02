@@ -12,9 +12,9 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,13 +30,13 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	DefaultInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
 	StatusCodeTtl() RulesetRulesActionParametersEdgeTtlStatusCodeTtlList
-	StatusCodeTtlInput() interface{}
+	StatusCodeTtlInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStatusCodeTtl(value interface{})
+	PutStatusCodeTtl(value any)
 	ResetDefault()
 	ResetStatusCodeTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) StatusCod
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) StatusCodeTtlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) StatusCodeTtlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statusCodeTtlInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Terraform
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersEdgeTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersEdgeTtlOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewRulesetRulesActionParametersEdgeTtlOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewRulesetRulesActionParametersEdgeTtlOutputReference_Override(r RulesetRul
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetDefault(val *float64) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetDefault(val *float64) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetDefault
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetMode(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ComputeFq
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetBoolea
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetBoolea
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetListAt
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetNumber
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetNumber
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetNumber
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetString
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) GetString
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,21 +500,21 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Interpola
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) PutStatusCodeTtl(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) PutStatusCodeTtl(value any) {
 	if err := r.validatePutStatusCodeTtlParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putStatusCodeTtl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ResetStat
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ToString(
 
 	return returns
 }
-

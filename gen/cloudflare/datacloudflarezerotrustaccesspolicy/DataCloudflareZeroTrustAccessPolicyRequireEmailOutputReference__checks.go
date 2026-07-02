@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicyRequireEmailOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyRequireEmailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyRequireEmailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustAccessPolicyRequireEmailOutputReferencePa
 
 	return nil
 }
-

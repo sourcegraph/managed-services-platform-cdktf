@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareStreamsResultWatermarkOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareStreamsResultWatermarkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareStreamsResultWatermarkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareStreamsResultWatermarkOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type ZeroTrustListItemsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ZeroTrustListItemsList interface {
 	Get(index *float64) ZeroTrustListItemsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ZeroTrustListItemsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustListItemsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ZeroTrustListItemsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewZeroTrustListItemsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustListItemsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewZeroTrustListItemsList(terraformResource cdktf.IInterpolatingParent, ter
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewZeroTrustListItemsList_Override(z ZeroTrustListItemsList, terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustListItemsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ZeroTrustListItemsList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustListItemsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ZeroTrustListItemsList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustListItemsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustListItemsList)SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustListItemsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustListItemsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (z *jsiiProxy_ZeroTrustListItemsList) AllWithMapKey(mapKeyAttributeName *st
 	_jsii_.Invoke(
 		z,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (z *jsiiProxy_ZeroTrustListItemsList) Get(index *float64) ZeroTrustListItem
 	_jsii_.Invoke(
 		z,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustListItemsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustListItemsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (z *jsiiProxy_ZeroTrustListItemsList) ToString() *string {
 
 	return returns
 }
-

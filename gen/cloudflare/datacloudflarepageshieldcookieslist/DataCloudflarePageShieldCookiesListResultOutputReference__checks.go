@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflarePageShieldCookiesListResultOutputReferenceParamete
 
 	return nil
 }
-

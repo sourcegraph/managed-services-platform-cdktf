@@ -12,9 +12,9 @@ type ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference interface {
 	IdentityProviderId() *string
 	SetIdentityProviderId(val *string)
 	IdentityProviderIdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference interface {
 	ResetTeam()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	return returns
 }
 
-
 func NewZeroTrustAccessGroupExcludeGithubOrganizationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewZeroTrustAccessGroupExcludeGithubOrganizationOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewZeroTrustAccessGroupExcludeGithubOrganizationOutputReference_Override(z 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetIdentityProviderId(val *string) {
 	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetTeam(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetTeam(val *string) {
 	if err := j.validateSetTeamParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference)
 
 	return returns
 }
-

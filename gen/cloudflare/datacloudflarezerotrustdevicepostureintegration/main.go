@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegration.DataCloudflareZeroTrustDevicePostureIntegration",
-		reflect.TypeOf((*DataCloudflareZeroTrustDevicePostureIntegration)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustDevicePostureIntegration](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustDevicePostureIntegration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,15 +63,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegration.DataCloudflareZeroTrustDevicePostureIntegrationConfig",
-		reflect.TypeOf((*DataCloudflareZeroTrustDevicePostureIntegrationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustDevicePostureIntegrationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegration.DataCloudflareZeroTrustDevicePostureIntegrationConfigA",
-		reflect.TypeOf((*DataCloudflareZeroTrustDevicePostureIntegrationConfigA)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustDevicePostureIntegrationConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegration.DataCloudflareZeroTrustDevicePostureIntegrationConfigAOutputReference",
-		reflect.TypeOf((*DataCloudflareZeroTrustDevicePostureIntegrationConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustDevicePostureIntegrationConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiUrl", GoGetter: "ApiUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "authUrl", GoGetter: "AuthUrl"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustDevicePostureIntegrationConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

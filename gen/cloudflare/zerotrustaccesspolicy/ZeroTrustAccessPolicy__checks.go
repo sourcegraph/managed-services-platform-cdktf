@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupsParameters(va
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutExcludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutExcludeParameters(value int
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutIncludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutIncludeParameters(value int
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutRequireParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutRequireParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -344,7 +344,7 @@ func validateZeroTrustAccessPolicy_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateZeroTrustAccessPolicy_IsConstructParameters(x interface{}) error {
+func validateZeroTrustAccessPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -352,7 +352,7 @@ func validateZeroTrustAccessPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZeroTrustAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustAccessPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -360,7 +360,7 @@ func validateZeroTrustAccessPolicy_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateZeroTrustAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustAccessPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -376,7 +376,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApprovalRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApprovalRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApprovalRequiredParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -429,7 +429,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -494,7 +494,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetDecisionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetIsolationRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetIsolationRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -530,7 +530,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -584,7 +584,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPurposeJustificationPromptP
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPurposeJustificationRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPurposeJustificationRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -630,4 +630,3 @@ func validateNewZeroTrustAccessPolicyParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

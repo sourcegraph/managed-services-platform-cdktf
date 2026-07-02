@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetFlattenCnameParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetFlattenCnameParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetFlattenCnamePara
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetInternalValuePar
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetIpv4OnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetIpv4OnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetIpv4OnlyParamete
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetIpv6OnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) validateSetIpv6OnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewDnsRecordSettingsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

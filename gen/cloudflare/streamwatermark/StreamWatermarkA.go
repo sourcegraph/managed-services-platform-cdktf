@@ -18,15 +18,15 @@ type StreamWatermarkA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -71,11 +71,11 @@ type StreamWatermarkA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scale() *float64
 	SetScale(val *float64)
 	ScaleInput() *float64
@@ -83,7 +83,7 @@ type StreamWatermarkA interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
@@ -92,9 +92,9 @@ type StreamWatermarkA interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type StreamWatermarkA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type StreamWatermarkA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type StreamWatermarkA interface {
 	ResetPadding()
 	ResetPosition()
 	ResetScale()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StreamWatermarkA
@@ -188,8 +188,8 @@ func (j *jsiiProxy_StreamWatermarkA) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWatermarkA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamWatermarkA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_StreamWatermarkA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWatermarkA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StreamWatermarkA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_StreamWatermarkA) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_StreamWatermarkA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamWatermarkA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_StreamWatermarkA) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWatermarkA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StreamWatermarkA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_StreamWatermarkA) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWatermarkA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamWatermarkA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_StreamWatermarkA) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_StreamWatermarkA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StreamWatermarkA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -538,7 +538,6 @@ func (j *jsiiProxy_StreamWatermarkA) Width() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamWatermarkAConfig) StreamWatermarkA {
 	_init_.Initialize()
@@ -550,7 +549,7 @@ func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamW
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -563,12 +562,12 @@ func NewStreamWatermarkA_Override(s StreamWatermarkA, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetAccountId(val *string) {
+func (j *jsiiProxy_StreamWatermarkA) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetConnection(val interface{}) {
+func (j *jsiiProxy_StreamWatermarkA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetCount(val interface{}) {
+func (j *jsiiProxy_StreamWatermarkA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StreamWatermarkA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetFile(val *string) {
+func (j *jsiiProxy_StreamWatermarkA) SetFile(val *string) {
 	if err := j.validateSetFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StreamWatermarkA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -628,7 +627,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetIdentifier(val *string) {
+func (j *jsiiProxy_StreamWatermarkA) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StreamWatermarkA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetName(val *string) {
+func (j *jsiiProxy_StreamWatermarkA) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetOpacity(val *float64) {
+func (j *jsiiProxy_StreamWatermarkA) SetOpacity(val *float64) {
 	if err := j.validateSetOpacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetOpacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetPadding(val *float64) {
+func (j *jsiiProxy_StreamWatermarkA) SetPadding(val *float64) {
 	if err := j.validateSetPaddingParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetPadding(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetPosition(val *string) {
+func (j *jsiiProxy_StreamWatermarkA) SetPosition(val *string) {
 	if err := j.validateSetPositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetPosition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StreamWatermarkA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -702,7 +701,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StreamWatermarkA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_StreamWatermarkA)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StreamWatermarkA)SetScale(val *float64) {
+func (j *jsiiProxy_StreamWatermarkA) SetScale(val *float64) {
 	if err := j.validateSetScaleParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func StreamWatermarkA_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func StreamWatermarkA_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StreamWatermarkA_IsConstruct(x interface{}) *bool {
+func StreamWatermarkA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStreamWatermarkA_IsConstructParameters(x); err != nil {
@@ -771,7 +770,7 @@ func StreamWatermarkA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func StreamWatermarkA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StreamWatermarkA_IsTerraformElement(x interface{}) *bool {
+func StreamWatermarkA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStreamWatermarkA_IsTerraformElementParameters(x); err != nil {
@@ -790,7 +789,7 @@ func StreamWatermarkA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func StreamWatermarkA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StreamWatermarkA_IsTerraformResource(x interface{}) *bool {
+func StreamWatermarkA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStreamWatermarkA_IsTerraformResourceParameters(x); err != nil {
@@ -809,7 +808,7 @@ func StreamWatermarkA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -834,31 +833,31 @@ func (s *jsiiProxy_StreamWatermarkA) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StreamWatermarkA) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StreamWatermarkA) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StreamWatermarkA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StreamWatermarkA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (s *jsiiProxy_StreamWatermarkA) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,15 +985,15 @@ func (s *jsiiProxy_StreamWatermarkA) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StreamWatermarkA) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWatermarkA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1013,7 +1012,7 @@ func (s *jsiiProxy_StreamWatermarkA) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1026,7 +1025,7 @@ func (s *jsiiProxy_StreamWatermarkA) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,18 +1039,18 @@ func (s *jsiiProxy_StreamWatermarkA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StreamWatermarkA) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StreamWatermarkA) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (s *jsiiProxy_StreamWatermarkA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1073,7 +1072,7 @@ func (s *jsiiProxy_StreamWatermarkA) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1133,8 +1132,8 @@ func (s *jsiiProxy_StreamWatermarkA) ResetScale() {
 	)
 }
 
-func (s *jsiiProxy_StreamWatermarkA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StreamWatermarkA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1146,8 +1145,8 @@ func (s *jsiiProxy_StreamWatermarkA) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_StreamWatermarkA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StreamWatermarkA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1159,8 +1158,8 @@ func (s *jsiiProxy_StreamWatermarkA) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_StreamWatermarkA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWatermarkA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1172,8 +1171,8 @@ func (s *jsiiProxy_StreamWatermarkA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StreamWatermarkA) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWatermarkA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1198,8 +1197,8 @@ func (s *jsiiProxy_StreamWatermarkA) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StreamWatermarkA) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWatermarkA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1210,4 +1209,3 @@ func (s *jsiiProxy_StreamWatermarkA) ToTerraform() interface{} {
 
 	return returns
 }
-

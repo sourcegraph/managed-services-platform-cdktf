@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetCountryPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetCountryPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetPopPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetPopPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetRegionPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetRegionPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewDataCloudflareLoadBalancersResultOutputReferenceParameters(terra
 
 	return nil
 }
-

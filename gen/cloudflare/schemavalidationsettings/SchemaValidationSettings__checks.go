@@ -19,7 +19,7 @@ func (s *jsiiProxy_SchemaValidationSettings) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (s *jsiiProxy_SchemaValidationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SchemaValidationSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SchemaValidationSettings) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (s *jsiiProxy_SchemaValidationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SchemaValidationSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSchemaValidationSettings_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateSchemaValidationSettings_IsConstructParameters(x interface{}) error {
+func validateSchemaValidationSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSchemaValidationSettings_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateSchemaValidationSettings_IsTerraformElementParameters(x interface{}) error {
+func validateSchemaValidationSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSchemaValidationSettings_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateSchemaValidationSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateSchemaValidationSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSchemaValidationSettings_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_SchemaValidationSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaValidationSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SchemaValidationSettings) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_SchemaValidationSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaValidationSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_SchemaValidationSettings) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SchemaValidationSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SchemaValidationSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewSchemaValidationSettingsParameters(scope constructs.Construct, i
 
 	return nil
 }
-

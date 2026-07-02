@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareResourceGroupMetaOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareResourceGroupMetaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareResourceGroupMetaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareResourceGroupMetaOutputReferenceParameters(terrafo
 
 	return nil
 }
-

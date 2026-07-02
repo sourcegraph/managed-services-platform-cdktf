@@ -12,9 +12,9 @@ type WorkersScriptBindingsOutboundOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type WorkersScriptBindingsOutboundOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Params() *[]*string
 	SetParams(val *[]*string)
 	ParamsInput() *[]*string
@@ -41,11 +41,11 @@ type WorkersScriptBindingsOutboundOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Worker() WorkersScriptBindingsOutboundWorkerOutputReference
-	WorkerInput() interface{}
+	WorkerInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type WorkersScriptBindingsOutboundOutputReference interface {
 	ResetWorker()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_WorkersScriptBindingsOutboundOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) Worker() Worker
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) WorkerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) WorkerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"workerInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) WorkerInput() i
 	)
 	return returns
 }
-
 
 func NewWorkersScriptBindingsOutboundOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersScriptBindingsOutboundOutputReference {
 	_init_.Initialize()
@@ -205,7 +204,7 @@ func NewWorkersScriptBindingsOutboundOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewWorkersScriptBindingsOutboundOutputReference_Override(w WorkersScriptBin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetParams(val *[]*string) {
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) SetParams(val *[]*string) {
 	if err := j.validateSetParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetParams(val *[
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) PutWorker(value
 	_jsii_.InvokeVoid(
 		w,
 		"putWorker",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) ResetWorker() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) ToString() *str
 
 	return returns
 }
-

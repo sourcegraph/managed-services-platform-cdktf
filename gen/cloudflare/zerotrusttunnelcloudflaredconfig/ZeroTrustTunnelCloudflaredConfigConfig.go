@@ -1,11 +1,10 @@
 package zerotrusttunnelcloudflaredconfig
 
-
 type ZeroTrustTunnelCloudflaredConfigConfig struct {
 	// List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#ingress ZeroTrustTunnelCloudflaredConfigA#ingress}
-	Ingress interface{} `field:"optional" json:"ingress" yaml:"ingress"`
+	Ingress any `field:"optional" json:"ingress" yaml:"ingress"`
 	// Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
@@ -17,4 +16,3 @@ type ZeroTrustTunnelCloudflaredConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#warp_routing ZeroTrustTunnelCloudflaredConfigA#warp_routing}
 	WarpRouting *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting `field:"optional" json:"warpRouting" yaml:"warpRouting"`
 }
-

@@ -12,9 +12,9 @@ type ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,11 +27,11 @@ type ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	NonIdentityEnabled() interface{}
-	SetNonIdentityEnabled(val interface{})
-	NonIdentityEnabledInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	NonIdentityEnabled() any
+	SetNonIdentityEnabled(val any)
+	NonIdentityEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,13 +40,13 @@ type ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UrlBrowserIsolationEnabled() interface{}
-	SetUrlBrowserIsolationEnabled(val interface{})
-	UrlBrowserIsolationEnabledInput() interface{}
+	UrlBrowserIsolationEnabled() any
+	SetUrlBrowserIsolationEnabled(val any)
+	UrlBrowserIsolationEnabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference interface {
 	ResetUrlBrowserIsolationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) NonIdentityEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) NonIdentityEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nonIdentityEnabled",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) NonIdentityEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) NonIdentityEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nonIdentityEnabledInput",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) UrlBrowserIsolationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) UrlBrowserIsolationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"urlBrowserIsolationEnabled",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) UrlBrowserIsolationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) UrlBrowserIsolationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"urlBrowserIsolationEnabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 	return returns
 }
-
 
 func NewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference {
 	_init_.Initialize()
@@ -205,7 +204,7 @@ func NewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetNonIdentityEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetNonIdentityEnabled(val any) {
 	if err := j.validateSetNonIdentityEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference)SetUrlBrowserIsolationEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) SetUrlBrowserIsolationEnabled(val any) {
 	if err := j.validateSetUrlBrowserIsolationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 
 	return returns
 }
-

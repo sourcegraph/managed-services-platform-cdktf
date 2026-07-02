@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareDnsRecords) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareDnsRecords) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func validateDataCloudflareDnsRecords_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataCloudflareDnsRecords_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareDnsRecords_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func validateDataCloudflareDnsRecords_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataCloudflareDnsRecords_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareDnsRecords_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func validateDataCloudflareDnsRecords_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataCloudflareDnsRecords_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareDnsRecords_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func validateDataCloudflareDnsRecords_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetOrderParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetProxiedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetProxiedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -362,4 +362,3 @@ func validateNewDataCloudflareDnsRecordsParameters(scope constructs.Construct, i
 
 	return nil
 }
-

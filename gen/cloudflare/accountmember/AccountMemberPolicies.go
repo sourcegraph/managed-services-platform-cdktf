@@ -1,6 +1,5 @@
 package accountmember
 
-
 type AccountMemberPolicies struct {
 	// Allow or deny operations against the resources. Available values: "allow", "deny".
 	//
@@ -9,10 +8,9 @@ type AccountMemberPolicies struct {
 	// A set of permission groups that are specified to the policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_member#permission_groups AccountMember#permission_groups}
-	PermissionGroups interface{} `field:"required" json:"permissionGroups" yaml:"permissionGroups"`
+	PermissionGroups any `field:"required" json:"permissionGroups" yaml:"permissionGroups"`
 	// A list of resource groups that the policy applies to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_member#resource_groups AccountMember#resource_groups}
-	ResourceGroups interface{} `field:"required" json:"resourceGroups" yaml:"resourceGroups"`
+	ResourceGroups any `field:"required" json:"resourceGroups" yaml:"resourceGroups"`
 }
-

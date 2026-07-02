@@ -6,9 +6,9 @@ import (
 
 type ZeroTrustAccessPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ZeroTrustAccessPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#account_id ZeroTrustAccessPolicy#account_id}
@@ -33,7 +33,7 @@ type ZeroTrustAccessPolicyConfig struct {
 	// Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#include ZeroTrustAccessPolicy#include}
-	Include interface{} `field:"required" json:"include" yaml:"include"`
+	Include any `field:"required" json:"include" yaml:"include"`
 	// The name of the Access policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
@@ -41,23 +41,23 @@ type ZeroTrustAccessPolicyConfig struct {
 	// Administrators who can approve a temporary authentication request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#approval_groups ZeroTrustAccessPolicy#approval_groups}
-	ApprovalGroups interface{} `field:"optional" json:"approvalGroups" yaml:"approvalGroups"`
+	ApprovalGroups any `field:"optional" json:"approvalGroups" yaml:"approvalGroups"`
 	// Requires the user to request access from an administrator at the start of each session.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#approval_required ZeroTrustAccessPolicy#approval_required}
-	ApprovalRequired interface{} `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
+	ApprovalRequired any `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
 	// Rules evaluated with a NOT logical operator.
 	//
 	// To match the policy, a user cannot meet any of the Exclude rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#exclude ZeroTrustAccessPolicy#exclude}
-	Exclude interface{} `field:"optional" json:"exclude" yaml:"exclude"`
+	Exclude any `field:"optional" json:"exclude" yaml:"exclude"`
 	// Require this application to be served in an isolated browser for users matching this policy.
 	//
 	// 'Client Web Isolation' must be on for the account in order to use this feature.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#isolation_required ZeroTrustAccessPolicy#isolation_required}
-	IsolationRequired interface{} `field:"optional" json:"isolationRequired" yaml:"isolationRequired"`
+	IsolationRequired any `field:"optional" json:"isolationRequired" yaml:"isolationRequired"`
 	// A custom message that will appear on the purpose justification screen.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#purpose_justification_prompt ZeroTrustAccessPolicy#purpose_justification_prompt}
@@ -65,13 +65,13 @@ type ZeroTrustAccessPolicyConfig struct {
 	// Require users to enter a justification when they log in to the application.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#purpose_justification_required ZeroTrustAccessPolicy#purpose_justification_required}
-	PurposeJustificationRequired interface{} `field:"optional" json:"purposeJustificationRequired" yaml:"purposeJustificationRequired"`
+	PurposeJustificationRequired any `field:"optional" json:"purposeJustificationRequired" yaml:"purposeJustificationRequired"`
 	// Rules evaluated with an AND logical operator.
 	//
 	// To match the policy, a user must meet all of the Require rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#require ZeroTrustAccessPolicy#require}
-	Require interface{} `field:"optional" json:"require" yaml:"require"`
+	Require any `field:"optional" json:"require" yaml:"require"`
 	// The amount of time that tokens issued for the application will be valid.
 	//
 	// Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
@@ -79,4 +79,3 @@ type ZeroTrustAccessPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy#session_duration ZeroTrustAccessPolicy#session_duration}
 	SessionDuration *string `field:"optional" json:"sessionDuration" yaml:"sessionDuration"`
 }
-

@@ -15,11 +15,11 @@ type DataCloudflareSchemaValidationOperationSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,20 +47,20 @@ type DataCloudflareSchemaValidationOperationSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,18 +85,18 @@ type DataCloudflareSchemaValidationOperationSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareSchemaValidationOperationSettings
@@ -114,8 +114,8 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) CdktfStack()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) TerraformGen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ZoneIdInput(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Data Source.
 func NewDataCloudflareSchemaValidationOperationSettings(scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationOperationSettingsConfig) DataCloudflareSchemaValidationOperationSettings {
 	_init_.Initialize()
@@ -306,7 +305,7 @@ func NewDataCloudflareSchemaValidationOperationSettings(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -319,12 +318,12 @@ func NewDataCloudflareSchemaValidationOperationSettings_Override(d DataCloudflar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetOperationId(val *string) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetOperationId(val *string) {
 	if err := j.validateSetOperationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetOperationI
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -381,7 +380,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetProvider(v
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func DataCloudflareSchemaValidationOperationSettings_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func DataCloudflareSchemaValidationOperationSettings_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareSchemaValidationOperationSettings_IsConstruct(x interface{}) *bool {
+func DataCloudflareSchemaValidationOperationSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareSchemaValidationOperationSettings_IsConstructParameters(x); err != nil {
@@ -439,7 +438,7 @@ func DataCloudflareSchemaValidationOperationSettings_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func DataCloudflareSchemaValidationOperationSettings_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func DataCloudflareSchemaValidationOperationSettings_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareSchemaValidationOperationSettings_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareSchemaValidationOperationSettings_IsTerraformDataSourceParameters(x); err != nil {
@@ -458,7 +457,7 @@ func DataCloudflareSchemaValidationOperationSettings_IsTerraformDataSource(x int
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func DataCloudflareSchemaValidationOperationSettings_IsTerraformDataSource(x int
 }
 
 // Experimental.
-func DataCloudflareSchemaValidationOperationSettings_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareSchemaValidationOperationSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareSchemaValidationOperationSettings_IsTerraformElementParameters(x); err != nil {
@@ -477,7 +476,7 @@ func DataCloudflareSchemaValidationOperationSettings_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -495,27 +494,27 @@ func DataCloudflareSchemaValidationOperationSettings_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) OverrideLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -685,8 +684,8 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ResetOverrid
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -698,8 +697,8 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SynthesizeAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -711,8 +710,8 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) SynthesizeHc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -724,8 +723,8 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToHclTerrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -750,8 +749,8 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToString() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -762,4 +761,3 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ToTerraform(
 
 	return returns
 }
-

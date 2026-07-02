@@ -12,9 +12,9 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,20 +33,20 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	HtmlHandling() *string
 	SetHtmlHandling(val *string)
 	HtmlHandlingInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotFoundHandling() *string
 	SetNotFoundHandling(val *string)
 	NotFoundHandlingInput() *string
 	Redirects() *string
 	SetRedirects(val *string)
 	RedirectsInput() *string
-	RunWorkerFirst() interface{}
-	SetRunWorkerFirst(val interface{})
-	RunWorkerFirstInput() interface{}
-	ServeDirectly() interface{}
-	SetServeDirectly(val interface{})
-	ServeDirectlyInput() interface{}
+	RunWorkerFirst() any
+	SetRunWorkerFirst(val any)
+	RunWorkerFirstInput() any
+	ServeDirectly() any
+	SetServeDirectly(val any)
+	ServeDirectlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,7 +58,7 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	ResetServeDirectly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_WorkersScriptAssetsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) HtmlHandlingInput()
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RedirectsInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runWorkerFirst",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() in
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runWorkerFirstInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ServeDirectly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ServeDirectly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serveDirectly",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ServeDirectly() int
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ServeDirectlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ServeDirectlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serveDirectlyInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewWorkersScriptAssetsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersScriptAssetsConfigOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewWorkersScriptAssetsConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewWorkersScriptAssetsConfigOutputReference_Override(w WorkersScriptAssetsC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetHeaders(val *string) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetHeaders(val *string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetHeaders(val *stri
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetHtmlHandling(val *string) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetHtmlHandling(val *string) {
 	if err := j.validateSetHtmlHandlingParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetHtmlHandling(val 
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetNotFoundHandling(val *string) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetNotFoundHandling(val *string) {
 	if err := j.validateSetNotFoundHandlingParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetNotFoundHandling(
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRedirects(val *string) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetRedirects(val *string) {
 	if err := j.validateSetRedirectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRedirects(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRunWorkerFirst(val interface{}) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetRunWorkerFirst(val any) {
 	if err := j.validateSetRunWorkerFirstParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRunWorkerFirst(va
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetServeDirectly(val interface{}) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetServeDirectly(val any) {
 	if err := j.validateSetServeDirectlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetServeDirectly(val
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ResetServeDirectly(
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (t *jsiiProxy_TurnstileWidget) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (t *jsiiProxy_TurnstileWidget) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TurnstileWidget) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TurnstileWidget) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (t *jsiiProxy_TurnstileWidget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TurnstileWidget) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateTurnstileWidget_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateTurnstileWidget_IsConstructParameters(x interface{}) error {
+func validateTurnstileWidget_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateTurnstileWidget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTurnstileWidget_IsTerraformElementParameters(x interface{}) error {
+func validateTurnstileWidget_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateTurnstileWidget_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTurnstileWidget_IsTerraformResourceParameters(x interface{}) error {
+func validateTurnstileWidget_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetAccountIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetBotFightModeParameters(val interface{}) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetBotFightModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetClearanceLevelParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -378,7 +378,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetDomainsParameters(val *[]*string)
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetEphemeralIdParameters(val interface{}) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetEphemeralIdParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetOfflabelParameters(val interface{}) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetOfflabelParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetOfflabelParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -514,4 +514,3 @@ func validateNewTurnstileWidgetParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

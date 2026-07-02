@@ -18,11 +18,11 @@ type DataCloudflareZeroTrustTunnelWarpConnectorToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,20 +46,20 @@ type DataCloudflareZeroTrustTunnelWarpConnectorToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TunnelId() *string
 	SetTunnelId(val *string)
 	TunnelIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,18 +84,18 @@ type DataCloudflareZeroTrustTunnelWarpConnectorToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustTunnelWarpConnectorToken
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) CdktfStack()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) TerraformGen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -283,7 +283,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) TunnelIdInpu
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnectorToken(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorTokenConfig) DataCloudflareZeroTrustTunnelWarpConnectorToken {
 	_init_.Initialize()
@@ -295,7 +294,7 @@ func NewDataCloudflareZeroTrustTunnelWarpConnectorToken(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectorToken.DataCloudflareZeroTrustTunnelWarpConnectorToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -308,12 +307,12 @@ func NewDataCloudflareZeroTrustTunnelWarpConnectorToken_Override(d DataCloudflar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectorToken.DataCloudflareZeroTrustTunnelWarpConnectorToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetAccountId(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -370,7 +369,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetProvider(v
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken)SetTunnelId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SetTunnelId(val *string) {
 	if err := j.validateSetTunnelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectorToken.DataCloudflareZeroTrustTunnelWarpConnectorToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsConstruct(x interface{}) *bool {
+func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustTunnelWarpConnectorToken_IsConstructParameters(x); err != nil {
@@ -428,7 +427,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectorToken.DataCloudflareZeroTrustTunnelWarpConnectorToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformDataSourceParameters(x); err != nil {
@@ -447,7 +446,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformDataSource(x int
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectorToken.DataCloudflareZeroTrustTunnelWarpConnectorToken",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformDataSource(x int
 }
 
 // Experimental.
-func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformElementParameters(x); err != nil {
@@ -466,7 +465,7 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectorToken.DataCloudflareZeroTrustTunnelWarpConnectorToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,27 +483,27 @@ func DataCloudflareZeroTrustTunnelWarpConnectorToken_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) OverrideLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -674,8 +673,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ResetOverrid
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -687,8 +686,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SynthesizeAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -700,8 +699,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) SynthesizeHc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -713,8 +712,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToHclTerrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -739,8 +738,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToString() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -751,4 +750,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) ToTerraform(
 
 	return returns
 }
-

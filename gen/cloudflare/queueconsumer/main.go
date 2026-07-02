@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
-		reflect.TypeOf((*QueueConsumer)(nil)).Elem(),
+		reflect.TypeFor[QueueConsumer](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QueueConsumer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig",
-		reflect.TypeOf((*QueueConsumerConfig)(nil)).Elem(),
+		reflect.TypeFor[QueueConsumerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings",
-		reflect.TypeOf((*QueueConsumerSettings)(nil)).Elem(),
+		reflect.TypeFor[QueueConsumerSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference",
-		reflect.TypeOf((*QueueConsumerSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QueueConsumerSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchSize", GoGetter: "BatchSize"},
 			_jsii_.MemberProperty{JsiiProperty: "batchSizeInput", GoGetter: "BatchSizeInput"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibilityTimeoutMs", GoGetter: "VisibilityTimeoutMs"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityTimeoutMsInput", GoGetter: "VisibilityTimeoutMsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QueueConsumerSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

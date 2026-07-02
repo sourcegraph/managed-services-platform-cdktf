@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAccountTokenPoliciesPermissionGroupsMetaOutputReferenceParameter
 
 	return nil
 }
-

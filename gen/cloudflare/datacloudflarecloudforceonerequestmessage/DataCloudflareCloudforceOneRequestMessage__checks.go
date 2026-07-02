@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareCloudforceOneRequestMessage_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDataCloudflareCloudforceOneRequestMessage_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareCloudforceOneRequestMessage_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareCloudforceOneRequestMessage_IsConstructParameters(x i
 	return nil
 }
 
-func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformDataSourcePara
 	return nil
 }
 
-func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -175,7 +175,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetBeforeP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -298,4 +298,3 @@ func validateNewDataCloudflareCloudforceOneRequestMessageParameters(scope constr
 
 	return nil
 }
-

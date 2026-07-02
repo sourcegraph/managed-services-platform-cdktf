@@ -15,15 +15,15 @@ type ArgoSmartRouting interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,15 +48,15 @@ type ArgoSmartRouting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -69,9 +69,9 @@ type ArgoSmartRouting interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type ArgoSmartRouting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type ArgoSmartRouting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type ArgoSmartRouting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ArgoSmartRouting
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ArgoSmartRouting) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoSmartRouting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArgoSmartRouting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ArgoSmartRouting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoSmartRouting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ArgoSmartRouting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ArgoSmartRouting) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ArgoSmartRouting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArgoSmartRouting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_ArgoSmartRouting) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoSmartRouting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ArgoSmartRouting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_ArgoSmartRouting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoSmartRouting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArgoSmartRouting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_ArgoSmartRouting) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ArgoSmartRouting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ArgoSmartRouting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_ArgoSmartRouting) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
 func NewArgoSmartRouting(scope constructs.Construct, id *string, config *ArgoSmartRoutingConfig) ArgoSmartRouting {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewArgoSmartRouting(scope constructs.Construct, id *string, config *ArgoSma
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewArgoSmartRouting_Override(a ArgoSmartRouting, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetConnection(val interface{}) {
+func (j *jsiiProxy_ArgoSmartRouting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetCount(val interface{}) {
+func (j *jsiiProxy_ArgoSmartRouting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ArgoSmartRouting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ArgoSmartRouting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -407,7 +406,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ArgoSmartRouting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ArgoSmartRouting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -426,7 +425,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ArgoSmartRouting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetValue(val *string) {
+func (j *jsiiProxy_ArgoSmartRouting) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_ArgoSmartRouting)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ArgoSmartRouting)SetZoneId(val *string) {
+func (j *jsiiProxy_ArgoSmartRouting) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func ArgoSmartRouting_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func ArgoSmartRouting_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ArgoSmartRouting_IsConstruct(x interface{}) *bool {
+func ArgoSmartRouting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArgoSmartRouting_IsConstructParameters(x); err != nil {
@@ -506,7 +505,7 @@ func ArgoSmartRouting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func ArgoSmartRouting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ArgoSmartRouting_IsTerraformElement(x interface{}) *bool {
+func ArgoSmartRouting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArgoSmartRouting_IsTerraformElementParameters(x); err != nil {
@@ -525,7 +524,7 @@ func ArgoSmartRouting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func ArgoSmartRouting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ArgoSmartRouting_IsTerraformResource(x interface{}) *bool {
+func ArgoSmartRouting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArgoSmartRouting_IsTerraformResourceParameters(x); err != nil {
@@ -544,7 +543,7 @@ func ArgoSmartRouting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -569,31 +568,31 @@ func (a *jsiiProxy_ArgoSmartRouting) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ArgoSmartRouting) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ArgoSmartRouting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (a *jsiiProxy_ArgoSmartRouting) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,15 +720,15 @@ func (a *jsiiProxy_ArgoSmartRouting) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoSmartRouting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -748,7 +747,7 @@ func (a *jsiiProxy_ArgoSmartRouting) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -761,7 +760,7 @@ func (a *jsiiProxy_ArgoSmartRouting) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,18 +774,18 @@ func (a *jsiiProxy_ArgoSmartRouting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ArgoSmartRouting) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -797,7 +796,7 @@ func (a *jsiiProxy_ArgoSmartRouting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -808,7 +807,7 @@ func (a *jsiiProxy_ArgoSmartRouting) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -820,8 +819,8 @@ func (a *jsiiProxy_ArgoSmartRouting) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ArgoSmartRouting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -833,8 +832,8 @@ func (a *jsiiProxy_ArgoSmartRouting) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ArgoSmartRouting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -846,8 +845,8 @@ func (a *jsiiProxy_ArgoSmartRouting) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoSmartRouting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -859,8 +858,8 @@ func (a *jsiiProxy_ArgoSmartRouting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoSmartRouting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -885,8 +884,8 @@ func (a *jsiiProxy_ArgoSmartRouting) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ArgoSmartRouting) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoSmartRouting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -897,4 +896,3 @@ func (a *jsiiProxy_ArgoSmartRouting) ToTerraform() interface{} {
 
 	return returns
 }
-

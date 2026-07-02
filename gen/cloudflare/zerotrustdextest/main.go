@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest",
-		reflect.TypeOf((*ZeroTrustDexTest)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTest](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDexTest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig",
-		reflect.TypeOf((*ZeroTrustDexTestConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData",
-		reflect.TypeOf((*ZeroTrustDexTestData)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTestData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
-		reflect.TypeOf((*ZeroTrustDexTestDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTestDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDexTestDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPolicies",
-		reflect.TypeOf((*ZeroTrustDexTestTargetPolicies)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTestTargetPolicies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesList",
-		reflect.TypeOf((*ZeroTrustDexTestTargetPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTestTargetPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDexTestTargetPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesOutputReference",
-		reflect.TypeOf((*ZeroTrustDexTestTargetPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDexTestTargetPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

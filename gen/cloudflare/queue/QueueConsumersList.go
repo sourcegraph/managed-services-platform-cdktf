@@ -36,7 +36,7 @@ type QueueConsumersList interface {
 	Get(index *float64) QueueConsumersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_QueueConsumersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewQueueConsumersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QueueConsumersList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewQueueConsumersList(terraformResource cdktf.IInterpolatingParent, terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queue.QueueConsumersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewQueueConsumersList_Override(q QueueConsumersList, terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queue.QueueConsumersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QueueConsumersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_QueueConsumersList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QueueConsumersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_QueueConsumersList)SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_QueueConsumersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (q *jsiiProxy_QueueConsumersList) AllWithMapKey(mapKeyAttributeName *string
 	_jsii_.Invoke(
 		q,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (q *jsiiProxy_QueueConsumersList) Get(index *float64) QueueConsumersOutputR
 	_jsii_.Invoke(
 		q,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QueueConsumersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (q *jsiiProxy_QueueConsumersList) ToString() *string {
 
 	return returns
 }
-

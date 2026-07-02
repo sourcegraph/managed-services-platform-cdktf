@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReference) validateSetRouteThroughPrivateNetworkParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReference) validateSetRouteThroughPrivateNetworkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6OutputReferenc
 
 	return nil
 }
-

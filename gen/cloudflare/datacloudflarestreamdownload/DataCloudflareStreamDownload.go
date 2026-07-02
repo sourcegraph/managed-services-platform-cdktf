@@ -18,11 +18,11 @@ type DataCloudflareStreamDownload interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,17 +49,17 @@ type DataCloudflareStreamDownload interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,18 +84,18 @@ type DataCloudflareStreamDownload interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareStreamDownload
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataCloudflareStreamDownload) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamDownload) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareStreamDownload) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamDownload) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_DataCloudflareStreamDownload) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamDownload) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataCloudflareStreamDownload) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamDownload) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -283,7 +283,6 @@ func (j *jsiiProxy_DataCloudflareStreamDownload) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_download cloudflare_stream_download} Data Source.
 func NewDataCloudflareStreamDownload(scope constructs.Construct, id *string, config *DataCloudflareStreamDownloadConfig) DataCloudflareStreamDownload {
 	_init_.Initialize()
@@ -295,7 +294,7 @@ func NewDataCloudflareStreamDownload(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -308,12 +307,12 @@ func NewDataCloudflareStreamDownload_Override(d DataCloudflareStreamDownload, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetIdentifier(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamDownload)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareStreamDownload) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -393,7 +392,7 @@ func DataCloudflareStreamDownload_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func DataCloudflareStreamDownload_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareStreamDownload_IsConstruct(x interface{}) *bool {
+func DataCloudflareStreamDownload_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamDownload_IsConstructParameters(x); err != nil {
@@ -428,7 +427,7 @@ func DataCloudflareStreamDownload_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func DataCloudflareStreamDownload_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamDownload_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareStreamDownload_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamDownload_IsTerraformDataSourceParameters(x); err != nil {
@@ -447,7 +446,7 @@ func DataCloudflareStreamDownload_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func DataCloudflareStreamDownload_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamDownload_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareStreamDownload_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamDownload_IsTerraformElementParameters(x); err != nil {
@@ -466,7 +465,7 @@ func DataCloudflareStreamDownload_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,27 +483,27 @@ func DataCloudflareStreamDownload_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareStreamDownload) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareStreamDownload) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -674,8 +673,8 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamDownload) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -687,8 +686,8 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamDownload) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -700,8 +699,8 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamDownload) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -713,8 +712,8 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamDownload) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -739,8 +738,8 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamDownload) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamDownload) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -751,4 +750,3 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) ToTerraform() interface{} {
 
 	return returns
 }
-

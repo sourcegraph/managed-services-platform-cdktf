@@ -12,9 +12,9 @@ type EmailRoutingCatchAllMatchersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type EmailRoutingCatchAllMatchersOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type EmailRoutingCatchAllMatchersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type EmailRoutingCatchAllMatchersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_EmailRoutingCatchAllMatchersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) TypeInput() *str
 	return returns
 }
 
-
 func NewEmailRoutingCatchAllMatchersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmailRoutingCatchAllMatchersOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewEmailRoutingCatchAllMatchersOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewEmailRoutingCatchAllMatchersOutputReference_Override(e EmailRoutingCatch
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference)SetType(val *string) {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) ToString() *stri
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZoneCacheVariants) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (z *jsiiProxy_ZoneCacheVariants) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZoneCacheVariants) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZoneCacheVariants) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (z *jsiiProxy_ZoneCacheVariants) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZoneCacheVariants) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateZoneCacheVariants_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateZoneCacheVariants_IsConstructParameters(x interface{}) error {
+func validateZoneCacheVariants_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateZoneCacheVariants_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZoneCacheVariants_IsTerraformElementParameters(x interface{}) error {
+func validateZoneCacheVariants_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateZoneCacheVariants_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateZoneCacheVariants_IsTerraformResourceParameters(x interface{}) error {
+func validateZoneCacheVariants_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateZoneCacheVariants_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneCacheVariants) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ZoneCacheVariants) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneCacheVariants) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ZoneCacheVariants) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZoneCacheVariants) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -425,4 +425,3 @@ func validateNewZoneCacheVariantsParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

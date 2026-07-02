@@ -131,7 +131,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFlattenAllCnamesParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFlattenAllCnamesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -216,7 +216,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFla
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFoundationDnsParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFoundationDnsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFou
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,7 +260,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetInt
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetMultiProviderParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetMultiProviderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetNsT
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetSecondaryOverridesParameters(val interface{}) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetSecondaryOverridesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,4 +343,3 @@ func validateNewAccountDnsSettingsZoneDefaultsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

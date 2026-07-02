@@ -34,7 +34,7 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMagicTransitSiteLanRoutedSubnetsListParameters(terraformResource
 
 	return nil
 }
-

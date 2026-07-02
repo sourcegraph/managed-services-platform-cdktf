@@ -12,9 +12,9 @@ type DnsRecordSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,19 +25,19 @@ type DnsRecordSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FlattenCname() interface{}
-	SetFlattenCname(val interface{})
-	FlattenCnameInput() interface{}
+	FlattenCname() any
+	SetFlattenCname(val any)
+	FlattenCnameInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Ipv4Only() interface{}
-	SetIpv4Only(val interface{})
-	Ipv4OnlyInput() interface{}
-	Ipv6Only() interface{}
-	SetIpv6Only(val interface{})
-	Ipv6OnlyInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Ipv4Only() any
+	SetIpv4Only(val any)
+	Ipv4OnlyInput() any
+	Ipv6Only() any
+	SetIpv6Only(val any)
+	Ipv6OnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type DnsRecordSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DnsRecordSettingsOutputReference interface {
 	ResetIpv6Only()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DnsRecordSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) FlattenCname() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) FlattenCname() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flattenCname",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) FlattenCname() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) FlattenCnameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) FlattenCnameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flattenCnameInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) InternalValue() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv4Only() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv4Only() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv4Only",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv4Only() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv4OnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv4OnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv4OnlyInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv4OnlyInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv6Only() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv6Only() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6Only",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv6Only() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv6OnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) Ipv6OnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6OnlyInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
-
 func NewDnsRecordSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DnsRecordSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDnsRecordSettingsOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDnsRecordSettingsOutputReference_Override(d DnsRecordSettingsOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetFlattenCname(val interface{}) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetFlattenCname(val any) {
 	if err := j.validateSetFlattenCnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetFlattenCname(val interfac
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetIpv4Only(val interface{}) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetIpv4Only(val any) {
 	if err := j.validateSetIpv4OnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetIpv4Only(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetIpv6Only(val interface{}) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetIpv6Only(val any) {
 	if err := j.validateSetIpv6OnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetIpv6Only(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DnsRecordSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsRecordSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) ResetIpv6Only() {
 	)
 }
 
-func (d *jsiiProxy_DnsRecordSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DnsRecordSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DnsRecordSettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

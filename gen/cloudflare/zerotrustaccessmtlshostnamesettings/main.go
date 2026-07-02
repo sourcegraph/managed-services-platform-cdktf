@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettings",
-		reflect.TypeOf((*ZeroTrustAccessMtlsHostnameSettings)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessMtlsHostnameSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessMtlsHostnameSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettingsConfig",
-		reflect.TypeOf((*ZeroTrustAccessMtlsHostnameSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessMtlsHostnameSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettingsSettings",
-		reflect.TypeOf((*ZeroTrustAccessMtlsHostnameSettingsSettings)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessMtlsHostnameSettingsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettingsSettingsList",
-		reflect.TypeOf((*ZeroTrustAccessMtlsHostnameSettingsSettingsList)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessMtlsHostnameSettingsSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference",
-		reflect.TypeOf((*ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chinaNetwork", GoGetter: "ChinaNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "chinaNetworkInput", GoGetter: "ChinaNetworkInput"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycle",
-		reflect.TypeOf((*R2BucketLifecycle)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycle](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycle{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,23 +72,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig",
-		reflect.TypeOf((*R2BucketLifecycleConfig)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRules",
-		reflect.TypeOf((*R2BucketLifecycleRules)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransition",
-		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransition)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesAbortMultipartUploadsTransition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition",
-		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesConditions",
-		reflect.TypeOf((*R2BucketLifecycleRulesConditions)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesConditionsOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,15 +198,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransition",
-		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransition)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesDeleteObjectsTransition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition",
-		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransitionCondition)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesDeleteObjectsTransitionCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesList",
-		reflect.TypeOf((*R2BucketLifecycleRulesList)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortMultipartUploadsTransition", GoGetter: "AbortMultipartUploadsTransition"},
 			_jsii_.MemberProperty{JsiiProperty: "abortMultipartUploadsTransitionInput", GoGetter: "AbortMultipartUploadsTransitionInput"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,15 +355,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitions",
-		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitions)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesStorageClassTransitions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition",
-		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsCondition)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesStorageClassTransitionsCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -403,7 +403,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsList",
-		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsList)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesStorageClassTransitionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -417,7 +417,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -425,7 +425,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsOutputReference",
-		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketLifecycleRulesStorageClassTransitionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -454,7 +454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

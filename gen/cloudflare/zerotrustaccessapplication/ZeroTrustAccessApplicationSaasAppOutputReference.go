@@ -13,9 +13,9 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	AccessTokenLifetime() *string
 	SetAccessTokenLifetime(val *string)
 	AccessTokenLifetimeInput() *string
-	AllowPkceWithoutClientSecret() interface{}
-	SetAllowPkceWithoutClientSecret(val interface{})
-	AllowPkceWithoutClientSecretInput() interface{}
+	AllowPkceWithoutClientSecret() any
+	SetAllowPkceWithoutClientSecret(val any)
+	AllowPkceWithoutClientSecretInput() any
 	AppLauncherUrl() *string
 	SetAppLauncherUrl(val *string)
 	AppLauncherUrlInput() *string
@@ -26,9 +26,9 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	ClientSecret() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,9 +44,9 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomAttributes() ZeroTrustAccessApplicationSaasAppCustomAttributesList
-	CustomAttributesInput() interface{}
+	CustomAttributesInput() any
 	CustomClaims() ZeroTrustAccessApplicationSaasAppCustomClaimsList
-	CustomClaimsInput() interface{}
+	CustomClaimsInput() any
 	DefaultRelayState() *string
 	SetDefaultRelayState(val *string)
 	DefaultRelayStateInput() *string
@@ -59,12 +59,12 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	SetGroupFilterRegex(val *string)
 	GroupFilterRegexInput() *string
 	HybridAndImplicitOptions() ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
-	HybridAndImplicitOptionsInput() interface{}
+	HybridAndImplicitOptionsInput() any
 	IdpEntityId() *string
 	SetIdpEntityId(val *string)
 	IdpEntityIdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NameIdFormat() *string
 	SetNameIdFormat(val *string)
 	NameIdFormatInput() *string
@@ -76,7 +76,7 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	SetRedirectUris(val *[]*string)
 	RedirectUrisInput() *[]*string
 	RefreshTokenOptions() ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference
-	RefreshTokenOptionsInput() interface{}
+	RefreshTokenOptionsInput() any
 	SamlAttributeTransformJsonata() *string
 	SetSamlAttributeTransformJsonata(val *string)
 	SamlAttributeTransformJsonataInput() *string
@@ -101,7 +101,7 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,8 +122,8 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomAttributes(value interface{})
-	PutCustomClaims(value interface{})
+	PutCustomAttributes(value any)
+	PutCustomClaims(value any)
 	PutHybridAndImplicitOptions(value *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions)
 	PutRefreshTokenOptions(value *ZeroTrustAccessApplicationSaasAppRefreshTokenOptions)
 	ResetAccessTokenLifetime()
@@ -148,7 +148,7 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	ResetSsoEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) AccessToken
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecret() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecret() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPkceWithoutClientSecret",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) AllowPkceWi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecretInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecretInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPkceWithoutClientSecretInput",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ClientSecre
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CustomAttri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CustomAttributesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CustomAttributesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customAttributesInput",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CustomClaim
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CustomClaimsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CustomClaimsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customClaimsInput",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) HybridAndIm
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) HybridAndImplicitOptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) HybridAndImplicitOptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hybridAndImplicitOptionsInput",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) IdpEntityId
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) RefreshToke
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) RefreshTokenOptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) RefreshTokenOptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"refreshTokenOptionsInput",
@@ -681,7 +681,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) UpdatedAt()
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationSaasAppOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppOutputReference {
 	_init_.Initialize()
 
@@ -692,7 +691,7 @@ func NewZeroTrustAccessApplicationSaasAppOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -704,12 +703,12 @@ func NewZeroTrustAccessApplicationSaasAppOutputReference_Override(z ZeroTrustAcc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAccessTokenLifetime(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetAccessTokenLifetime(val *string) {
 	if err := j.validateSetAccessTokenLifetimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAccessTok
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAllowPkceWithoutClientSecret(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetAllowPkceWithoutClientSecret(val any) {
 	if err := j.validateSetAllowPkceWithoutClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAllowPkce
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAppLauncherUrl(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetAppLauncherUrl(val *string) {
 	if err := j.validateSetAppLauncherUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAppLaunch
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAuthType(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetAuthType(val *string) {
 	if err := j.validateSetAuthTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAuthType(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetConsumerServiceUrl(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetConsumerServiceUrl(val *string) {
 	if err := j.validateSetConsumerServiceUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetConsumerS
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetDefaultRelayState(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetDefaultRelayState(val *string) {
 	if err := j.validateSetDefaultRelayStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetDefaultRe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetGrantTypes(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetGrantTypes(val *[]*string) {
 	if err := j.validateSetGrantTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetGrantType
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetGroupFilterRegex(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetGroupFilterRegex(val *string) {
 	if err := j.validateSetGroupFilterRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetGroupFilt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetIdpEntityId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetIdpEntityId(val *string) {
 	if err := j.validateSetIdpEntityIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetIdpEntity
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetNameIdFormat(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetNameIdFormat(val *string) {
 	if err := j.validateSetNameIdFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetNameIdFor
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetNameIdTransformJsonata(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetNameIdTransformJsonata(val *string) {
 	if err := j.validateSetNameIdTransformJsonataParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetNameIdTra
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetRedirectUris(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetRedirectUris(val *[]*string) {
 	if err := j.validateSetRedirectUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetRedirectU
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetSamlAttributeTransformJsonata(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetSamlAttributeTransformJsonata(val *string) {
 	if err := j.validateSetSamlAttributeTransformJsonataParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetSamlAttri
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetScopes(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetScopes(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetSpEntityId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetSpEntityId(val *string) {
 	if err := j.validateSetSpEntityIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetSpEntityI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetSsoEndpoint(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetSsoEndpoint(val *string) {
 	if err := j.validateSetSsoEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetSsoEndpoi
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -953,16 +952,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ComputeFqn(
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetListAttr
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetStringAt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) GetStringMa
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,32 +1118,32 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) Interpolati
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PutCustomAttributes(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PutCustomAttributes(value any) {
 	if err := z.validatePutCustomAttributesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putCustomAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PutCustomClaims(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PutCustomClaims(value any) {
 	if err := z.validatePutCustomClaimsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putCustomClaims",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PutHybridAn
 	_jsii_.InvokeVoid(
 		z,
 		"putHybridAndImplicitOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PutRefreshT
 	_jsii_.InvokeVoid(
 		z,
 		"putRefreshTokenOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1330,16 +1329,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetSsoEnd
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1358,4 +1357,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ToString() 
 
 	return returns
 }
-

@@ -109,7 +109,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewZeroTrustTunnelCloudflaredConfigConfigIngressOutputReferencePara
 
 	return nil
 }
-

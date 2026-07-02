@@ -1,6 +1,5 @@
 package loadbalancer
 
-
 type LoadBalancerRules struct {
 	// The condition expressions to evaluate.
 	//
@@ -11,7 +10,7 @@ type LoadBalancerRules struct {
 	// Disable this specific rule. It will no longer be evaluated by this load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#disabled LoadBalancer#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// A collection of fields used to directly respond to the eyeball instead of routing to a pool.
 	//
 	// If a fixed_response is supplied the rule will be marked as terminates.
@@ -37,6 +36,5 @@ type LoadBalancerRules struct {
 	// If this rule's condition is true, this causes rule evaluation to stop after processing this rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#terminates LoadBalancer#terminates}
-	Terminates interface{} `field:"optional" json:"terminates" yaml:"terminates"`
+	Terminates any `field:"optional" json:"terminates" yaml:"terminates"`
 }
-

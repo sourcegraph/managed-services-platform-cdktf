@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultServiceTokenOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultServiceTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultServiceTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustAccessGroupIsDefaultServiceTokenOutputRef
 
 	return nil
 }
-

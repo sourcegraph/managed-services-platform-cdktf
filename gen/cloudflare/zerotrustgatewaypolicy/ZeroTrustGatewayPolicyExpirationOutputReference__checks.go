@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustGatewayPolicyExpirationOutputReferenceParameters(terraf
 
 	return nil
 }
-

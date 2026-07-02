@@ -90,7 +90,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutAiBindingsParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutAiBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutAnalyticsEngineDatasetsParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutAnalyticsEngineDatasetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutBrowsersParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutBrowsersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutD1DatabasesParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutD1DatabasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutDurableObjectNamespacesParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutDurableObjectNamespacesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutEnvVarsParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutEnvVarsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutHyperdriveBindingsParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutHyperdriveBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutKvNamespacesParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutKvNamespacesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -338,7 +338,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutMtlsCertificatesParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutMtlsCertificatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -380,7 +380,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutQueueProducersParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutQueueProducersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutR2BucketsParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutR2BucketsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutServicesParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -473,7 +473,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutVectorizeBindingsParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutVectorizeBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -528,7 +528,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -593,7 +593,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -644,4 +644,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewOutputReferenceParameters(te
 
 	return nil
 }
-

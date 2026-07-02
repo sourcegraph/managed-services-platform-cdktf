@@ -17,8 +17,8 @@ type PagesProjectDeploymentConfigsPreviewBrowsersMap interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -32,7 +32,7 @@ type PagesProjectDeploymentConfigsPreviewBrowsersMap interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -65,8 +65,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -95,7 +95,6 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) TerraformRes
 	return returns
 }
 
-
 func NewPagesProjectDeploymentConfigsPreviewBrowsersMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsPreviewBrowsersMap {
 	_init_.Initialize()
 
@@ -106,7 +105,7 @@ func NewPagesProjectDeploymentConfigsPreviewBrowsersMap(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -118,12 +117,12 @@ func NewPagesProjectDeploymentConfigsPreviewBrowsersMap_Override(p PagesProjectD
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -134,7 +133,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +144,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,7 +177,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) Get(key *str
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{key},
+		[]any{key},
 		&returns,
 	)
 
@@ -194,23 +193,23 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) Interpolatio
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -229,4 +228,3 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) ToString() *
 
 	return returns
 }
-

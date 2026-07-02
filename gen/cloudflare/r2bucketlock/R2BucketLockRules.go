@@ -1,6 +1,5 @@
 package r2bucketlock
 
-
 type R2BucketLockRules struct {
 	// Condition to apply a lock rule to an object for how long in seconds.
 	//
@@ -9,7 +8,7 @@ type R2BucketLockRules struct {
 	// Whether or not this rule is in effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Unique identifier for this rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_lock#id R2BucketLock#id}
@@ -22,4 +21,3 @@ type R2BucketLockRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
-

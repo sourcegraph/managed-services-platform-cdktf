@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateSetDefault
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLoadBalancerRandomSteeringOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

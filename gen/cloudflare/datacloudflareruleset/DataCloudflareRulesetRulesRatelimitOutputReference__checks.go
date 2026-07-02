@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesRatelimitOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesRatelimitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRulesetRulesRatelimitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareRulesetRulesRatelimitOutputReferenceParameters(ter
 
 	return nil
 }
-

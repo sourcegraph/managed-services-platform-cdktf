@@ -6,9 +6,9 @@ import (
 
 type MagicTransitSiteLanConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MagicTransitSiteLanConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
@@ -34,13 +34,13 @@ type MagicTransitSiteLanConfig struct {
 	// only works for site with HA turned on. only one LAN can be set as the ha_link.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
-	HaLink interface{} `field:"optional" json:"haLink" yaml:"haLink"`
+	HaLink any `field:"optional" json:"haLink" yaml:"haLink"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
 	Nat *MagicTransitSiteLanNat `field:"optional" json:"nat" yaml:"nat"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
-	RoutedSubnets interface{} `field:"optional" json:"routedSubnets" yaml:"routedSubnets"`
+	RoutedSubnets any `field:"optional" json:"routedSubnets" yaml:"routedSubnets"`
 	// If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP).
 	//
 	// However, if in high availability mode, static_address is required along with secondary and virtual address.
@@ -52,4 +52,3 @@ type MagicTransitSiteLanConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
 	VlanTag *float64 `field:"optional" json:"vlanTag" yaml:"vlanTag"`
 }
-

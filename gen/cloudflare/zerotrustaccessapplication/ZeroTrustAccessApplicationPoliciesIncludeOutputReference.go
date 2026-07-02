@@ -11,22 +11,22 @@ import (
 type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	cdktf.ComplexObject
 	AnyValidServiceToken() ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference
-	AnyValidServiceTokenInput() interface{}
+	AnyValidServiceTokenInput() any
 	AuthContext() ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference
-	AuthContextInput() interface{}
+	AuthContextInput() any
 	AuthMethod() ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference
-	AuthMethodInput() interface{}
+	AuthMethodInput() any
 	AzureAd() ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference
-	AzureAdInput() interface{}
+	AzureAdInput() any
 	Certificate() ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference
-	CertificateInput() interface{}
+	CertificateInput() any
 	CommonName() ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference
-	CommonNameInput() interface{}
+	CommonNameInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,43 +38,43 @@ type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DevicePosture() ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference
-	DevicePostureInput() interface{}
+	DevicePostureInput() any
 	Email() ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference
 	EmailDomain() ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference
-	EmailDomainInput() interface{}
-	EmailInput() interface{}
+	EmailDomainInput() any
+	EmailInput() any
 	EmailList() ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference
-	EmailListInput() interface{}
+	EmailListInput() any
 	Everyone() ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference
-	EveryoneInput() interface{}
+	EveryoneInput() any
 	ExternalEvaluation() ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference
-	ExternalEvaluationInput() interface{}
+	ExternalEvaluationInput() any
 	// Experimental.
 	Fqn() *string
 	Geo() ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference
-	GeoInput() interface{}
+	GeoInput() any
 	GithubOrganization() ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference
-	GithubOrganizationInput() interface{}
+	GithubOrganizationInput() any
 	Group() ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference
-	GroupInput() interface{}
+	GroupInput() any
 	Gsuite() ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference
-	GsuiteInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	GsuiteInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Ip() ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference
-	IpInput() interface{}
+	IpInput() any
 	IpList() ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference
-	IpListInput() interface{}
+	IpListInput() any
 	LoginMethod() ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference
-	LoginMethodInput() interface{}
+	LoginMethodInput() any
 	Oidc() ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference
-	OidcInput() interface{}
+	OidcInput() any
 	Okta() ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference
-	OktaInput() interface{}
+	OktaInput() any
 	Saml() ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference
-	SamlInput() interface{}
+	SamlInput() any
 	ServiceToken() ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference
-	ServiceTokenInput() interface{}
+	ServiceTokenInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,7 +86,7 @@ type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -155,7 +155,7 @@ type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	ResetServiceToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Any
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AnyValidServiceTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AnyValidServiceTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"anyValidServiceTokenInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Aut
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AuthContextInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AuthContextInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authContextInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Aut
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AuthMethodInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AuthMethodInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authMethodInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Azu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AzureAdInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) AzureAdInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"azureAdInput",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Cer
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) CertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) CertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"certificateInput",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Com
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) CommonNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) CommonNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"commonNameInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Com
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Dev
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) DevicePostureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) DevicePostureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"devicePostureInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ema
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EmailDomainInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EmailDomainInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailDomainInput",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ema
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailInput",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ema
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EmailListInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EmailListInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailListInput",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Eve
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EveryoneInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) EveryoneInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"everyoneInput",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ext
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ExternalEvaluationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ExternalEvaluationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externalEvaluationInput",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Geo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GeoInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GeoInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"geoInput",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Git
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GithubOrganizationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GithubOrganizationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"githubOrganizationInput",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Gro
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GroupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GroupInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"groupInput",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Gsu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GsuiteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GsuiteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gsuiteInput",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Gsu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ip(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) IpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) IpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipInput",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) IpL
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) IpListInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) IpListInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipListInput",
@@ -588,8 +588,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Log
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) LoginMethodInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) LoginMethodInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"loginMethodInput",
@@ -608,8 +608,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Oid
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) OidcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) OidcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oidcInput",
@@ -628,8 +628,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Okt
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) OktaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) OktaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oktaInput",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Sam
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SamlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SamlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"samlInput",
@@ -668,8 +668,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ser
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ServiceTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ServiceTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceTokenInput",
@@ -698,7 +698,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Ter
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationPoliciesIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationPoliciesIncludeOutputReference {
 	_init_.Initialize()
 
@@ -709,7 +708,7 @@ func NewZeroTrustAccessApplicationPoliciesIncludeOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -721,12 +720,12 @@ func NewZeroTrustAccessApplicationPoliciesIncludeOutputReference_Override(z Zero
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,16 +793,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Com
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Int
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putAnyValidServiceToken",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -985,7 +984,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putAuthContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -996,7 +995,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putAuthMethod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putAzureAd",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putCertificate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putCommonName",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putDevicePosture",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putEmailDomain",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1073,7 +1072,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putEmailList",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1084,7 +1083,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putEveryone",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putExternalEvaluation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putGeo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1117,7 +1116,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putGithubOrganization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1128,7 +1127,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1139,7 +1138,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putGsuite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1150,7 +1149,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1161,7 +1160,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putIpList",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putLoginMethod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1183,7 +1182,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putOidc",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1194,7 +1193,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putOkta",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1205,7 +1204,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putSaml",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	_jsii_.InvokeVoid(
 		z,
 		"putServiceToken",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1404,16 +1403,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1432,4 +1431,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ToS
 
 	return returns
 }
-

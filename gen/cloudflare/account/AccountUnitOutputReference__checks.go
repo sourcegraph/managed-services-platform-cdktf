@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountUnitOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_AccountUnitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountUnitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccountUnitOutputReference) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AccountUnitOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountUnitOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAccountUnitOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

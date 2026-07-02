@@ -18,11 +18,11 @@ type DataCloudflareEmailSecurityBlockSenders interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,7 +58,7 @@ type DataCloudflareEmailSecurityBlockSenders interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() DataCloudflareEmailSecurityBlockSendersResultList
 	Search() *string
 	SetSearch(val *string)
@@ -66,13 +66,13 @@ type DataCloudflareEmailSecurityBlockSenders interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataCloudflareEmailSecurityBlockSenders interface {
 	ResetOverrideLogicalId()
 	ResetPatternType()
 	ResetSearch()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareEmailSecurityBlockSenders
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -391,7 +391,6 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders} Data Source.
 func NewDataCloudflareEmailSecurityBlockSenders(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSendersConfig) DataCloudflareEmailSecurityBlockSenders {
 	_init_.Initialize()
@@ -403,7 +402,7 @@ func NewDataCloudflareEmailSecurityBlockSenders(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -416,12 +415,12 @@ func NewDataCloudflareEmailSecurityBlockSenders_Override(d DataCloudflareEmailSe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetAccountId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetDirection(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetDirection(val *str
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetMaxItems(val *float64) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetMaxItems(val *floa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetOrder(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetOrder(val *string) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetOrder(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetPatternType(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetPatternType(val *string) {
 	if err := j.validateSetPatternTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetPatternType(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetSearch(val *string) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SetSearch(val *string) {
 	if err := j.validateSetSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func DataCloudflareEmailSecurityBlockSenders_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func DataCloudflareEmailSecurityBlockSenders_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareEmailSecurityBlockSenders_IsConstruct(x interface{}) *bool {
+func DataCloudflareEmailSecurityBlockSenders_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailSecurityBlockSenders_IsConstructParameters(x); err != nil {
@@ -580,7 +579,7 @@ func DataCloudflareEmailSecurityBlockSenders_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func DataCloudflareEmailSecurityBlockSenders_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareEmailSecurityBlockSenders_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareEmailSecurityBlockSenders_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailSecurityBlockSenders_IsTerraformDataSourceParameters(x); err != nil {
@@ -599,7 +598,7 @@ func DataCloudflareEmailSecurityBlockSenders_IsTerraformDataSource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func DataCloudflareEmailSecurityBlockSenders_IsTerraformDataSource(x interface{}
 }
 
 // Experimental.
-func DataCloudflareEmailSecurityBlockSenders_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareEmailSecurityBlockSenders_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailSecurityBlockSenders_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func DataCloudflareEmailSecurityBlockSenders_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -636,27 +635,27 @@ func DataCloudflareEmailSecurityBlockSenders_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -866,8 +865,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ResetSearch() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -931,8 +930,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -943,4 +942,3 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ToTerraform() interf
 
 	return returns
 }
-

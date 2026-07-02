@@ -98,7 +98,7 @@ func (b *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewBotManagementStaleZoneConfigurationOutputReferenceParameters(ter
 
 	return nil
 }
-

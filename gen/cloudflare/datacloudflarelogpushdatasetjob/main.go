@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
-		reflect.TypeOf((*DataCloudflareLogpushDatasetJob)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareLogpushDatasetJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareLogpushDatasetJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJobConfig",
-		reflect.TypeOf((*DataCloudflareLogpushDatasetJobConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareLogpushDatasetJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJobOutputOptions",
-		reflect.TypeOf((*DataCloudflareLogpushDatasetJobOutputOptions)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareLogpushDatasetJobOutputOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJobOutputOptionsOutputReference",
-		reflect.TypeOf((*DataCloudflareLogpushDatasetJobOutputOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareLogpushDatasetJobOutputOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchPrefix", GoGetter: "BatchPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "batchSuffix", GoGetter: "BatchSuffix"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestampFormat", GoGetter: "TimestampFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareLogpushDatasetJobOutputOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

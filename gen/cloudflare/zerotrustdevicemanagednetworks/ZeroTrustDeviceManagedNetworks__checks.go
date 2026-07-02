@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateAddMoveTargetParamete
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateMoveFromIdParameters(
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateZeroTrustDeviceManagedNetworks_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateZeroTrustDeviceManagedNetworks_IsConstructParameters(x interface{}) error {
+func validateZeroTrustDeviceManagedNetworks_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateZeroTrustDeviceManagedNetworks_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateZeroTrustDeviceManagedNetworks_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustDeviceManagedNetworks_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateZeroTrustDeviceManagedNetworks_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateZeroTrustDeviceManagedNetworks_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustDeviceManagedNetworks_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetAccountIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewZeroTrustDeviceManagedNetworksParameters(scope constructs.Constr
 
 	return nil
 }
-

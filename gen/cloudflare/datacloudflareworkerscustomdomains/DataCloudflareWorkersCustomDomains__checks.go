@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareWorkersCustomDomains) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareWorkersCustomDomains) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareWorkersCustomDomains_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataCloudflareWorkersCustomDomains_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareWorkersCustomDomains_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareWorkersCustomDomains_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataCloudflareWorkersCustomDomains_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareWorkersCustomDomains_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareWorkersCustomDomains_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataCloudflareWorkersCustomDomains_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareWorkersCustomDomains_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetAccountIdParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -290,4 +290,3 @@ func validateNewDataCloudflareWorkersCustomDomainsParameters(scope constructs.Co
 
 	return nil
 }
-

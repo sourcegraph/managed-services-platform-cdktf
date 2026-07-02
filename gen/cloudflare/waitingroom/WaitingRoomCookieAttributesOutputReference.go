@@ -12,9 +12,9 @@ type WaitingRoomCookieAttributesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type WaitingRoomCookieAttributesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Samesite() *string
 	SetSamesite(val *string)
 	SamesiteInput() *string
@@ -46,7 +46,7 @@ type WaitingRoomCookieAttributesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type WaitingRoomCookieAttributesOutputReference interface {
 	ResetSecure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_WaitingRoomCookieAttributesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewWaitingRoomCookieAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WaitingRoomCookieAttributesOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewWaitingRoomCookieAttributesOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewWaitingRoomCookieAttributesOutputReference_Override(w WaitingRoomCookieA
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetSamesite(val *string) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetSamesite(val *string) {
 	if err := j.validateSetSamesiteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetSamesite(val *s
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetSecure(val *string) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetSecure(val *string) {
 	if err := j.validateSetSecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetSecure(val *str
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WaitingRoomCookieAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) ResetSecure() {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates",
-		reflect.TypeOf((*DataCloudflareKeylessCertificates)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificates](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareKeylessCertificates{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig",
-		reflect.TypeOf((*DataCloudflareKeylessCertificatesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificatesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesResult",
-		reflect.TypeOf((*DataCloudflareKeylessCertificatesResult)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificatesResult](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesResultList",
-		reflect.TypeOf((*DataCloudflareKeylessCertificatesResultList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificatesResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareKeylessCertificatesResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesResultOutputReference",
-		reflect.TypeOf((*DataCloudflareKeylessCertificatesResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificatesResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel", GoGetter: "Tunnel"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareKeylessCertificatesResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesResultTunnel",
-		reflect.TypeOf((*DataCloudflareKeylessCertificatesResultTunnel)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificatesResultTunnel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesResultTunnelOutputReference",
-		reflect.TypeOf((*DataCloudflareKeylessCertificatesResultTunnelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareKeylessCertificatesResultTunnelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetId", GoGetter: "VnetId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareKeylessCertificatesResultTunnelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

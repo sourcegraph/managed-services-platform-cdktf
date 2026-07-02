@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings",
-		reflect.TypeOf((*SchemaValidationOperationSettings)(nil)).Elem(),
+		reflect.TypeFor[SchemaValidationOperationSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SchemaValidationOperationSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettingsConfig",
-		reflect.TypeOf((*SchemaValidationOperationSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[SchemaValidationOperationSettingsConfig](),
 	)
 }

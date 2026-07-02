@@ -19,7 +19,7 @@ func (w *jsiiProxy_WaitingRoomSettings) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WaitingRoomSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WaitingRoomSettings) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WaitingRoomSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateWaitingRoomSettings_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateWaitingRoomSettings_IsConstructParameters(x interface{}) error {
+func validateWaitingRoomSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateWaitingRoomSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWaitingRoomSettings_IsTerraformElementParameters(x interface{}) error {
+func validateWaitingRoomSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateWaitingRoomSettings_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateWaitingRoomSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateWaitingRoomSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateWaitingRoomSettings_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_WaitingRoomSettings) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_WaitingRoomSettings) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WaitingRoomSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -388,7 +388,7 @@ func (j *jsiiProxy_WaitingRoomSettings) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomSettings) validateSetSearchEngineCrawlerBypassParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomSettings) validateSetSearchEngineCrawlerBypassParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -434,4 +434,3 @@ func validateNewWaitingRoomSettingsParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

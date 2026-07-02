@@ -12,9 +12,9 @@ type DataCloudflareApiShieldOperationFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,8 +39,8 @@ type DataCloudflareApiShieldOperationFilterOutputReference interface {
 	Host() *[]*string
 	SetHost(val *[]*string)
 	HostInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Method() *[]*string
 	SetMethod(val *[]*string)
 	MethodInput() *[]*string
@@ -58,7 +58,7 @@ type DataCloudflareApiShieldOperationFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type DataCloudflareApiShieldOperationFilterOutputReference interface {
 	ResetOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) HostIn
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) Terraf
 	return returns
 }
 
-
 func NewDataCloudflareApiShieldOperationFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFilterOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewDataCloudflareApiShieldOperationFilterOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewDataCloudflareApiShieldOperationFilterOutputReference_Override(d DataClo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetDirection(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetDire
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetEndpoint(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetEndp
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetFeature(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetFeature(val *[]*string) {
 	if err := j.validateSetFeatureParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetFeat
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetHost(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetHost(val *[]*string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetHost
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetMethod(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetMethod(val *[]*string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetMeth
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetOrder(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetOrder(val *string) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetOrde
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) Comput
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetLis
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) Interp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) ResetO
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFilterOutputReference) ToStri
 
 	return returns
 }
-

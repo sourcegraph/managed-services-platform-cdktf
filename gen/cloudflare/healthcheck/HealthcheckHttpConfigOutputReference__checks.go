@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetAllowInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetAllowInsecureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetAllowInsecur
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -199,7 +199,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetExpectedCode
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetFollowRedirectsParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetFollowRedirectsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetFollowRedire
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetHeaderParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetHeaderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetHeaderParame
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHttpConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -314,4 +314,3 @@ func validateNewHealthcheckHttpConfigOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

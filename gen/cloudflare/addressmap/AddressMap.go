@@ -20,15 +20,15 @@ type AddressMap interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	DefaultSni() *string
 	SetDefaultSni(val *string)
@@ -40,9 +40,9 @@ type AddressMap interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,7 +60,7 @@ type AddressMap interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Memberships() AddressMapMembershipsList
-	MembershipsInput() interface{}
+	MembershipsInput() any
 	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
@@ -69,24 +69,24 @@ type AddressMap interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type AddressMap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,14 +116,14 @@ type AddressMap interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMemberships(value interface{})
+	PutMemberships(value any)
 	ResetDefaultSni()
 	ResetDescription()
 	ResetEnabled()
@@ -132,17 +132,17 @@ type AddressMap interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AddressMap
@@ -200,8 +200,8 @@ func (j *jsiiProxy_AddressMap) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_AddressMap) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AddressMap) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_AddressMap) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_AddressMap) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_AddressMap) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_AddressMap) Memberships() AddressMapMembershipsList {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) MembershipsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) MembershipsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"membershipsInput",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_AddressMap) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AddressMap) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_AddressMap) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_AddressMap) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AddressMap) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -480,7 +480,6 @@ func (j *jsiiProxy_AddressMap) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapConfig) AddressMap {
 	_init_.Initialize()
@@ -492,7 +491,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.addressMap.AddressMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.addressMap.AddressMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetAccountId(val *string) {
+func (j *jsiiProxy_AddressMap) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_AddressMap)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetConnection(val interface{}) {
+func (j *jsiiProxy_AddressMap) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_AddressMap)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetCount(val interface{}) {
+func (j *jsiiProxy_AddressMap) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_AddressMap)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetDefaultSni(val *string) {
+func (j *jsiiProxy_AddressMap) SetDefaultSni(val *string) {
 	if err := j.validateSetDefaultSniParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_AddressMap)SetDefaultSni(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AddressMap) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_AddressMap)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetDescription(val *string) {
+func (j *jsiiProxy_AddressMap) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_AddressMap)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetEnabled(val interface{}) {
+func (j *jsiiProxy_AddressMap) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_AddressMap)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AddressMap) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -592,7 +591,7 @@ func (j *jsiiProxy_AddressMap)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetIps(val *[]*string) {
+func (j *jsiiProxy_AddressMap) SetIps(val *[]*string) {
 	if err := j.validateSetIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_AddressMap)SetIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AddressMap) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_AddressMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AddressMap) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_AddressMap)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AddressMap) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func AddressMap_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func AddressMap_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AddressMap_IsConstruct(x interface{}) *bool {
+func AddressMap_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAddressMap_IsConstructParameters(x); err != nil {
@@ -680,7 +679,7 @@ func AddressMap_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func AddressMap_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AddressMap_IsTerraformElement(x interface{}) *bool {
+func AddressMap_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAddressMap_IsTerraformElementParameters(x); err != nil {
@@ -699,7 +698,7 @@ func AddressMap_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func AddressMap_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AddressMap_IsTerraformResource(x interface{}) *bool {
+func AddressMap_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAddressMap_IsTerraformResourceParameters(x); err != nil {
@@ -718,7 +717,7 @@ func AddressMap_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,31 +742,31 @@ func (a *jsiiProxy_AddressMap) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AddressMap) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AddressMap) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AddressMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AddressMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (a *jsiiProxy_AddressMap) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (a *jsiiProxy_AddressMap) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (a *jsiiProxy_AddressMap) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (a *jsiiProxy_AddressMap) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (a *jsiiProxy_AddressMap) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (a *jsiiProxy_AddressMap) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (a *jsiiProxy_AddressMap) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,15 +894,15 @@ func (a *jsiiProxy_AddressMap) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AddressMap) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -922,7 +921,7 @@ func (a *jsiiProxy_AddressMap) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -935,7 +934,7 @@ func (a *jsiiProxy_AddressMap) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,18 +948,18 @@ func (a *jsiiProxy_AddressMap) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AddressMap) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AddressMap) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -971,7 +970,7 @@ func (a *jsiiProxy_AddressMap) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -982,18 +981,18 @@ func (a *jsiiProxy_AddressMap) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AddressMap) PutMemberships(value interface{}) {
+func (a *jsiiProxy_AddressMap) PutMemberships(value any) {
 	if err := a.validatePutMembershipsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putMemberships",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1045,8 +1044,8 @@ func (a *jsiiProxy_AddressMap) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AddressMap) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AddressMap) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1058,8 +1057,8 @@ func (a *jsiiProxy_AddressMap) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AddressMap) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1071,8 +1070,8 @@ func (a *jsiiProxy_AddressMap) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AddressMap) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1084,8 +1083,8 @@ func (a *jsiiProxy_AddressMap) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AddressMap) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1110,8 +1109,8 @@ func (a *jsiiProxy_AddressMap) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AddressMap) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1122,4 +1121,3 @@ func (a *jsiiProxy_AddressMap) ToTerraform() interface{} {
 
 	return returns
 }
-

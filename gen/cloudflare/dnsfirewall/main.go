@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
-		reflect.TypeOf((*DnsFirewall)(nil)).Elem(),
+		reflect.TypeFor[DnsFirewall](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upstreamIps", GoGetter: "UpstreamIps"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamIpsInput", GoGetter: "UpstreamIpsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsFirewall{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,11 +95,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigation",
-		reflect.TypeOf((*DnsFirewallAttackMitigation)(nil)).Elem(),
+		reflect.TypeFor[DnsFirewallAttackMitigation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigationOutputReference",
-		reflect.TypeOf((*DnsFirewallAttackMitigationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsFirewallAttackMitigationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsFirewallAttackMitigationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,6 +137,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallConfig",
-		reflect.TypeOf((*DnsFirewallConfig)(nil)).Elem(),
+		reflect.TypeFor[DnsFirewallConfig](),
 	)
 }

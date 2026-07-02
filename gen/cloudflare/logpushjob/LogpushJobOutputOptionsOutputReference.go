@@ -18,9 +18,9 @@ type LogpushJobOutputOptionsOutputReference interface {
 	BatchSuffixInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type LogpushJobOutputOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Cve202144228() interface{}
-	SetCve202144228(val interface{})
-	Cve202144228Input() interface{}
+	Cve202144228() any
+	SetCve202144228(val any)
+	Cve202144228Input() any
 	FieldDelimiter() *string
 	SetFieldDelimiter(val *string)
 	FieldDelimiterInput() *string
@@ -42,8 +42,8 @@ type LogpushJobOutputOptionsOutputReference interface {
 	FieldNamesInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OutputType() *string
 	SetOutputType(val *string)
 	OutputTypeInput() *string
@@ -76,7 +76,7 @@ type LogpushJobOutputOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type LogpushJobOutputOptionsOutputReference interface {
 	ResetTimestampFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) BatchSuffixInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) CreationStack() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cve202144228",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228() interf
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cve202144228Input",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) TimestampFormatInput(
 	return returns
 }
 
-
 func NewLogpushJobOutputOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogpushJobOutputOptionsOutputReference {
 	_init_.Initialize()
 
@@ -445,7 +444,7 @@ func NewLogpushJobOutputOptionsOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewLogpushJobOutputOptionsOutputReference_Override(l LogpushJobOutputOption
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetBatchPrefix(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetBatchPrefix(val *string) {
 	if err := j.validateSetBatchPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetBatchPrefix(val *st
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetBatchSuffix(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetBatchSuffix(val *string) {
 	if err := j.validateSetBatchSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetBatchSuffix(val *st
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetCve202144228(val interface{}) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetCve202144228(val any) {
 	if err := j.validateSetCve202144228Parameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetCve202144228(val in
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetFieldDelimiter(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetFieldDelimiter(val *string) {
 	if err := j.validateSetFieldDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetFieldDelimiter(val 
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetFieldNames(val *[]*string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetFieldNames(val *[]*string) {
 	if err := j.validateSetFieldNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetFieldNames(val *[]*
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetOutputType(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetOutputType(val *string) {
 	if err := j.validateSetOutputTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetOutputType(val *str
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordDelimiter(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetRecordDelimiter(val *string) {
 	if err := j.validateSetRecordDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordDelimiter(val
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordPrefix(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetRecordPrefix(val *string) {
 	if err := j.validateSetRecordPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordPrefix(val *s
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordSuffix(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetRecordSuffix(val *string) {
 	if err := j.validateSetRecordSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordSuffix(val *s
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordTemplate(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetRecordTemplate(val *string) {
 	if err := j.validateSetRecordTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetRecordTemplate(val 
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetSampleRate(val *float64) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetSampleRate(val *float64) {
 	if err := j.validateSetSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetSampleRate(val *flo
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetTimestampFormat(val *string) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) SetTimestampFormat(val *string) {
 	if err := j.validateSetTimestampFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,16 +661,16 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -931,16 +930,16 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ResetTimestampFormat(
 	)
 }
 
-func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -959,4 +958,3 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutContextAwarenessParamet
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutEntriesParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutEntriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutEntriesParameters(value
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutSharedEntriesParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutSharedEntriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateZeroTrustDlpCustomProfile_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateZeroTrustDlpCustomProfile_IsConstructParameters(x interface{}) error {
+func validateZeroTrustDlpCustomProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateZeroTrustDlpCustomProfile_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateZeroTrustDlpCustomProfile_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustDlpCustomProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateZeroTrustDlpCustomProfile_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateZeroTrustDlpCustomProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustDlpCustomProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetAiContextEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetAiContextEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -361,7 +361,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetConfidenceThresholdPara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -394,7 +394,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -475,7 +475,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetOcrEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetOcrEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -495,7 +495,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetOcrEnabledParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -559,4 +559,3 @@ func validateNewZeroTrustDlpCustomProfileParameters(scope constructs.Construct, 
 
 	return nil
 }
-

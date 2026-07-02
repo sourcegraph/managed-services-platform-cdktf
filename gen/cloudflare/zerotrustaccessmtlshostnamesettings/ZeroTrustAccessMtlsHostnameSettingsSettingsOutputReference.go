@@ -10,17 +10,17 @@ import (
 
 type ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference interface {
 	cdktf.ComplexObject
-	ChinaNetwork() interface{}
-	SetChinaNetwork(val interface{})
-	ChinaNetworkInput() interface{}
-	ClientCertificateForwarding() interface{}
-	SetClientCertificateForwarding(val interface{})
-	ClientCertificateForwardingInput() interface{}
+	ChinaNetwork() any
+	SetChinaNetwork(val any)
+	ChinaNetworkInput() any
+	ClientCertificateForwarding() any
+	SetClientCertificateForwarding(val any)
+	ClientCertificateForwardingInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference interface {
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ChinaNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ChinaNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"chinaNetwork",
@@ -95,8 +95,8 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ChinaNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ChinaNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"chinaNetworkInput",
@@ -105,8 +105,8 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ClientCertificateForwarding() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ClientCertificateForwarding() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientCertificateForwarding",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ClientCertificateForwardingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ClientCertificateForwardingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientCertificateForwardingInput",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) H
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) T
 	return returns
 }
 
-
 func NewZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference_Override(z Ze
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessMtlsHostnameSettings.ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetChinaNetwork(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetChinaNetwork(val any) {
 	if err := j.validateSetChinaNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetClientCertificateForwarding(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetClientCertificateForwarding(val any) {
 	if err := j.validateSetClientCertificateForwardingParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) C
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) I
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) T
 
 	return returns
 }
-

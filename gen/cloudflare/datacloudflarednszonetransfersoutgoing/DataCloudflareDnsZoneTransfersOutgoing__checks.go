@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareDnsZoneTransfersOutgoing_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataCloudflareDnsZoneTransfersOutgoing_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareDnsZoneTransfersOutgoing_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareDnsZoneTransfersOutgoing_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataCloudflareDnsZoneTransfersOutgoing_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareDnsZoneTransfersOutgoing_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareDnsZoneTransfersOutgoing_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataCloudflareDnsZoneTransfersOutgoing_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareDnsZoneTransfersOutgoing_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareDnsZoneTransfersOutgoing_IsTerraformElementParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDataCloudflareDnsZoneTransfersOutgoingParameters(scope construct
 
 	return nil
 }
-

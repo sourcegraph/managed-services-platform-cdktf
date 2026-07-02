@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultGithubOrganization
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultGithubOrganizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultGithubOrganizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustAccessGroupIsDefaultGithubOrganizationOut
 
 	return nil
 }
-

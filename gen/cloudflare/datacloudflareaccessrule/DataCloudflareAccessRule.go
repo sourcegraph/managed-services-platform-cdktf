@@ -20,18 +20,18 @@ type DataCloudflareAccessRule interface {
 	CdktfStack() cdktf.TerraformStack
 	Configuration() DataCloudflareAccessRuleConfigurationOutputReference
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataCloudflareAccessRuleFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -55,7 +55,7 @@ type DataCloudflareAccessRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuleId() *string
 	SetRuleId(val *string)
 	RuleIdInput() *string
@@ -63,16 +63,16 @@ type DataCloudflareAccessRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataCloudflareAccessRule interface {
 	ResetOverrideLogicalId()
 	ResetRuleId()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareAccessRule
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataCloudflareAccessRule) Configuration() DataCloudflareAcces
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccessRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DataCloudflareAccessRule) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccessRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DataCloudflareAccessRule) Filter() DataCloudflareAccessRuleFi
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccessRule) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DataCloudflareAccessRule) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccessRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_DataCloudflareAccessRule) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccessRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -421,7 +421,6 @@ func (j *jsiiProxy_DataCloudflareAccessRule) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/access_rule cloudflare_access_rule} Data Source.
 func NewDataCloudflareAccessRule(scope constructs.Construct, id *string, config *DataCloudflareAccessRuleConfig) DataCloudflareAccessRule {
 	_init_.Initialize()
@@ -433,7 +432,7 @@ func NewDataCloudflareAccessRule(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewDataCloudflareAccessRule_Override(d DataCloudflareAccessRule, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetRuleId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetRuleId(val *string) {
 	if err := j.validateSetRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_DataCloudflareAccessRule)SetRuleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccessRule)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccessRule) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func DataCloudflareAccessRule_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func DataCloudflareAccessRule_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareAccessRule_IsConstruct(x interface{}) *bool {
+func DataCloudflareAccessRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccessRule_IsConstructParameters(x); err != nil {
@@ -577,7 +576,7 @@ func DataCloudflareAccessRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func DataCloudflareAccessRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareAccessRule_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareAccessRule_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccessRule_IsTerraformDataSourceParameters(x); err != nil {
@@ -596,7 +595,7 @@ func DataCloudflareAccessRule_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func DataCloudflareAccessRule_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareAccessRule_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareAccessRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccessRule_IsTerraformElementParameters(x); err != nil {
@@ -615,7 +614,7 @@ func DataCloudflareAccessRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -633,27 +632,27 @@ func DataCloudflareAccessRule_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareAccessRule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareAccessRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataCloudflareAccessRule) PutFilter(value *DataCloudflareAcce
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -866,8 +865,8 @@ func (d *jsiiProxy_DataCloudflareAccessRule) ResetZoneId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccessRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataCloudflareAccessRule) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccessRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataCloudflareAccessRule) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccessRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataCloudflareAccessRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccessRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -931,8 +930,8 @@ func (d *jsiiProxy_DataCloudflareAccessRule) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccessRule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccessRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -943,4 +942,3 @@ func (d *jsiiProxy_DataCloudflareAccessRule) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -234,4 +234,3 @@ func validateNewPagesProjectDeploymentConfigsProductionR2BucketsOutputReferenceP
 
 	return nil
 }
-

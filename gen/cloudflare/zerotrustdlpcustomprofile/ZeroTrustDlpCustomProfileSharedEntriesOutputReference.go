@@ -12,9 +12,9 @@ type ZeroTrustDlpCustomProfileSharedEntriesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ZeroTrustDlpCustomProfileSharedEntriesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EntryId() *string
 	SetEntryId(val *string)
 	EntryIdInput() *string
@@ -36,8 +36,8 @@ type ZeroTrustDlpCustomProfileSharedEntriesOutputReference interface {
 	EntryTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ZeroTrustDlpCustomProfileSharedEntriesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ZeroTrustDlpCustomProfileSharedEntriesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Enable
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Terraf
 	return returns
 }
 
-
 func NewZeroTrustDlpCustomProfileSharedEntriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustDlpCustomProfileSharedEntriesOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewZeroTrustDlpCustomProfileSharedEntriesOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfileSharedEntriesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewZeroTrustDlpCustomProfileSharedEntriesOutputReference_Override(z ZeroTru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfileSharedEntriesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetEnab
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetEntryId(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetEntryId(val *string) {
 	if err := j.validateSetEntryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetEntr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetEntryType(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetEntryType(val *string) {
 	if err := j.validateSetEntryTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetEntr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Comput
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetBoo
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetBoo
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetLis
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetNum
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetNum
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetNum
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetStr
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) GetStr
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Interp
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesOutputReference) ToStri
 
 	return returns
 }
-

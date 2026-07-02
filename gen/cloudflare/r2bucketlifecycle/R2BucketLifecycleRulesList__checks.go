@@ -34,7 +34,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewR2BucketLifecycleRulesListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

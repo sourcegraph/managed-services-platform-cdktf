@@ -15,22 +15,22 @@ type LogpullRetention interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Flag() interface{}
-	SetFlag(val interface{})
-	FlagInput() interface{}
+	Flag() any
+	SetFlag(val any)
+	FlagInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,15 +51,15 @@ type LogpullRetention interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -69,9 +69,9 @@ type LogpullRetention interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type LogpullRetention interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type LogpullRetention interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -112,17 +112,17 @@ type LogpullRetention interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LogpullRetention
@@ -140,8 +140,8 @@ func (j *jsiiProxy_LogpullRetention) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpullRetention) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_LogpullRetention) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LogpullRetention) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_LogpullRetention) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpullRetention) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_LogpullRetention) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) Flag() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpullRetention) Flag() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flag",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_LogpullRetention) Flag() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) FlagInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpullRetention) FlagInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flagInput",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_LogpullRetention) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LogpullRetention) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_LogpullRetention) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpullRetention) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_LogpullRetention) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LogpullRetention) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -340,7 +340,6 @@ func (j *jsiiProxy_LogpullRetention) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention(scope constructs.Construct, id *string, config *LogpullRetentionConfig) LogpullRetention {
 	_init_.Initialize()
@@ -352,7 +351,7 @@ func NewLogpullRetention(scope constructs.Construct, id *string, config *Logpull
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -365,12 +364,12 @@ func NewLogpullRetention_Override(l LogpullRetention, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetConnection(val interface{}) {
+func (j *jsiiProxy_LogpullRetention) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_LogpullRetention)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetCount(val interface{}) {
+func (j *jsiiProxy_LogpullRetention) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_LogpullRetention)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogpullRetention) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -400,7 +399,7 @@ func (j *jsiiProxy_LogpullRetention)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetFlag(val interface{}) {
+func (j *jsiiProxy_LogpullRetention) SetFlag(val any) {
 	if err := j.validateSetFlagParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_LogpullRetention)SetFlag(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogpullRetention) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -419,7 +418,7 @@ func (j *jsiiProxy_LogpullRetention)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogpullRetention) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_LogpullRetention)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogpullRetention) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_LogpullRetention)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogpullRetention) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_LogpullRetention)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetZoneId(val *string) {
+func (j *jsiiProxy_LogpullRetention) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func LogpullRetention_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func LogpullRetention_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LogpullRetention_IsConstruct(x interface{}) *bool {
+func LogpullRetention_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogpullRetention_IsConstructParameters(x); err != nil {
@@ -507,7 +506,7 @@ func LogpullRetention_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func LogpullRetention_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LogpullRetention_IsTerraformElement(x interface{}) *bool {
+func LogpullRetention_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogpullRetention_IsTerraformElementParameters(x); err != nil {
@@ -526,7 +525,7 @@ func LogpullRetention_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func LogpullRetention_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LogpullRetention_IsTerraformResource(x interface{}) *bool {
+func LogpullRetention_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogpullRetention_IsTerraformResourceParameters(x); err != nil {
@@ -545,7 +544,7 @@ func LogpullRetention_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -570,31 +569,31 @@ func (l *jsiiProxy_LogpullRetention) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LogpullRetention) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LogpullRetention) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LogpullRetention) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LogpullRetention) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (l *jsiiProxy_LogpullRetention) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (l *jsiiProxy_LogpullRetention) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (l *jsiiProxy_LogpullRetention) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (l *jsiiProxy_LogpullRetention) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (l *jsiiProxy_LogpullRetention) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (l *jsiiProxy_LogpullRetention) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (l *jsiiProxy_LogpullRetention) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,15 +721,15 @@ func (l *jsiiProxy_LogpullRetention) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LogpullRetention) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpullRetention) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -749,7 +748,7 @@ func (l *jsiiProxy_LogpullRetention) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -762,7 +761,7 @@ func (l *jsiiProxy_LogpullRetention) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,18 +775,18 @@ func (l *jsiiProxy_LogpullRetention) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LogpullRetention) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LogpullRetention) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -798,7 +797,7 @@ func (l *jsiiProxy_LogpullRetention) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -809,7 +808,7 @@ func (l *jsiiProxy_LogpullRetention) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -829,8 +828,8 @@ func (l *jsiiProxy_LogpullRetention) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LogpullRetention) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LogpullRetention) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -842,8 +841,8 @@ func (l *jsiiProxy_LogpullRetention) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (l *jsiiProxy_LogpullRetention) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LogpullRetention) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -855,8 +854,8 @@ func (l *jsiiProxy_LogpullRetention) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (l *jsiiProxy_LogpullRetention) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpullRetention) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -868,8 +867,8 @@ func (l *jsiiProxy_LogpullRetention) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LogpullRetention) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpullRetention) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -894,8 +893,8 @@ func (l *jsiiProxy_LogpullRetention) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LogpullRetention) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpullRetention) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -906,4 +905,3 @@ func (l *jsiiProxy_LogpullRetention) ToTerraform() interface{} {
 
 	return returns
 }
-

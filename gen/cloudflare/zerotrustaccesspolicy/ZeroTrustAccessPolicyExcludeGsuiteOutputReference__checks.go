@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustAccessPolicyExcludeGsuiteOutputReferenceParameters(terr
 
 	return nil
 }
-

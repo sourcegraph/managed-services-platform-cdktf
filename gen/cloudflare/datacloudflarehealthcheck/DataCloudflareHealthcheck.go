@@ -19,11 +19,11 @@ type DataCloudflareHealthcheck interface {
 	ConsecutiveFails() *float64
 	ConsecutiveSuccesses() *float64
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,7 +58,7 @@ type DataCloudflareHealthcheck interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Retries() *float64
 	Status() *string
 	Suspended() cdktf.IResolvable
@@ -66,7 +66,7 @@ type DataCloudflareHealthcheck interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *float64
@@ -75,9 +75,9 @@ type DataCloudflareHealthcheck interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,18 +103,18 @@ type DataCloudflareHealthcheck interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareHealthcheck
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheck) ConsecutiveSuccesses() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareHealthcheck) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheck) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareHealthcheck) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheck) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareHealthcheck) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheck) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareHealthcheck) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_DataCloudflareHealthcheck) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/healthcheck cloudflare_healthcheck} Data Source.
 func NewDataCloudflareHealthcheck(scope constructs.Construct, id *string, config *DataCloudflareHealthcheckConfig) DataCloudflareHealthcheck {
 	_init_.Initialize()
@@ -494,7 +493,7 @@ func NewDataCloudflareHealthcheck(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheck",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -507,12 +506,12 @@ func NewDataCloudflareHealthcheck_Override(d DataCloudflareHealthcheck, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheck",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetHealthcheckId(val *string) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetHealthcheckId(val *string) {
 	if err := j.validateSetHealthcheckIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck)SetHealthcheckId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheck)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareHealthcheck) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func DataCloudflareHealthcheck_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheck",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func DataCloudflareHealthcheck_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareHealthcheck_IsConstruct(x interface{}) *bool {
+func DataCloudflareHealthcheck_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareHealthcheck_IsConstructParameters(x); err != nil {
@@ -627,7 +626,7 @@ func DataCloudflareHealthcheck_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheck",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func DataCloudflareHealthcheck_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareHealthcheck_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareHealthcheck_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareHealthcheck_IsTerraformDataSourceParameters(x); err != nil {
@@ -646,7 +645,7 @@ func DataCloudflareHealthcheck_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheck",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func DataCloudflareHealthcheck_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareHealthcheck_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareHealthcheck_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareHealthcheck_IsTerraformElementParameters(x); err != nil {
@@ -665,7 +664,7 @@ func DataCloudflareHealthcheck_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheck",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -683,27 +682,27 @@ func DataCloudflareHealthcheck_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareHealthcheck) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareHealthcheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareHealthcheck) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareHealthcheck) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -907,8 +906,8 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareHealthcheck) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareHealthcheck) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -946,8 +945,8 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheck) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareHealthcheck) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -958,4 +957,3 @@ func (d *jsiiProxy_DataCloudflareHealthcheck) ToTerraform() interface{} {
 
 	return returns
 }
-

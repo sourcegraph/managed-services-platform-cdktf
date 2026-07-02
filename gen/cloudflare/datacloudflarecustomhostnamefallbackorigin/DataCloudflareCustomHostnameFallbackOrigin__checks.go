@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareCustomHostnameFallbackOrigin) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareCustomHostnameFallbackOrigin) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareCustomHostnameFallbackOrigin_GenerateConfigForImportP
 	return nil
 }
 
-func validateDataCloudflareCustomHostnameFallbackOrigin_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareCustomHostnameFallbackOrigin_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareCustomHostnameFallbackOrigin_IsConstructParameters(x 
 	return nil
 }
 
-func validateDataCloudflareCustomHostnameFallbackOrigin_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareCustomHostnameFallbackOrigin_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareCustomHostnameFallbackOrigin_IsTerraformDataSourcePar
 	return nil
 }
 
-func validateDataCloudflareCustomHostnameFallbackOrigin_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareCustomHostnameFallbackOrigin_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareCustomHostnameFallbackOrigin_IsTerraformElementParame
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFallbackOrigin) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnameFallbackOrigin) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDataCloudflareCustomHostnameFallbackOriginParameters(scope const
 
 	return nil
 }
-

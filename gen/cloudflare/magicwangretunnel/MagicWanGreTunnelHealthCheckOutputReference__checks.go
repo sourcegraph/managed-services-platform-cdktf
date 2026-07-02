@@ -109,7 +109,7 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetDirec
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetEnabl
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewMagicWanGreTunnelHealthCheckOutputReferenceParameters(terraformR
 
 	return nil
 }
-

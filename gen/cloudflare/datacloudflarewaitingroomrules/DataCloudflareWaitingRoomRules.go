@@ -16,11 +16,11 @@ type DataCloudflareWaitingRoomRules interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,11 +49,11 @@ type DataCloudflareWaitingRoomRules interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
@@ -64,9 +64,9 @@ type DataCloudflareWaitingRoomRules interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataCloudflareWaitingRoomRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareWaitingRoomRules
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -360,7 +360,6 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) DataCloudflareWaitingRoomRules {
 	_init_.Initialize()
@@ -372,7 +371,7 @@ func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDataCloudflareWaitingRoomRules_Override(d DataCloudflareWaitingRoomRules
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetWaitingRoomId(val *string) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetWaitingRoomId(val *string) {
 	if err := j.validateSetWaitingRoomIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetWaitingRoomId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomRules)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func DataCloudflareWaitingRoomRules_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func DataCloudflareWaitingRoomRules_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareWaitingRoomRules_IsConstruct(x interface{}) *bool {
+func DataCloudflareWaitingRoomRules_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareWaitingRoomRules_IsConstructParameters(x); err != nil {
@@ -505,7 +504,7 @@ func DataCloudflareWaitingRoomRules_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func DataCloudflareWaitingRoomRules_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareWaitingRoomRules_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareWaitingRoomRules_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareWaitingRoomRules_IsTerraformDataSourceParameters(x); err != nil {
@@ -524,7 +523,7 @@ func DataCloudflareWaitingRoomRules_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataCloudflareWaitingRoomRules_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareWaitingRoomRules_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareWaitingRoomRules_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareWaitingRoomRules_IsTerraformElementParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataCloudflareWaitingRoomRules_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -561,27 +560,27 @@ func DataCloudflareWaitingRoomRules_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -777,8 +776,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -790,8 +789,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -816,8 +815,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -828,4 +827,3 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ToTerraform() interface{} {
 
 	return returns
 }
-

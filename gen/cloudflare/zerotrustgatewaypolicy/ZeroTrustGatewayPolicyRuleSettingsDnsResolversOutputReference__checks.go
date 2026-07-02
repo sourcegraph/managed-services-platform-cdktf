@@ -90,7 +90,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validatePutIpv4Parameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validatePutIpv4Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validatePutIpv6Parameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validatePutIpv6Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -276,4 +276,3 @@ func validateNewZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReferencePar
 
 	return nil
 }
-

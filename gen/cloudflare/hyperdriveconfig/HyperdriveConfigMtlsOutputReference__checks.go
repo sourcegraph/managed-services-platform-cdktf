@@ -106,7 +106,7 @@ func (j *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateSetCaCertificate
 	return nil
 }
 
-func (j *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateSetComplexObject
 	return nil
 }
 
-func (j *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHyperdriveConfigMtlsOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

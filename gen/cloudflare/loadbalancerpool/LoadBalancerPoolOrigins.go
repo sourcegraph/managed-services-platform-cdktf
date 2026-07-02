@@ -1,6 +1,5 @@
 package loadbalancerpool
 
-
 type LoadBalancerPoolOrigins struct {
 	// The IP address (IPv4 or IPv6) of the origin, or its publicly addressable hostname.
 	//
@@ -13,7 +12,7 @@ type LoadBalancerPoolOrigins struct {
 	// Disabled origins will not receive traffic and are excluded from health checks. The origin will only be disabled for the current pool.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The request header is used to pass additional information with an HTTP request. Currently supported header is 'Host'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
@@ -39,4 +38,3 @@ type LoadBalancerPoolOrigins struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool#weight LoadBalancerPool#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
-

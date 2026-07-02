@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDnsLocation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustDnsLocation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutEndpointsParameters(value *Z
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutNetworksParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateZeroTrustDnsLocation_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateZeroTrustDnsLocation_IsConstructParameters(x interface{}) error {
+func validateZeroTrustDnsLocation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateZeroTrustDnsLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZeroTrustDnsLocation_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustDnsLocation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateZeroTrustDnsLocation_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateZeroTrustDnsLocation_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustDnsLocation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetAccountIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetClientDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetClientDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetClientDefaultParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpsIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetEcsSupportParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetEcsSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewZeroTrustDnsLocationParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

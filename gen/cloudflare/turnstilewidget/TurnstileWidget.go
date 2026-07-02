@@ -15,24 +15,24 @@ type TurnstileWidget interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	BotFightMode() interface{}
-	SetBotFightMode(val interface{})
-	BotFightModeInput() interface{}
+	BotFightMode() any
+	SetBotFightMode(val any)
+	BotFightModeInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClearanceLevel() *string
 	SetClearanceLevel(val *string)
 	ClearanceLevelInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -41,9 +41,9 @@ type TurnstileWidget interface {
 	Domains() *[]*string
 	SetDomains(val *[]*string)
 	DomainsInput() *[]*string
-	EphemeralId() interface{}
-	SetEphemeralId(val interface{})
-	EphemeralIdInput() interface{}
+	EphemeralId() any
+	SetEphemeralId(val any)
+	EphemeralIdInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,19 +66,19 @@ type TurnstileWidget interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Offlabel() interface{}
-	SetOfflabel(val interface{})
-	OfflabelInput() interface{}
+	Offlabel() any
+	SetOfflabel(val any)
+	OfflabelInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -87,16 +87,16 @@ type TurnstileWidget interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type TurnstileWidget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type TurnstileWidget interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,17 +141,17 @@ type TurnstileWidget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TurnstileWidget
@@ -179,8 +179,8 @@ func (j *jsiiProxy_TurnstileWidget) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) BotFightMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) BotFightMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"botFightMode",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_TurnstileWidget) BotFightMode() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) BotFightModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) BotFightModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"botFightModeInput",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_TurnstileWidget) ClearanceLevelInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_TurnstileWidget) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TurnstileWidget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_TurnstileWidget) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_TurnstileWidget) DomainsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) EphemeralId() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) EphemeralId() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralId",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_TurnstileWidget) EphemeralId() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) EphemeralIdInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) EphemeralIdInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralIdInput",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_TurnstileWidget) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) Offlabel() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) Offlabel() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"offlabel",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_TurnstileWidget) Offlabel() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) OfflabelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) OfflabelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"offlabelInput",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_TurnstileWidget) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TurnstileWidget) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_TurnstileWidget) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TurnstileWidget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_TurnstileWidget) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TurnstileWidget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -549,7 +549,6 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
@@ -561,7 +560,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -574,12 +573,12 @@ func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetAccountId(val *string) {
+func (j *jsiiProxy_TurnstileWidget) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_TurnstileWidget)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetBotFightMode(val interface{}) {
+func (j *jsiiProxy_TurnstileWidget) SetBotFightMode(val any) {
 	if err := j.validateSetBotFightModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_TurnstileWidget)SetBotFightMode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetClearanceLevel(val *string) {
+func (j *jsiiProxy_TurnstileWidget) SetClearanceLevel(val *string) {
 	if err := j.validateSetClearanceLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_TurnstileWidget)SetClearanceLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetConnection(val interface{}) {
+func (j *jsiiProxy_TurnstileWidget) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_TurnstileWidget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetCount(val interface{}) {
+func (j *jsiiProxy_TurnstileWidget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_TurnstileWidget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TurnstileWidget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_TurnstileWidget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetDomains(val *[]*string) {
+func (j *jsiiProxy_TurnstileWidget) SetDomains(val *[]*string) {
 	if err := j.validateSetDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_TurnstileWidget)SetDomains(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetEphemeralId(val interface{}) {
+func (j *jsiiProxy_TurnstileWidget) SetEphemeralId(val any) {
 	if err := j.validateSetEphemeralIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_TurnstileWidget)SetEphemeralId(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TurnstileWidget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_TurnstileWidget)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TurnstileWidget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_TurnstileWidget)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetMode(val *string) {
+func (j *jsiiProxy_TurnstileWidget) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_TurnstileWidget)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetName(val *string) {
+func (j *jsiiProxy_TurnstileWidget) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_TurnstileWidget)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetOfflabel(val interface{}) {
+func (j *jsiiProxy_TurnstileWidget) SetOfflabel(val any) {
 	if err := j.validateSetOfflabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_TurnstileWidget)SetOfflabel(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TurnstileWidget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -724,7 +723,7 @@ func (j *jsiiProxy_TurnstileWidget)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TurnstileWidget) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_TurnstileWidget)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetRegion(val *string) {
+func (j *jsiiProxy_TurnstileWidget) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func TurnstileWidget_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func TurnstileWidget_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TurnstileWidget_IsConstruct(x interface{}) *bool {
+func TurnstileWidget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTurnstileWidget_IsConstructParameters(x); err != nil {
@@ -793,7 +792,7 @@ func TurnstileWidget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func TurnstileWidget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TurnstileWidget_IsTerraformElement(x interface{}) *bool {
+func TurnstileWidget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTurnstileWidget_IsTerraformElementParameters(x); err != nil {
@@ -812,7 +811,7 @@ func TurnstileWidget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func TurnstileWidget_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TurnstileWidget_IsTerraformResource(x interface{}) *bool {
+func TurnstileWidget_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTurnstileWidget_IsTerraformResourceParameters(x); err != nil {
@@ -831,7 +830,7 @@ func TurnstileWidget_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -856,31 +855,31 @@ func (t *jsiiProxy_TurnstileWidget) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TurnstileWidget) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TurnstileWidget) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TurnstileWidget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TurnstileWidget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (t *jsiiProxy_TurnstileWidget) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (t *jsiiProxy_TurnstileWidget) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (t *jsiiProxy_TurnstileWidget) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (t *jsiiProxy_TurnstileWidget) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (t *jsiiProxy_TurnstileWidget) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (t *jsiiProxy_TurnstileWidget) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (t *jsiiProxy_TurnstileWidget) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,15 +1007,15 @@ func (t *jsiiProxy_TurnstileWidget) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TurnstileWidget) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TurnstileWidget) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1035,7 +1034,7 @@ func (t *jsiiProxy_TurnstileWidget) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1048,7 +1047,7 @@ func (t *jsiiProxy_TurnstileWidget) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1062,18 +1061,18 @@ func (t *jsiiProxy_TurnstileWidget) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TurnstileWidget) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TurnstileWidget) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1084,7 +1083,7 @@ func (t *jsiiProxy_TurnstileWidget) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (t *jsiiProxy_TurnstileWidget) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1147,8 +1146,8 @@ func (t *jsiiProxy_TurnstileWidget) ResetRegion() {
 	)
 }
 
-func (t *jsiiProxy_TurnstileWidget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TurnstileWidget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1160,8 +1159,8 @@ func (t *jsiiProxy_TurnstileWidget) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (t *jsiiProxy_TurnstileWidget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TurnstileWidget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1173,8 +1172,8 @@ func (t *jsiiProxy_TurnstileWidget) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (t *jsiiProxy_TurnstileWidget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TurnstileWidget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1186,8 +1185,8 @@ func (t *jsiiProxy_TurnstileWidget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TurnstileWidget) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TurnstileWidget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1212,8 +1211,8 @@ func (t *jsiiProxy_TurnstileWidget) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TurnstileWidget) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TurnstileWidget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1224,4 +1223,3 @@ func (t *jsiiProxy_TurnstileWidget) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type ZeroTrustAccessPolicyRequireIpListStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ZeroTrustAccessPolicyRequireIpListStructOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type ZeroTrustAccessPolicyRequireIpListStructOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ZeroTrustAccessPolicyRequireIpListStructOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) IdIn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) Terr
 	return returns
 }
 
-
 func NewZeroTrustAccessPolicyRequireIpListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessPolicyRequireIpListStructOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewZeroTrustAccessPolicyRequireIpListStructOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireIpListStructOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewZeroTrustAccessPolicyRequireIpListStructOutputReference_Override(z ZeroT
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireIpListStructOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetId
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) Comp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetL
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) Inte
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireIpListStructOutputReference) ToSt
 
 	return returns
 }
-

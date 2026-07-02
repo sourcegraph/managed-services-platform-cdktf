@@ -1,6 +1,5 @@
 package zerotrusttunnelcloudflaredconfig
 
-
 type ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess struct {
 	// Access applications that are allowed to reach this hostname for this Tunnel.
 	//
@@ -13,6 +12,5 @@ type ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess struct {
 	// Deny traffic that has not fulfilled Access authorization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 }
-

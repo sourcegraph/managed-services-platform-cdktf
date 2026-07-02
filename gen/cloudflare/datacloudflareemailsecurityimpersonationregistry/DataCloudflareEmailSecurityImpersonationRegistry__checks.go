@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataCloudflareEmailSecurityImpersonationRegistry_GenerateConfigForI
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityImpersonationRegistry_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityImpersonationRegistry_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataCloudflareEmailSecurityImpersonationRegistry_IsConstructParamet
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityImpersonationRegistry_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityImpersonationRegistry_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataCloudflareEmailSecurityImpersonationRegistry_IsTerraformDataSou
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityImpersonationRegistry_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityImpersonationRegistry_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDataCloudflareEmailSecurityImpersonationRegistryParameters(scope
 
 	return nil
 }
-

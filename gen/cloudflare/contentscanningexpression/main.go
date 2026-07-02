@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
-		reflect.TypeOf((*ContentScanningExpression)(nil)).Elem(),
+		reflect.TypeFor[ContentScanningExpression](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContentScanningExpression{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -67,11 +67,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody",
-		reflect.TypeOf((*ContentScanningExpressionBody)(nil)).Elem(),
+		reflect.TypeFor[ContentScanningExpressionBody](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyList",
-		reflect.TypeOf((*ContentScanningExpressionBodyList)(nil)).Elem(),
+		reflect.TypeFor[ContentScanningExpressionBodyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContentScanningExpressionBodyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -93,7 +93,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyOutputReference",
-		reflect.TypeOf((*ContentScanningExpressionBodyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContentScanningExpressionBodyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContentScanningExpressionBodyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,6 +127,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig",
-		reflect.TypeOf((*ContentScanningExpressionConfig)(nil)).Elem(),
+		reflect.TypeFor[ContentScanningExpressionConfig](),
 	)
 }

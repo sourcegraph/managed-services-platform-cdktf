@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespaces) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespaces) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareWorkersKvNamespaces_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDataCloudflareWorkersKvNamespaces_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareWorkersKvNamespaces_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareWorkersKvNamespaces_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDataCloudflareWorkersKvNamespaces_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareWorkersKvNamespaces_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareWorkersKvNamespaces_IsTerraformDataSourceParameters(x
 	return nil
 }
 
-func validateDataCloudflareWorkersKvNamespaces_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareWorkersKvNamespaces_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespaces) validateSetAccountIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespaces) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespaces) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataCloudflareWorkersKvNamespacesParameters(scope constructs.Con
 
 	return nil
 }
-

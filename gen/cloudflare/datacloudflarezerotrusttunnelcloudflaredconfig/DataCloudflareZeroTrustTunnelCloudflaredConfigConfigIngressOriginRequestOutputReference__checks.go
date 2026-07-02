@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOrigi
 
 	return nil
 }
-

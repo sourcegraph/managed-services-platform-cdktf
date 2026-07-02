@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket",
-		reflect.TypeOf((*DataCloudflareR2Bucket)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareR2Bucket](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareR2Bucket{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,6 +62,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig",
-		reflect.TypeOf((*DataCloudflareR2BucketConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareR2BucketConfig](),
 	)
 }

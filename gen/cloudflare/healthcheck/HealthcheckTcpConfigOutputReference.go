@@ -12,9 +12,9 @@ type HealthcheckTcpConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type HealthcheckTcpConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
@@ -46,7 +46,7 @@ type HealthcheckTcpConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type HealthcheckTcpConfigOutputReference interface {
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_HealthcheckTcpConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewHealthcheckTcpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcheckTcpConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewHealthcheckTcpConfigOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewHealthcheckTcpConfigOutputReference_Override(h HealthcheckTcpConfigOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetMethod(val *string) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetMethod(val *string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) ResetPort() {
 	)
 }
 
-func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

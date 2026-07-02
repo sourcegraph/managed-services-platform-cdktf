@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultDeviceOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareMagicTransitConnectorsResultDeviceOutputReferenceP
 
 	return nil
 }
-

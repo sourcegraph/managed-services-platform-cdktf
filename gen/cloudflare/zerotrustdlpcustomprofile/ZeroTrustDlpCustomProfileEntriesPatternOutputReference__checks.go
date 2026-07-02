@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesPatternOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesPatternOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesPatternOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesPatternOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesPatternOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesPatternOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustDlpCustomProfileEntriesPatternOutputReferenceParameters
 
 	return nil
 }
-

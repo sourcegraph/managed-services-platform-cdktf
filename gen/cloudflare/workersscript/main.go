@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
-		reflect.TypeOf((*WorkersScript)(nil)).Elem(),
+		reflect.TypeFor[WorkersScript](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usageModel", GoGetter: "UsageModel"},
 			_jsii_.MemberProperty{JsiiProperty: "usageModelInput", GoGetter: "UsageModelInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScript{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,15 +129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets",
-		reflect.TypeOf((*WorkersScriptAssets)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptAssets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig",
-		reflect.TypeOf((*WorkersScriptAssetsConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptAssetsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference",
-		reflect.TypeOf((*WorkersScriptAssetsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptAssetsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptAssetsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference",
-		reflect.TypeOf((*WorkersScriptAssetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptAssetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptAssetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings",
-		reflect.TypeOf((*WorkersScriptBindings)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList",
-		reflect.TypeOf((*WorkersScriptBindingsList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptBindingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound",
-		reflect.TypeOf((*WorkersScriptBindingsOutbound)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindingsOutbound](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference",
-		reflect.TypeOf((*WorkersScriptBindingsOutboundOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindingsOutboundOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "worker", GoGetter: "Worker"},
 			_jsii_.MemberProperty{JsiiProperty: "workerInput", GoGetter: "WorkerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptBindingsOutboundOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,11 +295,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker",
-		reflect.TypeOf((*WorkersScriptBindingsOutboundWorker)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindingsOutboundWorker](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference",
-		reflect.TypeOf((*WorkersScriptBindingsOutboundWorkerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindingsOutboundWorkerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptBindingsOutboundWorkerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,7 +337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference",
-		reflect.TypeOf((*WorkersScriptBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmInput", GoGetter: "AlgorithmInput"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflowName", GoGetter: "WorkflowName"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowNameInput", GoGetter: "WorkflowNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -446,15 +446,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig",
-		reflect.TypeOf((*WorkersScriptConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations",
-		reflect.TypeOf((*WorkersScriptMigrations)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference",
-		reflect.TypeOf((*WorkersScriptMigrationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -505,7 +505,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferredClasses", GoGetter: "TransferredClasses"},
 			_jsii_.MemberProperty{JsiiProperty: "transferredClassesInput", GoGetter: "TransferredClassesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -513,11 +513,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses",
-		reflect.TypeOf((*WorkersScriptMigrationsRenamedClasses)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsRenamedClasses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesList",
-		reflect.TypeOf((*WorkersScriptMigrationsRenamedClassesList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsRenamedClassesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -531,7 +531,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsRenamedClassesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -539,7 +539,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference",
-		reflect.TypeOf((*WorkersScriptMigrationsRenamedClassesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsRenamedClassesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -569,7 +569,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsRenamedClassesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -577,11 +577,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps",
-		reflect.TypeOf((*WorkersScriptMigrationsSteps)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsSteps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsList",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -595,7 +595,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -603,7 +603,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -644,7 +644,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferredClasses", GoGetter: "TransferredClasses"},
 			_jsii_.MemberProperty{JsiiProperty: "transferredClassesInput", GoGetter: "TransferredClassesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -652,11 +652,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsRenamedClasses)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsRenamedClasses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesList",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsRenamedClassesList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsRenamedClassesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -670,7 +670,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -678,7 +678,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsRenamedClassesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsRenamedClassesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -708,7 +708,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -716,11 +716,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsTransferredClasses)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsTransferredClasses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesList",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsTransferredClassesList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsTransferredClassesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -734,7 +734,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsStepsTransferredClassesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -742,7 +742,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference",
-		reflect.TypeOf((*WorkersScriptMigrationsStepsTransferredClassesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsStepsTransferredClassesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -775,7 +775,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsStepsTransferredClassesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -783,11 +783,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses",
-		reflect.TypeOf((*WorkersScriptMigrationsTransferredClasses)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsTransferredClasses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesList",
-		reflect.TypeOf((*WorkersScriptMigrationsTransferredClassesList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsTransferredClassesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -801,7 +801,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsTransferredClassesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -809,7 +809,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference",
-		reflect.TypeOf((*WorkersScriptMigrationsTransferredClassesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptMigrationsTransferredClassesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -842,7 +842,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptMigrationsTransferredClassesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -850,15 +850,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability",
-		reflect.TypeOf((*WorkersScriptObservability)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptObservability](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs",
-		reflect.TypeOf((*WorkersScriptObservabilityLogs)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptObservabilityLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference",
-		reflect.TypeOf((*WorkersScriptObservabilityLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptObservabilityLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -889,7 +889,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptObservabilityLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -897,7 +897,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference",
-		reflect.TypeOf((*WorkersScriptObservabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptObservabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -930,7 +930,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptObservabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -938,11 +938,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement",
-		reflect.TypeOf((*WorkersScriptPlacement)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptPlacement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
-		reflect.TypeOf((*WorkersScriptPlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptPlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -971,7 +971,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptPlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -979,11 +979,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers",
-		reflect.TypeOf((*WorkersScriptTailConsumers)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptTailConsumers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList",
-		reflect.TypeOf((*WorkersScriptTailConsumersList)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptTailConsumersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -997,7 +997,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptTailConsumersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1005,7 +1005,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference",
-		reflect.TypeOf((*WorkersScriptTailConsumersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkersScriptTailConsumersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1037,7 +1037,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkersScriptTailConsumersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

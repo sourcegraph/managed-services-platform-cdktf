@@ -106,7 +106,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference) validateSetAbuseContactEmailP
 	return nil
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) validateSetEnforceTwofactorParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSettingsOutputReference) validateSetEnforceTwofactorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference) validateSetEnforceTwofactorPa
 	return nil
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewAccountSettingsOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmailRoutingDnsResultErrorsMissingOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingDnsResultErrorsMissingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingDnsResultErrorsMissingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewEmailRoutingDnsResultErrorsMissingOutputReferenceParameters(terr
 
 	return nil
 }
-

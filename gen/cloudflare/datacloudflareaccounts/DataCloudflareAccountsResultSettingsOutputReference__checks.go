@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareAccountsResultSettingsOutputReferenceParameters(te
 
 	return nil
 }
-

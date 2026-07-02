@@ -12,9 +12,9 @@ type AccessRuleConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type AccessRuleConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -46,7 +46,7 @@ type AccessRuleConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AccessRuleConfigurationOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_AccessRuleConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference) ValueInput() *string 
 	return returns
 }
 
-
 func NewAccessRuleConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessRuleConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAccessRuleConfigurationOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAccessRuleConfigurationOutputReference_Override(a AccessRuleConfiguratio
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetTarget(val *string) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetTarget(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) ResetValue() {
 	)
 }
 
-func (a *jsiiProxy_AccessRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) ToString() *string {
 
 	return returns
 }
-

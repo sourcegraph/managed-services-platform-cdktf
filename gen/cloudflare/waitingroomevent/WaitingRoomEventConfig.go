@@ -6,9 +6,9 @@ import (
 
 type WaitingRoomEventConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WaitingRoomEventConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// An ISO 8601 timestamp that marks the end of the event.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
@@ -54,7 +54,7 @@ type WaitingRoomEventConfig struct {
 	// If null, the event will inherit it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
-	DisableSessionRenewal interface{} `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
+	DisableSessionRenewal any `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
 	// If set, the event will override the waiting room's `new_users_per_minute` property while it is active.
 	//
 	// If null, the event will inherit it. This can only be set if the event's `total_active_users` property is also set.
@@ -84,13 +84,13 @@ type WaitingRoomEventConfig struct {
 	// Requires that `prequeue_start_time` is not null. This is useful for situations when many users will join the event prequeue at the same time and you want to shuffle them to ensure fairness. Naturally, it makes the most sense to enable this feature when the `queueing_method` during the event respects ordering such as **fifo**, or else the shuffling may be unnecessary.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
-	ShuffleAtEventStart interface{} `field:"optional" json:"shuffleAtEventStart" yaml:"shuffleAtEventStart"`
+	ShuffleAtEventStart any `field:"optional" json:"shuffleAtEventStart" yaml:"shuffleAtEventStart"`
 	// Suspends or allows an event.
 	//
 	// If set to `true`, the event is ignored and traffic will be handled based on the waiting room configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// If set, the event will override the waiting room's `total_active_users` property while it is active.
 	//
 	// If null, the event will inherit it. This can only be set if the event's `new_users_per_minute` property is also set.
@@ -112,4 +112,3 @@ type WaitingRoomEventConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event#turnstile_mode WaitingRoomEvent#turnstile_mode}
 	TurnstileMode *string `field:"optional" json:"turnstileMode" yaml:"turnstileMode"`
 }
-

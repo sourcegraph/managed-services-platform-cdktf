@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsWafOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsWafOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsWafOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareAccountMemberRolesPermissionsWafOutputReferencePar
 
 	return nil
 }
-

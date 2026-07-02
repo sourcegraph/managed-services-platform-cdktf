@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationFooterLinksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationFooterLinksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustAccessApplicationFooterLinksListParameters(terraformRes
 
 	return nil
 }
-

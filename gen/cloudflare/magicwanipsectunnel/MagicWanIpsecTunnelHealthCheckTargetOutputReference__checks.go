@@ -98,7 +98,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMagicWanIpsecTunnelHealthCheckTargetOutputReferenceParameters(te
 
 	return nil
 }
-

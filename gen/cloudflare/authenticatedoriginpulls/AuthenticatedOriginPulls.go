@@ -20,17 +20,17 @@ type AuthenticatedOriginPulls interface {
 	CertUpdatedAt() *string
 	CertUploadedOn() *string
 	Config() AuthenticatedOriginPullsConfigAList
-	ConfigInput() interface{}
+	ConfigInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -63,18 +63,18 @@ type AuthenticatedOriginPulls interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SerialNumber() *string
 	Signature() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
@@ -85,9 +85,9 @@ type AuthenticatedOriginPulls interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type AuthenticatedOriginPulls interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,29 +117,29 @@ type AuthenticatedOriginPulls interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfig(value interface{})
+	PutConfig(value any)
 	ResetHostname()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AuthenticatedOriginPulls
@@ -217,8 +217,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Config() AuthenticatedOriginPullsCo
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) ConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) ConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"configInput",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) ConfigInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -517,7 +517,6 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) AuthenticatedOriginPulls {
 	_init_.Initialize()
@@ -529,7 +528,7 @@ func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -542,12 +541,12 @@ func NewAuthenticatedOriginPulls_Override(a AuthenticatedOriginPulls, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetConnection(val interface{}) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetCount(val interface{}) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +584,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetHostname(val *string) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -615,7 +614,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetZoneId(val *string) {
+func (j *jsiiProxy_AuthenticatedOriginPulls) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func AuthenticatedOriginPulls_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func AuthenticatedOriginPulls_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AuthenticatedOriginPulls_IsConstruct(x interface{}) *bool {
+func AuthenticatedOriginPulls_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthenticatedOriginPulls_IsConstructParameters(x); err != nil {
@@ -684,7 +683,7 @@ func AuthenticatedOriginPulls_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func AuthenticatedOriginPulls_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AuthenticatedOriginPulls_IsTerraformElement(x interface{}) *bool {
+func AuthenticatedOriginPulls_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthenticatedOriginPulls_IsTerraformElementParameters(x); err != nil {
@@ -703,7 +702,7 @@ func AuthenticatedOriginPulls_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func AuthenticatedOriginPulls_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AuthenticatedOriginPulls_IsTerraformResource(x interface{}) *bool {
+func AuthenticatedOriginPulls_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthenticatedOriginPulls_IsTerraformResourceParameters(x); err != nil {
@@ -722,7 +721,7 @@ func AuthenticatedOriginPulls_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,31 +746,31 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AuthenticatedOriginPulls) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuthenticatedOriginPulls) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,15 +898,15 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthenticatedOriginPulls) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -926,7 +925,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -939,7 +938,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,18 +952,18 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AuthenticatedOriginPulls) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -975,7 +974,7 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -986,18 +985,18 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) PutConfig(value interface{}) {
+func (a *jsiiProxy_AuthenticatedOriginPulls) PutConfig(value any) {
 	if err := a.validatePutConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuthenticatedOriginPulls) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1030,8 +1029,8 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuthenticatedOriginPulls) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1043,8 +1042,8 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthenticatedOriginPulls) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1056,8 +1055,8 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthenticatedOriginPulls) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1082,8 +1081,8 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthenticatedOriginPulls) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1094,4 +1093,3 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) ToTerraform() interface{} {
 
 	return returns
 }
-

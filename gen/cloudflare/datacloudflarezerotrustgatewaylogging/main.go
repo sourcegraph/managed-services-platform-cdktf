@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLogging",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLogging)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLogging](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayLogging{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,19 +57,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingConfig",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -103,11 +103,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,11 +141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,7 +179,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayLogging.DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference",
-		reflect.TypeOf((*DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -106,7 +106,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateSetAct
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateSetDes
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewR2BucketEventNotificationRulesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

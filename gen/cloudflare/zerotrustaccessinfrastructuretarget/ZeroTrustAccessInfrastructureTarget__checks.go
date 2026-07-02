@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateAddMoveTargetPar
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateMoveFromIdParame
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateZeroTrustAccessInfrastructureTarget_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateZeroTrustAccessInfrastructureTarget_IsConstructParameters(x interface{}) error {
+func validateZeroTrustAccessInfrastructureTarget_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateZeroTrustAccessInfrastructureTarget_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateZeroTrustAccessInfrastructureTarget_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustAccessInfrastructureTarget_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateZeroTrustAccessInfrastructureTarget_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateZeroTrustAccessInfrastructureTarget_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustAccessInfrastructureTarget_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetAccountIdPara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewZeroTrustAccessInfrastructureTargetParameters(scope constructs.C
 
 	return nil
 }
-

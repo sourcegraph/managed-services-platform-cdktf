@@ -249,7 +249,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetAllowChildBypassParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetAllowChildBypassParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetBlockPageEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetBlockPageEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetBypassParentRuleParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetBypassParentRuleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIgnoreCnameCategoryMatchesParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIgnoreCnameCategoryMatchesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetInsecureDisableDnssecValidationParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetInsecureDisableDnssecValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -446,7 +446,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIpCategoriesParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIpCategoriesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIpIndicatorFeedsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIpIndicatorFeedsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -502,7 +502,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetResolveDnsThroughCloudflareParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetResolveDnsThroughCloudflareParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -549,4 +549,3 @@ func validateNewZeroTrustGatewayPolicyRuleSettingsOutputReferenceParameters(terr
 
 	return nil
 }
-

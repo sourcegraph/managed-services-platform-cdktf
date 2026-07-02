@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataCloudflareEmailSecurityTrustedDomains_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityTrustedDomains_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityTrustedDomains_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataCloudflareEmailSecurityTrustedDomains_IsConstructParameters(x i
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityTrustedDomains_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityTrustedDomains_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataCloudflareEmailSecurityTrustedDomains_IsTerraformDataSourcePara
 	return nil
 }
 
-func validateDataCloudflareEmailSecurityTrustedDomains_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareEmailSecurityTrustedDomains_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) validateSetAccount
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDataCloudflareEmailSecurityTrustedDomainsParameters(scope constr
 
 	return nil
 }
-

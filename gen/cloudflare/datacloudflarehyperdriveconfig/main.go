@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareHyperdriveConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,11 +66,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigCaching",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigCaching)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigCaching](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigCachingOutputReference",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigCachingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigCachingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareHyperdriveConfigCachingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -105,15 +105,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigConfig",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigMtls",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigMtls)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigMtls](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigMtlsOutputReference",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigMtlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigMtlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateId", GoGetter: "CaCertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareHyperdriveConfigMtlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigOrigin",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigOrigin)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigOrigin](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigOriginOutputReference",
-		reflect.TypeOf((*DataCloudflareHyperdriveConfigOriginOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareHyperdriveConfigOriginOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessClientId", GoGetter: "AccessClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessClientSecret", GoGetter: "AccessClientSecret"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareHyperdriveConfigOriginOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

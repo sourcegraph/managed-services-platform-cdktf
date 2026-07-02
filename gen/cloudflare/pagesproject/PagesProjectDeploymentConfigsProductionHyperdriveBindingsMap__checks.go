@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap)
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsProductionHyperdriveBindingsMapPara
 
 	return nil
 }
-

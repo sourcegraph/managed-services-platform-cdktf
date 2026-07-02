@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
-		reflect.TypeOf((*R2BucketSippy)(nil)).Elem(),
+		reflect.TypeFor[R2BucketSippy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketSippy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippyConfig",
-		reflect.TypeOf((*R2BucketSippyConfig)(nil)).Elem(),
+		reflect.TypeFor[R2BucketSippyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippyDestination",
-		reflect.TypeOf((*R2BucketSippyDestination)(nil)).Elem(),
+		reflect.TypeFor[R2BucketSippyDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippyDestinationOutputReference",
-		reflect.TypeOf((*R2BucketSippyDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketSippyDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketSippyDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource",
-		reflect.TypeOf((*R2BucketSippySource)(nil)).Elem(),
+		reflect.TypeFor[R2BucketSippySource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference",
-		reflect.TypeOf((*R2BucketSippySourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketSippySourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketSippySourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

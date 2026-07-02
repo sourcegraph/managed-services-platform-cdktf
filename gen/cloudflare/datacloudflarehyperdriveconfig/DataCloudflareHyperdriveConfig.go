@@ -19,11 +19,11 @@ type DataCloudflareHyperdriveConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,17 +57,17 @@ type DataCloudflareHyperdriveConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataCloudflareHyperdriveConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareHyperdriveConfig
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -372,7 +372,6 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source.
 func NewDataCloudflareHyperdriveConfig(scope constructs.Construct, id *string, config *DataCloudflareHyperdriveConfigConfig) DataCloudflareHyperdriveConfig {
 	_init_.Initialize()
@@ -384,7 +383,7 @@ func NewDataCloudflareHyperdriveConfig(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -397,12 +396,12 @@ func NewDataCloudflareHyperdriveConfig_Override(d DataCloudflareHyperdriveConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,7 +412,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetHyperdriveId(val *string) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetHyperdriveId(val *string) {
 	if err := j.validateSetHyperdriveIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetHyperdriveId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -482,7 +481,7 @@ func DataCloudflareHyperdriveConfig_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func DataCloudflareHyperdriveConfig_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareHyperdriveConfig_IsConstruct(x interface{}) *bool {
+func DataCloudflareHyperdriveConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareHyperdriveConfig_IsConstructParameters(x); err != nil {
@@ -517,7 +516,7 @@ func DataCloudflareHyperdriveConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func DataCloudflareHyperdriveConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareHyperdriveConfig_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareHyperdriveConfig_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareHyperdriveConfig_IsTerraformDataSourceParameters(x); err != nil {
@@ -536,7 +535,7 @@ func DataCloudflareHyperdriveConfig_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func DataCloudflareHyperdriveConfig_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareHyperdriveConfig_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareHyperdriveConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareHyperdriveConfig_IsTerraformElementParameters(x); err != nil {
@@ -555,7 +554,7 @@ func DataCloudflareHyperdriveConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,27 +572,27 @@ func DataCloudflareHyperdriveConfig_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -771,8 +770,8 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -784,8 +783,8 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -797,8 +796,8 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -810,8 +809,8 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -836,8 +835,8 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -848,4 +847,3 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

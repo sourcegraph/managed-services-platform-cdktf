@@ -6,9 +6,9 @@ import (
 
 type DataCloudflarePageShieldCookiesListConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataCloudflarePageShieldCookiesListConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
@@ -45,7 +45,7 @@ type DataCloudflarePageShieldCookiesListConfig struct {
 	// Filters the returned cookies that are set with HttpOnly.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
-	HttpOnly interface{} `field:"optional" json:"httpOnly" yaml:"httpOnly"`
+	HttpOnly any `field:"optional" json:"httpOnly" yaml:"httpOnly"`
 	// Max items to fetch, default: 1000.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
@@ -91,10 +91,9 @@ type DataCloudflarePageShieldCookiesListConfig struct {
 	// Filters the returned cookies that are set with Secure.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
-	Secure interface{} `field:"optional" json:"secure" yaml:"secure"`
+	Secure any `field:"optional" json:"secure" yaml:"secure"`
 	// Filters the returned cookies that match the specified type attribute Available values: "first_party", "unknown".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

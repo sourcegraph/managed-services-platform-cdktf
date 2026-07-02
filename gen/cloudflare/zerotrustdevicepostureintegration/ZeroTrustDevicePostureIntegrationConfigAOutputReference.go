@@ -33,9 +33,9 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	ClientSecretInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,8 +51,8 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	CustomerIdInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +64,7 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	ResetCustomerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Clie
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Terr
 	return returns
 }
 
-
 func NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureIntegrationConfigAOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewZeroTrustDevicePostureIntegrationConfigAOutputReference_Override(z ZeroT
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAccessClientId(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetAccessClientId(val *string) {
 	if err := j.validateSetAccessClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAccessClientSecret(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetAccessClientSecret(val *string) {
 	if err := j.validateSetAccessClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetApiUrl(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetApiUrl(val *string) {
 	if err := j.validateSetApiUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAuthUrl(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetAuthUrl(val *string) {
 	if err := j.validateSetAuthUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetAu
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetClientId(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetClientKey(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetClientKey(val *string) {
 	if err := j.validateSetClientKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetClientSecret(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetClientSecret(val *string) {
 	if err := j.validateSetClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCustomerId(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetCustomerId(val *string) {
 	if err := j.validateSetCustomerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Comp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetL
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Inte
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Rese
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) ToSt
 
 	return returns
 }
-

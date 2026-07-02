@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputRef
 
 	return nil
 }
-

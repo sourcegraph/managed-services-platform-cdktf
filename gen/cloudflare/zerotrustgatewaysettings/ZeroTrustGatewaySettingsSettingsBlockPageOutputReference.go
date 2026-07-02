@@ -15,9 +15,9 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	BackgroundColorInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	FooterText() *string
 	SetFooterText(val *string)
 	FooterTextInput() *string
@@ -39,11 +39,11 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	HeaderText() *string
 	SetHeaderText(val *string)
 	HeaderTextInput() *string
-	IncludeContext() interface{}
-	SetIncludeContext(val interface{})
-	IncludeContextInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IncludeContext() any
+	SetIncludeContext(val any)
+	IncludeContextInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	LogoPath() *string
 	SetLogoPath(val *string)
 	LogoPathInput() *string
@@ -61,9 +61,9 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	NameInput() *string
 	ReadOnly() cdktf.IResolvable
 	SourceAccount() *string
-	SuppressFooter() interface{}
-	SetSuppressFooter(val interface{})
-	SuppressFooterInput() interface{}
+	SuppressFooter() any
+	SetSuppressFooter(val any)
+	SuppressFooterInput() any
 	TargetUri() *string
 	SetTargetUri(val *string)
 	TargetUriInput() *string
@@ -78,7 +78,7 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	ResetTargetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Bac
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Hea
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContext() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContext() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContext",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Inc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContextInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContextInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContextInput",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Inc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Sou
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SuppressFooter() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SuppressFooter() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suppressFooter",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Sup
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SuppressFooterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SuppressFooterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suppressFooterInput",
@@ -456,7 +456,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Ter
 	return returns
 }
 
-
 func NewZeroTrustGatewaySettingsSettingsBlockPageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsBlockPageOutputReference {
 	_init_.Initialize()
 
@@ -467,7 +466,7 @@ func NewZeroTrustGatewaySettingsSettingsBlockPageOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -479,12 +478,12 @@ func NewZeroTrustGatewaySettingsSettingsBlockPageOutputReference_Override(z Zero
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetBackgroundColor(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetBackgroundColor(val *string) {
 	if err := j.validateSetBackgroundColorParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetB
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetFooterText(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetFooterText(val *string) {
 	if err := j.validateSetFooterTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetF
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetHeaderText(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetHeaderText(val *string) {
 	if err := j.validateSetHeaderTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetH
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetIncludeContext(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetIncludeContext(val any) {
 	if err := j.validateSetIncludeContextParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetLogoPath(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetLogoPath(val *string) {
 	if err := j.validateSetLogoPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetL
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetMailtoAddress(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetMailtoAddress(val *string) {
 	if err := j.validateSetMailtoAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetMailtoSubject(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetMailtoSubject(val *string) {
 	if err := j.validateSetMailtoSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetN
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetSuppressFooter(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetSuppressFooter(val any) {
 	if err := j.validateSetSuppressFooterParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetTargetUri(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetTargetUri(val *string) {
 	if err := j.validateSetTargetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,16 +683,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Com
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Int
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -953,16 +952,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -981,4 +980,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ToS
 
 	return returns
 }
-

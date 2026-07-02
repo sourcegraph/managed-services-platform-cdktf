@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntryConfidenceOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntryConfidenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomEntryConfidenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewZeroTrustDlpCustomEntryConfidenceOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReferenceParam
 
 	return nil
 }
-

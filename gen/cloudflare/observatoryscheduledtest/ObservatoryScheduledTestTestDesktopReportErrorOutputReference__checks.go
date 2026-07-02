@@ -98,7 +98,7 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewObservatoryScheduledTestTestDesktopReportErrorOutputReferencePar
 
 	return nil
 }
-

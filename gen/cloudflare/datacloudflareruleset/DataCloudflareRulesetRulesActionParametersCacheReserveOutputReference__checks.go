@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheReserveOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheReserveOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheReserveOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareRulesetRulesActionParametersCacheReserveOutputRefe
 
 	return nil
 }
-

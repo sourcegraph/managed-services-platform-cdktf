@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZoneLockdownsResultOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZoneLockdownsResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZoneLockdownsResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareZoneLockdownsResultOutputReferenceParameters(terra
 
 	return nil
 }
-

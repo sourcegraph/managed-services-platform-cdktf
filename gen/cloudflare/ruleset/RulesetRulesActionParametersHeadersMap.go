@@ -17,8 +17,8 @@ type RulesetRulesActionParametersHeadersMap interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -32,7 +32,7 @@ type RulesetRulesActionParametersHeadersMap interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -65,8 +65,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -95,7 +95,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) TerraformResource() c
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersHeadersMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersHeadersMap {
 	_init_.Initialize()
 
@@ -106,7 +105,7 @@ func NewRulesetRulesActionParametersHeadersMap(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -118,12 +117,12 @@ func NewRulesetRulesActionParametersHeadersMap_Override(r RulesetRulesActionPara
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -134,7 +133,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +144,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,7 +177,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) Get(key *string) Rule
 	_jsii_.Invoke(
 		r,
 		"get",
-		[]interface{}{key},
+		[]any{key},
 		&returns,
 	)
 
@@ -194,23 +193,23 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) InterpolationForAttri
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -229,4 +228,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) ToString() *string {
 
 	return returns
 }
-

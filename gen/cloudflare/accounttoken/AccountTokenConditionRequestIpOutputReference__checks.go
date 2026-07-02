@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateSetInP
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAccountTokenConditionRequestIpOutputReferenceParameters(terrafor
 
 	return nil
 }
-

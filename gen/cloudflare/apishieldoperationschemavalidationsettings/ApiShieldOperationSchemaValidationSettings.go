@@ -15,15 +15,15 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,15 +54,15 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -72,9 +72,9 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiShieldOperationSchemaValidationSettings
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Connection() inte
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Provisioners() *[
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ZoneIdInput() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewApiShieldOperationSchemaValidationSettings_Override(a ApiShieldOperation
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetMitigationAction(val *string) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetMitigationAction(val *string) {
 	if err := j.validateSetMitigationActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetMitigationActio
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetOperationId(val *string) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetOperationId(val *string) {
 	if err := j.validateSetOperationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetOperationId(val
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetProvisioners(va
 	)
 }
 
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetZoneId(val *string) {
+func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func ApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func ApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool {
+func ApiShieldOperationSchemaValidationSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiShieldOperationSchemaValidationSettings_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func ApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func ApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}) *bool {
+func ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiShieldOperationSchemaValidationSettings_IsTerraformElementParameters(x); err != nil {
@@ -560,7 +559,7 @@ func ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}
 }
 
 // Experimental.
-func ApiShieldOperationSchemaValidationSettings_IsTerraformResource(x interface{}) *bool {
+func ApiShieldOperationSchemaValidationSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiShieldOperationSchemaValidationSettings_IsTerraformResourceParameters(x); err != nil {
@@ -579,7 +578,7 @@ func ApiShieldOperationSchemaValidationSettings_IsTerraformResource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,31 +603,31 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) AddMoveTarget(mov
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,15 +755,15 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -783,7 +782,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ImportFrom(id *st
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -796,7 +795,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,18 +809,18 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) MoveFromId(id *st
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -832,7 +831,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) MoveToId(id *stri
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -843,7 +842,7 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -863,8 +862,8 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ResetOverrideLogi
 	)
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -876,8 +875,8 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SynthesizeAttribu
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -889,8 +888,8 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) SynthesizeHclAttr
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -902,8 +901,8 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToHclTerraform() 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -928,8 +927,8 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToString() *strin
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -940,4 +939,3 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToTerraform() int
 
 	return returns
 }
-

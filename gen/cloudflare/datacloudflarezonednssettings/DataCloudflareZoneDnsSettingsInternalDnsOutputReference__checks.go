@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZoneDnsSettingsInternalDnsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnsSettingsInternalDnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZoneDnsSettingsInternalDnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZoneDnsSettingsInternalDnsOutputReferenceParameter
 
 	return nil
 }
-

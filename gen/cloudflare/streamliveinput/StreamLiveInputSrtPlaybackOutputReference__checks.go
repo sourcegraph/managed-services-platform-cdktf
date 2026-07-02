@@ -98,7 +98,7 @@ func (s *jsiiProxy_StreamLiveInputSrtPlaybackOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInputSrtPlaybackOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInputSrtPlaybackOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewStreamLiveInputSrtPlaybackOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

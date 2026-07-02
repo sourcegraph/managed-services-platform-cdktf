@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
-		reflect.TypeOf((*KeylessCertificate)(nil)).Elem(),
+		reflect.TypeFor[KeylessCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KeylessCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateConfig",
-		reflect.TypeOf((*KeylessCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[KeylessCertificateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateTunnel",
-		reflect.TypeOf((*KeylessCertificateTunnel)(nil)).Elem(),
+		reflect.TypeFor[KeylessCertificateTunnel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateTunnelOutputReference",
-		reflect.TypeOf((*KeylessCertificateTunnelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KeylessCertificateTunnelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vnetId", GoGetter: "VnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetIdInput", GoGetter: "VnetIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KeylessCertificateTunnelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

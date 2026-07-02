@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountToken",
-		reflect.TypeOf((*AccountToken)(nil)).Elem(),
+		reflect.TypeFor[AccountToken](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountToken{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenCondition",
-		reflect.TypeOf((*AccountTokenCondition)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference",
-		reflect.TypeOf((*AccountTokenConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp",
-		reflect.TypeOf((*AccountTokenConditionRequestIp)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenConditionRequestIp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference",
-		reflect.TypeOf((*AccountTokenConditionRequestIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenConditionRequestIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenConditionRequestIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,15 +168,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenConfig",
-		reflect.TypeOf((*AccountTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies",
-		reflect.TypeOf((*AccountTokenPolicies)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPolicies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList",
-		reflect.TypeOf((*AccountTokenPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -198,7 +198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference",
-		reflect.TypeOf((*AccountTokenPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,11 +238,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups",
-		reflect.TypeOf((*AccountTokenPoliciesPermissionGroups)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesPermissionGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList",
-		reflect.TypeOf((*AccountTokenPoliciesPermissionGroupsList)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesPermissionGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenPoliciesPermissionGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -264,11 +264,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta",
-		reflect.TypeOf((*AccountTokenPoliciesPermissionGroupsMeta)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesPermissionGroupsMeta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference",
-		reflect.TypeOf((*AccountTokenPoliciesPermissionGroupsMetaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesPermissionGroupsMetaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenPoliciesPermissionGroupsMetaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,7 +306,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference",
-		reflect.TypeOf((*AccountTokenPoliciesPermissionGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountTokenPoliciesPermissionGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

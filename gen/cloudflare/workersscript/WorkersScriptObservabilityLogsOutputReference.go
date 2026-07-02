@@ -12,9 +12,9 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,19 +25,19 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	HeadSamplingRate() *float64
 	SetHeadSamplingRate(val *float64)
 	HeadSamplingRateInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	InvocationLogs() interface{}
-	SetInvocationLogs(val interface{})
-	InvocationLogsInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	InvocationLogs() any
+	SetInvocationLogs(val any)
+	InvocationLogsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	ResetHeadSamplingRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_WorkersScriptObservabilityLogsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Enabled() inte
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) HeadSamplingRa
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InternalValue(
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InvocationLogs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InvocationLogs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invocationLogs",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InvocationLogs
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InvocationLogsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InvocationLogsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invocationLogsInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewWorkersScriptObservabilityLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersScriptObservabilityLogsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewWorkersScriptObservabilityLogsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewWorkersScriptObservabilityLogsOutputReference_Override(w WorkersScriptOb
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetEnabled(val 
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetHeadSamplingRate(val *float64) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetHeadSamplingRate(val *float64) {
 	if err := j.validateSetHeadSamplingRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetHeadSampling
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetInvocationLogs(val interface{}) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetInvocationLogs(val any) {
 	if err := j.validateSetInvocationLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetInvocationLo
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ResetHeadSampl
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ToString() *st
 
 	return returns
 }
-

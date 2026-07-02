@@ -12,9 +12,9 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	LogAll() interface{}
-	SetLogAll(val interface{})
-	LogAllInput() interface{}
-	LogBlocks() interface{}
-	SetLogBlocks(val interface{})
-	LogBlocksInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	LogAll() any
+	SetLogAll(val any)
+	LogAllInput() any
+	LogBlocks() any
+	SetLogBlocks(val any)
+	LogBlocksInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference interface {
 	ResetLogBlocks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogAll() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogAll() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logAll",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) L
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogAllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogAllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logAllInput",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) L
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogBlocks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogBlocks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logBlocks",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) L
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogBlocksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) LogBlocksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logBlocksInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) T
 	return returns
 }
 
-
 func NewZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayLogging.ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference_Override(z Ze
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayLogging.ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetLogAll(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetLogAll(val any) {
 	if err := j.validateSetLogAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetLogBlocks(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetLogBlocks(val any) {
 	if err := j.validateSetLogBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) C
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) I
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) R
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference) T
 
 	return returns
 }
-

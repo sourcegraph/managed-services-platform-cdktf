@@ -24,9 +24,9 @@ type R2BucketSippySourceOutputReference interface {
 	CloudProviderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,8 +39,8 @@ type R2BucketSippySourceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
@@ -61,7 +61,7 @@ type R2BucketSippySourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type R2BucketSippySourceOutputReference interface {
 	ResetSecretAccessKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) CloudProviderInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewR2BucketSippySourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) R2BucketSippySourceOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewR2BucketSippySourceOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewR2BucketSippySourceOutputReference_Override(r R2BucketSippySourceOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetAccessKeyId(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetAccessKeyId(val *string) {
 	if err := j.validateSetAccessKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetAccessKeyId(val *string
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetClientEmail(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetClientEmail(val *string) {
 	if err := j.validateSetClientEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetClientEmail(val *string
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetCloudProvider(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetCloudProvider(val *string) {
 	if err := j.validateSetCloudProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetCloudProvider(val *stri
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetPrivateKey(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetPrivateKey(val *string) {
 	if err := j.validateSetPrivateKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetPrivateKey(val *string)
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetSecretAccessKey(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetSecretAccessKey(val *string) {
 	if err := j.validateSetSecretAccessKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetSecretAccessKey(val *st
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetSecretAccessKey() {
 	)
 }
 
-func (r *jsiiProxy_R2BucketSippySourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateAddMoveTargetPar
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateMoveFromIdParame
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateOverrideLogicalI
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validatePutSettingsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validatePutSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateZeroTrustAccessMtlsHostnameSettings_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateZeroTrustAccessMtlsHostnameSettings_IsConstructParameters(x interface{}) error {
+func validateZeroTrustAccessMtlsHostnameSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateZeroTrustAccessMtlsHostnameSettings_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateZeroTrustAccessMtlsHostnameSettings_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustAccessMtlsHostnameSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateZeroTrustAccessMtlsHostnameSettings_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateZeroTrustAccessMtlsHostnameSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustAccessMtlsHostnameSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetAccountIdPara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewZeroTrustAccessMtlsHostnameSettingsParameters(scope constructs.C
 
 	return nil
 }
-

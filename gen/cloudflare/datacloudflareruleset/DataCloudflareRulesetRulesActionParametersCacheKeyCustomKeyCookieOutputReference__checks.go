@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyCo
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyCooki
 
 	return nil
 }
-

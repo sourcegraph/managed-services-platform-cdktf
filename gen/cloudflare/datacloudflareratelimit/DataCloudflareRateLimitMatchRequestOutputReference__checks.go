@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRateLimitMatchRequestOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimitMatchRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRateLimitMatchRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareRateLimitMatchRequestOutputReferenceParameters(ter
 
 	return nil
 }
-

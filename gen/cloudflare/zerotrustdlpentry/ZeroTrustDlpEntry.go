@@ -20,23 +20,23 @@ type ZeroTrustDlpEntry interface {
 	CdktfStack() cdktf.TerraformStack
 	Confidence() ZeroTrustDlpEntryConfidenceOutputReference
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,7 +56,7 @@ type ZeroTrustDlpEntry interface {
 	// The tree node.
 	Node() constructs.Node
 	Pattern() ZeroTrustDlpEntryPatternOutputReference
-	PatternInput() interface{}
+	PatternInput() any
 	ProfileId() *string
 	SetProfileId(val *string)
 	ProfileIdInput() *string
@@ -65,16 +65,16 @@ type ZeroTrustDlpEntry interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -86,9 +86,9 @@ type ZeroTrustDlpEntry interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type ZeroTrustDlpEntry interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type ZeroTrustDlpEntry interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type ZeroTrustDlpEntry interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustDlpEntry
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) Confidence() ZeroTrustDlpEntryConfidenceOu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) Pattern() ZeroTrustDlpEntryPatternOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) PatternInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) PatternInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"patternInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDlpEntry) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -498,7 +498,6 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) WordList() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
 func NewZeroTrustDlpEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpEntryConfig) ZeroTrustDlpEntry {
 	_init_.Initialize()
@@ -510,7 +509,7 @@ func NewZeroTrustDlpEntry(scope constructs.Construct, id *string, config *ZeroTr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -523,12 +522,12 @@ func NewZeroTrustDlpEntry_Override(z ZeroTrustDlpEntry, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -569,7 +568,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetProfileId(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetProfileId(val *string) {
 	if err := j.validateSetProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetProfileId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -629,7 +628,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpEntry)SetType(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpEntry) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func ZeroTrustDlpEntry_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func ZeroTrustDlpEntry_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustDlpEntry_IsConstruct(x interface{}) *bool {
+func ZeroTrustDlpEntry_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpEntry_IsConstructParameters(x); err != nil {
@@ -698,7 +697,7 @@ func ZeroTrustDlpEntry_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func ZeroTrustDlpEntry_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustDlpEntry_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustDlpEntry_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpEntry_IsTerraformElementParameters(x); err != nil {
@@ -717,7 +716,7 @@ func ZeroTrustDlpEntry_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func ZeroTrustDlpEntry_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustDlpEntry_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustDlpEntry_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpEntry_IsTerraformResourceParameters(x); err != nil {
@@ -736,7 +735,7 @@ func ZeroTrustDlpEntry_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -761,31 +760,31 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustDlpEntry) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDlpEntry) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,15 +912,15 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpEntry) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -940,7 +939,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -953,7 +952,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,18 +966,18 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustDlpEntry) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -989,7 +988,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1000,7 +999,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1011,7 +1010,7 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) PutPattern(value *ZeroTrustDlpEntryPattern
 	_jsii_.InvokeVoid(
 		z,
 		"putPattern",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1031,8 +1030,8 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) ResetType() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDlpEntry) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1044,8 +1043,8 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDlpEntry) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1057,8 +1056,8 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpEntry) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1070,8 +1069,8 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpEntry) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1096,8 +1095,8 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpEntry) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpEntry) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1108,4 +1107,3 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) ToTerraform() interface{} {
 
 	return returns
 }
-

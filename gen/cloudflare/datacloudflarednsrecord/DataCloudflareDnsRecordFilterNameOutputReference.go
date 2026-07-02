@@ -12,9 +12,9 @@ type DataCloudflareDnsRecordFilterNameOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type DataCloudflareDnsRecordFilterNameOutputReference interface {
 	ExactInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Startswith() *string
 	SetStartswith(val *string)
 	StartswithInput() *string
@@ -52,7 +52,7 @@ type DataCloudflareDnsRecordFilterNameOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DataCloudflareDnsRecordFilterNameOutputReference interface {
 	ResetStartswith()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewDataCloudflareDnsRecordFilterNameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordFilterNameOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDataCloudflareDnsRecordFilterNameOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterNameOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDataCloudflareDnsRecordFilterNameOutputReference_Override(d DataCloudfla
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterNameOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetContains(val *string) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetContains(val *string) {
 	if err := j.validateSetContainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetContains(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetEndswith(val *string) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetEndswith(val *string) {
 	if err := j.validateSetEndswithParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetEndswith(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetExact(val *string) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetExact(val *string) {
 	if err := j.validateSetExactParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetExact(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetStartswith(val *string) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetStartswith(val *string) {
 	if err := j.validateSetStartswithParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetStartswit
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) ResetStarts
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterNameOutputReference) ToString() 
 
 	return returns
 }
-

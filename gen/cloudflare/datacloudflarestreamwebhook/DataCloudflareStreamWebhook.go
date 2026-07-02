@@ -18,11 +18,11 @@ type DataCloudflareStreamWebhook interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,17 +46,17 @@ type DataCloudflareStreamWebhook interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,18 +81,18 @@ type DataCloudflareStreamWebhook interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareStreamWebhook
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamWebhook) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamWebhook) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamWebhook) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamWebhook) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -260,7 +260,6 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source.
 func NewDataCloudflareStreamWebhook(scope constructs.Construct, id *string, config *DataCloudflareStreamWebhookConfig) DataCloudflareStreamWebhook {
 	_init_.Initialize()
@@ -272,7 +271,7 @@ func NewDataCloudflareStreamWebhook(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewDataCloudflareStreamWebhook_Override(d DataCloudflareStreamWebhook, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamWebhook) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareStreamWebhook) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareStreamWebhook) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -320,7 +319,7 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareStreamWebhook) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -328,7 +327,7 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareStreamWebhook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWebhook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareStreamWebhook) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -359,7 +358,7 @@ func DataCloudflareStreamWebhook_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func DataCloudflareStreamWebhook_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareStreamWebhook_IsConstruct(x interface{}) *bool {
+func DataCloudflareStreamWebhook_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamWebhook_IsConstructParameters(x); err != nil {
@@ -394,7 +393,7 @@ func DataCloudflareStreamWebhook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func DataCloudflareStreamWebhook_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamWebhook_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareStreamWebhook_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamWebhook_IsTerraformDataSourceParameters(x); err != nil {
@@ -413,7 +412,7 @@ func DataCloudflareStreamWebhook_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func DataCloudflareStreamWebhook_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamWebhook_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareStreamWebhook_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamWebhook_IsTerraformElementParameters(x); err != nil {
@@ -432,7 +431,7 @@ func DataCloudflareStreamWebhook_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -450,27 +449,27 @@ func DataCloudflareStreamWebhook_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareStreamWebhook) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareStreamWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -640,8 +639,8 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamWebhook) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -653,8 +652,8 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamWebhook) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -666,8 +665,8 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamWebhook) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -679,8 +678,8 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamWebhook) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -705,8 +704,8 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWebhook) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamWebhook) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -717,4 +716,3 @@ func (d *jsiiProxy_DataCloudflareStreamWebhook) ToTerraform() interface{} {
 
 	return returns
 }
-

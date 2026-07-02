@@ -15,17 +15,17 @@ type ZoneLockdown interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Configurations() ZoneLockdownConfigurationsList
-	ConfigurationsInput() interface{}
+	ConfigurationsInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -50,9 +50,9 @@ type ZoneLockdown interface {
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
+	Paused() any
+	SetPaused(val any)
+	PausedInput() any
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -61,15 +61,15 @@ type ZoneLockdown interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Urls() *[]*string
@@ -82,9 +82,9 @@ type ZoneLockdown interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type ZoneLockdown interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,31 +114,31 @@ type ZoneLockdown interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfigurations(value interface{})
+	PutConfigurations(value any)
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPaused()
 	ResetPriority()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZoneLockdown
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ZoneLockdown) Configurations() ZoneLockdownConfigurationsList
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) ConfigurationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) ConfigurationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"configurationsInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ZoneLockdown) ConfigurationsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ZoneLockdown) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneLockdown) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ZoneLockdown) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_ZoneLockdown) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) Paused() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"paused",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_ZoneLockdown) Paused() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) PausedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) PausedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pausedInput",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_ZoneLockdown) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZoneLockdown) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_ZoneLockdown) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_ZoneLockdown) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneLockdown) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -456,7 +456,6 @@ func (j *jsiiProxy_ZoneLockdown) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdownConfig) ZoneLockdown {
 	_init_.Initialize()
@@ -468,7 +467,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZoneLockdown) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_ZoneLockdown)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetCount(val interface{}) {
+func (j *jsiiProxy_ZoneLockdown) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_ZoneLockdown)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZoneLockdown) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -516,7 +515,7 @@ func (j *jsiiProxy_ZoneLockdown)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetDescription(val *string) {
+func (j *jsiiProxy_ZoneLockdown) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_ZoneLockdown)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneLockdown) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -535,7 +534,7 @@ func (j *jsiiProxy_ZoneLockdown)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneLockdown) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ZoneLockdown)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetPaused(val interface{}) {
+func (j *jsiiProxy_ZoneLockdown) SetPaused(val any) {
 	if err := j.validateSetPausedParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ZoneLockdown)SetPaused(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetPriority(val *float64) {
+func (j *jsiiProxy_ZoneLockdown) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ZoneLockdown)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneLockdown) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_ZoneLockdown)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZoneLockdown) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_ZoneLockdown)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetUrls(val *[]*string) {
+func (j *jsiiProxy_ZoneLockdown) SetUrls(val *[]*string) {
 	if err := j.validateSetUrlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_ZoneLockdown)SetUrls(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetZoneId(val *string) {
+func (j *jsiiProxy_ZoneLockdown) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func ZoneLockdown_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func ZoneLockdown_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZoneLockdown_IsConstruct(x interface{}) *bool {
+func ZoneLockdown_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneLockdown_IsConstructParameters(x); err != nil {
@@ -656,7 +655,7 @@ func ZoneLockdown_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func ZoneLockdown_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZoneLockdown_IsTerraformElement(x interface{}) *bool {
+func ZoneLockdown_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneLockdown_IsTerraformElementParameters(x); err != nil {
@@ -675,7 +674,7 @@ func ZoneLockdown_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func ZoneLockdown_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZoneLockdown_IsTerraformResource(x interface{}) *bool {
+func ZoneLockdown_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneLockdown_IsTerraformResourceParameters(x); err != nil {
@@ -694,7 +693,7 @@ func ZoneLockdown_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,31 +718,31 @@ func (z *jsiiProxy_ZoneLockdown) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdown) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZoneLockdown) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdown) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneLockdown) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (z *jsiiProxy_ZoneLockdown) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (z *jsiiProxy_ZoneLockdown) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (z *jsiiProxy_ZoneLockdown) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (z *jsiiProxy_ZoneLockdown) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (z *jsiiProxy_ZoneLockdown) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (z *jsiiProxy_ZoneLockdown) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (z *jsiiProxy_ZoneLockdown) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,15 +870,15 @@ func (z *jsiiProxy_ZoneLockdown) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneLockdown) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneLockdown) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -898,7 +897,7 @@ func (z *jsiiProxy_ZoneLockdown) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -911,7 +910,7 @@ func (z *jsiiProxy_ZoneLockdown) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,18 +924,18 @@ func (z *jsiiProxy_ZoneLockdown) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdown) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZoneLockdown) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -947,7 +946,7 @@ func (z *jsiiProxy_ZoneLockdown) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -958,18 +957,18 @@ func (z *jsiiProxy_ZoneLockdown) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdown) PutConfigurations(value interface{}) {
+func (z *jsiiProxy_ZoneLockdown) PutConfigurations(value any) {
 	if err := z.validatePutConfigurationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putConfigurations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1005,8 +1004,8 @@ func (z *jsiiProxy_ZoneLockdown) ResetPriority() {
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdown) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZoneLockdown) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1018,8 +1017,8 @@ func (z *jsiiProxy_ZoneLockdown) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneLockdown) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZoneLockdown) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1031,8 +1030,8 @@ func (z *jsiiProxy_ZoneLockdown) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (z *jsiiProxy_ZoneLockdown) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneLockdown) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1044,8 +1043,8 @@ func (z *jsiiProxy_ZoneLockdown) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneLockdown) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneLockdown) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1070,8 +1069,8 @@ func (z *jsiiProxy_ZoneLockdown) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneLockdown) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneLockdown) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1082,4 +1081,3 @@ func (z *jsiiProxy_ZoneLockdown) ToTerraform() interface{} {
 
 	return returns
 }
-

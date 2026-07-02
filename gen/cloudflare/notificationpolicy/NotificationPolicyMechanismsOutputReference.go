@@ -12,9 +12,9 @@ type NotificationPolicyMechanismsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,13 +26,13 @@ type NotificationPolicyMechanismsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Email() NotificationPolicyMechanismsEmailList
-	EmailInput() interface{}
+	EmailInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Pagerduty() NotificationPolicyMechanismsPagerdutyList
-	PagerdutyInput() interface{}
+	PagerdutyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,11 +42,11 @@ type NotificationPolicyMechanismsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Webhooks() NotificationPolicyMechanismsWebhooksList
-	WebhooksInput() interface{}
+	WebhooksInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,15 +67,15 @@ type NotificationPolicyMechanismsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEmail(value interface{})
-	PutPagerduty(value interface{})
-	PutWebhooks(value interface{})
+	PutEmail(value any)
+	PutPagerduty(value any)
+	PutWebhooks(value any)
 	ResetEmail()
 	ResetPagerduty()
 	ResetWebhooks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_NotificationPolicyMechanismsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) Email() Notifica
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) EmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) EmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) Pagerduty() Noti
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) PagerdutyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) PagerdutyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pagerdutyInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) Webhooks() Notif
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) WebhooksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) WebhooksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"webhooksInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) WebhooksInput() 
 	)
 	return returns
 }
-
 
 func NewNotificationPolicyMechanismsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationPolicyMechanismsOutputReference {
 	_init_.Initialize()
@@ -229,7 +228,7 @@ func NewNotificationPolicyMechanismsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewNotificationPolicyMechanismsOutputReference_Override(n NotificationPolic
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,16 +313,16 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,43 +479,43 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) PutEmail(value interface{}) {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) PutEmail(value any) {
 	if err := n.validatePutEmailParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) PutPagerduty(value interface{}) {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) PutPagerduty(value any) {
 	if err := n.validatePutPagerdutyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putPagerduty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) PutWebhooks(value interface{}) {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) PutWebhooks(value any) {
 	if err := n.validatePutWebhooksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putWebhooks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) ResetWebhooks() 
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) ToString() *stri
 
 	return returns
 }
-

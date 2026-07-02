@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddresses)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddresses](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verified", GoGetter: "Verified"},
 			_jsii_.MemberProperty{JsiiProperty: "verifiedInput", GoGetter: "VerifiedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailRoutingAddresses{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,15 +65,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesConfig",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesResult",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressesResult)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressesResult](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesResultList",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressesResultList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressesResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailRoutingAddressesResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -94,7 +94,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesResultOutputReference",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressesResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressesResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "verified", GoGetter: "Verified"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailRoutingAddressesResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

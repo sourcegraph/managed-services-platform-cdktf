@@ -98,7 +98,7 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetDatePar
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewR2BucketLockRulesConditionOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

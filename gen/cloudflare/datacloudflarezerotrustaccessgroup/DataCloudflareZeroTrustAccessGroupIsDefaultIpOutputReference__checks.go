@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultIpOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustAccessGroupIsDefaultIpOutputReferencePara
 
 	return nil
 }
-

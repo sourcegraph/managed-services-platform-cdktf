@@ -6,9 +6,9 @@ import (
 
 type LoadBalancerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoadBalancerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A list of pool IDs ordered by their failover priority.
 	//
 	// Pools defined here are used by default, or when region_pools are not configured for a given region.
@@ -48,7 +48,7 @@ type LoadBalancerConfig struct {
 	// Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
-	CountryPools interface{} `field:"optional" json:"countryPools" yaml:"countryPools"`
+	CountryPools any `field:"optional" json:"countryPools" yaml:"countryPools"`
 	// Object description.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#description LoadBalancer#description}
@@ -56,7 +56,7 @@ type LoadBalancerConfig struct {
 	// Whether to enable (the default) this load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#enabled LoadBalancer#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
@@ -70,11 +70,11 @@ type LoadBalancerConfig struct {
 	// Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
-	PopPools interface{} `field:"optional" json:"popPools" yaml:"popPools"`
+	PopPools any `field:"optional" json:"popPools" yaml:"popPools"`
 	// Whether the hostname should be gray clouded (false) or orange clouded (true).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#proxied LoadBalancer#proxied}
-	Proxied interface{} `field:"optional" json:"proxied" yaml:"proxied"`
+	Proxied any `field:"optional" json:"proxied" yaml:"proxied"`
 	// Configures pool weights.
 	//
 	// - `steering_policy="random"`: A random pool is selected with probability proportional to pool weights.
@@ -88,11 +88,11 @@ type LoadBalancerConfig struct {
 	// Any regions not explicitly defined will fall back to using default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
-	RegionPools interface{} `field:"optional" json:"regionPools" yaml:"regionPools"`
+	RegionPools any `field:"optional" json:"regionPools" yaml:"regionPools"`
 	// BETA Field Not General Access: A list of rules for this load balancer to execute.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#rules LoadBalancer#rules}
-	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	Rules any `field:"optional" json:"rules" yaml:"rules"`
 	// Specifies the type of session affinity the load balancer should use unless specified as `"none"`.
 	//
 	// The supported types are:
@@ -136,4 +136,3 @@ type LoadBalancerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
-

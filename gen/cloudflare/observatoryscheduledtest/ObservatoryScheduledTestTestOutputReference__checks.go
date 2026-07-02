@@ -98,7 +98,7 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewObservatoryScheduledTestTestOutputReferenceParameters(terraformR
 
 	return nil
 }
-

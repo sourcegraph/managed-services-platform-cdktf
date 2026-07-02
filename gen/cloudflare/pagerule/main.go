@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
-		reflect.TypeOf((*PageRule)(nil)).Elem(),
+		reflect.TypeFor[PageRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,19 +77,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActions",
-		reflect.TypeOf((*PageRuleActions)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFields",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFields)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFields](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsCookie)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsCookie](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookieOutputReference",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsCookieOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsCookieOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
 			_jsii_.MemberProperty{JsiiProperty: "checkPresenceInput", GoGetter: "CheckPresenceInput"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHeader)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
 			_jsii_.MemberProperty{JsiiProperty: "checkPresenceInput", GoGetter: "CheckPresenceInput"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,11 +172,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHost",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHost)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsHost](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHostOutputReference",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHostOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsHostOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,7 +211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsOutputReference",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsQueryString)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsQueryString](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryStringOutputReference",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsQueryStringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsQueryStringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsUser)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsUser](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUserOutputReference",
-		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsUserOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsCacheKeyFieldsUserOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -350,11 +350,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl",
-		reflect.TypeOf((*PageRuleActionsForwardingUrl)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsForwardingUrl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
-		reflect.TypeOf((*PageRuleActionsForwardingUrlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsForwardingUrlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -382,7 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsForwardingUrlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -390,7 +390,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
-		reflect.TypeOf((*PageRuleActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PageRuleActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttpsInput", GoGetter: "AlwaysUseHttpsInput"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waf", GoGetter: "Waf"},
 			_jsii_.MemberProperty{JsiiProperty: "wafInput", GoGetter: "WafInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PageRuleActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -526,6 +526,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleConfig",
-		reflect.TypeOf((*PageRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[PageRuleConfig](),
 	)
 }

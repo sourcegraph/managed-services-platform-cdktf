@@ -17,8 +17,8 @@ type WaitingRoomAdditionalRoutesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type WaitingRoomAdditionalRoutesList interface {
 	Get(index *float64) WaitingRoomAdditionalRoutesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewWaitingRoomAdditionalRoutesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WaitingRoomAdditionalRoutesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewWaitingRoomAdditionalRoutesList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewWaitingRoomAdditionalRoutesList_Override(w WaitingRoomAdditionalRoutesLi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomAdditionalRoutesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WaitingRoomAdditionalRoutesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) Get(index *float64) WaitingR
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) ToString() *string {
 
 	return returns
 }
-

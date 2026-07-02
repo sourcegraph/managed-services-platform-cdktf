@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettings",
-		reflect.TypeOf((*AccountDnsSettings)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneDefaults", GoGetter: "ZoneDefaults"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneDefaultsInput", GoGetter: "ZoneDefaultsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountDnsSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -67,19 +67,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig",
-		reflect.TypeOf((*AccountDnsSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaults)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaults](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDns",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsInternalDns)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsInternalDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDnsOutputReference",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsInternalDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsInternalDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountDnsSettingsZoneDefaultsInternalDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -114,11 +114,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsNameservers)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsNameservers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameserversOutputReference",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsNameserversOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsNameserversOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneMode", GoGetter: "ZoneMode"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneModeInput", GoGetter: "ZoneModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -214,11 +214,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoa",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsSoa)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsSoa](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
-		reflect.TypeOf((*AccountDnsSettingsZoneDefaultsSoaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsZoneDefaultsSoaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (a *jsiiProxy_ArgoTieredCaching) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ArgoTieredCaching) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ArgoTieredCaching) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ArgoTieredCaching) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateArgoTieredCaching_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateArgoTieredCaching_IsConstructParameters(x interface{}) error {
+func validateArgoTieredCaching_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateArgoTieredCaching_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateArgoTieredCaching_IsTerraformElementParameters(x interface{}) error {
+func validateArgoTieredCaching_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateArgoTieredCaching_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateArgoTieredCaching_IsTerraformResourceParameters(x interface{}) error {
+func validateArgoTieredCaching_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateArgoTieredCaching_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ArgoTieredCaching) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ArgoTieredCaching) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ArgoTieredCaching) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ArgoTieredCaching) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ArgoTieredCaching) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewArgoTieredCachingParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

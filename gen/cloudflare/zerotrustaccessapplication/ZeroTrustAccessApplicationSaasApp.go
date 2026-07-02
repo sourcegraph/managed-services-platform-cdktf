@@ -1,6 +1,5 @@
 package zerotrustaccessapplication
 
-
 type ZeroTrustAccessApplicationSaasApp struct {
 	// The lifetime of the OIDC Access Token after creation.
 	//
@@ -11,7 +10,7 @@ type ZeroTrustAccessApplicationSaasApp struct {
 	// If client secret should be required on the token endpoint when authorization_code_with_pkce grant is used.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#allow_pkce_without_client_secret ZeroTrustAccessApplication#allow_pkce_without_client_secret}
-	AllowPkceWithoutClientSecret interface{} `field:"optional" json:"allowPkceWithoutClientSecret" yaml:"allowPkceWithoutClientSecret"`
+	AllowPkceWithoutClientSecret any `field:"optional" json:"allowPkceWithoutClientSecret" yaml:"allowPkceWithoutClientSecret"`
 	// The URL where this applications tile redirects users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#app_launcher_url ZeroTrustAccessApplication#app_launcher_url}
@@ -28,9 +27,9 @@ type ZeroTrustAccessApplicationSaasApp struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#consumer_service_url ZeroTrustAccessApplication#consumer_service_url}
 	ConsumerServiceUrl *string `field:"optional" json:"consumerServiceUrl" yaml:"consumerServiceUrl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#custom_attributes ZeroTrustAccessApplication#custom_attributes}.
-	CustomAttributes interface{} `field:"optional" json:"customAttributes" yaml:"customAttributes"`
+	CustomAttributes any `field:"optional" json:"customAttributes" yaml:"customAttributes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#custom_claims ZeroTrustAccessApplication#custom_claims}.
-	CustomClaims interface{} `field:"optional" json:"customClaims" yaml:"customClaims"`
+	CustomClaims any `field:"optional" json:"customClaims" yaml:"customClaims"`
 	// The URL that the user will be redirected to after a successful login for IDP initiated logins.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#default_relay_state ZeroTrustAccessApplication#default_relay_state}
@@ -80,4 +79,3 @@ type ZeroTrustAccessApplicationSaasApp struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#sso_endpoint ZeroTrustAccessApplication#sso_endpoint}
 	SsoEndpoint *string `field:"optional" json:"ssoEndpoint" yaml:"ssoEndpoint"`
 }
-

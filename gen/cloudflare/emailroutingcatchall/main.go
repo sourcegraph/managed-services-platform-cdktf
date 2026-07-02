@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
-		reflect.TypeOf((*EmailRoutingCatchAll)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAll](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailRoutingCatchAll{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions",
-		reflect.TypeOf((*EmailRoutingCatchAllActions)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllActions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionsList",
-		reflect.TypeOf((*EmailRoutingCatchAllActionsList)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllActionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailRoutingCatchAllActionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionsOutputReference",
-		reflect.TypeOf((*EmailRoutingCatchAllActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailRoutingCatchAllActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig",
-		reflect.TypeOf((*EmailRoutingCatchAllConfig)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchers",
-		reflect.TypeOf((*EmailRoutingCatchAllMatchers)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllMatchers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersList",
-		reflect.TypeOf((*EmailRoutingCatchAllMatchersList)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllMatchersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailRoutingCatchAllMatchersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersOutputReference",
-		reflect.TypeOf((*EmailRoutingCatchAllMatchersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmailRoutingCatchAllMatchersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmailRoutingCatchAllMatchersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

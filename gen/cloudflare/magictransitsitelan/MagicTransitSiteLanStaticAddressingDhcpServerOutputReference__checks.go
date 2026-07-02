@@ -98,7 +98,7 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewMagicTransitSiteLanStaticAddressingDhcpServerOutputReferencePara
 
 	return nil
 }
-

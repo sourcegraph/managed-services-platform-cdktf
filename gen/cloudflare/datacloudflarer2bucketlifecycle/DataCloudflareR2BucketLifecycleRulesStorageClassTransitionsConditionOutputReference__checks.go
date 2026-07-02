@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCo
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCondi
 
 	return nil
 }
-

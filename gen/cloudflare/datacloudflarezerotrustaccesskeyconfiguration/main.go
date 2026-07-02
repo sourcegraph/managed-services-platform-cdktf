@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration",
-		reflect.TypeOf((*DataCloudflareZeroTrustAccessKeyConfiguration)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustAccessKeyConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -50,7 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareZeroTrustAccessKeyConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -58,6 +58,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfigurationConfig",
-		reflect.TypeOf((*DataCloudflareZeroTrustAccessKeyConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareZeroTrustAccessKeyConfigurationConfig](),
 	)
 }

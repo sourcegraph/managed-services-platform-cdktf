@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareR2BucketCors) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareR2BucketCors) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareR2BucketCors_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateDataCloudflareR2BucketCors_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareR2BucketCors_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareR2BucketCors_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateDataCloudflareR2BucketCors_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareR2BucketCors_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareR2BucketCors_IsTerraformDataSourceParameters(x interf
 	return nil
 }
 
-func validateDataCloudflareR2BucketCors_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareR2BucketCors_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) validateSetBucketNameParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareR2BucketCors) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareR2BucketCorsParameters(scope constructs.Construct,
 
 	return nil
 }
-

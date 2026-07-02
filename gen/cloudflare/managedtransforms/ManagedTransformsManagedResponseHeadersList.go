@@ -17,8 +17,8 @@ type ManagedTransformsManagedResponseHeadersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ManagedTransformsManagedResponseHeadersList interface {
 	Get(index *float64) ManagedTransformsManagedResponseHeadersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewManagedTransformsManagedResponseHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedTransformsManagedResponseHeadersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewManagedTransformsManagedResponseHeadersList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewManagedTransformsManagedResponseHeadersList_Override(m ManagedTransforms
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Get(index *float
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) ToString() *stri
 
 	return returns
 }
-

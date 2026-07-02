@@ -98,7 +98,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QueueSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference) validateSetDeliveryDelayParamet
 	return nil
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) validateSetDeliveryPausedParameters(val interface{}) error {
+func (j *jsiiProxy_QueueSettingsOutputReference) validateSetDeliveryPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference) validateSetDeliveryPausedParame
 	return nil
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_QueueSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -250,4 +250,3 @@ func validateNewQueueSettingsOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCertificateOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCertificateOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCertificateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCertificateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZeroTrustGatewaySettingsSettingsCertificateOutputReferenceParame
 
 	return nil
 }
-

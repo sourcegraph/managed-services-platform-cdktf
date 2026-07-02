@@ -12,9 +12,9 @@ type DnsFirewallAttackMitigationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type DnsFirewallAttackMitigationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	OnlyWhenUpstreamUnhealthy() interface{}
-	SetOnlyWhenUpstreamUnhealthy(val interface{})
-	OnlyWhenUpstreamUnhealthyInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	OnlyWhenUpstreamUnhealthy() any
+	SetOnlyWhenUpstreamUnhealthy(val any)
+	OnlyWhenUpstreamUnhealthyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type DnsFirewallAttackMitigationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DnsFirewallAttackMitigationOutputReference interface {
 	ResetOnlyWhenUpstreamUnhealthy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DnsFirewallAttackMitigationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) Enabled() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) InternalValue() i
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) OnlyWhenUpstreamUnhealthy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) OnlyWhenUpstreamUnhealthy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlyWhenUpstreamUnhealthy",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) OnlyWhenUpstreamU
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) OnlyWhenUpstreamUnhealthyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) OnlyWhenUpstreamUnhealthyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlyWhenUpstreamUnhealthyInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewDnsFirewallAttackMitigationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DnsFirewallAttackMitigationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDnsFirewallAttackMitigationOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDnsFirewallAttackMitigationOutputReference_Override(d DnsFirewallAttackM
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetEnabled(val int
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetOnlyWhenUpstreamUnhealthy(val interface{}) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetOnlyWhenUpstreamUnhealthy(val any) {
 	if err := j.validateSetOnlyWhenUpstreamUnhealthyParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetOnlyWhenUpstrea
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsFirewallAttackMitigationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) ResetOnlyWhenUpst
 	)
 }
 
-func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DnsFirewallAttackMitigationOutputReference) ToString() *strin
 
 	return returns
 }
-

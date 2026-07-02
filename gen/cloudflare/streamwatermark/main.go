@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
-		reflect.TypeOf((*StreamWatermarkA)(nil)).Elem(),
+		reflect.TypeFor[StreamWatermarkA](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamWatermarkA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,6 +89,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkAConfig",
-		reflect.TypeOf((*StreamWatermarkAConfig)(nil)).Elem(),
+		reflect.TypeFor[StreamWatermarkAConfig](),
 	)
 }

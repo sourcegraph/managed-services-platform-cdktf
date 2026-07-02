@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowAllHeadersParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowAllHeadersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowAllMethodsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowAllMethodsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowAllOriginsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowAllOriginsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetAllowCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -326,4 +326,3 @@ func validateNewZeroTrustAccessApplicationCorsHeadersOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls",
-		reflect.TypeOf((*DataCloudflareCustomSsls)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSsls](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCustomSsls{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,19 +65,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig",
-		reflect.TypeOf((*DataCloudflareCustomSslsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResult",
-		reflect.TypeOf((*DataCloudflareCustomSslsResult)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResult](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultGeoRestrictions",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultGeoRestrictions)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultGeoRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultGeoRestrictionsOutputReference",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultGeoRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultGeoRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCustomSslsResultGeoRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -110,11 +110,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServer",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultKeylessServer)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultKeylessServer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServerOutputReference",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultKeylessServerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultKeylessServerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel", GoGetter: "Tunnel"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCustomSslsResultKeylessServerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServerTunnel",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultKeylessServerTunnel)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultKeylessServerTunnel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServerTunnelOutputReference",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultKeylessServerTunnelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultKeylessServerTunnelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetId", GoGetter: "VnetId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCustomSslsResultKeylessServerTunnelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,7 +194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultList",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCustomSslsResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -215,7 +215,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference",
-		reflect.TypeOf((*DataCloudflareCustomSslsResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareCustomSslsResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundleMethod", GoGetter: "BundleMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadedOn", GoGetter: "UploadedOn"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareCustomSslsResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

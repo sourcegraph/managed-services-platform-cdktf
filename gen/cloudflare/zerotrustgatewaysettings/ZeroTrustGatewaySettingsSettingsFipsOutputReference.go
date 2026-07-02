@@ -12,9 +12,9 @@ type ZeroTrustGatewaySettingsSettingsFipsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ZeroTrustGatewaySettingsSettingsFipsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -37,13 +37,13 @@ type ZeroTrustGatewaySettingsSettingsFipsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Tls() interface{}
-	SetTls(val interface{})
-	TlsInput() interface{}
+	Tls() any
+	SetTls(val any)
+	TlsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ZeroTrustGatewaySettingsSettingsFipsOutputReference interface {
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Tls() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Tls() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tls",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Tls() in
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) TlsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) TlsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) TlsInput
 	)
 	return returns
 }
-
 
 func NewZeroTrustGatewaySettingsSettingsFipsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsFipsOutputReference {
 	_init_.Initialize()
@@ -181,7 +180,7 @@ func NewZeroTrustGatewaySettingsSettingsFipsOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsFipsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewZeroTrustGatewaySettingsSettingsFipsOutputReference_Override(z ZeroTrust
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsFipsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference)SetTls(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) SetTls(val any) {
 	if err := j.validateSetTlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) ComputeF
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetBoole
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetBoole
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetListA
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetStrin
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) GetStrin
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Interpol
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) ResetTls
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) ToString
 
 	return returns
 }
-

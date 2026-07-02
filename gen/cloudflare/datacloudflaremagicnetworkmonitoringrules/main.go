@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRules.DataCloudflareMagicNetworkMonitoringRules",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRules)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRules](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareMagicNetworkMonitoringRules{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRules.DataCloudflareMagicNetworkMonitoringRulesConfig",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRulesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRulesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRules.DataCloudflareMagicNetworkMonitoringRulesResult",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRulesResult)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRulesResult](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRules.DataCloudflareMagicNetworkMonitoringRulesResultList",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRulesResultList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRulesResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringRules.DataCloudflareMagicNetworkMonitoringRulesResultOutputReference",
-		reflect.TypeOf((*DataCloudflareMagicNetworkMonitoringRulesResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicNetworkMonitoringRulesResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticAdvertisement", GoGetter: "AutomaticAdvertisement"},
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthThreshold", GoGetter: "BandwidthThreshold"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zscoreSensitivity", GoGetter: "ZscoreSensitivity"},
 			_jsii_.MemberProperty{JsiiProperty: "zscoreTarget", GoGetter: "ZscoreTarget"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
-		reflect.TypeOf((*BotManagement)(nil)).Elem(),
+		reflect.TypeFor[BotManagement](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BotManagement{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.botManagement.BotManagementConfig",
-		reflect.TypeOf((*BotManagementConfig)(nil)).Elem(),
+		reflect.TypeFor[BotManagementConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.botManagement.BotManagementStaleZoneConfiguration",
-		reflect.TypeOf((*BotManagementStaleZoneConfiguration)(nil)).Elem(),
+		reflect.TypeFor[BotManagementStaleZoneConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.botManagement.BotManagementStaleZoneConfigurationOutputReference",
-		reflect.TypeOf((*BotManagementStaleZoneConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BotManagementStaleZoneConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BotManagementStaleZoneConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

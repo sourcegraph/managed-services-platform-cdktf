@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) validateSetComplexObject
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewHealthcheckTcpConfigOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

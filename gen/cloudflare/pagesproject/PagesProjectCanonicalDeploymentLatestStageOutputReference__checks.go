@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentLatestStageOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectCanonicalDeploymentLatestStageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentLatestStageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewPagesProjectCanonicalDeploymentLatestStageOutputReferenceParamet
 
 	return nil
 }
-

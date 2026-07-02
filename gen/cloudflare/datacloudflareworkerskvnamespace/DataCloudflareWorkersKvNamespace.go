@@ -19,17 +19,17 @@ type DataCloudflareWorkersKvNamespace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataCloudflareWorkersKvNamespaceFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,19 +53,19 @@ type DataCloudflareWorkersKvNamespace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SupportsUrlEncoding() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Title() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataCloudflareWorkersKvNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareWorkersKvNamespace
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Filter() DataCloudflareWork
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Title() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace} Data Source.
 func NewDataCloudflareWorkersKvNamespace(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespaceConfig) DataCloudflareWorkersKvNamespace {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewDataCloudflareWorkersKvNamespace(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespace.DataCloudflareWorkersKvNamespace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewDataCloudflareWorkersKvNamespace_Override(d DataCloudflareWorkersKvNames
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespace.DataCloudflareWorkersKvNamespace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetNamespaceId(val *string) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetNamespaceId(val *string) {
 	if err := j.validateSetNamespaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetNamespaceId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func DataCloudflareWorkersKvNamespace_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespace.DataCloudflareWorkersKvNamespace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func DataCloudflareWorkersKvNamespace_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareWorkersKvNamespace_IsConstruct(x interface{}) *bool {
+func DataCloudflareWorkersKvNamespace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareWorkersKvNamespace_IsConstructParameters(x); err != nil {
@@ -497,7 +496,7 @@ func DataCloudflareWorkersKvNamespace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespace.DataCloudflareWorkersKvNamespace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func DataCloudflareWorkersKvNamespace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareWorkersKvNamespace_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareWorkersKvNamespace_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareWorkersKvNamespace_IsTerraformDataSourceParameters(x); err != nil {
@@ -516,7 +515,7 @@ func DataCloudflareWorkersKvNamespace_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespace.DataCloudflareWorkersKvNamespace",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func DataCloudflareWorkersKvNamespace_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataCloudflareWorkersKvNamespace_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareWorkersKvNamespace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareWorkersKvNamespace_IsTerraformElementParameters(x); err != nil {
@@ -535,7 +534,7 @@ func DataCloudflareWorkersKvNamespace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespace.DataCloudflareWorkersKvNamespace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -553,27 +552,27 @@ func DataCloudflareWorkersKvNamespace_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) PutFilter(value *DataCloudf
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -783,8 +782,8 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -796,8 +795,8 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -809,8 +808,8 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -835,8 +834,8 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -847,4 +846,3 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) ToTerraform() interface{} {
 
 	return returns
 }
-

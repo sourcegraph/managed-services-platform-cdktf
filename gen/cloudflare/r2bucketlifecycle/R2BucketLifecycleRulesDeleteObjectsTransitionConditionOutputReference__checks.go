@@ -98,7 +98,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputRefe
 
 	return nil
 }
-

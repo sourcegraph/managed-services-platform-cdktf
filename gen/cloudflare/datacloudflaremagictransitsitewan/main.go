@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan",
-		reflect.TypeOf((*DataCloudflareMagicTransitSiteWan)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicTransitSiteWan](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wanId", GoGetter: "WanId"},
 			_jsii_.MemberProperty{JsiiProperty: "wanIdInput", GoGetter: "WanIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareMagicTransitSiteWan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,15 +67,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanConfig",
-		reflect.TypeOf((*DataCloudflareMagicTransitSiteWanConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicTransitSiteWanConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanStaticAddressing",
-		reflect.TypeOf((*DataCloudflareMagicTransitSiteWanStaticAddressing)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicTransitSiteWanStaticAddressing](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference",
-		reflect.TypeOf((*DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

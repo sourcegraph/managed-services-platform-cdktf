@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription",
-		reflect.TypeOf((*ZoneSubscription)(nil)).Elem(),
+		reflect.TypeFor[ZoneSubscription](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSubscription{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig",
-		reflect.TypeOf((*ZoneSubscriptionConfig)(nil)).Elem(),
+		reflect.TypeFor[ZoneSubscriptionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan",
-		reflect.TypeOf((*ZoneSubscriptionRatePlan)(nil)).Elem(),
+		reflect.TypeFor[ZoneSubscriptionRatePlan](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference",
-		reflect.TypeOf((*ZoneSubscriptionRatePlanOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSubscriptionRatePlanOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSubscriptionRatePlanOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

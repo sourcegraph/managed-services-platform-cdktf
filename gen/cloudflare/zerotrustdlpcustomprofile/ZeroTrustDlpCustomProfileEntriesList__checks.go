@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustDlpCustomProfileEntriesListParameters(terraformResource
 
 	return nil
 }
-

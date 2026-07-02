@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustAccessShortLivedCertificates_GenerateConfigF
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsConstructPara
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsTerraformData
 	return nil
 }
 
-func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustAccessShortLivedCertificates_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataCloudflareZeroTrustAccessShortLivedCertificatesParameters(sc
 
 	return nil
 }
-

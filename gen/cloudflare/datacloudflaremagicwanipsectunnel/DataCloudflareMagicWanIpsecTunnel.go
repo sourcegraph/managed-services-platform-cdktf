@@ -18,11 +18,11 @@ type DataCloudflareMagicWanIpsecTunnel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,17 +50,17 @@ type DataCloudflareMagicWanIpsecTunnel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,18 +85,18 @@ type DataCloudflareMagicWanIpsecTunnel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareMagicWanIpsecTunnel
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) TerraformResourceType() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Data Source.
 func NewDataCloudflareMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *DataCloudflareMagicWanIpsecTunnelConfig) DataCloudflareMagicWanIpsecTunnel {
 	_init_.Initialize()
@@ -306,7 +305,7 @@ func NewDataCloudflareMagicWanIpsecTunnel(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -319,12 +318,12 @@ func NewDataCloudflareMagicWanIpsecTunnel_Override(d DataCloudflareMagicWanIpsec
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -354,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetIpsecTunnelId(val *string) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetIpsecTunnelId(val *string) {
 	if err := j.validateSetIpsecTunnelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetIpsecTunnelId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -404,7 +403,7 @@ func DataCloudflareMagicWanIpsecTunnel_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func DataCloudflareMagicWanIpsecTunnel_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareMagicWanIpsecTunnel_IsConstruct(x interface{}) *bool {
+func DataCloudflareMagicWanIpsecTunnel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareMagicWanIpsecTunnel_IsConstructParameters(x); err != nil {
@@ -439,7 +438,7 @@ func DataCloudflareMagicWanIpsecTunnel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func DataCloudflareMagicWanIpsecTunnel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareMagicWanIpsecTunnel_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareMagicWanIpsecTunnel_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareMagicWanIpsecTunnel_IsTerraformDataSourceParameters(x); err != nil {
@@ -458,7 +457,7 @@ func DataCloudflareMagicWanIpsecTunnel_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnel",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func DataCloudflareMagicWanIpsecTunnel_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataCloudflareMagicWanIpsecTunnel_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareMagicWanIpsecTunnel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareMagicWanIpsecTunnel_IsTerraformElementParameters(x); err != nil {
@@ -477,7 +476,7 @@ func DataCloudflareMagicWanIpsecTunnel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -495,27 +494,27 @@ func DataCloudflareMagicWanIpsecTunnel_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -685,8 +684,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -698,8 +697,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -711,8 +710,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -724,8 +723,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -750,8 +749,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -762,4 +761,3 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnel) ToTerraform() interface{} 
 
 	return returns
 }
-

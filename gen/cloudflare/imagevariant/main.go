@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariant",
-		reflect.TypeOf((*ImageVariant)(nil)).Elem(),
+		reflect.TypeFor[ImageVariant](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "variant", GoGetter: "Variant"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImageVariant{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantConfig",
-		reflect.TypeOf((*ImageVariantConfig)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantOptions",
-		reflect.TypeOf((*ImageVariantOptions)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference",
-		reflect.TypeOf((*ImageVariantOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
 			_jsii_.MemberProperty{JsiiProperty: "widthInput", GoGetter: "WidthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImageVariantOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,15 +120,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariant",
-		reflect.TypeOf((*ImageVariantVariant)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantVariant](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOptions",
-		reflect.TypeOf((*ImageVariantVariantOptions)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantVariantOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOptionsOutputReference",
-		reflect.TypeOf((*ImageVariantVariantOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantVariantOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImageVariantVariantOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOutputReference",
-		reflect.TypeOf((*ImageVariantVariantOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImageVariantVariantOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImageVariantVariantOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

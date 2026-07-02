@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclu
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference) validateSetAllParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference) validateSetAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclu
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclu
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeO
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package account
 
-
 type AccountSettings struct {
 	// Sets an abuse contact email to notify for abuse reports.
 	//
@@ -9,6 +8,5 @@ type AccountSettings struct {
 	// Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
-	EnforceTwofactor interface{} `field:"optional" json:"enforceTwofactor" yaml:"enforceTwofactor"`
+	EnforceTwofactor any `field:"optional" json:"enforceTwofactor" yaml:"enforceTwofactor"`
 }
-

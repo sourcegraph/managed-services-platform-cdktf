@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsEmailOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsEmailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsEmailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsEmailOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsEmailOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsEmailOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNotificationPolicyMechanismsEmailOutputReferenceParameters(terra
 
 	return nil
 }
-

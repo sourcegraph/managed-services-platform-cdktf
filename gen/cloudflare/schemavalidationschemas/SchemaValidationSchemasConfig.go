@@ -6,9 +6,9 @@ import (
 
 type SchemaValidationSchemasConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SchemaValidationSchemasConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The kind of the schema Available values: "openapi_v3".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
@@ -34,10 +34,9 @@ type SchemaValidationSchemasConfig struct {
 	// An indicator if this schema is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
-	ValidationEnabled interface{} `field:"required" json:"validationEnabled" yaml:"validationEnabled"`
+	ValidationEnabled any `field:"required" json:"validationEnabled" yaml:"validationEnabled"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
-

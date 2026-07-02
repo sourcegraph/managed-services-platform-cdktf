@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetInParam
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApiTokenConditionRequestIpOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

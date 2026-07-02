@@ -18,11 +18,11 @@ type DataCloudflareStreamLiveInput interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() *string
 	DeleteRecordingAfterDays() *float64
 	// Experimental.
@@ -53,7 +53,7 @@ type DataCloudflareStreamLiveInput interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Recording() DataCloudflareStreamLiveInputRecordingOutputReference
 	Rtmps() DataCloudflareStreamLiveInputRtmpsOutputReference
 	RtmpsPlayback() DataCloudflareStreamLiveInputRtmpsPlaybackOutputReference
@@ -63,16 +63,16 @@ type DataCloudflareStreamLiveInput interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
 	WebRtc() DataCloudflareStreamLiveInputWebRtcOutputReference
 	WebRtcPlayback() DataCloudflareStreamLiveInputWebRtcPlaybackOutputReference
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataCloudflareStreamLiveInput interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareStreamLiveInput
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -426,7 +426,6 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) WebRtcPlayback() DataCloudflar
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
 func NewDataCloudflareStreamLiveInput(scope constructs.Construct, id *string, config *DataCloudflareStreamLiveInputConfig) DataCloudflareStreamLiveInput {
 	_init_.Initialize()
@@ -438,7 +437,7 @@ func NewDataCloudflareStreamLiveInput(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -451,12 +450,12 @@ func NewDataCloudflareStreamLiveInput_Override(d DataCloudflareStreamLiveInput, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetLiveInputIdentifier(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetLiveInputIdentifier(val *string) {
 	if err := j.validateSetLiveInputIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetLiveInputIdentifier(val *str
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInput)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -536,7 +535,7 @@ func DataCloudflareStreamLiveInput_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func DataCloudflareStreamLiveInput_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareStreamLiveInput_IsConstruct(x interface{}) *bool {
+func DataCloudflareStreamLiveInput_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamLiveInput_IsConstructParameters(x); err != nil {
@@ -571,7 +570,7 @@ func DataCloudflareStreamLiveInput_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func DataCloudflareStreamLiveInput_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamLiveInput_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareStreamLiveInput_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamLiveInput_IsTerraformDataSourceParameters(x); err != nil {
@@ -590,7 +589,7 @@ func DataCloudflareStreamLiveInput_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func DataCloudflareStreamLiveInput_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamLiveInput_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareStreamLiveInput_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamLiveInput_IsTerraformElementParameters(x); err != nil {
@@ -609,7 +608,7 @@ func DataCloudflareStreamLiveInput_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,27 +626,27 @@ func DataCloudflareStreamLiveInput_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -843,8 +842,8 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -882,8 +881,8 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -894,4 +893,3 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToTerraform() interface{} {
 
 	return returns
 }
-

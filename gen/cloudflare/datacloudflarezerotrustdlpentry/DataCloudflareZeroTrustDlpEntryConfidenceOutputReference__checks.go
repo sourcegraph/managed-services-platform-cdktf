@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpEntryConfidenceOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntryConfidenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntryConfidenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustDlpEntryConfidenceOutputReferenceParamete
 
 	return nil
 }
-

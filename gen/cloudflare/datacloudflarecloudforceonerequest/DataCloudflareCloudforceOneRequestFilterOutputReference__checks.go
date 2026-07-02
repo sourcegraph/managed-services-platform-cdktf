@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -294,4 +294,3 @@ func validateNewDataCloudflareCloudforceOneRequestFilterOutputReferenceParameter
 
 	return nil
 }
-

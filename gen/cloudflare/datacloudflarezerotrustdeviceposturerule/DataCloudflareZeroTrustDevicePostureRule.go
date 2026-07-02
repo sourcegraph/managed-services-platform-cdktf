@@ -18,11 +18,11 @@ type DataCloudflareZeroTrustDevicePostureRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,7 +52,7 @@ type DataCloudflareZeroTrustDevicePostureRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuleId() *string
 	SetRuleId(val *string)
 	RuleIdInput() *string
@@ -60,14 +60,14 @@ type DataCloudflareZeroTrustDevicePostureRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataCloudflareZeroTrustDevicePostureRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRuleId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustDevicePostureRule
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -372,7 +372,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRule(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRuleConfig) DataCloudflareZeroTrustDevicePostureRule {
 	_init_.Initialize()
@@ -384,7 +383,7 @@ func NewDataCloudflareZeroTrustDevicePostureRule(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRule.DataCloudflareZeroTrustDevicePostureRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -397,12 +396,12 @@ func NewDataCloudflareZeroTrustDevicePostureRule_Override(d DataCloudflareZeroTr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRule.DataCloudflareZeroTrustDevicePostureRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,7 +412,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetAccountId(val *st
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule)SetRuleId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SetRuleId(val *string) {
 	if err := j.validateSetRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func DataCloudflareZeroTrustDevicePostureRule_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRule.DataCloudflareZeroTrustDevicePostureRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func DataCloudflareZeroTrustDevicePostureRule_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareZeroTrustDevicePostureRule_IsConstruct(x interface{}) *bool {
+func DataCloudflareZeroTrustDevicePostureRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDevicePostureRule_IsConstructParameters(x); err != nil {
@@ -517,7 +516,7 @@ func DataCloudflareZeroTrustDevicePostureRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRule.DataCloudflareZeroTrustDevicePostureRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func DataCloudflareZeroTrustDevicePostureRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDevicePostureRule_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareZeroTrustDevicePostureRule_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDevicePostureRule_IsTerraformDataSourceParameters(x); err != nil {
@@ -536,7 +535,7 @@ func DataCloudflareZeroTrustDevicePostureRule_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRule.DataCloudflareZeroTrustDevicePostureRule",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func DataCloudflareZeroTrustDevicePostureRule_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDevicePostureRule_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareZeroTrustDevicePostureRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDevicePostureRule_IsTerraformElementParameters(x); err != nil {
@@ -555,7 +554,7 @@ func DataCloudflareZeroTrustDevicePostureRule_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRule.DataCloudflareZeroTrustDevicePostureRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,27 +572,27 @@ func DataCloudflareZeroTrustDevicePostureRule_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -771,8 +770,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ResetRuleId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -784,8 +783,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -797,8 +796,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -810,8 +809,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -836,8 +835,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -848,4 +847,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ToTerraform() inter
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareCustomSslFilterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomSslFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataCloudflareCustomSslFilterOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomSslFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDataCloudflareCustomSslFilterOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationSchemas.DataCloudflareSchemaValidationSchemas",
-		reflect.TypeOf((*DataCloudflareSchemaValidationSchemas)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareSchemaValidationSchemas](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareSchemaValidationSchemas{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -71,15 +71,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationSchemas.DataCloudflareSchemaValidationSchemasConfig",
-		reflect.TypeOf((*DataCloudflareSchemaValidationSchemasConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareSchemaValidationSchemasConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationSchemas.DataCloudflareSchemaValidationSchemasFilter",
-		reflect.TypeOf((*DataCloudflareSchemaValidationSchemasFilter)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareSchemaValidationSchemasFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareSchemaValidationSchemas.DataCloudflareSchemaValidationSchemasFilterOutputReference",
-		reflect.TypeOf((*DataCloudflareSchemaValidationSchemasFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareSchemaValidationSchemasFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validationEnabled", GoGetter: "ValidationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "validationEnabledInput", GoGetter: "ValidationEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

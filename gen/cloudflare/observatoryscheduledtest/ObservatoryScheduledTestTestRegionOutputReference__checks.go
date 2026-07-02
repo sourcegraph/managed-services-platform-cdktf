@@ -98,7 +98,7 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewObservatoryScheduledTestTestRegionOutputReferenceParameters(terr
 
 	return nil
 }
-

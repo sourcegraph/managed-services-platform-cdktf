@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry",
-		reflect.TypeOf((*ZeroTrustDlpEntry)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDlpEntry](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "wordList", GoGetter: "WordList"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDlpEntry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,11 +82,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfidence",
-		reflect.TypeOf((*ZeroTrustDlpEntryConfidence)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDlpEntryConfidence](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfidenceOutputReference",
-		reflect.TypeOf((*ZeroTrustDlpEntryConfidenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDlpEntryConfidenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiContextAvailable", GoGetter: "AiContextAvailable"},
 			_jsii_.MemberProperty{JsiiProperty: "available", GoGetter: "Available"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDlpEntryConfidenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,15 +120,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig",
-		reflect.TypeOf((*ZeroTrustDlpEntryConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDlpEntryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern",
-		reflect.TypeOf((*ZeroTrustDlpEntryPattern)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDlpEntryPattern](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPatternOutputReference",
-		reflect.TypeOf((*ZeroTrustDlpEntryPatternOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDlpEntryPatternOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validation", GoGetter: "Validation"},
 			_jsii_.MemberProperty{JsiiProperty: "validationInput", GoGetter: "ValidationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDlpEntryPatternOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

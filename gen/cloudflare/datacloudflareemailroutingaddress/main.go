@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddress.DataCloudflareEmailRoutingAddress",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddress)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddress](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "verified", GoGetter: "Verified"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailRoutingAddress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,15 +68,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddress.DataCloudflareEmailRoutingAddressConfig",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddress.DataCloudflareEmailRoutingAddressFilter",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressFilter)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddress.DataCloudflareEmailRoutingAddressFilterOutputReference",
-		reflect.TypeOf((*DataCloudflareEmailRoutingAddressFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareEmailRoutingAddressFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verified", GoGetter: "Verified"},
 			_jsii_.MemberProperty{JsiiProperty: "verifiedInput", GoGetter: "VerifiedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareEmailRoutingAddressFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

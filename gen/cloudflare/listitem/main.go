@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.listItem.ListItem",
-		reflect.TypeOf((*ListItem)(nil)).Elem(),
+		reflect.TypeFor[ListItem](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ListItem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.listItem.ListItemConfig",
-		reflect.TypeOf((*ListItemConfig)(nil)).Elem(),
+		reflect.TypeFor[ListItemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.listItem.ListItemHostname",
-		reflect.TypeOf((*ListItemHostname)(nil)).Elem(),
+		reflect.TypeFor[ListItemHostname](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference",
-		reflect.TypeOf((*ListItemHostnameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ListItemHostnameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlHostname", GoGetter: "UrlHostname"},
 			_jsii_.MemberProperty{JsiiProperty: "urlHostnameInput", GoGetter: "UrlHostnameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ListItemHostnameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.listItem.ListItemRedirect",
-		reflect.TypeOf((*ListItemRedirect)(nil)).Elem(),
+		reflect.TypeFor[ListItemRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
-		reflect.TypeOf((*ListItemRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ListItemRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ListItemRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

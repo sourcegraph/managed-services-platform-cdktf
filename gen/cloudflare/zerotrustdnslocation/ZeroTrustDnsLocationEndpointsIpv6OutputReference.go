@@ -12,9 +12,9 @@ type ZeroTrustDnsLocationEndpointsIpv6OutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type ZeroTrustDnsLocationEndpointsIpv6OutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Networks() ZeroTrustDnsLocationEndpointsIpv6NetworksList
-	NetworksInput() interface{}
+	NetworksInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type ZeroTrustDnsLocationEndpointsIpv6OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type ZeroTrustDnsLocationEndpointsIpv6OutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNetworks(value interface{})
+	PutNetworks(value any)
 	ResetEnabled()
 	ResetNetworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Enabled() i
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Networks() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) NetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) NetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networksInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) TerraformRe
 	return returns
 }
 
-
 func NewZeroTrustDnsLocationEndpointsIpv6OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDnsLocationEndpointsIpv6OutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewZeroTrustDnsLocationEndpointsIpv6OutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewZeroTrustDnsLocationEndpointsIpv6OutputReference_Override(z ZeroTrustDns
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) ComputeFqn(
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetBooleanA
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetBooleanM
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetListAttr
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetNumberAt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetNumberLi
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetNumberMa
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetStringAt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) GetStringMa
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Interpolati
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) PutNetworks(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) PutNetworks(value any) {
 	if err := z.validatePutNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) ResetNetwor
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) ToString() 
 
 	return returns
 }
-

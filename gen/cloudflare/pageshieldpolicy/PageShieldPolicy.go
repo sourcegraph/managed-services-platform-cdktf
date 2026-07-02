@@ -18,15 +18,15 @@ type PageShieldPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,9 +34,9 @@ type PageShieldPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
@@ -60,15 +60,15 @@ type PageShieldPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -81,9 +81,9 @@ type PageShieldPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type PageShieldPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type PageShieldPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type PageShieldPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PageShieldPolicy
@@ -171,8 +171,8 @@ func (j *jsiiProxy_PageShieldPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageShieldPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_PageShieldPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PageShieldPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PageShieldPolicy) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageShieldPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_PageShieldPolicy) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageShieldPolicy) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_PageShieldPolicy) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageShieldPolicy) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_PageShieldPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PageShieldPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_PageShieldPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageShieldPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_PageShieldPolicy) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_PageShieldPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PageShieldPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -431,7 +431,6 @@ func (j *jsiiProxy_PageShieldPolicy) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
 func NewPageShieldPolicy(scope constructs.Construct, id *string, config *PageShieldPolicyConfig) PageShieldPolicy {
 	_init_.Initialize()
@@ -443,7 +442,7 @@ func NewPageShieldPolicy(scope constructs.Construct, id *string, config *PageShi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -456,12 +455,12 @@ func NewPageShieldPolicy_Override(p PageShieldPolicy, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetAction(val *string) {
+func (j *jsiiProxy_PageShieldPolicy) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_PageShieldPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_PageShieldPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PageShieldPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_PageShieldPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetEnabled(val interface{}) {
+func (j *jsiiProxy_PageShieldPolicy) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetExpression(val *string) {
+func (j *jsiiProxy_PageShieldPolicy) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PageShieldPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PageShieldPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PageShieldPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PageShieldPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetValue(val *string) {
+func (j *jsiiProxy_PageShieldPolicy) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_PageShieldPolicy)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageShieldPolicy)SetZoneId(val *string) {
+func (j *jsiiProxy_PageShieldPolicy) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func PageShieldPolicy_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func PageShieldPolicy_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PageShieldPolicy_IsConstruct(x interface{}) *bool {
+func PageShieldPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePageShieldPolicy_IsConstructParameters(x); err != nil {
@@ -642,7 +641,7 @@ func PageShieldPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func PageShieldPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PageShieldPolicy_IsTerraformElement(x interface{}) *bool {
+func PageShieldPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePageShieldPolicy_IsTerraformElementParameters(x); err != nil {
@@ -661,7 +660,7 @@ func PageShieldPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func PageShieldPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PageShieldPolicy_IsTerraformResource(x interface{}) *bool {
+func PageShieldPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePageShieldPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -680,7 +679,7 @@ func PageShieldPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -705,31 +704,31 @@ func (p *jsiiProxy_PageShieldPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PageShieldPolicy) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PageShieldPolicy) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PageShieldPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PageShieldPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (p *jsiiProxy_PageShieldPolicy) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,15 +856,15 @@ func (p *jsiiProxy_PageShieldPolicy) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PageShieldPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageShieldPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -884,7 +883,7 @@ func (p *jsiiProxy_PageShieldPolicy) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -897,7 +896,7 @@ func (p *jsiiProxy_PageShieldPolicy) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,18 +910,18 @@ func (p *jsiiProxy_PageShieldPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PageShieldPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PageShieldPolicy) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -933,7 +932,7 @@ func (p *jsiiProxy_PageShieldPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -944,7 +943,7 @@ func (p *jsiiProxy_PageShieldPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -956,8 +955,8 @@ func (p *jsiiProxy_PageShieldPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_PageShieldPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PageShieldPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -969,8 +968,8 @@ func (p *jsiiProxy_PageShieldPolicy) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (p *jsiiProxy_PageShieldPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PageShieldPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -982,8 +981,8 @@ func (p *jsiiProxy_PageShieldPolicy) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (p *jsiiProxy_PageShieldPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageShieldPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -995,8 +994,8 @@ func (p *jsiiProxy_PageShieldPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PageShieldPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageShieldPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1021,8 +1020,8 @@ func (p *jsiiProxy_PageShieldPolicy) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PageShieldPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageShieldPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1033,4 +1032,3 @@ func (p *jsiiProxy_PageShieldPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

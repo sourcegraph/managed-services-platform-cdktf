@@ -15,11 +15,11 @@ type DataCloudflareRegionalHostname interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -48,22 +48,22 @@ type DataCloudflareRegionalHostname interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegionKey() *string
 	Routing() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataCloudflareRegionalHostname interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareRegionalHostname
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareRegionalHostname) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareRegionalHostname) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareRegionalHostname) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareRegionalHostname) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -328,7 +328,6 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/regional_hostname cloudflare_regional_hostname} Data Source.
 func NewDataCloudflareRegionalHostname(scope constructs.Construct, id *string, config *DataCloudflareRegionalHostnameConfig) DataCloudflareRegionalHostname {
 	_init_.Initialize()
@@ -340,7 +339,7 @@ func NewDataCloudflareRegionalHostname(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -353,12 +352,12 @@ func NewDataCloudflareRegionalHostname_Override(d DataCloudflareRegionalHostname
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetHostname(val *string) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegionalHostname)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareRegionalHostname) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func DataCloudflareRegionalHostname_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func DataCloudflareRegionalHostname_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareRegionalHostname_IsConstruct(x interface{}) *bool {
+func DataCloudflareRegionalHostname_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareRegionalHostname_IsConstructParameters(x); err != nil {
@@ -473,7 +472,7 @@ func DataCloudflareRegionalHostname_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func DataCloudflareRegionalHostname_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareRegionalHostname_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareRegionalHostname_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareRegionalHostname_IsTerraformDataSourceParameters(x); err != nil {
@@ -492,7 +491,7 @@ func DataCloudflareRegionalHostname_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func DataCloudflareRegionalHostname_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareRegionalHostname_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareRegionalHostname_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareRegionalHostname_IsTerraformElementParameters(x); err != nil {
@@ -511,7 +510,7 @@ func DataCloudflareRegionalHostname_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,27 +528,27 @@ func DataCloudflareRegionalHostname_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareRegionalHostname) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareRegionalHostname) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -727,8 +726,8 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareRegionalHostname) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -740,8 +739,8 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareRegionalHostname) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -753,8 +752,8 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareRegionalHostname) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -766,8 +765,8 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareRegionalHostname) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -792,8 +791,8 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostname) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareRegionalHostname) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -804,4 +803,3 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) ToTerraform() interface{} {
 
 	return returns
 }
-

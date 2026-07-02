@@ -14,9 +14,9 @@ type DataCloudflareCustomHostnamesResultSslOutputReference interface {
 	CertificateAuthority() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,7 +59,7 @@ type DataCloudflareCustomHostnamesResultSslOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type DataCloudflareCustomHostnamesResultSslOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Certif
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -355,7 +355,6 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Wildca
 	return returns
 }
 
-
 func NewDataCloudflareCustomHostnamesResultSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomHostnamesResultSslOutputReference {
 	_init_.Initialize()
 
@@ -366,7 +365,7 @@ func NewDataCloudflareCustomHostnamesResultSslOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewDataCloudflareCustomHostnamesResultSslOutputReference_Override(d DataClo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetInternalValue(val *DataCloudflareCustomHostnamesResultSsl) {
+func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) SetInternalValue(val *DataCloudflareCustomHostnamesResultSsl) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Comput
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetLis
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,23 +616,23 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Interp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -652,4 +651,3 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) ToStri
 
 	return returns
 }
-

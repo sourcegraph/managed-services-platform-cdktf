@@ -18,15 +18,15 @@ type MagicNetworkMonitoringConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultSampling() *float64
 	SetDefaultSampling(val *float64)
 	DefaultSamplingInput() *float64
@@ -56,29 +56,29 @@ type MagicNetworkMonitoringConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RouterIps() *[]*string
 	SetRouterIps(val *[]*string)
 	RouterIpsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WarpDevices() MagicNetworkMonitoringConfigurationWarpDevicesList
-	WarpDevicesInput() interface{}
+	WarpDevicesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type MagicNetworkMonitoringConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,31 +108,31 @@ type MagicNetworkMonitoringConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutWarpDevices(value interface{})
+	PutWarpDevices(value any)
 	ResetDefaultSampling()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRouterIps()
 	ResetWarpDevices()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MagicNetworkMonitoringConfiguration
@@ -170,8 +170,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) WarpDevices() MagicNetwo
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) WarpDevicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) WarpDevicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"warpDevicesInput",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) WarpDevicesInput() inter
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Resource.
 func NewMagicNetworkMonitoringConfiguration(scope constructs.Construct, id *string, config *MagicNetworkMonitoringConfigurationConfig) MagicNetworkMonitoringConfiguration {
@@ -412,7 +411,7 @@ func NewMagicNetworkMonitoringConfiguration(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewMagicNetworkMonitoringConfiguration_Override(m MagicNetworkMonitoringCon
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetAccountId(val *string) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetAccountId(val *string)
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetDefaultSampling(val *float64) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetDefaultSampling(val *float64) {
 	if err := j.validateSetDefaultSamplingParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetDefaultSampling(val *f
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetName(val *string) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfiguration)SetRouterIps(val *[]*string) {
+func (j *jsiiProxy_MagicNetworkMonitoringConfiguration) SetRouterIps(val *[]*string) {
 	if err := j.validateSetRouterIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func MagicNetworkMonitoringConfiguration_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func MagicNetworkMonitoringConfiguration_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MagicNetworkMonitoringConfiguration_IsConstruct(x interface{}) *bool {
+func MagicNetworkMonitoringConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicNetworkMonitoringConfiguration_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func MagicNetworkMonitoringConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func MagicNetworkMonitoringConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicNetworkMonitoringConfiguration_IsTerraformElement(x interface{}) *bool {
+func MagicNetworkMonitoringConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicNetworkMonitoringConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func MagicNetworkMonitoringConfiguration_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func MagicNetworkMonitoringConfiguration_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func MagicNetworkMonitoringConfiguration_IsTerraformResource(x interface{}) *bool {
+func MagicNetworkMonitoringConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicNetworkMonitoringConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func MagicNetworkMonitoringConfiguration_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicNetworkMonitoringConfiguration.MagicNetworkMonitoringConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,31 +651,31 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetStringAttribute(terra
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,15 +803,15 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -831,7 +830,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -844,7 +843,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) InterpolationForAttribut
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,18 +857,18 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -880,7 +879,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -891,18 +890,18 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) PutWarpDevices(value interface{}) {
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) PutWarpDevices(value any) {
 	if err := m.validatePutWarpDevicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putWarpDevices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,8 +937,8 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ResetWarpDevices() {
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -951,8 +950,8 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) SynthesizeAttributes() *
 	return returns
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -964,8 +963,8 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) SynthesizeHclAttributes(
 	return returns
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -977,8 +976,8 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToHclTerraform() interfa
 	return returns
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1003,8 +1002,8 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1015,4 +1014,3 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) ToTerraform() interface{
 
 	return returns
 }
-

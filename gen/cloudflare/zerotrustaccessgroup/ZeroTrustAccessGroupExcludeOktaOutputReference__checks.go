@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustAccessGroupExcludeOktaOutputReferenceParameters(terrafo
 
 	return nil
 }
-

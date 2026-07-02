@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference
 
 	return nil
 }
-

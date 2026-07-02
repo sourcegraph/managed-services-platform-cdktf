@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsTransferredClassesList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsTransferredClassesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsTransferredClassesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkersScriptMigrationsTransferredClassesListParameters(terrafor
 
 	return nil
 }
-

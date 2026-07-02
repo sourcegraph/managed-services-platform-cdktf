@@ -15,15 +15,15 @@ type ManagedTransforms interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,9 +42,9 @@ type ManagedTransforms interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ManagedRequestHeaders() ManagedTransformsManagedRequestHeadersList
-	ManagedRequestHeadersInput() interface{}
+	ManagedRequestHeadersInput() any
 	ManagedResponseHeaders() ManagedTransformsManagedResponseHeadersList
-	ManagedResponseHeadersInput() interface{}
+	ManagedResponseHeadersInput() any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -52,15 +52,15 @@ type ManagedTransforms interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -70,9 +70,9 @@ type ManagedTransforms interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type ManagedTransforms interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,29 +102,29 @@ type ManagedTransforms interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutManagedRequestHeaders(value interface{})
-	PutManagedResponseHeaders(value interface{})
+	PutManagedRequestHeaders(value any)
+	PutManagedResponseHeaders(value any)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ManagedTransforms
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ManagedTransforms) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedTransforms) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ManagedTransforms) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ManagedTransforms) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ManagedTransforms) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedTransforms) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ManagedTransforms) ManagedRequestHeaders() ManagedTransformsM
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) ManagedRequestHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedTransforms) ManagedRequestHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedRequestHeadersInput",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_ManagedTransforms) ManagedResponseHeaders() ManagedTransforms
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) ManagedResponseHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedTransforms) ManagedResponseHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedResponseHeadersInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_ManagedTransforms) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ManagedTransforms) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_ManagedTransforms) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedTransforms) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_ManagedTransforms) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransforms) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ManagedTransforms) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_ManagedTransforms) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms(scope constructs.Construct, id *string, config *ManagedTransformsConfig) ManagedTransforms {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewManagedTransforms(scope constructs.Construct, id *string, config *Manage
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewManagedTransforms_Override(m ManagedTransforms, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetConnection(val interface{}) {
+func (j *jsiiProxy_ManagedTransforms) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_ManagedTransforms)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetCount(val interface{}) {
+func (j *jsiiProxy_ManagedTransforms) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_ManagedTransforms)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ManagedTransforms) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_ManagedTransforms)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ManagedTransforms) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -430,7 +429,7 @@ func (j *jsiiProxy_ManagedTransforms)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ManagedTransforms) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ManagedTransforms)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ManagedTransforms) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ManagedTransforms)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ManagedTransforms) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ManagedTransforms)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedTransforms)SetZoneId(val *string) {
+func (j *jsiiProxy_ManagedTransforms) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func ManagedTransforms_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func ManagedTransforms_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ManagedTransforms_IsConstruct(x interface{}) *bool {
+func ManagedTransforms_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManagedTransforms_IsConstructParameters(x); err != nil {
@@ -518,7 +517,7 @@ func ManagedTransforms_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func ManagedTransforms_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ManagedTransforms_IsTerraformElement(x interface{}) *bool {
+func ManagedTransforms_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManagedTransforms_IsTerraformElementParameters(x); err != nil {
@@ -537,7 +536,7 @@ func ManagedTransforms_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func ManagedTransforms_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ManagedTransforms_IsTerraformResource(x interface{}) *bool {
+func ManagedTransforms_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManagedTransforms_IsTerraformResourceParameters(x); err != nil {
@@ -556,7 +555,7 @@ func ManagedTransforms_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,31 +580,31 @@ func (m *jsiiProxy_ManagedTransforms) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_ManagedTransforms) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_ManagedTransforms) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_ManagedTransforms) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ManagedTransforms) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (m *jsiiProxy_ManagedTransforms) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (m *jsiiProxy_ManagedTransforms) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (m *jsiiProxy_ManagedTransforms) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (m *jsiiProxy_ManagedTransforms) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (m *jsiiProxy_ManagedTransforms) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (m *jsiiProxy_ManagedTransforms) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (m *jsiiProxy_ManagedTransforms) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,15 +732,15 @@ func (m *jsiiProxy_ManagedTransforms) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransforms) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedTransforms) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -760,7 +759,7 @@ func (m *jsiiProxy_ManagedTransforms) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -773,7 +772,7 @@ func (m *jsiiProxy_ManagedTransforms) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,18 +786,18 @@ func (m *jsiiProxy_ManagedTransforms) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_ManagedTransforms) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_ManagedTransforms) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -809,7 +808,7 @@ func (m *jsiiProxy_ManagedTransforms) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -820,29 +819,29 @@ func (m *jsiiProxy_ManagedTransforms) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (m *jsiiProxy_ManagedTransforms) PutManagedRequestHeaders(value interface{}) {
+func (m *jsiiProxy_ManagedTransforms) PutManagedRequestHeaders(value any) {
 	if err := m.validatePutManagedRequestHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putManagedRequestHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_ManagedTransforms) PutManagedResponseHeaders(value interface{}) {
+func (m *jsiiProxy_ManagedTransforms) PutManagedResponseHeaders(value any) {
 	if err := m.validatePutManagedResponseHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putManagedResponseHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -854,8 +853,8 @@ func (m *jsiiProxy_ManagedTransforms) ResetOverrideLogicalId() {
 	)
 }
 
-func (m *jsiiProxy_ManagedTransforms) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ManagedTransforms) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -867,8 +866,8 @@ func (m *jsiiProxy_ManagedTransforms) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransforms) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ManagedTransforms) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -880,8 +879,8 @@ func (m *jsiiProxy_ManagedTransforms) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransforms) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedTransforms) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -893,8 +892,8 @@ func (m *jsiiProxy_ManagedTransforms) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransforms) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedTransforms) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -919,8 +918,8 @@ func (m *jsiiProxy_ManagedTransforms) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransforms) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedTransforms) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -931,4 +930,3 @@ func (m *jsiiProxy_ManagedTransforms) ToTerraform() interface{} {
 
 	return returns
 }
-

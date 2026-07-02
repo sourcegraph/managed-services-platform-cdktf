@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6NetworksList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6NetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6NetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustDnsLocationEndpointsIpv6NetworksListParameters(terrafor
 
 	return nil
 }
-

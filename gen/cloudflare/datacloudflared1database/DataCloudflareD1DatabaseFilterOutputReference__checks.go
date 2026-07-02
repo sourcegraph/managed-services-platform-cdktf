@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataCloudflareD1DatabaseFilterOutputReferenceParameters(terrafor
 
 	return nil
 }
-

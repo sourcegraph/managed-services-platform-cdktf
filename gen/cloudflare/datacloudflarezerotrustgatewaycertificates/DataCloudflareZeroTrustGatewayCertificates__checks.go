@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCertificates) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCertificates) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustGatewayCertificates_GenerateConfigForImportP
 	return nil
 }
 
-func validateDataCloudflareZeroTrustGatewayCertificates_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustGatewayCertificates_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustGatewayCertificates_IsConstructParameters(x 
 	return nil
 }
 
-func validateDataCloudflareZeroTrustGatewayCertificates_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustGatewayCertificates_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustGatewayCertificates_IsTerraformDataSourcePar
 	return nil
 }
 
-func validateDataCloudflareZeroTrustGatewayCertificates_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustGatewayCertificates_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCertificates) validateSetAccoun
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCertificates) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCertificates) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareZeroTrustGatewayCertificatesParameters(scope const
 
 	return nil
 }
-

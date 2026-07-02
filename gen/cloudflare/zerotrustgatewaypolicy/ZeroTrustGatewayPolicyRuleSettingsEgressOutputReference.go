@@ -12,9 +12,9 @@ type ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv4() *string
 	SetIpv4(val *string)
 	Ipv4Fallback() *string
@@ -49,7 +49,7 @@ type ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference interface {
 	ResetIpv6()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Terr
 	return returns
 }
 
-
 func NewZeroTrustGatewayPolicyRuleSettingsEgressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsEgressOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewZeroTrustGatewayPolicyRuleSettingsEgressOutputReference_Override(z ZeroT
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIpv4(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetIpv4(val *string) {
 	if err := j.validateSetIpv4Parameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIpv4Fallback(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetIpv4Fallback(val *string) {
 	if err := j.validateSetIpv4FallbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIpv6(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetIpv6(val *string) {
 	if err := j.validateSetIpv6Parameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetIp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Comp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetB
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetL
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetN
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) GetS
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Inte
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Rese
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) ToSt
 
 	return returns
 }
-

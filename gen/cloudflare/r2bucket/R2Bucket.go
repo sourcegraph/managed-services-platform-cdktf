@@ -18,15 +18,15 @@ type R2Bucket interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -61,27 +61,27 @@ type R2Bucket interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type R2Bucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type R2Bucket interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type R2Bucket interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStorageClass()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for R2Bucket
@@ -172,8 +172,8 @@ func (j *jsiiProxy_R2Bucket) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_R2Bucket) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2Bucket) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_R2Bucket) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_R2Bucket) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_R2Bucket) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_R2Bucket) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_R2Bucket) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2Bucket) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_R2Bucket) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_R2Bucket) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_R2Bucket) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_R2Bucket) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_R2Bucket) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2Bucket) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_R2Bucket) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_R2Bucket) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_R2Bucket) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -422,7 +422,6 @@ func (j *jsiiProxy_R2Bucket) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig) R2Bucket {
 	_init_.Initialize()
@@ -434,7 +433,7 @@ func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2Bucket.R2Bucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -447,12 +446,12 @@ func NewR2Bucket_Override(r R2Bucket, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2Bucket.R2Bucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetAccountId(val *string) {
+func (j *jsiiProxy_R2Bucket) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_R2Bucket)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetConnection(val interface{}) {
+func (j *jsiiProxy_R2Bucket) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_R2Bucket)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetCount(val interface{}) {
+func (j *jsiiProxy_R2Bucket) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_R2Bucket)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_R2Bucket) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_R2Bucket)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_R2Bucket) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_R2Bucket)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetJurisdiction(val *string) {
+func (j *jsiiProxy_R2Bucket) SetJurisdiction(val *string) {
 	if err := j.validateSetJurisdictionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_R2Bucket)SetJurisdiction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_R2Bucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_R2Bucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetLocation(val *string) {
+func (j *jsiiProxy_R2Bucket) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_R2Bucket)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetName(val *string) {
+func (j *jsiiProxy_R2Bucket) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_R2Bucket)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_R2Bucket) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_R2Bucket)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_R2Bucket) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_R2Bucket)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_R2Bucket)SetStorageClass(val *string) {
+func (j *jsiiProxy_R2Bucket) SetStorageClass(val *string) {
 	if err := j.validateSetStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func R2Bucket_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.r2Bucket.R2Bucket",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func R2Bucket_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func R2Bucket_IsConstruct(x interface{}) *bool {
+func R2Bucket_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateR2Bucket_IsConstructParameters(x); err != nil {
@@ -622,7 +621,7 @@ func R2Bucket_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.r2Bucket.R2Bucket",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func R2Bucket_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func R2Bucket_IsTerraformElement(x interface{}) *bool {
+func R2Bucket_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateR2Bucket_IsTerraformElementParameters(x); err != nil {
@@ -641,7 +640,7 @@ func R2Bucket_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.r2Bucket.R2Bucket",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func R2Bucket_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func R2Bucket_IsTerraformResource(x interface{}) *bool {
+func R2Bucket_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateR2Bucket_IsTerraformResourceParameters(x); err != nil {
@@ -660,7 +659,7 @@ func R2Bucket_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.r2Bucket.R2Bucket",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,31 +684,31 @@ func (r *jsiiProxy_R2Bucket) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_R2Bucket) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_R2Bucket) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_R2Bucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2Bucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (r *jsiiProxy_R2Bucket) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (r *jsiiProxy_R2Bucket) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (r *jsiiProxy_R2Bucket) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (r *jsiiProxy_R2Bucket) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (r *jsiiProxy_R2Bucket) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (r *jsiiProxy_R2Bucket) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (r *jsiiProxy_R2Bucket) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,15 +836,15 @@ func (r *jsiiProxy_R2Bucket) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_R2Bucket) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_R2Bucket) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -864,7 +863,7 @@ func (r *jsiiProxy_R2Bucket) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -877,7 +876,7 @@ func (r *jsiiProxy_R2Bucket) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,18 +890,18 @@ func (r *jsiiProxy_R2Bucket) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_R2Bucket) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_R2Bucket) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -913,7 +912,7 @@ func (r *jsiiProxy_R2Bucket) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -924,7 +923,7 @@ func (r *jsiiProxy_R2Bucket) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -960,8 +959,8 @@ func (r *jsiiProxy_R2Bucket) ResetStorageClass() {
 	)
 }
 
-func (r *jsiiProxy_R2Bucket) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_R2Bucket) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -973,8 +972,8 @@ func (r *jsiiProxy_R2Bucket) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_R2Bucket) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_R2Bucket) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -986,8 +985,8 @@ func (r *jsiiProxy_R2Bucket) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_R2Bucket) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_R2Bucket) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -999,8 +998,8 @@ func (r *jsiiProxy_R2Bucket) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_R2Bucket) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_R2Bucket) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1025,8 +1024,8 @@ func (r *jsiiProxy_R2Bucket) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_R2Bucket) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_R2Bucket) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1037,4 +1036,3 @@ func (r *jsiiProxy_R2Bucket) ToTerraform() interface{} {
 
 	return returns
 }
-

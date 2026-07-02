@@ -15,9 +15,9 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 	AuthMethodInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) AuthMet
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Terrafo
 	return returns
 }
 
-
 func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAuthMethodOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference_Override(z ZeroTrus
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetAuthMethod(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) SetAuthMethod(val *string) {
 	if err := j.validateSetAuthMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetAuthM
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Compute
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetBool
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetBool
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetList
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetNumb
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetNumb
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetNumb
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetStri
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetStri
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Interpo
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) ToStrin
 
 	return returns
 }
-

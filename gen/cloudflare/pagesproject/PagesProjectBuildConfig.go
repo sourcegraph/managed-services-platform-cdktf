@@ -1,11 +1,10 @@
 package pagesproject
 
-
 type PagesProjectBuildConfig struct {
 	// Enable build caching for the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#build_caching PagesProject#build_caching}
-	BuildCaching interface{} `field:"optional" json:"buildCaching" yaml:"buildCaching"`
+	BuildCaching any `field:"optional" json:"buildCaching" yaml:"buildCaching"`
 	// Command used to build project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#build_command PagesProject#build_command}
@@ -27,4 +26,3 @@ type PagesProjectBuildConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
 	WebAnalyticsToken *string `field:"optional" json:"webAnalyticsToken" yaml:"webAnalyticsToken"`
 }
-

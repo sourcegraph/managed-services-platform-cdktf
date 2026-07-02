@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareAccountRolePermissionsDnsRecordsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRolePermissionsDnsRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountRolePermissionsDnsRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareAccountRolePermissionsDnsRecordsOutputReferencePar
 
 	return nil
 }
-

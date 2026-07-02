@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
-		reflect.TypeOf((*FirewallRule)(nil)).Elem(),
+		reflect.TypeFor[FirewallRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirewallRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleAction",
-		reflect.TypeOf((*FirewallRuleAction)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionOutputReference",
-		reflect.TypeOf((*FirewallRuleActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirewallRuleActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,11 +121,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionResponse",
-		reflect.TypeOf((*FirewallRuleActionResponse)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleActionResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionResponseOutputReference",
-		reflect.TypeOf((*FirewallRuleActionResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleActionResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirewallRuleActionResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,15 +163,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig",
-		reflect.TypeOf((*FirewallRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleFilter",
-		reflect.TypeOf((*FirewallRuleFilter)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleFilterOutputReference",
-		reflect.TypeOf((*FirewallRuleFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirewallRuleFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirewallRuleFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

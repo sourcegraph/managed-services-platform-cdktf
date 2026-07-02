@@ -6,9 +6,9 @@ import (
 
 type DnsRecordConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DnsRecordConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// DNS record name (or @ for the zone apex) in Punycode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_record#name DnsRecord#name}
@@ -58,7 +58,7 @@ type DnsRecordConfig struct {
 	// Whether the record is receiving the performance and security benefits of Cloudflare.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_record#proxied DnsRecord#proxied}
-	Proxied interface{} `field:"optional" json:"proxied" yaml:"proxied"`
+	Proxied any `field:"optional" json:"proxied" yaml:"proxied"`
 	// Settings for the DNS record.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_record#settings DnsRecord#settings}
@@ -68,4 +68,3 @@ type DnsRecordConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_record#tags DnsRecord#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

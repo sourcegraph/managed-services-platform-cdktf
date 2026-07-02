@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupExcludeAuthMethodOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupExcludeAuthMethodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupExcludeAuthMethodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustAccessGroupExcludeAuthMethodOutputReferen
 
 	return nil
 }
-

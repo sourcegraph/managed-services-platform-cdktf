@@ -18,11 +18,11 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,20 +49,20 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetScope()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareAccountApiTokenPermissionGroups
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) CdktfStack() c
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Provider() cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformGener
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -308,7 +308,6 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformResou
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) DataCloudflareAccountApiTokenPermissionGroups {
 	_init_.Initialize()
@@ -320,7 +319,7 @@ func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -333,12 +332,12 @@ func NewDataCloudflareAccountApiTokenPermissionGroups_Override(d DataCloudflareA
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetAccountId(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetCount(val in
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -368,7 +367,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetDependsOn(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -376,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetForEach(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetLifecycle(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetName(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetName(val *st
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetProvider(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetScope(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_GenerateConfigForImport(scope
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_GenerateConfigForImport(scope
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareAccountApiTokenPermissionGroups_IsConstruct(x interface{}) *bool {
+func DataCloudflareAccountApiTokenPermissionGroups_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountApiTokenPermissionGroups_IsConstructParameters(x); err != nil {
@@ -464,7 +463,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_IsConstruct(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_IsConstruct(x interface{}) *b
 }
 
 // Experimental.
-func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountApiTokenPermissionGroups_IsTerraformDataSourceParameters(x); err != nil {
@@ -483,7 +482,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformDataSource(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformDataSource(x inter
 }
 
 // Experimental.
-func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountApiTokenPermissionGroups_IsTerraformElementParameters(x); err != nil {
@@ -502,7 +501,7 @@ func DataCloudflareAccountApiTokenPermissionGroups_IsTerraformElement(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -520,27 +519,27 @@ func DataCloudflareAccountApiTokenPermissionGroups_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetBooleanAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetBooleanMapA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetListAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetNumberAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetNumberListA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetNumberMapAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetStringAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) GetStringMapAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) InterpolationF
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) OverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -726,8 +725,8 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ResetScope() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -739,8 +738,8 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SynthesizeAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -752,8 +751,8 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) SynthesizeHclA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -765,8 +764,8 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToHclTerraform
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToString() *st
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -803,4 +802,3 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ToTerraform() 
 
 	return returns
 }
-

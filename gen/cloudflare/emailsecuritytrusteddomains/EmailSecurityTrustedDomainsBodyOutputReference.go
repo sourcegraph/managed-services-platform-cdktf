@@ -15,9 +15,9 @@ type EmailSecurityTrustedDomainsBodyOutputReference interface {
 	CommentsInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,17 +30,17 @@ type EmailSecurityTrustedDomainsBodyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsRecent() interface{}
-	SetIsRecent(val interface{})
-	IsRecentInput() interface{}
-	IsRegex() interface{}
-	SetIsRegex(val interface{})
-	IsRegexInput() interface{}
-	IsSimilarity() interface{}
-	SetIsSimilarity(val interface{})
-	IsSimilarityInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsRecent() any
+	SetIsRecent(val any)
+	IsRecentInput() any
+	IsRegex() any
+	SetIsRegex(val any)
+	IsRegexInput() any
+	IsSimilarity() any
+	SetIsSimilarity(val any)
+	IsSimilarityInput() any
 	Pattern() *string
 	SetPattern(val *string)
 	PatternInput() *string
@@ -55,7 +55,7 @@ type EmailSecurityTrustedDomainsBodyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type EmailSecurityTrustedDomainsBodyOutputReference interface {
 	ResetComments()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) CommentsInput
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) InternalValue
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRecent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRecent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRecent",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRecent() in
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRecentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRecentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRecentInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRecentInput
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRegex",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRegex() int
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRegexInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsRegexInput(
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsSimilarity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsSimilarity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSimilarity",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsSimilarity(
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsSimilarityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) IsSimilarityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSimilarityInput",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewEmailSecurityTrustedDomainsBodyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmailSecurityTrustedDomainsBodyOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewEmailSecurityTrustedDomainsBodyOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewEmailSecurityTrustedDomainsBodyOutputReference_Override(e EmailSecurityT
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetComments(val *string) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetComments(val *string) {
 	if err := j.validateSetCommentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetComments(va
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetIsRecent(val interface{}) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetIsRecent(val any) {
 	if err := j.validateSetIsRecentParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetIsRecent(va
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetIsRegex(val interface{}) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetIsRegex(val any) {
 	if err := j.validateSetIsRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetIsRegex(val
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetIsSimilarity(val interface{}) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetIsSimilarity(val any) {
 	if err := j.validateSetIsSimilarityParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetIsSimilarit
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetPattern(val *string) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetPattern(val
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetNumberList
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) Interpolation
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) ResetComments
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) ToString() *s
 
 	return returns
 }
-

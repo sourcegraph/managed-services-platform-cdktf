@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBi
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,4 +202,3 @@ func validateNewDataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindi
 
 	return nil
 }
-

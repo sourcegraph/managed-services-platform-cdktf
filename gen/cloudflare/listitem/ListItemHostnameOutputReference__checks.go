@@ -98,7 +98,7 @@ func (l *jsiiProxy_ListItemHostnameOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewListItemHostnameOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

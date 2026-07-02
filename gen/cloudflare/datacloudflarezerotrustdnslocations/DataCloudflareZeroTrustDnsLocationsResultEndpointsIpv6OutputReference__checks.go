@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultEndpointsIpv6OutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultEndpointsIpv6OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultEndpointsIpv6OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZeroTrustDnsLocationsResultEndpointsIpv6OutputRefe
 
 	return nil
 }
-

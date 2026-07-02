@@ -1,6 +1,5 @@
 package zerotrustaccessapplication
 
-
 type ZeroTrustAccessApplicationSaasAppCustomAttributes struct {
 	// The SAML FriendlyName of the attribute.
 	//
@@ -17,8 +16,7 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributes struct {
 	// If the attribute is required when building a SAML assertion.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#required ZeroTrustAccessApplication#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#source ZeroTrustAccessApplication#source}.
 	Source *ZeroTrustAccessApplicationSaasAppCustomAttributesSource `field:"optional" json:"source" yaml:"source"`
 }
-

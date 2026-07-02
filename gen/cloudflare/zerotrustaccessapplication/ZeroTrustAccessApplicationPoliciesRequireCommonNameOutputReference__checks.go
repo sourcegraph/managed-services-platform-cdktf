@@ -106,7 +106,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReferen
 
 	return nil
 }
-

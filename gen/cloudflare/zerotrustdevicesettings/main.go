@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings",
-		reflect.TypeOf((*ZeroTrustDeviceSettings)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDeviceSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useZtVirtualIp", GoGetter: "UseZtVirtualIp"},
 			_jsii_.MemberProperty{JsiiProperty: "useZtVirtualIpInput", GoGetter: "UseZtVirtualIpInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDeviceSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig",
-		reflect.TypeOf((*ZeroTrustDeviceSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDeviceSettingsConfig](),
 	)
 }

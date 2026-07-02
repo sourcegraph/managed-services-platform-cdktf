@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetColumnsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetColumnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpDatasetColumnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewZeroTrustDlpDatasetColumnsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

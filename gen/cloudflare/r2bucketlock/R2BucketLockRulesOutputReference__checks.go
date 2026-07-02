@@ -109,7 +109,7 @@ func (r *jsiiProxy_R2BucketLockRulesOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLockRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewR2BucketLockRulesOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

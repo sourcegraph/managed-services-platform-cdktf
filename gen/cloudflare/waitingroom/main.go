@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoom",
-		reflect.TypeOf((*WaitingRoom)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoom](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalRoutes", GoGetter: "AdditionalRoutes"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalRoutesInput", GoGetter: "AdditionalRoutesInput"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WaitingRoom{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutes",
-		reflect.TypeOf((*WaitingRoomAdditionalRoutes)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomAdditionalRoutes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesList",
-		reflect.TypeOf((*WaitingRoomAdditionalRoutesList)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomAdditionalRoutesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WaitingRoomAdditionalRoutesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesOutputReference",
-		reflect.TypeOf((*WaitingRoomAdditionalRoutesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomAdditionalRoutesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WaitingRoomAdditionalRoutesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,15 +193,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig",
-		reflect.TypeOf((*WaitingRoomConfig)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributes",
-		reflect.TypeOf((*WaitingRoomCookieAttributes)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomCookieAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributesOutputReference",
-		reflect.TypeOf((*WaitingRoomCookieAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomCookieAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WaitingRoomCookieAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

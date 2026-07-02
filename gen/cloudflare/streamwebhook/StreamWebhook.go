@@ -18,15 +18,15 @@ type StreamWebhook interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,24 +53,24 @@ type StreamWebhook interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type StreamWebhook interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type StreamWebhook interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -110,17 +110,17 @@ type StreamWebhook interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StreamWebhook
@@ -158,8 +158,8 @@ func (j *jsiiProxy_StreamWebhook) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWebhook) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamWebhook) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_StreamWebhook) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWebhook) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StreamWebhook) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_StreamWebhook) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_StreamWebhook) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamWebhook) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_StreamWebhook) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWebhook) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StreamWebhook) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_StreamWebhook) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StreamWebhook) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StreamWebhook) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_StreamWebhook) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_StreamWebhook) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StreamWebhook) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -328,7 +328,6 @@ func (j *jsiiProxy_StreamWebhook) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebhookConfig) StreamWebhook {
 	_init_.Initialize()
@@ -340,7 +339,7 @@ func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebh
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.streamWebhook.StreamWebhook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -353,12 +352,12 @@ func NewStreamWebhook_Override(s StreamWebhook, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.streamWebhook.StreamWebhook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetAccountId(val *string) {
+func (j *jsiiProxy_StreamWebhook) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_StreamWebhook)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetConnection(val interface{}) {
+func (j *jsiiProxy_StreamWebhook) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_StreamWebhook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetCount(val interface{}) {
+func (j *jsiiProxy_StreamWebhook) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_StreamWebhook)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StreamWebhook) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_StreamWebhook)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StreamWebhook) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -407,7 +406,7 @@ func (j *jsiiProxy_StreamWebhook)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StreamWebhook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_StreamWebhook)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetNotificationUrl(val *string) {
+func (j *jsiiProxy_StreamWebhook) SetNotificationUrl(val *string) {
 	if err := j.validateSetNotificationUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_StreamWebhook)SetNotificationUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StreamWebhook) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_StreamWebhook)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StreamWebhook)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StreamWebhook) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func StreamWebhook_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWebhook.StreamWebhook",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func StreamWebhook_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StreamWebhook_IsConstruct(x interface{}) *bool {
+func StreamWebhook_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStreamWebhook_IsConstructParameters(x); err != nil {
@@ -495,7 +494,7 @@ func StreamWebhook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWebhook.StreamWebhook",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func StreamWebhook_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StreamWebhook_IsTerraformElement(x interface{}) *bool {
+func StreamWebhook_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStreamWebhook_IsTerraformElementParameters(x); err != nil {
@@ -514,7 +513,7 @@ func StreamWebhook_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWebhook.StreamWebhook",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func StreamWebhook_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StreamWebhook_IsTerraformResource(x interface{}) *bool {
+func StreamWebhook_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStreamWebhook_IsTerraformResourceParameters(x); err != nil {
@@ -533,7 +532,7 @@ func StreamWebhook_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.streamWebhook.StreamWebhook",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,31 +557,31 @@ func (s *jsiiProxy_StreamWebhook) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StreamWebhook) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StreamWebhook) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StreamWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StreamWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (s *jsiiProxy_StreamWebhook) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (s *jsiiProxy_StreamWebhook) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (s *jsiiProxy_StreamWebhook) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (s *jsiiProxy_StreamWebhook) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (s *jsiiProxy_StreamWebhook) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (s *jsiiProxy_StreamWebhook) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (s *jsiiProxy_StreamWebhook) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,15 +709,15 @@ func (s *jsiiProxy_StreamWebhook) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StreamWebhook) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWebhook) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -737,7 +736,7 @@ func (s *jsiiProxy_StreamWebhook) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -750,7 +749,7 @@ func (s *jsiiProxy_StreamWebhook) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,18 +763,18 @@ func (s *jsiiProxy_StreamWebhook) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StreamWebhook) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StreamWebhook) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -786,7 +785,7 @@ func (s *jsiiProxy_StreamWebhook) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -797,7 +796,7 @@ func (s *jsiiProxy_StreamWebhook) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -809,8 +808,8 @@ func (s *jsiiProxy_StreamWebhook) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_StreamWebhook) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StreamWebhook) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -822,8 +821,8 @@ func (s *jsiiProxy_StreamWebhook) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (s *jsiiProxy_StreamWebhook) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StreamWebhook) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -835,8 +834,8 @@ func (s *jsiiProxy_StreamWebhook) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_StreamWebhook) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWebhook) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -848,8 +847,8 @@ func (s *jsiiProxy_StreamWebhook) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StreamWebhook) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWebhook) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -874,8 +873,8 @@ func (s *jsiiProxy_StreamWebhook) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StreamWebhook) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StreamWebhook) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -886,4 +885,3 @@ func (s *jsiiProxy_StreamWebhook) ToTerraform() interface{} {
 
 	return returns
 }
-

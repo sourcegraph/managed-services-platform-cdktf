@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareDnsFirewallsResultOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsFirewallsResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsFirewallsResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareDnsFirewallsResultOutputReferenceParameters(terraf
 
 	return nil
 }
-

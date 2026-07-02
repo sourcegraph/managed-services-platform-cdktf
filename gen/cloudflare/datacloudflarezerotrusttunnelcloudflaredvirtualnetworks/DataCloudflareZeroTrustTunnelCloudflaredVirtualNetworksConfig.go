@@ -6,9 +6,9 @@ import (
 
 type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Cloudflare account ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks#account_id DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks#account_id}
@@ -35,13 +35,13 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig struct {
 	// If `false`, exclude the default virtual network. If empty, all virtual networks will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks#is_default DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks#is_default}
-	IsDefault interface{} `field:"optional" json:"isDefault" yaml:"isDefault"`
+	IsDefault any `field:"optional" json:"isDefault" yaml:"isDefault"`
 	// If `true`, only include deleted virtual networks.
 	//
 	// If `false`, exclude deleted virtual networks. If empty, all virtual networks will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks#is_deleted DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks#is_deleted}
-	IsDeleted interface{} `field:"optional" json:"isDeleted" yaml:"isDeleted"`
+	IsDeleted any `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 	// Max items to fetch, default: 1000.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks#max_items DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks#max_items}
@@ -51,4 +51,3 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks#name DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

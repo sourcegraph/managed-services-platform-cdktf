@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldConnections.DataCloudflarePageShieldConnections",
-		reflect.TypeOf((*DataCloudflarePageShieldConnections)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldConnections](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addedAt", GoGetter: "AddedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflarePageShieldConnections{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldConnections.DataCloudflarePageShieldConnectionsConfig",
-		reflect.TypeOf((*DataCloudflarePageShieldConnectionsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldConnectionsConfig](),
 	)
 }

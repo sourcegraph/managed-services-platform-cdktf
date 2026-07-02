@@ -1,6 +1,5 @@
 package loadbalancer
 
-
 type LoadBalancerRulesOverrides struct {
 	// Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests.
 	//
@@ -13,7 +12,7 @@ type LoadBalancerRulesOverrides struct {
 	// Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
-	CountryPools interface{} `field:"optional" json:"countryPools" yaml:"countryPools"`
+	CountryPools any `field:"optional" json:"countryPools" yaml:"countryPools"`
 	// A list of pool IDs ordered by their failover priority.
 	//
 	// Pools defined here are used by default, or when region_pools are not configured for a given region.
@@ -33,7 +32,7 @@ type LoadBalancerRulesOverrides struct {
 	// Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
-	PopPools interface{} `field:"optional" json:"popPools" yaml:"popPools"`
+	PopPools any `field:"optional" json:"popPools" yaml:"popPools"`
 	// Configures pool weights.
 	//
 	// - `steering_policy="random"`: A random pool is selected with probability proportional to pool weights.
@@ -47,7 +46,7 @@ type LoadBalancerRulesOverrides struct {
 	// Any regions not explicitly defined will fall back to using default_pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
-	RegionPools interface{} `field:"optional" json:"regionPools" yaml:"regionPools"`
+	RegionPools any `field:"optional" json:"regionPools" yaml:"regionPools"`
 	// Specifies the type of session affinity the load balancer should use unless specified as `"none"`.
 	//
 	// The supported types are:
@@ -91,4 +90,3 @@ type LoadBalancerRulesOverrides struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
-

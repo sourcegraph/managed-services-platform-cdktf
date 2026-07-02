@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAlgorithmsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersAlgorithmsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersAlgorithmsListParameters(terraformRe
 
 	return nil
 }
-

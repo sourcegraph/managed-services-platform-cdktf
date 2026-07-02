@@ -98,7 +98,7 @@ func (k *jsiiProxy_KeylessCertificateTunnelOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewKeylessCertificateTunnelOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

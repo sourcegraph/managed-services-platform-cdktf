@@ -12,9 +12,9 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -46,7 +46,7 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ValueInput
 	return returns
 }
 
-
 func NewUserAgentBlockingRuleConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) UserAgentBlockingRuleConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewUserAgentBlockingRuleConfigurationOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewUserAgentBlockingRuleConfigurationOutputReference_Override(u UserAgentBl
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetTarget(val *string) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetTarget(v
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ComputeFqn
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetBoolean
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetBoolean
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetListAtt
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetNumberA
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetNumberL
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetNumberM
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetStringA
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) GetStringM
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Interpolat
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ResetValue
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := u.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ToString()
 
 	return returns
 }
-

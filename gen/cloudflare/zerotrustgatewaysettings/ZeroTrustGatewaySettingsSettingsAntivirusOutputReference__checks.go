@@ -109,7 +109,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetEnabledDownloadPhaseParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetEnabledDownloadPhaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetEnabledUploadPhaseParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetEnabledUploadPhaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetFailClosedParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetFailClosedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,7 +234,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewZeroTrustGatewaySettingsSettingsAntivirusOutputReferenceParamete
 
 	return nil
 }
-

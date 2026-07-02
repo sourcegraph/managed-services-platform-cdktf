@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegrations) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegrations) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustRiskScoringIntegrations_GenerateConfigForImp
 	return nil
 }
 
-func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsConstructParameter
 	return nil
 }
 
-func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsTerraformDataSourc
 	return nil
 }
 
-func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustRiskScoringIntegrations_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegrations) validateSetAc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegrations) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegrations) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareZeroTrustRiskScoringIntegrationsParameters(scope c
 
 	return nil
 }
-

@@ -1,23 +1,22 @@
 package zerotrustaccessapplication
 
-
 type ZeroTrustAccessApplicationCorsHeaders struct {
 	// Allows all HTTP request headers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#allow_all_headers ZeroTrustAccessApplication#allow_all_headers}
-	AllowAllHeaders interface{} `field:"optional" json:"allowAllHeaders" yaml:"allowAllHeaders"`
+	AllowAllHeaders any `field:"optional" json:"allowAllHeaders" yaml:"allowAllHeaders"`
 	// Allows all HTTP request methods.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#allow_all_methods ZeroTrustAccessApplication#allow_all_methods}
-	AllowAllMethods interface{} `field:"optional" json:"allowAllMethods" yaml:"allowAllMethods"`
+	AllowAllMethods any `field:"optional" json:"allowAllMethods" yaml:"allowAllMethods"`
 	// Allows all origins.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#allow_all_origins ZeroTrustAccessApplication#allow_all_origins}
-	AllowAllOrigins interface{} `field:"optional" json:"allowAllOrigins" yaml:"allowAllOrigins"`
+	AllowAllOrigins any `field:"optional" json:"allowAllOrigins" yaml:"allowAllOrigins"`
 	// When set to `true`, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#allow_credentials ZeroTrustAccessApplication#allow_credentials}
-	AllowCredentials interface{} `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
+	AllowCredentials any `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
 	// Allowed HTTP request headers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#allowed_headers ZeroTrustAccessApplication#allowed_headers}
@@ -35,4 +34,3 @@ type ZeroTrustAccessApplicationCorsHeaders struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application#max_age ZeroTrustAccessApplication#max_age}
 	MaxAge *float64 `field:"optional" json:"maxAge" yaml:"maxAge"`
 }
-

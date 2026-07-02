@@ -109,7 +109,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewR2BucketLifecycleRulesStorageClassTransitionsOutputReferencePara
 
 	return nil
 }
-

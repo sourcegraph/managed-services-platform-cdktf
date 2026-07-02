@@ -15,9 +15,9 @@ type ZeroTrustDlpCustomProfile interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AiContextEnabled() interface{}
-	SetAiContextEnabled(val interface{})
-	AiContextEnabledInput() interface{}
+	AiContextEnabled() any
+	SetAiContextEnabled(val any)
+	AiContextEnabledInput() any
 	AllowedMatchCount() *float64
 	SetAllowedMatchCount(val *float64)
 	AllowedMatchCountInput() *float64
@@ -27,17 +27,17 @@ type ZeroTrustDlpCustomProfile interface {
 	SetConfidenceThreshold(val *string)
 	ConfidenceThresholdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContextAwareness() ZeroTrustDlpCustomProfileContextAwarenessOutputReference
-	ContextAwarenessInput() interface{}
+	ContextAwarenessInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -47,7 +47,7 @@ type ZeroTrustDlpCustomProfile interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Entries() ZeroTrustDlpCustomProfileEntriesList
-	EntriesInput() interface{}
+	EntriesInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,26 +66,26 @@ type ZeroTrustDlpCustomProfile interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	OcrEnabled() interface{}
-	SetOcrEnabled(val interface{})
-	OcrEnabledInput() interface{}
+	OcrEnabled() any
+	SetOcrEnabled(val any)
+	OcrEnabledInput() any
 	OpenAccess() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SharedEntries() ZeroTrustDlpCustomProfileSharedEntriesList
-	SharedEntriesInput() interface{}
+	SharedEntriesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -94,9 +94,9 @@ type ZeroTrustDlpCustomProfile interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type ZeroTrustDlpCustomProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type ZeroTrustDlpCustomProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,8 +134,8 @@ type ZeroTrustDlpCustomProfile interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutContextAwareness(value *ZeroTrustDlpCustomProfileContextAwareness)
-	PutEntries(value interface{})
-	PutSharedEntries(value interface{})
+	PutEntries(value any)
+	PutSharedEntries(value any)
 	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
@@ -146,17 +146,17 @@ type ZeroTrustDlpCustomProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSharedEntries()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustDlpCustomProfile
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) AiContextEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) AiContextEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aiContextEnabled",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) AiContextEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) AiContextEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) AiContextEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aiContextEnabledInput",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ConfidenceThresholdInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ContextAwareness() ZeroTrustDlpCus
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ContextAwarenessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ContextAwarenessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contextAwarenessInput",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ContextAwarenessInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Entries() ZeroTrustDlpCustomProfil
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) EntriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) EntriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"entriesInput",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) OcrEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) OcrEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ocrEnabled",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) OcrEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) OcrEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) OcrEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ocrEnabledInput",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SharedEntries() ZeroTrustDlpCustom
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SharedEntriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SharedEntriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sharedEntriesInput",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -574,7 +574,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) UpdatedAt() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) ZeroTrustDlpCustomProfile {
 	_init_.Initialize()
@@ -586,7 +585,7 @@ func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -599,12 +598,12 @@ func NewZeroTrustDlpCustomProfile_Override(z ZeroTrustDlpCustomProfile, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetAiContextEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetAiContextEnabled(val any) {
 	if err := j.validateSetAiContextEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetAiContextEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetAllowedMatchCount(val *float64) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetAllowedMatchCount(val *float64) {
 	if err := j.validateSetAllowedMatchCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetAllowedMatchCount(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetConfidenceThreshold(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetConfidenceThreshold(val *string) {
 	if err := j.validateSetConfidenceThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetConfidenceThreshold(val *string)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetDescription(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetOcrEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetOcrEnabled(val any) {
 	if err := j.validateSetOcrEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetOcrEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -738,7 +737,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func ZeroTrustDlpCustomProfile_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func ZeroTrustDlpCustomProfile_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustDlpCustomProfile_IsConstruct(x interface{}) *bool {
+func ZeroTrustDlpCustomProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpCustomProfile_IsConstructParameters(x); err != nil {
@@ -796,7 +795,7 @@ func ZeroTrustDlpCustomProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func ZeroTrustDlpCustomProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustDlpCustomProfile_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustDlpCustomProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpCustomProfile_IsTerraformElementParameters(x); err != nil {
@@ -815,7 +814,7 @@ func ZeroTrustDlpCustomProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func ZeroTrustDlpCustomProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustDlpCustomProfile_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustDlpCustomProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpCustomProfile_IsTerraformResourceParameters(x); err != nil {
@@ -834,7 +833,7 @@ func ZeroTrustDlpCustomProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,31 +858,31 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,15 +1010,15 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1038,7 +1037,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,18 +1064,18 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1109,29 +1108,29 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutContextAwareness(value *ZeroTru
 	_jsii_.InvokeVoid(
 		z,
 		"putContextAwareness",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutEntries(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutEntries(value any) {
 	if err := z.validatePutEntriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putEntries",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSharedEntries(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSharedEntries(value any) {
 	if err := z.validatePutSharedEntriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putSharedEntries",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1199,8 +1198,8 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetSharedEntries() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1212,8 +1211,8 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1225,8 +1224,8 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1238,8 +1237,8 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1264,8 +1263,8 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1276,4 +1275,3 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmailRoutingDnsMessagesSourceOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingDnsMessagesSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingDnsMessagesSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewEmailRoutingDnsMessagesSourceOutputReferenceParameters(terraform
 
 	return nil
 }
-

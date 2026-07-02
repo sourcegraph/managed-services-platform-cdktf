@@ -17,8 +17,8 @@ type ZeroTrustDeviceDefaultProfileExcludeList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ZeroTrustDeviceDefaultProfileExcludeList interface {
 	Get(index *float64) ZeroTrustDeviceDefaultProfileExcludeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewZeroTrustDeviceDefaultProfileExcludeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceDefaultProfileExcludeList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewZeroTrustDeviceDefaultProfileExcludeList(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfileExcludeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewZeroTrustDeviceDefaultProfileExcludeList_Override(z ZeroTrustDeviceDefau
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfileExcludeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) AllWithMapKey(mapKe
 	_jsii_.Invoke(
 		z,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) Get(index *float64)
 	_jsii_.Invoke(
 		z,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) ToString() *string 
 
 	return returns
 }
-

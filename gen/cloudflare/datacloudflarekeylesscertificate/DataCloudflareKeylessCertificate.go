@@ -15,11 +15,11 @@ type DataCloudflareKeylessCertificate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -54,12 +54,12 @@ type DataCloudflareKeylessCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tunnel() DataCloudflareKeylessCertificateTunnelOutputReference
@@ -67,9 +67,9 @@ type DataCloudflareKeylessCertificate interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataCloudflareKeylessCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareKeylessCertificate
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -394,7 +394,6 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
 func NewDataCloudflareKeylessCertificate(scope constructs.Construct, id *string, config *DataCloudflareKeylessCertificateConfig) DataCloudflareKeylessCertificate {
 	_init_.Initialize()
@@ -406,7 +405,7 @@ func NewDataCloudflareKeylessCertificate(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -419,12 +418,12 @@ func NewDataCloudflareKeylessCertificate_Override(d DataCloudflareKeylessCertifi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetKeylessCertificateId(val *string) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetKeylessCertificateId(val *string) {
 	if err := j.validateSetKeylessCertificateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetKeylessCertificateId(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificate)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareKeylessCertificate) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func DataCloudflareKeylessCertificate_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func DataCloudflareKeylessCertificate_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareKeylessCertificate_IsConstruct(x interface{}) *bool {
+func DataCloudflareKeylessCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareKeylessCertificate_IsConstructParameters(x); err != nil {
@@ -539,7 +538,7 @@ func DataCloudflareKeylessCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func DataCloudflareKeylessCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareKeylessCertificate_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareKeylessCertificate_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareKeylessCertificate_IsTerraformDataSourceParameters(x); err != nil {
@@ -558,7 +557,7 @@ func DataCloudflareKeylessCertificate_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func DataCloudflareKeylessCertificate_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataCloudflareKeylessCertificate_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareKeylessCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareKeylessCertificate_IsTerraformElementParameters(x); err != nil {
@@ -577,7 +576,7 @@ func DataCloudflareKeylessCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,27 +594,27 @@ func DataCloudflareKeylessCertificate_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -832,8 +831,8 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -870,4 +869,3 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

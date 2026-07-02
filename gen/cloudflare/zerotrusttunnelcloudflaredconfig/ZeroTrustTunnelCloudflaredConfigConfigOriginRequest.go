@@ -1,6 +1,5 @@
 package zerotrusttunnelcloudflaredconfig
 
-
 type ZeroTrustTunnelCloudflaredConfigConfigOriginRequest struct {
 	// For all L7 requests to this hostname, cloudflared will validate each request's Cf-Access-Jwt-Assertion request header.
 	//
@@ -21,11 +20,11 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequest struct {
 	// Disables chunked transfer encoding. Useful if you are running a WSGI server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#disable_chunked_encoding ZeroTrustTunnelCloudflaredConfigA#disable_chunked_encoding}
-	DisableChunkedEncoding interface{} `field:"optional" json:"disableChunkedEncoding" yaml:"disableChunkedEncoding"`
+	DisableChunkedEncoding any `field:"optional" json:"disableChunkedEncoding" yaml:"disableChunkedEncoding"`
 	// Attempt to connect to origin using HTTP2. Origin must be configured as https.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#http2_origin ZeroTrustTunnelCloudflaredConfigA#http2_origin}
-	Http2Origin interface{} `field:"optional" json:"http2Origin" yaml:"http2Origin"`
+	Http2Origin any `field:"optional" json:"http2Origin" yaml:"http2Origin"`
 	// Sets the HTTP Host header on requests sent to the local service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#http_host_header ZeroTrustTunnelCloudflaredConfigA#http_host_header}
@@ -43,13 +42,13 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequest struct {
 	// Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local network has misconfigured one of the protocols.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#no_happy_eyeballs ZeroTrustTunnelCloudflaredConfigA#no_happy_eyeballs}
-	NoHappyEyeballs interface{} `field:"optional" json:"noHappyEyeballs" yaml:"noHappyEyeballs"`
+	NoHappyEyeballs any `field:"optional" json:"noHappyEyeballs" yaml:"noHappyEyeballs"`
 	// Disables TLS verification of the certificate presented by your origin.
 	//
 	// Will allow any certificate from the origin to be accepted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#no_tls_verify ZeroTrustTunnelCloudflaredConfigA#no_tls_verify}
-	NoTlsVerify interface{} `field:"optional" json:"noTlsVerify" yaml:"noTlsVerify"`
+	NoTlsVerify any `field:"optional" json:"noTlsVerify" yaml:"noTlsVerify"`
 	// Hostname that cloudflared should expect from your origin server certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#origin_server_name ZeroTrustTunnelCloudflaredConfigA#origin_server_name}
@@ -69,4 +68,3 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequest struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_cloudflared_config#tls_timeout ZeroTrustTunnelCloudflaredConfigA#tls_timeout}
 	TlsTimeout *float64 `field:"optional" json:"tlsTimeout" yaml:"tlsTimeout"`
 }
-

@@ -90,7 +90,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateInterpolationForAttr
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validatePutPermissionGroupsParameters(value interface{}) error {
+func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validatePutPermissionGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetEffectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewApiTokenPoliciesOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

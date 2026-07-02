@@ -17,8 +17,8 @@ type PagesProjectDeploymentConfigsProductionD1DatabasesMap interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -32,7 +32,7 @@ type PagesProjectDeploymentConfigsProductionD1DatabasesMap interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -65,8 +65,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -95,7 +95,6 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) Terraf
 	return returns
 }
 
-
 func NewPagesProjectDeploymentConfigsProductionD1DatabasesMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionD1DatabasesMap {
 	_init_.Initialize()
 
@@ -106,7 +105,7 @@ func NewPagesProjectDeploymentConfigsProductionD1DatabasesMap(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -118,12 +117,12 @@ func NewPagesProjectDeploymentConfigsProductionD1DatabasesMap_Override(p PagesPr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -134,7 +133,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap)SetInte
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +144,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap)SetTerr
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,7 +177,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) Get(ke
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{key},
+		[]any{key},
 		&returns,
 	)
 
@@ -194,23 +193,23 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) Interp
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -229,4 +228,3 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesMap) ToStri
 
 	return returns
 }
-

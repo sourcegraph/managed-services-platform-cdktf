@@ -109,7 +109,7 @@ func (r *jsiiProxy_R2BucketCorsRulesOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketCorsRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_R2BucketCorsRulesOutputReference) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketCorsRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewR2BucketCorsRulesOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

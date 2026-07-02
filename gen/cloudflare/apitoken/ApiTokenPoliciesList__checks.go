@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApiTokenPoliciesList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApiTokenPoliciesListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type LoadBalancerMonitorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoadBalancerMonitorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
@@ -28,7 +28,7 @@ type LoadBalancerMonitorConfig struct {
 	// This parameter is currently only valid for HTTP and HTTPS monitors.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// To be marked unhealthy the monitored origin must fail this healthcheck N consecutive times.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor#consecutive_down LoadBalancerMonitor#consecutive_down}
@@ -56,13 +56,13 @@ type LoadBalancerMonitorConfig struct {
 	// Follow redirects if returned by the origin. This parameter is only valid for HTTP and HTTPS monitors.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
-	FollowRedirects interface{} `field:"optional" json:"followRedirects" yaml:"followRedirects"`
+	FollowRedirects any `field:"optional" json:"followRedirects" yaml:"followRedirects"`
 	// The HTTP request headers to send in the health check.
 	//
 	// It is recommended you set a Host header by default. The User-Agent header cannot be overridden. This parameter is only valid for HTTP and HTTPS monitors.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
-	Header interface{} `field:"optional" json:"header" yaml:"header"`
+	Header any `field:"optional" json:"header" yaml:"header"`
 	// The interval between each health check.
 	//
 	// Shorter intervals may improve failover time, but will increase load on the origins as we check from multiple locations.
@@ -111,4 +111,3 @@ type LoadBalancerMonitorConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

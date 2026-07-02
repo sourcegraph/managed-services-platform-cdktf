@@ -16,30 +16,30 @@ type DnsFirewall interface {
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	AttackMitigation() DnsFirewallAttackMitigationOutputReference
-	AttackMitigationInput() interface{}
+	AttackMitigationInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DeprecateAnyRequests() interface{}
-	SetDeprecateAnyRequests(val interface{})
-	DeprecateAnyRequestsInput() interface{}
+	DeprecateAnyRequests() any
+	SetDeprecateAnyRequests(val any)
+	DeprecateAnyRequestsInput() any
 	DnsFirewallIps() *[]*string
-	EcsFallback() interface{}
-	SetEcsFallback(val interface{})
-	EcsFallbackInput() interface{}
+	EcsFallback() any
+	SetEcsFallback(val any)
+	EcsFallbackInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,21 +73,21 @@ type DnsFirewall interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Ratelimit() *float64
 	SetRatelimit(val *float64)
 	RatelimitInput() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Retries() *float64
 	SetRetries(val *float64)
 	RetriesInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpstreamIps() *[]*string
@@ -97,9 +97,9 @@ type DnsFirewall interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type DnsFirewall interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type DnsFirewall interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type DnsFirewall interface {
 	ResetOverrideLogicalId()
 	ResetRatelimit()
 	ResetRetries()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DnsFirewall
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DnsFirewall) AttackMitigation() DnsFirewallAttackMitigationOu
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) AttackMitigationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) AttackMitigationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attackMitigationInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DnsFirewall) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_DnsFirewall) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsFirewall) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DnsFirewall) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DnsFirewall) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) DeprecateAnyRequests() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) DeprecateAnyRequests() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deprecateAnyRequests",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DnsFirewall) DeprecateAnyRequests() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) DeprecateAnyRequestsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) DeprecateAnyRequestsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deprecateAnyRequestsInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DnsFirewall) DnsFirewallIps() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) EcsFallback() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) EcsFallback() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ecsFallback",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DnsFirewall) EcsFallback() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) EcsFallbackInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) EcsFallbackInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ecsFallbackInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_DnsFirewall) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DnsFirewall) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_DnsFirewall) RatelimitInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsFirewall) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_DnsFirewall) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DnsFirewall) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsFirewall) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -576,7 +576,6 @@ func (j *jsiiProxy_DnsFirewall) UpstreamIpsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallConfig) DnsFirewall {
 	_init_.Initialize()
@@ -588,7 +587,7 @@ func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -601,12 +600,12 @@ func NewDnsFirewall_Override(d DnsFirewall, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetAccountId(val *string) {
+func (j *jsiiProxy_DnsFirewall) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_DnsFirewall)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetConnection(val interface{}) {
+func (j *jsiiProxy_DnsFirewall) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_DnsFirewall)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetCount(val interface{}) {
+func (j *jsiiProxy_DnsFirewall) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_DnsFirewall)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DnsFirewall) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -647,7 +646,7 @@ func (j *jsiiProxy_DnsFirewall)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetDeprecateAnyRequests(val interface{}) {
+func (j *jsiiProxy_DnsFirewall) SetDeprecateAnyRequests(val any) {
 	if err := j.validateSetDeprecateAnyRequestsParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_DnsFirewall)SetDeprecateAnyRequests(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetEcsFallback(val interface{}) {
+func (j *jsiiProxy_DnsFirewall) SetEcsFallback(val any) {
 	if err := j.validateSetEcsFallbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_DnsFirewall)SetEcsFallback(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DnsFirewall) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -677,7 +676,7 @@ func (j *jsiiProxy_DnsFirewall)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DnsFirewall) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_DnsFirewall)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetMaximumCacheTtl(val *float64) {
+func (j *jsiiProxy_DnsFirewall) SetMaximumCacheTtl(val *float64) {
 	if err := j.validateSetMaximumCacheTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_DnsFirewall)SetMaximumCacheTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetMinimumCacheTtl(val *float64) {
+func (j *jsiiProxy_DnsFirewall) SetMinimumCacheTtl(val *float64) {
 	if err := j.validateSetMinimumCacheTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_DnsFirewall)SetMinimumCacheTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetName(val *string) {
+func (j *jsiiProxy_DnsFirewall) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_DnsFirewall)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetNegativeCacheTtl(val *float64) {
+func (j *jsiiProxy_DnsFirewall) SetNegativeCacheTtl(val *float64) {
 	if err := j.validateSetNegativeCacheTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_DnsFirewall)SetNegativeCacheTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DnsFirewall) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_DnsFirewall)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DnsFirewall) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_DnsFirewall)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetRatelimit(val *float64) {
+func (j *jsiiProxy_DnsFirewall) SetRatelimit(val *float64) {
 	if err := j.validateSetRatelimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_DnsFirewall)SetRatelimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetRetries(val *float64) {
+func (j *jsiiProxy_DnsFirewall) SetRetries(val *float64) {
 	if err := j.validateSetRetriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_DnsFirewall)SetRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsFirewall)SetUpstreamIps(val *[]*string) {
+func (j *jsiiProxy_DnsFirewall) SetUpstreamIps(val *[]*string) {
 	if err := j.validateSetUpstreamIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func DnsFirewall_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func DnsFirewall_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DnsFirewall_IsConstruct(x interface{}) *bool {
+func DnsFirewall_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsFirewall_IsConstructParameters(x); err != nil {
@@ -831,7 +830,7 @@ func DnsFirewall_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func DnsFirewall_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsFirewall_IsTerraformElement(x interface{}) *bool {
+func DnsFirewall_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsFirewall_IsTerraformElementParameters(x); err != nil {
@@ -850,7 +849,7 @@ func DnsFirewall_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func DnsFirewall_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsFirewall_IsTerraformResource(x interface{}) *bool {
+func DnsFirewall_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsFirewall_IsTerraformResourceParameters(x); err != nil {
@@ -869,7 +868,7 @@ func DnsFirewall_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -894,31 +893,31 @@ func (d *jsiiProxy_DnsFirewall) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DnsFirewall) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DnsFirewall) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DnsFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DnsFirewall) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DnsFirewall) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (d *jsiiProxy_DnsFirewall) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DnsFirewall) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (d *jsiiProxy_DnsFirewall) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (d *jsiiProxy_DnsFirewall) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,7 +1029,7 @@ func (d *jsiiProxy_DnsFirewall) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1046,15 +1045,15 @@ func (d *jsiiProxy_DnsFirewall) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsFirewall) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsFirewall) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1073,7 +1072,7 @@ func (d *jsiiProxy_DnsFirewall) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1086,7 +1085,7 @@ func (d *jsiiProxy_DnsFirewall) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,18 +1099,18 @@ func (d *jsiiProxy_DnsFirewall) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DnsFirewall) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DnsFirewall) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (d *jsiiProxy_DnsFirewall) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (d *jsiiProxy_DnsFirewall) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (d *jsiiProxy_DnsFirewall) PutAttackMitigation(value *DnsFirewallAttackMiti
 	_jsii_.InvokeVoid(
 		d,
 		"putAttackMitigation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1220,8 +1219,8 @@ func (d *jsiiProxy_DnsFirewall) ResetRetries() {
 	)
 }
 
-func (d *jsiiProxy_DnsFirewall) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsFirewall) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1233,8 +1232,8 @@ func (d *jsiiProxy_DnsFirewall) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsFirewall) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsFirewall) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1246,8 +1245,8 @@ func (d *jsiiProxy_DnsFirewall) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (d *jsiiProxy_DnsFirewall) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsFirewall) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1259,8 +1258,8 @@ func (d *jsiiProxy_DnsFirewall) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsFirewall) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsFirewall) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1285,8 +1284,8 @@ func (d *jsiiProxy_DnsFirewall) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DnsFirewall) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsFirewall) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1297,4 +1296,3 @@ func (d *jsiiProxy_DnsFirewall) ToTerraform() interface{} {
 
 	return returns
 }
-

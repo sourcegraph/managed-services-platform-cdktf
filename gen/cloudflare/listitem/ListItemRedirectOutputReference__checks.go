@@ -98,7 +98,7 @@ func (l *jsiiProxy_ListItemRedirectOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetIncludeSubdomainsParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetIncludeSubdomainsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetIncludeSubdomains
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetInternalValuePara
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreservePathSuffixParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreservePathSuffixParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreservePathSuffi
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreserveQueryStringParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreserveQueryStringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetStatusCodeParamet
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetSubpathMatchingParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetSubpathMatchingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -318,4 +318,3 @@ func validateNewListItemRedirectOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

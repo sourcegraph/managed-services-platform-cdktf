@@ -12,9 +12,9 @@ type AccountDnsSettingsZoneDefaultsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,31 +25,31 @@ type AccountDnsSettingsZoneDefaultsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FlattenAllCnames() interface{}
-	SetFlattenAllCnames(val interface{})
-	FlattenAllCnamesInput() interface{}
-	FoundationDns() interface{}
-	SetFoundationDns(val interface{})
-	FoundationDnsInput() interface{}
+	FlattenAllCnames() any
+	SetFlattenAllCnames(val any)
+	FlattenAllCnamesInput() any
+	FoundationDns() any
+	SetFoundationDns(val any)
+	FoundationDnsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalDns() AccountDnsSettingsZoneDefaultsInternalDnsOutputReference
-	InternalDnsInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	MultiProvider() interface{}
-	SetMultiProvider(val interface{})
-	MultiProviderInput() interface{}
+	InternalDnsInput() any
+	InternalValue() any
+	SetInternalValue(val any)
+	MultiProvider() any
+	SetMultiProvider(val any)
+	MultiProviderInput() any
 	Nameservers() AccountDnsSettingsZoneDefaultsNameserversOutputReference
-	NameserversInput() interface{}
+	NameserversInput() any
 	NsTtl() *float64
 	SetNsTtl(val *float64)
 	NsTtlInput() *float64
-	SecondaryOverrides() interface{}
-	SetSecondaryOverrides(val interface{})
-	SecondaryOverridesInput() interface{}
+	SecondaryOverrides() any
+	SetSecondaryOverrides(val any)
+	SecondaryOverridesInput() any
 	Soa() AccountDnsSettingsZoneDefaultsSoaOutputReference
-	SoaInput() interface{}
+	SoaInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +64,7 @@ type AccountDnsSettingsZoneDefaultsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type AccountDnsSettingsZoneDefaultsOutputReference interface {
 	ResetZoneMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnames() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnames() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flattenAllCnames",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnam
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnamesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnamesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flattenAllCnamesInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnam
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDns() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDns() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"foundationDns",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDns(
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"foundationDnsInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalDns() 
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalDnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalDnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalDnsInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalDnsInp
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InternalValue(
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) MultiProvider() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) MultiProvider() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiProvider",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) MultiProvider(
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) MultiProviderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) MultiProviderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiProviderInput",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) Nameservers() 
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) NameserversInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) NameserversInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nameserversInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) NsTtlInput() *
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SecondaryOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SecondaryOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondaryOverrides",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SecondaryOverr
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SecondaryOverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SecondaryOverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondaryOverridesInput",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) Soa() AccountD
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SoaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SoaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"soaInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ZoneModeInput(
 	return returns
 }
 
-
 func NewAccountDnsSettingsZoneDefaultsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewAccountDnsSettingsZoneDefaultsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewAccountDnsSettingsZoneDefaultsOutputReference_Override(a AccountDnsSetti
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetFlattenAllCnames(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetFlattenAllCnames(val any) {
 	if err := j.validateSetFlattenAllCnamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetFlattenAllCn
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetFoundationDns(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetFoundationDns(val any) {
 	if err := j.validateSetFoundationDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetFoundationDn
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetMultiProvider(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetMultiProvider(val any) {
 	if err := j.validateSetMultiProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetMultiProvide
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetNsTtl(val *float64) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetNsTtl(val *float64) {
 	if err := j.validateSetNsTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetNsTtl(val *f
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetSecondaryOverrides(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetSecondaryOverrides(val any) {
 	if err := j.validateSetSecondaryOverridesParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetSecondaryOve
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetZoneMode(val *string) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) SetZoneMode(val *string) {
 	if err := j.validateSetZoneModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,16 +523,16 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) PutInternalDns
 	_jsii_.InvokeVoid(
 		a,
 		"putInternalDns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -715,7 +714,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) PutNameservers
 	_jsii_.InvokeVoid(
 		a,
 		"putNameservers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -726,7 +725,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) PutSoa(value *
 	_jsii_.InvokeVoid(
 		a,
 		"putSoa",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,16 +801,16 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ResetZoneMode(
 	)
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ToString() *st
 
 	return returns
 }
-

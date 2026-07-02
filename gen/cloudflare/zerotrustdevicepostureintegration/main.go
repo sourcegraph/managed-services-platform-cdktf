@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegration",
-		reflect.TypeOf((*ZeroTrustDevicePostureIntegration)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDevicePostureIntegration](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDevicePostureIntegration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfig",
-		reflect.TypeOf((*ZeroTrustDevicePostureIntegrationConfig)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDevicePostureIntegrationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigA",
-		reflect.TypeOf((*ZeroTrustDevicePostureIntegrationConfigA)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDevicePostureIntegrationConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
-		reflect.TypeOf((*ZeroTrustDevicePostureIntegrationConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZeroTrustDevicePostureIntegrationConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessClientId", GoGetter: "AccessClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessClientIdInput", GoGetter: "AccessClientIdInput"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

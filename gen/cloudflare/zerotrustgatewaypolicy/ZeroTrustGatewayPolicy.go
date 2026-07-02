@@ -21,15 +21,15 @@ type ZeroTrustGatewayPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	DeletedAt() *string
 	// Experimental.
@@ -42,11 +42,11 @@ type ZeroTrustGatewayPolicy interface {
 	DevicePosture() *string
 	SetDevicePosture(val *string)
 	DevicePostureInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Expiration() ZeroTrustGatewayPolicyExpirationOutputReference
-	ExpirationInput() interface{}
+	ExpirationInput() any
 	Filters() *[]*string
 	SetFilters(val *[]*string)
 	FiltersInput() *[]*string
@@ -79,19 +79,19 @@ type ZeroTrustGatewayPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuleSettings() ZeroTrustGatewayPolicyRuleSettingsOutputReference
-	RuleSettingsInput() interface{}
+	RuleSettingsInput() any
 	Schedule() ZeroTrustGatewayPolicyScheduleOutputReference
-	ScheduleInput() interface{}
+	ScheduleInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Traffic() *string
@@ -104,9 +104,9 @@ type ZeroTrustGatewayPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type ZeroTrustGatewayPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type ZeroTrustGatewayPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -159,17 +159,17 @@ type ZeroTrustGatewayPolicy interface {
 	ResetRuleSettings()
 	ResetSchedule()
 	ResetTraffic()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustGatewayPolicy
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) DevicePostureInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Expiration() ZeroTrustGatewayPolicyEx
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) ExpirationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) ExpirationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"expirationInput",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -547,8 +547,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) RuleSettings() ZeroTrustGatewayPolicy
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) RuleSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) RuleSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleSettingsInput",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Schedule() ZeroTrustGatewayPolicySche
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) ScheduleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) ScheduleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scheduleInput",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -657,7 +657,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) WarningStatus() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
@@ -669,7 +668,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -682,12 +681,12 @@ func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetAction(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -739,7 +738,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetDevicePosture(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetDevicePosture(val *string) {
 	if err := j.validateSetDevicePostureParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetDevicePosture(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetFilters(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetFilters(val *[]*string) {
 	if err := j.validateSetFiltersParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetFilters(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -791,7 +790,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetIdentity(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetIdentity(val *string) {
 	if err := j.validateSetIdentityParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetIdentity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetPrecedence(val *float64) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetPrecedence(val *float64) {
 	if err := j.validateSetPrecedenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetPrecedence(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -843,7 +842,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetTraffic(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) SetTraffic(val *string) {
 	if err := j.validateSetTrafficParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func ZeroTrustGatewayPolicy_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func ZeroTrustGatewayPolicy_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustGatewayPolicy_IsConstruct(x interface{}) *bool {
+func ZeroTrustGatewayPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustGatewayPolicy_IsConstructParameters(x); err != nil {
@@ -912,7 +911,7 @@ func ZeroTrustGatewayPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func ZeroTrustGatewayPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustGatewayPolicy_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustGatewayPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustGatewayPolicy_IsTerraformElementParameters(x); err != nil {
@@ -931,7 +930,7 @@ func ZeroTrustGatewayPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func ZeroTrustGatewayPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZeroTrustGatewayPolicy_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustGatewayPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustGatewayPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -950,7 +949,7 @@ func ZeroTrustGatewayPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -975,31 +974,31 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,7 +1078,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1095,7 +1094,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1127,15 +1126,15 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1154,7 +1153,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1167,7 +1166,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1181,18 +1180,18 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutExpiration(value *ZeroTrustGateway
 	_jsii_.InvokeVoid(
 		z,
 		"putExpiration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1236,7 +1235,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutRuleSettings(value *ZeroTrustGatew
 	_jsii_.InvokeVoid(
 		z,
 		"putRuleSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1247,7 +1246,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutSchedule(value *ZeroTrustGatewayPo
 	_jsii_.InvokeVoid(
 		z,
 		"putSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1339,8 +1338,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetTraffic() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1352,8 +1351,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -1365,8 +1364,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1378,8 +1377,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1404,8 +1403,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1416,4 +1415,3 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

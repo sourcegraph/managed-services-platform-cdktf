@@ -12,9 +12,9 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Jurisdiction() *string
 	SetJurisdiction(val *string)
 	JurisdictionInput() *string
@@ -46,7 +46,7 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-
 func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
+		[]any{terraformResource, terraformAttribute, complexObjectKey},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference_Override(p 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
+		[]any{terraformResource, terraformAttribute, complexObjectKey},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetJurisdiction(val *string) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetJurisdiction(val *string) {
 	if err := j.validateSetJurisdictionParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustOrganization) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustOrganization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustOrganization) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustOrganization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateZeroTrustOrganization_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateZeroTrustOrganization_IsConstructParameters(x interface{}) error {
+func validateZeroTrustOrganization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateZeroTrustOrganization_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZeroTrustOrganization_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustOrganization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateZeroTrustOrganization_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateZeroTrustOrganization_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustOrganization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) validateSetAllowAuthenticateViaWarpParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetAllowAuthenticateViaWarpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetAuthDomainParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetAutoRedirectToIdentityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetAutoRedirectToIdentityParam
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -355,7 +355,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) validateSetIsUiReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetIsUiReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -549,4 +549,3 @@ func validateNewZeroTrustOrganizationParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

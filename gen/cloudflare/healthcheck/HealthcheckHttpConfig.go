@@ -1,11 +1,10 @@
 package healthcheck
 
-
 type HealthcheckHttpConfig struct {
 	// Do not validate the certificate when the health check uses HTTPS.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// A case-insensitive sub-string to look for in the response body.
 	//
 	// If this string is not found, the origin will be marked as unhealthy.
@@ -19,13 +18,13 @@ type HealthcheckHttpConfig struct {
 	// Follow redirects if the origin returns a 3xx status code.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
-	FollowRedirects interface{} `field:"optional" json:"followRedirects" yaml:"followRedirects"`
+	FollowRedirects any `field:"optional" json:"followRedirects" yaml:"followRedirects"`
 	// The HTTP request headers to send in the health check.
 	//
 	// It is recommended you set a Host header by default. The User-Agent header cannot be overridden.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/healthcheck#header Healthcheck#header}
-	Header interface{} `field:"optional" json:"header" yaml:"header"`
+	Header any `field:"optional" json:"header" yaml:"header"`
 	// The HTTP method to use for the health check. Available values: "GET", "HEAD".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/healthcheck#method Healthcheck#method}
@@ -41,4 +40,3 @@ type HealthcheckHttpConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/healthcheck#port Healthcheck#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
-
