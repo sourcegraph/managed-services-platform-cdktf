@@ -6,9 +6,9 @@ import (
 
 type DataSlackConversationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataSlackConversationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs/data-sources/conversation#channel_id DataSlackConversation#channel_id}.
 	ChannelId *string `field:"optional" json:"channelId" yaml:"channelId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs/data-sources/conversation#id DataSlackConversation#id}.
@@ -27,8 +27,7 @@ type DataSlackConversationConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs/data-sources/conversation#is_private DataSlackConversation#is_private}.
-	IsPrivate interface{} `field:"optional" json:"isPrivate" yaml:"isPrivate"`
+	IsPrivate any `field:"optional" json:"isPrivate" yaml:"isPrivate"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs/data-sources/conversation#name DataSlackConversation#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-
