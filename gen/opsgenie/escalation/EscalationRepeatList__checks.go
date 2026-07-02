@@ -34,7 +34,7 @@ func (e *jsiiProxy_EscalationRepeatList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRepeatList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRepeatList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEscalationRepeatListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

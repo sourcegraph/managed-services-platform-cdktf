@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmailIntegrationRespondersList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegrationRespondersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmailIntegrationRespondersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmailIntegrationRespondersListParameters(terraformResource cdktf
 
 	return nil
 }
-

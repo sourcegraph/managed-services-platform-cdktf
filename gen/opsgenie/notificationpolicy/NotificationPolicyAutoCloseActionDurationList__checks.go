@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotificationPolicyAutoCloseActionDurationList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotificationPolicyAutoCloseActionDurationListParameters(terrafor
 
 	return nil
 }
-

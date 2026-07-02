@@ -17,8 +17,8 @@ type NotificationPolicyDeDuplicationActionDurationList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NotificationPolicyDeDuplicationActionDurationList interface {
 	Get(index *float64) NotificationPolicyDeDuplicationActionDurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) WrapsSet()
 	return returns
 }
 
-
 func NewNotificationPolicyDeDuplicationActionDurationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyDeDuplicationActionDurationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNotificationPolicyDeDuplicationActionDurationList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyDeDuplicationActionDurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNotificationPolicyDeDuplicationActionDurationList_Override(n Notificatio
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyDeDuplicationActionDurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetInternal
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) AllWithMap
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) Get(index 
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) ToString()
 
 	return returns
 }
-

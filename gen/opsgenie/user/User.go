@@ -15,15 +15,15 @@ type User interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type User interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -73,14 +73,14 @@ type User interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timezone() *string
 	SetTimezone(val *string)
 	TimezoneInput() *string
 	UserAddress() UserUserAddressList
-	UserAddressInput() interface{}
+	UserAddressInput() any
 	UserDetails() *map[string]*string
 	SetUserDetails(val *map[string]*string)
 	UserDetailsInput() *map[string]*string
@@ -91,9 +91,9 @@ type User interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type User interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type User interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutUserAddress(value interface{})
+	PutUserAddress(value any)
 	ResetId()
 	ResetLocale()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -141,17 +141,17 @@ type User interface {
 	ResetTimezone()
 	ResetUserAddress()
 	ResetUserDetails()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for User
@@ -169,8 +169,8 @@ func (j *jsiiProxy_User) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_User) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_User) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_User) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_User) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_User) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_User) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_User) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_User) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_User) TerraformGeneratorMetadata() *cdktf.TerraformProviderGe
 	return returns
 }
 
-func (j *jsiiProxy_User) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_User) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_User) UserAddress() UserUserAddressList {
 	return returns
 }
 
-func (j *jsiiProxy_User) UserAddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) UserAddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userAddressInput",
@@ -519,7 +519,6 @@ func (j *jsiiProxy_User) UsernameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user opsgenie_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
@@ -531,7 +530,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.user.User",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -544,12 +543,12 @@ func NewUser_Override(u User, scope constructs.Construct, id *string, config *Us
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.user.User",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		u,
 	)
 }
 
-func (j *jsiiProxy_User)SetConnection(val interface{}) {
+func (j *jsiiProxy_User) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_User)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetCount(val interface{}) {
+func (j *jsiiProxy_User) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_User)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_User) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_User)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_User) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_User)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_User)SetFullName(val *string) {
+func (j *jsiiProxy_User) SetFullName(val *string) {
 	if err := j.validateSetFullNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_User)SetFullName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetId(val *string) {
+func (j *jsiiProxy_User) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_User)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_User) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_User)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_User)SetLocale(val *string) {
+func (j *jsiiProxy_User) SetLocale(val *string) {
 	if err := j.validateSetLocaleParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_User)SetLocale(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_User) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_User)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_User)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_User) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_User)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetRole(val *string) {
+func (j *jsiiProxy_User) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_User)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetSkypeUsername(val *string) {
+func (j *jsiiProxy_User) SetSkypeUsername(val *string) {
 	if err := j.validateSetSkypeUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_User)SetSkypeUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetTags(val *[]*string) {
+func (j *jsiiProxy_User) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_User)SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetTimezone(val *string) {
+func (j *jsiiProxy_User) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_User)SetTimezone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetUserDetails(val *map[string]*string) {
+func (j *jsiiProxy_User) SetUserDetails(val *map[string]*string) {
 	if err := j.validateSetUserDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_User)SetUserDetails(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetUsername(val *string) {
+func (j *jsiiProxy_User) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func User_GenerateConfigForImport(scope constructs.Construct, importToId *string
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.user.User",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func User_GenerateConfigForImport(scope constructs.Construct, importToId *string
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func User_IsConstruct(x interface{}) *bool {
+func User_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUser_IsConstructParameters(x); err != nil {
@@ -763,7 +762,7 @@ func User_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.user.User",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func User_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func User_IsTerraformElement(x interface{}) *bool {
+func User_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUser_IsTerraformElementParameters(x); err != nil {
@@ -782,7 +781,7 @@ func User_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.user.User",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func User_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func User_IsTerraformResource(x interface{}) *bool {
+func User_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUser_IsTerraformResourceParameters(x); err != nil {
@@ -801,7 +800,7 @@ func User_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.user.User",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,31 +825,31 @@ func (u *jsiiProxy_User) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (u *jsiiProxy_User) AddOverride(path *string, value interface{}) {
+func (u *jsiiProxy_User) AddOverride(path *string, value any) {
 	if err := u.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (u *jsiiProxy_User) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_User) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (u *jsiiProxy_User) GetBooleanAttribute(terraformAttribute *string) cdktf.I
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (u *jsiiProxy_User) GetBooleanMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (u *jsiiProxy_User) GetListAttribute(terraformAttribute *string) *[]*string
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (u *jsiiProxy_User) GetNumberAttribute(terraformAttribute *string) *float64
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (u *jsiiProxy_User) GetNumberListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (u *jsiiProxy_User) GetNumberMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (u *jsiiProxy_User) GetStringAttribute(terraformAttribute *string) *string 
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,15 +977,15 @@ func (u *jsiiProxy_User) GetStringMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (u *jsiiProxy_User) HasResourceMove() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1005,7 +1004,7 @@ func (u *jsiiProxy_User) ImportFrom(id *string, provider cdktf.TerraformProvider
 	_jsii_.InvokeVoid(
 		u,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (u *jsiiProxy_User) InterpolationForAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,18 +1031,18 @@ func (u *jsiiProxy_User) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (u *jsiiProxy_User) MoveTo(moveTarget *string, index interface{}) {
+func (u *jsiiProxy_User) MoveTo(moveTarget *string, index any) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (u *jsiiProxy_User) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1065,18 +1064,18 @@ func (u *jsiiProxy_User) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (u *jsiiProxy_User) PutUserAddress(value interface{}) {
+func (u *jsiiProxy_User) PutUserAddress(value any) {
 	if err := u.validatePutUserAddressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"putUserAddress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,8 +1143,8 @@ func (u *jsiiProxy_User) ResetUserDetails() {
 	)
 }
 
-func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -1157,8 +1156,8 @@ func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -1170,8 +1169,8 @@ func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_User) ToHclTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1183,8 +1182,8 @@ func (u *jsiiProxy_User) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_User) ToMetadata() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1209,8 +1208,8 @@ func (u *jsiiProxy_User) ToString() *string {
 	return returns
 }
 
-func (u *jsiiProxy_User) ToTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1221,4 +1220,3 @@ func (u *jsiiProxy_User) ToTerraform() interface{} {
 
 	return returns
 }
-

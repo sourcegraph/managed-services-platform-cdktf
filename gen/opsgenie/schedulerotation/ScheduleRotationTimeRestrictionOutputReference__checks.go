@@ -101,7 +101,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionOutputReference) validatePutRe
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationTimeRestrictionOutputReference) validatePutRestrictionsParameters(value interface{}) error {
+func (s *jsiiProxy_ScheduleRotationTimeRestrictionOutputReference) validatePutRestrictionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewScheduleRotationTimeRestrictionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

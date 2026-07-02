@@ -98,7 +98,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewScheduleRotationTimeRestrictionRestrictionOutputReferenceParamet
 
 	return nil
 }
-

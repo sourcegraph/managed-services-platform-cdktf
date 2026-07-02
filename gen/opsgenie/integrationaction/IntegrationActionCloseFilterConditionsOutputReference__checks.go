@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) validateSetNotParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference) validateSetNotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewIntegrationActionCloseFilterConditionsOutputReferenceParameters(
 
 	return nil
 }
-

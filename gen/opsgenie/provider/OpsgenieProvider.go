@@ -33,17 +33,17 @@ type OpsgenieProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -51,7 +51,7 @@ type OpsgenieProvider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -63,17 +63,17 @@ type OpsgenieProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsgenieProvider
@@ -211,8 +211,8 @@ func (j *jsiiProxy_OpsgenieProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OpsgenieProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsgenieProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_OpsgenieProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsgenieProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsgenieProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_OpsgenieProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_OpsgenieProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsgenieProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -301,7 +301,6 @@ func (j *jsiiProxy_OpsgenieProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs opsgenie} Resource.
 func NewOpsgenieProvider(scope constructs.Construct, id *string, config *OpsgenieProviderConfig) OpsgenieProvider {
 	_init_.Initialize()
@@ -313,7 +312,7 @@ func NewOpsgenieProvider(scope constructs.Construct, id *string, config *Opsgeni
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.provider.OpsgenieProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -326,12 +325,12 @@ func NewOpsgenieProvider_Override(o OpsgenieProvider, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.provider.OpsgenieProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsgenieProvider)SetAlias(val *string) {
+func (j *jsiiProxy_OpsgenieProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -339,7 +338,7 @@ func (j *jsiiProxy_OpsgenieProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsgenieProvider)SetApiKey(val *string) {
+func (j *jsiiProxy_OpsgenieProvider) SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -347,7 +346,7 @@ func (j *jsiiProxy_OpsgenieProvider)SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsgenieProvider)SetApiRetryCount(val *float64) {
+func (j *jsiiProxy_OpsgenieProvider) SetApiRetryCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"apiRetryCount",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_OpsgenieProvider)SetApiRetryCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OpsgenieProvider)SetApiRetryWaitMax(val *float64) {
+func (j *jsiiProxy_OpsgenieProvider) SetApiRetryWaitMax(val *float64) {
 	_jsii_.Set(
 		j,
 		"apiRetryWaitMax",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_OpsgenieProvider)SetApiRetryWaitMax(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OpsgenieProvider)SetApiRetryWaitMin(val *float64) {
+func (j *jsiiProxy_OpsgenieProvider) SetApiRetryWaitMin(val *float64) {
 	_jsii_.Set(
 		j,
 		"apiRetryWaitMin",
@@ -371,7 +370,7 @@ func (j *jsiiProxy_OpsgenieProvider)SetApiRetryWaitMin(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OpsgenieProvider)SetApiUrl(val *string) {
+func (j *jsiiProxy_OpsgenieProvider) SetApiUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUrl",
@@ -391,7 +390,7 @@ func OpsgenieProvider_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.provider.OpsgenieProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func OpsgenieProvider_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsgenieProvider_IsConstruct(x interface{}) *bool {
+func OpsgenieProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsgenieProvider_IsConstructParameters(x); err != nil {
@@ -426,7 +425,7 @@ func OpsgenieProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.provider.OpsgenieProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func OpsgenieProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsgenieProvider_IsTerraformElement(x interface{}) *bool {
+func OpsgenieProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsgenieProvider_IsTerraformElementParameters(x); err != nil {
@@ -445,7 +444,7 @@ func OpsgenieProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.provider.OpsgenieProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func OpsgenieProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsgenieProvider_IsTerraformProvider(x interface{}) *bool {
+func OpsgenieProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsgenieProvider_IsTerraformProviderParameters(x); err != nil {
@@ -464,7 +463,7 @@ func OpsgenieProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.provider.OpsgenieProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -482,14 +481,14 @@ func OpsgenieProvider_TfResourceType() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsgenieProvider) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsgenieProvider) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -500,7 +499,7 @@ func (o *jsiiProxy_OpsgenieProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -552,8 +551,8 @@ func (o *jsiiProxy_OpsgenieProvider) ResetOverrideLogicalId() {
 	)
 }
 
-func (o *jsiiProxy_OpsgenieProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsgenieProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -565,8 +564,8 @@ func (o *jsiiProxy_OpsgenieProvider) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (o *jsiiProxy_OpsgenieProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsgenieProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -578,8 +577,8 @@ func (o *jsiiProxy_OpsgenieProvider) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpsgenieProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsgenieProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -591,8 +590,8 @@ func (o *jsiiProxy_OpsgenieProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsgenieProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsgenieProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -617,8 +616,8 @@ func (o *jsiiProxy_OpsgenieProvider) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsgenieProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsgenieProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -629,4 +628,3 @@ func (o *jsiiProxy_OpsgenieProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

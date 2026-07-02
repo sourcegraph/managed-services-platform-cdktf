@@ -90,7 +90,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) validateInterpo
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) validatePutDurationParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) validatePutDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewNotificationPolicyDelayActionOutputReferenceParameters(terraform
 
 	return nil
 }
-

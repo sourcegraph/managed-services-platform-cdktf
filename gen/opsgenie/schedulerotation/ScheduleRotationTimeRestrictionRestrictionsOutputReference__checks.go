@@ -98,7 +98,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewScheduleRotationTimeRestrictionRestrictionsOutputReferenceParame
 
 	return nil
 }
-

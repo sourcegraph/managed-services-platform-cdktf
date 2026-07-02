@@ -17,8 +17,8 @@ type NotificationRuleSchedulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NotificationRuleSchedulesList interface {
 	Get(index *float64) NotificationRuleSchedulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NotificationRuleSchedulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleSchedulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleSchedulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NotificationRuleSchedulesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewNotificationRuleSchedulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationRuleSchedulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNotificationRuleSchedulesList(terraformResource cdktf.IInterpolatingPare
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleSchedulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNotificationRuleSchedulesList_Override(n NotificationRuleSchedulesList, 
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleSchedulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleSchedulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationRuleSchedulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NotificationRuleSchedulesList)SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleSchedulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationRuleSchedulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NotificationRuleSchedulesList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleSchedulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationRuleSchedulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NotificationRuleSchedulesList)SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleSchedulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationRuleSchedulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NotificationRuleSchedulesList) AllWithMapKey(mapKeyAttributeN
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NotificationRuleSchedulesList) Get(index *float64) Notificati
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleSchedulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationRuleSchedulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NotificationRuleSchedulesList) ToString() *string {
 
 	return returns
 }
-

@@ -17,8 +17,8 @@ type MaintenanceRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MaintenanceRulesList interface {
 	Get(index *float64) MaintenanceRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MaintenanceRulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MaintenanceRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MaintenanceRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MaintenanceRulesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMaintenanceRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaintenanceRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMaintenanceRulesList(terraformResource cdktf.IInterpolatingParent, terra
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMaintenanceRulesList_Override(m MaintenanceRulesList, terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MaintenanceRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MaintenanceRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MaintenanceRulesList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MaintenanceRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MaintenanceRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MaintenanceRulesList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MaintenanceRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MaintenanceRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MaintenanceRulesList)SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_MaintenanceRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MaintenanceRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MaintenanceRulesList) AllWithMapKey(mapKeyAttributeName *stri
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MaintenanceRulesList) Get(index *float64) MaintenanceRulesOut
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MaintenanceRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MaintenanceRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MaintenanceRulesList) ToString() *string {
 
 	return returns
 }
-

@@ -12,16 +12,16 @@ type NotificationRuleCriteriaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Conditions() NotificationRuleCriteriaConditionsList
-	ConditionsInput() interface{}
+	ConditionsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,8 +29,8 @@ type NotificationRuleCriteriaOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type NotificationRuleCriteriaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type NotificationRuleCriteriaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConditions(value interface{})
+	PutConditions(value any)
 	ResetConditions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_NotificationRuleCriteriaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) Conditions() Notific
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) ConditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) ConditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) TypeInput() *string 
 	return returns
 }
 
-
 func NewNotificationRuleCriteriaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationRuleCriteriaOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewNotificationRuleCriteriaOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewNotificationRuleCriteriaOutputReference_Override(n NotificationRuleCrite
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleCriteriaOutputReference)SetType(val *string) {
+func (j *jsiiProxy_NotificationRuleCriteriaOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) PutConditions(value interface{}) {
+func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) PutConditions(value any) {
 	if err := n.validatePutConditionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) ResetConditions() {
 	)
 }
 
-func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (n *jsiiProxy_NotificationRuleCriteriaOutputReference) ToString() *string {
 
 	return returns
 }
-

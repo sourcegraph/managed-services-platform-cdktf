@@ -12,9 +12,9 @@ type EscalationRulesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,13 +33,13 @@ type EscalationRulesOutputReference interface {
 	DelayInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotifyType() *string
 	SetNotifyType(val *string)
 	NotifyTypeInput() *string
 	Recipient() EscalationRulesRecipientList
-	RecipientInput() interface{}
+	RecipientInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type EscalationRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,10 +72,10 @@ type EscalationRulesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRecipient(value interface{})
+	PutRecipient(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_EscalationRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_EscalationRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_EscalationRulesOutputReference) Recipient() EscalationRulesRe
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference) RecipientInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRulesOutputReference) RecipientInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recipientInput",
@@ -238,7 +238,6 @@ func (j *jsiiProxy_EscalationRulesOutputReference) TerraformResource() cdktf.IIn
 	return returns
 }
 
-
 func NewEscalationRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EscalationRulesOutputReference {
 	_init_.Initialize()
 
@@ -249,7 +248,7 @@ func NewEscalationRulesOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -261,12 +260,12 @@ func NewEscalationRulesOutputReference_Override(e EscalationRulesOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetCondition(val *string) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetCondition(val *string) {
 	if err := j.validateSetConditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetCondition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetDelay(val *float64) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetDelay(val *float64) {
 	if err := j.validateSetDelayParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetDelay(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetNotifyType(val *string) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetNotifyType(val *string) {
 	if err := j.validateSetNotifyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -332,7 +331,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetNotifyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +342,7 @@ func (j *jsiiProxy_EscalationRulesOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_EscalationRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,16 +366,16 @@ func (e *jsiiProxy_EscalationRulesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EscalationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EscalationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (e *jsiiProxy_EscalationRulesOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,34 +532,34 @@ func (e *jsiiProxy_EscalationRulesOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EscalationRulesOutputReference) PutRecipient(value interface{}) {
+func (e *jsiiProxy_EscalationRulesOutputReference) PutRecipient(value any) {
 	if err := e.validatePutRecipientParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putRecipient",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EscalationRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EscalationRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -579,4 +578,3 @@ func (e *jsiiProxy_EscalationRulesOutputReference) ToString() *string {
 
 	return returns
 }
-

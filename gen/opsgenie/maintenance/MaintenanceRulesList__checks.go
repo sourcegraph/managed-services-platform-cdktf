@@ -34,7 +34,7 @@ func (m *jsiiProxy_MaintenanceRulesList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MaintenanceRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMaintenanceRulesListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

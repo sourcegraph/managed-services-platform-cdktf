@@ -6,9 +6,9 @@ import (
 
 type NotificationPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NotificationPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#filter NotificationPolicy#filter}
@@ -44,7 +44,7 @@ type NotificationPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#delay_action NotificationPolicy#delay_action}
 	DelayAction *NotificationPolicyDelayAction `field:"optional" json:"delayAction" yaml:"delayAction"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#enabled NotificationPolicy#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#id NotificationPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -53,10 +53,9 @@ type NotificationPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#policy_description NotificationPolicy#policy_description}.
 	PolicyDescription *string `field:"optional" json:"policyDescription" yaml:"policyDescription"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#suppress NotificationPolicy#suppress}.
-	Suppress interface{} `field:"optional" json:"suppress" yaml:"suppress"`
+	Suppress any `field:"optional" json:"suppress" yaml:"suppress"`
 	// time_restriction block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#time_restriction NotificationPolicy#time_restriction}
 	TimeRestriction *NotificationPolicyTimeRestriction `field:"optional" json:"timeRestriction" yaml:"timeRestriction"`
 }
-

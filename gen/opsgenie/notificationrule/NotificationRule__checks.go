@@ -19,7 +19,7 @@ func (n *jsiiProxy_NotificationRule) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NotificationRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NotificationRule) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NotificationRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (n *jsiiProxy_NotificationRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRule) validatePutCriteriaParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationRule) validatePutCriteriaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (n *jsiiProxy_NotificationRule) validatePutCriteriaParameters(value interfa
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRule) validatePutRepeatParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationRule) validatePutRepeatParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (n *jsiiProxy_NotificationRule) validatePutRepeatParameters(value interface
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRule) validatePutSchedulesParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationRule) validatePutSchedulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (n *jsiiProxy_NotificationRule) validatePutSchedulesParameters(value interf
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRule) validatePutStepsParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationRule) validatePutStepsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -355,7 +355,7 @@ func validateNotificationRule_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateNotificationRule_IsConstructParameters(x interface{}) error {
+func validateNotificationRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -363,7 +363,7 @@ func validateNotificationRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNotificationRule_IsTerraformElementParameters(x interface{}) error {
+func validateNotificationRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -371,7 +371,7 @@ func validateNotificationRule_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateNotificationRule_IsTerraformResourceParameters(x interface{}) error {
+func validateNotificationRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_NotificationRule) validateSetActionTypeParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -420,7 +420,7 @@ func (j *jsiiProxy_NotificationRule) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -477,7 +477,7 @@ func (j *jsiiProxy_NotificationRule) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRule) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRule) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -537,7 +537,7 @@ func (j *jsiiProxy_NotificationRule) validateSetOrderParameters(val *float64) er
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NotificationRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -609,4 +609,3 @@ func validateNewNotificationRuleParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

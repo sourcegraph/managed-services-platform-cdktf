@@ -90,7 +90,7 @@ func (m *jsiiProxy_MaintenanceRulesOutputReference) validateInterpolationForAttr
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceRulesOutputReference) validatePutEntityParameters(value interface{}) error {
+func (m *jsiiProxy_MaintenanceRulesOutputReference) validatePutEntityParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_MaintenanceRulesOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MaintenanceRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_MaintenanceRulesOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MaintenanceRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewMaintenanceRulesOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

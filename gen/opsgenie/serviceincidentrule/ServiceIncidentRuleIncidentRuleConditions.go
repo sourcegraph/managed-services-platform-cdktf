@@ -1,6 +1,5 @@
 package serviceincidentrule
 
-
 type ServiceIncidentRuleIncidentRuleConditions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service_incident_rule#field ServiceIncidentRule#field}.
 	Field *string `field:"required" json:"field" yaml:"field"`
@@ -17,6 +16,5 @@ type ServiceIncidentRuleIncidentRuleConditions struct {
 	// Indicates behaviour of the given operation. Default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service_incident_rule#not ServiceIncidentRule#not}
-	Not interface{} `field:"optional" json:"not" yaml:"not"`
+	Not any `field:"optional" json:"not" yaml:"not"`
 }
-
