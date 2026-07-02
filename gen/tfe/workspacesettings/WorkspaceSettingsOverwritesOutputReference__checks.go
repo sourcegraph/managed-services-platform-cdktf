@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspaceSettingsOverwritesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceSettingsOverwritesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceSettingsOverwritesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkspaceSettingsOverwritesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

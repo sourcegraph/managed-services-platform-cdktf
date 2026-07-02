@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.team.Team",
-		reflect.TypeOf((*Team)(nil)).Elem(),
+		reflect.TypeFor[Team](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityInput", GoGetter: "VisibilityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Team{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.team.TeamConfig",
-		reflect.TypeOf((*TeamConfig)(nil)).Elem(),
+		reflect.TypeFor[TeamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.team.TeamOrganizationAccess",
-		reflect.TypeOf((*TeamOrganizationAccess)(nil)).Elem(),
+		reflect.TypeFor[TeamOrganizationAccess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference",
-		reflect.TypeOf((*TeamOrganizationAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamOrganizationAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessSecretTeams", GoGetter: "AccessSecretTeams"},
 			_jsii_.MemberProperty{JsiiProperty: "accessSecretTeamsInput", GoGetter: "AccessSecretTeamsInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamOrganizationAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

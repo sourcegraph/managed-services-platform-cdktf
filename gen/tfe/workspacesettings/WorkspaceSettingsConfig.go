@@ -6,9 +6,9 @@ import (
 
 type WorkspaceSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WorkspaceSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
@@ -30,10 +30,9 @@ type WorkspaceSettingsConfig struct {
 	// If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
-	GlobalRemoteState interface{} `field:"optional" json:"globalRemoteState" yaml:"globalRemoteState"`
+	GlobalRemoteState any `field:"optional" json:"globalRemoteState" yaml:"globalRemoteState"`
 	// The set of workspace IDs set as explicit remote state consumers for the given workspace.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
 	RemoteStateConsumerIds *[]*string `field:"optional" json:"remoteStateConsumerIds" yaml:"remoteStateConsumerIds"`
 }
-

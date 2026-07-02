@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataTfeRegistryModuleVersionStatusesOutputReferenceParameters(te
 
 	return nil
 }
-

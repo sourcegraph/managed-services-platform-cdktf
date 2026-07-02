@@ -15,9 +15,9 @@ type StackVcsRepoOutputReference interface {
 	BranchInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type StackVcsRepoOutputReference interface {
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OauthTokenId() *string
 	SetOauthTokenId(val *string)
 	OauthTokenIdInput() *string
@@ -52,7 +52,7 @@ type StackVcsRepoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type StackVcsRepoOutputReference interface {
 	ResetOauthTokenId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_StackVcsRepoOutputReference) BranchInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StackVcsRepoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_StackVcsRepoOutputReference) IdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StackVcsRepoOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_StackVcsRepoOutputReference) TerraformResource() cdktf.IInter
 	return returns
 }
 
-
 func NewStackVcsRepoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StackVcsRepoOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewStackVcsRepoOutputReference(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.stack.StackVcsRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewStackVcsRepoOutputReference_Override(s StackVcsRepoOutputReference, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.stack.StackVcsRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetBranch(val *string) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetBranch(val *string) {
 	if err := j.validateSetBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetGithubAppInstallationId(val *string) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetGithubAppInstallationId(val *string) {
 	if err := j.validateSetGithubAppInstallationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetGithubAppInstallationId(val *s
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetIdentifier(val *string) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetOauthTokenId(val *string) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetOauthTokenId(val *string) {
 	if err := j.validateSetOauthTokenIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetOauthTokenId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StackVcsRepoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StackVcsRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StackVcsRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) ResetOauthTokenId() {
 	)
 }
 
-func (s *jsiiProxy_StackVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StackVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (s *jsiiProxy_StackVcsRepoOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DataTfeRegistryModuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataTfeRegistryModuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the module provider.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
@@ -38,7 +38,7 @@ type DataTfeRegistryModuleConfig struct {
 	// permissions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
-	Permissions interface{} `field:"optional" json:"permissions" yaml:"permissions"`
+	Permissions any `field:"optional" json:"permissions" yaml:"permissions"`
 	// Name of the registry. Valid options: "public", "private". Defaults to "private".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
@@ -46,14 +46,13 @@ type DataTfeRegistryModuleConfig struct {
 	// test_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
-	TestConfig interface{} `field:"optional" json:"testConfig" yaml:"testConfig"`
+	TestConfig any `field:"optional" json:"testConfig" yaml:"testConfig"`
 	// vcs_repo block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
-	VcsRepo interface{} `field:"optional" json:"vcsRepo" yaml:"vcsRepo"`
+	VcsRepo any `field:"optional" json:"vcsRepo" yaml:"vcsRepo"`
 	// version_statuses block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
-	VersionStatuses interface{} `field:"optional" json:"versionStatuses" yaml:"versionStatuses"`
+	VersionStatuses any `field:"optional" json:"versionStatuses" yaml:"versionStatuses"`
 }
-

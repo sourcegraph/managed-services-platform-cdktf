@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
-		reflect.TypeOf((*DataTfePolicySet)(nil)).Elem(),
+		reflect.TypeFor[DataTfePolicySet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "agentEnabled", GoGetter: "AgentEnabled"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcsRepo", GoGetter: "VcsRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfePolicySet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetConfig",
-		reflect.TypeOf((*DataTfePolicySetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfePolicySetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepo",
-		reflect.TypeOf((*DataTfePolicySetVcsRepo)(nil)).Elem(),
+		reflect.TypeFor[DataTfePolicySetVcsRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoList",
-		reflect.TypeOf((*DataTfePolicySetVcsRepoList)(nil)).Elem(),
+		reflect.TypeFor[DataTfePolicySetVcsRepoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfePolicySetVcsRepoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
-		reflect.TypeOf((*DataTfePolicySetVcsRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfePolicySetVcsRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfePolicySetVcsRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

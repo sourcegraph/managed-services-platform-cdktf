@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeTeamProjectAccessProjectAccessOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeTeamProjectAccessProjectAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeTeamProjectAccessProjectAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataTfeTeamProjectAccessProjectAccessOutputReferenceParameters(t
 
 	return nil
 }
-

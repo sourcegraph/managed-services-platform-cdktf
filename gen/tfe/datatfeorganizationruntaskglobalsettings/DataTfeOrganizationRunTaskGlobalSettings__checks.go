@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataTfeOrganizationRunTaskGlobalSettings_GenerateConfigForImportPar
 	return nil
 }
 
-func validateDataTfeOrganizationRunTaskGlobalSettings_IsConstructParameters(x interface{}) error {
+func validateDataTfeOrganizationRunTaskGlobalSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataTfeOrganizationRunTaskGlobalSettings_IsConstructParameters(x in
 	return nil
 }
 
-func validateDataTfeOrganizationRunTaskGlobalSettings_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataTfeOrganizationRunTaskGlobalSettings_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataTfeOrganizationRunTaskGlobalSettings_IsTerraformDataSourceParam
 	return nil
 }
 
-func validateDataTfeOrganizationRunTaskGlobalSettings_IsTerraformElementParameters(x interface{}) error {
+func validateDataTfeOrganizationRunTaskGlobalSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataTfeOrganizationRunTaskGlobalSettings_IsTerraformElementParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -208,7 +208,7 @@ func (j *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewDataTfeOrganizationRunTaskGlobalSettingsParameters(scope constru
 
 	return nil
 }
-
