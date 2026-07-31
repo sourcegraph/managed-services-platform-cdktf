@@ -25,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "domains", GoGetter: "Domains"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "framework", GoGetter: "Framework"},
+			_jsii_.MemberProperty{JsiiProperty: "frameworkVersion", GoGetter: "FrameworkVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -42,7 +44,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "previewScriptName", GoGetter: "PreviewScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "productionBranch", GoGetter: "ProductionBranch"},
+			_jsii_.MemberProperty{JsiiProperty: "productionScriptName", GoGetter: "ProductionScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "projectName", GoGetter: "ProjectName"},
 			_jsii_.MemberProperty{JsiiProperty: "projectNameInput", GoGetter: "ProjectNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -59,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "usesFunctions", GoGetter: "UsesFunctions"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePagesProject{}
@@ -167,6 +172,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "commitDirty", GoGetter: "CommitDirty"},
 			_jsii_.MemberProperty{JsiiProperty: "commitHash", GoGetter: "CommitHash"},
 			_jsii_.MemberProperty{JsiiProperty: "commitMessage", GoGetter: "CommitMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -370,6 +376,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "usesFunctions", GoGetter: "UsesFunctions"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentOutputReference{}
@@ -408,6 +415,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "owner", GoGetter: "Owner"},
+			_jsii_.MemberProperty{JsiiProperty: "ownerId", GoGetter: "OwnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "pathExcludes", GoGetter: "PathExcludes"},
 			_jsii_.MemberProperty{JsiiProperty: "pathIncludes", GoGetter: "PathIncludes"},
 			_jsii_.MemberProperty{JsiiProperty: "prCommentsEnabled", GoGetter: "PrCommentsEnabled"},
@@ -416,6 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "previewDeploymentSetting", GoGetter: "PreviewDeploymentSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "productionBranch", GoGetter: "ProductionBranch"},
 			_jsii_.MemberProperty{JsiiProperty: "productionDeploymentsEnabled", GoGetter: "ProductionDeploymentsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "repoId", GoGetter: "RepoId"},
 			_jsii_.MemberProperty{JsiiProperty: "repoName", GoGetter: "RepoName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1026,6 +1035,43 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits",
+		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsPreviewLimits)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference",
+		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuMs", GoGetter: "CpuMs"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates",
 		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates)(nil)).Elem(),
 	)
@@ -1087,8 +1133,10 @@ func init() {
 		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiBindings", GoGetter: "AiBindings"},
+			_jsii_.MemberProperty{JsiiProperty: "alwaysUseLatestCompatibilityDate", GoGetter: "AlwaysUseLatestCompatibilityDate"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsEngineDatasets", GoGetter: "AnalyticsEngineDatasets"},
 			_jsii_.MemberProperty{JsiiProperty: "browsers", GoGetter: "Browsers"},
+			_jsii_.MemberProperty{JsiiProperty: "buildImageMajorVersion", GoGetter: "BuildImageMajorVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDate", GoGetter: "CompatibilityDate"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityFlags", GoGetter: "CompatibilityFlags"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1098,6 +1146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "d1Databases", GoGetter: "D1Databases"},
 			_jsii_.MemberProperty{JsiiProperty: "durableObjectNamespaces", GoGetter: "DurableObjectNamespaces"},
 			_jsii_.MemberProperty{JsiiProperty: "envVars", GoGetter: "EnvVars"},
+			_jsii_.MemberProperty{JsiiProperty: "failOpen", GoGetter: "FailOpen"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1113,6 +1162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "kvNamespaces", GoGetter: "KvNamespaces"},
+			_jsii_.MemberProperty{JsiiProperty: "limits", GoGetter: "Limits"},
 			_jsii_.MemberProperty{JsiiProperty: "mtlsCertificates", GoGetter: "MtlsCertificates"},
 			_jsii_.MemberProperty{JsiiProperty: "placement", GoGetter: "Placement"},
 			_jsii_.MemberProperty{JsiiProperty: "queueProducers", GoGetter: "QueueProducers"},
@@ -1122,7 +1172,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usageModel", GoGetter: "UsageModel"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeBindings", GoGetter: "VectorizeBindings"},
+			_jsii_.MemberProperty{JsiiProperty: "wranglerConfigHash", GoGetter: "WranglerConfigHash"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference{}
@@ -1859,6 +1911,43 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits",
+		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsProductionLimits)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference",
+		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuMs", GoGetter: "CpuMs"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates",
 		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates)(nil)).Elem(),
 	)
@@ -1920,8 +2009,10 @@ func init() {
 		reflect.TypeOf((*DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiBindings", GoGetter: "AiBindings"},
+			_jsii_.MemberProperty{JsiiProperty: "alwaysUseLatestCompatibilityDate", GoGetter: "AlwaysUseLatestCompatibilityDate"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsEngineDatasets", GoGetter: "AnalyticsEngineDatasets"},
 			_jsii_.MemberProperty{JsiiProperty: "browsers", GoGetter: "Browsers"},
+			_jsii_.MemberProperty{JsiiProperty: "buildImageMajorVersion", GoGetter: "BuildImageMajorVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDate", GoGetter: "CompatibilityDate"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityFlags", GoGetter: "CompatibilityFlags"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1931,6 +2022,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "d1Databases", GoGetter: "D1Databases"},
 			_jsii_.MemberProperty{JsiiProperty: "durableObjectNamespaces", GoGetter: "DurableObjectNamespaces"},
 			_jsii_.MemberProperty{JsiiProperty: "envVars", GoGetter: "EnvVars"},
+			_jsii_.MemberProperty{JsiiProperty: "failOpen", GoGetter: "FailOpen"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1946,6 +2038,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "kvNamespaces", GoGetter: "KvNamespaces"},
+			_jsii_.MemberProperty{JsiiProperty: "limits", GoGetter: "Limits"},
 			_jsii_.MemberProperty{JsiiProperty: "mtlsCertificates", GoGetter: "MtlsCertificates"},
 			_jsii_.MemberProperty{JsiiProperty: "placement", GoGetter: "Placement"},
 			_jsii_.MemberProperty{JsiiProperty: "queueProducers", GoGetter: "QueueProducers"},
@@ -1955,7 +2048,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usageModel", GoGetter: "UsageModel"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeBindings", GoGetter: "VectorizeBindings"},
+			_jsii_.MemberProperty{JsiiProperty: "wranglerConfigHash", GoGetter: "WranglerConfigHash"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference{}
@@ -2290,6 +2385,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "commitDirty", GoGetter: "CommitDirty"},
 			_jsii_.MemberProperty{JsiiProperty: "commitHash", GoGetter: "CommitHash"},
 			_jsii_.MemberProperty{JsiiProperty: "commitMessage", GoGetter: "CommitMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2493,6 +2589,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "usesFunctions", GoGetter: "UsesFunctions"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePagesProjectLatestDeploymentOutputReference{}
@@ -2531,6 +2628,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "owner", GoGetter: "Owner"},
+			_jsii_.MemberProperty{JsiiProperty: "ownerId", GoGetter: "OwnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "pathExcludes", GoGetter: "PathExcludes"},
 			_jsii_.MemberProperty{JsiiProperty: "pathIncludes", GoGetter: "PathIncludes"},
 			_jsii_.MemberProperty{JsiiProperty: "prCommentsEnabled", GoGetter: "PrCommentsEnabled"},
@@ -2539,6 +2637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "previewDeploymentSetting", GoGetter: "PreviewDeploymentSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "productionBranch", GoGetter: "ProductionBranch"},
 			_jsii_.MemberProperty{JsiiProperty: "productionDeploymentsEnabled", GoGetter: "ProductionDeploymentsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "repoId", GoGetter: "RepoId"},
 			_jsii_.MemberProperty{JsiiProperty: "repoName", GoGetter: "RepoName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -2677,6 +2776,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "owner", GoGetter: "Owner"},
+			_jsii_.MemberProperty{JsiiProperty: "ownerId", GoGetter: "OwnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "pathExcludes", GoGetter: "PathExcludes"},
 			_jsii_.MemberProperty{JsiiProperty: "pathIncludes", GoGetter: "PathIncludes"},
 			_jsii_.MemberProperty{JsiiProperty: "prCommentsEnabled", GoGetter: "PrCommentsEnabled"},
@@ -2685,6 +2785,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "previewDeploymentSetting", GoGetter: "PreviewDeploymentSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "productionBranch", GoGetter: "ProductionBranch"},
 			_jsii_.MemberProperty{JsiiProperty: "productionDeploymentsEnabled", GoGetter: "ProductionDeploymentsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "repoId", GoGetter: "RepoId"},
 			_jsii_.MemberProperty{JsiiProperty: "repoName", GoGetter: "RepoName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

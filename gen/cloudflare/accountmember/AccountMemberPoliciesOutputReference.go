@@ -30,7 +30,6 @@ type AccountMemberPoliciesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	PermissionGroups() AccountMemberPoliciesPermissionGroupsList
@@ -141,16 +140,6 @@ func (j *jsiiProxy_AccountMemberPoliciesOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountMemberPoliciesOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
 		&returns,
 	)
 	return returns

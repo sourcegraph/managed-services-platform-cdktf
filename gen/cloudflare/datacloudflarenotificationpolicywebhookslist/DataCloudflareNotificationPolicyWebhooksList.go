@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarenotificationpolicywebhookslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
 type DataCloudflareNotificationPolicyWebhooksList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksListConfig) DataCloudflareNotificationPolicyWebhooksList {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooksList_Override(d DataCloudflareNotificationPolicyWebhooksList, scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksListConfig) {
 	_init_.Initialize()
 

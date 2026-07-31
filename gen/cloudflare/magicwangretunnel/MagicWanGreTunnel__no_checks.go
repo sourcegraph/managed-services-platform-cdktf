@@ -72,6 +72,10 @@ func (m *jsiiProxy_MagicWanGreTunnel) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) validatePutBgpParameters(value *MagicWanGreTunnelBgp) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) validatePutHealthCheckParameters(value *MagicWanGreTunnelHealthCheck) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetAccountIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetAutomaticReturnRoutingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetCloudflareGreEndpointParameters(val *string) error {
 	return nil
 }
@@ -117,6 +125,10 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetDescriptionParameters(val *stri
 }
 
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddress6Parameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaredcvdelegation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dcv_delegation cloudflare_dcv_delegation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation}.
 type DataCloudflareDcvDelegation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataCloudflareDcvDelegation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
 func NewDataCloudflareDcvDelegation(scope constructs.Construct, id *string, config *DataCloudflareDcvDelegationConfig) DataCloudflareDcvDelegation {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataCloudflareDcvDelegation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
 func NewDataCloudflareDcvDelegation_Override(d DataCloudflareDcvDelegation, scope constructs.Construct, id *string, config *DataCloudflareDcvDelegationConfig) {
 	_init_.Initialize()
 

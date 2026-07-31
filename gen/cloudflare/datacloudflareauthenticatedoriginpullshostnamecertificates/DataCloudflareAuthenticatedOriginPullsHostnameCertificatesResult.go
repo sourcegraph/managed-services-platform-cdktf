@@ -1,0 +1,6 @@
+package datacloudflareauthenticatedoriginpullshostnamecertificates
+
+
+type DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult struct {
+}
+

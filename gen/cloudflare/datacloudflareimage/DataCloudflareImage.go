@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image cloudflare_image}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image cloudflare_image}.
 type DataCloudflareImage interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -23,6 +23,7 @@ type DataCloudflareImage interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Creator() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataCloudflareImage) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareImage) Creator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creator",
 		&returns,
 	)
 	return returns
@@ -350,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareImage) Variants() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image cloudflare_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image cloudflare_image} Data Source.
 func NewDataCloudflareImage(scope constructs.Construct, id *string, config *DataCloudflareImageConfig) DataCloudflareImage {
 	_init_.Initialize()
 
@@ -368,7 +379,7 @@ func NewDataCloudflareImage(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image cloudflare_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image cloudflare_image} Data Source.
 func NewDataCloudflareImage_Override(d DataCloudflareImage, scope constructs.Construct, id *string, config *DataCloudflareImageConfig) {
 	_init_.Initialize()
 

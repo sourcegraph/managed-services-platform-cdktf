@@ -2,53 +2,65 @@ package zerotrustgatewaysettings
 
 
 type ZeroTrustGatewaySettingsSettingsBlockPage struct {
-	// If mode is customized_block_page: block page background color in #rrggbb format.
+	// Specify the block page background color in `#rrggbb` format when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
 	BackgroundColor *string `field:"optional" json:"backgroundColor" yaml:"backgroundColor"`
-	// Enable only cipher suites and TLS versions compliant with FIPS 140-2.
+	// Specify whether to enable the custom block page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// If mode is customized_block_page: block page footer text.
+	// Specify the block page footer text when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
 	FooterText *string `field:"optional" json:"footerText" yaml:"footerText"`
-	// If mode is customized_block_page: block page header text.
+	// Specify the block page header text when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
 	HeaderText *string `field:"optional" json:"headerText" yaml:"headerText"`
-	// If mode is redirect_uri: when enabled, context will be appended to target_uri as query parameters.
+	// Specify whether to append context to target_uri as query parameters. This applies only when the mode is redirect_uri.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
 	IncludeContext interface{} `field:"optional" json:"includeContext" yaml:"includeContext"`
-	// If mode is customized_block_page: full URL to the logo file.
+	// Specify the full URL to the logo file when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
 	LogoPath *string `field:"optional" json:"logoPath" yaml:"logoPath"`
-	// If mode is customized_block_page: admin email for users to contact.
+	// Specify the admin email for users to contact when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
 	MailtoAddress *string `field:"optional" json:"mailtoAddress" yaml:"mailtoAddress"`
-	// If mode is customized_block_page: subject line for emails created from block page.
+	// Specify the subject line for emails created from the block page when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
 	MailtoSubject *string `field:"optional" json:"mailtoSubject" yaml:"mailtoSubject"`
-	// Controls whether the user is redirected to a Cloudflare-hosted block page or to a customer-provided URI. Available values: "customized_block_page", "redirect_uri".
+	// Specify whether to redirect users to a Cloudflare-hosted block page or a customer-provided URI. Available values: "", "customized_block_page", "redirect_uri".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
-	// If mode is customized_block_page: block page title.
+	// Specify the block page title when the mode is customized_block_page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// If mode is customized_block_page: suppress detailed info at the bottom of the block page.
+	// Indicate that this setting was shared via the Orgs API and read only for the current account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#suppress_footer ZeroTrustGatewaySettings#suppress_footer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#read_only ZeroTrustGatewaySettings#read_only}
+	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	// Indicate the account tag of the account that shared this setting.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#source_account ZeroTrustGatewaySettings#source_account}
+	SourceAccount *string `field:"optional" json:"sourceAccount" yaml:"sourceAccount"`
+	// Specify whether to suppress detailed information at the bottom of the block page when the mode is customized_block_page.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#suppress_footer ZeroTrustGatewaySettings#suppress_footer}
 	SuppressFooter interface{} `field:"optional" json:"suppressFooter" yaml:"suppressFooter"`
-	// If mode is redirect_uri: URI to which the user should be redirected.
+	// Specify the URI to redirect users to when the mode is redirect_uri.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#target_uri ZeroTrustGatewaySettings#target_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#target_uri ZeroTrustGatewaySettings#target_uri}
 	TargetUri *string `field:"optional" json:"targetUri" yaml:"targetUri"`
+	// Indicate the version number of the setting.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#version ZeroTrustGatewaySettings#version}
+	Version *float64 `field:"optional" json:"version" yaml:"version"`
 }
 

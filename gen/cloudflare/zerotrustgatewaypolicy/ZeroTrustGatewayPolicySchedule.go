@@ -2,53 +2,53 @@ package zerotrustgatewaypolicy
 
 
 type ZeroTrustGatewayPolicySchedule struct {
-	// The time intervals when the rule will be active on Fridays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Fridays, in the increasing order from 00:00-24:00.
 	//
-	// If this parameter is omitted, the rule will be deactivated on Fridays.
+	// If this parameter omitted, the rule is deactivated on Fridays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#fri ZeroTrustGatewayPolicy#fri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#fri ZeroTrustGatewayPolicy#fri}
 	Fri *string `field:"optional" json:"fri" yaml:"fri"`
-	// The time intervals when the rule will be active on Mondays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Mondays, in the increasing order from 00:00-24:00(capped at maximum of 6 time splits).
 	//
-	// If this parameter is omitted, the rule will be deactivated on Mondays.
+	// If this parameter omitted, the rule is deactivated on Mondays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#mon ZeroTrustGatewayPolicy#mon}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#mon ZeroTrustGatewayPolicy#mon}
 	Mon *string `field:"optional" json:"mon" yaml:"mon"`
-	// The time intervals when the rule will be active on Saturdays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Saturdays, in the increasing order from 00:00-24:00.
 	//
-	// If this parameter is omitted, the rule will be deactivated on Saturdays.
+	// If this parameter omitted, the rule is deactivated on Saturdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#sat ZeroTrustGatewayPolicy#sat}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#sat ZeroTrustGatewayPolicy#sat}
 	Sat *string `field:"optional" json:"sat" yaml:"sat"`
-	// The time intervals when the rule will be active on Sundays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Sundays, in the increasing order from 00:00-24:00.
 	//
-	// If this parameter is omitted, the rule will be deactivated on Sundays.
+	// If this parameter omitted, the rule is deactivated on Sundays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#sun ZeroTrustGatewayPolicy#sun}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#sun ZeroTrustGatewayPolicy#sun}
 	Sun *string `field:"optional" json:"sun" yaml:"sun"`
-	// The time intervals when the rule will be active on Thursdays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Thursdays, in the increasing order from 00:00-24:00.
 	//
-	// If this parameter is omitted, the rule will be deactivated on Thursdays.
+	// If this parameter omitted, the rule is deactivated on Thursdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#thu ZeroTrustGatewayPolicy#thu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#thu ZeroTrustGatewayPolicy#thu}
 	Thu *string `field:"optional" json:"thu" yaml:"thu"`
-	// The time zone the rule will be evaluated against.
+	// Specify the time zone for rule evaluation.
 	//
-	// If a [valid time zone city name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) is provided, Gateway will always use the current time at that time zone. If this parameter is omitted, then Gateway will use the time zone inferred from the user's source IP to evaluate the rule. If Gateway cannot determine the time zone from the IP, we will fall back to the time zone of the user's connected data center.
+	// When a [valid time zone city name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) is provided, Gateway always uses the current time for that time zone. When this parameter is omitted, Gateway uses the time zone determined from the user's IP address. Colo time zone is used when the user's IP address does not resolve to a location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#time_zone ZeroTrustGatewayPolicy#time_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#time_zone ZeroTrustGatewayPolicy#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
-	// The time intervals when the rule will be active on Tuesdays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Tuesdays, in the increasing order from 00:00-24:00.
 	//
-	// If this parameter is omitted, the rule will be deactivated on Tuesdays.
+	// If this parameter omitted, the rule is deactivated on Tuesdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#tue ZeroTrustGatewayPolicy#tue}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#tue ZeroTrustGatewayPolicy#tue}
 	Tue *string `field:"optional" json:"tue" yaml:"tue"`
-	// The time intervals when the rule will be active on Wednesdays, in increasing order from 00:00-24:00.
+	// Specify the time intervals when the rule is active on Wednesdays, in the increasing order from 00:00-24:00.
 	//
-	// If this parameter is omitted, the rule will be deactivated on Wednesdays.
+	// If this parameter omitted, the rule is deactivated on Wednesdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#wed ZeroTrustGatewayPolicy#wed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#wed ZeroTrustGatewayPolicy#wed}
 	Wed *string `field:"optional" json:"wed" yaml:"wed"`
 }
 

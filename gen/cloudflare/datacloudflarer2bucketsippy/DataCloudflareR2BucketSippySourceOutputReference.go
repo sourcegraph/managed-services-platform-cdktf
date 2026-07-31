@@ -11,6 +11,7 @@ import (
 type DataCloudflareR2BucketSippySourceOutputReference interface {
 	cdktf.ComplexObject
 	Bucket() *string
+	BucketUrl() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,7 +31,7 @@ type DataCloudflareR2BucketSippySourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareR2BucketSippySource
 	SetInternalValue(val *DataCloudflareR2BucketSippySource)
-	Provider() *string
+	R2BucketSippyProvider() *string
 	Region() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -89,6 +90,16 @@ func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) Bucket() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) BucketUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -139,11 +150,11 @@ func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) InternalVal
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) Provider() *string {
+func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) R2BucketSippyProvider() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"provider",
+		"r2BucketSippyProvider",
 		&returns,
 	)
 	return returns

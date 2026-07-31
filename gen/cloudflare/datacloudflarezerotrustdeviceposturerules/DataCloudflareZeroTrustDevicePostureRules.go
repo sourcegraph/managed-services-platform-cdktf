@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdeviceposturerules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rules cloudflare_zero_trust_device_posture_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_posture_rules cloudflare_zero_trust_device_posture_rules}.
 type DataCloudflareZeroTrustDevicePostureRules interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRules) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rules cloudflare_zero_trust_device_posture_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_posture_rules cloudflare_zero_trust_device_posture_rules} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRules(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRulesConfig) DataCloudflareZeroTrustDevicePostureRules {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareZeroTrustDevicePostureRules(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rules cloudflare_zero_trust_device_posture_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_posture_rules cloudflare_zero_trust_device_posture_rules} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRules_Override(d DataCloudflareZeroTrustDevicePostureRules, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRulesConfig) {
 	_init_.Initialize()
 

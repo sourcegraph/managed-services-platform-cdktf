@@ -37,7 +37,6 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	ConsumerServiceUrl() *string
 	SetConsumerServiceUrl(val *string)
 	ConsumerServiceUrlInput() *string
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -97,7 +96,6 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -296,16 +294,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ConsumerSer
 	_jsii_.Get(
 		j,
 		"consumerServiceUrlInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -666,16 +654,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

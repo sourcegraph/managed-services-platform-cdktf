@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdlppredefinedentries
+
+
+type DataCloudflareZeroTrustDlpPredefinedEntriesResultConfidence struct {
+}
+

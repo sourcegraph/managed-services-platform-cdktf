@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustgatewaycertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 type ZeroTrustGatewayCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Activate() interface{}
+	SetActivate(val interface{})
+	ActivateInput() interface{}
 	BindingStatus() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -119,6 +122,7 @@ type ZeroTrustGatewayCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetActivate()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -156,6 +160,26 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) Activate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) ActivateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activateInput",
 		&returns,
 	)
 	return returns
@@ -462,7 +486,7 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) ValidityPeriodDaysInput() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) ZeroTrustGatewayCertificate {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate_Override(z ZeroTrustGatewayCertificate, scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) {
 	_init_.Initialize()
 
@@ -498,6 +522,17 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetActivate(val interface{}) {
+	if err := j.validateSetActivateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activate",
 		val,
 	)
 }
@@ -931,6 +966,14 @@ func (z *jsiiProxy_ZeroTrustGatewayCertificate) OverrideLogicalId(newLogicalId *
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayCertificate) ResetActivate() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetActivate",
+		nil, // no parameters
 	)
 }
 

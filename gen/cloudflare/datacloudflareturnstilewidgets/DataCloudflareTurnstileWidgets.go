@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareturnstilewidgets/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}.
 type DataCloudflareTurnstileWidgets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,9 @@ type DataCloudflareTurnstileWidgets interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +92,7 @@ type DataCloudflareTurnstileWidgets interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDirection()
+	ResetFilter()
 	ResetMaxItems()
 	ResetOrder()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -188,6 +192,26 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgets) DirectionInput() *string {
 	_jsii_.Get(
 		j,
 		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareTurnstileWidgets) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareTurnstileWidgets) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -344,7 +368,7 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgets) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
 func NewDataCloudflareTurnstileWidgets(scope constructs.Construct, id *string, config *DataCloudflareTurnstileWidgetsConfig) DataCloudflareTurnstileWidgets {
 	_init_.Initialize()
 
@@ -362,7 +386,7 @@ func NewDataCloudflareTurnstileWidgets(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
 func NewDataCloudflareTurnstileWidgets_Override(d DataCloudflareTurnstileWidgets, scope constructs.Construct, id *string, config *DataCloudflareTurnstileWidgetsConfig) {
 	_init_.Initialize()
 
@@ -410,6 +434,17 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgets)SetDirection(val *string) {
 	_jsii_.Set(
 		j,
 		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareTurnstileWidgets)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
 		val,
 	)
 }
@@ -752,6 +787,14 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgets) ResetDirection() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareTurnstileWidgets) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustgatewaypolicies/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies}.
 type DataCloudflareZeroTrustGatewayPolicies interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicies) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source.
 func NewDataCloudflareZeroTrustGatewayPolicies(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayPoliciesConfig) DataCloudflareZeroTrustGatewayPolicies {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareZeroTrustGatewayPolicies(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_policies cloudflare_zero_trust_gateway_policies} Data Source.
 func NewDataCloudflareZeroTrustGatewayPolicies_Override(d DataCloudflareZeroTrustGatewayPolicies, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayPoliciesConfig) {
 	_init_.Initialize()
 

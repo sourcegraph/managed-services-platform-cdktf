@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdeviceposturerule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
 type DataCloudflareZeroTrustDevicePostureRule interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -92,7 +92,6 @@ type DataCloudflareZeroTrustDevicePostureRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRule(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRuleConfig) DataCloudflareZeroTrustDevicePostureRule {
 	_init_.Initialize()
 
@@ -391,7 +390,7 @@ func NewDataCloudflareZeroTrustDevicePostureRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRule_Override(d DataCloudflareZeroTrustDevicePostureRule, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRuleConfig) {
 	_init_.Initialize()
 
@@ -759,14 +758,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) ResetRuleId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRuleId",
 		nil, // no parameters
 	)
 }

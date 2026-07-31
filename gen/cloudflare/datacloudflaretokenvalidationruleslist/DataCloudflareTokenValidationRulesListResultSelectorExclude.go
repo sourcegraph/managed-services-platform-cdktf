@@ -1,0 +1,6 @@
+package datacloudflaretokenvalidationruleslist
+
+
+type DataCloudflareTokenValidationRulesListResultSelectorExclude struct {
+}
+

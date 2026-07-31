@@ -134,6 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trafficExclusions", GoGetter: "TrafficExclusions"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelName", GoGetter: "TunnelName"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "where", GoGetter: "Where"},
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 		},

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarespectrumapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
 type DataCloudflareSpectrumApplication interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -31,6 +31,8 @@ type DataCloudflareSpectrumApplication interface {
 	SetDependsOn(val *[]*string)
 	Dns() DataCloudflareSpectrumApplicationDnsOutputReference
 	EdgeIps() DataCloudflareSpectrumApplicationEdgeIpsOutputReference
+	Filter() DataCloudflareSpectrumApplicationFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -95,6 +97,9 @@ type DataCloudflareSpectrumApplication interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareSpectrumApplicationFilter)
+	ResetAppId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -212,6 +217,26 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) EdgeIps() DataCloudflareSp
 	_jsii_.Get(
 		j,
 		"edgeIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) Filter() DataCloudflareSpectrumApplicationFilterOutputReference {
+	var returns DataCloudflareSpectrumApplicationFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -438,7 +463,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) DataCloudflareSpectrumApplication {
 	_init_.Initialize()
 
@@ -456,7 +481,7 @@ func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication_Override(d DataCloudflareSpectrumApplication, scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) {
 	_init_.Initialize()
 
@@ -817,6 +842,33 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) PutFilter(value *DataCloudflareSpectrumApplicationFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) ResetAppId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAppId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

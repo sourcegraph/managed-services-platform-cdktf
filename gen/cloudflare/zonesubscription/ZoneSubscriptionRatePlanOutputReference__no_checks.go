@@ -56,14 +56,6 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetCurrencyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetExternallyManagedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -72,19 +64,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetInternalV
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetIsContractParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetPublicNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetScopeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) validateSetSetsParameters(val *[]*string) error {
 	return nil
 }
 

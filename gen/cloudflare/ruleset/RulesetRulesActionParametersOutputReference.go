@@ -15,6 +15,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	AdditionalCacheablePortsInput() *[]*float64
 	Algorithms() RulesetRulesActionParametersAlgorithmsList
 	AlgorithmsInput() interface{}
+	AssetName() *string
+	SetAssetName(val *string)
+	AssetNameInput() *string
 	AutomaticHttpsRewrites() interface{}
 	SetAutomaticHttpsRewrites(val interface{})
 	AutomaticHttpsRewritesInput() interface{}
@@ -126,12 +129,18 @@ type RulesetRulesActionParametersOutputReference interface {
 	ReadTimeout() *float64
 	SetReadTimeout(val *float64)
 	ReadTimeoutInput() *float64
+	RequestBodyBuffering() *string
+	SetRequestBodyBuffering(val *string)
+	RequestBodyBufferingInput() *string
 	RequestFields() RulesetRulesActionParametersRequestFieldsList
 	RequestFieldsInput() interface{}
 	RespectStrongEtags() interface{}
 	SetRespectStrongEtags(val interface{})
 	RespectStrongEtagsInput() interface{}
 	Response() RulesetRulesActionParametersResponseOutputReference
+	ResponseBodyBuffering() *string
+	SetResponseBodyBuffering(val *string)
+	ResponseBodyBufferingInput() *string
 	ResponseFields() RulesetRulesActionParametersResponseFieldsList
 	ResponseFieldsInput() interface{}
 	ResponseInput() interface{}
@@ -225,6 +234,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutUri(value *RulesetRulesActionParametersUri)
 	ResetAdditionalCacheablePorts()
 	ResetAlgorithms()
+	ResetAssetName()
 	ResetAutomaticHttpsRewrites()
 	ResetAutominify()
 	ResetBic()
@@ -260,9 +270,11 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetProducts()
 	ResetRawResponseFields()
 	ResetReadTimeout()
+	ResetRequestBodyBuffering()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
 	ResetResponse()
+	ResetResponseBodyBuffering()
 	ResetResponseFields()
 	ResetRocketLoader()
 	ResetRules()
@@ -327,6 +339,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AlgorithmsInput(
 	_jsii_.Get(
 		j,
 		"algorithmsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AssetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AssetNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetNameInput",
 		&returns,
 	)
 	return returns
@@ -1082,6 +1114,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeoutInput
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestBodyBufferingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyBufferingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestFields() RulesetRulesActionParametersRequestFieldsList {
 	var returns RulesetRulesActionParametersRequestFieldsList
 	_jsii_.Get(
@@ -1127,6 +1179,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Response() Rules
 	_jsii_.Get(
 		j,
 		"response",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ResponseBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ResponseBodyBufferingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseBodyBufferingInput",
 		&returns,
 	)
 	return returns
@@ -1481,6 +1553,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAdditionalCach
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAssetName(val *string) {
+	if err := j.validateSetAssetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assetName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAutomaticHttpsRewrites(val interface{}) {
 	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
 		panic(err)
@@ -1756,6 +1839,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetReadTimeout(va
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRequestBodyBuffering(val *string) {
+	if err := j.validateSetRequestBodyBufferingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodyBuffering",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRespectStrongEtags(val interface{}) {
 	if err := j.validateSetRespectStrongEtagsParameters(val); err != nil {
 		panic(err)
@@ -1763,6 +1857,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRespectStrongE
 	_jsii_.Set(
 		j,
 		"respectStrongEtags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetResponseBodyBuffering(val *string) {
+	if err := j.validateSetResponseBodyBufferingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"responseBodyBuffering",
 		val,
 	)
 }
@@ -2321,6 +2426,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAlgorithms(
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAssetName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAssetName",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAutomaticHttpsRewrites() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2601,6 +2714,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRequestBodyBuffering() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRequestBodyBuffering",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRequestFields() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2621,6 +2742,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetResponse() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetResponse",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetResponseBodyBuffering() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetResponseBodyBuffering",
 		nil, // no parameters
 	)
 }

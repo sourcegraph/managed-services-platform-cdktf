@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarepageshieldconnectionslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}.
 type DataCloudflarePageShieldConnectionsList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -584,7 +584,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) ZoneIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
 func NewDataCloudflarePageShieldConnectionsList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsListConfig) DataCloudflarePageShieldConnectionsList {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewDataCloudflarePageShieldConnectionsList(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
 func NewDataCloudflarePageShieldConnectionsList_Override(d DataCloudflarePageShieldConnectionsList, scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsListConfig) {
 	_init_.Initialize()
 

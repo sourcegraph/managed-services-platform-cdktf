@@ -67,8 +67,6 @@ type PagesProjectSourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *PagesProjectSourceConfig)
-	ResetConfig()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -482,22 +480,6 @@ func (p *jsiiProxy_PagesProjectSourceOutputReference) PutConfig(value *PagesProj
 		p,
 		"putConfig",
 		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PagesProjectSourceOutputReference) ResetConfig() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetConfig",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProjectSourceOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetType",
-		nil, // no parameters
 	)
 }
 

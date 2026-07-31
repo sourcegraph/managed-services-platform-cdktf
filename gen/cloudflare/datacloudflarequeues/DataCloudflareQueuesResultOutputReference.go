@@ -30,6 +30,7 @@ type DataCloudflareQueuesResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareQueuesResult
 	SetInternalValue(val *DataCloudflareQueuesResult)
 	ModifiedOn() *string
@@ -150,6 +151,16 @@ func (j *jsiiProxy_DataCloudflareQueuesResultOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueuesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

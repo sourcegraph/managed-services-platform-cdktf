@@ -96,6 +96,14 @@ func (j *jsiiProxy_BotManagement) validateSetAutoUpdateModelParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetBmCookieEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotManagement) validateSetCfRobotsVariantParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -113,6 +121,10 @@ func (j *jsiiProxy_BotManagement) validateSetEnableJsParameters(val interface{})
 }
 
 func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotManagement) validateSetIsRobotsTxtManagedParameters(val interface{}) error {
 	return nil
 }
 

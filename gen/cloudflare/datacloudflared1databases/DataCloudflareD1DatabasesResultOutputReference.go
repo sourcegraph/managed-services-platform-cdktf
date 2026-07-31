@@ -28,6 +28,7 @@ type DataCloudflareD1DatabasesResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareD1DatabasesResult
 	SetInternalValue(val *DataCloudflareD1DatabasesResult)
 	Name() *string
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataCloudflareD1DatabasesResultOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareD1DatabasesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

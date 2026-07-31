@@ -64,7 +64,6 @@ type PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCertificateId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputRef
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference) ResetCertificateId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetCertificateId",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/certificatepack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
 type CertificatePack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -17,6 +17,7 @@ type CertificatePack interface {
 	CertificateAuthority() *string
 	SetCertificateAuthority(val *string)
 	CertificateAuthorityInput() *string
+	Certificates() CertificatePackCertificatesList
 	CloudflareBranding() interface{}
 	SetCloudflareBranding(val interface{})
 	CloudflareBrandingInput() interface{}
@@ -52,6 +53,7 @@ type CertificatePack interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PrimaryCertificate() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -72,9 +74,11 @@ type CertificatePack interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	ValidationErrors() CertificatePackValidationErrorsList
 	ValidationMethod() *string
 	SetValidationMethod(val *string)
 	ValidationMethodInput() *string
+	ValidationRecords() CertificatePackValidationRecordsList
 	ValidityDays() *float64
 	SetValidityDays(val *float64)
 	ValidityDaysInput() *float64
@@ -125,6 +129,7 @@ type CertificatePack interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCloudflareBranding()
+	ResetHosts()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -171,6 +176,16 @@ func (j *jsiiProxy_CertificatePack) CertificateAuthorityInput() *string {
 	_jsii_.Get(
 		j,
 		"certificateAuthorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Certificates() CertificatePackCertificatesList {
+	var returns CertificatePackCertificatesList
+	_jsii_.Get(
+		j,
+		"certificates",
 		&returns,
 	)
 	return returns
@@ -316,6 +331,16 @@ func (j *jsiiProxy_CertificatePack) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CertificatePack) PrimaryCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryCertificate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertificatePack) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -406,6 +431,16 @@ func (j *jsiiProxy_CertificatePack) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CertificatePack) ValidationErrors() CertificatePackValidationErrorsList {
+	var returns CertificatePackValidationErrorsList
+	_jsii_.Get(
+		j,
+		"validationErrors",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertificatePack) ValidationMethod() *string {
 	var returns *string
 	_jsii_.Get(
@@ -421,6 +456,16 @@ func (j *jsiiProxy_CertificatePack) ValidationMethodInput() *string {
 	_jsii_.Get(
 		j,
 		"validationMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationRecords() CertificatePackValidationRecordsList {
+	var returns CertificatePackValidationRecordsList
+	_jsii_.Get(
+		j,
+		"validationRecords",
 		&returns,
 	)
 	return returns
@@ -467,7 +512,7 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
 
@@ -485,7 +530,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
 	_init_.Initialize()
 
@@ -998,6 +1043,14 @@ func (c *jsiiProxy_CertificatePack) ResetCloudflareBranding() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudflareBranding",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetHosts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHosts",
 		nil, // no parameters
 	)
 }

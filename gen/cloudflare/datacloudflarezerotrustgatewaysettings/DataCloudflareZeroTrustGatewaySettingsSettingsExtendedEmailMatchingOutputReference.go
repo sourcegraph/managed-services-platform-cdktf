@@ -40,6 +40,7 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Version() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMa
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) Version() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"version",
 		&returns,
 	)
 	return returns

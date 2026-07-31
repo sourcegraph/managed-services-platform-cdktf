@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamcaptionlanguage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
 type StreamCaptionLanguage interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -409,7 +409,7 @@ func (j *jsiiProxy_StreamCaptionLanguage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) StreamCaptionLanguage {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage_Override(s StreamCaptionLanguage, scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) {
 	_init_.Initialize()
 

@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdlpintegrationentries
+
+
+type DataCloudflareZeroTrustDlpIntegrationEntriesResultPattern struct {
+}
+

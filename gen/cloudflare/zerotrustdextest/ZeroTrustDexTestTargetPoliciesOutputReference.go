@@ -25,9 +25,7 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Default() interface{}
-	SetDefault(val interface{})
-	DefaultInput() interface{}
+	Default() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -36,8 +34,6 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,9 +66,6 @@ type ZeroTrustDexTestTargetPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDefault()
-	ResetId()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -118,21 +111,11 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Default() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Default() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"default",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) DefaultInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultInput",
 		&returns,
 	)
 	return returns
@@ -183,16 +166,6 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Name() *string
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -268,17 +241,6 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetDefault(val interface{}) {
-	if err := j.validateSetDefaultParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"default",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -297,17 +259,6 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetInternalValu
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -518,30 +469,6 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) InterpolationF
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ResetDefault() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDefault",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetName",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

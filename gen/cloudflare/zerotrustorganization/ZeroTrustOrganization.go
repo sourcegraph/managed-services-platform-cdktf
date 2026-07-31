@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -36,9 +36,14 @@ type ZeroTrustOrganization interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	CustomPages() ZeroTrustOrganizationCustomPagesOutputReference
 	CustomPagesInput() interface{}
+	DenyUnmatchedRequests() interface{}
+	SetDenyUnmatchedRequests(val interface{})
+	DenyUnmatchedRequestsExemptedZoneNames() *[]*string
+	SetDenyUnmatchedRequestsExemptedZoneNames(val *[]*string)
+	DenyUnmatchedRequestsExemptedZoneNamesInput() *[]*string
+	DenyUnmatchedRequestsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -87,7 +92,6 @@ type ZeroTrustOrganization interface {
 	UiReadOnlyToggleReason() *string
 	SetUiReadOnlyToggleReason(val *string)
 	UiReadOnlyToggleReasonInput() *string
-	UpdatedAt() *string
 	UserSeatExpirationInactiveTime() *string
 	SetUserSeatExpirationInactiveTime(val *string)
 	UserSeatExpirationInactiveTimeInput() *string
@@ -147,6 +151,8 @@ type ZeroTrustOrganization interface {
 	ResetAuthDomain()
 	ResetAutoRedirectToIdentity()
 	ResetCustomPages()
+	ResetDenyUnmatchedRequests()
+	ResetDenyUnmatchedRequestsExemptedZoneNames()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
 	ResetName()
@@ -296,16 +302,6 @@ func (j *jsiiProxy_ZeroTrustOrganization) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustOrganization) CustomPages() ZeroTrustOrganizationCustomPagesOutputReference {
 	var returns ZeroTrustOrganizationCustomPagesOutputReference
 	_jsii_.Get(
@@ -321,6 +317,46 @@ func (j *jsiiProxy_ZeroTrustOrganization) CustomPagesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"customPagesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequests() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequestsExemptedZoneNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequestsExemptedZoneNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequestsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsInput",
 		&returns,
 	)
 	return returns
@@ -546,16 +582,6 @@ func (j *jsiiProxy_ZeroTrustOrganization) UiReadOnlyToggleReasonInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustOrganization) UserSeatExpirationInactiveTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -617,7 +643,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -635,7 +661,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -708,6 +734,28 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetDenyUnmatchedRequests(val interface{}) {
+	if err := j.validateSetDenyUnmatchedRequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"denyUnmatchedRequests",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetDenyUnmatchedRequestsExemptedZoneNames(val *[]*string) {
+	if err := j.validateSetDenyUnmatchedRequestsExemptedZoneNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNames",
 		val,
 	)
 }
@@ -1246,6 +1294,22 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetCustomPages() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetCustomPages",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetDenyUnmatchedRequests() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDenyUnmatchedRequests",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetDenyUnmatchedRequestsExemptedZoneNames() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDenyUnmatchedRequestsExemptedZoneNames",
 		nil, // no parameters
 	)
 }

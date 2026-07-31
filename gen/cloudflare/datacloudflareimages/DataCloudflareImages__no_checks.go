@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataCloudflareImages) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareImages) validateSetCreatorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareImages) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

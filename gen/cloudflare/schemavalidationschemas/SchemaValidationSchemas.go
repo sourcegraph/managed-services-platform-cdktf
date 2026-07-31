@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/schemavalidationschemas/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
 type SchemaValidationSchemas interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -431,7 +431,7 @@ func (j *jsiiProxy_SchemaValidationSchemas) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
 func NewSchemaValidationSchemas(scope constructs.Construct, id *string, config *SchemaValidationSchemasConfig) SchemaValidationSchemas {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewSchemaValidationSchemas(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
 func NewSchemaValidationSchemas_Override(s SchemaValidationSchemas, scope constructs.Construct, id *string, config *SchemaValidationSchemasConfig) {
 	_init_.Initialize()
 

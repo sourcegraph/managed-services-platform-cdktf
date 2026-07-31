@@ -10,6 +10,9 @@ import (
 
 type DataCloudflareCertificatePacksResultOutputReference interface {
 	cdktf.ComplexObject
+	CertificateAuthority() *string
+	Certificates() DataCloudflareCertificatePacksResultCertificatesList
+	CloudflareBranding() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,8 +30,12 @@ type DataCloudflareCertificatePacksResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hosts() *[]*string
+	Id() *string
 	InternalValue() *DataCloudflareCertificatePacksResult
 	SetInternalValue(val *DataCloudflareCertificatePacksResult)
+	PrimaryCertificate() *string
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -37,6 +44,11 @@ type DataCloudflareCertificatePacksResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
+	ValidationErrors() DataCloudflareCertificatePacksResultValidationErrorsList
+	ValidationMethod() *string
+	ValidationRecords() DataCloudflareCertificatePacksResultValidationRecordsList
+	ValidityDays() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,6 +86,36 @@ type DataCloudflareCertificatePacksResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareCertificatePacksResultOutputReference
 type jsiiProxy_DataCloudflareCertificatePacksResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) CertificateAuthority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Certificates() DataCloudflareCertificatePacksResultCertificatesList {
+	var returns DataCloudflareCertificatePacksResultCertificatesList
+	_jsii_.Get(
+		j,
+		"certificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) CloudflareBranding() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"cloudflareBranding",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) ComplexObjectIndex() interface{} {
@@ -116,11 +158,51 @@ func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Hosts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hosts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) InternalValue() *DataCloudflareCertificatePacksResult {
 	var returns *DataCloudflareCertificatePacksResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) PrimaryCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -141,6 +223,56 @@ func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) ValidationErrors() DataCloudflareCertificatePacksResultValidationErrorsList {
+	var returns DataCloudflareCertificatePacksResultValidationErrorsList
+	_jsii_.Get(
+		j,
+		"validationErrors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) ValidationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validationMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) ValidationRecords() DataCloudflareCertificatePacksResultValidationRecordsList {
+	var returns DataCloudflareCertificatePacksResultValidationRecordsList
+	_jsii_.Get(
+		j,
+		"validationRecords",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) ValidityDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"validityDays",
 		&returns,
 	)
 	return returns

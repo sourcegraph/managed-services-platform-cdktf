@@ -64,6 +64,10 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetProvisionLicenseParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetSerialNumberParameters(val *string) error {
 	return nil
 }

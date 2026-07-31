@@ -1,0 +1,6 @@
+package datacloudflareworkerversions
+
+
+type DataCloudflareWorkerVersionsResultMigrationsTransferredClasses struct {
+}
+

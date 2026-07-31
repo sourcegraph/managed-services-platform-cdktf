@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarepagesproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_project cloudflare_pages_project}.
 type DataCloudflarePagesProject interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -38,6 +38,8 @@ type DataCloudflarePagesProject interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Framework() *string
+	FrameworkVersion() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
@@ -49,7 +51,9 @@ type DataCloudflarePagesProject interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	PreviewScriptName() *string
 	ProductionBranch() *string
+	ProductionScriptName() *string
 	ProjectName() *string
 	SetProjectName(val *string)
 	ProjectNameInput() *string
@@ -67,6 +71,7 @@ type DataCloudflarePagesProject interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UsesFunctions() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -244,6 +249,26 @@ func (j *jsiiProxy_DataCloudflarePagesProject) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProject) Framework() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"framework",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProject) FrameworkVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frameworkVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePagesProject) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -304,11 +329,31 @@ func (j *jsiiProxy_DataCloudflarePagesProject) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProject) PreviewScriptName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewScriptName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePagesProject) ProductionBranch() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"productionBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProject) ProductionScriptName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productionScriptName",
 		&returns,
 	)
 	return returns
@@ -404,8 +449,18 @@ func (j *jsiiProxy_DataCloudflarePagesProject) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProject) UsesFunctions() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"usesFunctions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
 func NewDataCloudflarePagesProject(scope constructs.Construct, id *string, config *DataCloudflarePagesProjectConfig) DataCloudflarePagesProject {
 	_init_.Initialize()
 
@@ -423,7 +478,7 @@ func NewDataCloudflarePagesProject(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
 func NewDataCloudflarePagesProject_Override(d DataCloudflarePagesProject, scope constructs.Construct, id *string, config *DataCloudflarePagesProjectConfig) {
 	_init_.Initialize()
 

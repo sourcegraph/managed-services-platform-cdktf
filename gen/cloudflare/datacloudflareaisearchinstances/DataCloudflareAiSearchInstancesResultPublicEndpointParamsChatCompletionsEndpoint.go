@@ -1,0 +1,6 @@
+package datacloudflareaisearchinstances
+
+
+type DataCloudflareAiSearchInstancesResultPublicEndpointParamsChatCompletionsEndpoint struct {
+}
+

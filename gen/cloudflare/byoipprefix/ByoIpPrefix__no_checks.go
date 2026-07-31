@@ -108,6 +108,10 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_ByoIpPrefix) validateSetDelegateLoaCreationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ByoIpPrefix) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

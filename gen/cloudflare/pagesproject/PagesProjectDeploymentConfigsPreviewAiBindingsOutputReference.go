@@ -64,7 +64,6 @@ type PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference) ResetProjectId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetProjectId",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

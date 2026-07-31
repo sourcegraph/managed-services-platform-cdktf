@@ -11,6 +11,9 @@ import (
 type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	cdktf.ComplexObject
 	AllowNullCipher() cdktf.IResolvable
+	AutomaticReturnRouting() cdktf.IResolvable
+	Bgp() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference
+	BgpStatus() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference
 	CloudflareEndpoint() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -29,12 +32,14 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerEndpoint() *string
+	CustomRemoteIdentities() DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentitiesOutputReference
 	Description() *string
 	// Experimental.
 	Fqn() *string
 	HealthCheck() DataCloudflareMagicWanIpsecTunnelIpsecTunnelHealthCheckOutputReference
 	Id() *string
 	InterfaceAddress() *string
+	InterfaceAddress6() *string
 	InternalValue() *DataCloudflareMagicWanIpsecTunnelIpsecTunnel
 	SetInternalValue(val *DataCloudflareMagicWanIpsecTunnelIpsecTunnel)
 	ModifiedOn() *string
@@ -93,6 +98,36 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) AutomaticReturnRouting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) Bgp() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference {
+	var returns DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) BgpStatus() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference {
+	var returns DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
 		&returns,
 	)
 	return returns
@@ -158,6 +193,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) CustomRemoteIdentities() DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentitiesOutputReference {
+	var returns DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentitiesOutputReference
+	_jsii_.Get(
+		j,
+		"customRemoteIdentities",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) Description() *string {
 	var returns *string
 	_jsii_.Get(
@@ -203,6 +248,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	_jsii_.Get(
 		j,
 		"interfaceAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
 		&returns,
 	)
 	return returns

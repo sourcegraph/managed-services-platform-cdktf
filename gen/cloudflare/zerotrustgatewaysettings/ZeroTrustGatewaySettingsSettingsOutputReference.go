@@ -47,6 +47,8 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	Fqn() *string
 	HostSelector() ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference
 	HostSelectorInput() interface{}
+	Inspection() ZeroTrustGatewaySettingsSettingsInspectionOutputReference
+	InspectionInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	ProtocolDetection() ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
@@ -97,6 +99,7 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	PutExtendedEmailMatching(value *ZeroTrustGatewaySettingsSettingsExtendedEmailMatching)
 	PutFips(value *ZeroTrustGatewaySettingsSettingsFips)
 	PutHostSelector(value *ZeroTrustGatewaySettingsSettingsHostSelector)
+	PutInspection(value *ZeroTrustGatewaySettingsSettingsInspection)
 	PutProtocolDetection(value *ZeroTrustGatewaySettingsSettingsProtocolDetection)
 	PutSandbox(value *ZeroTrustGatewaySettingsSettingsSandbox)
 	PutTlsDecrypt(value *ZeroTrustGatewaySettingsSettingsTlsDecrypt)
@@ -110,6 +113,7 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	ResetExtendedEmailMatching()
 	ResetFips()
 	ResetHostSelector()
+	ResetInspection()
 	ResetProtocolDetection()
 	ResetSandbox()
 	ResetTlsDecrypt()
@@ -363,6 +367,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) HostSelector
 	_jsii_.Get(
 		j,
 		"hostSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) Inspection() ZeroTrustGatewaySettingsSettingsInspectionOutputReference {
+	var returns ZeroTrustGatewaySettingsSettingsInspectionOutputReference
+	_jsii_.Get(
+		j,
+		"inspection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) InspectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inspectionInput",
 		&returns,
 	)
 	return returns
@@ -837,6 +861,17 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) PutHostSelec
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) PutInspection(value *ZeroTrustGatewaySettingsSettingsInspection) {
+	if err := z.validatePutInspectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putInspection",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) PutProtocolDetection(value *ZeroTrustGatewaySettingsSettingsProtocolDetection) {
 	if err := z.validatePutProtocolDetectionParameters(value); err != nil {
 		panic(err)
@@ -946,6 +981,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ResetHostSel
 	_jsii_.InvokeVoid(
 		z,
 		"resetHostSelector",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ResetInspection() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetInspection",
 		nil, // no parameters
 	)
 }

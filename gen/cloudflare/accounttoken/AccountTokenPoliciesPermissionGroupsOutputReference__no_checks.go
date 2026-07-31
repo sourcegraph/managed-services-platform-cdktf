@@ -44,10 +44,6 @@ func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) validatePutMetaParameters(value *AccountTokenPoliciesPermissionGroupsMeta) error {
-	return nil
-}
-
 func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

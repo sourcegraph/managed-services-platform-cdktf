@@ -53,6 +53,7 @@ type PagesProjectCanonicalDeploymentOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Url() *string
+	UsesFunctions() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -317,6 +318,16 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentOutputReference) Url() *string
 	_jsii_.Get(
 		j,
 		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentOutputReference) UsesFunctions() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"usesFunctions",
 		&returns,
 	)
 	return returns

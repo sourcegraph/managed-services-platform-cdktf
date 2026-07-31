@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccessshortlivedcertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate}.
 type DataCloudflareZeroTrustAccessShortLivedCertificate interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificate) ZoneIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessShortLivedCertificate(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessShortLivedCertificateConfig) DataCloudflareZeroTrustAccessShortLivedCertificate {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataCloudflareZeroTrustAccessShortLivedCertificate(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessShortLivedCertificate_Override(d DataCloudflareZeroTrustAccessShortLivedCertificate, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessShortLivedCertificateConfig) {
 	_init_.Initialize()
 

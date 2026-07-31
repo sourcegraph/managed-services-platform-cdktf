@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkerscrontrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 type DataCloudflareWorkersCronTrigger interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -35,6 +35,7 @@ type DataCloudflareWorkersCronTrigger interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataCloudflareWorkersCronTrigger) FriendlyUniqueId() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCronTrigger) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCronTrigger) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -295,7 +306,7 @@ func (j *jsiiProxy_DataCloudflareWorkersCronTrigger) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
 func NewDataCloudflareWorkersCronTrigger(scope constructs.Construct, id *string, config *DataCloudflareWorkersCronTriggerConfig) DataCloudflareWorkersCronTrigger {
 	_init_.Initialize()
 
@@ -313,7 +324,7 @@ func NewDataCloudflareWorkersCronTrigger(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
 func NewDataCloudflareWorkersCronTrigger_Override(d DataCloudflareWorkersCronTrigger, scope constructs.Construct, id *string, config *DataCloudflareWorkersCronTriggerConfig) {
 	_init_.Initialize()
 

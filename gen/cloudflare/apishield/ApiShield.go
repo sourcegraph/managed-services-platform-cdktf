@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/apishield/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield cloudflare_api_shield}.
 type ApiShield interface {
 	cdktf.TerraformResource
 	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
@@ -30,7 +30,6 @@ type ApiShield interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Errors() ApiShieldErrorsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,7 +43,6 @@ type ApiShield interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Messages() ApiShieldMessagesList
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -57,7 +55,6 @@ type ApiShield interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Success() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -202,16 +199,6 @@ func (j *jsiiProxy_ApiShield) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Errors() ApiShieldErrorsList {
-	var returns ApiShieldErrorsList
-	_jsii_.Get(
-		j,
-		"errors",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiShield) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -262,16 +249,6 @@ func (j *jsiiProxy_ApiShield) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Messages() ApiShieldMessagesList {
-	var returns ApiShieldMessagesList
-	_jsii_.Get(
-		j,
-		"messages",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiShield) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -307,16 +284,6 @@ func (j *jsiiProxy_ApiShield) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShield) Success() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"success",
 		&returns,
 	)
 	return returns
@@ -373,7 +340,7 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
 	_init_.Initialize()
 
@@ -391,7 +358,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, config *ApiShieldConfig) {
 	_init_.Initialize()
 

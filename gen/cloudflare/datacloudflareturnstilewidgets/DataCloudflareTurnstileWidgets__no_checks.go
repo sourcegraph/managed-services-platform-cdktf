@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgets) validateSetDirectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareTurnstileWidgets) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareTurnstileWidgets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -12,6 +12,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalCacheablePorts() *[]*float64
 	Algorithms() DataCloudflareRulesetRulesActionParametersAlgorithmsList
+	AssetName() *string
 	AutomaticHttpsRewrites() cdktf.IResolvable
 	Autominify() DataCloudflareRulesetRulesActionParametersAutominifyOutputReference
 	Bic() cdktf.IResolvable
@@ -66,9 +67,11 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	Products() *[]*string
 	RawResponseFields() DataCloudflareRulesetRulesActionParametersRawResponseFieldsList
 	ReadTimeout() *float64
+	RequestBodyBuffering() *string
 	RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList
 	RespectStrongEtags() cdktf.IResolvable
 	Response() DataCloudflareRulesetRulesActionParametersResponseOutputReference
+	ResponseBodyBuffering() *string
 	ResponseFields() DataCloudflareRulesetRulesActionParametersResponseFieldsList
 	RocketLoader() cdktf.IResolvable
 	Rules() cdktf.StringListMap
@@ -145,6 +148,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Al
 	_jsii_.Get(
 		j,
 		"algorithms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) AssetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetName",
 		&returns,
 	)
 	return returns
@@ -550,6 +563,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RequestBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList {
 	var returns DataCloudflareRulesetRulesActionParametersRequestFieldsList
 	_jsii_.Get(
@@ -575,6 +598,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	_jsii_.Get(
 		j,
 		"response",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ResponseBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseBodyBuffering",
 		&returns,
 	)
 	return returns

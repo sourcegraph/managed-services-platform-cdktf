@@ -76,6 +76,10 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutLimitsParameters(value *PagesProjectDeploymentConfigsPreviewLimits) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutMtlsCertificatesParameters(value interface{}) error {
 	return nil
 }
@@ -104,6 +108,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetAlwaysUseLatestCompatibilityDateParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetBuildImageMajorVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetCompatibilityDateParameters(val *string) error {
 	return nil
 }
@@ -120,6 +132,10 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetFailOpenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -129,6 +145,14 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetUsageModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetWranglerConfigHashParameters(val *string) error {
 	return nil
 }
 

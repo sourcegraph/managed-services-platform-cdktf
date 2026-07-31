@@ -32,6 +32,7 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	EphemeralId() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareTurnstileWidgetsResult
 	SetInternalValue(val *DataCloudflareTurnstileWidgetsResult)
 	Mode() *string
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

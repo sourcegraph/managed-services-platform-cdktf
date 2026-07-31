@@ -36,8 +36,10 @@ type SnippetRulesRulesOutputReference interface {
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LastUpdated() *string
 	SnippetName() *string
 	SetSnippetName(val *string)
 	SnippetNameInput() *string
@@ -75,8 +77,6 @@ type SnippetRulesRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDescription()
 	ResetEnabled()
-	ResetExpression()
-	ResetSnippetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -192,11 +192,31 @@ func (j *jsiiProxy_SnippetRulesRulesOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SnippetRulesRulesOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnippetRulesRulesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnippetRulesRulesOutputReference) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
 		&returns,
 	)
 	return returns
@@ -567,22 +587,6 @@ func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetExpression() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetExpression",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetSnippetName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSnippetName",
 		nil, // no parameters
 	)
 }

@@ -21,11 +21,11 @@ type DataCloudflareApiShieldConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Requests information about certain properties.
+	// Ensures that the configuration is written or retrieved in normalized fashion.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield#properties DataCloudflareApiShield#properties}
-	Properties *[]*string `field:"optional" json:"properties" yaml:"properties"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield#normalize DataCloudflareApiShield#normalize}
+	Normalize interface{} `field:"optional" json:"normalize" yaml:"normalize"`
 }
 

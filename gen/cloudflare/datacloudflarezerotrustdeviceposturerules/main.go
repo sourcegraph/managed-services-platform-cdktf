@@ -171,6 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thumbprint", GoGetter: "Thumbprint"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalScore", GoGetter: "TotalScore"},
+			_jsii_.MemberProperty{JsiiProperty: "updateWindowDays", GoGetter: "UpdateWindowDays"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionOperator", GoGetter: "VersionOperator"},
 		},

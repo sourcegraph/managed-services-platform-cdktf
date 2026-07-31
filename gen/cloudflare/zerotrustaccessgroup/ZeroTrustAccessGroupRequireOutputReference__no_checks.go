@@ -116,6 +116,10 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validatePutIpList
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validatePutLinkedAppTokenParameters(value *ZeroTrustAccessGroupRequireLinkedAppToken) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) validatePutLoginMethodParameters(value *ZeroTrustAccessGroupRequireLoginMethod) error {
 	return nil
 }

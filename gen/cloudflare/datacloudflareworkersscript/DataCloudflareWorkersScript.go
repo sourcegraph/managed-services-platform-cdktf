@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkersscript/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script cloudflare_workers_script}.
 type DataCloudflareWorkersScript interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -27,6 +27,8 @@ type DataCloudflareWorkersScript interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() DataCloudflareWorkersScriptFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,6 +37,7 @@ type DataCloudflareWorkersScript interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -47,6 +50,7 @@ type DataCloudflareWorkersScript interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Script() *string
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
@@ -81,9 +85,12 @@ type DataCloudflareWorkersScript interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareWorkersScriptFilter)
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScriptName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -163,6 +170,26 @@ func (j *jsiiProxy_DataCloudflareWorkersScript) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScript) Filter() DataCloudflareWorkersScriptFilterOutputReference {
+	var returns DataCloudflareWorkersScriptFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScript) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScript) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -188,6 +215,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScript) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScript) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -228,6 +265,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScript) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScript) Script() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"script",
 		&returns,
 	)
 	return returns
@@ -284,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareWorkersScript) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
 func NewDataCloudflareWorkersScript(scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptConfig) DataCloudflareWorkersScript {
 	_init_.Initialize()
 
@@ -302,7 +349,7 @@ func NewDataCloudflareWorkersScript(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
 func NewDataCloudflareWorkersScript_Override(d DataCloudflareWorkersScript, scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -666,10 +713,37 @@ func (d *jsiiProxy_DataCloudflareWorkersScript) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareWorkersScript) PutFilter(value *DataCloudflareWorkersScriptFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersScript) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareWorkersScript) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersScript) ResetScriptName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScriptName",
 		nil, // no parameters
 	)
 }

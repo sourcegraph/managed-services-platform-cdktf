@@ -1,0 +1,6 @@
+package datacloudflaremagicwanipsectunnel
+
+
+type DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentities struct {
+}
+

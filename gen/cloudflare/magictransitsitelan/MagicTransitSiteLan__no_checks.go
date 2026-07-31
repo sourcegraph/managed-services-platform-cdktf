@@ -104,6 +104,10 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetBondIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteLan) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

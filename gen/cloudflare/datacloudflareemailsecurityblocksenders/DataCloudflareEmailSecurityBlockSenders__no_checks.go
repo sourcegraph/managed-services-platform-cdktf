@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) validateSetOrderPara
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) validateSetPatternParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) validateSetPatternTypeParameters(val *string) error {
 	return nil
 }

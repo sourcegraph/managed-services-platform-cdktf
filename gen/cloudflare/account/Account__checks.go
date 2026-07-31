@@ -204,6 +204,17 @@ func (a *jsiiProxy_Account) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (a *jsiiProxy_Account) validatePutManagedByParameters(value *AccountManagedBy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_Account) validatePutSettingsParameters(value *AccountSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

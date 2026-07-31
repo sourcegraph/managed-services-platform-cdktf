@@ -37,6 +37,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	SetInternalValue(val *DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequest)
 	KeepAliveConnections() *float64
 	KeepAliveTimeout() *float64
+	MatchSnItoHost() cdktf.IResolvable
 	NoHappyEyeballs() cdktf.IResolvable
 	NoTlsVerify() cdktf.IResolvable
 	OriginServerName() *string
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginReq
 	_jsii_.Get(
 		j,
 		"keepAliveTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) MatchSnItoHost() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"matchSnItoHost",
 		&returns,
 	)
 	return returns

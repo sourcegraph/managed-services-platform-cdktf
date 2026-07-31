@@ -32,6 +32,9 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ProvisionLicense() interface{}
+	SetProvisionLicense(val interface{})
+	ProvisionLicenseInput() interface{}
 	SerialNumber() *string
 	SetSerialNumber(val *string)
 	SerialNumberInput() *string
@@ -68,6 +71,7 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetId()
+	ResetProvisionLicense()
 	ResetSerialNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InternalValue() i
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ProvisionLicense() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"provisionLicense",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ProvisionLicenseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"provisionLicenseInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +286,17 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetProvisionLicense(val interface{}) {
+	if err := j.validateSetProvisionLicenseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionLicense",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetProvisionLicense() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionLicense",
 		nil, // no parameters
 	)
 }

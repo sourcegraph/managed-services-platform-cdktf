@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamdownload/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_download cloudflare_stream_download}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_download cloudflare_stream_download}.
 type StreamDownload interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -329,7 +329,7 @@ func (j *jsiiProxy_StreamDownload) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDownloadConfig) StreamDownload {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload_Override(s StreamDownload, scope constructs.Construct, id *string, config *StreamDownloadConfig) {
 	_init_.Initialize()
 

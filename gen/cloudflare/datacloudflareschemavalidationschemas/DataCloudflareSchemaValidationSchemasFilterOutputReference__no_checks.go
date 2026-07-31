@@ -60,10 +60,6 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetOmitSourceParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

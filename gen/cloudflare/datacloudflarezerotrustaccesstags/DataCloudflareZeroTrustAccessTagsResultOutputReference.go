@@ -10,7 +10,6 @@ import (
 
 type DataCloudflareZeroTrustAccessTagsResultOutputReference interface {
 	cdktf.ComplexObject
-	AppCount() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -21,7 +20,6 @@ type DataCloudflareZeroTrustAccessTagsResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,6 +27,7 @@ type DataCloudflareZeroTrustAccessTagsResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareZeroTrustAccessTagsResult
 	SetInternalValue(val *DataCloudflareZeroTrustAccessTagsResult)
 	Name() *string
@@ -40,7 +39,6 @@ type DataCloudflareZeroTrustAccessTagsResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -80,16 +78,6 @@ type jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -110,16 +98,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) Compl
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -135,6 +113,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) Fqn()
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -175,16 +163,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessTagsResultOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

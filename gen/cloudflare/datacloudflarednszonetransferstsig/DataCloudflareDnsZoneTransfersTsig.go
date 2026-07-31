@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarednszonetransferstsig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
 type DataCloudflareDnsZoneTransfersTsig interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -88,7 +88,6 @@ type DataCloudflareDnsZoneTransfersTsig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTsigId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersTsig) TsigIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Data Source.
 func NewDataCloudflareDnsZoneTransfersTsig(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersTsigConfig) DataCloudflareDnsZoneTransfersTsig {
 	_init_.Initialize()
 
@@ -347,7 +346,7 @@ func NewDataCloudflareDnsZoneTransfersTsig(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Data Source.
 func NewDataCloudflareDnsZoneTransfersTsig_Override(d DataCloudflareDnsZoneTransfersTsig, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersTsigConfig) {
 	_init_.Initialize()
 
@@ -715,14 +714,6 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsig) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsig) ResetTsigId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTsigId",
 		nil, // no parameters
 	)
 }

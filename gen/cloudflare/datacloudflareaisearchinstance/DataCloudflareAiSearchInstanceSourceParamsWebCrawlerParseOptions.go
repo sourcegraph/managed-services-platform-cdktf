@@ -1,0 +1,6 @@
+package datacloudflareaisearchinstance
+
+
+type DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptions struct {
+}
+

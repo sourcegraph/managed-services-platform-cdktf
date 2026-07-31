@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) validatePutTargetPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

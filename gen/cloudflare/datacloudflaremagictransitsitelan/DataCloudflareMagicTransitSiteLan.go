@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaremagictransitsitelan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 type DataCloudflareMagicTransitSiteLan interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	BondId() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -92,7 +93,6 @@ type DataCloudflareMagicTransitSiteLan interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetLanId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -130,6 +130,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) BondId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bondId",
 		&returns,
 	)
 	return returns
@@ -396,7 +406,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) VlanTag() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) DataCloudflareMagicTransitSiteLan {
 	_init_.Initialize()
 
@@ -414,7 +424,7 @@ func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan_Override(d DataCloudflareMagicTransitSiteLan, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) {
 	_init_.Initialize()
 
@@ -786,14 +796,6 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ResetLanId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLanId",
-		nil, // no parameters
 	)
 }
 

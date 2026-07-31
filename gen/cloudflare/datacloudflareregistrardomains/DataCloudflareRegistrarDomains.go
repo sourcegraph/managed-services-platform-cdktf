@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareregistrardomains/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/registrar_domains cloudflare_registrar_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/registrar_domains cloudflare_registrar_domains}.
 type DataCloudflareRegistrarDomains interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomains) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/registrar_domains cloudflare_registrar_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/registrar_domains cloudflare_registrar_domains} Data Source.
 func NewDataCloudflareRegistrarDomains(scope constructs.Construct, id *string, config *DataCloudflareRegistrarDomainsConfig) DataCloudflareRegistrarDomains {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareRegistrarDomains(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/registrar_domains cloudflare_registrar_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/registrar_domains cloudflare_registrar_domains} Data Source.
 func NewDataCloudflareRegistrarDomains_Override(d DataCloudflareRegistrarDomains, scope constructs.Construct, id *string, config *DataCloudflareRegistrarDomainsConfig) {
 	_init_.Initialize()
 

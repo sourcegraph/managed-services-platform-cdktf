@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessservicetoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type ZeroTrustAccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -19,6 +19,9 @@ type ZeroTrustAccessServiceToken interface {
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
 	ClientSecret() *string
+	ClientSecretVersion() *float64
+	SetClientSecretVersion(val *float64)
+	ClientSecretVersionInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -55,6 +58,9 @@ type ZeroTrustAccessServiceToken interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PreviousClientSecretExpiresAt() *string
+	SetPreviousClientSecretExpiresAt(val *string)
+	PreviousClientSecretExpiresAtInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -118,10 +124,12 @@ type ZeroTrustAccessServiceToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetClientSecretVersion()
 	ResetDuration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreviousClientSecretExpiresAt()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -186,6 +194,26 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) ClientSecret() *string {
 	_jsii_.Get(
 		j,
 		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) ClientSecretVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientSecretVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) ClientSecretVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientSecretVersionInput",
 		&returns,
 	)
 	return returns
@@ -341,6 +369,26 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) PreviousClientSecretExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previousClientSecretExpiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) PreviousClientSecretExpiresAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previousClientSecretExpiresAtInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -422,7 +470,7 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) ZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -440,7 +488,7 @@ func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken_Override(z ZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -458,6 +506,17 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetClientSecretVersion(val *float64) {
+	if err := j.validateSetClientSecretVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientSecretVersion",
 		val,
 	)
 }
@@ -529,6 +588,17 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetPreviousClientSecretExpiresAt(val *string) {
+	if err := j.validateSetPreviousClientSecretExpiresAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"previousClientSecretExpiresAt",
 		val,
 	)
 }
@@ -924,6 +994,14 @@ func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetAccountId() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetClientSecretVersion() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetClientSecretVersion",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetDuration() {
 	_jsii_.InvokeVoid(
 		z,
@@ -936,6 +1014,14 @@ func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetPreviousClientSecretExpiresAt() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPreviousClientSecretExpiresAt",
 		nil, // no parameters
 	)
 }

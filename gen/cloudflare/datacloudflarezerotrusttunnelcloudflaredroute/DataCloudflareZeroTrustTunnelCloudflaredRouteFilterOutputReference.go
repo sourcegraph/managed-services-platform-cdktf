@@ -44,9 +44,6 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	NetworkSuperset() *string
 	SetNetworkSuperset(val *string)
 	NetworkSupersetInput() *string
-	RouteId() *string
-	SetRouteId(val *string)
-	RouteIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -93,7 +90,6 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	ResetIsDeleted()
 	ResetNetworkSubset()
 	ResetNetworkSuperset()
-	ResetRouteId()
 	ResetTunnelId()
 	ResetTunTypes()
 	ResetVirtualNetworkId()
@@ -257,26 +253,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Get(
 		j,
 		"networkSupersetInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) RouteId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"routeId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) RouteIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"routeIdInput",
 		&returns,
 	)
 	return returns
@@ -474,17 +450,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.Set(
 		j,
 		"networkSuperset",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetRouteId(val *string) {
-	if err := j.validateSetRouteIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"routeId",
 		val,
 	)
 }
@@ -766,14 +731,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetNetworkSuperset",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) ResetRouteId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRouteId",
 		nil, // no parameters
 	)
 }

@@ -228,6 +228,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTunnelNa
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTypeParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetWhereParameters(val *[]*string) error {
 	return nil
 }

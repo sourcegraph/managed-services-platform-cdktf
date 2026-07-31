@@ -104,6 +104,10 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetIpsParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

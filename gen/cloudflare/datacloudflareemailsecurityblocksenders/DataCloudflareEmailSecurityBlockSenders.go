@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareemailsecurityblocksenders/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders}.
 type DataCloudflareEmailSecurityBlockSenders interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -50,6 +50,9 @@ type DataCloudflareEmailSecurityBlockSenders interface {
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	Pattern() *string
+	SetPattern(val *string)
+	PatternInput() *string
 	PatternType() *string
 	SetPatternType(val *string)
 	PatternTypeInput() *string
@@ -100,6 +103,7 @@ type DataCloudflareEmailSecurityBlockSenders interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPattern()
 	ResetPatternType()
 	ResetSearch()
 	SynthesizeAttributes() *map[string]interface{}
@@ -291,6 +295,26 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) OrderInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) Pattern() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) PatternInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"patternInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) PatternType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -392,7 +416,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders} Data Source.
 func NewDataCloudflareEmailSecurityBlockSenders(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSendersConfig) DataCloudflareEmailSecurityBlockSenders {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewDataCloudflareEmailSecurityBlockSenders(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders} Data Source.
 func NewDataCloudflareEmailSecurityBlockSenders_Override(d DataCloudflareEmailSecurityBlockSenders, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSendersConfig) {
 	_init_.Initialize()
 
@@ -499,6 +523,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetOrder(val *string)
 	_jsii_.Set(
 		j,
 		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders)SetPattern(val *string) {
+	if err := j.validateSetPatternParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pattern",
 		val,
 	)
 }
@@ -846,6 +881,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) ResetPattern() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPattern",
 		nil, // no parameters
 	)
 }

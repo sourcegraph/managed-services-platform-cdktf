@@ -10,6 +10,7 @@ import (
 
 type DataCloudflareMagicTransitSiteLansResultOutputReference interface {
 	cdktf.ComplexObject
+	BondId() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +84,16 @@ type DataCloudflareMagicTransitSiteLansResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareMagicTransitSiteLansResultOutputReference
 type jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) BondId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bondId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) ComplexObjectIndex() interface{} {

@@ -10,7 +10,7 @@ import (
 
 type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AddHeaders() cdktf.StringMap
+	AddHeaders() cdktf.StringListMap
 	AllowChildBypass() cdktf.IResolvable
 	AuditSsh() DataCloudflareZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
 	BisoAdminControls() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
@@ -36,6 +36,7 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DnsResolvers() DataCloudflareZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	Egress() DataCloudflareZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
+	ForensicCopy() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() cdktf.IResolvable
@@ -101,8 +102,8 @@ type jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() cdktf.StringListMap {
+	var returns cdktf.StringListMap
 	_jsii_.Get(
 		j,
 		"addHeaders",
@@ -236,6 +237,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"egress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCopy() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference {
+	var returns DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	_jsii_.Get(
+		j,
+		"forensicCopy",
 		&returns,
 	)
 	return returns

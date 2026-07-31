@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/filter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/filter cloudflare_filter}.
 type Filter interface {
 	cdktf.TerraformResource
+	Body() FilterBodyList
+	BodyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -29,6 +31,8 @@ type Filter interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
@@ -47,7 +51,9 @@ type Filter interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Paused() cdktf.IResolvable
+	Paused() interface{}
+	SetPaused(val interface{})
+	PausedInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -59,6 +65,8 @@ type Filter interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Ref() *string
+	SetRef(val *string)
+	RefInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,9 +119,14 @@ type Filter interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBody(value interface{})
+	ResetDescription()
+	ResetExpression()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPaused()
+	ResetRef()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -130,6 +143,26 @@ type Filter interface {
 // The jsii proxy struct for Filter
 type jsiiProxy_Filter struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Filter) Body() FilterBodyList {
+	var returns FilterBodyList
+	_jsii_.Get(
+		j,
+		"body",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Filter) BodyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bodyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Filter) CdktfStack() cdktf.TerraformStack {
@@ -187,6 +220,16 @@ func (j *jsiiProxy_Filter) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Filter) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -272,11 +315,21 @@ func (j *jsiiProxy_Filter) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Filter) Paused() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Filter) Paused() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Filter) PausedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pausedInput",
 		&returns,
 	)
 	return returns
@@ -317,6 +370,16 @@ func (j *jsiiProxy_Filter) Ref() *string {
 	_jsii_.Get(
 		j,
 		"ref",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Filter) RefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refInput",
 		&returns,
 	)
 	return returns
@@ -373,7 +436,7 @@ func (j *jsiiProxy_Filter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Filter {
 	_init_.Initialize()
 
@@ -391,7 +454,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config *FilterConfig) {
 	_init_.Initialize()
 
@@ -432,6 +495,17 @@ func (j *jsiiProxy_Filter)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Filter)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Filter)SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
@@ -462,6 +536,17 @@ func (j *jsiiProxy_Filter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
+func (j *jsiiProxy_Filter)SetPaused(val interface{}) {
+	if err := j.validateSetPausedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paused",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Filter)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -477,6 +562,17 @@ func (j *jsiiProxy_Filter)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Filter)SetRef(val *string) {
+	if err := j.validateSetRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ref",
 		val,
 	)
 }
@@ -845,10 +941,53 @@ func (f *jsiiProxy_Filter) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (f *jsiiProxy_Filter) PutBody(value interface{}) {
+	if err := f.validatePutBodyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putBody",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_Filter) ResetDescription() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_Filter) ResetExpression() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetExpression",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_Filter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_Filter) ResetPaused() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_Filter) ResetRef() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRef",
 		nil, // no parameters
 	)
 }

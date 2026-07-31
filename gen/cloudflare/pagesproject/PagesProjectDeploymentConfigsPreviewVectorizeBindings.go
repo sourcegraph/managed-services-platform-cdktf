@@ -2,7 +2,7 @@ package pagesproject
 
 
 type PagesProjectDeploymentConfigsPreviewVectorizeBindings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#index_name PagesProject#index_name}.
-	IndexName *string `field:"optional" json:"indexName" yaml:"indexName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#index_name PagesProject#index_name}.
+	IndexName *string `field:"required" json:"indexName" yaml:"indexName"`
 }
 

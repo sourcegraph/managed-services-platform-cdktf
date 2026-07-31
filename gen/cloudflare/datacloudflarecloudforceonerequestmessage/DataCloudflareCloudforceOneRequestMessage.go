@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecloudforceonerequestmessage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 type DataCloudflareCloudforceOneRequestMessage interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -44,7 +44,7 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *float64
+	Id() *string
 	IsFollowOnRequest() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -291,8 +291,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) FriendlyUniqueId()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -492,7 +492,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Updated() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) DataCloudflareCloudforceOneRequestMessage {
 	_init_.Initialize()
 
@@ -510,7 +510,7 @@ func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage_Override(d DataCloudflareCloudforceOneRequestMessage, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) {
 	_init_.Initialize()
 

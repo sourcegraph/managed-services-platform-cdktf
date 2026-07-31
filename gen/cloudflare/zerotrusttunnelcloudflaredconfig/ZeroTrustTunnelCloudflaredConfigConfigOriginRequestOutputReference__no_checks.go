@@ -92,6 +92,10 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetMatchSnItoHostParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetNoHappyEyeballsParameters(val interface{}) error {
 	return nil
 }

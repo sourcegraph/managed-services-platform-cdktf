@@ -157,6 +157,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	TunnelName() *[]*string
 	SetTunnelName(val *[]*string)
 	TunnelNameInput() *[]*string
+	Type() *[]*string
+	SetType(val *[]*string)
+	TypeInput() *[]*string
 	Where() *[]*string
 	SetWhere(val *[]*string)
 	WhereInput() *[]*string
@@ -227,6 +230,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetTrafficExclusions()
 	ResetTunnelId()
 	ResetTunnelName()
+	ResetType()
 	ResetWhere()
 	ResetZones()
 	// Produce the Token's value at resolution time.
@@ -1114,6 +1118,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TunnelNameInput() *
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Type() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TypeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Where() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1677,6 +1701,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTunnelName(val *[
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetType(val *[]*string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetWhere(val *[]*string) {
 	if err := j.validateSetWhereParameters(val); err != nil {
 		panic(err)
@@ -2201,6 +2236,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTunnelName() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTunnelName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetType",
 		nil, // no parameters
 	)
 }

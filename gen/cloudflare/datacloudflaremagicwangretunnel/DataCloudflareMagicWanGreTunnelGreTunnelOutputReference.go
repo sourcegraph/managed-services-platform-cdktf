@@ -10,6 +10,9 @@ import (
 
 type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticReturnRouting() cdktf.IResolvable
+	Bgp() DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference
+	BgpStatus() DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference
 	CloudflareGreEndpoint() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -34,6 +37,7 @@ type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 	HealthCheck() DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference
 	Id() *string
 	InterfaceAddress() *string
+	InterfaceAddress6() *string
 	InternalValue() *DataCloudflareMagicWanGreTunnelGreTunnel
 	SetInternalValue(val *DataCloudflareMagicWanGreTunnelGreTunnel)
 	ModifiedOn() *string
@@ -85,6 +89,36 @@ type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 // The jsii proxy struct for DataCloudflareMagicWanGreTunnelGreTunnelOutputReference
 type jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) AutomaticReturnRouting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) Bgp() DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference {
+	var returns DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) BgpStatus() DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference {
+	var returns DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) CloudflareGreEndpoint() *string {
@@ -192,6 +226,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"interfaceAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
 		&returns,
 	)
 	return returns

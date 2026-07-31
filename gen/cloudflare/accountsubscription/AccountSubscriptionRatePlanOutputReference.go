@@ -26,11 +26,7 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Currency() *string
-	SetCurrency(val *string)
-	CurrencyInput() *string
-	ExternallyManaged() interface{}
-	SetExternallyManaged(val interface{})
-	ExternallyManagedInput() interface{}
+	ExternallyManaged() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -38,18 +34,12 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	IsContract() interface{}
-	SetIsContract(val interface{})
-	IsContractInput() interface{}
+	IsContract() cdktf.IResolvable
 	PublicName() *string
-	SetPublicName(val *string)
-	PublicNameInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
 	Sets() *[]*string
-	SetSets(val *[]*string)
-	SetsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,13 +72,8 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCurrency()
-	ResetExternallyManaged()
 	ResetId()
-	ResetIsContract()
-	ResetPublicName()
 	ResetScope()
-	ResetSets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,31 +129,11 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) Currency() *strin
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) CurrencyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"currencyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManaged() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManaged() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"externallyManaged",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManagedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"externallyManagedInput",
 		&returns,
 	)
 	return returns
@@ -214,21 +179,11 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) InternalValue() i
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContract() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContract() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"isContract",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContractInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isContractInput",
 		&returns,
 	)
 	return returns
@@ -239,16 +194,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) PublicName() *str
 	_jsii_.Get(
 		j,
 		"publicName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) PublicNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"publicNameInput",
 		&returns,
 	)
 	return returns
@@ -279,16 +224,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) Sets() *[]*string
 	_jsii_.Get(
 		j,
 		"sets",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"setsInput",
 		&returns,
 	)
 	return returns
@@ -364,28 +299,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetCurrency(val *string) {
-	if err := j.validateSetCurrencyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"currency",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetExternallyManaged(val interface{}) {
-	if err := j.validateSetExternallyManagedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"externallyManaged",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -408,28 +321,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetIsContract(val interface{}) {
-	if err := j.validateSetIsContractParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isContract",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetPublicName(val *string) {
-	if err := j.validateSetPublicNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"publicName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
@@ -437,17 +328,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetScope(val *stri
 	_jsii_.Set(
 		j,
 		"scope",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetSets(val *[]*string) {
-	if err := j.validateSetSetsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sets",
 		val,
 	)
 }
@@ -660,22 +540,6 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) InterpolationForA
 	return returns
 }
 
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetCurrency() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCurrency",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetExternallyManaged() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetExternallyManaged",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -684,34 +548,10 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetId() {
 	)
 }
 
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetIsContract() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetIsContract",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetPublicName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetPublicName",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetScope() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetScope",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetSets() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSets",
 		nil, // no parameters
 	)
 }

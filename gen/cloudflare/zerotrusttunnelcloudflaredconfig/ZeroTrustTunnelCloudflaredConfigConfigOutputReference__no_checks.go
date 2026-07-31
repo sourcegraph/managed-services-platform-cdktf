@@ -52,10 +52,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutWarpRoutingParameters(value *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting) error {
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

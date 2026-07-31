@@ -20,12 +20,12 @@ type DataCloudflareEmailRoutingDnsResultInfoOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Count() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EmailRoutingDnsCount() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareEmailRoutingDnsResultInfo
@@ -100,21 +100,21 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDnsResultInfoOutputReference) Compl
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingDnsResultInfoOutputReference) Count() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"count",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareEmailRoutingDnsResultInfoOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailRoutingDnsResultInfoOutputReference) EmailRoutingDnsCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"emailRoutingDnsCount",
 		&returns,
 	)
 	return returns

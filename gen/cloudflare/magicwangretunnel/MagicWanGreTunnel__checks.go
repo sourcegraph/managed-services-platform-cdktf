@@ -204,6 +204,17 @@ func (m *jsiiProxy_MagicWanGreTunnel) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) validatePutBgpParameters(value *MagicWanGreTunnelBgp) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) validatePutHealthCheckParameters(value *MagicWanGreTunnelHealthCheck) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -258,6 +269,26 @@ func validateMagicWanGreTunnel_IsTerraformResourceParameters(x interface{}) erro
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetAutomaticReturnRoutingParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -378,6 +409,14 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetDescriptionParameters(val *stri
 }
 
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddress6Parameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

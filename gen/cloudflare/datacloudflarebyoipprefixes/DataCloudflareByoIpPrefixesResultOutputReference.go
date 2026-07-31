@@ -32,16 +32,21 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DelegateLoaCreation() cdktf.IResolvable
 	Description() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	InternalValue() *DataCloudflareByoIpPrefixesResult
 	SetInternalValue(val *DataCloudflareByoIpPrefixesResult)
+	IrrValidationState() *string
 	LoaDocumentId() *string
 	ModifiedAt() *string
 	OnDemandEnabled() cdktf.IResolvable
 	OnDemandLocked() cdktf.IResolvable
+	OwnershipValidationState() *string
+	OwnershipValidationToken() *string
+	RpkiValidationState() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -189,6 +194,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) DelegateLoaCreation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"delegateLoaCreation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Description() *string {
 	var returns *string
 	_jsii_.Get(
@@ -229,6 +244,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InternalVal
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) IrrValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"irrValidationState",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) LoaDocumentId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -264,6 +289,36 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandLoc
 	_jsii_.Get(
 		j,
 		"onDemandLocked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OwnershipValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipValidationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OwnershipValidationToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipValidationToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) RpkiValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpkiValidationState",
 		&returns,
 	)
 	return returns

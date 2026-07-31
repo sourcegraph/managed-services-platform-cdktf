@@ -1,0 +1,6 @@
+package datacloudflarepagesprojects
+
+
+type DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Buckets struct {
+}
+

@@ -9,12 +9,18 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/magicwangretunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type MagicWanGreTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AutomaticReturnRouting() interface{}
+	SetAutomaticReturnRouting(val interface{})
+	AutomaticReturnRoutingInput() interface{}
+	Bgp() MagicWanGreTunnelBgpOutputReference
+	BgpInput() interface{}
+	BgpStatus() MagicWanGreTunnelBgpStatusOutputReference
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudflareGreEndpoint() *string
@@ -54,6 +60,9 @@ type MagicWanGreTunnel interface {
 	Id() *string
 	InterfaceAddress() *string
 	SetInterfaceAddress(val *string)
+	InterfaceAddress6() *string
+	SetInterfaceAddress6(val *string)
+	InterfaceAddress6Input() *string
 	InterfaceAddressInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -130,9 +139,13 @@ type MagicWanGreTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBgp(value *MagicWanGreTunnelBgp)
 	PutHealthCheck(value *MagicWanGreTunnelHealthCheck)
+	ResetAutomaticReturnRouting()
+	ResetBgp()
 	ResetDescription()
 	ResetHealthCheck()
+	ResetInterfaceAddress6()
 	ResetMtu()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -171,6 +184,56 @@ func (j *jsiiProxy_MagicWanGreTunnel) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) AutomaticReturnRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) AutomaticReturnRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) Bgp() MagicWanGreTunnelBgpOutputReference {
+	var returns MagicWanGreTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) BgpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) BgpStatus() MagicWanGreTunnelBgpStatusOutputReference {
+	var returns MagicWanGreTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
 		&returns,
 	)
 	return returns
@@ -366,6 +429,26 @@ func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddress() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddress6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddressInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -527,7 +610,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -545,7 +628,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) {
 	_init_.Initialize()
 
@@ -563,6 +646,17 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel)SetAutomaticReturnRouting(val interface{}) {
+	if err := j.validateSetAutomaticReturnRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticReturnRouting",
 		val,
 	)
 }
@@ -645,6 +739,17 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"interfaceAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress6(val *string) {
+	if err := j.validateSetInterfaceAddress6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interfaceAddress6",
 		val,
 	)
 }
@@ -1065,6 +1170,17 @@ func (m *jsiiProxy_MagicWanGreTunnel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) PutBgp(value *MagicWanGreTunnelBgp) {
+	if err := m.validatePutBgpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBgp",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) PutHealthCheck(value *MagicWanGreTunnelHealthCheck) {
 	if err := m.validatePutHealthCheckParameters(value); err != nil {
 		panic(err)
@@ -1073,6 +1189,22 @@ func (m *jsiiProxy_MagicWanGreTunnel) PutHealthCheck(value *MagicWanGreTunnelHea
 		m,
 		"putHealthCheck",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetAutomaticReturnRouting() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAutomaticReturnRouting",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetBgp() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBgp",
+		nil, // no parameters
 	)
 }
 
@@ -1088,6 +1220,14 @@ func (m *jsiiProxy_MagicWanGreTunnel) ResetHealthCheck() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetInterfaceAddress6() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInterfaceAddress6",
 		nil, // no parameters
 	)
 }

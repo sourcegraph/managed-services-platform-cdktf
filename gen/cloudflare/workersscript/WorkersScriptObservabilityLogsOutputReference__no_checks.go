@@ -56,6 +56,10 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetDestinationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInt
 }
 
 func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetInvocationLogsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateSetPersistParameters(val interface{}) error {
 	return nil
 }
 

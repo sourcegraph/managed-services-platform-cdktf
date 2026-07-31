@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareapishieldoperation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
 type DataCloudflareApiShieldOperation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
 func NewDataCloudflareApiShieldOperation(scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationConfig) DataCloudflareApiShieldOperation {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataCloudflareApiShieldOperation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
 func NewDataCloudflareApiShieldOperation_Override(d DataCloudflareApiShieldOperation, scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationConfig) {
 	_init_.Initialize()
 

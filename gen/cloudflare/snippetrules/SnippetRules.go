@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/snippetrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules cloudflare_snippet_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
 type SnippetRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,9 +28,6 @@ type SnippetRules interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
-	Enabled() cdktf.IResolvable
-	Expression() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,7 +54,6 @@ type SnippetRules interface {
 	RawOverrides() interface{}
 	Rules() SnippetRulesRulesList
 	RulesInput() interface{}
-	SnippetName() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,7 +110,6 @@ type SnippetRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRules()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -178,36 +173,6 @@ func (j *jsiiProxy_SnippetRules) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SnippetRules) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SnippetRules) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SnippetRules) Expression() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"expression",
 		&returns,
 	)
 	return returns
@@ -313,16 +278,6 @@ func (j *jsiiProxy_SnippetRules) RulesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnippetRules) SnippetName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"snippetName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SnippetRules) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -374,7 +329,7 @@ func (j *jsiiProxy_SnippetRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRulesConfig) SnippetRules {
 	_init_.Initialize()
 
@@ -392,7 +347,7 @@ func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules_Override(s SnippetRules, scope constructs.Construct, id *string, config *SnippetRulesConfig) {
 	_init_.Initialize()
 
@@ -850,14 +805,6 @@ func (s *jsiiProxy_SnippetRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SnippetRules) ResetRules() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRules",
 		nil, // no parameters
 	)
 }

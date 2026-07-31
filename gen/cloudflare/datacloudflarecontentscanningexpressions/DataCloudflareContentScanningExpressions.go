@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecontentscanningexpressions/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
 type DataCloudflareContentScanningExpressions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareContentScanningExpressions) ZoneIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
 func NewDataCloudflareContentScanningExpressions(scope constructs.Construct, id *string, config *DataCloudflareContentScanningExpressionsConfig) DataCloudflareContentScanningExpressions {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareContentScanningExpressions(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
 func NewDataCloudflareContentScanningExpressions_Override(d DataCloudflareContentScanningExpressions, scope constructs.Construct, id *string, config *DataCloudflareContentScanningExpressionsConfig) {
 	_init_.Initialize()
 

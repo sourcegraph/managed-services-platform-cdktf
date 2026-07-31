@@ -32,7 +32,7 @@ type DataCloudflareR2BucketSippyDestinationOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareR2BucketSippyDestination
 	SetInternalValue(val *DataCloudflareR2BucketSippyDestination)
-	Provider() *string
+	R2BucketSippyProvider() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -160,11 +160,11 @@ func (j *jsiiProxy_DataCloudflareR2BucketSippyDestinationOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketSippyDestinationOutputReference) Provider() *string {
+func (j *jsiiProxy_DataCloudflareR2BucketSippyDestinationOutputReference) R2BucketSippyProvider() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"provider",
+		"r2BucketSippyProvider",
 		&returns,
 	)
 	return returns

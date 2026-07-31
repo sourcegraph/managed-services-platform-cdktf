@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdevicesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 type DataCloudflareZeroTrustDeviceSettings interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -28,6 +28,10 @@ type DataCloudflareZeroTrustDeviceSettings interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DisableForTime() *float64
+	ExternalEmergencySignalEnabled() cdktf.IResolvable
+	ExternalEmergencySignalFingerprint() *string
+	ExternalEmergencySignalInterval() *string
+	ExternalEmergencySignalUrl() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -175,6 +179,46 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) DisableForTime() *floa
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) ExternalEmergencySignalEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) ExternalEmergencySignalFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) ExternalEmergencySignalInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) ExternalEmergencySignalUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -316,7 +360,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) UseZtVirtualIp() cdktf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
 func NewDataCloudflareZeroTrustDeviceSettings(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceSettingsConfig) DataCloudflareZeroTrustDeviceSettings {
 	_init_.Initialize()
 
@@ -334,7 +378,7 @@ func NewDataCloudflareZeroTrustDeviceSettings(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
 func NewDataCloudflareZeroTrustDeviceSettings_Override(d DataCloudflareZeroTrustDeviceSettings, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceSettingsConfig) {
 	_init_.Initialize()
 

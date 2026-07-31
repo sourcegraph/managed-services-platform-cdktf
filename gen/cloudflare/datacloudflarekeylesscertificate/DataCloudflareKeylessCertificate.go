@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarekeylesscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate}.
 type DataCloudflareKeylessCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -91,7 +91,6 @@ type DataCloudflareKeylessCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetKeylessCertificateId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
 func NewDataCloudflareKeylessCertificate(scope constructs.Construct, id *string, config *DataCloudflareKeylessCertificateConfig) DataCloudflareKeylessCertificate {
 	_init_.Initialize()
 
@@ -413,7 +412,7 @@ func NewDataCloudflareKeylessCertificate(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
 func NewDataCloudflareKeylessCertificate_Override(d DataCloudflareKeylessCertificate, scope constructs.Construct, id *string, config *DataCloudflareKeylessCertificateConfig) {
 	_init_.Initialize()
 
@@ -774,14 +773,6 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificate) OverrideLogicalId(newLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareKeylessCertificate) ResetKeylessCertificateId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKeylessCertificateId",
-		nil, // no parameters
 	)
 }
 

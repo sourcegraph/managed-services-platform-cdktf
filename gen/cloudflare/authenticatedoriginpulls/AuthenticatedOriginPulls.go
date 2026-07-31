@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/authenticatedoriginpulls/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
 type AuthenticatedOriginPulls interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,8 +47,6 @@ type AuthenticatedOriginPulls interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Hostname() *string
-	SetHostname(val *string)
-	HostnameInput() *string
 	Id() *string
 	Issuer() *string
 	// Experimental.
@@ -125,7 +123,6 @@ type AuthenticatedOriginPulls interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value interface{})
-	ResetHostname()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -337,16 +334,6 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Hostname() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) HostnameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostnameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPulls) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -518,7 +505,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) AuthenticatedOriginPulls {
 	_init_.Initialize()
 
@@ -536,7 +523,7 @@ func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls_Override(a AuthenticatedOriginPulls, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) {
 	_init_.Initialize()
 
@@ -581,17 +568,6 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetHostname(val *string) {
-	if err := j.validateSetHostnameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hostname",
 		val,
 	)
 }
@@ -998,14 +974,6 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) PutConfig(value interface{}) {
 		a,
 		"putConfig",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AuthenticatedOriginPulls) ResetHostname() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetHostname",
-		nil, // no parameters
 	)
 }
 

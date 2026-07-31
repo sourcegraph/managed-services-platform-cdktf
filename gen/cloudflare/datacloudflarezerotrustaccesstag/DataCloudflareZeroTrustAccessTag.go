@@ -9,13 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccesstag/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 type DataCloudflareZeroTrustAccessTag interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,7 +23,6 @@ type DataCloudflareZeroTrustAccessTag interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,7 +58,6 @@ type DataCloudflareZeroTrustAccessTag interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,7 +86,6 @@ type DataCloudflareZeroTrustAccessTag interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTagName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -129,16 +125,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -164,16 +150,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -329,18 +305,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) TerraformResourceType() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessTag) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Data Source.
 func NewDataCloudflareZeroTrustAccessTag(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessTagConfig) DataCloudflareZeroTrustAccessTag {
 	_init_.Initialize()
 
@@ -358,7 +324,7 @@ func NewDataCloudflareZeroTrustAccessTag(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Data Source.
 func NewDataCloudflareZeroTrustAccessTag_Override(d DataCloudflareZeroTrustAccessTag, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessTagConfig) {
 	_init_.Initialize()
 
@@ -726,14 +692,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessTag) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessTag) ResetTagName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTagName",
 		nil, // no parameters
 	)
 }

@@ -148,6 +148,10 @@ func (j *jsiiProxy_LoadBalancerPool) validateSetMonitorParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPool) validateSetMonitorGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPool) validateSetNameParameters(val *string) error {
 	return nil
 }

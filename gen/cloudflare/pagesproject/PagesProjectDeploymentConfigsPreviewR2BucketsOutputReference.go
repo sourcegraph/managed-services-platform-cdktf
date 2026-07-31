@@ -68,7 +68,6 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetJurisdiction()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -489,14 +488,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	_jsii_.InvokeVoid(
 		p,
 		"resetJurisdiction",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetName",
 		nil, // no parameters
 	)
 }

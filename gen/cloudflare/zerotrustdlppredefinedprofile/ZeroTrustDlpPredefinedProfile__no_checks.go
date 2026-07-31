@@ -72,10 +72,6 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validatePutContextAwarenessParameters(value *ZeroTrustDlpPredefinedProfileContextAwareness) error {
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validatePutEntriesParameters(value interface{}) error {
 	return nil
 }
@@ -117,6 +113,10 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateSetConnectionParameter
 }
 
 func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateSetEnabledEntriesParameters(val *[]*string) error {
 	return nil
 }
 

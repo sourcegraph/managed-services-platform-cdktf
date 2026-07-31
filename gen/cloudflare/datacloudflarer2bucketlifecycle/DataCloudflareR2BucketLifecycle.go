@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarer2bucketlifecycle/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
 type DataCloudflareR2BucketLifecycle interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketLifecycle) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
 func NewDataCloudflareR2BucketLifecycle(scope constructs.Construct, id *string, config *DataCloudflareR2BucketLifecycleConfig) DataCloudflareR2BucketLifecycle {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataCloudflareR2BucketLifecycle(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
 func NewDataCloudflareR2BucketLifecycle_Override(d DataCloudflareR2BucketLifecycle, scope constructs.Construct, id *string, config *DataCloudflareR2BucketLifecycleConfig) {
 	_init_.Initialize()
 

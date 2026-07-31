@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
 type DataCloudflareZeroTrustOrganization interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,8 +26,9 @@ type DataCloudflareZeroTrustOrganization interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	CustomPages() DataCloudflareZeroTrustOrganizationCustomPagesOutputReference
+	DenyUnmatchedRequests() cdktf.IResolvable
+	DenyUnmatchedRequestsExemptedZoneNames() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,7 +64,6 @@ type DataCloudflareZeroTrustOrganization interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UiReadOnlyToggleReason() *string
-	UpdatedAt() *string
 	UserSeatExpirationInactiveTime() *string
 	WarpAuthSessionDuration() *string
 	ZoneId() *string
@@ -198,21 +198,31 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) CustomPages() DataCloudflareZeroTrustOrganizationCustomPagesOutputReference {
 	var returns DataCloudflareZeroTrustOrganizationCustomPagesOutputReference
 	_jsii_.Get(
 		j,
 		"customPages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) DenyUnmatchedRequests() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) DenyUnmatchedRequestsExemptedZoneNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNames",
 		&returns,
 	)
 	return returns
@@ -378,16 +388,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) UiReadOnlyToggleReason()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) UserSeatExpirationInactiveTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) DataCloudflareZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization_Override(d DataCloudflareZeroTrustOrganization, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustgatewaysettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
 type DataCloudflareZeroTrustGatewaySettings interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -36,6 +36,7 @@ type DataCloudflareZeroTrustGatewaySettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -203,6 +204,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) FriendlyUniqueId() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -294,7 +305,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
 func NewDataCloudflareZeroTrustGatewaySettings(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewaySettingsConfig) DataCloudflareZeroTrustGatewaySettings {
 	_init_.Initialize()
 
@@ -312,7 +323,7 @@ func NewDataCloudflareZeroTrustGatewaySettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
 func NewDataCloudflareZeroTrustGatewaySettings_Override(d DataCloudflareZeroTrustGatewaySettings, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewaySettingsConfig) {
 	_init_.Initialize()
 

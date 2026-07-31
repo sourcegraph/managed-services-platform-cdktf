@@ -68,6 +68,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutForensicCopyParameters(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutL4OverrideParameters(value *ZeroTrustGatewayPolicyRuleSettingsL4Override) error {
 	return nil
 }
@@ -100,7 +104,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetAddHeadersParameters(val *map[string]*string) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetAddHeadersParameters(val interface{}) error {
 	return nil
 }
 

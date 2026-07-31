@@ -28,6 +28,7 @@ type DataCloudflareSchemaValidationSchemasListResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareSchemaValidationSchemasListResult
 	SetInternalValue(val *DataCloudflareSchemaValidationSchemasListResult)
 	Kind() *string
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

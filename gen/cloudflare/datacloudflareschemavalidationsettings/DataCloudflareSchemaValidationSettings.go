@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareschemavalidationsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings}.
 type DataCloudflareSchemaValidationSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSettings) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
 func NewDataCloudflareSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationSettingsConfig) DataCloudflareSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataCloudflareSchemaValidationSettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
 func NewDataCloudflareSchemaValidationSettings_Override(d DataCloudflareSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarenotificationpolicywebhooks/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
 type DataCloudflareNotificationPolicyWebhooks interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -92,7 +92,6 @@ type DataCloudflareNotificationPolicyWebhooks interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetWebhookId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooks) WebhookIdInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooks(scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksConfig) DataCloudflareNotificationPolicyWebhooks {
 	_init_.Initialize()
 
@@ -391,7 +390,7 @@ func NewDataCloudflareNotificationPolicyWebhooks(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooks_Override(d DataCloudflareNotificationPolicyWebhooks, scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksConfig) {
 	_init_.Initialize()
 
@@ -759,14 +758,6 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooks) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooks) ResetWebhookId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWebhookId",
 		nil, // no parameters
 	)
 }

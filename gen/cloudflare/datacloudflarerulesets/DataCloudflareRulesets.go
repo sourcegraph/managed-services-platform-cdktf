@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarerulesets/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rulesets cloudflare_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rulesets cloudflare_rulesets}.
 type DataCloudflareRulesets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -51,6 +51,7 @@ type DataCloudflareRulesets interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareRulesetsResultList
+	Rulesets() DataCloudflareRulesetsRulesetsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -270,6 +271,16 @@ func (j *jsiiProxy_DataCloudflareRulesets) Result() DataCloudflareRulesetsResult
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesets) Rulesets() DataCloudflareRulesetsRulesetsList {
+	var returns DataCloudflareRulesetsRulesetsList
+	_jsii_.Get(
+		j,
+		"rulesets",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesets) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -321,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareRulesets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) DataCloudflareRulesets {
 	_init_.Initialize()
 
@@ -339,7 +350,7 @@ func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets_Override(d DataCloudflareRulesets, scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) {
 	_init_.Initialize()
 

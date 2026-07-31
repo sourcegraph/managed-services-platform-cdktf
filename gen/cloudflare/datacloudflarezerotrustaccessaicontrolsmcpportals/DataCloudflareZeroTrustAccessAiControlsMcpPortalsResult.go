@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessaicontrolsmcpportals
+
+
+type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResult struct {
+}
+

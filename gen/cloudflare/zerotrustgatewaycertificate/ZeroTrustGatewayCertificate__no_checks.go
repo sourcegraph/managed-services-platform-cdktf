@@ -92,6 +92,10 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetAccountIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetActivateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

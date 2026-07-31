@@ -76,7 +76,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRedirect
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val *map[string]interface{}) error {
 	return nil
 }
 
