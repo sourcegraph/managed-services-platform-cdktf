@@ -76,6 +76,10 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutLimitsParameters(value *PagesProjectDeploymentConfigsProductionLimits) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutMtlsCertificatesParameters(value interface{}) error {
 	return nil
 }
@@ -104,6 +108,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetAlwaysUseLatestCompatibilityDateParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetBuildImageMajorVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetCompatibilityDateParameters(val *string) error {
 	return nil
 }
@@ -120,6 +132,10 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetFailOpenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -129,6 +145,14 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetUsageModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetWranglerConfigHashParameters(val *string) error {
 	return nil
 }
 

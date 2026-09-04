@@ -1,6 +1,0 @@
-package datacloudflarezerotrustdlppredefinedprofile
-
-
-type DataCloudflareZeroTrustDlpPredefinedProfileContextAwarenessSkip struct {
-}
-

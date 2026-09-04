@@ -1,6 +1,0 @@
-package datacloudflarezerotrusttunnelcloudflaredconfig
-
-
-type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigWarpRouting struct {
-}
-

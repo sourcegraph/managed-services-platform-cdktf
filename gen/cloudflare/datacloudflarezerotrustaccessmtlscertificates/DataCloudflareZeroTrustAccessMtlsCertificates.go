@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccessmtlscertificates/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_mtls_certificates cloudflare_zero_trust_access_mtls_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_mtls_certificates cloudflare_zero_trust_access_mtls_certificates}.
 type DataCloudflareZeroTrustAccessMtlsCertificates interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificates) ZoneIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_mtls_certificates cloudflare_zero_trust_access_mtls_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_mtls_certificates cloudflare_zero_trust_access_mtls_certificates} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificates(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificatesConfig) DataCloudflareZeroTrustAccessMtlsCertificates {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataCloudflareZeroTrustAccessMtlsCertificates(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_mtls_certificates cloudflare_zero_trust_access_mtls_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_mtls_certificates cloudflare_zero_trust_access_mtls_certificates} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificates_Override(d DataCloudflareZeroTrustAccessMtlsCertificates, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificatesConfig) {
 	_init_.Initialize()
 

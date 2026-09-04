@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdnslocation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type DataCloudflareZeroTrustDnsLocation interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -95,7 +95,6 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetLocationId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) DataCloudflareZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -457,7 +456,7 @@ func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation_Override(d DataCloudflareZeroTrustDnsLocation, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 
@@ -818,14 +817,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) OverrideLogicalId(newLogi
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ResetLocationId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLocationId",
-		nil, // no parameters
 	)
 }
 

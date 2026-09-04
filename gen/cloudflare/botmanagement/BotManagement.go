@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/botmanagement/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AiBotsProtection() *string
@@ -18,8 +18,14 @@ type BotManagement interface {
 	AutoUpdateModel() interface{}
 	SetAutoUpdateModel(val interface{})
 	AutoUpdateModelInput() interface{}
+	BmCookieEnabled() interface{}
+	SetBmCookieEnabled(val interface{})
+	BmCookieEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CfRobotsVariant() *string
+	SetCfRobotsVariant(val *string)
+	CfRobotsVariantInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -52,6 +58,9 @@ type BotManagement interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IsRobotsTxtManaged() interface{}
+	SetIsRobotsTxtManaged(val interface{})
+	IsRobotsTxtManagedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -142,9 +151,12 @@ type BotManagement interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
+	ResetBmCookieEnabled()
+	ResetCfRobotsVariant()
 	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
+	ResetIsRobotsTxtManaged()
 	ResetOptimizeWordpress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -212,11 +224,51 @@ func (j *jsiiProxy_BotManagement) AutoUpdateModelInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BotManagement) BmCookieEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bmCookieEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) BmCookieEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bmCookieEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotManagement) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CfRobotsVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cfRobotsVariant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CfRobotsVariantInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cfRobotsVariantInput",
 		&returns,
 	)
 	return returns
@@ -357,6 +409,26 @@ func (j *jsiiProxy_BotManagement) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) IsRobotsTxtManaged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isRobotsTxtManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) IsRobotsTxtManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isRobotsTxtManagedInput",
 		&returns,
 	)
 	return returns
@@ -603,7 +675,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -621,7 +693,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -650,6 +722,28 @@ func (j *jsiiProxy_BotManagement)SetAutoUpdateModel(val interface{}) {
 	_jsii_.Set(
 		j,
 		"autoUpdateModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetBmCookieEnabled(val interface{}) {
+	if err := j.validateSetBmCookieEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bmCookieEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetCfRobotsVariant(val *string) {
+	if err := j.validateSetCfRobotsVariantParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cfRobotsVariant",
 		val,
 	)
 }
@@ -721,6 +815,17 @@ func (j *jsiiProxy_BotManagement)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetIsRobotsTxtManaged(val interface{}) {
+	if err := j.validateSetIsRobotsTxtManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isRobotsTxtManaged",
 		val,
 	)
 }
@@ -1201,6 +1306,22 @@ func (b *jsiiProxy_BotManagement) ResetAutoUpdateModel() {
 	)
 }
 
+func (b *jsiiProxy_BotManagement) ResetBmCookieEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBmCookieEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetCfRobotsVariant() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCfRobotsVariant",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BotManagement) ResetCrawlerProtection() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1221,6 +1342,14 @@ func (b *jsiiProxy_BotManagement) ResetFightMode() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetFightMode",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetIsRobotsTxtManaged() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIsRobotsTxtManaged",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/magictransitsiteacl/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}.
 type MagicTransitSiteAcl interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -505,7 +505,7 @@ func (j *jsiiProxy_MagicTransitSiteAcl) UnidirectionalInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
 func NewMagicTransitSiteAcl(scope constructs.Construct, id *string, config *MagicTransitSiteAclConfig) MagicTransitSiteAcl {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewMagicTransitSiteAcl(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
 func NewMagicTransitSiteAcl_Override(m MagicTransitSiteAcl, scope constructs.Construct, id *string, config *MagicTransitSiteAclConfig) {
 	_init_.Initialize()
 

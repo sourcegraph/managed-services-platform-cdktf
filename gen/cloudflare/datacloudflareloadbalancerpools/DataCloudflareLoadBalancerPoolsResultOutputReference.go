@@ -41,6 +41,7 @@ type DataCloudflareLoadBalancerPoolsResultOutputReference interface {
 	MinimumOrigins() *float64
 	ModifiedOn() *string
 	Monitor() *string
+	MonitorGroup() *string
 	Name() *string
 	Networks() *[]*string
 	NotificationEmail() *string
@@ -259,6 +260,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsResultOutputReference) Monitor
 	_jsii_.Get(
 		j,
 		"monitor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsResultOutputReference) MonitorGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorGroup",
 		&returns,
 	)
 	return returns

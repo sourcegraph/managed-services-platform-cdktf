@@ -64,7 +64,6 @@ type SnippetsMetadataOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMainModule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (s *jsiiProxy_SnippetsMetadataOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SnippetsMetadataOutputReference) ResetMainModule() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetMainModule",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SnippetsMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

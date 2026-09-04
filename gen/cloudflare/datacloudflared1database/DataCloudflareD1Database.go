@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflared1database/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_database cloudflare_d1_database}.
 type DataCloudflareD1Database interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataCloudflareD1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) DataCloudflareD1Database {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database_Override(d DataCloudflareD1Database, scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) {
 	_init_.Initialize()
 

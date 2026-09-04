@@ -10,7 +10,6 @@ import (
 
 type DataCloudflareZeroTrustAccessCustomPagesResultOutputReference interface {
 	cdktf.ComplexObject
-	AppCount() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -21,7 +20,6 @@ type DataCloudflareZeroTrustAccessCustomPagesResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,6 +27,7 @@ type DataCloudflareZeroTrustAccessCustomPagesResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareZeroTrustAccessCustomPagesResult
 	SetInternalValue(val *DataCloudflareZeroTrustAccessCustomPagesResult)
 	Name() *string
@@ -42,7 +41,6 @@ type DataCloudflareZeroTrustAccessCustomPagesResultOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
 	Uid() *string
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,16 +80,6 @@ type jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -112,16 +100,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -137,6 +115,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -197,16 +185,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference
 	_jsii_.Get(
 		j,
 		"uid",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

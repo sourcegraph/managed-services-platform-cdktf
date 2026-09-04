@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarewaitingroomrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
 type DataCloudflareWaitingRoomRules interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) DataCloudflareWaitingRoomRules {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules_Override(d DataCloudflareWaitingRoomRules, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) {
 	_init_.Initialize()
 

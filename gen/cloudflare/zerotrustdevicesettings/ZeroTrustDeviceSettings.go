@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdevicesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 type ZeroTrustDeviceSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -34,6 +34,18 @@ type ZeroTrustDeviceSettings interface {
 	DisableForTime() *float64
 	SetDisableForTime(val *float64)
 	DisableForTimeInput() *float64
+	ExternalEmergencySignalEnabled() interface{}
+	SetExternalEmergencySignalEnabled(val interface{})
+	ExternalEmergencySignalEnabledInput() interface{}
+	ExternalEmergencySignalFingerprint() *string
+	SetExternalEmergencySignalFingerprint(val *string)
+	ExternalEmergencySignalFingerprintInput() *string
+	ExternalEmergencySignalInterval() *string
+	SetExternalEmergencySignalInterval(val *string)
+	ExternalEmergencySignalIntervalInput() *string
+	ExternalEmergencySignalUrl() *string
+	SetExternalEmergencySignalUrl(val *string)
+	ExternalEmergencySignalUrlInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -120,6 +132,10 @@ type ZeroTrustDeviceSettings interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDisableForTime()
+	ResetExternalEmergencySignalEnabled()
+	ResetExternalEmergencySignalFingerprint()
+	ResetExternalEmergencySignalInterval()
+	ResetExternalEmergencySignalUrl()
 	ResetGatewayProxyEnabled()
 	ResetGatewayUdpProxyEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -230,6 +246,86 @@ func (j *jsiiProxy_ZeroTrustDeviceSettings) DisableForTimeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"disableForTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalFingerprintInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalFingerprintInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) ExternalEmergencySignalUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalEmergencySignalUrlInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +522,7 @@ func (j *jsiiProxy_ZeroTrustDeviceSettings) UseZtVirtualIpInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
 func NewZeroTrustDeviceSettings(scope constructs.Construct, id *string, config *ZeroTrustDeviceSettingsConfig) ZeroTrustDeviceSettings {
 	_init_.Initialize()
 
@@ -444,7 +540,7 @@ func NewZeroTrustDeviceSettings(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
 func NewZeroTrustDeviceSettings_Override(z ZeroTrustDeviceSettings, scope constructs.Construct, id *string, config *ZeroTrustDeviceSettingsConfig) {
 	_init_.Initialize()
 
@@ -503,6 +599,50 @@ func (j *jsiiProxy_ZeroTrustDeviceSettings)SetDisableForTime(val *float64) {
 	_jsii_.Set(
 		j,
 		"disableForTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings)SetExternalEmergencySignalEnabled(val interface{}) {
+	if err := j.validateSetExternalEmergencySignalEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEmergencySignalEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings)SetExternalEmergencySignalFingerprint(val *string) {
+	if err := j.validateSetExternalEmergencySignalFingerprintParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEmergencySignalFingerprint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings)SetExternalEmergencySignalInterval(val *string) {
+	if err := j.validateSetExternalEmergencySignalIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEmergencySignalInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings)SetExternalEmergencySignalUrl(val *string) {
+	if err := j.validateSetExternalEmergencySignalUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEmergencySignalUrl",
 		val,
 	)
 }
@@ -946,6 +1086,38 @@ func (z *jsiiProxy_ZeroTrustDeviceSettings) ResetDisableForTime() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDisableForTime",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceSettings) ResetExternalEmergencySignalEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExternalEmergencySignalEnabled",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceSettings) ResetExternalEmergencySignalFingerprint() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExternalEmergencySignalFingerprint",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceSettings) ResetExternalEmergencySignalInterval() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExternalEmergencySignalInterval",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceSettings) ResetExternalEmergencySignalUrl() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExternalEmergencySignalUrl",
 		nil, // no parameters
 	)
 }

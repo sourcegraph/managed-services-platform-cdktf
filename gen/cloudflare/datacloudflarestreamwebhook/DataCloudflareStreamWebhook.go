@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarestreamwebhook/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_webhook cloudflare_stream_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_webhook cloudflare_stream_webhook}.
 type DataCloudflareStreamWebhook interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -261,7 +261,7 @@ func (j *jsiiProxy_DataCloudflareStreamWebhook) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source.
 func NewDataCloudflareStreamWebhook(scope constructs.Construct, id *string, config *DataCloudflareStreamWebhookConfig) DataCloudflareStreamWebhook {
 	_init_.Initialize()
 
@@ -279,7 +279,7 @@ func NewDataCloudflareStreamWebhook(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source.
 func NewDataCloudflareStreamWebhook_Override(d DataCloudflareStreamWebhook, scope constructs.Construct, id *string, config *DataCloudflareStreamWebhookConfig) {
 	_init_.Initialize()
 

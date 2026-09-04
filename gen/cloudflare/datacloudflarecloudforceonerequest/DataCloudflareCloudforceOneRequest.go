@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecloudforceonerequest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type DataCloudflareCloudforceOneRequest interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
 func NewDataCloudflareCloudforceOneRequest(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestConfig) DataCloudflareCloudforceOneRequest {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDataCloudflareCloudforceOneRequest(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
 func NewDataCloudflareCloudforceOneRequest_Override(d DataCloudflareCloudforceOneRequest, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestConfig) {
 	_init_.Initialize()
 

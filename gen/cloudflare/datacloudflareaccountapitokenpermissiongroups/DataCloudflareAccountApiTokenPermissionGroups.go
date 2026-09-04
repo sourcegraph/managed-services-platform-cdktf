@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaccountapitokenpermissiongroups/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
 type DataCloudflareAccountApiTokenPermissionGroups interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -44,6 +44,7 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PermissionGroups() DataCloudflareAccountApiTokenPermissionGroupsPermissionGroupsList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -238,6 +239,16 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Node() constru
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) PermissionGroups() DataCloudflareAccountApiTokenPermissionGroupsPermissionGroupsList {
+	var returns DataCloudflareAccountApiTokenPermissionGroupsPermissionGroupsList
+	_jsii_.Get(
+		j,
+		"permissionGroups",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -309,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) DataCloudflareAccountApiTokenPermissionGroups {
 	_init_.Initialize()
 
@@ -327,7 +338,7 @@ func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups_Override(d DataCloudflareAccountApiTokenPermissionGroups, scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) {
 	_init_.Initialize()
 

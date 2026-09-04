@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaccessrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/access_rules cloudflare_access_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rules cloudflare_access_rules}.
 type DataCloudflareAccessRules interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -465,7 +465,7 @@ func (j *jsiiProxy_DataCloudflareAccessRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/access_rules cloudflare_access_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rules cloudflare_access_rules} Data Source.
 func NewDataCloudflareAccessRules(scope constructs.Construct, id *string, config *DataCloudflareAccessRulesConfig) DataCloudflareAccessRules {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewDataCloudflareAccessRules(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/access_rules cloudflare_access_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rules cloudflare_access_rules} Data Source.
 func NewDataCloudflareAccessRules_Override(d DataCloudflareAccessRules, scope constructs.Construct, id *string, config *DataCloudflareAccessRulesConfig) {
 	_init_.Initialize()
 

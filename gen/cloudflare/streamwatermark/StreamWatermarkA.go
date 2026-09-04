@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamwatermark/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_watermark cloudflare_stream_watermark}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
 type StreamWatermarkA interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -539,7 +539,7 @@ func (j *jsiiProxy_StreamWatermarkA) Width() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamWatermarkAConfig) StreamWatermarkA {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA_Override(s StreamWatermarkA, scope constructs.Construct, id *string, config *StreamWatermarkAConfig) {
 	_init_.Initialize()
 

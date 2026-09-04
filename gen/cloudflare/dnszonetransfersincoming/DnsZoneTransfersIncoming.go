@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/dnszonetransfersincoming/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
 type DnsZoneTransfersIncoming interface {
 	cdktf.TerraformResource
 	AutoRefreshSeconds() *float64
@@ -118,6 +118,7 @@ type DnsZoneTransfersIncoming interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutoRefreshSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -430,7 +431,7 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
 func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config *DnsZoneTransfersIncomingConfig) DnsZoneTransfersIncoming {
 	_init_.Initialize()
 
@@ -448,7 +449,7 @@ func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
 func NewDnsZoneTransfersIncoming_Override(d DnsZoneTransfersIncoming, scope constructs.Construct, id *string, config *DnsZoneTransfersIncomingConfig) {
 	_init_.Initialize()
 
@@ -921,6 +922,14 @@ func (d *jsiiProxy_DnsZoneTransfersIncoming) OverrideLogicalId(newLogicalId *str
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DnsZoneTransfersIncoming) ResetAutoRefreshSeconds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutoRefreshSeconds",
+		nil, // no parameters
 	)
 }
 

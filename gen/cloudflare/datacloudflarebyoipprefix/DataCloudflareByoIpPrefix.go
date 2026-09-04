@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarebyoipprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type DataCloudflareByoIpPrefix interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -29,6 +29,7 @@ type DataCloudflareByoIpPrefix interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DelegateLoaCreation() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,6 +44,7 @@ type DataCloudflareByoIpPrefix interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IrrValidationState() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,6 +55,8 @@ type DataCloudflareByoIpPrefix interface {
 	Node() constructs.Node
 	OnDemandEnabled() cdktf.IResolvable
 	OnDemandLocked() cdktf.IResolvable
+	OwnershipValidationState() *string
+	OwnershipValidationToken() *string
 	PrefixId() *string
 	SetPrefixId(val *string)
 	PrefixIdInput() *string
@@ -62,6 +66,7 @@ type DataCloudflareByoIpPrefix interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RpkiValidationState() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,7 +101,6 @@ type DataCloudflareByoIpPrefix interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPrefixId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -226,6 +230,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) CreatedAt() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) DelegateLoaCreation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"delegateLoaCreation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefix) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -281,6 +295,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) IrrValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"irrValidationState",
 		&returns,
 	)
 	return returns
@@ -346,6 +370,26 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) OnDemandLocked() cdktf.IResolvable
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) OwnershipValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipValidationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) OwnershipValidationToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipValidationToken",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefix) PrefixId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -386,6 +430,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) RpkiValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpkiValidationState",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefix) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -417,7 +471,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) DataCloudflareByoIpPrefix {
 	_init_.Initialize()
 
@@ -435,7 +489,7 @@ func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix_Override(d DataCloudflareByoIpPrefix, scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -803,14 +857,6 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefix) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareByoIpPrefix) ResetPrefixId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPrefixId",
 		nil, // no parameters
 	)
 }

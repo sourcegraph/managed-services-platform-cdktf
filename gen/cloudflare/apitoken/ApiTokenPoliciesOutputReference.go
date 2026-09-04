@@ -30,14 +30,13 @@ type ApiTokenPoliciesOutputReference interface {
 	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	PermissionGroups() ApiTokenPoliciesPermissionGroupsList
 	PermissionGroupsInput() interface{}
-	Resources() *map[string]*string
-	SetResources(val *map[string]*string)
-	ResourcesInput() *map[string]*string
+	Resources() *string
+	SetResources(val *string)
+	ResourcesInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,16 +145,6 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiTokenPoliciesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -186,8 +175,8 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) PermissionGroupsInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) Resources() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) Resources() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"resources",
@@ -196,8 +185,8 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) Resources() *map[string]*str
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) ResourcesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) ResourcesInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"resourcesInput",
@@ -298,7 +287,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetResources(val *map[string]*string) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetResources(val *string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}

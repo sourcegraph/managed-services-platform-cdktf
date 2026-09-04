@@ -28,6 +28,7 @@ type DataCloudflareZeroTrustDeviceManagedNetworksListResultOutputReference inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareZeroTrustDeviceManagedNetworksListResult
 	SetInternalValue(val *DataCloudflareZeroTrustDeviceManagedNetworksListResult)
 	Name() *string
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworksListResultOutputR
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworksListResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

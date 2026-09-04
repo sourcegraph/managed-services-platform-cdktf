@@ -77,6 +77,7 @@ type DataCloudflareNotificationPolicyFiltersOutputReference interface {
 	TrafficExclusions() *[]*string
 	TunnelId() *[]*string
 	TunnelName() *[]*string
+	Type() *[]*string
 	Where() *[]*string
 	Zones() *[]*string
 	// Experimental.
@@ -583,6 +584,16 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyFiltersOutputReference) Tunne
 	_jsii_.Get(
 		j,
 		"tunnelName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareNotificationPolicyFiltersOutputReference) Type() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns

@@ -27,13 +27,17 @@ type WorkersScriptPlacementOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Host() *string
+	Hostname() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LastAnalyzedAt() *string
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	Region() *string
 	Status() *string
+	Target() WorkersScriptPlacementTargetList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -122,6 +126,26 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Host() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"host",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptPlacementOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -162,11 +186,31 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) ModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Target() WorkersScriptPlacementTargetList {
+	var returns WorkersScriptPlacementTargetList
+	_jsii_.Get(
+		j,
+		"target",
 		&returns,
 	)
 	return returns

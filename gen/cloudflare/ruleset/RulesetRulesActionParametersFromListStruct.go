@@ -2,13 +2,13 @@ package ruleset
 
 
 type RulesetRulesActionParametersFromListStruct struct {
-	// Expression that evaluates to the list lookup key.
+	// An expression that evaluates to the list lookup key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#key Ruleset#key}
-	Key *string `field:"optional" json:"key" yaml:"key"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#key Ruleset#key}
+	Key *string `field:"required" json:"key" yaml:"key"`
 	// The name of the list to match against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#name Ruleset#name}
-	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

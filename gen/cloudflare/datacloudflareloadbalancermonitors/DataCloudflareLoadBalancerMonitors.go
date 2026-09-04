@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareloadbalancermonitors/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer_monitors cloudflare_load_balancer_monitors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_monitors cloudflare_load_balancer_monitors}.
 type DataCloudflareLoadBalancerMonitors interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerMonitors) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer_monitors cloudflare_load_balancer_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_monitors cloudflare_load_balancer_monitors} Data Source.
 func NewDataCloudflareLoadBalancerMonitors(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerMonitorsConfig) DataCloudflareLoadBalancerMonitors {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareLoadBalancerMonitors(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer_monitors cloudflare_load_balancer_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_monitors cloudflare_load_balancer_monitors} Data Source.
 func NewDataCloudflareLoadBalancerMonitors_Override(d DataCloudflareLoadBalancerMonitors, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerMonitorsConfig) {
 	_init_.Initialize()
 

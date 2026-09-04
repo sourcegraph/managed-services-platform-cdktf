@@ -16,6 +16,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsList) val
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

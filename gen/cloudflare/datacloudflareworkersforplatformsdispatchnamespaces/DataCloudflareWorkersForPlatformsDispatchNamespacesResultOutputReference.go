@@ -29,6 +29,7 @@ type DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareWorkersForPlatformsDispatchNamespacesResult
 	SetInternalValue(val *DataCloudflareWorkersForPlatformsDispatchNamespacesResult)
 	ModifiedBy() *string
@@ -44,6 +45,7 @@ type DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference in
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TrustedWorkers() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -143,6 +145,16 @@ func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) InternalValue() *DataCloudflareWorkersForPlatformsDispatchNamespacesResult {
 	var returns *DataCloudflareWorkersForPlatformsDispatchNamespacesResult
 	_jsii_.Get(
@@ -218,6 +230,16 @@ func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutp
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) TrustedWorkers() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"trustedWorkers",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewayproxyendpoints
+
+
+type DataCloudflareZeroTrustGatewayProxyEndpointsResult struct {
+}
+

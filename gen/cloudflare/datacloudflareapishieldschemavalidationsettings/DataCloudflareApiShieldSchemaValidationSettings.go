@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareapishieldschemavalidationsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
 type DataCloudflareApiShieldSchemaValidationSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -32,6 +32,7 @@ type DataCloudflareApiShieldSchemaValidationSettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) FriendlyUniq
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -283,7 +294,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) ZoneIdInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaValidationSettingsConfig) DataCloudflareApiShieldSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -301,7 +312,7 @@ func NewDataCloudflareApiShieldSchemaValidationSettings(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldSchemaValidationSettings_Override(d DataCloudflareApiShieldSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

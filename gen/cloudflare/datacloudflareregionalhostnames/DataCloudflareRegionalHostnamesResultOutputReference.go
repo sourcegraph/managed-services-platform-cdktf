@@ -29,6 +29,7 @@ type DataCloudflareRegionalHostnamesResultOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Hostname() *string
+	Id() *string
 	InternalValue() *DataCloudflareRegionalHostnamesResult
 	SetInternalValue(val *DataCloudflareRegionalHostnamesResult)
 	RegionKey() *string
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Hostnam
 	_jsii_.Get(
 		j,
 		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

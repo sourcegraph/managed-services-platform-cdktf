@@ -48,11 +48,23 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validatePutOutboundPara
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validatePutSimpleParameters(value *WorkersScriptBindingsSimple) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetAlgorithmParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetAllowedDestinationAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetAllowedSenderAddressesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetDatasetParam
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetDestinationAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }
@@ -104,6 +120,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetJsonParamete
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetKeyBase64Parameters(val *string) error {
 	return nil
 }
@@ -121,6 +141,14 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetNamespacePar
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetNamespaceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetOldNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetPartParameters(val *string) error {
 	return nil
 }
 
@@ -165,6 +193,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTypeParamete
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetUsagesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetVersionIdParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/emailsecurityimpersonationregistry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
 type EmailSecurityImpersonationRegistry interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
 func NewEmailSecurityImpersonationRegistry(scope constructs.Construct, id *string, config *EmailSecurityImpersonationRegistryConfig) EmailSecurityImpersonationRegistry {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewEmailSecurityImpersonationRegistry(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
 func NewEmailSecurityImpersonationRegistry_Override(e EmailSecurityImpersonationRegistry, scope constructs.Construct, id *string, config *EmailSecurityImpersonationRegistryConfig) {
 	_init_.Initialize()
 

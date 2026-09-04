@@ -10,9 +10,9 @@ import (
 
 type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AddHeaders() *map[string]*string
-	SetAddHeaders(val *map[string]*string)
-	AddHeadersInput() *map[string]*string
+	AddHeaders() interface{}
+	SetAddHeaders(val interface{})
+	AddHeadersInput() interface{}
 	AllowChildBypass() interface{}
 	SetAllowChildBypass(val interface{})
 	AllowChildBypassInput() interface{}
@@ -52,6 +52,8 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	DnsResolversInput() interface{}
 	Egress() ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
 	EgressInput() interface{}
+	ForensicCopy() ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	ForensicCopyInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() interface{}
@@ -129,6 +131,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession)
 	PutDnsResolvers(value *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
 	PutEgress(value *ZeroTrustGatewayPolicyRuleSettingsEgress)
+	PutForensicCopy(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy)
 	PutL4Override(value *ZeroTrustGatewayPolicyRuleSettingsL4Override)
 	PutNotificationSettings(value *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	PutPayloadLog(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
@@ -147,6 +150,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetCheckSession()
 	ResetDnsResolvers()
 	ResetEgress()
+	ResetForensicCopy()
 	ResetIgnoreCnameCategoryMatches()
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
@@ -176,8 +180,8 @@ type jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"addHeaders",
@@ -186,8 +190,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeadersInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeadersInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"addHeadersInput",
@@ -421,6 +425,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) EgressInpu
 	_jsii_.Get(
 		j,
 		"egressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCopy() ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	_jsii_.Get(
+		j,
+		"forensicCopy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCopyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forensicCopyInput",
 		&returns,
 	)
 	return returns
@@ -774,7 +798,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(z ZeroTrustGa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAddHeaders(val *map[string]*string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAddHeaders(val interface{}) {
 	if err := j.validateSetAddHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1213,6 +1237,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutEgress(
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutForensicCopy(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy) {
+	if err := z.validatePutForensicCopyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putForensicCopy",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutL4Override(value *ZeroTrustGatewayPolicyRuleSettingsL4Override) {
 	if err := z.validatePutL4OverrideParameters(value); err != nil {
 		panic(err)
@@ -1374,6 +1409,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetEgres
 	_jsii_.InvokeVoid(
 		z,
 		"resetEgress",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetForensicCopy() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetForensicCopy",
 		nil, // no parameters
 	)
 }

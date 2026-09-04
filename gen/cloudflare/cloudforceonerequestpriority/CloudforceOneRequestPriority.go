@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/cloudforceonerequestpriority/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
 type CloudforceOneRequestPriority interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
 func NewCloudforceOneRequestPriority(scope constructs.Construct, id *string, config *CloudforceOneRequestPriorityConfig) CloudforceOneRequestPriority {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewCloudforceOneRequestPriority(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
 func NewCloudforceOneRequestPriority_Override(c CloudforceOneRequestPriority, scope constructs.Construct, id *string, config *CloudforceOneRequestPriorityConfig) {
 	_init_.Initialize()
 

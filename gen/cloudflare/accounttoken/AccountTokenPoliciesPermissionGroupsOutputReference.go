@@ -32,9 +32,6 @@ type AccountTokenPoliciesPermissionGroupsOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Meta() AccountTokenPoliciesPermissionGroupsMetaOutputReference
-	MetaInput() interface{}
-	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +64,6 @@ type AccountTokenPoliciesPermissionGroupsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMeta(value *AccountTokenPoliciesPermissionGroupsMeta)
-	ResetMeta()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,36 +144,6 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) Meta() AccountTokenPoliciesPermissionGroupsMetaOutputReference {
-	var returns AccountTokenPoliciesPermissionGroupsMetaOutputReference
-	_jsii_.Get(
-		j,
-		"meta",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) MetaInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"metaInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
 		&returns,
 	)
 	return returns
@@ -482,25 +447,6 @@ func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) Interpol
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) PutMeta(value *AccountTokenPoliciesPermissionGroupsMeta) {
-	if err := a.validatePutMetaParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putMeta",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) ResetMeta() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMeta",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

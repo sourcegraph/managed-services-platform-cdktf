@@ -1,0 +1,74 @@
+//go:build no_runtime_type_checking
+
+package datacloudflarepagesprojects
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateSetInternalValueParameters(val *DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespaces) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) error {
+	return nil
+}
+

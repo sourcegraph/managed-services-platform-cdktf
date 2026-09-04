@@ -19,13 +19,13 @@ type ArgoSmartRoutingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Enables Argo Smart Routing. Available values: "on", "off".
+	// Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Identifier.
+	// Specifies the zone associated with the API call.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

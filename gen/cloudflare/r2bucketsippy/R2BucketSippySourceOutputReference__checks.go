@@ -114,6 +114,14 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetBucketParamete
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetBucketUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetClientEmailParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

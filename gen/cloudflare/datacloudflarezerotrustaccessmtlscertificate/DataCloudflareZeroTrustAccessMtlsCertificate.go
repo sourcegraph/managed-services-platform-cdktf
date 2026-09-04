@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccessmtlscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
 type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -27,7 +27,6 @@ type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,7 +61,6 @@ type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -92,7 +90,6 @@ type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
-	ResetCertificateId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -191,16 +188,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) Count() interfa
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -356,16 +343,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) TerraformResour
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -387,7 +364,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ZoneIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificateConfig) DataCloudflareZeroTrustAccessMtlsCertificate {
 	_init_.Initialize()
 
@@ -405,7 +382,7 @@ func NewDataCloudflareZeroTrustAccessMtlsCertificate(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificate_Override(d DataCloudflareZeroTrustAccessMtlsCertificate, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificateConfig) {
 	_init_.Initialize()
 
@@ -784,14 +761,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ResetAccountId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ResetCertificateId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCertificateId",
 		nil, // no parameters
 	)
 }

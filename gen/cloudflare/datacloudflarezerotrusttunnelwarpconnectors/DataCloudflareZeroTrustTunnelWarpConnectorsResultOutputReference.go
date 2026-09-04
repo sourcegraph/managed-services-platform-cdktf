@@ -38,7 +38,6 @@ type DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference interface 
 	SetInternalValue(val *DataCloudflareZeroTrustTunnelWarpConnectorsResult)
 	Metadata() *string
 	Name() *string
-	RemoteConfig() cdktf.IResolvable
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -223,16 +222,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputRefere
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference) RemoteConfig() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"remoteConfig",
 		&returns,
 	)
 	return returns

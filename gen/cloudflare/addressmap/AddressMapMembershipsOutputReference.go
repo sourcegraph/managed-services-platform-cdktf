@@ -10,7 +10,6 @@ import (
 
 type AddressMapMembershipsOutputReference interface {
 	cdktf.ComplexObject
-	CanDelete() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -21,7 +20,6 @@ type AddressMapMembershipsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -86,16 +84,6 @@ type jsiiProxy_AddressMapMembershipsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) CanDelete() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"canDelete",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AddressMapMembershipsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -111,16 +99,6 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) ComplexObjectIsFromSet(
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns

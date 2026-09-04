@@ -59,8 +59,12 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	ReadOnly() cdktf.IResolvable
+	ReadOnly() interface{}
+	SetReadOnly(val interface{})
+	ReadOnlyInput() interface{}
 	SourceAccount() *string
+	SetSourceAccount(val *string)
+	SourceAccountInput() *string
 	SuppressFooter() interface{}
 	SetSuppressFooter(val interface{})
 	SuppressFooterInput() interface{}
@@ -75,6 +79,9 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Version() *float64
+	SetVersion(val *float64)
+	VersionInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -109,8 +116,11 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	ResetMailtoSubject()
 	ResetMode()
 	ResetName()
+	ResetReadOnly()
+	ResetSourceAccount()
 	ResetSuppressFooter()
 	ResetTargetUri()
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -376,11 +386,21 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Nam
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ReadOnly() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ReadOnly() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ReadOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnlyInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +411,16 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Sou
 	_jsii_.Get(
 		j,
 		"sourceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SourceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAccountInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +481,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Ter
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Version() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) VersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"versionInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +677,28 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetN
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetReadOnly(val interface{}) {
+	if err := j.validateSetReadOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetSourceAccount(val *string) {
+	if err := j.validateSetSourceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceAccount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetSuppressFooter(val interface{}) {
 	if err := j.validateSetSuppressFooterParameters(val); err != nil {
 		panic(err)
@@ -667,6 +739,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetVersion(val *float64) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -937,6 +1020,22 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Res
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetReadOnly() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetSourceAccount() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSourceAccount",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetSuppressFooter() {
 	_jsii_.InvokeVoid(
 		z,
@@ -949,6 +1048,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Res
 	_jsii_.InvokeVoid(
 		z,
 		"resetTargetUri",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

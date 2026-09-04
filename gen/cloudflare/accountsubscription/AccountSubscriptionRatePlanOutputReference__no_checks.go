@@ -56,14 +56,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetCurrencyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetExternallyManagedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -72,19 +64,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIntern
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIsContractParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetPublicNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetScopeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetSetsParameters(val *[]*string) error {
 	return nil
 }
 

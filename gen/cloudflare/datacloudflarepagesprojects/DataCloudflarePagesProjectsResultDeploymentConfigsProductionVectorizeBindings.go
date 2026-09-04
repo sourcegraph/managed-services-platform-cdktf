@@ -1,0 +1,6 @@
+package datacloudflarepagesprojects
+
+
+type DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindings struct {
+}
+

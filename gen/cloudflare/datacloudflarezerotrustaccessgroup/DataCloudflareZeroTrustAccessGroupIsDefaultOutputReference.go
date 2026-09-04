@@ -47,6 +47,7 @@ type DataCloudflareZeroTrustAccessGroupIsDefaultOutputReference interface {
 	SetInternalValue(val *DataCloudflareZeroTrustAccessGroupIsDefault)
 	Ip() DataCloudflareZeroTrustAccessGroupIsDefaultIpOutputReference
 	IpList() DataCloudflareZeroTrustAccessGroupIsDefaultIpListStructOutputReference
+	LinkedAppToken() DataCloudflareZeroTrustAccessGroupIsDefaultLinkedAppTokenOutputReference
 	LoginMethod() DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputReference
 	Oidc() DataCloudflareZeroTrustAccessGroupIsDefaultOidcOutputReference
 	Okta() DataCloudflareZeroTrustAccessGroupIsDefaultOktaOutputReference
@@ -324,6 +325,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultOutputReference) I
 	_jsii_.Get(
 		j,
 		"ipList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultOutputReference) LinkedAppToken() DataCloudflareZeroTrustAccessGroupIsDefaultLinkedAppTokenOutputReference {
+	var returns DataCloudflareZeroTrustAccessGroupIsDefaultLinkedAppTokenOutputReference
+	_jsii_.Get(
+		j,
+		"linkedAppToken",
 		&returns,
 	)
 	return returns

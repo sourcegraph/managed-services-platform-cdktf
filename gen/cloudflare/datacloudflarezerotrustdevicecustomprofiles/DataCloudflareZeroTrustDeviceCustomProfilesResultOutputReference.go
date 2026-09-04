@@ -40,6 +40,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	// Experimental.
 	Fqn() *string
 	GatewayUniqueId() *string
+	Id() *string
 	Include() DataCloudflareZeroTrustDeviceCustomProfilesResultIncludeList
 	InternalValue() *DataCloudflareZeroTrustDeviceCustomProfilesResult
 	SetInternalValue(val *DataCloudflareZeroTrustDeviceCustomProfilesResult)
@@ -268,6 +269,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"gatewayUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

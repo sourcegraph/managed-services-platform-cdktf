@@ -54,7 +54,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "regionPools", GoGetter: "RegionPools"},
 			_jsii_.MemberProperty{JsiiProperty: "regionPoolsInput", GoGetter: "RegionPoolsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancerId", GoMethod: "ResetLoadBalancerId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPopPools", GoMethod: "ResetPopPools"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegionPools", GoMethod: "ResetRegionPools"},

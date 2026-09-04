@@ -100,10 +100,6 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetHostnameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

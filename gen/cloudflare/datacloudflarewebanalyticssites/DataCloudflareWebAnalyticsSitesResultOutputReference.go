@@ -29,6 +29,7 @@ type DataCloudflareWebAnalyticsSitesResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareWebAnalyticsSitesResult
 	SetInternalValue(val *DataCloudflareWebAnalyticsSitesResult)
 	Rules() DataCloudflareWebAnalyticsSitesResultRulesList
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataCloudflareWebAnalyticsSitesResultOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWebAnalyticsSitesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

@@ -68,7 +68,7 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetInternalValue
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetResourcesParameters(val *map[string]*string) error {
+func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetResourcesParameters(val *string) error {
 	return nil
 }
 

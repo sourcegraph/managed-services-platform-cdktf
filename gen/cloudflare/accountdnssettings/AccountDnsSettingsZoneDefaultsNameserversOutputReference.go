@@ -64,6 +64,7 @@ type AccountDnsSettingsZoneDefaultsNameserversOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -447,6 +448,14 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) Int
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsNameserversOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

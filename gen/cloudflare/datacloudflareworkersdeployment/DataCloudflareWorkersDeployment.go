@@ -9,12 +9,14 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkersdeployment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
 type DataCloudflareWorkersDeployment interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Annotations() DataCloudflareWorkersDeploymentAnnotationsOutputReference
+	AuthorEmail() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -23,11 +25,14 @@ type DataCloudflareWorkersDeployment interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Deployments() DataCloudflareWorkersDeploymentDeploymentsList
+	DeploymentId() *string
+	SetDeploymentId(val *string)
+	DeploymentIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,6 +41,7 @@ type DataCloudflareWorkersDeployment interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -51,12 +57,15 @@ type DataCloudflareWorkersDeployment interface {
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
+	Source() *string
+	Strategy() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Versions() DataCloudflareWorkersDeploymentVersionsList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -124,6 +133,26 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) Annotations() DataCloudflareWorkersDeploymentAnnotationsOutputReference {
+	var returns DataCloudflareWorkersDeploymentAnnotationsOutputReference
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) AuthorEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorEmail",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersDeployment) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -154,6 +183,16 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersDeployment) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -164,11 +203,21 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersDeployment) Deployments() DataCloudflareWorkersDeploymentDeploymentsList {
-	var returns DataCloudflareWorkersDeploymentDeploymentsList
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) DeploymentId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"deployments",
+		"deploymentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) DeploymentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentIdInput",
 		&returns,
 	)
 	return returns
@@ -199,6 +248,16 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -264,6 +323,26 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) ScriptNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) Strategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strategy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersDeployment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -294,8 +373,18 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) TerraformResourceType() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) Versions() DataCloudflareWorkersDeploymentVersionsList {
+	var returns DataCloudflareWorkersDeploymentVersionsList
+	_jsii_.Get(
+		j,
+		"versions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
 func NewDataCloudflareWorkersDeployment(scope constructs.Construct, id *string, config *DataCloudflareWorkersDeploymentConfig) DataCloudflareWorkersDeployment {
 	_init_.Initialize()
 
@@ -313,7 +402,7 @@ func NewDataCloudflareWorkersDeployment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
 func NewDataCloudflareWorkersDeployment_Override(d DataCloudflareWorkersDeployment, scope constructs.Construct, id *string, config *DataCloudflareWorkersDeploymentConfig) {
 	_init_.Initialize()
 
@@ -350,6 +439,17 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment)SetDependsOn(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeployment)SetDeploymentId(val *string) {
+	if err := j.validateSetDeploymentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentId",
 		val,
 	)
 }

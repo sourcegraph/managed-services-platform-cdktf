@@ -92,6 +92,10 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetAccountIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetClientSecretVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetLifecycleParameters(v
 }
 
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetPreviousClientSecretExpiresAtParameters(val *string) error {
 	return nil
 }
 

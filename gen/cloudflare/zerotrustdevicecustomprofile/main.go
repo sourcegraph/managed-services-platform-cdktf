@@ -100,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLanAllowMinutes", GoMethod: "ResetLanAllowMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLanAllowSubnetSize", GoMethod: "ResetLanAllowSubnetSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrecedence", GoMethod: "ResetPrecedence"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegisterInterfaceIpWithDns", GoMethod: "ResetRegisterInterfaceIpWithDns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSccmVpnBoundarySupport", GoMethod: "ResetSccmVpnBoundarySupport"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceModeV2", GoMethod: "ResetServiceModeV2"},

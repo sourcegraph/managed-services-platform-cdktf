@@ -37,6 +37,7 @@ type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
 	LastHeartbeat() *string
 	LastSeenVersion() *string
 	LastUpdated() *string
+	LicenseKey() *string
 	Notes() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -211,6 +212,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) La
 	_jsii_.Get(
 		j,
 		"lastUpdated",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) LicenseKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseKey",
 		&returns,
 	)
 	return returns

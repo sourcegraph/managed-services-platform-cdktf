@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaremagictransitconnector/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}.
 type DataCloudflareMagicTransitConnector interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -46,6 +46,7 @@ type DataCloudflareMagicTransitConnector interface {
 	LastHeartbeat() *string
 	LastSeenVersion() *string
 	LastUpdated() *string
+	LicenseKey() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -91,7 +92,6 @@ type DataCloudflareMagicTransitConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetConnectorId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -304,6 +304,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnector) LastUpdated() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitConnector) LicenseKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -395,7 +405,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Timezone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
 func NewDataCloudflareMagicTransitConnector(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorConfig) DataCloudflareMagicTransitConnector {
 	_init_.Initialize()
 
@@ -413,7 +423,7 @@ func NewDataCloudflareMagicTransitConnector(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
 func NewDataCloudflareMagicTransitConnector_Override(d DataCloudflareMagicTransitConnector, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorConfig) {
 	_init_.Initialize()
 
@@ -774,14 +784,6 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnector) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareMagicTransitConnector) ResetConnectorId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetConnectorId",
-		nil, // no parameters
 	)
 }
 

@@ -35,6 +35,9 @@ type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	Pattern() *string
+	SetPattern(val *string)
+	PatternInput() *string
 	PatternType() *string
 	SetPatternType(val *string)
 	PatternTypeInput() *string
@@ -75,6 +78,7 @@ type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDirection()
 	ResetOrder()
+	ResetPattern()
 	ResetPatternType()
 	ResetSearch()
 	// Produce the Token's value at resolution time.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	_jsii_.Get(
 		j,
 		"orderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) Pattern() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) PatternInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"patternInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +345,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference)S
 	_jsii_.Set(
 		j,
 		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference)SetPattern(val *string) {
+	if err := j.validateSetPatternParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pattern",
 		val,
 	)
 }
@@ -567,6 +602,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) ResetPattern() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPattern",
 		nil, // no parameters
 	)
 }

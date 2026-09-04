@@ -27,11 +27,15 @@ type DataCloudflareWorkersScriptsResultPlacementOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Host() *string
+	Hostname() *string
 	InternalValue() *DataCloudflareWorkersScriptsResultPlacement
 	SetInternalValue(val *DataCloudflareWorkersScriptsResultPlacement)
 	LastAnalyzedAt() *string
 	Mode() *string
+	Region() *string
 	Status() *string
+	Target() DataCloudflareWorkersScriptsResultPlacementTargetList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,6 +123,26 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) F
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) Host() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"host",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) InternalValue() *DataCloudflareWorkersScriptsResultPlacement {
 	var returns *DataCloudflareWorkersScriptsResultPlacement
 	_jsii_.Get(
@@ -149,11 +173,31 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) M
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) Target() DataCloudflareWorkersScriptsResultPlacementTargetList {
+	var returns DataCloudflareWorkersScriptsResultPlacementTargetList
+	_jsii_.Get(
+		j,
+		"target",
 		&returns,
 	)
 	return returns

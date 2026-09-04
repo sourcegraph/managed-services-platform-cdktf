@@ -415,6 +415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minimumOrigins", GoGetter: "MinimumOrigins"},
 			_jsii_.MemberProperty{JsiiProperty: "modifiedOn", GoGetter: "ModifiedOn"},
 			_jsii_.MemberProperty{JsiiProperty: "monitor", GoGetter: "Monitor"},
+			_jsii_.MemberProperty{JsiiProperty: "monitorGroup", GoGetter: "MonitorGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "networks", GoGetter: "Networks"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationEmail", GoGetter: "NotificationEmail"},

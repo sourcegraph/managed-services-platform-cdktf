@@ -100,10 +100,6 @@ func (j *jsiiProxy_QueueConsumer) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_QueueConsumer) validateSetConsumerIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_QueueConsumer) validateSetCountParameters(val interface{}) error {
 	return nil
 }

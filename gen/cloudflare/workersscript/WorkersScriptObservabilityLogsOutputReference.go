@@ -25,6 +25,9 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() *[]*string
+	SetDestinations(val *[]*string)
+	DestinationsInput() *[]*string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -38,6 +41,9 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	InvocationLogs() interface{}
 	SetInvocationLogs(val interface{})
 	InvocationLogsInput() interface{}
+	Persist() interface{}
+	SetPersist(val interface{})
+	PersistInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +76,9 @@ type WorkersScriptObservabilityLogsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDestinations()
 	ResetHeadSamplingRate()
+	ResetPersist()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -111,6 +119,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Destinations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) DestinationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +224,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InvocationLogs
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) Persist() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) PersistInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persistInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -266,6 +314,17 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetComplexObjec
 	)
 }
 
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetDestinations(val *[]*string) {
+	if err := j.validateSetDestinationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinations",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetEnabled(val interface{}) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
@@ -306,6 +365,17 @@ func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetInvocationLo
 	_jsii_.Set(
 		j,
 		"invocationLogs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityLogsOutputReference)SetPersist(val interface{}) {
+	if err := j.validateSetPersistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"persist",
 		val,
 	)
 }
@@ -518,10 +588,26 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) InterpolationF
 	return returns
 }
 
+func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDestinations",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ResetHeadSamplingRate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetHeadSamplingRate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) ResetPersist() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPersist",
 		nil, // no parameters
 	)
 }

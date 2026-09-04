@@ -191,6 +191,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnectionsInput", GoGetter: "KeepAliveConnectionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeout", GoGetter: "KeepAliveTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeoutInput", GoGetter: "KeepAliveTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "matchSnItoHost", GoGetter: "MatchSnItoHost"},
+			_jsii_.MemberProperty{JsiiProperty: "matchSnItoHostInput", GoGetter: "MatchSnItoHostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "noHappyEyeballs", GoGetter: "NoHappyEyeballs"},
 			_jsii_.MemberProperty{JsiiProperty: "noHappyEyeballsInput", GoGetter: "NoHappyEyeballsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "noTlsVerify", GoGetter: "NoTlsVerify"},
@@ -208,6 +210,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpHostHeader", GoMethod: "ResetHttpHostHeader"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveConnections", GoMethod: "ResetKeepAliveConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveTimeout", GoMethod: "ResetKeepAliveTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatchSnItoHost", GoMethod: "ResetMatchSnItoHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoHappyEyeballs", GoMethod: "ResetNoHappyEyeballs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoTlsVerify", GoMethod: "ResetNoTlsVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginServerName", GoMethod: "ResetOriginServerName"},
@@ -357,6 +360,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnectionsInput", GoGetter: "KeepAliveConnectionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeout", GoGetter: "KeepAliveTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeoutInput", GoGetter: "KeepAliveTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "matchSnItoHost", GoGetter: "MatchSnItoHost"},
+			_jsii_.MemberProperty{JsiiProperty: "matchSnItoHostInput", GoGetter: "MatchSnItoHostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "noHappyEyeballs", GoGetter: "NoHappyEyeballs"},
 			_jsii_.MemberProperty{JsiiProperty: "noHappyEyeballsInput", GoGetter: "NoHappyEyeballsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "noTlsVerify", GoGetter: "NoTlsVerify"},
@@ -374,6 +379,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpHostHeader", GoMethod: "ResetHttpHostHeader"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveConnections", GoMethod: "ResetKeepAliveConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveTimeout", GoMethod: "ResetKeepAliveTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatchSnItoHost", GoMethod: "ResetMatchSnItoHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoHappyEyeballs", GoMethod: "ResetNoHappyEyeballs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoTlsVerify", GoMethod: "ResetNoTlsVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginServerName", GoMethod: "ResetOriginServerName"},
@@ -422,58 +428,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "originRequestInput", GoGetter: "OriginRequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putIngress", GoMethod: "PutIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginRequest", GoMethod: "PutOriginRequest"},
-			_jsii_.MemberMethod{JsiiMethod: "putWarpRouting", GoMethod: "PutWarpRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngress", GoMethod: "ResetIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginRequest", GoMethod: "ResetOriginRequest"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWarpRouting", GoMethod: "ResetWarpRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "warpRouting", GoGetter: "WarpRouting"},
-			_jsii_.MemberProperty{JsiiProperty: "warpRoutingInput", GoGetter: "WarpRoutingInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigWarpRouting",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigWarpRouting)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

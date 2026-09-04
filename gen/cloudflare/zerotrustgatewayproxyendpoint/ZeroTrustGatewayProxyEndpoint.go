@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustgatewayproxyendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
 type ZeroTrustGatewayProxyEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -44,6 +44,9 @@ type ZeroTrustGatewayProxyEndpoint interface {
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -114,6 +117,8 @@ type ZeroTrustGatewayProxyEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIps()
+	ResetKind()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -275,6 +280,26 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) IpsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -396,7 +421,7 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
 func NewZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, config *ZeroTrustGatewayProxyEndpointConfig) ZeroTrustGatewayProxyEndpoint {
 	_init_.Initialize()
 
@@ -414,7 +439,7 @@ func NewZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
 func NewZeroTrustGatewayProxyEndpoint_Override(z ZeroTrustGatewayProxyEndpoint, scope constructs.Construct, id *string, config *ZeroTrustGatewayProxyEndpointConfig) {
 	_init_.Initialize()
 
@@ -481,6 +506,17 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint)SetIps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ips",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
 		val,
 	)
 }
@@ -876,6 +912,22 @@ func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) OverrideLogicalId(newLogicalId
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) ResetIps() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIps",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) ResetKind() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetKind",
+		nil, // no parameters
 	)
 }
 

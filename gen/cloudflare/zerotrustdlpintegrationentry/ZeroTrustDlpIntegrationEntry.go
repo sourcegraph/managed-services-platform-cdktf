@@ -9,14 +9,16 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdlpintegrationentry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry}.
 type ZeroTrustDlpIntegrationEntry interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	CaseSensitive() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Confidence() ZeroTrustDlpIntegrationEntryConfidenceOutputReference
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -54,9 +56,11 @@ type ZeroTrustDlpIntegrationEntry interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Pattern() ZeroTrustDlpIntegrationEntryPatternOutputReference
 	ProfileId() *string
 	SetProfileId(val *string)
 	ProfileIdInput() *string
+	Profiles() ZeroTrustDlpIntegrationEntryProfilesList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,13 +71,18 @@ type ZeroTrustDlpIntegrationEntry interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Secret() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	UpdatedAt() *string
+	UploadStatus() *string
+	Variant() ZeroTrustDlpIntegrationEntryVariantOutputReference
+	WordList() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -159,11 +168,31 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) CaseSensitive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"caseSensitive",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Confidence() ZeroTrustDlpIntegrationEntryConfidenceOutputReference {
+	var returns ZeroTrustDlpIntegrationEntryConfidenceOutputReference
+	_jsii_.Get(
+		j,
+		"confidence",
 		&returns,
 	)
 	return returns
@@ -329,6 +358,16 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Pattern() ZeroTrustDlpIntegrationEntryPatternOutputReference {
+	var returns ZeroTrustDlpIntegrationEntryPatternOutputReference
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) ProfileId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -344,6 +383,16 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) ProfileIdInput() *string {
 	_jsii_.Get(
 		j,
 		"profileIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Profiles() ZeroTrustDlpIntegrationEntryProfilesList {
+	var returns ZeroTrustDlpIntegrationEntryProfilesList
+	_jsii_.Get(
+		j,
+		"profiles",
 		&returns,
 	)
 	return returns
@@ -379,6 +428,16 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Secret() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -409,6 +468,16 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) UpdatedAt() *string {
 	var returns *string
 	_jsii_.Get(
@@ -419,8 +488,38 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) UpdatedAt() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) UploadStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uploadStatus",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Variant() ZeroTrustDlpIntegrationEntryVariantOutputReference {
+	var returns ZeroTrustDlpIntegrationEntryVariantOutputReference
+	_jsii_.Get(
+		j,
+		"variant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) WordList() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wordList",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
 func NewZeroTrustDlpIntegrationEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpIntegrationEntryConfig) ZeroTrustDlpIntegrationEntry {
 	_init_.Initialize()
 
@@ -438,7 +537,7 @@ func NewZeroTrustDlpIntegrationEntry(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
 func NewZeroTrustDlpIntegrationEntry_Override(z ZeroTrustDlpIntegrationEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpIntegrationEntryConfig) {
 	_init_.Initialize()
 

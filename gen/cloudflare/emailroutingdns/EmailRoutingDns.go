@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/emailroutingdns/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 type EmailRoutingDns interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -119,6 +119,7 @@ type EmailRoutingDns interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -461,7 +462,7 @@ func (j *jsiiProxy_EmailRoutingDns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) EmailRoutingDns {
 	_init_.Initialize()
 
@@ -479,7 +480,7 @@ func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns_Override(e EmailRoutingDns, scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) {
 	_init_.Initialize()
 
@@ -930,6 +931,14 @@ func (e *jsiiProxy_EmailRoutingDns) OverrideLogicalId(newLogicalId *string) {
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingDns) ResetName() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetName",
+		nil, // no parameters
 	)
 }
 

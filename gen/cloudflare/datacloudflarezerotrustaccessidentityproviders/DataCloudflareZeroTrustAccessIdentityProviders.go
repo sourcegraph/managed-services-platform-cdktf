@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccessidentityproviders/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_identity_providers cloudflare_zero_trust_access_identity_providers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_identity_providers cloudflare_zero_trust_access_identity_providers}.
 type DataCloudflareZeroTrustAccessIdentityProviders interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviders) ZoneIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_identity_providers cloudflare_zero_trust_access_identity_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_identity_providers cloudflare_zero_trust_access_identity_providers} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProviders(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProvidersConfig) DataCloudflareZeroTrustAccessIdentityProviders {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataCloudflareZeroTrustAccessIdentityProviders(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_identity_providers cloudflare_zero_trust_access_identity_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_identity_providers cloudflare_zero_trust_access_identity_providers} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProviders_Override(d DataCloudflareZeroTrustAccessIdentityProviders, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProvidersConfig) {
 	_init_.Initialize()
 

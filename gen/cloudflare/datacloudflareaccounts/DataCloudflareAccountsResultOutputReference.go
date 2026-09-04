@@ -31,6 +31,7 @@ type DataCloudflareAccountsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareAccountsResult
 	SetInternalValue(val *DataCloudflareAccountsResult)
+	ManagedBy() DataCloudflareAccountsResultManagedByOutputReference
 	Name() *string
 	Settings() DataCloudflareAccountsResultSettingsOutputReference
 	// Experimental.
@@ -41,6 +42,7 @@ type DataCloudflareAccountsResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -150,6 +152,16 @@ func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) InternalValue() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) ManagedBy() DataCloudflareAccountsResultManagedByOutputReference {
+	var returns DataCloudflareAccountsResultManagedByOutputReference
+	_jsii_.Get(
+		j,
+		"managedBy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -185,6 +197,16 @@ func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns

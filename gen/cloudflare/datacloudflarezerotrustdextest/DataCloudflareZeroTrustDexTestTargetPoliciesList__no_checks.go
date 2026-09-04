@@ -16,6 +16,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestTargetPoliciesList) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestTargetPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDexTestTargetPoliciesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

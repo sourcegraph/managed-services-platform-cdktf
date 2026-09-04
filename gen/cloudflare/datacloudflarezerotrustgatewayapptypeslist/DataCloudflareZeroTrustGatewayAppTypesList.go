@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustgatewayapptypeslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list}.
 type DataCloudflareZeroTrustGatewayAppTypesList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayAppTypesList) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
 func NewDataCloudflareZeroTrustGatewayAppTypesList(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayAppTypesListConfig) DataCloudflareZeroTrustGatewayAppTypesList {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareZeroTrustGatewayAppTypesList(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
 func NewDataCloudflareZeroTrustGatewayAppTypesList_Override(d DataCloudflareZeroTrustGatewayAppTypesList, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayAppTypesListConfig) {
 	_init_.Initialize()
 

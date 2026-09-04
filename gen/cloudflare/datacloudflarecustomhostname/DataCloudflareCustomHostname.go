@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecustomhostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_hostname cloudflare_custom_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_hostname cloudflare_custom_hostname}.
 type DataCloudflareCustomHostname interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_hostname cloudflare_custom_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_hostname cloudflare_custom_hostname} Data Source.
 func NewDataCloudflareCustomHostname(scope constructs.Construct, id *string, config *DataCloudflareCustomHostnameConfig) DataCloudflareCustomHostname {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataCloudflareCustomHostname(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_hostname cloudflare_custom_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_hostname cloudflare_custom_hostname} Data Source.
 func NewDataCloudflareCustomHostname_Override(d DataCloudflareCustomHostname, scope constructs.Construct, id *string, config *DataCloudflareCustomHostnameConfig) {
 	_init_.Initialize()
 

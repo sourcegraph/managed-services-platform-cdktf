@@ -10,8 +10,8 @@ import (
 
 type DataCloudflarePagesProjectsResultOutputReference interface {
 	cdktf.ComplexObject
-	Aliases() *[]*string
 	BuildConfig() DataCloudflarePagesProjectsResultBuildConfigOutputReference
+	CanonicalDeployment() DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,22 +28,22 @@ type DataCloudflarePagesProjectsResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeploymentTrigger() DataCloudflarePagesProjectsResultDeploymentTriggerOutputReference
-	Environment() *string
-	EnvVars() DataCloudflarePagesProjectsResultEnvVarsMap
+	DeploymentConfigs() DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference
+	Domains() *[]*string
 	// Experimental.
 	Fqn() *string
+	Framework() *string
+	FrameworkVersion() *string
 	Id() *string
 	InternalValue() *DataCloudflarePagesProjectsResult
 	SetInternalValue(val *DataCloudflarePagesProjectsResult)
-	IsSkipped() cdktf.IResolvable
-	LatestStage() DataCloudflarePagesProjectsResultLatestStageOutputReference
-	ModifiedOn() *string
-	ProjectId() *string
-	ProjectName() *string
-	ShortId() *string
+	LatestDeployment() DataCloudflarePagesProjectsResultLatestDeploymentOutputReference
+	Name() *string
+	PreviewScriptName() *string
+	ProductionBranch() *string
+	ProductionScriptName() *string
 	Source() DataCloudflarePagesProjectsResultSourceOutputReference
-	Stages() DataCloudflarePagesProjectsResultStagesList
+	Subdomain() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type DataCloudflarePagesProjectsResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Url() *string
+	UsesFunctions() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -92,21 +92,21 @@ type jsiiProxy_DataCloudflarePagesProjectsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Aliases() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"aliases",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) BuildConfig() DataCloudflarePagesProjectsResultBuildConfigOutputReference {
 	var returns DataCloudflarePagesProjectsResultBuildConfigOutputReference
 	_jsii_.Get(
 		j,
 		"buildConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) CanonicalDeployment() DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference {
+	var returns DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference
+	_jsii_.Get(
+		j,
+		"canonicalDeployment",
 		&returns,
 	)
 	return returns
@@ -152,31 +152,21 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) DeploymentTrigger() DataCloudflarePagesProjectsResultDeploymentTriggerOutputReference {
-	var returns DataCloudflarePagesProjectsResultDeploymentTriggerOutputReference
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) DeploymentConfigs() DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference {
+	var returns DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference
 	_jsii_.Get(
 		j,
-		"deploymentTrigger",
+		"deploymentConfigs",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Environment() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Domains() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"environment",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) EnvVars() DataCloudflarePagesProjectsResultEnvVarsMap {
-	var returns DataCloudflarePagesProjectsResultEnvVarsMap
-	_jsii_.Get(
-		j,
-		"envVars",
+		"domains",
 		&returns,
 	)
 	return returns
@@ -187,6 +177,26 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Framework() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"framework",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) FrameworkVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frameworkVersion",
 		&returns,
 	)
 	return returns
@@ -212,61 +222,51 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) InternalVal
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) IsSkipped() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) LatestDeployment() DataCloudflarePagesProjectsResultLatestDeploymentOutputReference {
+	var returns DataCloudflarePagesProjectsResultLatestDeploymentOutputReference
 	_jsii_.Get(
 		j,
-		"isSkipped",
+		"latestDeployment",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) LatestStage() DataCloudflarePagesProjectsResultLatestStageOutputReference {
-	var returns DataCloudflarePagesProjectsResultLatestStageOutputReference
-	_jsii_.Get(
-		j,
-		"latestStage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) ModifiedOn() *string {
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"modifiedOn",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) ProjectId() *string {
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) PreviewScriptName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"projectId",
+		"previewScriptName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) ProjectName() *string {
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) ProductionBranch() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"projectName",
+		"productionBranch",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) ShortId() *string {
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) ProductionScriptName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"shortId",
+		"productionScriptName",
 		&returns,
 	)
 	return returns
@@ -282,11 +282,11 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Source() Da
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Stages() DataCloudflarePagesProjectsResultStagesList {
-	var returns DataCloudflarePagesProjectsResultStagesList
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Subdomain() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"stages",
+		"subdomain",
 		&returns,
 	)
 	return returns
@@ -312,11 +312,11 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) TerraformRe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) Url() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) UsesFunctions() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"url",
+		"usesFunctions",
 		&returns,
 	)
 	return returns

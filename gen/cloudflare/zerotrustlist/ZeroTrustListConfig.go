@@ -19,23 +19,23 @@ type ZeroTrustListConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The name of the list.
+	// Specify the list name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_list#name ZeroTrustList#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The type of list. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP".
+	// Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_list#type ZeroTrustList#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// The description of the list.
+	// Provide the list description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_list#description ZeroTrustList#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// items to add to the list.
+	// Add items to the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_list#items ZeroTrustList#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

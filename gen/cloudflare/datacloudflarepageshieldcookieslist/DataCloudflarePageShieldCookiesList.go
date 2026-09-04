@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarepageshieldcookieslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
 type DataCloudflarePageShieldCookiesList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -632,7 +632,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
 func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesListConfig) DataCloudflarePageShieldCookiesList {
 	_init_.Initialize()
 
@@ -650,7 +650,7 @@ func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
 func NewDataCloudflarePageShieldCookiesList_Override(d DataCloudflarePageShieldCookiesList, scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesListConfig) {
 	_init_.Initialize()
 

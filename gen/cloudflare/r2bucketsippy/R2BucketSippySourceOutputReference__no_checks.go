@@ -56,6 +56,10 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetBucketParamete
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetBucketUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetClientEmailParameters(val *string) error {
 	return nil
 }

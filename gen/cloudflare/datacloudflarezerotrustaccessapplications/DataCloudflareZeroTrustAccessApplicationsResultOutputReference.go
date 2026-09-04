@@ -29,7 +29,6 @@ type DataCloudflareZeroTrustAccessApplicationsResultOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	CorsHeaders() DataCloudflareZeroTrustAccessApplicationsResultCorsHeadersOutputReference
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -76,7 +75,6 @@ type DataCloudflareZeroTrustAccessApplicationsResultOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -221,16 +219,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"corsHeaders",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -571,16 +559,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarepageshieldscriptslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list}.
 type DataCloudflarePageShieldScriptsList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -608,7 +608,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source.
 func NewDataCloudflarePageShieldScriptsList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldScriptsListConfig) DataCloudflarePageShieldScriptsList {
 	_init_.Initialize()
 
@@ -626,7 +626,7 @@ func NewDataCloudflarePageShieldScriptsList(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source.
 func NewDataCloudflarePageShieldScriptsList_Override(d DataCloudflarePageShieldScriptsList, scope constructs.Construct, id *string, config *DataCloudflarePageShieldScriptsListConfig) {
 	_init_.Initialize()
 

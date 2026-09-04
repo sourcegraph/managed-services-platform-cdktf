@@ -30,6 +30,7 @@ type DataCloudflareApiShieldOperationsResultOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Host() *string
+	Id() *string
 	InternalValue() *DataCloudflareApiShieldOperationsResult
 	SetInternalValue(val *DataCloudflareApiShieldOperationsResult)
 	LastUpdated() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultOutputReference) Host(
 	_jsii_.Get(
 		j,
 		"host",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrusttunnelwarpconnector/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
 type ZeroTrustTunnelWarpConnector interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -66,7 +66,6 @@ type ZeroTrustTunnelWarpConnector interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RemoteConfig() cdktf.IResolvable
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -393,16 +392,6 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) RemoteConfig() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"remoteConfig",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,7 +463,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) TunType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
 func NewZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfig) ZeroTrustTunnelWarpConnector {
 	_init_.Initialize()
 
@@ -492,7 +481,7 @@ func NewZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
 func NewZeroTrustTunnelWarpConnector_Override(z ZeroTrustTunnelWarpConnector, scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfig) {
 	_init_.Initialize()
 

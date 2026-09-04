@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdlpintegrationentry
+
+
+type DataCloudflareZeroTrustDlpIntegrationEntryVariant struct {
+}
+

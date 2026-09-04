@@ -2,119 +2,141 @@ package zerotrustgatewaypolicy
 
 
 type ZeroTrustGatewayPolicyRuleSettings struct {
-	// Add custom headers to allowed requests, in the form of key-value pairs.
+	// Add custom headers to allowed requests as key-value pairs.
 	//
-	// Keys are header names, pointing to an array with its header value(s).
+	// Use header names as keys that map to arrays of header values. Settable only for `http` rules with the action set to `allow`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#add_headers ZeroTrustGatewayPolicy#add_headers}
-	AddHeaders *map[string]*string `field:"optional" json:"addHeaders" yaml:"addHeaders"`
-	// Set by parent MSP accounts to enable their children to bypass this rule.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#add_headers ZeroTrustGatewayPolicy#add_headers}
+	AddHeaders interface{} `field:"optional" json:"addHeaders" yaml:"addHeaders"`
+	// Set to enable MSP children to bypass this rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#allow_child_bypass ZeroTrustGatewayPolicy#allow_child_bypass}
+	// Only parent MSP accounts can set this. this rule. Settable for all types of rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#allow_child_bypass ZeroTrustGatewayPolicy#allow_child_bypass}
 	AllowChildBypass interface{} `field:"optional" json:"allowChildBypass" yaml:"allowChildBypass"`
-	// Settings for the Audit SSH action.
+	// Define the settings for the Audit SSH action. Settable only for `l4` rules with `audit_ssh` action.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#audit_ssh ZeroTrustGatewayPolicy#audit_ssh}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#audit_ssh ZeroTrustGatewayPolicy#audit_ssh}
 	AuditSsh *ZeroTrustGatewayPolicyRuleSettingsAuditSsh `field:"optional" json:"auditSsh" yaml:"auditSsh"`
-	// Configure how browser isolation behaves.
+	// Configure browser isolation behavior. Settable only for `http` rules with the action set to `isolate`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#biso_admin_controls ZeroTrustGatewayPolicy#biso_admin_controls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#biso_admin_controls ZeroTrustGatewayPolicy#biso_admin_controls}
 	BisoAdminControls *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls `field:"optional" json:"bisoAdminControls" yaml:"bisoAdminControls"`
-	// Custom block page settings. If missing/null, blocking will use the the account settings.
+	// Configure custom block page settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#block_page ZeroTrustGatewayPolicy#block_page}
+	// If missing or null, use the account settings. Settable only for `http` rules with the action set to `block`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#block_page ZeroTrustGatewayPolicy#block_page}
 	BlockPage *ZeroTrustGatewayPolicyRuleSettingsBlockPage `field:"optional" json:"blockPage" yaml:"blockPage"`
-	// Enable the custom block page.
+	// Enable the custom block page. Settable only for `dns` rules with action `block`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#block_page_enabled ZeroTrustGatewayPolicy#block_page_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#block_page_enabled ZeroTrustGatewayPolicy#block_page_enabled}
 	BlockPageEnabled interface{} `field:"optional" json:"blockPageEnabled" yaml:"blockPageEnabled"`
-	// The text describing why this block occurred, displayed on the custom block page (if enabled).
+	// Explain why the rule blocks the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#block_reason ZeroTrustGatewayPolicy#block_reason}
+	// The custom block page shows this text (if enabled). Settable only for `dns`, `l4`, and `http` rules when the action set to `block`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#block_reason ZeroTrustGatewayPolicy#block_reason}
 	BlockReason *string `field:"optional" json:"blockReason" yaml:"blockReason"`
-	// Set by children MSP accounts to bypass their parent's rules.
+	// Set to enable MSP accounts to bypass their parent's rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#bypass_parent_rule ZeroTrustGatewayPolicy#bypass_parent_rule}
+	// Only MSP child accounts can set this. Settable for all types of rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#bypass_parent_rule ZeroTrustGatewayPolicy#bypass_parent_rule}
 	BypassParentRule interface{} `field:"optional" json:"bypassParentRule" yaml:"bypassParentRule"`
-	// Configure how session check behaves.
+	// Configure session check behavior. Settable only for `l4` and `http` rules with the action set to `allow`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#check_session ZeroTrustGatewayPolicy#check_session}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#check_session ZeroTrustGatewayPolicy#check_session}
 	CheckSession *ZeroTrustGatewayPolicyRuleSettingsCheckSession `field:"optional" json:"checkSession" yaml:"checkSession"`
-	// Add your own custom resolvers to route queries that match the resolver policy.
+	// Configure custom resolvers to route queries that match the resolver policy.
 	//
-	// Cannot be used when 'resolve_dns_through_cloudflare' or 'resolve_dns_internally' are set. DNS queries will route to the address closest to their origin. Only valid when a rule's action is set to 'resolve'.
+	// Unused with 'resolve_dns_through_cloudflare' or 'resolve_dns_internally' settings. DNS queries get routed to the address closest to their origin. Only valid when a rule's action set to 'resolve'. Settable only for `dns_resolver` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#dns_resolvers ZeroTrustGatewayPolicy#dns_resolvers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#dns_resolvers ZeroTrustGatewayPolicy#dns_resolvers}
 	DnsResolvers *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers `field:"optional" json:"dnsResolvers" yaml:"dnsResolvers"`
 	// Configure how Gateway Proxy traffic egresses.
 	//
-	// You can enable this setting for rules with Egress actions and filters, or omit it to indicate local egress via WARP IPs.
+	// You can enable this setting for rules with Egress actions and filters, or omit it to indicate local egress via WARP IPs. Settable only for `egress` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#egress ZeroTrustGatewayPolicy#egress}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#egress ZeroTrustGatewayPolicy#egress}
 	Egress *ZeroTrustGatewayPolicyRuleSettingsEgress `field:"optional" json:"egress" yaml:"egress"`
-	// Set to true, to ignore the category matches at CNAME domains in a response.
+	// Configure whether a copy of the HTTP request will be sent to storage when the rule matches.
 	//
-	// If unchecked, the categories in this rule will be checked against all the CNAME domain categories in a response.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#forensic_copy ZeroTrustGatewayPolicy#forensic_copy}
+	ForensicCopy *ZeroTrustGatewayPolicyRuleSettingsForensicCopy `field:"optional" json:"forensicCopy" yaml:"forensicCopy"`
+	// Ignore category matches at CNAME domains in a response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#ignore_cname_category_matches ZeroTrustGatewayPolicy#ignore_cname_category_matches}
+	// When off, evaluate categories in this rule against all CNAME domain categories in the response. Settable only for `dns` and `dns_resolver` rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#ignore_cname_category_matches ZeroTrustGatewayPolicy#ignore_cname_category_matches}
 	IgnoreCnameCategoryMatches interface{} `field:"optional" json:"ignoreCnameCategoryMatches" yaml:"ignoreCnameCategoryMatches"`
-	// INSECURE - disable DNSSEC validation (for Allow actions).
+	// Specify whether to disable DNSSEC validation (for Allow actions) [INSECURE]. Settable only for `dns` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#insecure_disable_dnssec_validation ZeroTrustGatewayPolicy#insecure_disable_dnssec_validation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#insecure_disable_dnssec_validation ZeroTrustGatewayPolicy#insecure_disable_dnssec_validation}
 	InsecureDisableDnssecValidation interface{} `field:"optional" json:"insecureDisableDnssecValidation" yaml:"insecureDisableDnssecValidation"`
-	// Set to true to enable IPs in DNS resolver category blocks.
+	// Enable IPs in DNS resolver category blocks.
 	//
-	// By default categories only block based on domain names.
+	// The system blocks only domain name categories unless you enable this setting. Settable only for `dns` and `dns_resolver` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#ip_categories ZeroTrustGatewayPolicy#ip_categories}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#ip_categories ZeroTrustGatewayPolicy#ip_categories}
 	IpCategories interface{} `field:"optional" json:"ipCategories" yaml:"ipCategories"`
-	// Set to true to include IPs in DNS resolver indicator feed blocks.
+	// Indicates whether to include IPs in DNS resolver indicator feed blocks.
 	//
-	// By default indicator feeds only block based on domain names.
+	// Default, indicator feeds block only domain names. Settable only for `dns` and `dns_resolver` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#ip_indicator_feeds ZeroTrustGatewayPolicy#ip_indicator_feeds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#ip_indicator_feeds ZeroTrustGatewayPolicy#ip_indicator_feeds}
 	IpIndicatorFeeds interface{} `field:"optional" json:"ipIndicatorFeeds" yaml:"ipIndicatorFeeds"`
 	// Send matching traffic to the supplied destination IP address and port.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#l4override ZeroTrustGatewayPolicy#l4override}
+	// Settable only for `l4` rules with the action set to `l4_override`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#l4override ZeroTrustGatewayPolicy#l4override}
 	L4Override *ZeroTrustGatewayPolicyRuleSettingsL4Override `field:"optional" json:"l4Override" yaml:"l4Override"`
-	// Configure a notification to display on the user's device when this rule is matched.
+	// Configure a notification to display on the user's device when this rule matched.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#notification_settings ZeroTrustGatewayPolicy#notification_settings}
+	// Settable for all types of rules with the action set to `block`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#notification_settings ZeroTrustGatewayPolicy#notification_settings}
 	NotificationSettings *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings `field:"optional" json:"notificationSettings" yaml:"notificationSettings"`
-	// Override matching DNS queries with a hostname.
+	// Defines a hostname for override, for the matching DNS queries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#override_host ZeroTrustGatewayPolicy#override_host}
+	// Settable only for `dns` rules with the action set to `override`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#override_host ZeroTrustGatewayPolicy#override_host}
 	OverrideHost *string `field:"optional" json:"overrideHost" yaml:"overrideHost"`
-	// Override matching DNS queries with an IP or set of IPs.
+	// Defines a an IP or set of IPs for overriding matched DNS queries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#override_ips ZeroTrustGatewayPolicy#override_ips}
+	// Settable only for `dns` rules with the action set to `override`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#override_ips ZeroTrustGatewayPolicy#override_ips}
 	OverrideIps *[]*string `field:"optional" json:"overrideIps" yaml:"overrideIps"`
-	// Configure DLP payload logging.
+	// Configure DLP payload logging. Settable only for `http` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#payload_log ZeroTrustGatewayPolicy#payload_log}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#payload_log ZeroTrustGatewayPolicy#payload_log}
 	PayloadLog *ZeroTrustGatewayPolicyRuleSettingsPayloadLog `field:"optional" json:"payloadLog" yaml:"payloadLog"`
-	// Settings that apply to quarantine rules.
+	// Configure settings that apply to quarantine rules. Settable only for `http` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#quarantine ZeroTrustGatewayPolicy#quarantine}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#quarantine ZeroTrustGatewayPolicy#quarantine}
 	Quarantine *ZeroTrustGatewayPolicyRuleSettingsQuarantine `field:"optional" json:"quarantine" yaml:"quarantine"`
-	// Settings that apply to redirect rules.
+	// Apply settings to redirect rules. Settable only for `http` rules with the action set to `redirect`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#redirect ZeroTrustGatewayPolicy#redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#redirect ZeroTrustGatewayPolicy#redirect}
 	Redirect *ZeroTrustGatewayPolicyRuleSettingsRedirect `field:"optional" json:"redirect" yaml:"redirect"`
 	// Configure to forward the query to the internal DNS service, passing the specified 'view_id' as input.
 	//
-	// Cannot be set when 'dns_resolvers' are specified or 'resolve_dns_through_cloudflare' is set. Only valid when a rule's action is set to 'resolve'.
+	// Not used when 'dns_resolvers' is specified or 'resolve_dns_through_cloudflare' is set. Only valid when a rule's action set to 'resolve'. Settable only for `dns_resolver` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#resolve_dns_internally ZeroTrustGatewayPolicy#resolve_dns_internally}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#resolve_dns_internally ZeroTrustGatewayPolicy#resolve_dns_internally}
 	ResolveDnsInternally *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally `field:"optional" json:"resolveDnsInternally" yaml:"resolveDnsInternally"`
-	// Enable to send queries that match the policy to Cloudflare's default 1.1.1.1 DNS resolver. Cannot be set when 'dns_resolvers' are specified or 'resolve_dns_internally' is set. Only valid when a rule's action is set to 'resolve'.
+	// Enable to send queries that match the policy to Cloudflare's default 1.1.1.1 DNS resolver. Cannot set when 'dns_resolvers' specified or 'resolve_dns_internally' is set. Only valid when a rule's action set to 'resolve'. Settable only for `dns_resolver` rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#resolve_dns_through_cloudflare ZeroTrustGatewayPolicy#resolve_dns_through_cloudflare}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#resolve_dns_through_cloudflare ZeroTrustGatewayPolicy#resolve_dns_through_cloudflare}
 	ResolveDnsThroughCloudflare interface{} `field:"optional" json:"resolveDnsThroughCloudflare" yaml:"resolveDnsThroughCloudflare"`
-	// Configure behavior when an upstream cert is invalid or an SSL error occurs.
+	// Configure behavior when an upstream certificate is invalid or an SSL error occurs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#untrusted_cert ZeroTrustGatewayPolicy#untrusted_cert}
+	// Settable only for `http` rules with the action set to `allow`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy#untrusted_cert ZeroTrustGatewayPolicy#untrusted_cert}
 	UntrustedCert *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert `field:"optional" json:"untrustedCert" yaml:"untrustedCert"`
 }
 

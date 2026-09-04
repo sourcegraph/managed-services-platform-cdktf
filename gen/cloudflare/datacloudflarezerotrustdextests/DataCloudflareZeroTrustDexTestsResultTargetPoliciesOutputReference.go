@@ -29,8 +29,8 @@ type DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference interfac
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() *DataCloudflareZeroTrustDexTestsResultTargetPolicies
-	SetInternalValue(val *DataCloudflareZeroTrustDexTestsResultTargetPolicies)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference) InternalValue() *DataCloudflareZeroTrustDexTestsResultTargetPolicies {
-	var returns *DataCloudflareZeroTrustDexTestsResultTargetPolicies
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference)SetInternalValue(val *DataCloudflareZeroTrustDexTestsResultTargetPolicies) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

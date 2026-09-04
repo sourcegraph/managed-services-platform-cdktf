@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareemailsecuritytrusteddomainslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}.
 type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -56,6 +56,9 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	Pattern() *string
+	SetPattern(val *string)
+	PatternInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -105,6 +108,7 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPattern()
 	ResetSearch()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -335,6 +339,26 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) OrderInput() *
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) Pattern() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) PatternInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"patternInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsListConfig) DataCloudflareEmailSecurityTrustedDomainsList {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomainsList_Override(d DataCloudflareEmailSecurityTrustedDomainsList, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsListConfig) {
 	_init_.Initialize()
 
@@ -545,6 +569,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetOrder(val *s
 	_jsii_.Set(
 		j,
 		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetPattern(val *string) {
+	if err := j.validateSetPatternParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pattern",
 		val,
 	)
 }
@@ -897,6 +932,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) ResetOverrideL
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) ResetPattern() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPattern",
 		nil, // no parameters
 	)
 }

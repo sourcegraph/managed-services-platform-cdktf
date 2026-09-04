@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaccountdnssettingsinternalviews/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views}.
 type DataCloudflareAccountDnsSettingsInternalViews interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) ZoneNameInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalViews(scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewsConfig) DataCloudflareAccountDnsSettingsInternalViews {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataCloudflareAccountDnsSettingsInternalViews(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalViews_Override(d DataCloudflareAccountDnsSettingsInternalViews, scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewsConfig) {
 	_init_.Initialize()
 

@@ -41,9 +41,9 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	Redirects() *string
 	SetRedirects(val *string)
 	RedirectsInput() *string
-	RunWorkerFirst() interface{}
-	SetRunWorkerFirst(val interface{})
-	RunWorkerFirstInput() interface{}
+	RunWorkerFirst() *map[string]interface{}
+	SetRunWorkerFirst(val *map[string]interface{})
+	RunWorkerFirstInput() *map[string]interface{}
 	ServeDirectly() interface{}
 	SetServeDirectly(val interface{})
 	ServeDirectlyInput() interface{}
@@ -230,8 +230,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RedirectsInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"runWorkerFirst",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() in
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"runWorkerFirstInput",
@@ -395,7 +395,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRedirects(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRunWorkerFirst(val interface{}) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRunWorkerFirst(val *map[string]interface{}) {
 	if err := j.validateSetRunWorkerFirstParameters(val); err != nil {
 		panic(err)
 	}

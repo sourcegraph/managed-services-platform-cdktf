@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareimagevariant/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image_variant cloudflare_image_variant}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image_variant cloudflare_image_variant}.
 type DataCloudflareImageVariant interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -35,6 +35,7 @@ type DataCloudflareImageVariant interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataCloudflareImageVariant) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareImageVariant) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareImageVariant) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -295,7 +306,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant) VariantIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
 func NewDataCloudflareImageVariant(scope constructs.Construct, id *string, config *DataCloudflareImageVariantConfig) DataCloudflareImageVariant {
 	_init_.Initialize()
 
@@ -313,7 +324,7 @@ func NewDataCloudflareImageVariant(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
 func NewDataCloudflareImageVariant_Override(d DataCloudflareImageVariant, scope constructs.Construct, id *string, config *DataCloudflareImageVariantConfig) {
 	_init_.Initialize()
 

@@ -11,6 +11,7 @@ import (
 type PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference interface {
 	cdktf.ComplexObject
 	Branch() *string
+	CommitDirty() cdktf.IResolvable
 	CommitHash() *string
 	CommitMessage() *string
 	// the index of the complex object in a list.
@@ -84,6 +85,16 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutpu
 	_jsii_.Get(
 		j,
 		"branch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference) CommitDirty() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"commitDirty",
 		&returns,
 	)
 	return returns

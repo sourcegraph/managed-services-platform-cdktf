@@ -60,6 +60,10 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

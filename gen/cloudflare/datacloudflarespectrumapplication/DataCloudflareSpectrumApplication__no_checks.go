@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) validatePutFilterParameters(value *DataCloudflareSpectrumApplicationFilter) error {
+	return nil
+}
+
 func validateDataCloudflareSpectrumApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -76,6 +76,7 @@ type DataCloudflareZeroTrustDevicePostureRuleInputOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Thumbprint() *string
 	TotalScore() *float64
+	UpdateWindowDays() *float64
 	Version() *string
 	VersionOperator() *string
 	// Experimental.
@@ -572,6 +573,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRuleInputOutputReference)
 	_jsii_.Get(
 		j,
 		"totalScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRuleInputOutputReference) UpdateWindowDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updateWindowDays",
 		&returns,
 	)
 	return returns

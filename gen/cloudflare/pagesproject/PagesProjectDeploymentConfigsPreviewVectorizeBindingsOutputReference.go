@@ -64,7 +64,6 @@ type PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIndexName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputRe
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference) ResetIndexName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIndexName",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -16,6 +16,9 @@ type R2BucketSippySourceOutputReference interface {
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
+	BucketUrl() *string
+	SetBucketUrl(val *string)
+	BucketUrlInput() *string
 	ClientEmail() *string
 	SetClientEmail(val *string)
 	ClientEmailInput() *string
@@ -84,6 +87,7 @@ type R2BucketSippySourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAccessKeyId()
 	ResetBucket()
+	ResetBucketUrl()
 	ResetClientEmail()
 	ResetCloudProvider()
 	ResetPrivateKey()
@@ -139,6 +143,26 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) BucketInput() *string {
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) BucketUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) BucketUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketUrlInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +384,17 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetBucket(val *string) {
 	_jsii_.Set(
 		j,
 		"bucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetBucketUrl(val *string) {
+	if err := j.validateSetBucketUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketUrl",
 		val,
 	)
 }
@@ -672,6 +707,14 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetBucket() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetBucket",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetBucketUrl() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBucketUrl",
 		nil, // no parameters
 	)
 }

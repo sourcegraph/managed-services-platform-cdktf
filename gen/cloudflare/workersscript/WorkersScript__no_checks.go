@@ -80,6 +80,10 @@ func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value interface{
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validatePutLimitsParameters(value *WorkersScriptLimits) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validatePutMigrationsParameters(value *WorkersScriptMigrations) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_WorkersScript) validateSetContentFileParameters(val *string) 
 }
 
 func (j *jsiiProxy_WorkersScript) validateSetContentSha256Parameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScript) validateSetContentTypeParameters(val *string) error {
 	return nil
 }
 

@@ -120,6 +120,14 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetDenyUnmatchedRequestsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetDenyUnmatchedRequestsExemptedZoneNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) validateSetIsUiReadOnlyParameters(val interface{}) error {
 	return nil
 }

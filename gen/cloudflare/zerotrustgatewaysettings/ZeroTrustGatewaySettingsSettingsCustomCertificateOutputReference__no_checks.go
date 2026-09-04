@@ -48,6 +48,10 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetBindingStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 }
 
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) validateSetUpdatedAtParameters(val *string) error {
 	return nil
 }
 

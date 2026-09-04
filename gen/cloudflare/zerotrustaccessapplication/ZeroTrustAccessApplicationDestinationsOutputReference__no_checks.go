@@ -72,6 +72,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetMcpServerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetPortRangeParameters(val *string) error {
 	return nil
 }

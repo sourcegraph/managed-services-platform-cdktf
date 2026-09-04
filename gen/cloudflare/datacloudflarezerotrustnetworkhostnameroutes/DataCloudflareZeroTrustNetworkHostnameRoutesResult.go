@@ -1,0 +1,6 @@
+package datacloudflarezerotrustnetworkhostnameroutes
+
+
+type DataCloudflareZeroTrustNetworkHostnameRoutesResult struct {
+}
+

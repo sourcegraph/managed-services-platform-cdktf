@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/magictransitconnector/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
 type MagicTransitConnector interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -51,9 +51,7 @@ type MagicTransitConnector interface {
 	InterruptWindowHourOfDay() *float64
 	SetInterruptWindowHourOfDay(val *float64)
 	InterruptWindowHourOfDayInput() *float64
-	LastHeartbeat() *string
-	LastSeenVersion() *string
-	LastUpdated() *string
+	LicenseKey() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -342,31 +340,11 @@ func (j *jsiiProxy_MagicTransitConnector) InterruptWindowHourOfDayInput() *float
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) LastHeartbeat() *string {
+func (j *jsiiProxy_MagicTransitConnector) LicenseKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"lastHeartbeat",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicTransitConnector) LastSeenVersion() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastSeenVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicTransitConnector) LastUpdated() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastUpdated",
+		"licenseKey",
 		&returns,
 	)
 	return returns
@@ -493,7 +471,7 @@ func (j *jsiiProxy_MagicTransitConnector) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector(scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) MagicTransitConnector {
 	_init_.Initialize()
 
@@ -511,7 +489,7 @@ func NewMagicTransitConnector(scope constructs.Construct, id *string, config *Ma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector_Override(m MagicTransitConnector, scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) {
 	_init_.Initialize()
 

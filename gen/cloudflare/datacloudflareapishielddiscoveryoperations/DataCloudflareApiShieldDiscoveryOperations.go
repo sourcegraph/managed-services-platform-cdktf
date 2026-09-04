@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareapishielddiscoveryoperations/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations}.
 type DataCloudflareApiShieldDiscoveryOperations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -488,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
 func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, id *string, config *DataCloudflareApiShieldDiscoveryOperationsConfig) DataCloudflareApiShieldDiscoveryOperations {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
 func NewDataCloudflareApiShieldDiscoveryOperations_Override(d DataCloudflareApiShieldDiscoveryOperations, scope constructs.Construct, id *string, config *DataCloudflareApiShieldDiscoveryOperationsConfig) {
 	_init_.Initialize()
 

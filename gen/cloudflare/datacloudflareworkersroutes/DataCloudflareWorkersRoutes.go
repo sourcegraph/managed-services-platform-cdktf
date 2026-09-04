@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkersroutes/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_routes cloudflare_workers_routes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_routes cloudflare_workers_routes}.
 type DataCloudflareWorkersRoutes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareWorkersRoutes) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_routes cloudflare_workers_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_routes cloudflare_workers_routes} Data Source.
 func NewDataCloudflareWorkersRoutes(scope constructs.Construct, id *string, config *DataCloudflareWorkersRoutesConfig) DataCloudflareWorkersRoutes {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareWorkersRoutes(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_routes cloudflare_workers_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_routes cloudflare_workers_routes} Data Source.
 func NewDataCloudflareWorkersRoutes_Override(d DataCloudflareWorkersRoutes, scope constructs.Construct, id *string, config *DataCloudflareWorkersRoutesConfig) {
 	_init_.Initialize()
 

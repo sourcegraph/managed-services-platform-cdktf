@@ -12,10 +12,16 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	cdktf.ComplexObject
 	AiBindings() PagesProjectDeploymentConfigsProductionAiBindingsMap
 	AiBindingsInput() interface{}
+	AlwaysUseLatestCompatibilityDate() interface{}
+	SetAlwaysUseLatestCompatibilityDate(val interface{})
+	AlwaysUseLatestCompatibilityDateInput() interface{}
 	AnalyticsEngineDatasets() PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap
 	AnalyticsEngineDatasetsInput() interface{}
 	Browsers() PagesProjectDeploymentConfigsProductionBrowsersMap
 	BrowsersInput() interface{}
+	BuildImageMajorVersion() *float64
+	SetBuildImageMajorVersion(val *float64)
+	BuildImageMajorVersionInput() *float64
 	CompatibilityDate() *string
 	SetCompatibilityDate(val *string)
 	CompatibilityDateInput() *string
@@ -43,6 +49,9 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	DurableObjectNamespacesInput() interface{}
 	EnvVars() PagesProjectDeploymentConfigsProductionEnvVarsMap
 	EnvVarsInput() interface{}
+	FailOpen() interface{}
+	SetFailOpen(val interface{})
+	FailOpenInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HyperdriveBindings() PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap
@@ -51,6 +60,8 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	SetInternalValue(val interface{})
 	KvNamespaces() PagesProjectDeploymentConfigsProductionKvNamespacesMap
 	KvNamespacesInput() interface{}
+	Limits() PagesProjectDeploymentConfigsProductionLimitsOutputReference
+	LimitsInput() interface{}
 	MtlsCertificates() PagesProjectDeploymentConfigsProductionMtlsCertificatesMap
 	MtlsCertificatesInput() interface{}
 	Placement() PagesProjectDeploymentConfigsProductionPlacementOutputReference
@@ -69,8 +80,14 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UsageModel() *string
+	SetUsageModel(val *string)
+	UsageModelInput() *string
 	VectorizeBindings() PagesProjectDeploymentConfigsProductionVectorizeBindingsMap
 	VectorizeBindingsInput() interface{}
+	WranglerConfigHash() *string
+	SetWranglerConfigHash(val *string)
+	WranglerConfigHashInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -103,6 +120,7 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	PutEnvVars(value interface{})
 	PutHyperdriveBindings(value interface{})
 	PutKvNamespaces(value interface{})
+	PutLimits(value *PagesProjectDeploymentConfigsProductionLimits)
 	PutMtlsCertificates(value interface{})
 	PutPlacement(value *PagesProjectDeploymentConfigsProductionPlacement)
 	PutQueueProducers(value interface{})
@@ -110,21 +128,27 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	PutServices(value interface{})
 	PutVectorizeBindings(value interface{})
 	ResetAiBindings()
+	ResetAlwaysUseLatestCompatibilityDate()
 	ResetAnalyticsEngineDatasets()
 	ResetBrowsers()
+	ResetBuildImageMajorVersion()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetD1Databases()
 	ResetDurableObjectNamespaces()
 	ResetEnvVars()
+	ResetFailOpen()
 	ResetHyperdriveBindings()
 	ResetKvNamespaces()
+	ResetLimits()
 	ResetMtlsCertificates()
 	ResetPlacement()
 	ResetQueueProducers()
 	ResetR2Buckets()
 	ResetServices()
+	ResetUsageModel()
 	ResetVectorizeBindings()
+	ResetWranglerConfigHash()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -155,6 +179,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) AiBin
 	_jsii_.Get(
 		j,
 		"aiBindingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) AlwaysUseLatestCompatibilityDate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysUseLatestCompatibilityDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) AlwaysUseLatestCompatibilityDateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysUseLatestCompatibilityDateInput",
 		&returns,
 	)
 	return returns
@@ -195,6 +239,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Brows
 	_jsii_.Get(
 		j,
 		"browsersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) BuildImageMajorVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"buildImageMajorVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) BuildImageMajorVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"buildImageMajorVersionInput",
 		&returns,
 	)
 	return returns
@@ -330,6 +394,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) EnvVa
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) FailOpen() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOpen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) FailOpenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOpenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -385,6 +469,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) KvNam
 	_jsii_.Get(
 		j,
 		"kvNamespacesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Limits() PagesProjectDeploymentConfigsProductionLimitsOutputReference {
+	var returns PagesProjectDeploymentConfigsProductionLimitsOutputReference
+	_jsii_.Get(
+		j,
+		"limits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) LimitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"limitsInput",
 		&returns,
 	)
 	return returns
@@ -510,6 +614,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) UsageModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) UsageModelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) VectorizeBindings() PagesProjectDeploymentConfigsProductionVectorizeBindingsMap {
 	var returns PagesProjectDeploymentConfigsProductionVectorizeBindingsMap
 	_jsii_.Get(
@@ -525,6 +649,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Vecto
 	_jsii_.Get(
 		j,
 		"vectorizeBindingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) WranglerConfigHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wranglerConfigHash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) WranglerConfigHashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wranglerConfigHashInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +699,28 @@ func NewPagesProjectDeploymentConfigsProductionOutputReference_Override(p PagesP
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetAlwaysUseLatestCompatibilityDate(val interface{}) {
+	if err := j.validateSetAlwaysUseLatestCompatibilityDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alwaysUseLatestCompatibilityDate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetBuildImageMajorVersion(val *float64) {
+	if err := j.validateSetBuildImageMajorVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"buildImageMajorVersion",
+		val,
 	)
 }
 
@@ -602,6 +768,17 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetCom
 	)
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetFailOpen(val interface{}) {
+	if err := j.validateSetFailOpenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failOpen",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -631,6 +808,28 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetUsageModel(val *string) {
+	if err := j.validateSetUsageModelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usageModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetWranglerConfigHash(val *string) {
+	if err := j.validateSetWranglerConfigHashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wranglerConfigHash",
 		val,
 	)
 }
@@ -909,6 +1108,17 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PutKv
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PutLimits(value *PagesProjectDeploymentConfigsProductionLimits) {
+	if err := p.validatePutLimitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putLimits",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PutMtlsCertificates(value interface{}) {
 	if err := p.validatePutMtlsCertificatesParameters(value); err != nil {
 		panic(err)
@@ -983,6 +1193,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetAlwaysUseLatestCompatibilityDate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAlwaysUseLatestCompatibilityDate",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetAnalyticsEngineDatasets() {
 	_jsii_.InvokeVoid(
 		p,
@@ -995,6 +1213,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	_jsii_.InvokeVoid(
 		p,
 		"resetBrowsers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetBuildImageMajorVersion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBuildImageMajorVersion",
 		nil, // no parameters
 	)
 }
@@ -1039,6 +1265,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetFailOpen() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFailOpen",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetHyperdriveBindings() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1051,6 +1285,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	_jsii_.InvokeVoid(
 		p,
 		"resetKvNamespaces",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetLimits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLimits",
 		nil, // no parameters
 	)
 }
@@ -1095,10 +1337,26 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetUsageModel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUsageModel",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetVectorizeBindings() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetVectorizeBindings",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetWranglerConfigHash() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWranglerConfigHash",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarestreams/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams cloudflare_streams}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/streams cloudflare_streams}.
 type DataCloudflareStreams interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -81,6 +81,9 @@ type DataCloudflareStreams interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VideoName() *string
+	SetVideoName(val *string)
+	VideoNameInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -118,6 +121,7 @@ type DataCloudflareStreams interface {
 	ResetStart()
 	ResetStatus()
 	ResetType()
+	ResetVideoName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -487,8 +491,28 @@ func (j *jsiiProxy_DataCloudflareStreams) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) VideoName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"videoName",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams cloudflare_streams} Data Source.
+func (j *jsiiProxy_DataCloudflareStreams) VideoNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"videoNameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/streams cloudflare_streams} Data Source.
 func NewDataCloudflareStreams(scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) DataCloudflareStreams {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewDataCloudflareStreams(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/streams cloudflare_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/streams cloudflare_streams} Data Source.
 func NewDataCloudflareStreams_Override(d DataCloudflareStreams, scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) {
 	_init_.Initialize()
 
@@ -669,6 +693,17 @@ func (j *jsiiProxy_DataCloudflareStreams)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareStreams)SetVideoName(val *string) {
+	if err := j.validateSetVideoNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"videoName",
 		val,
 	)
 }
@@ -1034,6 +1069,14 @@ func (d *jsiiProxy_DataCloudflareStreams) ResetType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreams) ResetVideoName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVideoName",
 		nil, // no parameters
 	)
 }

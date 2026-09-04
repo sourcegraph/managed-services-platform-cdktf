@@ -64,7 +64,6 @@ type PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDataset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOu
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference) ResetDataset() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDataset",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

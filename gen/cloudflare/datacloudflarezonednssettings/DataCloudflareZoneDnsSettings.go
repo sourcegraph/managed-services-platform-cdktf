@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezonednssettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings}.
 type DataCloudflareZoneDnsSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnsSettings) ZoneMode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings} Data Source.
 func NewDataCloudflareZoneDnsSettings(scope constructs.Construct, id *string, config *DataCloudflareZoneDnsSettingsConfig) DataCloudflareZoneDnsSettings {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataCloudflareZoneDnsSettings(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings} Data Source.
 func NewDataCloudflareZoneDnsSettings_Override(d DataCloudflareZoneDnsSettings, scope constructs.Construct, id *string, config *DataCloudflareZoneDnsSettingsConfig) {
 	_init_.Initialize()
 

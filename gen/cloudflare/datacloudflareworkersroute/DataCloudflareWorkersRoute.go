@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkersroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route cloudflare_workers_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_route cloudflare_workers_route}.
 type DataCloudflareWorkersRoute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -87,7 +87,6 @@ type DataCloudflareWorkersRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRouteId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -318,7 +317,7 @@ func (j *jsiiProxy_DataCloudflareWorkersRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route cloudflare_workers_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_route cloudflare_workers_route} Data Source.
 func NewDataCloudflareWorkersRoute(scope constructs.Construct, id *string, config *DataCloudflareWorkersRouteConfig) DataCloudflareWorkersRoute {
 	_init_.Initialize()
 
@@ -336,7 +335,7 @@ func NewDataCloudflareWorkersRoute(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route cloudflare_workers_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_route cloudflare_workers_route} Data Source.
 func NewDataCloudflareWorkersRoute_Override(d DataCloudflareWorkersRoute, scope constructs.Construct, id *string, config *DataCloudflareWorkersRouteConfig) {
 	_init_.Initialize()
 
@@ -704,14 +703,6 @@ func (d *jsiiProxy_DataCloudflareWorkersRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareWorkersRoute) ResetRouteId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRouteId",
 		nil, // no parameters
 	)
 }

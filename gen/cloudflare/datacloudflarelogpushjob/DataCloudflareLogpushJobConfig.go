@@ -19,17 +19,17 @@ type DataCloudflareLogpushJobConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/logpush_job#account_id DataCloudflareLogpushJob#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Unique id of the job.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/logpush_job#job_id DataCloudflareLogpushJob#job_id}
-	JobId *float64 `field:"optional" json:"jobId" yaml:"jobId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/logpush_job#job_id DataCloudflareLogpushJob#job_id}
+	JobId *float64 `field:"required" json:"jobId" yaml:"jobId"`
+	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/logpush_job#account_id DataCloudflareLogpushJob#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/logpush_job#zone_id DataCloudflareLogpushJob#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/logpush_job#zone_id DataCloudflareLogpushJob#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

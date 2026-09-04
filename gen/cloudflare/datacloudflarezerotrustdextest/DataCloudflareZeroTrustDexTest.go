@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdextest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
 type DataCloudflareZeroTrustDexTest interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -33,6 +33,8 @@ type DataCloudflareZeroTrustDexTest interface {
 	SetDexTestId(val *string)
 	DexTestIdInput() *string
 	Enabled() cdktf.IResolvable
+	Filter() DataCloudflareZeroTrustDexTestFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,6 +60,7 @@ type DataCloudflareZeroTrustDexTest interface {
 	RawOverrides() interface{}
 	Targeted() cdktf.IResolvable
 	TargetPolicies() DataCloudflareZeroTrustDexTestTargetPoliciesList
+	TargetPoliciesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,10 +93,14 @@ type DataCloudflareZeroTrustDexTest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareZeroTrustDexTestFilter)
+	PutTargetPolicies(value interface{})
 	ResetDexTestId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTargetPolicies()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -223,6 +230,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) Enabled() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) Filter() DataCloudflareZeroTrustDexTestFilterOutputReference {
+	var returns DataCloudflareZeroTrustDexTestFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -343,6 +370,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) TargetPolicies() DataCloudfla
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) TargetPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -384,7 +421,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) TestId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Data Source.
 func NewDataCloudflareZeroTrustDexTest(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestConfig) DataCloudflareZeroTrustDexTest {
 	_init_.Initialize()
 
@@ -402,7 +439,7 @@ func NewDataCloudflareZeroTrustDexTest(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Data Source.
 func NewDataCloudflareZeroTrustDexTest_Override(d DataCloudflareZeroTrustDexTest, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestConfig) {
 	_init_.Initialize()
 
@@ -766,6 +803,28 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) PutFilter(value *DataCloudflareZeroTrustDexTestFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) PutTargetPolicies(value interface{}) {
+	if err := d.validatePutTargetPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTargetPolicies",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) ResetDexTestId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -774,10 +833,26 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) ResetDexTestId() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) ResetTargetPolicies() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTargetPolicies",
 		nil, // no parameters
 	)
 }

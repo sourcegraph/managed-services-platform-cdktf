@@ -104,6 +104,22 @@ func (j *jsiiProxy_ZeroTrustDeviceSettings) validateSetDisableForTimeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceSettings) validateSetExternalEmergencySignalEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) validateSetExternalEmergencySignalFingerprintParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) validateSetExternalEmergencySignalIntervalParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceSettings) validateSetExternalEmergencySignalUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceSettings) validateSetGatewayProxyEnabledParameters(val interface{}) error {
 	return nil
 }

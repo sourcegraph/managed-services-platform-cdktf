@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetPatternParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) validateSetSearchParameters(val *string) error {
 	return nil
 }

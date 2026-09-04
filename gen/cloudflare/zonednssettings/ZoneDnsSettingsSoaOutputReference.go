@@ -82,6 +82,13 @@ type ZoneDnsSettingsSoaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExpire()
+	ResetMinTtl()
+	ResetMname()
+	ResetRefresh()
+	ResetRetry()
+	ResetRname()
+	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -651,6 +658,62 @@ func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetExpire() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExpire",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetMinTtl() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMinTtl",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetMname() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMname",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetRefresh() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRefresh",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetRetry() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRetry",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetRname() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRname",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) ResetTtl() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTtl",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZoneDnsSettingsSoaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

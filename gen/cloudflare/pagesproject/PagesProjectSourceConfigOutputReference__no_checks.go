@@ -68,6 +68,10 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerPara
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathExcludesParameters(val *[]*string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductio
 }
 
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetRepoIdParameters(val *string) error {
 	return nil
 }
 

@@ -41,8 +41,6 @@ type ZeroTrustTunnelCloudflaredConfigConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WarpRouting() ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference
-	WarpRoutingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,10 +67,8 @@ type ZeroTrustTunnelCloudflaredConfigConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIngress(value interface{})
 	PutOriginRequest(value *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest)
-	PutWarpRouting(value *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting)
 	ResetIngress()
 	ResetOriginRequest()
-	ResetWarpRouting()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,26 +189,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) Terraf
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) WarpRouting() ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference {
-	var returns ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference
-	_jsii_.Get(
-		j,
-		"warpRouting",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) WarpRoutingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"warpRoutingInput",
 		&returns,
 	)
 	return returns
@@ -509,17 +485,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) PutOri
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) PutWarpRouting(value *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting) {
-	if err := z.validatePutWarpRoutingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putWarpRouting",
-		[]interface{}{value},
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) ResetIngress() {
 	_jsii_.InvokeVoid(
 		z,
@@ -532,14 +497,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) ResetO
 	_jsii_.InvokeVoid(
 		z,
 		"resetOriginRequest",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) ResetWarpRouting() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetWarpRouting",
 		nil, // no parameters
 	)
 }

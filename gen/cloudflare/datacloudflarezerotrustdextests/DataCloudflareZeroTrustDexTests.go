@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdextests/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}.
 type DataCloudflareZeroTrustDexTests interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -35,6 +35,9 @@ type DataCloudflareZeroTrustDexTests interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -57,6 +60,9 @@ type DataCloudflareZeroTrustDexTests interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TestName() *string
+	SetTestName(val *string)
+	TestNameInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -82,10 +88,12 @@ type DataCloudflareZeroTrustDexTests interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetKind()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTestName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -195,6 +203,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -295,8 +323,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) TerraformResourceType() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) TestName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"testName",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) TestNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"testNameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
 func NewDataCloudflareZeroTrustDexTests(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestsConfig) DataCloudflareZeroTrustDexTests {
 	_init_.Initialize()
 
@@ -314,7 +362,7 @@ func NewDataCloudflareZeroTrustDexTests(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
 func NewDataCloudflareZeroTrustDexTests_Override(d DataCloudflareZeroTrustDexTests, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestsConfig) {
 	_init_.Initialize()
 
@@ -363,6 +411,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTests)SetForEach(val cdktf.ITerrafo
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTests)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDexTests)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -389,6 +448,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTests)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTests)SetTestName(val *string) {
+	if err := j.validateSetTestNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"testName",
 		val,
 	)
 }
@@ -678,6 +748,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) OverrideLogicalId(newLogical
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) ResetKind() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKind",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -690,6 +768,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) ResetTestName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTestName",
 		nil, // no parameters
 	)
 }

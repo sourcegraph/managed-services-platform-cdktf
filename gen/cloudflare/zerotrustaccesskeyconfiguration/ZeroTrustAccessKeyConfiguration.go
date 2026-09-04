@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccesskeyconfiguration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
 type ZeroTrustAccessKeyConfiguration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ZeroTrustAccessKeyConfiguration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Resource.
 func NewZeroTrustAccessKeyConfiguration(scope constructs.Construct, id *string, config *ZeroTrustAccessKeyConfigurationConfig) ZeroTrustAccessKeyConfiguration {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewZeroTrustAccessKeyConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Resource.
 func NewZeroTrustAccessKeyConfiguration_Override(z ZeroTrustAccessKeyConfiguration, scope constructs.Construct, id *string, config *ZeroTrustAccessKeyConfigurationConfig) {
 	_init_.Initialize()
 

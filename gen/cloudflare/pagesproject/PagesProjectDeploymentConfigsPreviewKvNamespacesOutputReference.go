@@ -64,7 +64,6 @@ type PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetNamespaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReferen
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference) ResetNamespaceId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetNamespaceId",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -226,7 +226,7 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetInternalValue
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetResourcesParameters(val *map[string]*string) error {
+func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetResourcesParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

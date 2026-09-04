@@ -68,7 +68,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetInternalValuePara
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetResourcesParameters(val *map[string]*string) error {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetResourcesParameters(val *string) error {
 	return nil
 }
 

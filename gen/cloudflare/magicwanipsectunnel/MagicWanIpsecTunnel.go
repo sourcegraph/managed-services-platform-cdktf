@@ -9,13 +9,19 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/magicwanipsectunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
 type MagicWanIpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	AllowNullCipher() cdktf.IResolvable
+	AutomaticReturnRouting() interface{}
+	SetAutomaticReturnRouting(val interface{})
+	AutomaticReturnRoutingInput() interface{}
+	Bgp() MagicWanIpsecTunnelBgpOutputReference
+	BgpInput() interface{}
+	BgpStatus() MagicWanIpsecTunnelBgpStatusOutputReference
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudflareEndpoint() *string
@@ -35,6 +41,8 @@ type MagicWanIpsecTunnel interface {
 	CustomerEndpoint() *string
 	SetCustomerEndpoint(val *string)
 	CustomerEndpointInput() *string
+	CustomRemoteIdentities() MagicWanIpsecTunnelCustomRemoteIdentitiesOutputReference
+	CustomRemoteIdentitiesInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,6 +63,9 @@ type MagicWanIpsecTunnel interface {
 	Id() *string
 	InterfaceAddress() *string
 	SetInterfaceAddress(val *string)
+	InterfaceAddress6() *string
+	SetInterfaceAddress6(val *string)
+	InterfaceAddress6Input() *string
 	InterfaceAddressInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -132,10 +143,16 @@ type MagicWanIpsecTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBgp(value *MagicWanIpsecTunnelBgp)
+	PutCustomRemoteIdentities(value *MagicWanIpsecTunnelCustomRemoteIdentities)
 	PutHealthCheck(value *MagicWanIpsecTunnelHealthCheck)
+	ResetAutomaticReturnRouting()
+	ResetBgp()
 	ResetCustomerEndpoint()
+	ResetCustomRemoteIdentities()
 	ResetDescription()
 	ResetHealthCheck()
+	ResetInterfaceAddress6()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -184,6 +201,56 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) AllowNullCipher() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) AutomaticReturnRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) AutomaticReturnRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) Bgp() MagicWanIpsecTunnelBgpOutputReference {
+	var returns MagicWanIpsecTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) BgpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) BgpStatus() MagicWanIpsecTunnelBgpStatusOutputReference {
+	var returns MagicWanIpsecTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
 		&returns,
 	)
 	return returns
@@ -274,6 +341,26 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) CustomerEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"customerEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) CustomRemoteIdentities() MagicWanIpsecTunnelCustomRemoteIdentitiesOutputReference {
+	var returns MagicWanIpsecTunnelCustomRemoteIdentitiesOutputReference
+	_jsii_.Get(
+		j,
+		"customRemoteIdentities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) CustomRemoteIdentitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customRemoteIdentitiesInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +461,26 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) InterfaceAddress() *string {
 	_jsii_.Get(
 		j,
 		"interfaceAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) InterfaceAddress6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6Input",
 		&returns,
 	)
 	return returns
@@ -550,7 +657,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) MagicWanIpsecTunnel {
 	_init_.Initialize()
 
@@ -568,7 +675,7 @@ func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel_Override(m MagicWanIpsecTunnel, scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -586,6 +693,17 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel)SetAutomaticReturnRouting(val interface{}) {
+	if err := j.validateSetAutomaticReturnRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticReturnRouting",
 		val,
 	)
 }
@@ -668,6 +786,17 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetInterfaceAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"interfaceAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel)SetInterfaceAddress6(val *string) {
+	if err := j.validateSetInterfaceAddress6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interfaceAddress6",
 		val,
 	)
 }
@@ -1088,6 +1217,28 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) PutBgp(value *MagicWanIpsecTunnelBgp) {
+	if err := m.validatePutBgpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBgp",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) PutCustomRemoteIdentities(value *MagicWanIpsecTunnelCustomRemoteIdentities) {
+	if err := m.validatePutCustomRemoteIdentitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCustomRemoteIdentities",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnel) PutHealthCheck(value *MagicWanIpsecTunnelHealthCheck) {
 	if err := m.validatePutHealthCheckParameters(value); err != nil {
 		panic(err)
@@ -1099,10 +1250,34 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) PutHealthCheck(value *MagicWanIpsecTunne
 	)
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetAutomaticReturnRouting() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAutomaticReturnRouting",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetBgp() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBgp",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnel) ResetCustomerEndpoint() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCustomerEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetCustomRemoteIdentities() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomRemoteIdentities",
 		nil, // no parameters
 	)
 }
@@ -1119,6 +1294,14 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) ResetHealthCheck() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetInterfaceAddress6() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInterfaceAddress6",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdlpcustomentries
+
+
+type DataCloudflareZeroTrustDlpCustomEntriesResultConfidence struct {
+}
+

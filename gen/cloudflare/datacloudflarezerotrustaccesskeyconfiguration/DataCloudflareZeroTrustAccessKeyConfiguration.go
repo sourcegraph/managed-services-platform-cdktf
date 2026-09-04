@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccesskeyconfiguration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
 type DataCloudflareZeroTrustAccessKeyConfiguration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -36,6 +36,7 @@ type DataCloudflareZeroTrustAccessKeyConfiguration interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	KeyRotationIntervalDays() *float64
 	LastKeyRotationAt() *string
 	// Experimental.
@@ -203,6 +204,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessKeyConfiguration) FriendlyUnique
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessKeyConfiguration) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessKeyConfiguration) KeyRotationIntervalDays() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -294,7 +305,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessKeyConfiguration) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
 func NewDataCloudflareZeroTrustAccessKeyConfiguration(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessKeyConfigurationConfig) DataCloudflareZeroTrustAccessKeyConfiguration {
 	_init_.Initialize()
 
@@ -312,7 +323,7 @@ func NewDataCloudflareZeroTrustAccessKeyConfiguration(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
 func NewDataCloudflareZeroTrustAccessKeyConfiguration_Override(d DataCloudflareZeroTrustAccessKeyConfiguration, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessKeyConfigurationConfig) {
 	_init_.Initialize()
 

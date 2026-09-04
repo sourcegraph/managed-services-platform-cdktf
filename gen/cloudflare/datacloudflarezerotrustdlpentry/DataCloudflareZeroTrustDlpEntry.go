@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdlpentry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
 type DataCloudflareZeroTrustDlpEntry interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -52,6 +52,7 @@ type DataCloudflareZeroTrustDlpEntry interface {
 	Node() constructs.Node
 	Pattern() DataCloudflareZeroTrustDlpEntryPatternOutputReference
 	ProfileId() *string
+	Profiles() DataCloudflareZeroTrustDlpEntryProfilesList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,6 +68,8 @@ type DataCloudflareZeroTrustDlpEntry interface {
 	TerraformResourceType() *string
 	Type() *string
 	UpdatedAt() *string
+	UploadStatus() *string
+	Variant() DataCloudflareZeroTrustDlpEntryVariantOutputReference
 	WordList() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -93,7 +96,6 @@ type DataCloudflareZeroTrustDlpEntry interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetEntryId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -326,6 +328,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) ProfileId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) Profiles() DataCloudflareZeroTrustDlpEntryProfilesList {
+	var returns DataCloudflareZeroTrustDlpEntryProfilesList
+	_jsii_.Get(
+		j,
+		"profiles",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -406,6 +418,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) UpdatedAt() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) UploadStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uploadStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) Variant() DataCloudflareZeroTrustDlpEntryVariantOutputReference {
+	var returns DataCloudflareZeroTrustDlpEntryVariantOutputReference
+	_jsii_.Get(
+		j,
+		"variant",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) WordList() *string {
 	var returns *string
 	_jsii_.Get(
@@ -417,7 +449,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpEntry(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpEntryConfig) DataCloudflareZeroTrustDlpEntry {
 	_init_.Initialize()
 
@@ -435,7 +467,7 @@ func NewDataCloudflareZeroTrustDlpEntry(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpEntry_Override(d DataCloudflareZeroTrustDlpEntry, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpEntryConfig) {
 	_init_.Initialize()
 
@@ -796,14 +828,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpEntry) OverrideLogicalId(newLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpEntry) ResetEntryId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEntryId",
-		nil, // no parameters
 	)
 }
 

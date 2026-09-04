@@ -72,7 +72,6 @@ type PagesProjectDeploymentConfigsPreviewServicesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEntrypoint()
 	ResetEnvironment()
-	ResetService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -532,14 +531,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServicesOutputReference) 
 	_jsii_.InvokeVoid(
 		p,
 		"resetEnvironment",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServicesOutputReference) ResetService() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetService",
 		nil, // no parameters
 	)
 }

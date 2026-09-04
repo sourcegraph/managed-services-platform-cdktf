@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/pagerule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule cloudflare_page_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule cloudflare_page_rule}.
 type PageRule interface {
 	cdktf.TerraformResource
 	Actions() PageRuleActionsOutputReference
@@ -433,7 +433,7 @@ func (j *jsiiProxy_PageRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig) PageRule {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule_Override(p PageRule, scope constructs.Construct, id *string, config *PageRuleConfig) {
 	_init_.Initialize()
 
