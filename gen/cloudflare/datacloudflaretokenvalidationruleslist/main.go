@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRuleId", GoMethod: "ResetRuleId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenConfiguration", GoMethod: "ResetTokenConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleId", GoGetter: "RuleId"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleIdInput", GoGetter: "RuleIdInput"},

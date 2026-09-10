@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accountmember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_member cloudflare_account_member}.
 type AccountMember interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -118,6 +118,7 @@ type AccountMember interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPolicies(value interface{})
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -423,7 +424,7 @@ func (j *jsiiProxy_AccountMember) User() AccountMemberUserOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember(scope constructs.Construct, id *string, config *AccountMemberConfig) AccountMember {
 	_init_.Initialize()
 
@@ -441,7 +442,7 @@ func NewAccountMember(scope constructs.Construct, id *string, config *AccountMem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *string, config *AccountMemberConfig) {
 	_init_.Initialize()
 
@@ -925,6 +926,14 @@ func (a *jsiiProxy_AccountMember) PutPolicies(value interface{}) {
 		a,
 		"putPolicies",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountMember) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

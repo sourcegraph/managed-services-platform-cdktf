@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarelistitem/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item cloudflare_list_item}.
 type DataCloudflareListItem interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -92,6 +92,7 @@ type DataCloudflareListItem interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -395,7 +396,7 @@ func (j *jsiiProxy_DataCloudflareListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
 func NewDataCloudflareListItem(scope constructs.Construct, id *string, config *DataCloudflareListItemConfig) DataCloudflareListItem {
 	_init_.Initialize()
 
@@ -413,7 +414,7 @@ func NewDataCloudflareListItem(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
 func NewDataCloudflareListItem_Override(d DataCloudflareListItem, scope constructs.Construct, id *string, config *DataCloudflareListItemConfig) {
 	_init_.Initialize()
 
@@ -785,6 +786,14 @@ func (d *jsiiProxy_DataCloudflareListItem) OverrideLogicalId(newLogicalId *strin
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareListItem) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

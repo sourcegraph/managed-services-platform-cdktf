@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/dnsfirewall/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
 type DnsFirewall interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -137,6 +137,7 @@ type DnsFirewall interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAttackMitigation(value *DnsFirewallAttackMitigation)
+	ResetAccountId()
 	ResetAttackMitigation()
 	ResetDeprecateAnyRequests()
 	ResetEcsFallback()
@@ -577,7 +578,7 @@ func (j *jsiiProxy_DnsFirewall) UpstreamIpsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallConfig) DnsFirewall {
 	_init_.Initialize()
 
@@ -595,7 +596,7 @@ func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall_Override(d DnsFirewall, scope constructs.Construct, id *string, config *DnsFirewallConfig) {
 	_init_.Initialize()
 
@@ -1145,6 +1146,14 @@ func (d *jsiiProxy_DnsFirewall) PutAttackMitigation(value *DnsFirewallAttackMiti
 		d,
 		"putAttackMitigation",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DnsFirewall) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaccountdnssettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings cloudflare_account_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_dns_settings cloudflare_account_dns_settings}.
 type DataCloudflareAccountDnsSettings interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -27,6 +27,7 @@ type DataCloudflareAccountDnsSettings interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnforceDnsOnly() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -79,6 +80,7 @@ type DataCloudflareAccountDnsSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -156,6 +158,16 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettings) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountDnsSettings) EnforceDnsOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enforceDnsOnly",
 		&returns,
 	)
 	return returns
@@ -272,7 +284,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettings) ZoneDefaults() DataCloudfla
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings cloudflare_account_dns_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_dns_settings cloudflare_account_dns_settings} Data Source.
 func NewDataCloudflareAccountDnsSettings(scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsConfig) DataCloudflareAccountDnsSettings {
 	_init_.Initialize()
 
@@ -290,7 +302,7 @@ func NewDataCloudflareAccountDnsSettings(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings cloudflare_account_dns_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_dns_settings cloudflare_account_dns_settings} Data Source.
 func NewDataCloudflareAccountDnsSettings_Override(d DataCloudflareAccountDnsSettings, scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsConfig) {
 	_init_.Initialize()
 
@@ -640,6 +652,14 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettings) OverrideLogicalId(newLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountDnsSettings) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

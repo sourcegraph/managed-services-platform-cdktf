@@ -9,13 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/aisearchtoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token cloudflare_ai_search_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token cloudflare_ai_search_token}.
 type AiSearchToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AccountTag() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CfApiId() *string
@@ -50,7 +49,9 @@ type AiSearchToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	Legacy() cdktf.IResolvable
+	Legacy() interface{}
+	SetLegacy(val interface{})
+	LegacyInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -72,7 +73,6 @@ type AiSearchToken interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SyncedAt() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,6 +122,8 @@ type AiSearchToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
+	ResetLegacy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -158,16 +160,6 @@ func (j *jsiiProxy_AiSearchToken) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchToken) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
 		&returns,
 	)
 	return returns
@@ -333,11 +325,21 @@ func (j *jsiiProxy_AiSearchToken) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchToken) Legacy() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_AiSearchToken) Legacy() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"legacy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchToken) LegacyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legacyInput",
 		&returns,
 	)
 	return returns
@@ -433,16 +435,6 @@ func (j *jsiiProxy_AiSearchToken) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchToken) SyncedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syncedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiSearchToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -474,7 +466,7 @@ func (j *jsiiProxy_AiSearchToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
 func NewAiSearchToken(scope constructs.Construct, id *string, config *AiSearchTokenConfig) AiSearchToken {
 	_init_.Initialize()
 
@@ -492,7 +484,7 @@ func NewAiSearchToken(scope constructs.Construct, id *string, config *AiSearchTo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
 func NewAiSearchToken_Override(a AiSearchToken, scope constructs.Construct, id *string, config *AiSearchTokenConfig) {
 	_init_.Initialize()
 
@@ -570,6 +562,17 @@ func (j *jsiiProxy_AiSearchToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchToken)SetLegacy(val interface{}) {
+	if err := j.validateSetLegacyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"legacy",
 		val,
 	)
 }
@@ -965,6 +968,22 @@ func (a *jsiiProxy_AiSearchToken) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AiSearchToken) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchToken) ResetLegacy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLegacy",
+		nil, // no parameters
 	)
 }
 

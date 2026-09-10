@@ -25,6 +25,7 @@ type DataCloudflareWorkerVersionBindingsOutboundWorkerOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Entrypoint() *string
 	Environment() *string
 	// Experimental.
 	Fqn() *string
@@ -103,6 +104,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutboundWorkerOutputRefere
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutboundWorkerOutputReference) Entrypoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entrypoint",
 		&returns,
 	)
 	return returns

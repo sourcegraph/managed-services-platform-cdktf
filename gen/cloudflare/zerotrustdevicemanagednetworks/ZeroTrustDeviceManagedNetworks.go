@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdevicemanagednetworks/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
 type ZeroTrustDeviceManagedNetworks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -115,6 +115,7 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *ZeroTrustDeviceManagedNetworksConfigA)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -397,7 +398,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
 func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, config *ZeroTrustDeviceManagedNetworksConfig) ZeroTrustDeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -415,7 +416,7 @@ func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
 func NewZeroTrustDeviceManagedNetworks_Override(z ZeroTrustDeviceManagedNetworks, scope constructs.Construct, id *string, config *ZeroTrustDeviceManagedNetworksConfig) {
 	_init_.Initialize()
 
@@ -888,6 +889,14 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) PutConfig(value *ZeroTrustDev
 		z,
 		"putConfig",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

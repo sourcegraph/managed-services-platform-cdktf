@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecloudforceonerequestasset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type DataCloudflareCloudforceOneRequestAsset interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -89,6 +89,7 @@ type DataCloudflareCloudforceOneRequestAsset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -362,7 +363,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) DataCloudflareCloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -380,7 +381,7 @@ func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset_Override(d DataCloudflareCloudforceOneRequestAsset, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 
@@ -752,6 +753,14 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) OverrideLogicalId(ne
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

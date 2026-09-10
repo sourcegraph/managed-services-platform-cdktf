@@ -21,11 +21,21 @@ type ObservatoryScheduledTestConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
+	// The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
+	Frequency *string `field:"optional" json:"frequency" yaml:"frequency"`
+	// A test region.
+	//
+	// Available values: "asia-east1", "asia-northeast1", "asia-northeast2", "asia-south1", "asia-southeast1", "australia-southeast1", "europe-north1", "europe-southwest1", "europe-west1", "europe-west2", "europe-west3", "europe-west4", "europe-west8", "europe-west9", "me-west1", "southamerica-east1", "us-central1", "us-east1", "us-east4", "us-south1", "us-west1".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
+	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

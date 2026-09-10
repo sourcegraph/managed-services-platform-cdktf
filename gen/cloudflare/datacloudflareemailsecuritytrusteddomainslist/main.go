@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "patternInput", GoGetter: "PatternInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirection", GoMethod: "ResetDirection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsRecent", GoMethod: "ResetIsRecent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsSimilarity", GoMethod: "ResetIsSimilarity"},

@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInclusive", GoMethod: "ResetInclusive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsPaused", GoMethod: "ResetIsPaused"},

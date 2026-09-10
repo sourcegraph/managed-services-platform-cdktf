@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workerscustomdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
 type WorkersCustomDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -17,6 +17,7 @@ type WorkersCustomDomain interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertId() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -75,6 +76,8 @@ type WorkersCustomDomain interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	ZoneName() *string
+	SetZoneName(val *string)
+	ZoneNameInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -118,10 +121,13 @@ type WorkersCustomDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetEnvironment()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
+	ResetZoneName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -165,6 +171,16 @@ func (j *jsiiProxy_WorkersCustomDomain) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersCustomDomain) CertId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certId",
 		&returns,
 	)
 	return returns
@@ -420,8 +436,18 @@ func (j *jsiiProxy_WorkersCustomDomain) ZoneName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersCustomDomain) ZoneNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneNameInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
 func NewWorkersCustomDomain(scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) WorkersCustomDomain {
 	_init_.Initialize()
 
@@ -439,7 +465,7 @@ func NewWorkersCustomDomain(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
 func NewWorkersCustomDomain_Override(w WorkersCustomDomain, scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) {
 	_init_.Initialize()
 
@@ -569,6 +595,17 @@ func (j *jsiiProxy_WorkersCustomDomain)SetZoneId(val *string) {
 	_jsii_.Set(
 		j,
 		"zoneId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersCustomDomain)SetZoneName(val *string) {
+	if err := j.validateSetZoneNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneName",
 		val,
 	)
 }
@@ -926,6 +963,14 @@ func (w *jsiiProxy_WorkersCustomDomain) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (w *jsiiProxy_WorkersCustomDomain) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersCustomDomain) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		w,
@@ -938,6 +983,22 @@ func (w *jsiiProxy_WorkersCustomDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersCustomDomain) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZoneId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersCustomDomain) ResetZoneName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZoneName",
 		nil, // no parameters
 	)
 }

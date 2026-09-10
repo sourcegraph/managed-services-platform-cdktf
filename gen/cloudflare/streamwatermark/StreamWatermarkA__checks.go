@@ -342,14 +342,6 @@ func (j *jsiiProxy_StreamWatermarkA) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_StreamWatermarkA) validateSetFileParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_StreamWatermarkA) validateSetIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -452,6 +444,14 @@ func (j *jsiiProxy_StreamWatermarkA) validateSetScaleParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_StreamWatermarkA) validateSetUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewStreamWatermarkAParameters(scope constructs.Construct, id *string, config *StreamWatermarkAConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -461,9 +461,6 @@ func validateNewStreamWatermarkAParameters(scope constructs.Construct, id *strin
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

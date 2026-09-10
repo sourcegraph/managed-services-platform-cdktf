@@ -85,6 +85,8 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserRiskScore() ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference
+	UserRiskScoreInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -133,6 +135,7 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	PutOkta(value *ZeroTrustAccessPolicyRequireOkta)
 	PutSaml(value *ZeroTrustAccessPolicyRequireSaml)
 	PutServiceToken(value *ZeroTrustAccessPolicyRequireServiceToken)
+	PutUserRiskScore(value *ZeroTrustAccessPolicyRequireUserRiskScore)
 	ResetAnyValidServiceToken()
 	ResetAuthContext()
 	ResetAuthMethod()
@@ -157,6 +160,7 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
+	ResetUserRiskScore()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -722,6 +726,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) UserRiskScore() ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference {
+	var returns ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference
+	_jsii_.Get(
+		j,
+		"userRiskScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) UserRiskScoreInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userRiskScoreInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustAccessPolicyRequireOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyRequireOutputReference {
 	_init_.Initialize()
@@ -1255,6 +1279,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) PutServiceToken(
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) PutUserRiskScore(value *ZeroTrustAccessPolicyRequireUserRiskScore) {
+	if err := z.validatePutUserRiskScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putUserRiskScore",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetAnyValidServiceToken() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1443,6 +1478,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetServiceToke
 	_jsii_.InvokeVoid(
 		z,
 		"resetServiceToken",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetUserRiskScore() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUserRiskScore",
 		nil, // no parameters
 	)
 }

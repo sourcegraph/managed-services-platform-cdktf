@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarehealthchecks/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/healthchecks cloudflare_healthchecks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/healthchecks cloudflare_healthchecks}.
 type DataCloudflareHealthchecks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -86,6 +86,7 @@ type DataCloudflareHealthchecks interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareHealthchecks) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/healthchecks cloudflare_healthchecks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/healthchecks cloudflare_healthchecks} Data Source.
 func NewDataCloudflareHealthchecks(scope constructs.Construct, id *string, config *DataCloudflareHealthchecksConfig) DataCloudflareHealthchecks {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareHealthchecks(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/healthchecks cloudflare_healthchecks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/healthchecks cloudflare_healthchecks} Data Source.
 func NewDataCloudflareHealthchecks_Override(d DataCloudflareHealthchecks, scope constructs.Construct, id *string, config *DataCloudflareHealthchecksConfig) {
 	_init_.Initialize()
 
@@ -690,6 +691,14 @@ func (d *jsiiProxy_DataCloudflareHealthchecks) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareHealthchecks) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

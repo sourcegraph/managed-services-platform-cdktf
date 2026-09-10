@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/d1database/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/d1_database cloudflare_d1_database}.
 type D1Database interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -122,6 +122,7 @@ type D1Database interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutReadReplication(value *D1DatabaseReadReplication)
+	ResetAccountId()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -467,7 +468,7 @@ func (j *jsiiProxy_D1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseConfig) D1Database {
 	_init_.Initialize()
 
@@ -485,7 +486,7 @@ func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database_Override(d D1Database, scope constructs.Construct, id *string, config *D1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -969,6 +970,14 @@ func (d *jsiiProxy_D1Database) PutReadReplication(value *D1DatabaseReadReplicati
 		d,
 		"putReadReplication",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_D1Database) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

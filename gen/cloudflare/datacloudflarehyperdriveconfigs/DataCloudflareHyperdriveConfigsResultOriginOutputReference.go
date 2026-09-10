@@ -36,6 +36,7 @@ type DataCloudflareHyperdriveConfigsResultOriginOutputReference interface {
 	Password() *string
 	Port() *float64
 	Scheme() *string
+	ServiceId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -199,6 +200,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) S
 	_jsii_.Get(
 		j,
 		"scheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) ServiceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceId",
 		&returns,
 	)
 	return returns

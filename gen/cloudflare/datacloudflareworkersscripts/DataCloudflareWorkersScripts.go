@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkersscripts/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
 type DataCloudflareWorkersScripts interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareWorkersScripts interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -320,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareWorkersScripts) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
 func NewDataCloudflareWorkersScripts(scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptsConfig) DataCloudflareWorkersScripts {
 	_init_.Initialize()
 
@@ -338,7 +339,7 @@ func NewDataCloudflareWorkersScripts(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
 func NewDataCloudflareWorkersScripts_Override(d DataCloudflareWorkersScripts, scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptsConfig) {
 	_init_.Initialize()
 
@@ -710,6 +711,14 @@ func (d *jsiiProxy_DataCloudflareWorkersScripts) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersScripts) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

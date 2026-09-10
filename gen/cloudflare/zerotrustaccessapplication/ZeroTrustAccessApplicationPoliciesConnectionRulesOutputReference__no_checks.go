@@ -44,6 +44,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputRefere
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) validatePutRdpParameters(value *ZeroTrustAccessApplicationPoliciesConnectionRulesRdp) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) validatePutSshParameters(value *ZeroTrustAccessApplicationPoliciesConnectionRulesSsh) error {
 	return nil
 }

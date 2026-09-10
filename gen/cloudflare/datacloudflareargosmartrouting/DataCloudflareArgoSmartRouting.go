@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareargosmartrouting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
 type DataCloudflareArgoSmartRouting interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -85,6 +85,7 @@ type DataCloudflareArgoSmartRouting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -305,7 +306,7 @@ func (j *jsiiProxy_DataCloudflareArgoSmartRouting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
 func NewDataCloudflareArgoSmartRouting(scope constructs.Construct, id *string, config *DataCloudflareArgoSmartRoutingConfig) DataCloudflareArgoSmartRouting {
 	_init_.Initialize()
 
@@ -323,7 +324,7 @@ func NewDataCloudflareArgoSmartRouting(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
 func NewDataCloudflareArgoSmartRouting_Override(d DataCloudflareArgoSmartRouting, scope constructs.Construct, id *string, config *DataCloudflareArgoSmartRoutingConfig) {
 	_init_.Initialize()
 
@@ -680,6 +681,14 @@ func (d *jsiiProxy_DataCloudflareArgoSmartRouting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareArgoSmartRouting) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

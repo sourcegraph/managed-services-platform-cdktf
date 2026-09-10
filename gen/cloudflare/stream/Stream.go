@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/stream/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream cloudflare_stream}.
 type Stream interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -20,6 +20,7 @@ type Stream interface {
 	AllowedOriginsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClippedFrom() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -59,6 +60,7 @@ type Stream interface {
 	MaxDurationSeconds() *float64
 	SetMaxDurationSeconds(val *float64)
 	MaxDurationSecondsInput() *float64
+	MaxSizeBytes() *float64
 	Meta() *string
 	SetMeta(val *string)
 	MetaInput() *string
@@ -75,6 +77,8 @@ type Stream interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicDetails() StreamPublicDetailsOutputReference
+	PublicDetailsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ReadyToStream() cdktf.IResolvable
@@ -98,6 +102,8 @@ type Stream interface {
 	SetThumbnailTimestampPct(val *float64)
 	ThumbnailTimestampPctInput() *float64
 	Uid() *string
+	SetUid(val *string)
+	UidInput() *string
 	Uploaded() *string
 	UploadExpiry() *string
 	SetUploadExpiry(val *string)
@@ -146,6 +152,8 @@ type Stream interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPublicDetails(value *StreamPublicDetails)
+	ResetAccountId()
 	ResetAllowedOrigins()
 	ResetCreator()
 	ResetIdentifier()
@@ -154,9 +162,11 @@ type Stream interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicDetails()
 	ResetRequireSignedUrls()
 	ResetScheduledDeletion()
 	ResetThumbnailTimestampPct()
+	ResetUid()
 	ResetUploadExpiry()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -221,6 +231,16 @@ func (j *jsiiProxy_Stream) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Stream) ClippedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clippedFrom",
 		&returns,
 	)
 	return returns
@@ -406,6 +426,16 @@ func (j *jsiiProxy_Stream) MaxDurationSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Stream) MaxSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Stream) Meta() *string {
 	var returns *string
 	_jsii_.Get(
@@ -481,6 +511,26 @@ func (j *jsiiProxy_Stream) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Stream) PublicDetails() StreamPublicDetailsOutputReference {
+	var returns StreamPublicDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"publicDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Stream) PublicDetailsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicDetailsInput",
 		&returns,
 	)
 	return returns
@@ -646,6 +696,16 @@ func (j *jsiiProxy_Stream) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Stream) UidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uidInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Stream) Uploaded() *string {
 	var returns *string
 	_jsii_.Get(
@@ -687,7 +747,7 @@ func (j *jsiiProxy_Stream) Watermark() StreamWatermarkOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Stream {
 	_init_.Initialize()
 
@@ -705,7 +765,7 @@ func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream_Override(s Stream, scope constructs.Construct, id *string, config *StreamConfig) {
 	_init_.Initialize()
 
@@ -879,6 +939,17 @@ func (j *jsiiProxy_Stream)SetThumbnailTimestampPct(val *float64) {
 	_jsii_.Set(
 		j,
 		"thumbnailTimestampPct",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Stream)SetUid(val *string) {
+	if err := j.validateSetUidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uid",
 		val,
 	)
 }
@@ -1247,6 +1318,25 @@ func (s *jsiiProxy_Stream) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_Stream) PutPublicDetails(value *StreamPublicDetails) {
+	if err := s.validatePutPublicDetailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPublicDetails",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_Stream) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Stream) ResetAllowedOrigins() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1295,6 +1385,14 @@ func (s *jsiiProxy_Stream) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_Stream) ResetPublicDetails() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicDetails",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Stream) ResetRequireSignedUrls() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1315,6 +1413,14 @@ func (s *jsiiProxy_Stream) ResetThumbnailTimestampPct() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetThumbnailTimestampPct",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Stream) ResetUid() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUid",
 		nil, // no parameters
 	)
 }

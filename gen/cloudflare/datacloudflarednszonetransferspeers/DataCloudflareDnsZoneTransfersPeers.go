@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarednszonetransferspeers/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers}.
 type DataCloudflareDnsZoneTransfersPeers interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareDnsZoneTransfersPeers interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersPeers) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
 func NewDataCloudflareDnsZoneTransfersPeers(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersPeersConfig) DataCloudflareDnsZoneTransfersPeers {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareDnsZoneTransfersPeers(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
 func NewDataCloudflareDnsZoneTransfersPeers_Override(d DataCloudflareDnsZoneTransfersPeers, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersPeersConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeers) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeers) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

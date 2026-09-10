@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/emailroutingsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 type EmailRoutingSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -115,6 +115,7 @@ type EmailRoutingSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -394,7 +395,7 @@ func (j *jsiiProxy_EmailRoutingSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) EmailRoutingSettings {
 	_init_.Initialize()
 
@@ -412,7 +413,7 @@ func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings_Override(e EmailRoutingSettings, scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) {
 	_init_.Initialize()
 
@@ -859,6 +860,14 @@ func (e *jsiiProxy_EmailRoutingSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingSettings) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

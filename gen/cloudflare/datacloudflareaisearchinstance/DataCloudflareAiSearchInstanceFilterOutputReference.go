@@ -29,6 +29,15 @@ type DataCloudflareAiSearchInstanceFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByDirection() *string
+	SetOrderByDirection(val *string)
+	OrderByDirectionInput() *string
+	OrderByInput() *string
 	Search() *string
 	SetSearch(val *string)
 	SearchInput() *string
@@ -64,6 +73,9 @@ type DataCloudflareAiSearchInstanceFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNamespace()
+	ResetOrderBy()
+	ResetOrderByDirection()
 	ResetSearch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +137,66 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) OrderByDirection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByDirection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) OrderByDirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByDirectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
 		&returns,
 	)
 	return returns
@@ -227,6 +299,39 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetOrderByDirection(val *string) {
+	if err := j.validateSetOrderByDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderByDirection",
 		val,
 	)
 }
@@ -448,6 +553,30 @@ func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetOrderByDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderByDirection",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetSearch() {

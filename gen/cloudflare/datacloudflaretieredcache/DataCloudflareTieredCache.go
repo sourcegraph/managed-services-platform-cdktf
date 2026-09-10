@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaretieredcache/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
 type DataCloudflareTieredCache interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -85,6 +85,7 @@ type DataCloudflareTieredCache interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -305,7 +306,7 @@ func (j *jsiiProxy_DataCloudflareTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
 func NewDataCloudflareTieredCache(scope constructs.Construct, id *string, config *DataCloudflareTieredCacheConfig) DataCloudflareTieredCache {
 	_init_.Initialize()
 
@@ -323,7 +324,7 @@ func NewDataCloudflareTieredCache(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
 func NewDataCloudflareTieredCache_Override(d DataCloudflareTieredCache, scope constructs.Construct, id *string, config *DataCloudflareTieredCacheConfig) {
 	_init_.Initialize()
 
@@ -680,6 +681,14 @@ func (d *jsiiProxy_DataCloudflareTieredCache) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareTieredCache) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

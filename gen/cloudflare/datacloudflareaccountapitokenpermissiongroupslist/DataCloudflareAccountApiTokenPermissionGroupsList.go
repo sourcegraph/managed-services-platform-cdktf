@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaccountapitokenpermissiongroupslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list}.
 type DataCloudflareAccountApiTokenPermissionGroupsList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -88,6 +88,7 @@ type DataCloudflareAccountApiTokenPermissionGroupsList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -344,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroupsList(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsListConfig) DataCloudflareAccountApiTokenPermissionGroupsList {
 	_init_.Initialize()
 
@@ -362,7 +363,7 @@ func NewDataCloudflareAccountApiTokenPermissionGroupsList(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroupsList_Override(d DataCloudflareAccountApiTokenPermissionGroupsList, scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsListConfig) {
 	_init_.Initialize()
 
@@ -745,6 +746,14 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) OverrideLo
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -111,6 +111,17 @@ func (d *jsiiProxy_DataCloudflareCustomHostnames) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomHostnames) validatePutHostnameParameters(value *DataCloudflareCustomHostnamesHostname) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDataCloudflareCustomHostnames_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -146,6 +157,14 @@ func validateDataCloudflareCustomHostnames_IsTerraformDataSourceParameters(x int
 func validateDataCloudflareCustomHostnames_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetCertificateAuthorityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -208,6 +227,14 @@ func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetCustomOriginServerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetDirectionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -216,7 +243,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetDirectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetHostnameParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetHostnameStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,6 +291,34 @@ func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetSslParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetSslStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetWildcardParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -281,9 +336,6 @@ func validateNewDataCloudflareCustomHostnamesParameters(scope constructs.Constru
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

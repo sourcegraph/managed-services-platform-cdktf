@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdlpcustomprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
 type ZeroTrustDlpCustomProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -39,6 +39,12 @@ type ZeroTrustDlpCustomProfile interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DataClasses() *[]*string
+	SetDataClasses(val *[]*string)
+	DataClassesInput() *[]*string
+	DataTags() *[]*string
+	SetDataTags(val *[]*string)
+	DataTagsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -80,6 +86,8 @@ type ZeroTrustDlpCustomProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SensitivityLevels() ZeroTrustDlpCustomProfileSensitivityLevelsList
+	SensitivityLevelsInput() interface{}
 	SharedEntries() ZeroTrustDlpCustomProfileSharedEntriesList
 	SharedEntriesInput() interface{}
 	// Experimental.
@@ -135,17 +143,22 @@ type ZeroTrustDlpCustomProfile interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContextAwareness(value *ZeroTrustDlpCustomProfileContextAwareness)
 	PutEntries(value interface{})
+	PutSensitivityLevels(value interface{})
 	PutSharedEntries(value interface{})
+	ResetAccountId()
 	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
 	ResetContextAwareness()
+	ResetDataClasses()
+	ResetDataTags()
 	ResetDescription()
 	ResetEntries()
 	ResetOcrEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSensitivityLevels()
 	ResetSharedEntries()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -310,6 +323,46 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) DataClasses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataClasses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) DataClassesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataClassesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) DataTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) DataTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataTagsInput",
 		&returns,
 	)
 	return returns
@@ -505,6 +558,26 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SensitivityLevels() ZeroTrustDlpCustomProfileSensitivityLevelsList {
+	var returns ZeroTrustDlpCustomProfileSensitivityLevelsList
+	_jsii_.Get(
+		j,
+		"sensitivityLevels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SensitivityLevelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sensitivityLevelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpCustomProfile) SharedEntries() ZeroTrustDlpCustomProfileSharedEntriesList {
 	var returns ZeroTrustDlpCustomProfileSharedEntriesList
 	_jsii_.Get(
@@ -576,7 +649,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) ZeroTrustDlpCustomProfile {
 	_init_.Initialize()
 
@@ -594,7 +667,7 @@ func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile_Override(z ZeroTrustDlpCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -667,6 +740,28 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetDataClasses(val *[]*string) {
+	if err := j.validateSetDataClassesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataClasses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile)SetDataTags(val *[]*string) {
+	if err := j.validateSetDataTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataTags",
 		val,
 	)
 }
@@ -1125,6 +1220,17 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutEntries(value interface{}) {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSensitivityLevels(value interface{}) {
+	if err := z.validatePutSensitivityLevelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putSensitivityLevels",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSharedEntries(value interface{}) {
 	if err := z.validatePutSharedEntriesParameters(value); err != nil {
 		panic(err)
@@ -1133,6 +1239,14 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSharedEntries(value interface{}
 		z,
 		"putSharedEntries",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 
@@ -1168,6 +1282,22 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetContextAwareness() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetDataClasses() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDataClasses",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetDataTags() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDataTags",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetDescription() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1196,6 +1326,14 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetSensitivityLevels() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSensitivityLevels",
 		nil, // no parameters
 	)
 }

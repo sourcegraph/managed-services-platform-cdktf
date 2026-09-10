@@ -44,7 +44,15 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateIn
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validatePutHostnameParameters(value *DataCloudflareCustomHostnameFilterHostname) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetCertificateAuthorityParameters(val *string) error {
 	return nil
 }
 
@@ -56,11 +64,15 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetCustomOriginServerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetDirectionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetHostnameParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetHostnameStatusParameters(val *string) error {
 	return nil
 }
 
@@ -80,11 +92,19 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetSslStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetWildcardParameters(val interface{}) error {
 	return nil
 }
 

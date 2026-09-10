@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requestType", GoGetter: "RequestType"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTypeInput", GoGetter: "RequestTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompletedAfter", GoMethod: "ResetCompletedAfter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompletedBefore", GoMethod: "ResetCompletedBefore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreatedAfter", GoMethod: "ResetCreatedAfter"},

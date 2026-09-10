@@ -76,11 +76,19 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupsParameters(va
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutConnectionRulesParameters(value *ZeroTrustAccessPolicyConnectionRules) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutExcludeParameters(value interface{}) error {
 	return nil
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutIncludeParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutMfaConfigParameters(value *ZeroTrustAccessPolicyMfaConfig) error {
 	return nil
 }
 

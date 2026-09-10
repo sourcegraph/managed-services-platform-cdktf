@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/notificationpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy cloudflare_notification_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy cloudflare_notification_policy}.
 type NotificationPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -128,6 +128,7 @@ type NotificationPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilters(value *NotificationPolicyFilters)
 	PutMechanisms(value *NotificationPolicyMechanisms)
+	ResetAccountId()
 	ResetAlertInterval()
 	ResetDescription()
 	ResetEnabled()
@@ -504,7 +505,7 @@ func (j *jsiiProxy_NotificationPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
 func NewNotificationPolicy(scope constructs.Construct, id *string, config *NotificationPolicyConfig) NotificationPolicy {
 	_init_.Initialize()
 
@@ -522,7 +523,7 @@ func NewNotificationPolicy(scope constructs.Construct, id *string, config *Notif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
 func NewNotificationPolicy_Override(n NotificationPolicy, scope constructs.Construct, id *string, config *NotificationPolicyConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1040,14 @@ func (n *jsiiProxy_NotificationPolicy) PutMechanisms(value *NotificationPolicyMe
 		n,
 		"putMechanisms",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicy) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

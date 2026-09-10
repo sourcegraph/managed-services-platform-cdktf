@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putBody", GoMethod: "PutBody"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBody", GoMethod: "ResetBody"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComments", GoMethod: "ResetComments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsRecent", GoMethod: "ResetIsRecent"},

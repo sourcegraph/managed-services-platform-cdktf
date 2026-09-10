@@ -11,6 +11,7 @@ import (
 type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interface {
 	cdktf.ComplexObject
 	ActiveThreats() *float64
+	AuthState() *[]*string
 	CertificateId() *string
 	CheckDisks() *[]*string
 	CheckPrivateKey() cdktf.IResolvable
@@ -123,6 +124,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	_jsii_.Get(
 		j,
 		"activeThreats",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) AuthState() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authState",
 		&returns,
 	)
 	return returns

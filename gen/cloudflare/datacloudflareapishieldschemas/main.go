@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOmitSource", GoMethod: "ResetOmitSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValidationEnabled", GoMethod: "ResetValidationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},

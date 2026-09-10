@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezonednssec/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
 type DataCloudflareZoneDnssec interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -96,6 +96,7 @@ type DataCloudflareZoneDnssec interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -426,7 +427,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) DataCloudflareZoneDnssec {
 	_init_.Initialize()
 
@@ -444,7 +445,7 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) {
 	_init_.Initialize()
 
@@ -801,6 +802,14 @@ func (d *jsiiProxy_DataCloudflareZoneDnssec) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZoneDnssec) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

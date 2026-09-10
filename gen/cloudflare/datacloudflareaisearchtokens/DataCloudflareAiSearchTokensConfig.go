@@ -19,11 +19,15 @@ type DataCloudflareAiSearchTokensConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
+	// Filter tokens whose name contains this string (case-insensitive).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
+	Search *string `field:"optional" json:"search" yaml:"search"`
 }
 

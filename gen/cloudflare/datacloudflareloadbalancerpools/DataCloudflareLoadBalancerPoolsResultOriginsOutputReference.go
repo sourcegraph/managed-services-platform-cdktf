@@ -28,6 +28,7 @@ type DataCloudflareLoadBalancerPoolsResultOriginsOutputReference interface {
 	CreationStack() *[]*string
 	DisabledAt() *string
 	Enabled() cdktf.IResolvable
+	FlattenCname() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	Header() DataCloudflareLoadBalancerPoolsResultOriginsHeaderOutputReference
@@ -139,6 +140,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsResultOriginsOutputReference) 
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsResultOriginsOutputReference) FlattenCname() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"flattenCname",
 		&returns,
 	)
 	return returns

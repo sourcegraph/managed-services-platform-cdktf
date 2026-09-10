@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustgatewaypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type ZeroTrustGatewayPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -149,6 +149,7 @@ type ZeroTrustGatewayPolicy interface {
 	PutExpiration(value *ZeroTrustGatewayPolicyExpiration)
 	PutRuleSettings(value *ZeroTrustGatewayPolicyRuleSettings)
 	PutSchedule(value *ZeroTrustGatewayPolicySchedule)
+	ResetAccountId()
 	ResetDescription()
 	ResetDevicePosture()
 	ResetEnabled()
@@ -691,7 +692,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) WarningStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -709,7 +710,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 
@@ -1281,6 +1282,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutSchedule(value *ZeroTrustGatewayPo
 		z,
 		"putSchedule",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

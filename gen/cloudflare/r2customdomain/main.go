@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCiphers", GoMethod: "ResetCiphers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJurisdiction", GoMethod: "ResetJurisdiction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinTls", GoMethod: "ResetMinTls"},

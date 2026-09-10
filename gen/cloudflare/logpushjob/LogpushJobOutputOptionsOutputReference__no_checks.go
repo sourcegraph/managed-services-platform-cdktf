@@ -80,6 +80,10 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetMergeSubrequestsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetOutputTypeParameters(val *string) error {
 	return nil
 }

@@ -85,6 +85,8 @@ type ZeroTrustAccessGroupExcludeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserRiskScore() ZeroTrustAccessGroupExcludeUserRiskScoreOutputReference
+	UserRiskScoreInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -133,6 +135,7 @@ type ZeroTrustAccessGroupExcludeOutputReference interface {
 	PutOkta(value *ZeroTrustAccessGroupExcludeOkta)
 	PutSaml(value *ZeroTrustAccessGroupExcludeSaml)
 	PutServiceToken(value *ZeroTrustAccessGroupExcludeServiceToken)
+	PutUserRiskScore(value *ZeroTrustAccessGroupExcludeUserRiskScore)
 	ResetAnyValidServiceToken()
 	ResetAuthContext()
 	ResetAuthMethod()
@@ -157,6 +160,7 @@ type ZeroTrustAccessGroupExcludeOutputReference interface {
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
+	ResetUserRiskScore()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -722,6 +726,26 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) UserRiskScore() ZeroTrustAccessGroupExcludeUserRiskScoreOutputReference {
+	var returns ZeroTrustAccessGroupExcludeUserRiskScoreOutputReference
+	_jsii_.Get(
+		j,
+		"userRiskScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) UserRiskScoreInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userRiskScoreInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustAccessGroupExcludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessGroupExcludeOutputReference {
 	_init_.Initialize()
@@ -1255,6 +1279,17 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) PutServiceToken(v
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) PutUserRiskScore(value *ZeroTrustAccessGroupExcludeUserRiskScore) {
+	if err := z.validatePutUserRiskScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putUserRiskScore",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) ResetAnyValidServiceToken() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1443,6 +1478,14 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) ResetServiceToken
 	_jsii_.InvokeVoid(
 		z,
 		"resetServiceToken",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) ResetUserRiskScore() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUserRiskScore",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecustomssl/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
 type DataCloudflareCustomSsl interface {
 	cdktf.TerraformDataSource
 	BundleMethod() *string
@@ -24,6 +24,7 @@ type DataCloudflareCustomSsl interface {
 	CustomCertificateId() *string
 	SetCustomCertificateId(val *string)
 	CustomCertificateIdInput() *string
+	CustomCsrId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,7 +52,7 @@ type DataCloudflareCustomSsl interface {
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
-	Policy() *string
+	PolicyRestrictions() *string
 	Priority() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -102,6 +103,7 @@ type DataCloudflareCustomSsl interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -176,6 +178,16 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) CustomCertificateIdInput() *string {
 	_jsii_.Get(
 		j,
 		"customCertificateIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomSsl) CustomCsrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrId",
 		&returns,
 	)
 	return returns
@@ -331,11 +343,11 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSsl) Policy() *string {
+func (j *jsiiProxy_DataCloudflareCustomSsl) PolicyRestrictions() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"policy",
+		"policyRestrictions",
 		&returns,
 	)
 	return returns
@@ -452,7 +464,7 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) DataCloudflareCustomSsl {
 	_init_.Initialize()
 
@@ -470,7 +482,7 @@ func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl_Override(d DataCloudflareCustomSsl, scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) {
 	_init_.Initialize()
 
@@ -865,6 +877,14 @@ func (d *jsiiProxy_DataCloudflareCustomSsl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomSsl) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

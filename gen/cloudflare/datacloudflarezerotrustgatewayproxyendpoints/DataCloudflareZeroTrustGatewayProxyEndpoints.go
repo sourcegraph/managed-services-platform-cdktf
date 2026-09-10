@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustgatewayproxyendpoints/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints}.
 type DataCloudflareZeroTrustGatewayProxyEndpoints interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareZeroTrustGatewayProxyEndpoints interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoints) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoints(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointsConfig) DataCloudflareZeroTrustGatewayProxyEndpoints {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareZeroTrustGatewayProxyEndpoints(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_proxy_endpoints cloudflare_zero_trust_gateway_proxy_endpoints} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoints_Override(d DataCloudflareZeroTrustGatewayProxyEndpoints, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointsConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoints) OverrideLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoints) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

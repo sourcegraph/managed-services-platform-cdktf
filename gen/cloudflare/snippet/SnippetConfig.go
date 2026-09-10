@@ -21,19 +21,19 @@ type SnippetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The list of files belonging to the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#files Snippet#files}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet#files Snippet#files}
 	Files interface{} `field:"required" json:"files" yaml:"files"`
-	// Metadata about the snippet.
+	// Provide metadata about the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#metadata Snippet#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet#metadata Snippet#metadata}
 	Metadata *SnippetMetadata `field:"required" json:"metadata" yaml:"metadata"`
-	// The identifying name of the snippet.
+	// Identify the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
 	SnippetName *string `field:"required" json:"snippetName" yaml:"snippetName"`
-	// The unique ID of the zone.
+	// Use this field to specify the unique ID of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#zone_id Snippet#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet#zone_id Snippet#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

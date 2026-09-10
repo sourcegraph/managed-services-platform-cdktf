@@ -19,21 +19,21 @@ type R2ManagedDomainConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Account ID.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 	// Whether to enable public bucket access at the r2.dev domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	// Account ID.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Jurisdiction of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
 	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
 }
 

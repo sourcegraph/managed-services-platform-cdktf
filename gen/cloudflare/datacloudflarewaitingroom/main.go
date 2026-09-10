@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queueingStatusCode", GoGetter: "QueueingStatusCode"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "suspended", GoGetter: "Suspended"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

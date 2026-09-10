@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrusttunnelcloudflaredvirtualnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
 type ZeroTrustTunnelCloudflaredVirtualNetwork interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -119,6 +119,7 @@ type ZeroTrustTunnelCloudflaredVirtualNetwork interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetComment()
 	ResetIsDefault()
 	ResetIsDefaultNetwork()
@@ -434,7 +435,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredVirtualNetwork) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
 func NewZeroTrustTunnelCloudflaredVirtualNetwork(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredVirtualNetworkConfig) ZeroTrustTunnelCloudflaredVirtualNetwork {
 	_init_.Initialize()
 
@@ -452,7 +453,7 @@ func NewZeroTrustTunnelCloudflaredVirtualNetwork(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
 func NewZeroTrustTunnelCloudflaredVirtualNetwork_Override(z ZeroTrustTunnelCloudflaredVirtualNetwork, scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredVirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -936,6 +937,14 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredVirtualNetwork) OverrideLogicalId(n
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredVirtualNetwork) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

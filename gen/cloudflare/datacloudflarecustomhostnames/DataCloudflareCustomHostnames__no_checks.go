@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareCustomHostnames) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomHostnames) validatePutHostnameParameters(value *DataCloudflareCustomHostnamesHostname) error {
+	return nil
+}
+
 func validateDataCloudflareCustomHostnames_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -68,7 +72,15 @@ func validateDataCloudflareCustomHostnames_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetCertificateAuthorityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetCustomOriginServerParameters(val *string) error {
 	return nil
 }
 
@@ -76,7 +88,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetDirectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetHostnameParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetHostnameStatusParameters(val *string) error {
 	return nil
 }
 
@@ -97,6 +109,14 @@ func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetOrderParameters(val
 }
 
 func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetSslParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetSslStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnames) validateSetWildcardParameters(val interface{}) error {
 	return nil
 }
 

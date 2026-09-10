@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/ruleset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset cloudflare_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ruleset cloudflare_ruleset}.
 type Ruleset interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_Ruleset) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) Ruleset {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset_Override(r Ruleset, scope constructs.Construct, id *string, config *RulesetConfig) {
 	_init_.Initialize()
 

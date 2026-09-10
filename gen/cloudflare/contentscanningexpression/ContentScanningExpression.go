@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/contentscanningexpression/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 type ContentScanningExpression interface {
 	cdktf.TerraformResource
 	Body() ContentScanningExpressionBodyList
@@ -111,6 +111,7 @@ type ContentScanningExpression interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -340,7 +341,7 @@ func (j *jsiiProxy_ContentScanningExpression) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression(scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) ContentScanningExpression {
 	_init_.Initialize()
 
@@ -358,7 +359,7 @@ func NewContentScanningExpression(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression_Override(c ContentScanningExpression, scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) {
 	_init_.Initialize()
 
@@ -816,6 +817,14 @@ func (c *jsiiProxy_ContentScanningExpression) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContentScanningExpression) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -21,31 +21,35 @@ type StreamLiveInputConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Sets the creator ID asssociated with this live input.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
 	DefaultCreator *string `field:"optional" json:"defaultCreator" yaml:"defaultCreator"`
 	// Indicates the number of days after which the live inputs recordings will be deleted.
 	//
 	// When a stream completes and the recording is ready, the value is used to calculate a scheduled deletion date for that recording. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
 	DeleteRecordingAfterDays *float64 `field:"optional" json:"deleteRecordingAfterDays" yaml:"deleteRecordingAfterDays"`
+	// Indicates whether the live input is enabled and can accept streams.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// A unique identifier for a live input.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
 	LiveInputIdentifier *string `field:"optional" json:"liveInputIdentifier" yaml:"liveInputIdentifier"`
 	// A user modifiable key-value store used to reference other systems of record for managing live inputs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
 	Meta *string `field:"optional" json:"meta" yaml:"meta"`
 	// Records the input to a Cloudflare Stream video.
 	//
 	// Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
 	Recording *StreamLiveInputRecording `field:"optional" json:"recording" yaml:"recording"`
 }
 

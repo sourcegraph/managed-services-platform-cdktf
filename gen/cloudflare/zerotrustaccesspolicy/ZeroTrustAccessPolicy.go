@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccesspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type ZeroTrustAccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -26,6 +26,8 @@ type ZeroTrustAccessPolicy interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference
+	ConnectionRulesInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -59,6 +61,8 @@ type ZeroTrustAccessPolicy interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MfaConfig() ZeroTrustAccessPolicyMfaConfigOutputReference
+	MfaConfigInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -135,14 +139,19 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalGroups(value interface{})
+	PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules)
 	PutExclude(value interface{})
 	PutInclude(value interface{})
+	PutMfaConfig(value *ZeroTrustAccessPolicyMfaConfig)
 	PutRequire(value interface{})
+	ResetAccountId()
 	ResetApprovalGroups()
 	ResetApprovalRequired()
+	ResetConnectionRules()
 	ResetExclude()
 	ResetInclude()
 	ResetIsolationRequired()
+	ResetMfaConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -243,6 +252,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference {
+	var returns ZeroTrustAccessPolicyConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionRulesInput",
 		&returns,
 	)
 	return returns
@@ -403,6 +432,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Lifecycle() *cdktf.TerraformResourceLi
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) MfaConfig() ZeroTrustAccessPolicyMfaConfigOutputReference {
+	var returns ZeroTrustAccessPolicyMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) MfaConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigInput",
 		&returns,
 	)
 	return returns
@@ -579,7 +628,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -597,7 +646,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -1128,6 +1177,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroups(value interface{}) {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules) {
+	if err := z.validatePutConnectionRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putConnectionRules",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) PutExclude(value interface{}) {
 	if err := z.validatePutExcludeParameters(value); err != nil {
 		panic(err)
@@ -1150,6 +1210,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutInclude(value interface{}) {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutMfaConfig(value *ZeroTrustAccessPolicyMfaConfig) {
+	if err := z.validatePutMfaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMfaConfig",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) PutRequire(value interface{}) {
 	if err := z.validatePutRequireParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1229,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutRequire(value interface{}) {
 		z,
 		"putRequire",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 
@@ -1173,6 +1252,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApprovalRequired() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetApprovalRequired",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetConnectionRules() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetConnectionRules",
 		nil, // no parameters
 	)
 }
@@ -1197,6 +1284,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetIsolationRequired() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetIsolationRequired",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetMfaConfig() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaConfig",
 		nil, // no parameters
 	)
 }

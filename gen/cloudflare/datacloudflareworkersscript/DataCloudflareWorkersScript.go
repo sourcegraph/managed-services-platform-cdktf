@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkersscript/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_script cloudflare_workers_script}.
 type DataCloudflareWorkersScript interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -86,6 +86,7 @@ type DataCloudflareWorkersScript interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareWorkersScriptFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -331,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareWorkersScript) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
 func NewDataCloudflareWorkersScript(scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptConfig) DataCloudflareWorkersScript {
 	_init_.Initialize()
 
@@ -349,7 +350,7 @@ func NewDataCloudflareWorkersScript(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_script cloudflare_workers_script} Data Source.
 func NewDataCloudflareWorkersScript_Override(d DataCloudflareWorkersScript, scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -721,6 +722,14 @@ func (d *jsiiProxy_DataCloudflareWorkersScript) PutFilter(value *DataCloudflareW
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersScript) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

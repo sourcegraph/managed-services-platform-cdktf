@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecertificatepacks/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
 type DataCloudflareCertificatePacks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,9 @@ type DataCloudflareCertificatePacks interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deploy() *string
+	SetDeploy(val *string)
+	DeployInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,11 +88,13 @@ type DataCloudflareCertificatePacks interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDeploy()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -144,6 +149,26 @@ func (j *jsiiProxy_DataCloudflareCertificatePacks) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacks) Deploy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacks) DeployInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployInput",
 		&returns,
 	)
 	return returns
@@ -320,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareCertificatePacks) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs cloudflare_certificate_packs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/certificate_packs cloudflare_certificate_packs} Data Source.
 func NewDataCloudflareCertificatePacks(scope constructs.Construct, id *string, config *DataCloudflareCertificatePacksConfig) DataCloudflareCertificatePacks {
 	_init_.Initialize()
 
@@ -338,7 +363,7 @@ func NewDataCloudflareCertificatePacks(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs cloudflare_certificate_packs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/certificate_packs cloudflare_certificate_packs} Data Source.
 func NewDataCloudflareCertificatePacks_Override(d DataCloudflareCertificatePacks, scope constructs.Construct, id *string, config *DataCloudflareCertificatePacksConfig) {
 	_init_.Initialize()
 
@@ -364,6 +389,17 @@ func (j *jsiiProxy_DataCloudflareCertificatePacks)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacks)SetDeploy(val *string) {
+	if err := j.validateSetDeployParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploy",
 		val,
 	)
 }
@@ -713,6 +749,14 @@ func (d *jsiiProxy_DataCloudflareCertificatePacks) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareCertificatePacks) ResetDeploy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeploy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareCertificatePacks) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -733,6 +777,14 @@ func (d *jsiiProxy_DataCloudflareCertificatePacks) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCertificatePacks) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

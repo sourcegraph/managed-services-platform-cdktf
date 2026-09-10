@@ -61,6 +61,7 @@ type DataCloudflareZeroTrustAccessPolicyExcludeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserRiskScore() DataCloudflareZeroTrustAccessPolicyExcludeUserRiskScoreOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -405,6 +406,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyExcludeOutputReference) Te
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyExcludeOutputReference) UserRiskScore() DataCloudflareZeroTrustAccessPolicyExcludeUserRiskScoreOutputReference {
+	var returns DataCloudflareZeroTrustAccessPolicyExcludeUserRiskScoreOutputReference
+	_jsii_.Get(
+		j,
+		"userRiskScore",
 		&returns,
 	)
 	return returns

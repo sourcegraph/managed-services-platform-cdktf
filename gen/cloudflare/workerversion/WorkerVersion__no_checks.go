@@ -84,6 +84,10 @@ func (w *jsiiProxy_WorkerVersion) validatePutBindingsParameters(value interface{
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersion) validatePutContainersParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersion) validatePutLimitsParameters(value *WorkerVersionLimits) error {
 	return nil
 }

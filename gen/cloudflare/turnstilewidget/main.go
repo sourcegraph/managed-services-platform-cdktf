@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBotFightMode", GoMethod: "ResetBotFightMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClearanceLevel", GoMethod: "ResetClearanceLevel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralId", GoMethod: "ResetEphemeralId"},

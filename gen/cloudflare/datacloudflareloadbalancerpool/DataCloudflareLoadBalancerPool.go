@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareloadbalancerpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool}.
 type DataCloudflareLoadBalancerPool interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -103,6 +103,7 @@ type DataCloudflareLoadBalancerPool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareLoadBalancerPoolFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -518,7 +519,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source.
 func NewDataCloudflareLoadBalancerPool(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolConfig) DataCloudflareLoadBalancerPool {
 	_init_.Initialize()
 
@@ -536,7 +537,7 @@ func NewDataCloudflareLoadBalancerPool(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source.
 func NewDataCloudflareLoadBalancerPool_Override(d DataCloudflareLoadBalancerPool, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolConfig) {
 	_init_.Initialize()
 
@@ -908,6 +909,14 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) PutFilter(value *DataCloudfla
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

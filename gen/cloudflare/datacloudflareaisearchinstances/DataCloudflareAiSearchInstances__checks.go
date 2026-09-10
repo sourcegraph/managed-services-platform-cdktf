@@ -232,6 +232,30 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetMaxItemsParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetNamespaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetOrderByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetOrderByDirectionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetSearchParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -249,9 +273,6 @@ func validateNewDataCloudflareAiSearchInstancesParameters(scope constructs.Const
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

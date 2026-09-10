@@ -19,17 +19,17 @@ type LeakedCredentialCheckRuleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Defines an identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Defines ehe ruleset expression to use in matching the password in a request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// Defines the ruleset expression to use in matching the username in a request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
+	// Defines an identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

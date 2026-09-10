@@ -31,6 +31,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Content() *string
+	ContentConverter() cdktf.IResolvable
 	ContentType() *string
 	CookieFields() DataCloudflareRulesetRulesActionParametersCookieFieldsList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -43,6 +44,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	DisableZaraz() cdktf.IResolvable
 	EdgeTtl() DataCloudflareRulesetRulesActionParametersEdgeTtlOutputReference
 	EmailObfuscation() cdktf.IResolvable
+	Expression() *string
 	Fonts() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -52,11 +54,19 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	HostHeader() *string
 	HotlinkProtection() cdktf.IResolvable
 	Id() *string
+	Immutable() DataCloudflareRulesetRulesActionParametersImmutableOutputReference
 	Increment() *float64
 	InternalValue() *DataCloudflareRulesetRulesActionParameters
 	SetInternalValue(val *DataCloudflareRulesetRulesActionParameters)
 	MatchedData() DataCloudflareRulesetRulesActionParametersMatchedDataOutputReference
+	MaxAge() DataCloudflareRulesetRulesActionParametersMaxAgeOutputReference
 	Mirage() cdktf.IResolvable
+	MustRevalidate() DataCloudflareRulesetRulesActionParametersMustRevalidateOutputReference
+	MustUnderstand() DataCloudflareRulesetRulesActionParametersMustUnderstandOutputReference
+	NoCache() DataCloudflareRulesetRulesActionParametersNoCacheOutputReference
+	NoStore() DataCloudflareRulesetRulesActionParametersNoStoreOutputReference
+	NoTransform() DataCloudflareRulesetRulesActionParametersNoTransformOutputReference
+	Operation() *string
 	OpportunisticEncryption() cdktf.IResolvable
 	Origin() DataCloudflareRulesetRulesActionParametersOriginOutputReference
 	OriginCacheControl() cdktf.IResolvable
@@ -64,9 +74,13 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	Overrides() DataCloudflareRulesetRulesActionParametersOverridesOutputReference
 	Phases() *[]*string
 	Polish() *string
+	Private() DataCloudflareRulesetRulesActionParametersPrivateOutputReference
 	Products() *[]*string
+	ProxyRevalidate() DataCloudflareRulesetRulesActionParametersProxyRevalidateOutputReference
+	Public() DataCloudflareRulesetRulesActionParametersPublicOutputReference
 	RawResponseFields() DataCloudflareRulesetRulesActionParametersRawResponseFieldsList
 	ReadTimeout() *float64
+	RedirectsForAiTraining() cdktf.IResolvable
 	RequestBodyBuffering() *string
 	RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList
 	RespectStrongEtags() cdktf.IResolvable
@@ -80,9 +94,15 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	SecurityLevel() *string
 	ServerSideExcludes() cdktf.IResolvable
 	ServeStale() DataCloudflareRulesetRulesActionParametersServeStaleOutputReference
+	SMaxage() DataCloudflareRulesetRulesActionParametersSMaxageOutputReference
 	Sni() DataCloudflareRulesetRulesActionParametersSniOutputReference
 	Ssl() *string
+	StaleIfError() DataCloudflareRulesetRulesActionParametersStaleIfErrorOutputReference
+	StaleWhileRevalidate() DataCloudflareRulesetRulesActionParametersStaleWhileRevalidateOutputReference
 	StatusCode() *float64
+	StripEtags() cdktf.IResolvable
+	StripLastModified() cdktf.IResolvable
+	StripSetCookie() cdktf.IResolvable
 	Sxg() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -94,6 +114,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TransformedRequestFields() DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList
 	Uri() DataCloudflareRulesetRulesActionParametersUriOutputReference
+	Values() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -263,6 +284,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Co
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ContentConverter() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"contentConverter",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ContentType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -338,6 +369,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Em
 	_jsii_.Get(
 		j,
 		"emailObfuscation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
 		&returns,
 	)
 	return returns
@@ -423,6 +464,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Id
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Immutable() DataCloudflareRulesetRulesActionParametersImmutableOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersImmutableOutputReference
+	_jsii_.Get(
+		j,
+		"immutable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Increment() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -453,11 +504,81 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ma
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) MaxAge() DataCloudflareRulesetRulesActionParametersMaxAgeOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersMaxAgeOutputReference
+	_jsii_.Get(
+		j,
+		"maxAge",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Mirage() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"mirage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) MustRevalidate() DataCloudflareRulesetRulesActionParametersMustRevalidateOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersMustRevalidateOutputReference
+	_jsii_.Get(
+		j,
+		"mustRevalidate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) MustUnderstand() DataCloudflareRulesetRulesActionParametersMustUnderstandOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersMustUnderstandOutputReference
+	_jsii_.Get(
+		j,
+		"mustUnderstand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) NoCache() DataCloudflareRulesetRulesActionParametersNoCacheOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersNoCacheOutputReference
+	_jsii_.Get(
+		j,
+		"noCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) NoStore() DataCloudflareRulesetRulesActionParametersNoStoreOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersNoStoreOutputReference
+	_jsii_.Get(
+		j,
+		"noStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) NoTransform() DataCloudflareRulesetRulesActionParametersNoTransformOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersNoTransformOutputReference
+	_jsii_.Get(
+		j,
+		"noTransform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Operation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operation",
 		&returns,
 	)
 	return returns
@@ -533,11 +654,41 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Po
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Private() DataCloudflareRulesetRulesActionParametersPrivateOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersPrivateOutputReference
+	_jsii_.Get(
+		j,
+		"private",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Products() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"products",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ProxyRevalidate() DataCloudflareRulesetRulesActionParametersProxyRevalidateOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersProxyRevalidateOutputReference
+	_jsii_.Get(
+		j,
+		"proxyRevalidate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Public() DataCloudflareRulesetRulesActionParametersPublicOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersPublicOutputReference
+	_jsii_.Get(
+		j,
+		"public",
 		&returns,
 	)
 	return returns
@@ -558,6 +709,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	_jsii_.Get(
 		j,
 		"readTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RedirectsForAiTraining() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"redirectsForAiTraining",
 		&returns,
 	)
 	return returns
@@ -693,6 +854,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Se
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) SMaxage() DataCloudflareRulesetRulesActionParametersSMaxageOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersSMaxageOutputReference
+	_jsii_.Get(
+		j,
+		"sMaxage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Sni() DataCloudflareRulesetRulesActionParametersSniOutputReference {
 	var returns DataCloudflareRulesetRulesActionParametersSniOutputReference
 	_jsii_.Get(
@@ -713,11 +884,61 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ss
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) StaleIfError() DataCloudflareRulesetRulesActionParametersStaleIfErrorOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersStaleIfErrorOutputReference
+	_jsii_.Get(
+		j,
+		"staleIfError",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) StaleWhileRevalidate() DataCloudflareRulesetRulesActionParametersStaleWhileRevalidateOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersStaleWhileRevalidateOutputReference
+	_jsii_.Get(
+		j,
+		"staleWhileRevalidate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) StatusCode() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"statusCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) StripEtags() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"stripEtags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) StripLastModified() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"stripLastModified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) StripSetCookie() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"stripSetCookie",
 		&returns,
 	)
 	return returns
@@ -768,6 +989,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ur
 	_jsii_.Get(
 		j,
 		"uri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Values() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"values",
 		&returns,
 	)
 	return returns

@@ -68,6 +68,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledPar
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetFlattenCnameParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

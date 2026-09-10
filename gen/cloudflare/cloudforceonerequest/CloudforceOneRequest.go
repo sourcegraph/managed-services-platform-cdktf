@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/cloudforceonerequest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type CloudforceOneRequest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -128,6 +128,7 @@ type CloudforceOneRequest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetContent()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -525,7 +526,7 @@ func (j *jsiiProxy_CloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) CloudforceOneRequest {
 	_init_.Initialize()
 
@@ -543,7 +544,7 @@ func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest_Override(c CloudforceOneRequest, scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1039,14 @@ func (c *jsiiProxy_CloudforceOneRequest) OverrideLogicalId(newLogicalId *string)
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudforceOneRequest) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

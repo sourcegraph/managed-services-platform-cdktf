@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpConfig", GoMethod: "ResetTcpConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "retries", GoGetter: "Retries"},
 			_jsii_.MemberProperty{JsiiProperty: "retriesInput", GoGetter: "RetriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},

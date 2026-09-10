@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccessaicontrolsmcpportal/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type DataCloudflareZeroTrustAccessAiControlsMcpPortal interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowCodeMode() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -93,6 +94,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortal interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareZeroTrustAccessAiControlsMcpPortalFilter)
+	ResetAccountId()
 	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -132,6 +134,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) AccountIdIn
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) AllowCodeMode() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowCodeMode",
 		&returns,
 	)
 	return returns
@@ -408,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpPortalConfig) DataCloudflareZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -426,7 +438,7 @@ func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal_Override(d DataCloudflareZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 
@@ -798,6 +810,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) PutFilter(v
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

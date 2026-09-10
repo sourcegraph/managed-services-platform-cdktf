@@ -84,6 +84,14 @@ func (j *jsiiProxy_DataCloudflareWorkers) validateSetMaxItemsParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareWorkers) validateSetOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareWorkers) validateSetOrderByParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareWorkersParameters(scope constructs.Construct, id *string, config *DataCloudflareWorkersConfig) error {
 	return nil
 }

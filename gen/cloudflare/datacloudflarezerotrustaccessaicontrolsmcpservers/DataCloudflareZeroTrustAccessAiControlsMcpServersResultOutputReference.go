@@ -52,6 +52,8 @@ type DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference inte
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Tools() cdktf.StringMapList
+	UpdatedPrompts() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedPromptsList
+	UpdatedTools() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedToolsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -306,6 +308,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutput
 	_jsii_.Get(
 		j,
 		"tools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference) UpdatedPrompts() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedPromptsList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedPromptsList
+	_jsii_.Get(
+		j,
+		"updatedPrompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference) UpdatedTools() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedToolsList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedToolsList
+	_jsii_.Get(
+		j,
+		"updatedTools",
 		&returns,
 	)
 	return returns

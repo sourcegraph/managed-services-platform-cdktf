@@ -21,15 +21,15 @@ type DataCloudflareConnectivityDirectoryServicesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_services#account_id DataCloudflareConnectivityDirectoryServices#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/connectivity_directory_services#account_id DataCloudflareConnectivityDirectoryServices#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_services#max_items DataCloudflareConnectivityDirectoryServices#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/connectivity_directory_services#max_items DataCloudflareConnectivityDirectoryServices#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
-	// Available values: "http".
+	// Available values: "tcp", "http".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_services#type DataCloudflareConnectivityDirectoryServices#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/connectivity_directory_services#type DataCloudflareConnectivityDirectoryServices#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

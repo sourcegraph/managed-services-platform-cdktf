@@ -32,7 +32,9 @@ type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareMagicTransitConnectorsResult
 	SetInternalValue(val *DataCloudflareMagicTransitConnectorsResult)
+	InterruptWindowDaysOfWeek() *[]*string
 	InterruptWindowDurationHours() *float64
+	InterruptWindowEmbargoDates() *[]*string
 	InterruptWindowHourOfDay() *float64
 	LastHeartbeat() *string
 	LastSeenVersion() *string
@@ -167,11 +169,31 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) In
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterruptWindowDaysOfWeek() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"interruptWindowDaysOfWeek",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterruptWindowDurationHours() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"interruptWindowDurationHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterruptWindowEmbargoDates() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"interruptWindowEmbargoDates",
 		&returns,
 	)
 	return returns

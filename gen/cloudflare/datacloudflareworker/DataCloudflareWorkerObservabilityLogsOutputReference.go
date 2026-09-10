@@ -25,6 +25,7 @@ type DataCloudflareWorkerObservabilityLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() *[]*string
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -32,6 +33,7 @@ type DataCloudflareWorkerObservabilityLogsOutputReference interface {
 	InternalValue() *DataCloudflareWorkerObservabilityLogs
 	SetInternalValue(val *DataCloudflareWorkerObservabilityLogs)
 	InvocationLogs() cdktf.IResolvable
+	Persist() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,6 +111,16 @@ func (j *jsiiProxy_DataCloudflareWorkerObservabilityLogsOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerObservabilityLogsOutputReference) Destinations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerObservabilityLogsOutputReference) Enabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -154,6 +166,16 @@ func (j *jsiiProxy_DataCloudflareWorkerObservabilityLogsOutputReference) Invocat
 	_jsii_.Get(
 		j,
 		"invocationLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerObservabilityLogsOutputReference) Persist() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"persist",
 		&returns,
 	)
 	return returns

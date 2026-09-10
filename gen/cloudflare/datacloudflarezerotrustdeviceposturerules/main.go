@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxItems", GoMethod: "ResetMaxItems"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
@@ -112,6 +113,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeThreats", GoGetter: "ActiveThreats"},
+			_jsii_.MemberProperty{JsiiProperty: "authState", GoGetter: "AuthState"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkDisks", GoGetter: "CheckDisks"},
 			_jsii_.MemberProperty{JsiiProperty: "checkPrivateKey", GoGetter: "CheckPrivateKey"},

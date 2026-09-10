@@ -4,7 +4,7 @@ package accounttoken
 type AccountTokenCondition struct {
 	// Client IP restrictions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#request_ip AccountToken#request_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_token#request_ip AccountToken#request_ip}
 	RequestIp *AccountTokenConditionRequestIp `field:"optional" json:"requestIp" yaml:"requestIp"`
 }
 

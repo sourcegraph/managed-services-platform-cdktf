@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareWorker) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareWorker) validatePutFilterParameters(value *DataCloudflareWorkerFilter) error {
+	return nil
+}
+
 func validateDataCloudflareWorker_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

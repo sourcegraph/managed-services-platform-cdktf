@@ -19,21 +19,21 @@ type DataCloudflareSpectrumApplicationsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Zone identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Sets the direction by which results are ordered. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
+	// Zone identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

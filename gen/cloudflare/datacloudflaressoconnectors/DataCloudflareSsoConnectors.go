@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaressoconnectors/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/sso_connectors cloudflare_sso_connectors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors cloudflare_sso_connectors}.
 type DataCloudflareSsoConnectors interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareSsoConnectors interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareSsoConnectors) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
 func NewDataCloudflareSsoConnectors(scope constructs.Construct, id *string, config *DataCloudflareSsoConnectorsConfig) DataCloudflareSsoConnectors {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareSsoConnectors(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
 func NewDataCloudflareSsoConnectors_Override(d DataCloudflareSsoConnectors, scope constructs.Construct, id *string, config *DataCloudflareSsoConnectorsConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareSsoConnectors) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSsoConnectors) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

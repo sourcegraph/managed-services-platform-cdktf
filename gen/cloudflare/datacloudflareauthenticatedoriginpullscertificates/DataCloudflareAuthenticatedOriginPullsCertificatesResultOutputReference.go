@@ -26,7 +26,6 @@ type DataCloudflareAuthenticatedOriginPullsCertificatesResultOutputReference int
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
 	ExpiresOn() *string
 	// Experimental.
 	Fqn() *string
@@ -34,7 +33,7 @@ type DataCloudflareAuthenticatedOriginPullsCertificatesResultOutputReference int
 	InternalValue() *DataCloudflareAuthenticatedOriginPullsCertificatesResult
 	SetInternalValue(val *DataCloudflareAuthenticatedOriginPullsCertificatesResult)
 	Issuer() *string
-	PrivateKey() *string
+	SerialNumber() *string
 	Signature() *string
 	Status() *string
 	// Experimental.
@@ -125,16 +124,6 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificatesResultOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificatesResultOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificatesResultOutputReference) ExpiresOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -185,11 +174,11 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificatesResultOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificatesResultOutputReference) PrivateKey() *string {
+func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificatesResultOutputReference) SerialNumber() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"privateKey",
+		"serialNumber",
 		&returns,
 	)
 	return returns

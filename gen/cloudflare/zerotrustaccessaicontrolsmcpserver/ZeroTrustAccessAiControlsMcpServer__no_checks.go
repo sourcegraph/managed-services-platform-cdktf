@@ -72,6 +72,14 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateOverrideLogicalId
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedPromptsParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedToolsParameters(value interface{}) error {
+	return nil
+}
+
 func validateZeroTrustAccessAiControlsMcpServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

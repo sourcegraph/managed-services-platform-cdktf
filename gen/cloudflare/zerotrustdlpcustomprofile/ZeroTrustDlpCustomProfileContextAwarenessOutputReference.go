@@ -67,6 +67,8 @@ type ZeroTrustDlpCustomProfileContextAwarenessOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSkip(value *ZeroTrustDlpCustomProfileContextAwarenessSkip)
+	ResetEnabled()
+	ResetSkip()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -480,6 +482,22 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) Put
 		z,
 		"putSkip",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) ResetSkip() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSkip",
+		nil, // no parameters
 	)
 }
 

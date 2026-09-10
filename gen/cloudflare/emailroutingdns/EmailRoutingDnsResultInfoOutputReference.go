@@ -41,6 +41,7 @@ type EmailRoutingDnsResultInfoOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TotalCount() *float64
+	TotalPages() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -185,6 +186,16 @@ func (j *jsiiProxy_EmailRoutingDnsResultInfoOutputReference) TotalCount() *float
 	_jsii_.Get(
 		j,
 		"totalCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingDnsResultInfoOutputReference) TotalPages() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalPages",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareuniversalsslsetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting}.
 type DataCloudflareUniversalSslSetting interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -83,6 +83,7 @@ type DataCloudflareUniversalSslSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -283,7 +284,7 @@ func (j *jsiiProxy_DataCloudflareUniversalSslSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
 func NewDataCloudflareUniversalSslSetting(scope constructs.Construct, id *string, config *DataCloudflareUniversalSslSettingConfig) DataCloudflareUniversalSslSetting {
 	_init_.Initialize()
 
@@ -301,7 +302,7 @@ func NewDataCloudflareUniversalSslSetting(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
 func NewDataCloudflareUniversalSslSetting_Override(d DataCloudflareUniversalSslSetting, scope constructs.Construct, id *string, config *DataCloudflareUniversalSslSettingConfig) {
 	_init_.Initialize()
 
@@ -658,6 +659,14 @@ func (d *jsiiProxy_DataCloudflareUniversalSslSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareUniversalSslSetting) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

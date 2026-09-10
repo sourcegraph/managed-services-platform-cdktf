@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaremagictransitsite/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site}.
 type DataCloudflareMagicTransitSite interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -91,6 +91,7 @@ type DataCloudflareMagicTransitSite interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareMagicTransitSiteFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -386,7 +387,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSite) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site} Data Source.
 func NewDataCloudflareMagicTransitSite(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteConfig) DataCloudflareMagicTransitSite {
 	_init_.Initialize()
 
@@ -404,7 +405,7 @@ func NewDataCloudflareMagicTransitSite(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site} Data Source.
 func NewDataCloudflareMagicTransitSite_Override(d DataCloudflareMagicTransitSite, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteConfig) {
 	_init_.Initialize()
 
@@ -776,6 +777,14 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSite) PutFilter(value *DataCloudfla
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareMagicTransitSite) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workerscrontrigger/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 type WorkersCronTrigger interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -111,6 +111,7 @@ type WorkersCronTrigger interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSchedules(value interface{})
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -363,7 +364,7 @@ func (j *jsiiProxy_WorkersCronTrigger) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
 func NewWorkersCronTrigger(scope constructs.Construct, id *string, config *WorkersCronTriggerConfig) WorkersCronTrigger {
 	_init_.Initialize()
 
@@ -381,7 +382,7 @@ func NewWorkersCronTrigger(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
 func NewWorkersCronTrigger_Override(w WorkersCronTrigger, scope constructs.Construct, id *string, config *WorkersCronTriggerConfig) {
 	_init_.Initialize()
 
@@ -843,6 +844,14 @@ func (w *jsiiProxy_WorkersCronTrigger) PutSchedules(value interface{}) {
 		w,
 		"putSchedules",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkersCronTrigger) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

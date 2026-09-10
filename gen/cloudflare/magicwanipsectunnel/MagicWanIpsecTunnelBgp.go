@@ -4,11 +4,11 @@ package magicwanipsectunnel
 type MagicWanIpsecTunnelBgp struct {
 	// ASN used on the customer end of the BGP session.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel#customer_asn MagicWanIpsecTunnel#customer_asn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_wan_ipsec_tunnel#customer_asn MagicWanIpsecTunnel#customer_asn}
 	CustomerAsn *float64 `field:"required" json:"customerAsn" yaml:"customerAsn"`
 	// Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel#extra_prefixes MagicWanIpsecTunnel#extra_prefixes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_wan_ipsec_tunnel#extra_prefixes MagicWanIpsecTunnel#extra_prefixes}
 	ExtraPrefixes *[]*string `field:"optional" json:"extraPrefixes" yaml:"extraPrefixes"`
 	// MD5 key to use for session authentication.
 	//
@@ -27,7 +27,7 @@ type MagicWanIpsecTunnelBgp struct {
 	// (0x0C), and the question mark (`?`). Requests specifying an MD5 key with one or more of
 	// these disallowed characters will be rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel#md5_key MagicWanIpsecTunnel#md5_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_wan_ipsec_tunnel#md5_key MagicWanIpsecTunnel#md5_key}
 	Md5Key *string `field:"optional" json:"md5Key" yaml:"md5Key"`
 }
 

@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetPolicies", GoMethod: "PutTargetPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDexTestId", GoMethod: "ResetDexTestId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

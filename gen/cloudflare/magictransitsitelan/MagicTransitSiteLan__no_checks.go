@@ -120,6 +120,14 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetHaLinkParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetIsBreakoutParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetIsPrioritizedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteLan) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

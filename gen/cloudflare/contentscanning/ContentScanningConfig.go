@@ -21,11 +21,11 @@ type ContentScanningConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The status value for Content Scanning. Available values: "enabled", "disabled".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning#value ContentScanning#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning#value ContentScanning#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

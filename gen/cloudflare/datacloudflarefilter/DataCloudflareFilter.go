@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarefilter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filter cloudflare_filter}.
 type DataCloudflareFilter interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -94,6 +94,7 @@ type DataCloudflareFilter interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -364,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareFilter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter cloudflare_filter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filter cloudflare_filter} Data Source.
 func NewDataCloudflareFilter(scope constructs.Construct, id *string, config *DataCloudflareFilterConfig) DataCloudflareFilter {
 	_init_.Initialize()
 
@@ -382,7 +383,7 @@ func NewDataCloudflareFilter(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter cloudflare_filter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filter cloudflare_filter} Data Source.
 func NewDataCloudflareFilter_Override(d DataCloudflareFilter, scope constructs.Construct, id *string, config *DataCloudflareFilterConfig) {
 	_init_.Initialize()
 
@@ -777,6 +778,14 @@ func (d *jsiiProxy_DataCloudflareFilter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFilter) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

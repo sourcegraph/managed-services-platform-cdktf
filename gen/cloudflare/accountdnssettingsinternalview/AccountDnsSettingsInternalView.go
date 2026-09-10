@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accountdnssettingsinternalview/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 type AccountDnsSettingsInternalView interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -113,6 +113,7 @@ type AccountDnsSettingsInternalView interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -385,7 +386,7 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
 func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, config *AccountDnsSettingsInternalViewConfig) AccountDnsSettingsInternalView {
 	_init_.Initialize()
 
@@ -403,7 +404,7 @@ func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
 func NewAccountDnsSettingsInternalView_Override(a AccountDnsSettingsInternalView, scope constructs.Construct, id *string, config *AccountDnsSettingsInternalViewConfig) {
 	_init_.Initialize()
 
@@ -865,6 +866,14 @@ func (a *jsiiProxy_AccountDnsSettingsInternalView) OverrideLogicalId(newLogicalI
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AccountDnsSettingsInternalView) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

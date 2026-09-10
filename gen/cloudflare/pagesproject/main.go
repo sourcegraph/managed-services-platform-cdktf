@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDeploymentConfigs", GoMethod: "PutDeploymentConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "putSource", GoMethod: "PutSource"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildConfig", GoMethod: "ResetBuildConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeploymentConfigs", GoMethod: "ResetDeploymentConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

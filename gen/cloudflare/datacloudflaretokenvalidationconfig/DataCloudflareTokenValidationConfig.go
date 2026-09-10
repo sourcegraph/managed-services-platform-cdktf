@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaretokenvalidationconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_config cloudflare_token_validation_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_config cloudflare_token_validation_config}.
 type DataCloudflareTokenValidationConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -92,6 +92,7 @@ type DataCloudflareTokenValidationConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -372,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationConfig) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
 func NewDataCloudflareTokenValidationConfig(scope constructs.Construct, id *string, config *DataCloudflareTokenValidationConfigConfig) DataCloudflareTokenValidationConfig {
 	_init_.Initialize()
 
@@ -390,7 +391,7 @@ func NewDataCloudflareTokenValidationConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
 func NewDataCloudflareTokenValidationConfig_Override(d DataCloudflareTokenValidationConfig, scope constructs.Construct, id *string, config *DataCloudflareTokenValidationConfigConfig) {
 	_init_.Initialize()
 
@@ -758,6 +759,14 @@ func (d *jsiiProxy_DataCloudflareTokenValidationConfig) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareTokenValidationConfig) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

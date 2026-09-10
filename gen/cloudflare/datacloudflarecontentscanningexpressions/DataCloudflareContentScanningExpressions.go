@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecontentscanningexpressions/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
 type DataCloudflareContentScanningExpressions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -86,6 +86,7 @@ type DataCloudflareContentScanningExpressions interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareContentScanningExpressions) ZoneIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
 func NewDataCloudflareContentScanningExpressions(scope constructs.Construct, id *string, config *DataCloudflareContentScanningExpressionsConfig) DataCloudflareContentScanningExpressions {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareContentScanningExpressions(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
 func NewDataCloudflareContentScanningExpressions_Override(d DataCloudflareContentScanningExpressions, scope constructs.Construct, id *string, config *DataCloudflareContentScanningExpressionsConfig) {
 	_init_.Initialize()
 
@@ -690,6 +691,14 @@ func (d *jsiiProxy_DataCloudflareContentScanningExpressions) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareContentScanningExpressions) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -10,6 +10,7 @@ import (
 
 type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference interface {
 	cdktf.ComplexObject
+	AllowCodeMode() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,6 +39,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference inte
 	ModifiedBy() *string
 	Name() *string
 	SecureWebGateway() cdktf.IResolvable
+	Servers() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -83,6 +85,16 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference inte
 // The jsii proxy struct for DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference
 type jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) AllowCodeMode() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowCodeMode",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) ComplexObjectIndex() interface{} {
@@ -220,6 +232,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutput
 	_jsii_.Get(
 		j,
 		"secureWebGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) Servers() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersList
+	_jsii_.Get(
+		j,
+		"servers",
 		&returns,
 	)
 	return returns

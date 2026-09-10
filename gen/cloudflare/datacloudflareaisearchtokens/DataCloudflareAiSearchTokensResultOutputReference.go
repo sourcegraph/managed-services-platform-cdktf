@@ -10,10 +10,7 @@ import (
 
 type DataCloudflareAiSearchTokensResultOutputReference interface {
 	cdktf.ComplexObject
-	AccountId() *string
-	AccountTag() *string
 	CfApiId() *string
-	CfApiKey() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,7 +38,6 @@ type DataCloudflareAiSearchTokensResultOutputReference interface {
 	ModifiedAt() *string
 	ModifiedBy() *string
 	Name() *string
-	SyncedAt() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -89,41 +85,11 @@ type jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference) AccountId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference) CfApiId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"cfApiId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference) CfApiKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cfApiKey",
 		&returns,
 	)
 	return returns
@@ -254,16 +220,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference) Name() *st
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchTokensResultOutputReference) SyncedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syncedAt",
 		&returns,
 	)
 	return returns

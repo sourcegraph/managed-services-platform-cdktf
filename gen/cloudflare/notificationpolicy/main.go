@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilters", GoMethod: "PutFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "putMechanisms", GoMethod: "PutMechanisms"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertInterval", GoMethod: "ResetAlertInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},

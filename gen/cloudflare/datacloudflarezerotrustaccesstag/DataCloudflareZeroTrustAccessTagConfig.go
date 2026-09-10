@@ -19,13 +19,13 @@ type DataCloudflareZeroTrustAccessTagConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
 	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

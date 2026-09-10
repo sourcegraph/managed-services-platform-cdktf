@@ -48,6 +48,10 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutput
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) validateSetAliasParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

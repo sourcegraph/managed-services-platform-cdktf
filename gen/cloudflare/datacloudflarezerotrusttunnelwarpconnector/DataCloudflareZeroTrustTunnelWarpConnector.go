@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrusttunnelwarpconnector/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
 type DataCloudflareZeroTrustTunnelWarpConnector interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -95,6 +95,7 @@ type DataCloudflareZeroTrustTunnelWarpConnector interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareZeroTrustTunnelWarpConnectorFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -430,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnector) TunType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorConfig) DataCloudflareZeroTrustTunnelWarpConnector {
 	_init_.Initialize()
 
@@ -448,7 +449,7 @@ func NewDataCloudflareZeroTrustTunnelWarpConnector(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnector_Override(d DataCloudflareZeroTrustTunnelWarpConnector, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorConfig) {
 	_init_.Initialize()
 
@@ -820,6 +821,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnector) PutFilter(value *
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnector) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

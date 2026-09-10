@@ -99,6 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSuspended", GoMethod: "ResetSuspended"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTurnstileAction", GoMethod: "ResetTurnstileAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTurnstileMode", GoMethod: "ResetTurnstileMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDurationInput", GoGetter: "SessionDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "suspended", GoGetter: "Suspended"},

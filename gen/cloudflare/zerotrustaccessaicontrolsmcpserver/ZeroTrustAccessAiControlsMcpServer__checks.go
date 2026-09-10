@@ -204,6 +204,68 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateOverrideLogicalId
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedPromptsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ZeroTrustAccessAiControlsMcpServerUpdatedPrompts:
+		value := value.(*[]*ZeroTrustAccessAiControlsMcpServerUpdatedPrompts)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustAccessAiControlsMcpServerUpdatedPrompts:
+		value_ := value.([]*ZeroTrustAccessAiControlsMcpServerUpdatedPrompts)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessAiControlsMcpServerUpdatedPrompts; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedToolsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ZeroTrustAccessAiControlsMcpServerUpdatedTools:
+		value := value.(*[]*ZeroTrustAccessAiControlsMcpServerUpdatedTools)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustAccessAiControlsMcpServerUpdatedTools:
+		value_ := value.([]*ZeroTrustAccessAiControlsMcpServerUpdatedTools)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessAiControlsMcpServerUpdatedTools; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateZeroTrustAccessAiControlsMcpServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

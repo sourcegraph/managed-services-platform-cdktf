@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarepageshieldcookies/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies cloudflare_page_shield_cookies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies cloudflare_page_shield_cookies}.
 type DataCloudflarePageShieldCookies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -98,6 +98,7 @@ type DataCloudflarePageShieldCookies interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -438,7 +439,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookies) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies cloudflare_page_shield_cookies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies cloudflare_page_shield_cookies} Data Source.
 func NewDataCloudflarePageShieldCookies(scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesConfig) DataCloudflarePageShieldCookies {
 	_init_.Initialize()
 
@@ -456,7 +457,7 @@ func NewDataCloudflarePageShieldCookies(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies cloudflare_page_shield_cookies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies cloudflare_page_shield_cookies} Data Source.
 func NewDataCloudflarePageShieldCookies_Override(d DataCloudflarePageShieldCookies, scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesConfig) {
 	_init_.Initialize()
 
@@ -824,6 +825,14 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookies) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflarePageShieldCookies) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

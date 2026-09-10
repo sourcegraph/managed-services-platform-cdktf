@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/managedtransforms/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/managed_transforms cloudflare_managed_transforms}.
 type ManagedTransforms interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_ManagedTransforms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms(scope constructs.Construct, id *string, config *ManagedTransformsConfig) ManagedTransforms {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewManagedTransforms(scope constructs.Construct, id *string, config *Manage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms_Override(m ManagedTransforms, scope constructs.Construct, id *string, config *ManagedTransformsConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/certificatepack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
 type CertificatePack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type CertificatePack interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DcvDelegationRecords() CertificatePackDcvDelegationRecordsList
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,6 +134,7 @@ type CertificatePack interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -236,6 +238,16 @@ func (j *jsiiProxy_CertificatePack) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) DcvDelegationRecords() CertificatePackDcvDelegationRecordsList {
+	var returns CertificatePackDcvDelegationRecordsList
+	_jsii_.Get(
+		j,
+		"dcvDelegationRecords",
 		&returns,
 	)
 	return returns
@@ -512,7 +524,7 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
 
@@ -530,7 +542,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
 	_init_.Initialize()
 
@@ -1059,6 +1071,14 @@ func (c *jsiiProxy_CertificatePack) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

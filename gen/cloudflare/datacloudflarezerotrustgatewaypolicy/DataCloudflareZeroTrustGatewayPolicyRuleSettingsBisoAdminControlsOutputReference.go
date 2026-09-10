@@ -49,6 +49,7 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Upload() *string
 	Version() *string
+	WmId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -273,6 +274,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminCont
 	_jsii_.Get(
 		j,
 		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) WmId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wmId",
 		&returns,
 	)
 	return returns

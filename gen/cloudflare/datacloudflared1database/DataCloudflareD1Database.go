@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflared1database/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database cloudflare_d1_database}.
 type DataCloudflareD1Database interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -43,6 +43,7 @@ type DataCloudflareD1Database interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -92,6 +93,7 @@ type DataCloudflareD1Database interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareD1DatabaseFilter)
+	ResetAccountId()
 	ResetDatabaseId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -276,6 +278,16 @@ func (j *jsiiProxy_DataCloudflareD1Database) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareD1Database) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareD1Database) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -397,7 +409,7 @@ func (j *jsiiProxy_DataCloudflareD1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) DataCloudflareD1Database {
 	_init_.Initialize()
 
@@ -415,7 +427,7 @@ func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database_Override(d DataCloudflareD1Database, scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -787,6 +799,14 @@ func (d *jsiiProxy_DataCloudflareD1Database) PutFilter(value *DataCloudflareD1Da
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareD1Database) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDestination", GoMethod: "PutDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "putSource", GoMethod: "PutSource"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestination", GoMethod: "ResetDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJurisdiction", GoMethod: "ResetJurisdiction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

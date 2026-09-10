@@ -19,13 +19,13 @@ type DataCloudflareRateLimitsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Defines an identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limits#zone_id DataCloudflareRateLimits#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limits#max_items DataCloudflareRateLimits#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limits#max_items DataCloudflareRateLimits#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
+	// Defines an identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limits#zone_id DataCloudflareRateLimits#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

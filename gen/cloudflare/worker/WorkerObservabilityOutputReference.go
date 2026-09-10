@@ -45,6 +45,8 @@ type WorkerObservabilityOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Traces() WorkerObservabilityTracesOutputReference
+	TracesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type WorkerObservabilityOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLogs(value *WorkerObservabilityLogs)
+	PutTraces(value *WorkerObservabilityTraces)
 	ResetEnabled()
 	ResetHeadSamplingRate()
 	ResetLogs()
+	ResetTraces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -213,6 +217,26 @@ func (j *jsiiProxy_WorkerObservabilityOutputReference) TerraformResource() cdktf
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityOutputReference) Traces() WorkerObservabilityTracesOutputReference {
+	var returns WorkerObservabilityTracesOutputReference
+	_jsii_.Get(
+		j,
+		"traces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityOutputReference) TracesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tracesInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) PutLogs(value *WorkerObse
 	)
 }
 
+func (w *jsiiProxy_WorkerObservabilityOutputReference) PutTraces(value *WorkerObservabilityTraces) {
+	if err := w.validatePutTracesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTraces",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		w,
@@ -540,6 +575,14 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetLogs() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetLogs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetTraces() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTraces",
 		nil, // no parameters
 	)
 }

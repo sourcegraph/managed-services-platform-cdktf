@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamaudiotrack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
 type StreamAudioTrack interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Audio() StreamAudioTrackAudioList
 	AudioIdentifier() *string
 	SetAudioIdentifier(val *string)
 	AudioIdentifierInput() *string
@@ -118,6 +119,7 @@ type StreamAudioTrack interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetAudioIdentifier()
 	ResetDefault()
 	ResetLabel()
@@ -157,6 +159,16 @@ func (j *jsiiProxy_StreamAudioTrack) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAudioTrack) Audio() StreamAudioTrackAudioList {
+	var returns StreamAudioTrackAudioList
+	_jsii_.Get(
+		j,
+		"audio",
 		&returns,
 	)
 	return returns
@@ -423,7 +435,7 @@ func (j *jsiiProxy_StreamAudioTrack) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
 func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamAudioTrackConfig) StreamAudioTrack {
 	_init_.Initialize()
 
@@ -441,7 +453,7 @@ func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
 func NewStreamAudioTrack_Override(s StreamAudioTrack, scope constructs.Construct, id *string, config *StreamAudioTrackConfig) {
 	_init_.Initialize()
 
@@ -925,6 +937,14 @@ func (s *jsiiProxy_StreamAudioTrack) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamAudioTrack) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

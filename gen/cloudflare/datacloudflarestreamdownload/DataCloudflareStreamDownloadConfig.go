@@ -19,13 +19,13 @@ type DataCloudflareStreamDownloadConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_download#account_id DataCloudflareStreamDownload#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a media item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_download#identifier DataCloudflareStreamDownload#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_download#identifier DataCloudflareStreamDownload#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_download#account_id DataCloudflareStreamDownload#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

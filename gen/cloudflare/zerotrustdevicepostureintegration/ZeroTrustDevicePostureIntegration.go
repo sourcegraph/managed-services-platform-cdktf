@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdevicepostureintegration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}.
 type ZeroTrustDevicePostureIntegration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -117,6 +117,7 @@ type ZeroTrustDevicePostureIntegration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *ZeroTrustDevicePostureIntegrationConfigA)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -409,7 +410,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
 func NewZeroTrustDevicePostureIntegration(scope constructs.Construct, id *string, config *ZeroTrustDevicePostureIntegrationConfig) ZeroTrustDevicePostureIntegration {
 	_init_.Initialize()
 
@@ -427,7 +428,7 @@ func NewZeroTrustDevicePostureIntegration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
 func NewZeroTrustDevicePostureIntegration_Override(z ZeroTrustDevicePostureIntegration, scope constructs.Construct, id *string, config *ZeroTrustDevicePostureIntegrationConfig) {
 	_init_.Initialize()
 
@@ -911,6 +912,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) PutConfig(value *ZeroTrust
 		z,
 		"putConfig",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

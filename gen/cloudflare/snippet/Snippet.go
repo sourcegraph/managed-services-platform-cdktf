@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/snippet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet cloudflare_snippet}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet cloudflare_snippet}.
 type Snippet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -118,6 +118,7 @@ type Snippet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -397,7 +398,7 @@ func (j *jsiiProxy_Snippet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet cloudflare_snippet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet cloudflare_snippet} Resource.
 func NewSnippet(scope constructs.Construct, id *string, config *SnippetConfig) Snippet {
 	_init_.Initialize()
 
@@ -415,7 +416,7 @@ func NewSnippet(scope constructs.Construct, id *string, config *SnippetConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet cloudflare_snippet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet cloudflare_snippet} Resource.
 func NewSnippet_Override(s Snippet, scope constructs.Construct, id *string, config *SnippetConfig) {
 	_init_.Initialize()
 
@@ -895,6 +896,14 @@ func (s *jsiiProxy_Snippet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snippet) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

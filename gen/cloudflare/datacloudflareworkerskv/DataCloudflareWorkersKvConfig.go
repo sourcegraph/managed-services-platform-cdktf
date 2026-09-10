@@ -19,19 +19,19 @@ type DataCloudflareWorkersKvConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A key's name.
 	//
 	// The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
 	KeyName *string `field:"required" json:"keyName" yaml:"keyName"`
 	// Namespace identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
 	NamespaceId *string `field:"required" json:"namespaceId" yaml:"namespaceId"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

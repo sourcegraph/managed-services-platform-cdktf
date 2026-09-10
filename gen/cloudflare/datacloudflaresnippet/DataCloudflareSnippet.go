@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaresnippet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet cloudflare_snippet}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/snippet cloudflare_snippet}.
 type DataCloudflareSnippet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -86,6 +86,7 @@ type DataCloudflareSnippet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -306,7 +307,7 @@ func (j *jsiiProxy_DataCloudflareSnippet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet cloudflare_snippet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/snippet cloudflare_snippet} Data Source.
 func NewDataCloudflareSnippet(scope constructs.Construct, id *string, config *DataCloudflareSnippetConfig) DataCloudflareSnippet {
 	_init_.Initialize()
 
@@ -324,7 +325,7 @@ func NewDataCloudflareSnippet(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet cloudflare_snippet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/snippet cloudflare_snippet} Data Source.
 func NewDataCloudflareSnippet_Override(d DataCloudflareSnippet, scope constructs.Construct, id *string, config *DataCloudflareSnippetConfig) {
 	_init_.Initialize()
 
@@ -692,6 +693,14 @@ func (d *jsiiProxy_DataCloudflareSnippet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSnippet) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

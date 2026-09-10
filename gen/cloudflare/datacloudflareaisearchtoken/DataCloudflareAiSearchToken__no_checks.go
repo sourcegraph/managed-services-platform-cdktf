@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareAiSearchToken) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAiSearchToken) validatePutFilterParameters(value *DataCloudflareAiSearchTokenFilter) error {
+	return nil
+}
+
 func validateDataCloudflareAiSearchToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

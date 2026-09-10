@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/callsturnapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 type CallsTurnApp interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -114,6 +114,7 @@ type CallsTurnApp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetKeyId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -398,7 +399,7 @@ func (j *jsiiProxy_CallsTurnApp) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAppConfig) CallsTurnApp {
 	_init_.Initialize()
 
@@ -416,7 +417,7 @@ func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp_Override(c CallsTurnApp, scope constructs.Construct, id *string, config *CallsTurnAppConfig) {
 	_init_.Initialize()
 
@@ -878,6 +879,14 @@ func (c *jsiiProxy_CallsTurnApp) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CallsTurnApp) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

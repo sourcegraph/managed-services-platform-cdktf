@@ -21,6 +21,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "approvalRequiredInput", GoGetter: "ApprovalRequiredInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionRules", GoGetter: "ConnectionRules"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionRulesInput", GoGetter: "ConnectionRulesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "decision", GoGetter: "Decision"},
@@ -49,6 +51,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isolationRequired", GoGetter: "IsolationRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "isolationRequiredInput", GoGetter: "IsolationRequiredInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaConfig", GoGetter: "MfaConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaConfigInput", GoGetter: "MfaConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -63,17 +67,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "purposeJustificationRequired", GoGetter: "PurposeJustificationRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "purposeJustificationRequiredInput", GoGetter: "PurposeJustificationRequiredInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putApprovalGroups", GoMethod: "PutApprovalGroups"},
+			_jsii_.MemberMethod{JsiiMethod: "putConnectionRules", GoMethod: "PutConnectionRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putExclude", GoMethod: "PutExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "putInclude", GoMethod: "PutInclude"},
+			_jsii_.MemberMethod{JsiiMethod: "putMfaConfig", GoMethod: "PutMfaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequire", GoMethod: "PutRequire"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "require", GoGetter: "Require"},
 			_jsii_.MemberProperty{JsiiProperty: "requireInput", GoGetter: "RequireInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalGroups", GoMethod: "ResetApprovalGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalRequired", GoMethod: "ResetApprovalRequired"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionRules", GoMethod: "ResetConnectionRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExclude", GoMethod: "ResetExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInclude", GoMethod: "ResetInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsolationRequired", GoMethod: "ResetIsolationRequired"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfig", GoMethod: "ResetMfaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurposeJustificationPrompt", GoMethod: "ResetPurposeJustificationPrompt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurposeJustificationRequired", GoMethod: "ResetPurposeJustificationRequired"},
@@ -166,6 +175,88 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyConfig",
 		reflect.TypeOf((*ZeroTrustAccessPolicyConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyConnectionRules",
+		reflect.TypeOf((*ZeroTrustAccessPolicyConnectionRules)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyConnectionRulesOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyConnectionRulesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putRdp", GoMethod: "PutRdp"},
+			_jsii_.MemberProperty{JsiiProperty: "rdp", GoGetter: "Rdp"},
+			_jsii_.MemberProperty{JsiiProperty: "rdpInput", GoGetter: "RdpInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRdp", GoMethod: "ResetRdp"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyConnectionRulesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyConnectionRulesRdp",
+		reflect.TypeOf((*ZeroTrustAccessPolicyConnectionRulesRdp)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyConnectionRulesRdpOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyConnectionRulesRdpOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedClipboardLocalToRemoteFormats", GoGetter: "AllowedClipboardLocalToRemoteFormats"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedClipboardLocalToRemoteFormatsInput", GoGetter: "AllowedClipboardLocalToRemoteFormatsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedClipboardRemoteToLocalFormats", GoGetter: "AllowedClipboardRemoteToLocalFormats"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedClipboardRemoteToLocalFormatsInput", GoGetter: "AllowedClipboardRemoteToLocalFormatsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedClipboardLocalToRemoteFormats", GoMethod: "ResetAllowedClipboardLocalToRemoteFormats"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedClipboardRemoteToLocalFormats", GoMethod: "ResetAllowedClipboardRemoteToLocalFormats"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyConnectionRulesRdpOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExclude",
@@ -1133,6 +1224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOkta", GoMethod: "PutOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaml", GoMethod: "PutSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceToken", GoMethod: "PutServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "putUserRiskScore", GoMethod: "PutUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnyValidServiceToken", GoMethod: "ResetAnyValidServiceToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthContext", GoMethod: "ResetAuthContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthMethod", GoMethod: "ResetAuthMethod"},
@@ -1157,6 +1249,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOkta", GoMethod: "ResetOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaml", GoMethod: "ResetSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceToken", GoMethod: "ResetServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserRiskScore", GoMethod: "ResetUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saml", GoGetter: "Saml"},
 			_jsii_.MemberProperty{JsiiProperty: "samlInput", GoGetter: "SamlInput"},
@@ -1165,6 +1258,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScore", GoGetter: "UserRiskScore"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScoreInput", GoGetter: "UserRiskScoreInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference{}
@@ -1248,6 +1343,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyExcludeServiceTokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExcludeUserRiskScore",
+		reflect.TypeOf((*ZeroTrustAccessPolicyExcludeUserRiskScore)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExcludeUserRiskScoreOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyExcludeUserRiskScoreOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScore", GoGetter: "UserRiskScore"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScoreInput", GoGetter: "UserRiskScoreInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyExcludeUserRiskScoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -2218,6 +2351,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOkta", GoMethod: "PutOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaml", GoMethod: "PutSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceToken", GoMethod: "PutServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "putUserRiskScore", GoMethod: "PutUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnyValidServiceToken", GoMethod: "ResetAnyValidServiceToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthContext", GoMethod: "ResetAuthContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthMethod", GoMethod: "ResetAuthMethod"},
@@ -2242,6 +2376,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOkta", GoMethod: "ResetOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaml", GoMethod: "ResetSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceToken", GoMethod: "ResetServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserRiskScore", GoMethod: "ResetUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saml", GoGetter: "Saml"},
 			_jsii_.MemberProperty{JsiiProperty: "samlInput", GoGetter: "SamlInput"},
@@ -2250,6 +2385,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScore", GoGetter: "UserRiskScore"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScoreInput", GoGetter: "UserRiskScoreInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference{}
@@ -2333,6 +2470,89 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyIncludeServiceTokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeUserRiskScore",
+		reflect.TypeOf((*ZeroTrustAccessPolicyIncludeUserRiskScore)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeUserRiskScoreOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyIncludeUserRiskScoreOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScore", GoGetter: "UserRiskScore"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScoreInput", GoGetter: "UserRiskScoreInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyIncludeUserRiskScoreOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyMfaConfig",
+		reflect.TypeOf((*ZeroTrustAccessPolicyMfaConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyMfaConfigOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyMfaConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedAuthenticators", GoGetter: "AllowedAuthenticators"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedAuthenticatorsInput", GoGetter: "AllowedAuthenticatorsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaDisabled", GoGetter: "MfaDisabled"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaDisabledInput", GoGetter: "MfaDisabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedAuthenticators", GoMethod: "ResetAllowedAuthenticators"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaDisabled", GoMethod: "ResetMfaDisabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionDurationInput", GoGetter: "SessionDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3303,6 +3523,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOkta", GoMethod: "PutOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaml", GoMethod: "PutSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceToken", GoMethod: "PutServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "putUserRiskScore", GoMethod: "PutUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnyValidServiceToken", GoMethod: "ResetAnyValidServiceToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthContext", GoMethod: "ResetAuthContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthMethod", GoMethod: "ResetAuthMethod"},
@@ -3327,6 +3548,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOkta", GoMethod: "ResetOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaml", GoMethod: "ResetSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceToken", GoMethod: "ResetServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserRiskScore", GoMethod: "ResetUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saml", GoGetter: "Saml"},
 			_jsii_.MemberProperty{JsiiProperty: "samlInput", GoGetter: "SamlInput"},
@@ -3335,6 +3557,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScore", GoGetter: "UserRiskScore"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScoreInput", GoGetter: "UserRiskScoreInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference{}
@@ -3418,6 +3642,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyRequireServiceTokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireUserRiskScore",
+		reflect.TypeOf((*ZeroTrustAccessPolicyRequireUserRiskScore)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScore", GoGetter: "UserRiskScore"},
+			_jsii_.MemberProperty{JsiiProperty: "userRiskScoreInput", GoGetter: "UserRiskScoreInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

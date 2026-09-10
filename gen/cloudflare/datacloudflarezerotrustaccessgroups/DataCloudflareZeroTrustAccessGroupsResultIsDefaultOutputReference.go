@@ -61,6 +61,7 @@ type DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserRiskScore() DataCloudflareZeroTrustAccessGroupsResultIsDefaultUserRiskScoreOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -405,6 +406,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference) UserRiskScore() DataCloudflareZeroTrustAccessGroupsResultIsDefaultUserRiskScoreOutputReference {
+	var returns DataCloudflareZeroTrustAccessGroupsResultIsDefaultUserRiskScoreOutputReference
+	_jsii_.Get(
+		j,
+		"userRiskScore",
 		&returns,
 	)
 	return returns

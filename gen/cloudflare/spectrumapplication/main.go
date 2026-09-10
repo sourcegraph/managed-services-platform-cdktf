@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProxyProtocol", GoMethod: "ResetProxyProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTls", GoMethod: "ResetTls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrafficType", GoMethod: "ResetTrafficType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareemailroutingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
 type DataCloudflareEmailRoutingRule interface {
 	cdktf.TerraformDataSource
 	Actions() DataCloudflareEmailRoutingRuleActionsList
@@ -96,6 +96,7 @@ type DataCloudflareEmailRoutingRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRuleIdentifier()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -386,7 +387,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
 func NewDataCloudflareEmailRoutingRule(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingRuleConfig) DataCloudflareEmailRoutingRule {
 	_init_.Initialize()
 
@@ -404,7 +405,7 @@ func NewDataCloudflareEmailRoutingRule(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
 func NewDataCloudflareEmailRoutingRule_Override(d DataCloudflareEmailRoutingRule, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingRuleConfig) {
 	_init_.Initialize()
 
@@ -799,6 +800,14 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingRule) ResetRuleIdentifier() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRuleIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailRoutingRule) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

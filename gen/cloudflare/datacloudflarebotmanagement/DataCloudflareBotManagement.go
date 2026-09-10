@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarebotmanagement/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/bot_management cloudflare_bot_management}.
 type DataCloudflareBotManagement interface {
 	cdktf.TerraformDataSource
 	AiBotsProtection() *string
@@ -20,6 +20,7 @@ type DataCloudflareBotManagement interface {
 	CfRobotsVariant() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContentBotsProtection() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -98,6 +99,7 @@ type DataCloudflareBotManagement interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -172,6 +174,16 @@ func (j *jsiiProxy_DataCloudflareBotManagement) ConstructNodeMetadata() *map[str
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) ContentBotsProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBotsProtection",
 		&returns,
 	)
 	return returns
@@ -448,7 +460,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) DataCloudflareBotManagement {
 	_init_.Initialize()
 
@@ -466,7 +478,7 @@ func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement_Override(d DataCloudflareBotManagement, scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) {
 	_init_.Initialize()
 
@@ -823,6 +835,14 @@ func (d *jsiiProxy_DataCloudflareBotManagement) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareBotManagement) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

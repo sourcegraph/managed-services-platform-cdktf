@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecondaryOverrides", GoMethod: "ResetSecondaryOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSoa", GoMethod: "ResetSoa"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZoneMode", GoMethod: "ResetZoneMode"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryOverrides", GoGetter: "SecondaryOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryOverridesInput", GoGetter: "SecondaryOverridesInput"},

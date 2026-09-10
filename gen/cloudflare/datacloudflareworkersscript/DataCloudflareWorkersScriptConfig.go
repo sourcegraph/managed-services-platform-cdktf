@@ -21,13 +21,13 @@ type DataCloudflareWorkersScriptConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script#account_id DataCloudflareWorkersScript#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script#filter DataCloudflareWorkersScript#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_script#account_id DataCloudflareWorkersScript#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_script#filter DataCloudflareWorkersScript#filter}.
 	Filter *DataCloudflareWorkersScriptFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Name of the script, used in URLs and route configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script#script_name DataCloudflareWorkersScript#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_script#script_name DataCloudflareWorkersScript#script_name}
 	ScriptName *string `field:"optional" json:"scriptName" yaml:"scriptName"`
 }
 

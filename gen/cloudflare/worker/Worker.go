@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/worker/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/worker cloudflare_worker}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker cloudflare_worker}.
 type Worker interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -32,6 +32,7 @@ type Worker interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeployedOn() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,6 +127,7 @@ type Worker interface {
 	PutObservability(value *WorkerObservability)
 	PutSubdomain(value *WorkerSubdomain)
 	PutTailConsumers(value interface{})
+	ResetAccountId()
 	ResetLogpush()
 	ResetObservability()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -227,6 +229,16 @@ func (j *jsiiProxy_Worker) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Worker) DeployedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployedOn",
 		&returns,
 	)
 	return returns
@@ -493,7 +505,7 @@ func (j *jsiiProxy_Worker) UpdatedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/worker cloudflare_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker cloudflare_worker} Resource.
 func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Worker {
 	_init_.Initialize()
 
@@ -511,7 +523,7 @@ func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Wor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/worker cloudflare_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker cloudflare_worker} Resource.
 func NewWorker_Override(w Worker, scope constructs.Construct, id *string, config *WorkerConfig) {
 	_init_.Initialize()
 
@@ -1017,6 +1029,14 @@ func (w *jsiiProxy_Worker) PutTailConsumers(value interface{}) {
 		w,
 		"putTailConsumers",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Worker) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -27,12 +27,12 @@ type QueueConsumersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeadLetterQueue() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *QueueConsumers
 	SetInternalValue(val *QueueConsumers)
-	QueueId() *string
-	Script() *string
+	QueueName() *string
 	ScriptName() *string
 	Settings() QueueConsumersSettingsOutputReference
 	// Experimental.
@@ -133,6 +133,16 @@ func (j *jsiiProxy_QueueConsumersOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_QueueConsumersOutputReference) DeadLetterQueue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deadLetterQueue",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QueueConsumersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -153,21 +163,11 @@ func (j *jsiiProxy_QueueConsumersOutputReference) InternalValue() *QueueConsumer
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumersOutputReference) QueueId() *string {
+func (j *jsiiProxy_QueueConsumersOutputReference) QueueName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"queueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_QueueConsumersOutputReference) Script() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"script",
+		"queueName",
 		&returns,
 	)
 	return returns

@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataCloudflareAiSearchTokens) validateSetMaxItemsParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchTokens) validateSetSearchParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareAiSearchTokensParameters(scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokensConfig) error {
 	return nil
 }

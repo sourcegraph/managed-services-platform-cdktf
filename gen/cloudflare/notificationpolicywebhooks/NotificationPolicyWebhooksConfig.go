@@ -19,25 +19,25 @@ type NotificationPolicyWebhooksConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account id.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the webhook destination.
 	//
 	// This will be included in the request body when you receive a webhook notification.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The POST endpoint to call when dispatching a notification.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
+	// The account id.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Optional secret that will be passed in the `cf-webhook-auth` header when dispatching generic webhook notifications or formatted for supported destinations.
 	//
 	// Secrets are not returned in any API response body.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
 	Secret *string `field:"optional" json:"secret" yaml:"secret"`
 }
 

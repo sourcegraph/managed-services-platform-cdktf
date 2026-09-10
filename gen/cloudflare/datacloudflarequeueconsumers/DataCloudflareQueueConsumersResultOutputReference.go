@@ -27,12 +27,12 @@ type DataCloudflareQueueConsumersResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeadLetterQueue() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareQueueConsumersResult
 	SetInternalValue(val *DataCloudflareQueueConsumersResult)
-	QueueId() *string
-	Script() *string
+	QueueName() *string
 	ScriptName() *string
 	Settings() DataCloudflareQueueConsumersResultSettingsOutputReference
 	// Experimental.
@@ -133,6 +133,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) DeadLetterQueue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deadLetterQueue",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -153,21 +163,11 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) QueueId() *string {
+func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) QueueName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"queueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareQueueConsumersResultOutputReference) Script() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"script",
+		"queueName",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/ssoconnector/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector cloudflare_sso_connector}.
 type SsoConnector interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -120,6 +120,7 @@ type SsoConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetBeginVerification()
 	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -445,7 +446,7 @@ func (j *jsiiProxy_SsoConnector) Verification() SsoConnectorVerificationOutputRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnectorConfig) SsoConnector {
 	_init_.Initialize()
 
@@ -463,7 +464,7 @@ func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnecto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector_Override(s SsoConnector, scope constructs.Construct, id *string, config *SsoConnectorConfig) {
 	_init_.Initialize()
 
@@ -947,6 +948,14 @@ func (s *jsiiProxy_SsoConnector) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SsoConnector) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

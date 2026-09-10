@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSignedUrls", GoGetter: "RequireSignedUrls"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSignedUrlsInput", GoGetter: "RequireSignedUrlsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreator", GoMethod: "ResetCreator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFile", GoMethod: "ResetFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetadata", GoMethod: "ResetMetadata"},

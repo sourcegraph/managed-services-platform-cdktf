@@ -413,6 +413,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalCount", GoGetter: "TotalCount"},
+			_jsii_.MemberProperty{JsiiProperty: "totalPages", GoGetter: "TotalPages"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultInfoOutputReference{}

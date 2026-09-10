@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarestreamwatermarks/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks}.
 type DataCloudflareStreamWatermarks interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareStreamWatermarks interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarks) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks} Data Source.
 func NewDataCloudflareStreamWatermarks(scope constructs.Construct, id *string, config *DataCloudflareStreamWatermarksConfig) DataCloudflareStreamWatermarks {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareStreamWatermarks(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks} Data Source.
 func NewDataCloudflareStreamWatermarks_Override(d DataCloudflareStreamWatermarks, scope constructs.Construct, id *string, config *DataCloudflareStreamWatermarksConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareStreamWatermarks) OverrideLogicalId(newLogicalI
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreamWatermarks) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

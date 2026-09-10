@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRuleIdentifier", GoMethod: "ResetRuleIdentifier"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleIdentifier", GoGetter: "RuleIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleIdentifierInput", GoGetter: "RuleIdentifierInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

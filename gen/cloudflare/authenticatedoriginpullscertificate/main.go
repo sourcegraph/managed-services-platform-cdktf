@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "signature", GoGetter: "Signature"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

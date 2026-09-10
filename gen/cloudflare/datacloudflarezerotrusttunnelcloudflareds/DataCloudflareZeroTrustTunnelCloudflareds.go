@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrusttunnelcloudflareds/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_cloudflareds cloudflare_zero_trust_tunnel_cloudflareds}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflareds cloudflare_zero_trust_tunnel_cloudflareds}.
 type DataCloudflareZeroTrustTunnelCloudflareds interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -109,6 +109,7 @@ type DataCloudflareZeroTrustTunnelCloudflareds interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetExcludePrefix()
 	ResetExistedAt()
 	ResetIncludePrefix()
@@ -512,7 +513,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflareds) WasInactiveAtInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_cloudflareds cloudflare_zero_trust_tunnel_cloudflareds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflareds cloudflare_zero_trust_tunnel_cloudflareds} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflareds(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredsConfig) DataCloudflareZeroTrustTunnelCloudflareds {
 	_init_.Initialize()
 
@@ -530,7 +531,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflareds(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_cloudflareds cloudflare_zero_trust_tunnel_cloudflareds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflareds cloudflare_zero_trust_tunnel_cloudflareds} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflareds_Override(d DataCloudflareZeroTrustTunnelCloudflareds, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredsConfig) {
 	_init_.Initialize()
 
@@ -990,6 +991,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflareds) OverrideLogicalId(
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflareds) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -57,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPopPools", GoMethod: "ResetPopPools"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegionPools", GoMethod: "ResetRegionPools"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "rules", GoGetter: "Rules"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinity", GoGetter: "SessionAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinityAttributes", GoGetter: "SessionAffinityAttributes"},

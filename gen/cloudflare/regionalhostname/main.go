@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "regionKeyInput", GoGetter: "RegionKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouting", GoMethod: "ResetRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "routing", GoGetter: "Routing"},
 			_jsii_.MemberProperty{JsiiProperty: "routingInput", GoGetter: "RoutingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

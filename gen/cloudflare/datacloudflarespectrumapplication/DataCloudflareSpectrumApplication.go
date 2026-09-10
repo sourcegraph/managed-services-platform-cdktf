@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarespectrumapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
 type DataCloudflareSpectrumApplication interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -103,6 +103,7 @@ type DataCloudflareSpectrumApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -463,7 +464,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) DataCloudflareSpectrumApplication {
 	_init_.Initialize()
 
@@ -481,7 +482,7 @@ func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication_Override(d DataCloudflareSpectrumApplication, scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) {
 	_init_.Initialize()
 
@@ -876,6 +877,14 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

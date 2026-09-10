@@ -30,6 +30,7 @@ type DataCloudflareAiSearchInstancesResultMetadataOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareAiSearchInstancesResultMetadata
 	SetInternalValue(val *DataCloudflareAiSearchInstancesResultMetadata)
+	SearchForAgents() DataCloudflareAiSearchInstancesResultMetadataSearchForAgentsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultMetadataOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultMetadataOutputReference) SearchForAgents() DataCloudflareAiSearchInstancesResultMetadataSearchForAgentsOutputReference {
+	var returns DataCloudflareAiSearchInstancesResultMetadataSearchForAgentsOutputReference
+	_jsii_.Get(
+		j,
+		"searchForAgents",
 		&returns,
 	)
 	return returns

@@ -80,6 +80,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomCertificat
 	return nil
 }
 
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomCsrIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomKeyParameters(val *string) error {
 	return nil
 }

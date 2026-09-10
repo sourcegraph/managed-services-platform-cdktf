@@ -20,6 +20,7 @@ type DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsOutp
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContentSelector() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsContentSelectorList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -95,6 +96,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerPa
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsOutputReference) ContentSelector() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsContentSelectorList {
+	var returns DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsContentSelectorList
+	_jsii_.Get(
+		j,
+		"contentSelector",
 		&returns,
 	)
 	return returns

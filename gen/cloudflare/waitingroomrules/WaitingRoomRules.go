@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/waitingroomrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
 type WaitingRoomRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -114,6 +114,7 @@ type WaitingRoomRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -363,7 +364,7 @@ func (j *jsiiProxy_WaitingRoomRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules(scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) WaitingRoomRules {
 	_init_.Initialize()
 
@@ -381,7 +382,7 @@ func NewWaitingRoomRules(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules_Override(w WaitingRoomRules, scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) {
 	_init_.Initialize()
 
@@ -850,6 +851,14 @@ func (w *jsiiProxy_WaitingRoomRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

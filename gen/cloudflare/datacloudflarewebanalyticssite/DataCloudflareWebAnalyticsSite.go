@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarewebanalyticssite/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site}.
 type DataCloudflareWebAnalyticsSite interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -92,6 +92,7 @@ type DataCloudflareWebAnalyticsSite interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareWebAnalyticsSiteFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -397,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareWebAnalyticsSite) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
 func NewDataCloudflareWebAnalyticsSite(scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSiteConfig) DataCloudflareWebAnalyticsSite {
 	_init_.Initialize()
 
@@ -415,7 +416,7 @@ func NewDataCloudflareWebAnalyticsSite(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
 func NewDataCloudflareWebAnalyticsSite_Override(d DataCloudflareWebAnalyticsSite, scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSiteConfig) {
 	_init_.Initialize()
 
@@ -787,6 +788,14 @@ func (d *jsiiProxy_DataCloudflareWebAnalyticsSite) PutFilter(value *DataCloudfla
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWebAnalyticsSite) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

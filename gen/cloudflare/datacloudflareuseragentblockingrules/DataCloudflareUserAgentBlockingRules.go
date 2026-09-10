@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareuseragentblockingrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
 type DataCloudflareUserAgentBlockingRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -98,6 +98,7 @@ type DataCloudflareUserAgentBlockingRules interface {
 	ResetOverrideLogicalId()
 	ResetPaused()
 	ResetUserAgent()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -368,7 +369,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
 func NewDataCloudflareUserAgentBlockingRules(scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRulesConfig) DataCloudflareUserAgentBlockingRules {
 	_init_.Initialize()
 
@@ -386,7 +387,7 @@ func NewDataCloudflareUserAgentBlockingRules(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
 func NewDataCloudflareUserAgentBlockingRules_Override(d DataCloudflareUserAgentBlockingRules, scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRulesConfig) {
 	_init_.Initialize()
 
@@ -819,6 +820,14 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetUserAgent() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetUserAgent",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

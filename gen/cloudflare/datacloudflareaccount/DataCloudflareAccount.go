@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaccount/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account cloudflare_account}.
 type DataCloudflareAccount interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataCloudflareAccount) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account cloudflare_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account cloudflare_account} Data Source.
 func NewDataCloudflareAccount(scope constructs.Construct, id *string, config *DataCloudflareAccountConfig) DataCloudflareAccount {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataCloudflareAccount(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account cloudflare_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account cloudflare_account} Data Source.
 func NewDataCloudflareAccount_Override(d DataCloudflareAccount, scope constructs.Construct, id *string, config *DataCloudflareAccountConfig) {
 	_init_.Initialize()
 

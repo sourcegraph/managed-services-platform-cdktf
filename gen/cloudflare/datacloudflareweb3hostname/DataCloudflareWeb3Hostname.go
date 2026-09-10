@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareweb3hostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/web3_hostname cloudflare_web3_hostname}.
 type DataCloudflareWeb3Hostname interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -92,6 +92,7 @@ type DataCloudflareWeb3Hostname interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -372,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareWeb3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
 func NewDataCloudflareWeb3Hostname(scope constructs.Construct, id *string, config *DataCloudflareWeb3HostnameConfig) DataCloudflareWeb3Hostname {
 	_init_.Initialize()
 
@@ -390,7 +391,7 @@ func NewDataCloudflareWeb3Hostname(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
 func NewDataCloudflareWeb3Hostname_Override(d DataCloudflareWeb3Hostname, scope constructs.Construct, id *string, config *DataCloudflareWeb3HostnameConfig) {
 	_init_.Initialize()
 
@@ -758,6 +759,14 @@ func (d *jsiiProxy_DataCloudflareWeb3Hostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWeb3Hostname) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

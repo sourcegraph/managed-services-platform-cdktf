@@ -60,6 +60,10 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

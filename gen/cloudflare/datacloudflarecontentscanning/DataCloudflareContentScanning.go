@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecontentscanning/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning cloudflare_content_scanning}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning cloudflare_content_scanning}.
 type DataCloudflareContentScanning interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -83,6 +83,7 @@ type DataCloudflareContentScanning interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -283,7 +284,7 @@ func (j *jsiiProxy_DataCloudflareContentScanning) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning cloudflare_content_scanning} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning cloudflare_content_scanning} Data Source.
 func NewDataCloudflareContentScanning(scope constructs.Construct, id *string, config *DataCloudflareContentScanningConfig) DataCloudflareContentScanning {
 	_init_.Initialize()
 
@@ -301,7 +302,7 @@ func NewDataCloudflareContentScanning(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/content_scanning cloudflare_content_scanning} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning cloudflare_content_scanning} Data Source.
 func NewDataCloudflareContentScanning_Override(d DataCloudflareContentScanning, scope constructs.Construct, id *string, config *DataCloudflareContentScanningConfig) {
 	_init_.Initialize()
 
@@ -658,6 +659,14 @@ func (d *jsiiProxy_DataCloudflareContentScanning) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareContentScanning) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareimages/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/images cloudflare_images}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/images cloudflare_images}.
 type DataCloudflareImages interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareImages interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetCreator()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -320,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareImages) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/images cloudflare_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/images cloudflare_images} Data Source.
 func NewDataCloudflareImages(scope constructs.Construct, id *string, config *DataCloudflareImagesConfig) DataCloudflareImages {
 	_init_.Initialize()
 
@@ -338,7 +339,7 @@ func NewDataCloudflareImages(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/images cloudflare_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/images cloudflare_images} Data Source.
 func NewDataCloudflareImages_Override(d DataCloudflareImages, scope constructs.Construct, id *string, config *DataCloudflareImagesConfig) {
 	_init_.Initialize()
 
@@ -710,6 +711,14 @@ func (d *jsiiProxy_DataCloudflareImages) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareImages) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

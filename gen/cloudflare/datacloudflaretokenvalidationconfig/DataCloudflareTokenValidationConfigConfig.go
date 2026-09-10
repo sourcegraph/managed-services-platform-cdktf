@@ -21,11 +21,11 @@ type DataCloudflareTokenValidationConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_config#config_id DataCloudflareTokenValidationConfig#config_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_config#config_id DataCloudflareTokenValidationConfig#config_id}
 	ConfigId *string `field:"required" json:"configId" yaml:"configId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_config#zone_id DataCloudflareTokenValidationConfig#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_config#zone_id DataCloudflareTokenValidationConfig#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

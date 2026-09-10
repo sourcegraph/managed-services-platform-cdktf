@@ -16,6 +16,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "certId", GoGetter: "CertId"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -49,8 +50,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironment", GoMethod: "ResetEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneName", GoMethod: "ResetZoneName"},
 			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -65,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneName", GoGetter: "ZoneName"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneNameInput", GoGetter: "ZoneNameInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersCustomDomain{}

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarepageshieldconnections/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections}.
 type DataCloudflarePageShieldConnections interface {
 	cdktf.TerraformDataSource
 	AddedAt() *string
@@ -97,6 +97,7 @@ type DataCloudflarePageShieldConnections interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -427,7 +428,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnections) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
 func NewDataCloudflarePageShieldConnections(scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsConfig) DataCloudflarePageShieldConnections {
 	_init_.Initialize()
 
@@ -445,7 +446,7 @@ func NewDataCloudflarePageShieldConnections(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
 func NewDataCloudflarePageShieldConnections_Override(d DataCloudflarePageShieldConnections, scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsConfig) {
 	_init_.Initialize()
 
@@ -813,6 +814,14 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnections) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflarePageShieldConnections) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

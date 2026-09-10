@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarebyoipprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type DataCloudflareByoIpPrefix interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -98,6 +98,7 @@ type DataCloudflareByoIpPrefix interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -471,7 +472,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) DataCloudflareByoIpPrefix {
 	_init_.Initialize()
 
@@ -489,7 +490,7 @@ func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix_Override(d DataCloudflareByoIpPrefix, scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -850,6 +851,14 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefix) OverrideLogicalId(newLogicalId *st
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareByoIpPrefix) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

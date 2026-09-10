@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccesspolicies/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}.
 type DataCloudflareZeroTrustAccessPolicies interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareZeroTrustAccessPolicies interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicies) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
 func NewDataCloudflareZeroTrustAccessPolicies(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessPoliciesConfig) DataCloudflareZeroTrustAccessPolicies {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareZeroTrustAccessPolicies(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
 func NewDataCloudflareZeroTrustAccessPolicies_Override(d DataCloudflareZeroTrustAccessPolicies, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessPoliciesConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicies) OverrideLogicalId(newL
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicies) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

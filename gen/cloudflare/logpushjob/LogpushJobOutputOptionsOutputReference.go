@@ -44,6 +44,9 @@ type LogpushJobOutputOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MergeSubrequests() interface{}
+	SetMergeSubrequests(val interface{})
+	MergeSubrequestsInput() interface{}
 	OutputType() *string
 	SetOutputType(val *string)
 	OutputTypeInput() *string
@@ -102,6 +105,7 @@ type LogpushJobOutputOptionsOutputReference interface {
 	ResetCve202144228()
 	ResetFieldDelimiter()
 	ResetFieldNames()
+	ResetMergeSubrequests()
 	ResetOutputType()
 	ResetRecordDelimiter()
 	ResetRecordPrefix()
@@ -269,6 +273,26 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) InternalValue() inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) MergeSubrequests() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mergeSubrequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) MergeSubrequestsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mergeSubrequestsInput",
 		&returns,
 	)
 	return returns
@@ -546,6 +570,17 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetInternalValue(val i
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetMergeSubrequests(val interface{}) {
+	if err := j.validateSetMergeSubrequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mergeSubrequests",
 		val,
 	)
 }
@@ -871,6 +906,14 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ResetFieldNames() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetFieldNames",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ResetMergeSubrequests() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMergeSubrequests",
 		nil, // no parameters
 	)
 }

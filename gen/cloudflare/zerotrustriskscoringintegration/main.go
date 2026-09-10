@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceId", GoGetter: "ReferenceId"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceIdInput", GoGetter: "ReferenceIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActive", GoMethod: "ResetActive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReferenceId", GoMethod: "ResetReferenceId"},

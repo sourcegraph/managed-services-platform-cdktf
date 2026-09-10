@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarer2customdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}.
 type DataCloudflareR2CustomDomain interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -90,6 +90,7 @@ type DataCloudflareR2CustomDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -373,7 +374,7 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
 func NewDataCloudflareR2CustomDomain(scope constructs.Construct, id *string, config *DataCloudflareR2CustomDomainConfig) DataCloudflareR2CustomDomain {
 	_init_.Initialize()
 
@@ -391,7 +392,7 @@ func NewDataCloudflareR2CustomDomain(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
 func NewDataCloudflareR2CustomDomain_Override(d DataCloudflareR2CustomDomain, scope constructs.Construct, id *string, config *DataCloudflareR2CustomDomainConfig) {
 	_init_.Initialize()
 
@@ -763,6 +764,14 @@ func (d *jsiiProxy_DataCloudflareR2CustomDomain) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareR2CustomDomain) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

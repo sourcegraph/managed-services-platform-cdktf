@@ -80,6 +80,10 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutEntriesParameters(value
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutSensitivityLevelsParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutSharedEntriesParameters(value interface{}) error {
 	return nil
 }
@@ -121,6 +125,14 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetConnectionParameters(va
 }
 
 func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetDataClassesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfile) validateSetDataTagsParameters(val *[]*string) error {
 	return nil
 }
 

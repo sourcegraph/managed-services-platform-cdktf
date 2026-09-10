@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareloadbalancer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
 type DataCloudflareLoadBalancer interface {
 	cdktf.TerraformDataSource
 	AdaptiveRouting() DataCloudflareLoadBalancerAdaptiveRoutingOutputReference
@@ -112,6 +112,7 @@ type DataCloudflareLoadBalancer interface {
 	ResetOverrideLogicalId()
 	ResetPopPools()
 	ResetRegionPools()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -552,7 +553,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) DataCloudflareLoadBalancer {
 	_init_.Initialize()
 
@@ -570,7 +571,7 @@ func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer_Override(d DataCloudflareLoadBalancer, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) {
 	_init_.Initialize()
 
@@ -976,6 +977,14 @@ func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetRegionPools() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegionPools",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

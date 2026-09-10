@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessidentityprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
 type ZeroTrustAccessIdentityProvider interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -435,7 +435,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
 func NewZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, config *ZeroTrustAccessIdentityProviderConfig) ZeroTrustAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
 func NewZeroTrustAccessIdentityProvider_Override(z ZeroTrustAccessIdentityProvider, scope constructs.Construct, id *string, config *ZeroTrustAccessIdentityProviderConfig) {
 	_init_.Initialize()
 

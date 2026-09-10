@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchemaId", GoMethod: "ResetSchemaId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValidationEnabled", GoMethod: "ResetValidationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
 			_jsii_.MemberProperty{JsiiProperty: "schemaId", GoGetter: "SchemaId"},
 			_jsii_.MemberProperty{JsiiProperty: "schemaIdInput", GoGetter: "SchemaIdInput"},

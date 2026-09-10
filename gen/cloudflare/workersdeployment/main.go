@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAnnotations", GoMethod: "PutAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "putVersions", GoMethod: "PutVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},

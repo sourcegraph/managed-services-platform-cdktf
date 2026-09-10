@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/dnszonetransferstsig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
 type DnsZoneTransfersTsig interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -114,6 +114,7 @@ type DnsZoneTransfersTsig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -386,7 +387,7 @@ func (j *jsiiProxy_DnsZoneTransfersTsig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
 func NewDnsZoneTransfersTsig(scope constructs.Construct, id *string, config *DnsZoneTransfersTsigConfig) DnsZoneTransfersTsig {
 	_init_.Initialize()
 
@@ -404,7 +405,7 @@ func NewDnsZoneTransfersTsig(scope constructs.Construct, id *string, config *Dns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
 func NewDnsZoneTransfersTsig_Override(d DnsZoneTransfersTsig, scope constructs.Construct, id *string, config *DnsZoneTransfersTsigConfig) {
 	_init_.Initialize()
 
@@ -877,6 +878,14 @@ func (d *jsiiProxy_DnsZoneTransfersTsig) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DnsZoneTransfersTsig) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

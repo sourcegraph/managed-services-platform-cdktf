@@ -25,6 +25,9 @@ type ZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -73,6 +76,7 @@ type ZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPattern(value *ZeroTrustDlpCustomProfileEntriesPattern)
+	ResetDescription()
 	ResetEntryId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,6 +118,26 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -285,6 +309,17 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -549,6 +584,14 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) PutPattern(v
 		z,
 		"putPattern",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 
