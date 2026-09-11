@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkerskvnamespaces/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
 type DataCloudflareWorkersKvNamespaces interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -88,6 +88,7 @@ type DataCloudflareWorkersKvNamespaces interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetDirection()
 	ResetMaxItems()
 	ResetOrder()
@@ -344,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespaces) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
 func NewDataCloudflareWorkersKvNamespaces(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespacesConfig) DataCloudflareWorkersKvNamespaces {
 	_init_.Initialize()
 
@@ -362,7 +363,7 @@ func NewDataCloudflareWorkersKvNamespaces(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
 func NewDataCloudflareWorkersKvNamespaces_Override(d DataCloudflareWorkersKvNamespaces, scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespacesConfig) {
 	_init_.Initialize()
 
@@ -745,6 +746,14 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespaces) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespaces) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

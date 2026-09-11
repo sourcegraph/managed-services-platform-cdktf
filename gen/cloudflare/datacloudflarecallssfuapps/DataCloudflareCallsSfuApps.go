@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecallssfuapps/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
 type DataCloudflareCallsSfuApps interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareCallsSfuApps interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareCallsSfuApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
 func NewDataCloudflareCallsSfuApps(scope constructs.Construct, id *string, config *DataCloudflareCallsSfuAppsConfig) DataCloudflareCallsSfuApps {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareCallsSfuApps(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
 func NewDataCloudflareCallsSfuApps_Override(d DataCloudflareCallsSfuApps, scope constructs.Construct, id *string, config *DataCloudflareCallsSfuAppsConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareCallsSfuApps) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCallsSfuApps) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

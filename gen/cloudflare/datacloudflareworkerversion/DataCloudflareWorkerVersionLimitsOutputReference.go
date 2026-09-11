@@ -30,6 +30,7 @@ type DataCloudflareWorkerVersionLimitsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareWorkerVersionLimits
 	SetInternalValue(val *DataCloudflareWorkerVersionLimits)
+	Subrequests() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionLimitsOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionLimitsOutputReference) Subrequests() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subrequests",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareauthenticatedoriginpullscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
 type DataCloudflareAuthenticatedOriginPullsCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,7 +28,6 @@ type DataCloudflareAuthenticatedOriginPullsCertificate interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() cdktf.IResolvable
 	ExpiresOn() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -46,13 +45,13 @@ type DataCloudflareAuthenticatedOriginPullsCertificate interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	PrivateKey() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SerialNumber() *string
 	Signature() *string
 	Status() *string
 	// Experimental.
@@ -182,16 +181,6 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) DependsOn(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) ExpiresOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,16 +261,6 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) Node() con
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) PrivateKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"privateKey",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -297,6 +276,16 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) RawOverrid
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) SerialNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumber",
 		&returns,
 	)
 	return returns
@@ -383,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) ZoneIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsCertificateConfig) DataCloudflareAuthenticatedOriginPullsCertificate {
 	_init_.Initialize()
 
@@ -401,7 +390,7 @@ func NewDataCloudflareAuthenticatedOriginPullsCertificate(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsCertificate_Override(d DataCloudflareAuthenticatedOriginPullsCertificate, scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsCertificateConfig) {
 	_init_.Initialize()
 

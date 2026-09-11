@@ -9,17 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaisearchtoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
 type DataCloudflareAiSearchToken interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AccountTag() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CfApiId() *string
-	CfApiKey() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -33,6 +31,8 @@ type DataCloudflareAiSearchToken interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Enabled() cdktf.IResolvable
+	Filter() DataCloudflareAiSearchTokenFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,7 +60,6 @@ type DataCloudflareAiSearchToken interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	SyncedAt() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -92,6 +91,10 @@ type DataCloudflareAiSearchToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareAiSearchTokenFilter)
+	ResetAccountId()
+	ResetFilter()
+	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -134,16 +137,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchToken) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchToken) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -159,16 +152,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) CfApiId() *string {
 	_jsii_.Get(
 		j,
 		"cfApiId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchToken) CfApiKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cfApiKey",
 		&returns,
 	)
 	return returns
@@ -229,6 +212,26 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) Enabled() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchToken) Filter() DataCloudflareAiSearchTokenFilterOutputReference {
+	var returns DataCloudflareAiSearchTokenFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchToken) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -364,16 +367,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchToken) SyncedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syncedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -405,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
 func NewDataCloudflareAiSearchToken(scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokenConfig) DataCloudflareAiSearchToken {
 	_init_.Initialize()
 
@@ -423,7 +416,7 @@ func NewDataCloudflareAiSearchToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
 func NewDataCloudflareAiSearchToken_Override(d DataCloudflareAiSearchToken, scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokenConfig) {
 	_init_.Initialize()
 
@@ -784,6 +777,41 @@ func (d *jsiiProxy_DataCloudflareAiSearchToken) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchToken) PutFilter(value *DataCloudflareAiSearchTokenFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchToken) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchToken) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchToken) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
 	)
 }
 

@@ -10,6 +10,9 @@ import (
 
 type ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference interface {
 	cdktf.ComplexObject
+	Alias() *string
+	SetAlias(val *string)
+	AliasInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlias()
 	ResetDescription()
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference interf
 // The jsii proxy struct for ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference
 type jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) Alias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) AliasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) ComplexObjectIndex() interface{} {
@@ -242,6 +266,17 @@ func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference_Ove
 		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpPortal.ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference)SetAlias(val *string) {
+	if err := j.validateSetAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alias",
+		val,
 	)
 }
 
@@ -517,6 +552,14 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputRe
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) ResetAlias() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAlias",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) ResetDescription() {

@@ -39,6 +39,9 @@ type CustomHostnameSslOutputReference interface {
 	CustomCertificate() *string
 	SetCustomCertificate(val *string)
 	CustomCertificateInput() *string
+	CustomCsrId() *string
+	SetCustomCsrId(val *string)
+	CustomCsrIdInput() *string
 	CustomKey() *string
 	SetCustomKey(val *string)
 	CustomKeyInput() *string
@@ -96,6 +99,7 @@ type CustomHostnameSslOutputReference interface {
 	ResetCloudflareBranding()
 	ResetCustomCertBundle()
 	ResetCustomCertificate()
+	ResetCustomCsrId()
 	ResetCustomKey()
 	ResetMethod()
 	ResetSettings()
@@ -241,6 +245,26 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) CustomCertificateInput() *s
 	_jsii_.Get(
 		j,
 		"customCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) CustomCsrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) CustomCsrIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrIdInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +500,17 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCustomCertificate(val *st
 	_jsii_.Set(
 		j,
 		"customCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCustomCsrId(val *string) {
+	if err := j.validateSetCustomCsrIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customCsrId",
 		val,
 	)
 }
@@ -801,6 +836,14 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetCustomCertificate() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCustomCertificate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetCustomCsrId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomCsrId",
 		nil, // no parameters
 	)
 }

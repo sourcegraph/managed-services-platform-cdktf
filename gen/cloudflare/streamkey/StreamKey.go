@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamkey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_key cloudflare_stream_key}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_key cloudflare_stream_key}.
 type StreamKey interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -42,6 +42,7 @@ type StreamKey interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	Jwk() *string
+	KeyId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -108,6 +109,7 @@ type StreamKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -259,6 +261,16 @@ func (j *jsiiProxy_StreamKey) Jwk() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamKey) KeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamKey) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -350,7 +362,7 @@ func (j *jsiiProxy_StreamKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_key cloudflare_stream_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_key cloudflare_stream_key} Resource.
 func NewStreamKey(scope constructs.Construct, id *string, config *StreamKeyConfig) StreamKey {
 	_init_.Initialize()
 
@@ -368,7 +380,7 @@ func NewStreamKey(scope constructs.Construct, id *string, config *StreamKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_key cloudflare_stream_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_key cloudflare_stream_key} Resource.
 func NewStreamKey_Override(s StreamKey, scope constructs.Construct, id *string, config *StreamKeyConfig) {
 	_init_.Initialize()
 
@@ -808,6 +820,14 @@ func (s *jsiiProxy_StreamKey) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamKey) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

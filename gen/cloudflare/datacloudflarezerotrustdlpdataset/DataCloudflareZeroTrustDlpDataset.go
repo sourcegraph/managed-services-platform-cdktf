@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdlpdataset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
 type DataCloudflareZeroTrustDlpDataset interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -93,6 +93,7 @@ type DataCloudflareZeroTrustDlpDataset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -416,7 +417,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataset) Uploads() DataCloudflareZe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
 func NewDataCloudflareZeroTrustDlpDataset(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDatasetConfig) DataCloudflareZeroTrustDlpDataset {
 	_init_.Initialize()
 
@@ -434,7 +435,7 @@ func NewDataCloudflareZeroTrustDlpDataset(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
 func NewDataCloudflareZeroTrustDlpDataset_Override(d DataCloudflareZeroTrustDlpDataset, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDatasetConfig) {
 	_init_.Initialize()
 
@@ -795,6 +796,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataset) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataset) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

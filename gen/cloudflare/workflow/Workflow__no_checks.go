@@ -72,6 +72,10 @@ func (w *jsiiProxy_Workflow) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validatePutLimitsParameters(value *WorkflowLimits) error {
+	return nil
+}
+
 func validateWorkflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

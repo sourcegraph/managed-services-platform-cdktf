@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -65,6 +65,16 @@ type ZeroTrustOrganization interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoginDesign() ZeroTrustOrganizationLoginDesignOutputReference
 	LoginDesignInput() interface{}
+	MfaConfig() ZeroTrustOrganizationMfaConfigOutputReference
+	MfaConfigInput() interface{}
+	MfaConfigurationAllowed() interface{}
+	SetMfaConfigurationAllowed(val interface{})
+	MfaConfigurationAllowedInput() interface{}
+	MfaRequiredForAllApps() interface{}
+	SetMfaRequiredForAllApps(val interface{})
+	MfaRequiredForAllAppsInput() interface{}
+	MfaSshPivKeyRequirements() ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference
+	MfaSshPivKeyRequirementsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -146,6 +156,8 @@ type ZeroTrustOrganization interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomPages(value *ZeroTrustOrganizationCustomPages)
 	PutLoginDesign(value *ZeroTrustOrganizationLoginDesign)
+	PutMfaConfig(value *ZeroTrustOrganizationMfaConfig)
+	PutMfaSshPivKeyRequirements(value *ZeroTrustOrganizationMfaSshPivKeyRequirements)
 	ResetAccountId()
 	ResetAllowAuthenticateViaWarp()
 	ResetAuthDomain()
@@ -155,6 +167,10 @@ type ZeroTrustOrganization interface {
 	ResetDenyUnmatchedRequestsExemptedZoneNames()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
+	ResetMfaConfig()
+	ResetMfaConfigurationAllowed()
+	ResetMfaRequiredForAllApps()
+	ResetMfaSshPivKeyRequirements()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -452,6 +468,86 @@ func (j *jsiiProxy_ZeroTrustOrganization) LoginDesignInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) MfaConfig() ZeroTrustOrganizationMfaConfigOutputReference {
+	var returns ZeroTrustOrganizationMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaConfigurationAllowed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigurationAllowed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaConfigurationAllowedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigurationAllowedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaRequiredForAllApps() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaRequiredForAllApps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaRequiredForAllAppsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaRequiredForAllAppsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaSshPivKeyRequirements() ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference {
+	var returns ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference
+	_jsii_.Get(
+		j,
+		"mfaSshPivKeyRequirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaSshPivKeyRequirementsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaSshPivKeyRequirementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -643,7 +739,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -661,7 +757,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -794,6 +890,28 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetMfaConfigurationAllowed(val interface{}) {
+	if err := j.validateSetMfaConfigurationAllowedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mfaConfigurationAllowed",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetMfaRequiredForAllApps(val interface{}) {
+	if err := j.validateSetMfaRequiredForAllAppsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mfaRequiredForAllApps",
 		val,
 	)
 }
@@ -1258,6 +1376,28 @@ func (z *jsiiProxy_ZeroTrustOrganization) PutLoginDesign(value *ZeroTrustOrganiz
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustOrganization) PutMfaConfig(value *ZeroTrustOrganizationMfaConfig) {
+	if err := z.validatePutMfaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMfaConfig",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) PutMfaSshPivKeyRequirements(value *ZeroTrustOrganizationMfaSshPivKeyRequirements) {
+	if err := z.validatePutMfaSshPivKeyRequirementsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMfaSshPivKeyRequirements",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustOrganization) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1326,6 +1466,38 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetLoginDesign() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetLoginDesign",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaConfig() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaConfig",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaConfigurationAllowed() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaConfigurationAllowed",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaRequiredForAllApps() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaRequiredForAllApps",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaSshPivKeyRequirements() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaSshPivKeyRequirements",
 		nil, // no parameters
 	)
 }

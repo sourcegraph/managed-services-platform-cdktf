@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/tokenvalidationrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
 type TokenValidationRules interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -132,6 +132,7 @@ type TokenValidationRules interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPosition()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -501,7 +502,7 @@ func (j *jsiiProxy_TokenValidationRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
 func NewTokenValidationRules(scope constructs.Construct, id *string, config *TokenValidationRulesConfig) TokenValidationRules {
 	_init_.Initialize()
 
@@ -519,7 +520,7 @@ func NewTokenValidationRules(scope constructs.Construct, id *string, config *Tok
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
 func NewTokenValidationRules_Override(t TokenValidationRules, scope constructs.Construct, id *string, config *TokenValidationRulesConfig) {
 	_init_.Initialize()
 
@@ -1051,6 +1052,14 @@ func (t *jsiiProxy_TokenValidationRules) ResetPosition() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPosition",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TokenValidationRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarednszonetransfersacls/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_acls cloudflare_dns_zone_transfers_acls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_acls cloudflare_dns_zone_transfers_acls}.
 type DataCloudflareDnsZoneTransfersAcls interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -82,6 +82,7 @@ type DataCloudflareDnsZoneTransfersAcls interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -296,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersAcls) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_acls cloudflare_dns_zone_transfers_acls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_acls cloudflare_dns_zone_transfers_acls} Data Source.
 func NewDataCloudflareDnsZoneTransfersAcls(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersAclsConfig) DataCloudflareDnsZoneTransfersAcls {
 	_init_.Initialize()
 
@@ -314,7 +315,7 @@ func NewDataCloudflareDnsZoneTransfersAcls(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_acls cloudflare_dns_zone_transfers_acls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_acls cloudflare_dns_zone_transfers_acls} Data Source.
 func NewDataCloudflareDnsZoneTransfersAcls_Override(d DataCloudflareDnsZoneTransfersAcls, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersAclsConfig) {
 	_init_.Initialize()
 
@@ -675,6 +676,14 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersAcls) OverrideLogicalId(newLogi
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersAcls) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

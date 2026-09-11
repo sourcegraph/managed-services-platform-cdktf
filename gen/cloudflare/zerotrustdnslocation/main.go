@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEndpoints", GoMethod: "PutEndpoints"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworks", GoMethod: "PutNetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientDefault", GoMethod: "ResetClientDefault"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsDestinationIpsId", GoMethod: "ResetDnsDestinationIpsId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEcsSupport", GoMethod: "ResetEcsSupport"},

@@ -32,12 +32,8 @@ type ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference interf
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() cdktf.IResolvable
 	SourceAccount() *string
-	SetSourceAccount(val *string)
-	SourceAccountInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,8 +43,6 @@ type ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference interf
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Version() *float64
-	SetVersion(val *float64)
-	VersionInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,9 +68,6 @@ type ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference interf
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
-	ResetReadOnly()
-	ResetSourceAccount()
-	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -162,21 +153,11 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ReadOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"readOnly",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"readOnlyInput",
 		&returns,
 	)
 	return returns
@@ -187,16 +168,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	_jsii_.Get(
 		j,
 		"sourceAccount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) SourceAccountInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"sourceAccountInput",
 		&returns,
 	)
 	return returns
@@ -227,16 +198,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	_jsii_.Get(
 		j,
 		"version",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) VersionInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"versionInput",
 		&returns,
 	)
 	return returns
@@ -314,28 +275,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference)SetReadOnly(val interface{}) {
-	if err := j.validateSetReadOnlyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"readOnly",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference)SetSourceAccount(val *string) {
-	if err := j.validateSetSourceAccountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sourceAccount",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -354,17 +293,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference)SetVersion(val *float64) {
-	if err := j.validateSetVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"version",
 		val,
 	)
 }
@@ -559,30 +487,6 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	_jsii_.InvokeVoid(
 		z,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ResetReadOnly() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetReadOnly",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ResetSourceAccount() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetSourceAccount",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ResetVersion() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetVersion",
 		nil, // no parameters
 	)
 }

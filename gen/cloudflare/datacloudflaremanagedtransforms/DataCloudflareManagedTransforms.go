@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaremanagedtransforms/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
 type DataCloudflareManagedTransforms interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -84,6 +84,7 @@ type DataCloudflareManagedTransforms interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -294,7 +295,7 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
 func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, config *DataCloudflareManagedTransformsConfig) DataCloudflareManagedTransforms {
 	_init_.Initialize()
 
@@ -312,7 +313,7 @@ func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
 func NewDataCloudflareManagedTransforms_Override(d DataCloudflareManagedTransforms, scope constructs.Construct, id *string, config *DataCloudflareManagedTransformsConfig) {
 	_init_.Initialize()
 
@@ -669,6 +670,14 @@ func (d *jsiiProxy_DataCloudflareManagedTransforms) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareManagedTransforms) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

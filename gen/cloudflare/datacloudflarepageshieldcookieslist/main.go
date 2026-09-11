@@ -74,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSameSite", GoMethod: "ResetSameSite"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecure", GoMethod: "ResetSecure"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
 			_jsii_.MemberProperty{JsiiProperty: "sameSite", GoGetter: "SameSite"},
 			_jsii_.MemberProperty{JsiiProperty: "sameSiteInput", GoGetter: "SameSiteInput"},

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaddressmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map cloudflare_address_map}.
 type DataCloudflareAddressMap interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -91,6 +91,7 @@ type DataCloudflareAddressMap interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -394,7 +395,7 @@ func (j *jsiiProxy_DataCloudflareAddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_map cloudflare_address_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map cloudflare_address_map} Data Source.
 func NewDataCloudflareAddressMap(scope constructs.Construct, id *string, config *DataCloudflareAddressMapConfig) DataCloudflareAddressMap {
 	_init_.Initialize()
 
@@ -412,7 +413,7 @@ func NewDataCloudflareAddressMap(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_map cloudflare_address_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map cloudflare_address_map} Data Source.
 func NewDataCloudflareAddressMap_Override(d DataCloudflareAddressMap, scope constructs.Construct, id *string, config *DataCloudflareAddressMapConfig) {
 	_init_.Initialize()
 
@@ -773,6 +774,14 @@ func (d *jsiiProxy_DataCloudflareAddressMap) OverrideLogicalId(newLogicalId *str
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAddressMap) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

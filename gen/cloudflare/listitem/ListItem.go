@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/listitem/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/list_item cloudflare_list_item}.
 type ListItem interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -126,6 +126,7 @@ type ListItem interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHostname(value *ListItemHostname)
 	PutRedirect(value *ListItemRedirect)
+	ResetAccountId()
 	ResetAsn()
 	ResetComment()
 	ResetHostname()
@@ -493,7 +494,7 @@ func (j *jsiiProxy_ListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig) ListItem {
 	_init_.Initialize()
 
@@ -511,7 +512,7 @@ func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem_Override(l ListItem, scope constructs.Construct, id *string, config *ListItemConfig) {
 	_init_.Initialize()
 
@@ -1017,6 +1018,14 @@ func (l *jsiiProxy_ListItem) PutRedirect(value *ListItemRedirect) {
 		l,
 		"putRedirect",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_ListItem) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

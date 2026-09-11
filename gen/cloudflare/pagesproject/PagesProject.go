@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/pagesproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -130,6 +130,7 @@ type PagesProject interface {
 	PutBuildConfig(value *PagesProjectBuildConfig)
 	PutDeploymentConfigs(value *PagesProjectDeploymentConfigs)
 	PutSource(value *PagesProjectSource)
+	ResetAccountId()
 	ResetBuildConfig()
 	ResetDeploymentConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -545,7 +546,7 @@ func (j *jsiiProxy_PagesProject) UsesFunctions() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -563,7 +564,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 
@@ -1058,6 +1059,14 @@ func (p *jsiiProxy_PagesProject) PutSource(value *PagesProjectSource) {
 		p,
 		"putSource",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProject) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

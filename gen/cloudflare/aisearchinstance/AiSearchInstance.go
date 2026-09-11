@@ -9,13 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/aisearchinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
 type AiSearchInstance interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AccountTag() *string
 	AiGatewayId() *string
 	SetAiGatewayId(val *string)
 	AiGatewayIdInput() *string
@@ -70,13 +69,19 @@ type AiSearchInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FusionMethod() *string
+	SetFusionMethod(val *string)
+	FusionMethodInput() *string
 	HybridSearchEnabled() interface{}
 	SetHybridSearchEnabled(val interface{})
 	HybridSearchEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalId() *string
+	IndexingOptions() AiSearchInstanceIndexingOptionsOutputReference
+	IndexingOptionsInput() interface{}
+	IndexMethod() AiSearchInstanceIndexMethodOutputReference
+	IndexMethodInput() interface{}
 	LastActivity() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -89,6 +94,7 @@ type AiSearchInstance interface {
 	MetadataInput() interface{}
 	ModifiedAt() *string
 	ModifiedBy() *string
+	Namespace() *string
 	// The tree node.
 	Node() constructs.Node
 	Paused() interface{}
@@ -113,6 +119,8 @@ type AiSearchInstance interface {
 	RerankingModel() *string
 	SetRerankingModel(val *string)
 	RerankingModelInput() *string
+	RetrievalOptions() AiSearchInstanceRetrievalOptionsOutputReference
+	RetrievalOptionsInput() interface{}
 	RewriteModel() *string
 	SetRewriteModel(val *string)
 	RewriteModelInput() *string
@@ -134,6 +142,9 @@ type AiSearchInstance interface {
 	SummarizationModel() *string
 	SetSummarizationModel(val *string)
 	SummarizationModelInput() *string
+	SyncInterval() *float64
+	SetSyncInterval(val *float64)
+	SyncIntervalInput() *float64
 	SystemPromptAisearch() *string
 	SetSystemPromptAisearch(val *string)
 	SystemPromptAisearchInput() *string
@@ -155,7 +166,6 @@ type AiSearchInstance interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	VectorizeActiveNamespace() *string
 	VectorizeName() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -201,8 +211,11 @@ type AiSearchInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomMetadata(value interface{})
+	PutIndexingOptions(value *AiSearchInstanceIndexingOptions)
+	PutIndexMethod(value *AiSearchInstanceIndexMethod)
 	PutMetadata(value *AiSearchInstanceMetadata)
 	PutPublicEndpointParams(value *AiSearchInstancePublicEndpointParams)
+	PutRetrievalOptions(value *AiSearchInstanceRetrievalOptions)
 	PutSourceParams(value *AiSearchInstanceSourceParams)
 	ResetAiGatewayId()
 	ResetAisearchModel()
@@ -213,7 +226,10 @@ type AiSearchInstance interface {
 	ResetChunkSize()
 	ResetCustomMetadata()
 	ResetEmbeddingModel()
+	ResetFusionMethod()
 	ResetHybridSearchEnabled()
+	ResetIndexingOptions()
+	ResetIndexMethod()
 	ResetMaxNumResults()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -223,16 +239,20 @@ type AiSearchInstance interface {
 	ResetPublicEndpointParams()
 	ResetReranking()
 	ResetRerankingModel()
+	ResetRetrievalOptions()
 	ResetRewriteModel()
 	ResetRewriteQuery()
 	ResetScoreThreshold()
+	ResetSource()
 	ResetSourceParams()
 	ResetSummarization()
 	ResetSummarizationModel()
+	ResetSyncInterval()
 	ResetSystemPromptAisearch()
 	ResetSystemPromptIndexSummarization()
 	ResetSystemPromptRewriteQuery()
 	ResetTokenId()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -266,16 +286,6 @@ func (j *jsiiProxy_AiSearchInstance) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstance) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
 		&returns,
 	)
 	return returns
@@ -581,6 +591,26 @@ func (j *jsiiProxy_AiSearchInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AiSearchInstance) FusionMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fusionMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) FusionMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fusionMethodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiSearchInstance) HybridSearchEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -621,11 +651,41 @@ func (j *jsiiProxy_AiSearchInstance) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchInstance) InternalId() *string {
-	var returns *string
+func (j *jsiiProxy_AiSearchInstance) IndexingOptions() AiSearchInstanceIndexingOptionsOutputReference {
+	var returns AiSearchInstanceIndexingOptionsOutputReference
 	_jsii_.Get(
 		j,
-		"internalId",
+		"indexingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) IndexingOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexingOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) IndexMethod() AiSearchInstanceIndexMethodOutputReference {
+	var returns AiSearchInstanceIndexMethodOutputReference
+	_jsii_.Get(
+		j,
+		"indexMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) IndexMethodInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexMethodInput",
 		&returns,
 	)
 	return returns
@@ -706,6 +766,16 @@ func (j *jsiiProxy_AiSearchInstance) ModifiedBy() *string {
 	_jsii_.Get(
 		j,
 		"modifiedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
 		&returns,
 	)
 	return returns
@@ -836,6 +906,26 @@ func (j *jsiiProxy_AiSearchInstance) RerankingModelInput() *string {
 	_jsii_.Get(
 		j,
 		"rerankingModelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) RetrievalOptions() AiSearchInstanceRetrievalOptionsOutputReference {
+	var returns AiSearchInstanceRetrievalOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"retrievalOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) RetrievalOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retrievalOptionsInput",
 		&returns,
 	)
 	return returns
@@ -991,6 +1081,26 @@ func (j *jsiiProxy_AiSearchInstance) SummarizationModelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AiSearchInstance) SyncInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"syncInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) SyncIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"syncIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiSearchInstance) SystemPromptAisearch() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1121,16 +1231,6 @@ func (j *jsiiProxy_AiSearchInstance) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchInstance) VectorizeActiveNamespace() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vectorizeActiveNamespace",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiSearchInstance) VectorizeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1142,7 +1242,7 @@ func (j *jsiiProxy_AiSearchInstance) VectorizeName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearchInstanceConfig) AiSearchInstance {
 	_init_.Initialize()
 
@@ -1160,7 +1260,7 @@ func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance_Override(a AiSearchInstance, scope constructs.Construct, id *string, config *AiSearchInstanceConfig) {
 	_init_.Initialize()
 
@@ -1304,6 +1404,17 @@ func (j *jsiiProxy_AiSearchInstance)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstance)SetFusionMethod(val *string) {
+	if err := j.validateSetFusionMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fusionMethod",
 		val,
 	)
 }
@@ -1466,6 +1577,17 @@ func (j *jsiiProxy_AiSearchInstance)SetSummarizationModel(val *string) {
 	_jsii_.Set(
 		j,
 		"summarizationModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstance)SetSyncInterval(val *float64) {
+	if err := j.validateSetSyncIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"syncInterval",
 		val,
 	)
 }
@@ -1889,6 +2011,28 @@ func (a *jsiiProxy_AiSearchInstance) PutCustomMetadata(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AiSearchInstance) PutIndexingOptions(value *AiSearchInstanceIndexingOptions) {
+	if err := a.validatePutIndexingOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIndexingOptions",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) PutIndexMethod(value *AiSearchInstanceIndexMethod) {
+	if err := a.validatePutIndexMethodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIndexMethod",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstance) PutMetadata(value *AiSearchInstanceMetadata) {
 	if err := a.validatePutMetadataParameters(value); err != nil {
 		panic(err)
@@ -1907,6 +2051,17 @@ func (a *jsiiProxy_AiSearchInstance) PutPublicEndpointParams(value *AiSearchInst
 	_jsii_.InvokeVoid(
 		a,
 		"putPublicEndpointParams",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) PutRetrievalOptions(value *AiSearchInstanceRetrievalOptions) {
+	if err := a.validatePutRetrievalOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRetrievalOptions",
 		[]interface{}{value},
 	)
 }
@@ -1994,10 +2149,34 @@ func (a *jsiiProxy_AiSearchInstance) ResetEmbeddingModel() {
 	)
 }
 
+func (a *jsiiProxy_AiSearchInstance) ResetFusionMethod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFusionMethod",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstance) ResetHybridSearchEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetHybridSearchEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetIndexingOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIndexingOptions",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetIndexMethod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIndexMethod",
 		nil, // no parameters
 	)
 }
@@ -2058,6 +2237,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetRerankingModel() {
 	)
 }
 
+func (a *jsiiProxy_AiSearchInstance) ResetRetrievalOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRetrievalOptions",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstance) ResetRewriteModel() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2082,6 +2269,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetScoreThreshold() {
 	)
 }
 
+func (a *jsiiProxy_AiSearchInstance) ResetSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSource",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstance) ResetSourceParams() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2102,6 +2297,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetSummarizationModel() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSummarizationModel",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetSyncInterval() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSyncInterval",
 		nil, // no parameters
 	)
 }
@@ -2134,6 +2337,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetTokenId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTokenId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
 		nil, // no parameters
 	)
 }

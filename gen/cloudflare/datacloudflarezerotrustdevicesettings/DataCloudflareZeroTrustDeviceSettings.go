@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdevicesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 type DataCloudflareZeroTrustDeviceSettings interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -87,6 +87,7 @@ type DataCloudflareZeroTrustDeviceSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -360,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) UseZtVirtualIp() cdktf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
 func NewDataCloudflareZeroTrustDeviceSettings(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceSettingsConfig) DataCloudflareZeroTrustDeviceSettings {
 	_init_.Initialize()
 
@@ -378,7 +379,7 @@ func NewDataCloudflareZeroTrustDeviceSettings(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Data Source.
 func NewDataCloudflareZeroTrustDeviceSettings_Override(d DataCloudflareZeroTrustDeviceSettings, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceSettingsConfig) {
 	_init_.Initialize()
 
@@ -728,6 +729,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) OverrideLogicalId(newL
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceSettings) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

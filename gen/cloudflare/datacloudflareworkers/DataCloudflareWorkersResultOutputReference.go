@@ -26,6 +26,7 @@ type DataCloudflareWorkersResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployedOn() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -121,6 +122,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersResultOutputReference) DeployedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployedOn",
 		&returns,
 	)
 	return returns

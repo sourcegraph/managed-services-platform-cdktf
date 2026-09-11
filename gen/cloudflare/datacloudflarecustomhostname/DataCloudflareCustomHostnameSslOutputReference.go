@@ -30,6 +30,7 @@ type DataCloudflareCustomHostnameSslOutputReference interface {
 	CustomCertificate() *string
 	CustomCsrId() *string
 	CustomKey() *string
+	DcvDelegationRecords() DataCloudflareCustomHostnameSslDcvDelegationRecordsList
 	ExpiresOn() *string
 	// Experimental.
 	Fqn() *string
@@ -170,6 +171,16 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameSslOutputReference) CustomKey() *
 	_jsii_.Get(
 		j,
 		"customKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameSslOutputReference) DcvDelegationRecords() DataCloudflareCustomHostnameSslDcvDelegationRecordsList {
+	var returns DataCloudflareCustomHostnameSslDcvDelegationRecordsList
+	_jsii_.Get(
+		j,
+		"dcvDelegationRecords",
 		&returns,
 	)
 	return returns

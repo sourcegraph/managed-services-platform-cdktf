@@ -45,6 +45,8 @@ type WorkersScriptObservabilityOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Traces() WorkersScriptObservabilityTracesOutputReference
+	TracesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type WorkersScriptObservabilityOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLogs(value *WorkersScriptObservabilityLogs)
+	PutTraces(value *WorkersScriptObservabilityTraces)
 	ResetHeadSamplingRate()
 	ResetLogs()
+	ResetTraces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -212,6 +216,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) Traces() WorkersScriptObservabilityTracesOutputReference {
+	var returns WorkersScriptObservabilityTracesOutputReference
+	_jsii_.Get(
+		j,
+		"traces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) TracesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tracesInput",
 		&returns,
 	)
 	return returns
@@ -519,6 +543,17 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutLogs(value *Wor
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutTraces(value *WorkersScriptObservabilityTraces) {
+	if err := w.validatePutTracesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTraces",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetHeadSamplingRate() {
 	_jsii_.InvokeVoid(
 		w,
@@ -531,6 +566,14 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetLogs() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetLogs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetTraces() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTraces",
 		nil, // no parameters
 	)
 }

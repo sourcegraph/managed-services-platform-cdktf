@@ -25,6 +25,9 @@ type WorkerVersionBindingsOutboundWorkerOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Entrypoint() *string
+	SetEntrypoint(val *string)
+	EntrypointInput() *string
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -67,6 +70,7 @@ type WorkerVersionBindingsOutboundWorkerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEntrypoint()
 	ResetEnvironment()
 	ResetService()
 	// Produce the Token's value at resolution time.
@@ -109,6 +113,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference) CreationS
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference) Entrypoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entrypoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference) EntrypointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entrypointInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference)SetEntrypoint(val *string) {
+	if err := j.validateSetEntrypointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"entrypoint",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference) ResetEntrypoint() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEntrypoint",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WorkerVersionBindingsOutboundWorkerOutputReference) ResetEnvironment() {

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaretokenvalidationruleslist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list}.
 type DataCloudflareTokenValidationRulesList interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -114,6 +114,7 @@ type DataCloudflareTokenValidationRulesList interface {
 	ResetOverrideLogicalId()
 	ResetRuleId()
 	ResetTokenConfiguration()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -464,7 +465,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesList) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
 func NewDataCloudflareTokenValidationRulesList(scope constructs.Construct, id *string, config *DataCloudflareTokenValidationRulesListConfig) DataCloudflareTokenValidationRulesList {
 	_init_.Initialize()
 
@@ -482,7 +483,7 @@ func NewDataCloudflareTokenValidationRulesList(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
 func NewDataCloudflareTokenValidationRulesList_Override(d DataCloudflareTokenValidationRulesList, scope constructs.Construct, id *string, config *DataCloudflareTokenValidationRulesListConfig) {
 	_init_.Initialize()
 
@@ -991,6 +992,14 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesList) ResetTokenConfigurati
 	_jsii_.InvokeVoid(
 		d,
 		"resetTokenConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareTokenValidationRulesList) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

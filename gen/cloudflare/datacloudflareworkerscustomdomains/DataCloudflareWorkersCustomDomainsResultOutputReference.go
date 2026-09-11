@@ -10,6 +10,7 @@ import (
 
 type DataCloudflareWorkersCustomDomainsResultOutputReference interface {
 	cdktf.ComplexObject
+	CertId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type DataCloudflareWorkersCustomDomainsResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareWorkersCustomDomainsResultOutputReference
 type jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) CertId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) ComplexObjectIndex() interface{} {

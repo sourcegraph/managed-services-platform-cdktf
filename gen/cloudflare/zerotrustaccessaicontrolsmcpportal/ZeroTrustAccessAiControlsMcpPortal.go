@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessaicontrolsmcpportal/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type ZeroTrustAccessAiControlsMcpPortal interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowCodeMode() interface{}
+	SetAllowCodeMode(val interface{})
+	AllowCodeModeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -126,6 +129,8 @@ type ZeroTrustAccessAiControlsMcpPortal interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutServers(value interface{})
+	ResetAccountId()
+	ResetAllowCodeMode()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -165,6 +170,26 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) AccountIdInput() *string 
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) AllowCodeMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCodeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) AllowCodeModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCodeModeInput",
 		&returns,
 	)
 	return returns
@@ -491,7 +516,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) ZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -509,7 +534,7 @@ func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal_Override(z ZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 
@@ -527,6 +552,17 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal)SetAccountId(val *string) 
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal)SetAllowCodeMode(val interface{}) {
+	if err := j.validateSetAllowCodeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowCodeMode",
 		val,
 	)
 }
@@ -1015,6 +1051,22 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) PutServers(value interfac
 		z,
 		"putServers",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) ResetAllowCodeMode() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAllowCodeMode",
+		nil, // no parameters
 	)
 }
 

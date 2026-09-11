@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkerversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_version cloudflare_worker_version}.
 type DataCloudflareWorkerVersion interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -24,6 +24,7 @@ type DataCloudflareWorkerVersion interface {
 	CompatibilityFlags() *[]*string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Containers() DataCloudflareWorkerVersionContainersList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -53,6 +54,7 @@ type DataCloudflareWorkerVersion interface {
 	MainModule() *string
 	MainScriptBase64() *string
 	Migrations() DataCloudflareWorkerVersionMigrationsOutputReference
+	MigrationTag() *string
 	Modules() DataCloudflareWorkerVersionModulesList
 	// The tree node.
 	Node() constructs.Node
@@ -72,6 +74,7 @@ type DataCloudflareWorkerVersion interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Urls() *[]*string
 	UsageModel() *string
 	VersionId() *string
 	SetVersionId(val *string)
@@ -104,6 +107,7 @@ type DataCloudflareWorkerVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetInclude()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -212,6 +216,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersion) ConstructNodeMetadata() *map[str
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersion) Containers() DataCloudflareWorkerVersionContainersList {
+	var returns DataCloudflareWorkerVersionContainersList
+	_jsii_.Get(
+		j,
+		"containers",
 		&returns,
 	)
 	return returns
@@ -357,6 +371,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersion) Migrations() DataCloudflareWorke
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersion) MigrationTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationTag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersion) Modules() DataCloudflareWorkerVersionModulesList {
 	var returns DataCloudflareWorkerVersionModulesList
 	_jsii_.Get(
@@ -467,6 +491,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersion) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersion) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersion) UsageModel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -518,7 +552,7 @@ func (j *jsiiProxy_DataCloudflareWorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
 func NewDataCloudflareWorkerVersion(scope constructs.Construct, id *string, config *DataCloudflareWorkerVersionConfig) DataCloudflareWorkerVersion {
 	_init_.Initialize()
 
@@ -536,7 +570,7 @@ func NewDataCloudflareWorkerVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
 func NewDataCloudflareWorkerVersion_Override(d DataCloudflareWorkerVersion, scope constructs.Construct, id *string, config *DataCloudflareWorkerVersionConfig) {
 	_init_.Initialize()
 
@@ -919,6 +953,14 @@ func (d *jsiiProxy_DataCloudflareWorkerVersion) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkerVersion) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

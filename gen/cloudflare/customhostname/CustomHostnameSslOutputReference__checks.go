@@ -249,6 +249,14 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomCertificat
 	return nil
 }
 
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomCsrIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

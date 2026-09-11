@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/authenticatedoriginpullscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
 type AuthenticatedOriginPullsCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,7 @@ type AuthenticatedOriginPullsCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SerialNumber() *string
 	Signature() *string
 	Status() *string
 	// Experimental.
@@ -359,6 +360,16 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) SerialNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumber",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Signature() *string {
 	var returns *string
 	_jsii_.Get(
@@ -440,7 +451,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
 func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsCertificateConfig) AuthenticatedOriginPullsCertificate {
 	_init_.Initialize()
 
@@ -458,7 +469,7 @@ func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
 func NewAuthenticatedOriginPullsCertificate_Override(a AuthenticatedOriginPullsCertificate, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsCertificateConfig) {
 	_init_.Initialize()
 

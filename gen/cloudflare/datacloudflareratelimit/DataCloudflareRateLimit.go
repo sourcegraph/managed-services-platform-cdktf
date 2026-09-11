@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareratelimit/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
 type DataCloudflareRateLimit interface {
 	cdktf.TerraformDataSource
 	Action() DataCloudflareRateLimitActionOutputReference
@@ -92,6 +92,7 @@ type DataCloudflareRateLimit interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -372,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareRateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
 func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *DataCloudflareRateLimitConfig) DataCloudflareRateLimit {
 	_init_.Initialize()
 
@@ -390,7 +391,7 @@ func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
 func NewDataCloudflareRateLimit_Override(d DataCloudflareRateLimit, scope constructs.Construct, id *string, config *DataCloudflareRateLimitConfig) {
 	_init_.Initialize()
 
@@ -758,6 +759,14 @@ func (d *jsiiProxy_DataCloudflareRateLimit) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareRateLimit) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

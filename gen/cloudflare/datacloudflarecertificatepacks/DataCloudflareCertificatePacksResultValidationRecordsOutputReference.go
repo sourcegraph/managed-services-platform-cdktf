@@ -10,6 +10,8 @@ import (
 
 type DataCloudflareCertificatePacksResultValidationRecordsOutputReference interface {
 	cdktf.ComplexObject
+	Cname() *string
+	CnameTarget() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +34,7 @@ type DataCloudflareCertificatePacksResultValidationRecordsOutputReference interf
 	HttpUrl() *string
 	InternalValue() *DataCloudflareCertificatePacksResultValidationRecords
 	SetInternalValue(val *DataCloudflareCertificatePacksResultValidationRecords)
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +82,26 @@ type DataCloudflareCertificatePacksResultValidationRecordsOutputReference interf
 // The jsii proxy struct for DataCloudflareCertificatePacksResultValidationRecordsOutputReference
 type jsiiProxy_DataCloudflareCertificatePacksResultValidationRecordsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultValidationRecordsOutputReference) Cname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultValidationRecordsOutputReference) CnameTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cnameTarget",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareCertificatePacksResultValidationRecordsOutputReference) ComplexObjectIndex() interface{} {
@@ -156,6 +179,16 @@ func (j *jsiiProxy_DataCloudflareCertificatePacksResultValidationRecordsOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultValidationRecordsOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

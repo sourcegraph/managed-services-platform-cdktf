@@ -76,6 +76,10 @@ func (c *jsiiProxy_ConnectivityDirectoryService) validatePutHostParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ConnectivityDirectoryService) validatePutTlsSettingsParameters(value *ConnectivityDirectoryServiceTlsSettings) error {
+	return nil
+}
+
 func validateConnectivityDirectoryService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func validateConnectivityDirectoryService_IsTerraformResourceParameters(x interf
 }
 
 func (j *jsiiProxy_ConnectivityDirectoryService) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) validateSetAppProtocolParameters(val *string) error {
 	return nil
 }
 
@@ -121,6 +129,10 @@ func (j *jsiiProxy_ConnectivityDirectoryService) validateSetNameParameters(val *
 }
 
 func (j *jsiiProxy_ConnectivityDirectoryService) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) validateSetTcpPortParameters(val *float64) error {
 	return nil
 }
 

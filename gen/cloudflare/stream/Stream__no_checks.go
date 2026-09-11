@@ -72,6 +72,10 @@ func (s *jsiiProxy_Stream) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (s *jsiiProxy_Stream) validatePutPublicDetailsParameters(value *StreamPublicDetails) error {
+	return nil
+}
+
 func validateStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -137,6 +141,10 @@ func (j *jsiiProxy_Stream) validateSetScheduledDeletionParameters(val *string) e
 }
 
 func (j *jsiiProxy_Stream) validateSetThumbnailTimestampPctParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Stream) validateSetUidParameters(val *string) error {
 	return nil
 }
 

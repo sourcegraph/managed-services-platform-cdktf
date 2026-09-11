@@ -21,19 +21,31 @@ type HostnameTlsSettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The hostname for which the tls settings are set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
-	// The TLS Setting name. Available values: "ciphers", "min_tls_version", "http2".
+	// The TLS Setting name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+	// The value type depends on the setting:
+	// - `ciphers`: value is an array of cipher suite strings (e.g., `["ECDHE-RSA-AES128-GCM-SHA256", "AES128-GCM-SHA256"]`)
+	// - `min_tls_version`: value is a TLS version string (`"1.0"`, `"1.1"`, `"1.2"`, or `"1.3"`)
+	// - `http2`: value is `"on"` or `"off"`
+	// Available values: "ciphers", "min_tls_version", "http2".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
 	SettingId *string `field:"required" json:"settingId" yaml:"settingId"`
-	// The tls setting value.
+	// The TLS setting value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+	// The type depends on the `setting_id` used in the request path:
+	// - `ciphers`: an array of allowed cipher suite strings in BoringSSL format (e.g., `["ECDHE-RSA-AES128-GCM-SHA256", "AES128-GCM-SHA256"]`)
+	// - `min_tls_version`: a string indicating the minimum TLS version — one of `"1.0"`, `"1.1"`, `"1.2"`, or `"1.3"` (e.g., `"1.2"`)
+	// - `http2`: a string indicating whether HTTP/2 is enabled — `"on"` or `"off"` (e.g., `"on"`)
+	// Available values: "1.0", "1.1", "1.2", "1.3", "on", "off".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
 	Value *map[string]interface{} `field:"required" json:"value" yaml:"value"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

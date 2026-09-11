@@ -32,6 +32,8 @@ type AiSearchInstanceMetadataOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SearchForAgents() AiSearchInstanceMetadataSearchForAgentsOutputReference
+	SearchForAgentsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type AiSearchInstanceMetadataOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSearchForAgents(value *AiSearchInstanceMetadataSearchForAgents)
 	ResetCreatedFromAisearchWizard()
+	ResetSearchForAgents()
 	ResetWorkerDomain()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_AiSearchInstanceMetadataOutputReference) InternalValue() inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceMetadataOutputReference) SearchForAgents() AiSearchInstanceMetadataSearchForAgentsOutputReference {
+	var returns AiSearchInstanceMetadataSearchForAgentsOutputReference
+	_jsii_.Get(
+		j,
+		"searchForAgents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceMetadataOutputReference) SearchForAgentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"searchForAgentsInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) InterpolationForAttr
 	return returns
 }
 
+func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) PutSearchForAgents(value *AiSearchInstanceMetadataSearchForAgents) {
+	if err := a.validatePutSearchForAgentsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSearchForAgents",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) ResetCreatedFromAisearchWizard() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCreatedFromAisearchWizard",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) ResetSearchForAgents() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSearchForAgents",
 		nil, // no parameters
 	)
 }

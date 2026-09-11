@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/cloudforceonerequestmessage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 type CloudforceOneRequestMessage interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -115,6 +115,7 @@ type CloudforceOneRequestMessage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetContent()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -408,7 +409,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
 func NewCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *CloudforceOneRequestMessageConfig) CloudforceOneRequestMessage {
 	_init_.Initialize()
 
@@ -426,7 +427,7 @@ func NewCloudforceOneRequestMessage(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
 func NewCloudforceOneRequestMessage_Override(c CloudforceOneRequestMessage, scope constructs.Construct, id *string, config *CloudforceOneRequestMessageConfig) {
 	_init_.Initialize()
 
@@ -888,6 +889,14 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) OverrideLogicalId(newLogicalId *
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudforceOneRequestMessage) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

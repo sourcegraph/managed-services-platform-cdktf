@@ -104,6 +104,10 @@ func (j *jsiiProxy_AccountDnsSettings) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AccountDnsSettings) validateSetEnforceDnsOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountDnsSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -28,6 +28,7 @@ type DataCloudflareZeroTrustDlpCustomEntriesResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -145,6 +146,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomEntriesResultOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomEntriesResultOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns

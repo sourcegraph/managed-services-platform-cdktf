@@ -116,6 +116,10 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetWmIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

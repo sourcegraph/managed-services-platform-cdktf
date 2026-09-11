@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarequeueconsumers/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}.
 type DataCloudflareQueueConsumersA interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareQueueConsumersA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -319,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersA) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
 func NewDataCloudflareQueueConsumersA(scope constructs.Construct, id *string, config *DataCloudflareQueueConsumersAConfig) DataCloudflareQueueConsumersA {
 	_init_.Initialize()
 
@@ -337,7 +338,7 @@ func NewDataCloudflareQueueConsumersA(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
 func NewDataCloudflareQueueConsumersA_Override(d DataCloudflareQueueConsumersA, scope constructs.Construct, id *string, config *DataCloudflareQueueConsumersAConfig) {
 	_init_.Initialize()
 
@@ -709,6 +710,14 @@ func (d *jsiiProxy_DataCloudflareQueueConsumersA) OverrideLogicalId(newLogicalId
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareQueueConsumersA) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

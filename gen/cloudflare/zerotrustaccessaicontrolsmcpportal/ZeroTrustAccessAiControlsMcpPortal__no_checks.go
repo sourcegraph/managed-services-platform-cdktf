@@ -96,6 +96,10 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetAccountIdParam
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetAllowCodeModeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

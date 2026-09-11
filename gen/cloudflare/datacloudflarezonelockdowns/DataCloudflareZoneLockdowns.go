@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezonelockdowns/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
 type DataCloudflareZoneLockdowns interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -122,6 +122,7 @@ type DataCloudflareZoneLockdowns interface {
 	ResetOverrideLogicalId()
 	ResetPriority()
 	ResetUriSearch()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -512,7 +513,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdowns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
 func NewDataCloudflareZoneLockdowns(scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownsConfig) DataCloudflareZoneLockdowns {
 	_init_.Initialize()
 
@@ -530,7 +531,7 @@ func NewDataCloudflareZoneLockdowns(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
 func NewDataCloudflareZoneLockdowns_Override(d DataCloudflareZoneLockdowns, scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownsConfig) {
 	_init_.Initialize()
 
@@ -1077,6 +1078,14 @@ func (d *jsiiProxy_DataCloudflareZoneLockdowns) ResetUriSearch() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetUriSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZoneLockdowns) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -20,6 +20,8 @@ type AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference interface
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContentSelector() AiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorList
+	ContentSelectorInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -73,6 +75,8 @@ type AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutContentSelector(value interface{})
+	ResetContentSelector()
 	ResetIncludeHeaders()
 	ResetIncludeImages()
 	ResetSpecificSitemaps()
@@ -107,6 +111,26 @@ func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputRefer
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) ContentSelector() AiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorList {
+	var returns AiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorList
+	_jsii_.Get(
+		j,
+		"contentSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) ContentSelectorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentSelectorInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +577,25 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputRefer
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) PutContentSelector(value interface{}) {
+	if err := a.validatePutContentSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putContentSelector",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) ResetContentSelector() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetContentSelector",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) ResetIncludeHeaders() {

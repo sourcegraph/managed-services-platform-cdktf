@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamwebhook/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
 type StreamWebhook interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -43,6 +43,7 @@ type StreamWebhook interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Modified() *string
 	// The tree node.
 	Node() constructs.Node
 	NotificationUrl() *string
@@ -58,6 +59,7 @@ type StreamWebhook interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Secret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,6 +109,8 @@ type StreamWebhook interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
+	ResetNotificationUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -238,6 +242,16 @@ func (j *jsiiProxy_StreamWebhook) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
+func (j *jsiiProxy_StreamWebhook) Modified() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modified",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamWebhook) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -298,6 +312,16 @@ func (j *jsiiProxy_StreamWebhook) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StreamWebhook) Secret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamWebhook) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -329,7 +353,7 @@ func (j *jsiiProxy_StreamWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebhookConfig) StreamWebhook {
 	_init_.Initialize()
 
@@ -347,7 +371,7 @@ func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook_Override(s StreamWebhook, scope constructs.Construct, id *string, config *StreamWebhookConfig) {
 	_init_.Initialize()
 
@@ -798,6 +822,22 @@ func (s *jsiiProxy_StreamWebhook) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamWebhook) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamWebhook) ResetNotificationUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotificationUrl",
+		nil, // no parameters
 	)
 }
 

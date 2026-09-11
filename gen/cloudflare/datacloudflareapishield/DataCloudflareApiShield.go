@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareapishield/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield cloudflare_api_shield}.
 type DataCloudflareApiShield interface {
 	cdktf.TerraformDataSource
 	AuthIdCharacteristics() DataCloudflareApiShieldAuthIdCharacteristicsList
@@ -87,6 +87,7 @@ type DataCloudflareApiShield interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -307,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
 func NewDataCloudflareApiShield(scope constructs.Construct, id *string, config *DataCloudflareApiShieldConfig) DataCloudflareApiShield {
 	_init_.Initialize()
 
@@ -325,7 +326,7 @@ func NewDataCloudflareApiShield(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
 func NewDataCloudflareApiShield_Override(d DataCloudflareApiShield, scope constructs.Construct, id *string, config *DataCloudflareApiShieldConfig) {
 	_init_.Initialize()
 
@@ -701,6 +702,14 @@ func (d *jsiiProxy_DataCloudflareApiShield) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareApiShield) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

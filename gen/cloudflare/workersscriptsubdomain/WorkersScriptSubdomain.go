@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workersscriptsubdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
 type WorkersScriptSubdomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -114,6 +114,7 @@ type WorkersScriptSubdomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -387,7 +388,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) WorkersScriptSubdomain {
 	_init_.Initialize()
 
@@ -405,7 +406,7 @@ func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain_Override(w WorkersScriptSubdomain, scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) {
 	_init_.Initialize()
 
@@ -878,6 +879,14 @@ func (w *jsiiProxy_WorkersScriptSubdomain) OverrideLogicalId(newLogicalId *strin
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptSubdomain) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

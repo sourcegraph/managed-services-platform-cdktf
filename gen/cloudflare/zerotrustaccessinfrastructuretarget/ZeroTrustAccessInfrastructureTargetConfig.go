@@ -19,10 +19,6 @@ type ZeroTrustAccessInfrastructureTargetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Account identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_infrastructure_target#account_id ZeroTrustAccessInfrastructureTarget#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A non-unique field that refers to a target.
 	//
 	// Case insensitive, maximum
@@ -30,11 +26,15 @@ type ZeroTrustAccessInfrastructureTargetConfig struct {
 	// and period, does not support spaces, and must start and end with an
 	// alphanumeric character.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_infrastructure_target#hostname ZeroTrustAccessInfrastructureTarget#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_infrastructure_target#hostname ZeroTrustAccessInfrastructureTarget#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// The IPv4/IPv6 address that identifies where to reach a target.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_infrastructure_target#ip ZeroTrustAccessInfrastructureTarget#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_infrastructure_target#ip ZeroTrustAccessInfrastructureTarget#ip}
 	Ip *ZeroTrustAccessInfrastructureTargetIp `field:"required" json:"ip" yaml:"ip"`
+	// Account identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_infrastructure_target#account_id ZeroTrustAccessInfrastructureTarget#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

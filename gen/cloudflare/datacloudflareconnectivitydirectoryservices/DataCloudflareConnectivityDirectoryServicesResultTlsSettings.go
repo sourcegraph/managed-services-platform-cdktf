@@ -1,0 +1,6 @@
+package datacloudflareconnectivitydirectoryservices
+
+
+type DataCloudflareConnectivityDirectoryServicesResultTlsSettings struct {
+}
+

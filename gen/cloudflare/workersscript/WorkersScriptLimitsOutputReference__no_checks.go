@@ -64,6 +64,10 @@ func (j *jsiiProxy_WorkersScriptLimitsOutputReference) validateSetInternalValueP
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptLimitsOutputReference) validateSetSubrequestsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptLimitsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) validateSetSchemeParam
 	return nil
 }
 
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) validateSetServiceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

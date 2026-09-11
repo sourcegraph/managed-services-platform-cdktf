@@ -80,6 +80,14 @@ func (z *jsiiProxy_ZeroTrustOrganization) validatePutLoginDesignParameters(value
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaConfigParameters(value *ZeroTrustOrganizationMfaConfig) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaSshPivKeyRequirementsParameters(value *ZeroTrustOrganizationMfaSshPivKeyRequirements) error {
+	return nil
+}
+
 func validateZeroTrustOrganization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -133,6 +141,14 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetIsUiReadOnlyParameters(val 
 }
 
 func (j *jsiiProxy_ZeroTrustOrganization) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetMfaConfigurationAllowedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetMfaRequiredForAllAppsParameters(val interface{}) error {
 	return nil
 }
 

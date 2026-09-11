@@ -104,6 +104,10 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpEntry) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpEntry) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -47,6 +47,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	Content() *string
 	SetContent(val *string)
+	ContentConverter() interface{}
+	SetContentConverter(val interface{})
+	ContentConverterInput() interface{}
 	ContentInput() *string
 	ContentType() *string
 	SetContentType(val *string)
@@ -72,6 +75,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	EmailObfuscation() interface{}
 	SetEmailObfuscation(val interface{})
 	EmailObfuscationInput() interface{}
+	Expression() *string
+	SetExpression(val *string)
+	ExpressionInput() *string
 	Fonts() interface{}
 	SetFonts(val interface{})
 	FontsInput() interface{}
@@ -92,6 +98,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Immutable() RulesetRulesActionParametersImmutableOutputReference
+	ImmutableInput() interface{}
 	Increment() *float64
 	SetIncrement(val *float64)
 	IncrementInput() *float64
@@ -99,9 +107,24 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetInternalValue(val interface{})
 	MatchedData() RulesetRulesActionParametersMatchedDataOutputReference
 	MatchedDataInput() interface{}
+	MaxAge() RulesetRulesActionParametersMaxAgeOutputReference
+	MaxAgeInput() interface{}
 	Mirage() interface{}
 	SetMirage(val interface{})
 	MirageInput() interface{}
+	MustRevalidate() RulesetRulesActionParametersMustRevalidateOutputReference
+	MustRevalidateInput() interface{}
+	MustUnderstand() RulesetRulesActionParametersMustUnderstandOutputReference
+	MustUnderstandInput() interface{}
+	NoCache() RulesetRulesActionParametersNoCacheOutputReference
+	NoCacheInput() interface{}
+	NoStore() RulesetRulesActionParametersNoStoreOutputReference
+	NoStoreInput() interface{}
+	NoTransform() RulesetRulesActionParametersNoTransformOutputReference
+	NoTransformInput() interface{}
+	Operation() *string
+	SetOperation(val *string)
+	OperationInput() *string
 	OpportunisticEncryption() interface{}
 	SetOpportunisticEncryption(val interface{})
 	OpportunisticEncryptionInput() interface{}
@@ -121,14 +144,23 @@ type RulesetRulesActionParametersOutputReference interface {
 	Polish() *string
 	SetPolish(val *string)
 	PolishInput() *string
+	Private() RulesetRulesActionParametersPrivateOutputReference
+	PrivateInput() interface{}
 	Products() *[]*string
 	SetProducts(val *[]*string)
 	ProductsInput() *[]*string
+	ProxyRevalidate() RulesetRulesActionParametersProxyRevalidateOutputReference
+	ProxyRevalidateInput() interface{}
+	Public() RulesetRulesActionParametersPublicOutputReference
+	PublicInput() interface{}
 	RawResponseFields() RulesetRulesActionParametersRawResponseFieldsList
 	RawResponseFieldsInput() interface{}
 	ReadTimeout() *float64
 	SetReadTimeout(val *float64)
 	ReadTimeoutInput() *float64
+	RedirectsForAiTraining() interface{}
+	SetRedirectsForAiTraining(val interface{})
+	RedirectsForAiTrainingInput() interface{}
 	RequestBodyBuffering() *string
 	SetRequestBodyBuffering(val *string)
 	RequestBodyBufferingInput() *string
@@ -164,14 +196,29 @@ type RulesetRulesActionParametersOutputReference interface {
 	ServerSideExcludesInput() interface{}
 	ServeStale() RulesetRulesActionParametersServeStaleOutputReference
 	ServeStaleInput() interface{}
+	SMaxage() RulesetRulesActionParametersSMaxageOutputReference
+	SMaxageInput() interface{}
 	Sni() RulesetRulesActionParametersSniOutputReference
 	SniInput() interface{}
 	Ssl() *string
 	SetSsl(val *string)
 	SslInput() *string
+	StaleIfError() RulesetRulesActionParametersStaleIfErrorOutputReference
+	StaleIfErrorInput() interface{}
+	StaleWhileRevalidate() RulesetRulesActionParametersStaleWhileRevalidateOutputReference
+	StaleWhileRevalidateInput() interface{}
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
+	StripEtags() interface{}
+	SetStripEtags(val interface{})
+	StripEtagsInput() interface{}
+	StripLastModified() interface{}
+	SetStripLastModified(val interface{})
+	StripLastModifiedInput() interface{}
+	StripSetCookie() interface{}
+	SetStripSetCookie(val interface{})
+	StripSetCookieInput() interface{}
 	Sxg() interface{}
 	SetSxg(val interface{})
 	SxgInput() interface{}
@@ -187,6 +234,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	TransformedRequestFieldsInput() interface{}
 	Uri() RulesetRulesActionParametersUriOutputReference
 	UriInput() interface{}
+	Values() *[]*string
+	SetValues(val *[]*string)
+	ValuesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -221,15 +271,28 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutFromList(value *RulesetRulesActionParametersFromListStruct)
 	PutFromValue(value *RulesetRulesActionParametersFromValue)
 	PutHeaders(value interface{})
+	PutImmutable(value *RulesetRulesActionParametersImmutable)
 	PutMatchedData(value *RulesetRulesActionParametersMatchedData)
+	PutMaxAge(value *RulesetRulesActionParametersMaxAge)
+	PutMustRevalidate(value *RulesetRulesActionParametersMustRevalidate)
+	PutMustUnderstand(value *RulesetRulesActionParametersMustUnderstand)
+	PutNoCache(value *RulesetRulesActionParametersNoCache)
+	PutNoStore(value *RulesetRulesActionParametersNoStore)
+	PutNoTransform(value *RulesetRulesActionParametersNoTransform)
 	PutOrigin(value *RulesetRulesActionParametersOrigin)
 	PutOverrides(value *RulesetRulesActionParametersOverrides)
+	PutPrivate(value *RulesetRulesActionParametersPrivate)
+	PutProxyRevalidate(value *RulesetRulesActionParametersProxyRevalidate)
+	PutPublic(value *RulesetRulesActionParametersPublic)
 	PutRawResponseFields(value interface{})
 	PutRequestFields(value interface{})
 	PutResponse(value *RulesetRulesActionParametersResponse)
 	PutResponseFields(value interface{})
 	PutServeStale(value *RulesetRulesActionParametersServeStale)
+	PutSMaxage(value *RulesetRulesActionParametersSMaxage)
 	PutSni(value *RulesetRulesActionParametersSni)
+	PutStaleIfError(value *RulesetRulesActionParametersStaleIfError)
+	PutStaleWhileRevalidate(value *RulesetRulesActionParametersStaleWhileRevalidate)
 	PutTransformedRequestFields(value interface{})
 	PutUri(value *RulesetRulesActionParametersUri)
 	ResetAdditionalCacheablePorts()
@@ -243,6 +306,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetCacheKey()
 	ResetCacheReserve()
 	ResetContent()
+	ResetContentConverter()
 	ResetContentType()
 	ResetCookieFields()
 	ResetDisableApps()
@@ -250,6 +314,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetDisableZaraz()
 	ResetEdgeTtl()
 	ResetEmailObfuscation()
+	ResetExpression()
 	ResetFonts()
 	ResetFromList()
 	ResetFromValue()
@@ -257,9 +322,17 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetHostHeader()
 	ResetHotlinkProtection()
 	ResetId()
+	ResetImmutable()
 	ResetIncrement()
 	ResetMatchedData()
+	ResetMaxAge()
 	ResetMirage()
+	ResetMustRevalidate()
+	ResetMustUnderstand()
+	ResetNoCache()
+	ResetNoStore()
+	ResetNoTransform()
+	ResetOperation()
 	ResetOpportunisticEncryption()
 	ResetOrigin()
 	ResetOriginCacheControl()
@@ -267,9 +340,13 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetOverrides()
 	ResetPhases()
 	ResetPolish()
+	ResetPrivate()
 	ResetProducts()
+	ResetProxyRevalidate()
+	ResetPublic()
 	ResetRawResponseFields()
 	ResetReadTimeout()
+	ResetRedirectsForAiTraining()
 	ResetRequestBodyBuffering()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
@@ -283,12 +360,19 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetSecurityLevel()
 	ResetServerSideExcludes()
 	ResetServeStale()
+	ResetSMaxage()
 	ResetSni()
 	ResetSsl()
+	ResetStaleIfError()
+	ResetStaleWhileRevalidate()
 	ResetStatusCode()
+	ResetStripEtags()
+	ResetStripLastModified()
+	ResetStripSetCookie()
 	ResetSxg()
 	ResetTransformedRequestFields()
 	ResetUri()
+	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -534,6 +618,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Content() *strin
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ContentConverter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentConverter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ContentConverterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentConverterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ContentInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -694,6 +798,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EmailObfuscation
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ExpressionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expressionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Fonts() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -844,6 +968,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) IdInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Immutable() RulesetRulesActionParametersImmutableOutputReference {
+	var returns RulesetRulesActionParametersImmutableOutputReference
+	_jsii_.Get(
+		j,
+		"immutable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ImmutableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutableInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Increment() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -894,6 +1038,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MatchedDataInput
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MaxAge() RulesetRulesActionParametersMaxAgeOutputReference {
+	var returns RulesetRulesActionParametersMaxAgeOutputReference
+	_jsii_.Get(
+		j,
+		"maxAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MaxAgeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"maxAgeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Mirage() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -909,6 +1073,126 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MirageInput() in
 	_jsii_.Get(
 		j,
 		"mirageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MustRevalidate() RulesetRulesActionParametersMustRevalidateOutputReference {
+	var returns RulesetRulesActionParametersMustRevalidateOutputReference
+	_jsii_.Get(
+		j,
+		"mustRevalidate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MustRevalidateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mustRevalidateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MustUnderstand() RulesetRulesActionParametersMustUnderstandOutputReference {
+	var returns RulesetRulesActionParametersMustUnderstandOutputReference
+	_jsii_.Get(
+		j,
+		"mustUnderstand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MustUnderstandInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mustUnderstandInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) NoCache() RulesetRulesActionParametersNoCacheOutputReference {
+	var returns RulesetRulesActionParametersNoCacheOutputReference
+	_jsii_.Get(
+		j,
+		"noCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) NoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noCacheInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) NoStore() RulesetRulesActionParametersNoStoreOutputReference {
+	var returns RulesetRulesActionParametersNoStoreOutputReference
+	_jsii_.Get(
+		j,
+		"noStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) NoStoreInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noStoreInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) NoTransform() RulesetRulesActionParametersNoTransformOutputReference {
+	var returns RulesetRulesActionParametersNoTransformOutputReference
+	_jsii_.Get(
+		j,
+		"noTransform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) NoTransformInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noTransformInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Operation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OperationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationInput",
 		&returns,
 	)
 	return returns
@@ -1054,6 +1338,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PolishInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Private() RulesetRulesActionParametersPrivateOutputReference {
+	var returns RulesetRulesActionParametersPrivateOutputReference
+	_jsii_.Get(
+		j,
+		"private",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PrivateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Products() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1069,6 +1373,46 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ProductsInput() 
 	_jsii_.Get(
 		j,
 		"productsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ProxyRevalidate() RulesetRulesActionParametersProxyRevalidateOutputReference {
+	var returns RulesetRulesActionParametersProxyRevalidateOutputReference
+	_jsii_.Get(
+		j,
+		"proxyRevalidate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ProxyRevalidateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"proxyRevalidateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Public() RulesetRulesActionParametersPublicOutputReference {
+	var returns RulesetRulesActionParametersPublicOutputReference
+	_jsii_.Get(
+		j,
+		"public",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PublicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicInput",
 		&returns,
 	)
 	return returns
@@ -1109,6 +1453,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeoutInput
 	_jsii_.Get(
 		j,
 		"readTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RedirectsForAiTraining() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectsForAiTraining",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RedirectsForAiTrainingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectsForAiTrainingInput",
 		&returns,
 	)
 	return returns
@@ -1374,6 +1738,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ServeStaleInput(
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SMaxage() RulesetRulesActionParametersSMaxageOutputReference {
+	var returns RulesetRulesActionParametersSMaxageOutputReference
+	_jsii_.Get(
+		j,
+		"sMaxage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SMaxageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sMaxageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Sni() RulesetRulesActionParametersSniOutputReference {
 	var returns RulesetRulesActionParametersSniOutputReference
 	_jsii_.Get(
@@ -1414,6 +1798,46 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SslInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StaleIfError() RulesetRulesActionParametersStaleIfErrorOutputReference {
+	var returns RulesetRulesActionParametersStaleIfErrorOutputReference
+	_jsii_.Get(
+		j,
+		"staleIfError",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StaleIfErrorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"staleIfErrorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StaleWhileRevalidate() RulesetRulesActionParametersStaleWhileRevalidateOutputReference {
+	var returns RulesetRulesActionParametersStaleWhileRevalidateOutputReference
+	_jsii_.Get(
+		j,
+		"staleWhileRevalidate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StaleWhileRevalidateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"staleWhileRevalidateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StatusCode() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1429,6 +1853,66 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StatusCodeInput(
 	_jsii_.Get(
 		j,
 		"statusCodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StripEtags() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripEtags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StripEtagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripEtagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StripLastModified() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripLastModified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StripLastModifiedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripLastModifiedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StripSetCookie() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripSetCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StripSetCookieInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripSetCookieInput",
 		&returns,
 	)
 	return returns
@@ -1509,6 +1993,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) UriInput() inter
 	_jsii_.Get(
 		j,
 		"uriInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Values() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"values",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ValuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"valuesInput",
 		&returns,
 	)
 	return returns
@@ -1630,6 +2134,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetContent(val *s
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetContentConverter(val interface{}) {
+	if err := j.validateSetContentConverterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentConverter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
@@ -1681,6 +2196,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetEmailObfuscati
 	_jsii_.Set(
 		j,
 		"emailObfuscation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetExpression(val *string) {
+	if err := j.validateSetExpressionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expression",
 		val,
 	)
 }
@@ -1762,6 +2288,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetMirage(val int
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOperation(val *string) {
+	if err := j.validateSetOperationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOpportunisticEncryption(val interface{}) {
 	if err := j.validateSetOpportunisticEncryptionParameters(val); err != nil {
 		panic(err)
@@ -1835,6 +2372,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetReadTimeout(va
 	_jsii_.Set(
 		j,
 		"readTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRedirectsForAiTraining(val interface{}) {
+	if err := j.validateSetRedirectsForAiTrainingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirectsForAiTraining",
 		val,
 	)
 }
@@ -1960,6 +2508,39 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetStatusCode(val
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetStripEtags(val interface{}) {
+	if err := j.validateSetStripEtagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stripEtags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetStripLastModified(val interface{}) {
+	if err := j.validateSetStripLastModifiedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stripLastModified",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetStripSetCookie(val interface{}) {
+	if err := j.validateSetStripSetCookieParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stripSetCookie",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetSxg(val interface{}) {
 	if err := j.validateSetSxgParameters(val); err != nil {
 		panic(err)
@@ -1989,6 +2570,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetValues(val *[]*string) {
+	if err := j.validateSetValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"values",
 		val,
 	)
 }
@@ -2289,6 +2881,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutHeaders(value
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutImmutable(value *RulesetRulesActionParametersImmutable) {
+	if err := r.validatePutImmutableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putImmutable",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutMatchedData(value *RulesetRulesActionParametersMatchedData) {
 	if err := r.validatePutMatchedDataParameters(value); err != nil {
 		panic(err)
@@ -2296,6 +2899,72 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutMatchedData(v
 	_jsii_.InvokeVoid(
 		r,
 		"putMatchedData",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutMaxAge(value *RulesetRulesActionParametersMaxAge) {
+	if err := r.validatePutMaxAgeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMaxAge",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutMustRevalidate(value *RulesetRulesActionParametersMustRevalidate) {
+	if err := r.validatePutMustRevalidateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMustRevalidate",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutMustUnderstand(value *RulesetRulesActionParametersMustUnderstand) {
+	if err := r.validatePutMustUnderstandParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMustUnderstand",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutNoCache(value *RulesetRulesActionParametersNoCache) {
+	if err := r.validatePutNoCacheParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putNoCache",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutNoStore(value *RulesetRulesActionParametersNoStore) {
+	if err := r.validatePutNoStoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putNoStore",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutNoTransform(value *RulesetRulesActionParametersNoTransform) {
+	if err := r.validatePutNoTransformParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putNoTransform",
 		[]interface{}{value},
 	)
 }
@@ -2318,6 +2987,39 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutOverrides(val
 	_jsii_.InvokeVoid(
 		r,
 		"putOverrides",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutPrivate(value *RulesetRulesActionParametersPrivate) {
+	if err := r.validatePutPrivateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPrivate",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutProxyRevalidate(value *RulesetRulesActionParametersProxyRevalidate) {
+	if err := r.validatePutProxyRevalidateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putProxyRevalidate",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutPublic(value *RulesetRulesActionParametersPublic) {
+	if err := r.validatePutPublicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPublic",
 		[]interface{}{value},
 	)
 }
@@ -2377,6 +3079,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutServeStale(va
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutSMaxage(value *RulesetRulesActionParametersSMaxage) {
+	if err := r.validatePutSMaxageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putSMaxage",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutSni(value *RulesetRulesActionParametersSni) {
 	if err := r.validatePutSniParameters(value); err != nil {
 		panic(err)
@@ -2384,6 +3097,28 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutSni(value *Ru
 	_jsii_.InvokeVoid(
 		r,
 		"putSni",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutStaleIfError(value *RulesetRulesActionParametersStaleIfError) {
+	if err := r.validatePutStaleIfErrorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putStaleIfError",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutStaleWhileRevalidate(value *RulesetRulesActionParametersStaleWhileRevalidate) {
+	if err := r.validatePutStaleWhileRevalidateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putStaleWhileRevalidate",
 		[]interface{}{value},
 	)
 }
@@ -2498,6 +3233,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContent() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContentConverter() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetContentConverter",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContentType() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2550,6 +3293,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetEmailObfusc
 	_jsii_.InvokeVoid(
 		r,
 		"resetEmailObfuscation",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetExpression() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetExpression",
 		nil, // no parameters
 	)
 }
@@ -2610,6 +3361,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetId() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetImmutable() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetImmutable",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetIncrement() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2626,10 +3385,66 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMatchedData
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMaxAge() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaxAge",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMirage() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMirage",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMustRevalidate() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMustRevalidate",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMustUnderstand() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMustUnderstand",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetNoCache() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNoCache",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetNoStore() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNoStore",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetNoTransform() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNoTransform",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOperation() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOperation",
 		nil, // no parameters
 	)
 }
@@ -2690,10 +3505,34 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPolish() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPrivate() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPrivate",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetProducts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetProducts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetProxyRevalidate() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProxyRevalidate",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPublic() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPublic",
 		nil, // no parameters
 	)
 }
@@ -2710,6 +3549,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout
 	_jsii_.InvokeVoid(
 		r,
 		"resetReadTimeout",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRedirectsForAiTraining() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRedirectsForAiTraining",
 		nil, // no parameters
 	)
 }
@@ -2818,6 +3665,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetServeStale(
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSMaxage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSMaxage",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSni() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2834,10 +3689,50 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSsl() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStaleIfError() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStaleIfError",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStaleWhileRevalidate() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStaleWhileRevalidate",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStatusCode() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetStatusCode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStripEtags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStripEtags",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStripLastModified() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStripLastModified",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStripSetCookie() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStripSetCookie",
 		nil, // no parameters
 	)
 }
@@ -2862,6 +3757,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetUri() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetUri",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetValues() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetValues",
 		nil, // no parameters
 	)
 }

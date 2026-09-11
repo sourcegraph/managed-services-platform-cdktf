@@ -108,6 +108,10 @@ func (j *jsiiProxy_AiSearchToken) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchToken) validateSetLegacyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchToken) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

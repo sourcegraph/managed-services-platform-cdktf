@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdevicecustomprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -108,6 +108,7 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -581,7 +582,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) TunnelProtocol() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfileConfig) DataCloudflareZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -599,7 +600,7 @@ func NewDataCloudflareZeroTrustDeviceCustomProfile(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceCustomProfile_Override(d DataCloudflareZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -960,6 +961,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) OverrideLogicalId
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

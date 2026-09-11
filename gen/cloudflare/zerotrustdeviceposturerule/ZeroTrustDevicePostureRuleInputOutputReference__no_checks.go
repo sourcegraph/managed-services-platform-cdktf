@@ -56,6 +56,10 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetAc
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetAuthStateParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetCertificateIdParameters(val *string) error {
 	return nil
 }

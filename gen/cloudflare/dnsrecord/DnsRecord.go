@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/dnsrecord/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record cloudflare_dns_record}.
 type DnsRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type DnsRecord interface {
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
+	PrivateRouting() interface{}
+	SetPrivateRouting(val interface{})
+	PrivateRoutingInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -148,9 +151,11 @@ type DnsRecord interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
+	ResetPrivateRouting()
 	ResetProxied()
 	ResetSettings()
 	ResetTags()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -419,6 +424,26 @@ func (j *jsiiProxy_DnsRecord) PriorityInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DnsRecord) PrivateRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecord) PrivateRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DnsRecord) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -620,7 +645,7 @@ func (j *jsiiProxy_DnsRecord) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfig) DnsRecord {
 	_init_.Initialize()
 
@@ -638,7 +663,7 @@ func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord_Override(d DnsRecord, scope constructs.Construct, id *string, config *DnsRecordConfig) {
 	_init_.Initialize()
 
@@ -738,6 +763,17 @@ func (j *jsiiProxy_DnsRecord)SetPriority(val *float64) {
 	_jsii_.Set(
 		j,
 		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsRecord)SetPrivateRouting(val interface{}) {
+	if err := j.validateSetPrivateRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateRouting",
 		val,
 	)
 }
@@ -1231,6 +1267,14 @@ func (d *jsiiProxy_DnsRecord) ResetPriority() {
 	)
 }
 
+func (d *jsiiProxy_DnsRecord) ResetPrivateRouting() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateRouting",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DnsRecord) ResetProxied() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1251,6 +1295,14 @@ func (d *jsiiProxy_DnsRecord) ResetTags() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsRecord) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

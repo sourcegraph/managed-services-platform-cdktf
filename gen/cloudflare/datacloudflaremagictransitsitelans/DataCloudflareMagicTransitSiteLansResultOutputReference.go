@@ -32,6 +32,8 @@ type DataCloudflareMagicTransitSiteLansResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareMagicTransitSiteLansResult
 	SetInternalValue(val *DataCloudflareMagicTransitSiteLansResult)
+	IsBreakout() cdktf.IResolvable
+	IsPrioritized() cdktf.IResolvable
 	Name() *string
 	Nat() DataCloudflareMagicTransitSiteLansResultNatOutputReference
 	Physport() *float64
@@ -161,6 +163,26 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) IsBreakout() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isBreakout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) IsPrioritized() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isPrioritized",
 		&returns,
 	)
 	return returns

@@ -13,6 +13,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ActiveThreats() *float64
 	SetActiveThreats(val *float64)
 	ActiveThreatsInput() *float64
+	AuthState() *[]*string
+	SetAuthState(val *[]*string)
+	AuthStateInput() *[]*string
 	CertificateId() *string
 	SetCertificateId(val *string)
 	CertificateIdInput() *string
@@ -188,6 +191,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLocations(value *ZeroTrustDevicePostureRuleInputLocations)
 	ResetActiveThreats()
+	ResetAuthState()
 	ResetCertificateId()
 	ResetCheckDisks()
 	ResetCheckPrivateKey()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ActiveThreats
 	_jsii_.Get(
 		j,
 		"activeThreatsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) AuthState() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) AuthStateInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authStateInput",
 		&returns,
 	)
 	return returns
@@ -1193,6 +1217,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetActiveThrea
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetAuthState(val *[]*string) {
+	if err := j.validateSetAuthStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authState",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCertificateId(val *string) {
 	if err := j.validateSetCertificateIdParameters(val); err != nil {
 		panic(err)
@@ -1889,6 +1924,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetActiveTh
 	_jsii_.InvokeVoid(
 		z,
 		"resetActiveThreats",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetAuthState() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAuthState",
 		nil, // no parameters
 	)
 }

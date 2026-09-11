@@ -32,6 +32,9 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	FlattenCname() interface{}
+	SetFlattenCname(val interface{})
+	FlattenCnameInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Header() LoadBalancerPoolOriginsHeaderOutputReference
@@ -85,6 +88,7 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	PutHeader(value *LoadBalancerPoolOriginsHeader)
 	ResetAddress()
 	ResetEnabled()
+	ResetFlattenCname()
 	ResetHeader()
 	ResetName()
 	ResetPort()
@@ -180,6 +184,26 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) EnabledInput() interf
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) FlattenCname() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flattenCname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) FlattenCnameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flattenCnameInput",
 		&returns,
 	)
 	return returns
@@ -393,6 +417,17 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetEnabled(val interfa
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetFlattenCname(val interface{}) {
+	if err := j.validateSetFlattenCnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flattenCname",
 		val,
 	)
 }
@@ -683,6 +718,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetFlattenCname() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFlattenCname",
 		nil, // no parameters
 	)
 }

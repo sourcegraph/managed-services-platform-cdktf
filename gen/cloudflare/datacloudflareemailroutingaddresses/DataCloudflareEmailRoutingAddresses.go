@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareemailroutingaddresses/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses}.
 type DataCloudflareEmailRoutingAddresses interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -88,6 +88,7 @@ type DataCloudflareEmailRoutingAddresses interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetDirection()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -344,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) VerifiedInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses} Data Source.
 func NewDataCloudflareEmailRoutingAddresses(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingAddressesConfig) DataCloudflareEmailRoutingAddresses {
 	_init_.Initialize()
 
@@ -362,7 +363,7 @@ func NewDataCloudflareEmailRoutingAddresses(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses} Data Source.
 func NewDataCloudflareEmailRoutingAddresses_Override(d DataCloudflareEmailRoutingAddresses, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingAddressesConfig) {
 	_init_.Initialize()
 
@@ -745,6 +746,14 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

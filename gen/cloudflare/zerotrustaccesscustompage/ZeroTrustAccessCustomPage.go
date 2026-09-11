@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccesscustompage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type ZeroTrustAccessCustomPage interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -115,6 +115,7 @@ type ZeroTrustAccessCustomPage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -397,7 +398,7 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) ZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -415,7 +416,7 @@ func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage_Override(z ZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 
@@ -888,6 +889,14 @@ func (z *jsiiProxy_ZeroTrustAccessCustomPage) OverrideLogicalId(newLogicalId *st
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

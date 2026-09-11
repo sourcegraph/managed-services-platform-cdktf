@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamcaptionlanguage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
 type StreamCaptionLanguage interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -116,6 +116,7 @@ type StreamCaptionLanguage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetFile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -409,7 +410,7 @@ func (j *jsiiProxy_StreamCaptionLanguage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) StreamCaptionLanguage {
 	_init_.Initialize()
 
@@ -427,7 +428,7 @@ func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage_Override(s StreamCaptionLanguage, scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) {
 	_init_.Initialize()
 
@@ -900,6 +901,14 @@ func (s *jsiiProxy_StreamCaptionLanguage) OverrideLogicalId(newLogicalId *string
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamCaptionLanguage) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -31,6 +31,7 @@ type DataCloudflareD1DatabasesResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareD1DatabasesResult
 	SetInternalValue(val *DataCloudflareD1DatabasesResult)
+	Jurisdiction() *string
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataCloudflareD1DatabasesResultOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareD1DatabasesResultOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
 		&returns,
 	)
 	return returns

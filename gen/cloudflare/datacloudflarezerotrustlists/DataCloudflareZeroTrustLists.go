@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustlists/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
 type DataCloudflareZeroTrustLists interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareZeroTrustLists interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -320,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
 func NewDataCloudflareZeroTrustLists(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustListsConfig) DataCloudflareZeroTrustLists {
 	_init_.Initialize()
 
@@ -338,7 +339,7 @@ func NewDataCloudflareZeroTrustLists(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
 func NewDataCloudflareZeroTrustLists_Override(d DataCloudflareZeroTrustLists, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustListsConfig) {
 	_init_.Initialize()
 
@@ -710,6 +711,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustLists) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

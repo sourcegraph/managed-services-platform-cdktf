@@ -1,0 +1,6 @@
+package datacloudflareaigatewaydynamicrouting
+
+
+type DataCloudflareAiGatewayDynamicRoutingElementsOutputsFalse struct {
+}
+

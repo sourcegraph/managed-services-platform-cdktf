@@ -84,7 +84,35 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutHeade
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutImmutableParameters(value *RulesetRulesActionParametersImmutable) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutMatchedDataParameters(value *RulesetRulesActionParametersMatchedData) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutMaxAgeParameters(value *RulesetRulesActionParametersMaxAge) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutMustRevalidateParameters(value *RulesetRulesActionParametersMustRevalidate) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutMustUnderstandParameters(value *RulesetRulesActionParametersMustUnderstand) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutNoCacheParameters(value *RulesetRulesActionParametersNoCache) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutNoStoreParameters(value *RulesetRulesActionParametersNoStore) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutNoTransformParameters(value *RulesetRulesActionParametersNoTransform) error {
 	return nil
 }
 
@@ -93,6 +121,18 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOrigi
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOverridesParameters(value *RulesetRulesActionParametersOverrides) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutPrivateParameters(value *RulesetRulesActionParametersPrivate) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutProxyRevalidateParameters(value *RulesetRulesActionParametersProxyRevalidate) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutPublicParameters(value *RulesetRulesActionParametersPublic) error {
 	return nil
 }
 
@@ -116,7 +156,19 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutServe
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutSMaxageParameters(value *RulesetRulesActionParametersSMaxage) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutSniParameters(value *RulesetRulesActionParametersSni) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutStaleIfErrorParameters(value *RulesetRulesActionParametersStaleIfError) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutStaleWhileRevalidateParameters(value *RulesetRulesActionParametersStaleWhileRevalidate) error {
 	return nil
 }
 
@@ -164,6 +216,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetConte
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetContentConverterParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetContentTypeParameters(val *string) error {
 	return nil
 }
@@ -181,6 +237,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetEmailObfuscationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetExpressionParameters(val *string) error {
 	return nil
 }
 
@@ -212,6 +272,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetMirag
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOperationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOpportunisticEncryptionParameters(val interface{}) error {
 	return nil
 }
@@ -237,6 +301,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetProdu
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetReadTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetRedirectsForAiTrainingParameters(val interface{}) error {
 	return nil
 }
 
@@ -284,6 +352,18 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetStatu
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetStripEtagsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetStripLastModifiedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetStripSetCookieParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetSxgParameters(val interface{}) error {
 	return nil
 }
@@ -293,6 +373,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetValuesParameters(val *[]*string) error {
 	return nil
 }
 

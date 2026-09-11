@@ -84,6 +84,18 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetMaxItemsParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetOrderByParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetOrderByDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetSearchParameters(val *string) error {
 	return nil
 }

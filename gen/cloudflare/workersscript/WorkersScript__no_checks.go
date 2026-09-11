@@ -72,6 +72,10 @@ func (w *jsiiProxy_WorkersScript) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validatePutAnnotationsParameters(value *WorkersScriptAnnotations) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validatePutAssetsParameters(value *WorkersScriptAssets) error {
 	return nil
 }

@@ -44,6 +44,10 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputRefer
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) validatePutContentSelectorParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

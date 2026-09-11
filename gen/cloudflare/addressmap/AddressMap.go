@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/addressmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/address_map cloudflare_address_map}.
 type AddressMap interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -124,6 +124,7 @@ type AddressMap interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMemberships(value interface{})
+	ResetAccountId()
 	ResetDefaultSni()
 	ResetDescription()
 	ResetEnabled()
@@ -481,7 +482,7 @@ func (j *jsiiProxy_AddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapConfig) AddressMap {
 	_init_.Initialize()
 
@@ -499,7 +500,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string, config *AddressMapConfig) {
 	_init_.Initialize()
 
@@ -994,6 +995,14 @@ func (a *jsiiProxy_AddressMap) PutMemberships(value interface{}) {
 		a,
 		"putMemberships",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AddressMap) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

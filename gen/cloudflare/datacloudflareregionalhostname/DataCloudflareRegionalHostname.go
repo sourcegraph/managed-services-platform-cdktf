@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareregionalhostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname cloudflare_regional_hostname}.
 type DataCloudflareRegionalHostname interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -88,6 +88,7 @@ type DataCloudflareRegionalHostname interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -328,7 +329,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname cloudflare_regional_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname cloudflare_regional_hostname} Data Source.
 func NewDataCloudflareRegionalHostname(scope constructs.Construct, id *string, config *DataCloudflareRegionalHostnameConfig) DataCloudflareRegionalHostname {
 	_init_.Initialize()
 
@@ -346,7 +347,7 @@ func NewDataCloudflareRegionalHostname(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname cloudflare_regional_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname cloudflare_regional_hostname} Data Source.
 func NewDataCloudflareRegionalHostname_Override(d DataCloudflareRegionalHostname, scope constructs.Construct, id *string, config *DataCloudflareRegionalHostnameConfig) {
 	_init_.Initialize()
 
@@ -714,6 +715,14 @@ func (d *jsiiProxy_DataCloudflareRegionalHostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareRegionalHostname) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

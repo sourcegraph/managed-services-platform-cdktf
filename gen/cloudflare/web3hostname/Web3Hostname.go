@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/web3hostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
 type Web3Hostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -125,6 +125,7 @@ type Web3Hostname interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -444,7 +445,7 @@ func (j *jsiiProxy_Web3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3HostnameConfig) Web3Hostname {
 	_init_.Initialize()
 
@@ -462,7 +463,7 @@ func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3Hostnam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname_Override(w Web3Hostname, scope constructs.Construct, id *string, config *Web3HostnameConfig) {
 	_init_.Initialize()
 
@@ -969,6 +970,14 @@ func (w *jsiiProxy_Web3Hostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Web3Hostname) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

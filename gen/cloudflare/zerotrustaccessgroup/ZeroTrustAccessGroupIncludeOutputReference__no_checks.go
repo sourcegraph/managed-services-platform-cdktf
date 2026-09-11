@@ -140,6 +140,10 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutServic
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutUserRiskScoreParameters(value *ZeroTrustAccessGroupIncludeUserRiskScore) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

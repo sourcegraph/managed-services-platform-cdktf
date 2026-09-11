@@ -34,6 +34,7 @@ type DataCloudflareLogpushJobsResultOutputOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareLogpushJobsResultOutputOptions
 	SetInternalValue(val *DataCloudflareLogpushJobsResultOutputOptions)
+	MergeSubrequests() cdktf.IResolvable
 	OutputType() *string
 	RecordDelimiter() *string
 	RecordPrefix() *string
@@ -183,6 +184,16 @@ func (j *jsiiProxy_DataCloudflareLogpushJobsResultOutputOptionsOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushJobsResultOutputOptionsOutputReference) MergeSubrequests() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"mergeSubrequests",
 		&returns,
 	)
 	return returns

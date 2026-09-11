@@ -19,27 +19,27 @@ type WorkersKvConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A key's name.
 	//
 	// The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 	KeyName *string `field:"required" json:"keyName" yaml:"keyName"`
 	// Namespace identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 	NamespaceId *string `field:"required" json:"namespaceId" yaml:"namespaceId"`
 	// A byte sequence to be stored, up to 25 MiB in length.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_kv#value WorkersKv#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_kv#value WorkersKv#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Associates arbitrary JSON data with a key/value pair.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 	Metadata *string `field:"optional" json:"metadata" yaml:"metadata"`
 }
 

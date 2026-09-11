@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareconnectivitydirectoryservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 type DataCloudflareConnectivityDirectoryService interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AppProtocol() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -58,12 +59,14 @@ type DataCloudflareConnectivityDirectoryService interface {
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
+	TcpPort() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TlsSettings() DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference
 	Type() *string
 	UpdatedAt() *string
 	// Experimental.
@@ -92,6 +95,7 @@ type DataCloudflareConnectivityDirectoryService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareConnectivityDirectoryServiceFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -131,6 +135,16 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) AccountIdInput() 
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) AppProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appProtocol",
 		&returns,
 	)
 	return returns
@@ -346,6 +360,16 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) ServiceIdInput() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) TcpPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpPort",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -376,6 +400,16 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) TlsSettings() DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference {
+	var returns DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -397,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) UpdatedAt() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
 func NewDataCloudflareConnectivityDirectoryService(scope constructs.Construct, id *string, config *DataCloudflareConnectivityDirectoryServiceConfig) DataCloudflareConnectivityDirectoryService {
 	_init_.Initialize()
 
@@ -415,7 +449,7 @@ func NewDataCloudflareConnectivityDirectoryService(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
 func NewDataCloudflareConnectivityDirectoryService_Override(d DataCloudflareConnectivityDirectoryService, scope constructs.Construct, id *string, config *DataCloudflareConnectivityDirectoryServiceConfig) {
 	_init_.Initialize()
 
@@ -787,6 +821,14 @@ func (d *jsiiProxy_DataCloudflareConnectivityDirectoryService) PutFilter(value *
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareConnectivityDirectoryService) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

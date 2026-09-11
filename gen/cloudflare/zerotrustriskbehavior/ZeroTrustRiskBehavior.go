@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustriskbehavior/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
 type ZeroTrustRiskBehavior interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -107,6 +107,7 @@ type ZeroTrustRiskBehavior interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBehaviors(value interface{})
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -329,7 +330,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) ZeroTrustRiskBehavior {
 	_init_.Initialize()
 
@@ -347,7 +348,7 @@ func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior_Override(z ZeroTrustRiskBehavior, scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) {
 	_init_.Initialize()
 
@@ -798,6 +799,14 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) PutBehaviors(value interface{}) {
 		z,
 		"putBehaviors",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustRiskBehavior) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

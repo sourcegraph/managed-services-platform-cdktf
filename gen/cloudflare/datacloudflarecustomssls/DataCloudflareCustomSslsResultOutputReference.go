@@ -26,6 +26,7 @@ type DataCloudflareCustomSslsResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomCsrId() *string
 	ExpiresOn() *string
 	// Experimental.
 	Fqn() *string
@@ -37,7 +38,7 @@ type DataCloudflareCustomSslsResultOutputReference interface {
 	Issuer() *string
 	KeylessServer() DataCloudflareCustomSslsResultKeylessServerOutputReference
 	ModifiedOn() *string
-	Policy() *string
+	PolicyRestrictions() *string
 	Priority() *float64
 	Signature() *string
 	Status() *string
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) CustomCsrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrId",
 		&returns,
 	)
 	return returns
@@ -220,11 +231,11 @@ func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) ModifiedOn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) Policy() *string {
+func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) PolicyRestrictions() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"policy",
+		"policyRestrictions",
 		&returns,
 	)
 	return returns

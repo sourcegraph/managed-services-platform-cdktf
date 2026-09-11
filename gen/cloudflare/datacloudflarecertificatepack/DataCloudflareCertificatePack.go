@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecertificatepack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/certificate_pack cloudflare_certificate_pack}.
 type DataCloudflareCertificatePack interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -26,6 +26,7 @@ type DataCloudflareCertificatePack interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DcvDelegationRecords() DataCloudflareCertificatePackDcvDelegationRecordsList
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -101,6 +102,7 @@ type DataCloudflareCertificatePack interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -195,6 +197,16 @@ func (j *jsiiProxy_DataCloudflareCertificatePack) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePack) DcvDelegationRecords() DataCloudflareCertificatePackDcvDelegationRecordsList {
+	var returns DataCloudflareCertificatePackDcvDelegationRecordsList
+	_jsii_.Get(
+		j,
+		"dcvDelegationRecords",
 		&returns,
 	)
 	return returns
@@ -441,7 +453,7 @@ func (j *jsiiProxy_DataCloudflareCertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
 func NewDataCloudflareCertificatePack(scope constructs.Construct, id *string, config *DataCloudflareCertificatePackConfig) DataCloudflareCertificatePack {
 	_init_.Initialize()
 
@@ -459,7 +471,7 @@ func NewDataCloudflareCertificatePack(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
 func NewDataCloudflareCertificatePack_Override(d DataCloudflareCertificatePack, scope constructs.Construct, id *string, config *DataCloudflareCertificatePackConfig) {
 	_init_.Initialize()
 
@@ -854,6 +866,14 @@ func (d *jsiiProxy_DataCloudflareCertificatePack) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCertificatePack) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

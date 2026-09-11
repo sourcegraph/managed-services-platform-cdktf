@@ -4,7 +4,7 @@ package zerotrustaccessapplication
 type ZeroTrustAccessApplicationPoliciesIncludeEmail struct {
 	// The email of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 }
 

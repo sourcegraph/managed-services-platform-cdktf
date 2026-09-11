@@ -25,6 +25,7 @@ type DataCloudflareWorkerVersionsResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Containers() DataCloudflareWorkerVersionsResultContainersList
 	CreatedOn() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -40,6 +41,7 @@ type DataCloudflareWorkerVersionsResultOutputReference interface {
 	MainModule() *string
 	MainScriptBase64() *string
 	Migrations() DataCloudflareWorkerVersionsResultMigrationsOutputReference
+	MigrationTag() *string
 	Modules() DataCloudflareWorkerVersionsResultModulesList
 	Number() *float64
 	Placement() DataCloudflareWorkerVersionsResultPlacementOutputReference
@@ -53,6 +55,7 @@ type DataCloudflareWorkerVersionsResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Urls() *[]*string
 	UsageModel() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -163,6 +166,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) ComplexObj
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Containers() DataCloudflareWorkerVersionsResultContainersList {
+	var returns DataCloudflareWorkerVersionsResultContainersList
+	_jsii_.Get(
+		j,
+		"containers",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) CreatedOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -253,6 +266,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Migrations
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) MigrationTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationTag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Modules() DataCloudflareWorkerVersionsResultModulesList {
 	var returns DataCloudflareWorkerVersionsResultModulesList
 	_jsii_.Get(
@@ -318,6 +341,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
 		&returns,
 	)
 	return returns

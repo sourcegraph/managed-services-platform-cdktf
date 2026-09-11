@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarestreamaudiotrack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
 type DataCloudflareStreamAudioTrack interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Audio() DataCloudflareStreamAudioTrackAudioList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -23,7 +24,6 @@ type DataCloudflareStreamAudioTrack interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Default() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,7 +39,6 @@ type DataCloudflareStreamAudioTrack interface {
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
-	Label() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -52,14 +51,12 @@ type DataCloudflareStreamAudioTrack interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Uid() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -85,6 +82,7 @@ type DataCloudflareStreamAudioTrack interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -127,6 +125,16 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Audio() DataCloudflareStreamAudioTrackAudioList {
+	var returns DataCloudflareStreamAudioTrackAudioList
+	_jsii_.Get(
+		j,
+		"audio",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreamAudioTrack) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -152,16 +160,6 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Default() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"default",
 		&returns,
 	)
 	return returns
@@ -227,16 +225,6 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) IdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Label() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"label",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -277,16 +265,6 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareStreamAudioTrack) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -317,18 +295,8 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) TerraformResourceType() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Uid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"uid",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
 func NewDataCloudflareStreamAudioTrack(scope constructs.Construct, id *string, config *DataCloudflareStreamAudioTrackConfig) DataCloudflareStreamAudioTrack {
 	_init_.Initialize()
 
@@ -346,7 +314,7 @@ func NewDataCloudflareStreamAudioTrack(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
 func NewDataCloudflareStreamAudioTrack_Override(d DataCloudflareStreamAudioTrack, scope constructs.Construct, id *string, config *DataCloudflareStreamAudioTrackConfig) {
 	_init_.Initialize()
 
@@ -707,6 +675,14 @@ func (d *jsiiProxy_DataCloudflareStreamAudioTrack) OverrideLogicalId(newLogicalI
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreamAudioTrack) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

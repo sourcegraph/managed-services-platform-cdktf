@@ -73,6 +73,9 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
+	WmId() *string
+	SetWmId(val *string)
+	WmIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -109,6 +112,7 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	ResetPrinting()
 	ResetUpload()
 	ResetVersion()
+	ResetWmId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -434,6 +438,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) WmId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wmId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) WmIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wmIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference {
 	_init_.Initialize()
@@ -645,6 +669,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Set(
 		j,
 		"version",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetWmId(val *string) {
+	if err := j.validateSetWmIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wmId",
 		val,
 	)
 }
@@ -927,6 +962,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.InvokeVoid(
 		z,
 		"resetVersion",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetWmId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetWmId",
 		nil, // no parameters
 	)
 }

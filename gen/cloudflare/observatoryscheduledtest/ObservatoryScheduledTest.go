@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/observatoryscheduledtest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 type ObservatoryScheduledTest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,8 @@ type ObservatoryScheduledTest interface {
 	// Experimental.
 	Fqn() *string
 	Frequency() *string
+	SetFrequency(val *string)
+	FrequencyInput() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
@@ -55,6 +57,8 @@ type ObservatoryScheduledTest interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Schedule() ObservatoryScheduledTestScheduleOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -112,9 +116,12 @@ type ObservatoryScheduledTest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetFrequency()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -213,6 +220,16 @@ func (j *jsiiProxy_ObservatoryScheduledTest) Frequency() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ObservatoryScheduledTest) FrequencyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frequencyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservatoryScheduledTest) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -288,6 +305,16 @@ func (j *jsiiProxy_ObservatoryScheduledTest) Region() *string {
 	_jsii_.Get(
 		j,
 		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservatoryScheduledTest) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -384,7 +411,7 @@ func (j *jsiiProxy_ObservatoryScheduledTest) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
 func NewObservatoryScheduledTest(scope constructs.Construct, id *string, config *ObservatoryScheduledTestConfig) ObservatoryScheduledTest {
 	_init_.Initialize()
 
@@ -402,7 +429,7 @@ func NewObservatoryScheduledTest(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
 func NewObservatoryScheduledTest_Override(o ObservatoryScheduledTest, scope constructs.Construct, id *string, config *ObservatoryScheduledTestConfig) {
 	_init_.Initialize()
 
@@ -451,6 +478,17 @@ func (j *jsiiProxy_ObservatoryScheduledTest)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
+func (j *jsiiProxy_ObservatoryScheduledTest)SetFrequency(val *string) {
+	if err := j.validateSetFrequencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"frequency",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservatoryScheduledTest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -477,6 +515,17 @@ func (j *jsiiProxy_ObservatoryScheduledTest)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservatoryScheduledTest)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -856,10 +905,34 @@ func (o *jsiiProxy_ObservatoryScheduledTest) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (o *jsiiProxy_ObservatoryScheduledTest) ResetFrequency() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFrequency",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservatoryScheduledTest) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservatoryScheduledTest) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservatoryScheduledTest) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarecloudconnectorrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type DataCloudflareCloudConnectorRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -83,6 +83,7 @@ type DataCloudflareCloudConnectorRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -283,7 +284,7 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) DataCloudflareCloudConnectorRules {
 	_init_.Initialize()
 
@@ -301,7 +302,7 @@ func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules_Override(d DataCloudflareCloudConnectorRules, scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) {
 	_init_.Initialize()
 
@@ -658,6 +659,14 @@ func (d *jsiiProxy_DataCloudflareCloudConnectorRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudConnectorRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

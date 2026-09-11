@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/magicwanipsectunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
 type MagicWanIpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -657,7 +657,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) MagicWanIpsecTunnel {
 	_init_.Initialize()
 
@@ -675,7 +675,7 @@ func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel_Override(m MagicWanIpsecTunnel, scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) {
 	_init_.Initialize()
 

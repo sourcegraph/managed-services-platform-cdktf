@@ -124,6 +124,10 @@ func (j *jsiiProxy_DnsRecord) validateSetPriorityParameters(val *float64) error 
 	return nil
 }
 
+func (j *jsiiProxy_DnsRecord) validateSetPrivateRoutingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsRecord) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

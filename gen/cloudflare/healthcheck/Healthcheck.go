@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/healthcheck/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/healthcheck cloudflare_healthcheck}.
 type Healthcheck interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -162,6 +162,7 @@ type Healthcheck interface {
 	ResetTcpConfig()
 	ResetTimeout()
 	ResetType()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -671,7 +672,7 @@ func (j *jsiiProxy_Healthcheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckConfig) Healthcheck {
 	_init_.Initialize()
 
@@ -689,7 +690,7 @@ func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck_Override(h Healthcheck, scope constructs.Construct, id *string, config *HealthcheckConfig) {
 	_init_.Initialize()
 
@@ -1367,6 +1368,14 @@ func (h *jsiiProxy_Healthcheck) ResetType() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

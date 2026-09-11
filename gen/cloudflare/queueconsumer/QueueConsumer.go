@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/queueconsumer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
 type QueueConsumer interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -61,9 +61,9 @@ type QueueConsumer interface {
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
+	QueueName() *string
 	// Experimental.
 	RawOverrides() interface{}
-	Script() *string
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
@@ -122,13 +122,13 @@ type QueueConsumer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSettings(value *QueueConsumerSettings)
+	ResetAccountId()
 	ResetDeadLetterQueue()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetScriptName()
 	ResetSettings()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -347,21 +347,21 @@ func (j *jsiiProxy_QueueConsumer) QueueIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumer) QueueName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"rawOverrides",
+		"queueName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) Script() *string {
-	var returns *string
+func (j *jsiiProxy_QueueConsumer) RawOverrides() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"script",
+		"rawOverrides",
 		&returns,
 	)
 	return returns
@@ -458,7 +458,7 @@ func (j *jsiiProxy_QueueConsumer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsumerConfig) QueueConsumer {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer_Override(q QueueConsumer, scope constructs.Construct, id *string, config *QueueConsumerConfig) {
 	_init_.Initialize()
 
@@ -974,6 +974,14 @@ func (q *jsiiProxy_QueueConsumer) PutSettings(value *QueueConsumerSettings) {
 	)
 }
 
+func (q *jsiiProxy_QueueConsumer) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (q *jsiiProxy_QueueConsumer) ResetDeadLetterQueue() {
 	_jsii_.InvokeVoid(
 		q,
@@ -1002,14 +1010,6 @@ func (q *jsiiProxy_QueueConsumer) ResetSettings() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetSettings",
-		nil, // no parameters
-	)
-}
-
-func (q *jsiiProxy_QueueConsumer) ResetType() {
-	_jsii_.InvokeVoid(
-		q,
-		"resetType",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarewaitingroom/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/waiting_room cloudflare_waiting_room}.
 type DataCloudflareWaitingRoom interface {
 	cdktf.TerraformDataSource
 	AdditionalRoutes() DataCloudflareWaitingRoomAdditionalRoutesList
@@ -110,6 +110,7 @@ type DataCloudflareWaitingRoom interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -570,7 +571,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room cloudflare_waiting_room} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/waiting_room cloudflare_waiting_room} Data Source.
 func NewDataCloudflareWaitingRoom(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomConfig) DataCloudflareWaitingRoom {
 	_init_.Initialize()
 
@@ -588,7 +589,7 @@ func NewDataCloudflareWaitingRoom(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room cloudflare_waiting_room} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/waiting_room cloudflare_waiting_room} Data Source.
 func NewDataCloudflareWaitingRoom_Override(d DataCloudflareWaitingRoom, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -956,6 +957,14 @@ func (d *jsiiProxy_DataCloudflareWaitingRoom) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWaitingRoom) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

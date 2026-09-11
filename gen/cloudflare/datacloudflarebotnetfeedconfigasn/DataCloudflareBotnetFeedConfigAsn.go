@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarebotnetfeedconfigasn/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
 type DataCloudflareBotnetFeedConfigAsn interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -79,6 +79,7 @@ type DataCloudflareBotnetFeedConfigAsn interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -272,7 +273,7 @@ func (j *jsiiProxy_DataCloudflareBotnetFeedConfigAsn) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
 func NewDataCloudflareBotnetFeedConfigAsn(scope constructs.Construct, id *string, config *DataCloudflareBotnetFeedConfigAsnConfig) DataCloudflareBotnetFeedConfigAsn {
 	_init_.Initialize()
 
@@ -290,7 +291,7 @@ func NewDataCloudflareBotnetFeedConfigAsn(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
 func NewDataCloudflareBotnetFeedConfigAsn_Override(d DataCloudflareBotnetFeedConfigAsn, scope constructs.Construct, id *string, config *DataCloudflareBotnetFeedConfigAsnConfig) {
 	_init_.Initialize()
 
@@ -640,6 +641,14 @@ func (d *jsiiProxy_DataCloudflareBotnetFeedConfigAsn) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareBotnetFeedConfigAsn) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

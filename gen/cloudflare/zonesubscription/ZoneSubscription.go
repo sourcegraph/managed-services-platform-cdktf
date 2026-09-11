@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zonesubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
 type ZoneSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_ZoneSubscription) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
 func NewZoneSubscription(scope constructs.Construct, id *string, config *ZoneSubscriptionConfig) ZoneSubscription {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewZoneSubscription(scope constructs.Construct, id *string, config *ZoneSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
 func NewZoneSubscription_Override(z ZoneSubscription, scope constructs.Construct, id *string, config *ZoneSubscriptionConfig) {
 	_init_.Initialize()
 

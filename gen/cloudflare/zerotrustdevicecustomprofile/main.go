@@ -86,6 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "registerInterfaceIpWithDns", GoGetter: "RegisterInterfaceIpWithDns"},
 			_jsii_.MemberProperty{JsiiProperty: "registerInterfaceIpWithDnsInput", GoGetter: "RegisterInterfaceIpWithDnsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedToLeave", GoMethod: "ResetAllowedToLeave"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowModeSwitch", GoMethod: "ResetAllowModeSwitch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowUpdates", GoMethod: "ResetAllowUpdates"},

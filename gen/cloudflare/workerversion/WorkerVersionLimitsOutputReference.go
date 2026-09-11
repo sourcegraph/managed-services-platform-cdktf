@@ -32,6 +32,9 @@ type WorkerVersionLimitsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Subrequests() *float64
+	SetSubrequests(val *float64)
+	SubrequestsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,8 @@ type WorkerVersionLimitsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCpuMs()
+	ResetSubrequests()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_WorkerVersionLimitsOutputReference) InternalValue() interface
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionLimitsOutputReference) Subrequests() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subrequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionLimitsOutputReference) SubrequestsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subrequestsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +262,17 @@ func (j *jsiiProxy_WorkerVersionLimitsOutputReference)SetInternalValue(val inter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionLimitsOutputReference)SetSubrequests(val *float64) {
+	if err := j.validateSetSubrequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subrequests",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (w *jsiiProxy_WorkerVersionLimitsOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkerVersionLimitsOutputReference) ResetCpuMs() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCpuMs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionLimitsOutputReference) ResetSubrequests() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSubrequests",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WorkerVersionLimitsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

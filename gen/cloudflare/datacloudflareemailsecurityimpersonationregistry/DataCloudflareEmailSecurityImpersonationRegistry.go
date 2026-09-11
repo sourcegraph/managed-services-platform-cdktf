@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareemailsecurityimpersonationregistry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
 type DataCloudflareEmailSecurityImpersonationRegistry interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -95,6 +95,7 @@ type DataCloudflareEmailSecurityImpersonationRegistry interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareEmailSecurityImpersonationRegistryFilter)
+	ResetAccountId()
 	ResetDisplayNameId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -430,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistry(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistryConfig) DataCloudflareEmailSecurityImpersonationRegistry {
 	_init_.Initialize()
 
@@ -448,7 +449,7 @@ func NewDataCloudflareEmailSecurityImpersonationRegistry(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistry_Override(d DataCloudflareEmailSecurityImpersonationRegistry, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistryConfig) {
 	_init_.Initialize()
 
@@ -820,6 +821,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) PutFilter(v
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -39,6 +39,7 @@ type DataCloudflareDnsRecordsResultOutputReference interface {
 	ModifiedOn() *string
 	Name() *string
 	Priority() *float64
+	PrivateRouting() cdktf.IResolvable
 	Proxiable() cdktf.IResolvable
 	Proxied() cdktf.IResolvable
 	Settings() DataCloudflareDnsRecordsResultSettingsOutputReference
@@ -238,6 +239,16 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsResultOutputReference) Priority() *fl
 	_jsii_.Get(
 		j,
 		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordsResultOutputReference) PrivateRouting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"privateRouting",
 		&returns,
 	)
 	return returns

@@ -29,7 +29,7 @@ type DataCloudflareWorkerVersionsResultBindingsOutboundOutputReference interface
 	Fqn() *string
 	InternalValue() *DataCloudflareWorkerVersionsResultBindingsOutbound
 	SetInternalValue(val *DataCloudflareWorkerVersionsResultBindingsOutbound)
-	Params() *[]*string
+	Params() DataCloudflareWorkerVersionsResultBindingsOutboundParamsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsOutboundOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsOutboundOutputReference) Params() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsOutboundOutputReference) Params() DataCloudflareWorkerVersionsResultBindingsOutboundParamsList {
+	var returns DataCloudflareWorkerVersionsResultBindingsOutboundParamsList
 	_jsii_.Get(
 		j,
 		"params",

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/snippetrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
 type SnippetRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -110,6 +110,7 @@ type SnippetRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -329,7 +330,7 @@ func (j *jsiiProxy_SnippetRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRulesConfig) SnippetRules {
 	_init_.Initialize()
 
@@ -347,7 +348,7 @@ func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules_Override(s SnippetRules, scope constructs.Construct, id *string, config *SnippetRulesConfig) {
 	_init_.Initialize()
 
@@ -805,6 +806,14 @@ func (s *jsiiProxy_SnippetRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnippetRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

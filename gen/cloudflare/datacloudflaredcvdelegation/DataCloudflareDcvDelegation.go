@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaredcvdelegation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation}.
 type DataCloudflareDcvDelegation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -82,6 +82,7 @@ type DataCloudflareDcvDelegation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -272,7 +273,7 @@ func (j *jsiiProxy_DataCloudflareDcvDelegation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
 func NewDataCloudflareDcvDelegation(scope constructs.Construct, id *string, config *DataCloudflareDcvDelegationConfig) DataCloudflareDcvDelegation {
 	_init_.Initialize()
 
@@ -290,7 +291,7 @@ func NewDataCloudflareDcvDelegation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation} Data Source.
 func NewDataCloudflareDcvDelegation_Override(d DataCloudflareDcvDelegation, scope constructs.Construct, id *string, config *DataCloudflareDcvDelegationConfig) {
 	_init_.Initialize()
 
@@ -647,6 +648,14 @@ func (d *jsiiProxy_DataCloudflareDcvDelegation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDcvDelegation) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

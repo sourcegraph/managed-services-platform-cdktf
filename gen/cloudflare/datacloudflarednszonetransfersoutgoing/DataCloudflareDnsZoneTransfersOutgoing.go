@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarednszonetransfersoutgoing/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
 type DataCloudflareDnsZoneTransfersOutgoing interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -88,6 +88,7 @@ type DataCloudflareDnsZoneTransfersOutgoing interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -338,7 +339,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
 func NewDataCloudflareDnsZoneTransfersOutgoing(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersOutgoingConfig) DataCloudflareDnsZoneTransfersOutgoing {
 	_init_.Initialize()
 
@@ -356,7 +357,7 @@ func NewDataCloudflareDnsZoneTransfersOutgoing(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
 func NewDataCloudflareDnsZoneTransfersOutgoing_Override(d DataCloudflareDnsZoneTransfersOutgoing, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersOutgoingConfig) {
 	_init_.Initialize()
 
@@ -713,6 +714,14 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

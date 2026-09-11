@@ -28,6 +28,7 @@ type DataCloudflareCertificatePacksResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DcvDelegationRecords() DataCloudflareCertificatePacksResultDcvDelegationRecordsList
 	// Experimental.
 	Fqn() *string
 	Hosts() *[]*string
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePacksResultOutputReference) DcvDelegationRecords() DataCloudflareCertificatePacksResultDcvDelegationRecordsList {
+	var returns DataCloudflareCertificatePacksResultDcvDelegationRecordsList
+	_jsii_.Get(
+		j,
+		"dcvDelegationRecords",
 		&returns,
 	)
 	return returns

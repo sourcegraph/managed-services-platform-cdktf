@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdevicedefaultprofilecertificates/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
 type ZeroTrustDeviceDefaultProfileCertificates interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -110,6 +110,7 @@ type ZeroTrustDeviceDefaultProfileCertificates interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -329,7 +330,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) ZoneIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
 func NewZeroTrustDeviceDefaultProfileCertificates(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileCertificatesConfig) ZeroTrustDeviceDefaultProfileCertificates {
 	_init_.Initialize()
 
@@ -347,7 +348,7 @@ func NewZeroTrustDeviceDefaultProfileCertificates(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
 func NewZeroTrustDeviceDefaultProfileCertificates_Override(z ZeroTrustDeviceDefaultProfileCertificates, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileCertificatesConfig) {
 	_init_.Initialize()
 
@@ -805,6 +806,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) ResetOverrideLogic
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

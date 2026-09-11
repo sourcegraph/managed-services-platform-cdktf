@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareaisearchinstances/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}.
 type DataCloudflareAiSearchInstances interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -42,8 +42,17 @@ type DataCloudflareAiSearchInstances interface {
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByDirection() *string
+	SetOrderByDirection(val *string)
+	OrderByDirectionInput() *string
+	OrderByInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -85,7 +94,11 @@ type DataCloudflareAiSearchInstances interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
+	ResetNamespace()
+	ResetOrderBy()
+	ResetOrderByDirection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -229,11 +242,71 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) MaxItemsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstances) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) OrderByDirection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByDirection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) OrderByDirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByDirectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
 		&returns,
 	)
 	return returns
@@ -320,7 +393,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
 func NewDataCloudflareAiSearchInstances(scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstancesConfig) DataCloudflareAiSearchInstances {
 	_init_.Initialize()
 
@@ -338,7 +411,7 @@ func NewDataCloudflareAiSearchInstances(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
 func NewDataCloudflareAiSearchInstances_Override(d DataCloudflareAiSearchInstances, scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstancesConfig) {
 	_init_.Initialize()
 
@@ -405,6 +478,39 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances)SetMaxItems(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances)SetOrderByDirection(val *string) {
+	if err := j.validateSetOrderByDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderByDirection",
 		val,
 	)
 }
@@ -713,10 +819,42 @@ func (d *jsiiProxy_DataCloudflareAiSearchInstances) OverrideLogicalId(newLogical
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetOrderByDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderByDirection",
 		nil, // no parameters
 	)
 }

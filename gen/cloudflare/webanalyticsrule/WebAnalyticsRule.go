@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/webanalyticsrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
 type WebAnalyticsRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -122,6 +122,7 @@ type WebAnalyticsRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetHost()
 	ResetInclusive()
 	ResetIsPaused()
@@ -458,7 +459,7 @@ func (j *jsiiProxy_WebAnalyticsRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
 func NewWebAnalyticsRule(scope constructs.Construct, id *string, config *WebAnalyticsRuleConfig) WebAnalyticsRule {
 	_init_.Initialize()
 
@@ -476,7 +477,7 @@ func NewWebAnalyticsRule(scope constructs.Construct, id *string, config *WebAnal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
 func NewWebAnalyticsRule_Override(w WebAnalyticsRule, scope constructs.Construct, id *string, config *WebAnalyticsRuleConfig) {
 	_init_.Initialize()
 
@@ -971,6 +972,14 @@ func (w *jsiiProxy_WebAnalyticsRule) OverrideLogicalId(newLogicalId *string) {
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_WebAnalyticsRule) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

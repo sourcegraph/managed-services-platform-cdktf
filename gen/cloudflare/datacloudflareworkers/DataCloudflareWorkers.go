@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareworkers/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers cloudflare_workers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers cloudflare_workers}.
 type DataCloudflareWorkers interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -44,6 +44,12 @@ type DataCloudflareWorkers interface {
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	Order() *string
+	SetOrder(val *string)
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
+	OrderInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,7 +88,10 @@ type DataCloudflareWorkers interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
+	ResetOrder()
+	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -235,6 +244,46 @@ func (j *jsiiProxy_DataCloudflareWorkers) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkers) Order() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"order",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkers) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkers) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkers) OrderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkers) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -296,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareWorkers) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers cloudflare_workers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers cloudflare_workers} Data Source.
 func NewDataCloudflareWorkers(scope constructs.Construct, id *string, config *DataCloudflareWorkersConfig) DataCloudflareWorkers {
 	_init_.Initialize()
 
@@ -314,7 +363,7 @@ func NewDataCloudflareWorkers(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers cloudflare_workers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/workers cloudflare_workers} Data Source.
 func NewDataCloudflareWorkers_Override(d DataCloudflareWorkers, scope constructs.Construct, id *string, config *DataCloudflareWorkersConfig) {
 	_init_.Initialize()
 
@@ -381,6 +430,28 @@ func (j *jsiiProxy_DataCloudflareWorkers)SetMaxItems(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareWorkers)SetOrder(val *string) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareWorkers)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
 		val,
 	)
 }
@@ -678,10 +749,34 @@ func (d *jsiiProxy_DataCloudflareWorkers) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareWorkers) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareWorkers) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkers) ResetOrder() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkers) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
 		nil, // no parameters
 	)
 }

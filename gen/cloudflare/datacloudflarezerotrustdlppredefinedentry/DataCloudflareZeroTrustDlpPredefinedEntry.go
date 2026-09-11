@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustdlppredefinedentry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
 type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,7 @@ type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	Enabled() cdktf.IResolvable
 	EntryId() *string
 	SetEntryId(val *string)
@@ -96,6 +97,7 @@ type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -203,6 +205,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) DependsOn() *[]*st
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -449,7 +461,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) WordList() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedEntryConfig) DataCloudflareZeroTrustDlpPredefinedEntry {
 	_init_.Initialize()
 
@@ -467,7 +479,7 @@ func NewDataCloudflareZeroTrustDlpPredefinedEntry(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedEntry_Override(d DataCloudflareZeroTrustDlpPredefinedEntry, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedEntryConfig) {
 	_init_.Initialize()
 
@@ -828,6 +840,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) OverrideLogicalId(
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

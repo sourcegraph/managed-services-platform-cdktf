@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/streamliveinput/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 type StreamLiveInput interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -38,6 +38,9 @@ type StreamLiveInput interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -129,8 +132,10 @@ type StreamLiveInput interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRecording(value *StreamLiveInputRecording)
+	ResetAccountId()
 	ResetDefaultCreator()
 	ResetDeleteRecordingAfterDays()
+	ResetEnabled()
 	ResetLiveInputIdentifier()
 	ResetMeta()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -270,6 +275,26 @@ func (j *jsiiProxy_StreamLiveInput) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamLiveInput) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamLiveInput) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -536,7 +561,7 @@ func (j *jsiiProxy_StreamLiveInput) WebRtcPlayback() StreamLiveInputWebRtcPlayba
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLiveInputConfig) StreamLiveInput {
 	_init_.Initialize()
 
@@ -554,7 +579,7 @@ func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput_Override(s StreamLiveInput, scope constructs.Construct, id *string, config *StreamLiveInputConfig) {
 	_init_.Initialize()
 
@@ -624,6 +649,17 @@ func (j *jsiiProxy_StreamLiveInput)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamLiveInput)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -1052,6 +1088,14 @@ func (s *jsiiProxy_StreamLiveInput) PutRecording(value *StreamLiveInputRecording
 	)
 }
 
+func (s *jsiiProxy_StreamLiveInput) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StreamLiveInput) ResetDefaultCreator() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1064,6 +1108,14 @@ func (s *jsiiProxy_StreamLiveInput) ResetDeleteRecordingAfterDays() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDeleteRecordingAfterDays",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamLiveInput) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

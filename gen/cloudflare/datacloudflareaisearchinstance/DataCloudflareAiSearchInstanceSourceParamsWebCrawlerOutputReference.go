@@ -20,6 +20,7 @@ type DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference interfa
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CrawlOptions() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -94,6 +95,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputRef
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference) CrawlOptions() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference {
+	var returns DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"crawlOptions",
 		&returns,
 	)
 	return returns

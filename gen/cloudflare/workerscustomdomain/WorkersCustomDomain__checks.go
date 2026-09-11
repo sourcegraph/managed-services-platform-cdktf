@@ -428,6 +428,14 @@ func (j *jsiiProxy_WorkersCustomDomain) validateSetZoneIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_WorkersCustomDomain) validateSetZoneNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewWorkersCustomDomainParameters(scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

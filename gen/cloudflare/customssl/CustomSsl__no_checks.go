@@ -108,6 +108,14 @@ func (j *jsiiProxy_CustomSsl) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_CustomSsl) validateSetCustomCsrIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetDeployParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomSsl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

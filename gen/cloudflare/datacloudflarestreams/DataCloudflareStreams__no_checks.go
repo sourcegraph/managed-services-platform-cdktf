@@ -72,7 +72,15 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetAccountIdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) validateSetAfterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareStreams) validateSetAscParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) validateSetBeforeParameters(val *string) error {
 	return nil
 }
 
@@ -88,6 +96,10 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetEndParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareStreams) validateSetIncludeCountsParameters(val interface{}) error {
 	return nil
 }
@@ -96,7 +108,19 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) validateSetLiveInputIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareStreams) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) validateSetNameParameters(val *string) error {
 	return nil
 }
 

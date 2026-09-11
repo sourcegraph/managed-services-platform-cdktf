@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareemailroutingcatchall/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 type DataCloudflareEmailRoutingCatchAll interface {
 	cdktf.TerraformDataSource
 	Actions() DataCloudflareEmailRoutingCatchAllActionsList
@@ -87,6 +87,7 @@ type DataCloudflareEmailRoutingCatchAll interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -327,7 +328,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingCatchAll) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all} Data Source.
 func NewDataCloudflareEmailRoutingCatchAll(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingCatchAllConfig) DataCloudflareEmailRoutingCatchAll {
 	_init_.Initialize()
 
@@ -345,7 +346,7 @@ func NewDataCloudflareEmailRoutingCatchAll(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all} Data Source.
 func NewDataCloudflareEmailRoutingCatchAll_Override(d DataCloudflareEmailRoutingCatchAll, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingCatchAllConfig) {
 	_init_.Initialize()
 
@@ -702,6 +703,14 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingCatchAll) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailRoutingCatchAll) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -40,6 +40,7 @@ type DataCloudflareWorkerObservabilityOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Traces() DataCloudflareWorkerObservabilityTracesOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataCloudflareWorkerObservabilityOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerObservabilityOutputReference) Traces() DataCloudflareWorkerObservabilityTracesOutputReference {
+	var returns DataCloudflareWorkerObservabilityTracesOutputReference
+	_jsii_.Get(
+		j,
+		"traces",
 		&returns,
 	)
 	return returns

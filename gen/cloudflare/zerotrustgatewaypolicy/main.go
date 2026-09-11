@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDevicePosture", GoMethod: "ResetDevicePosture"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
@@ -253,6 +254,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPrinting", GoMethod: "ResetPrinting"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpload", GoMethod: "ResetUpload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWmId", GoMethod: "ResetWmId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -261,6 +263,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadInput", GoGetter: "UploadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "wmId", GoGetter: "WmId"},
+			_jsii_.MemberProperty{JsiiProperty: "wmIdInput", GoGetter: "WmIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference{}

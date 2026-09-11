@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/schemavalidationsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
 type SchemaValidationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -114,6 +114,7 @@ type SchemaValidationSettings interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValidationOverrideMitigationAction()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -353,7 +354,7 @@ func (j *jsiiProxy_SchemaValidationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
 func NewSchemaValidationSettings(scope constructs.Construct, id *string, config *SchemaValidationSettingsConfig) SchemaValidationSettings {
 	_init_.Initialize()
 
@@ -371,7 +372,7 @@ func NewSchemaValidationSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
 func NewSchemaValidationSettings_Override(s SchemaValidationSettings, scope constructs.Construct, id *string, config *SchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -848,6 +849,14 @@ func (s *jsiiProxy_SchemaValidationSettings) ResetValidationOverrideMitigationAc
 	_jsii_.InvokeVoid(
 		s,
 		"resetValidationOverrideMitigationAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SchemaValidationSettings) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludePrefix", GoMethod: "ResetExcludePrefix"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExistedAt", GoMethod: "ResetExistedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludePrefix", GoMethod: "ResetIncludePrefix"},
